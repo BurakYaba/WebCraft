@@ -1,15 +1,37 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font family definitions matching Baunfire's system */
+/* Neue Plak W01 - Premium webfont (fallback to similar fonts) */
+/* In production, implement proper @font-face or webfont loader for Neue Plak W01 */
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Primary font stack - Neue Plak W01 with Montserrat fallback */
+  --font-primary: "Neue Plak W01 Light", "Neue Plak W01 Regular", "Montserrat",
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+
+  /* Display font stack - Montserrat for headings and bold text */
+  --font-display: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Body font stack - Neue Plak W01 Light for readable text */
+  --font-body: "Neue Plak W01 Light", "Montserrat", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Component font stack - Neue Plak W01 variants for UI elements */
+  --font-component: "Neue Plak W01 Regular", "Neue Plak W01 Bold", "Montserrat",
+    sans-serif;
+
+  /* Narrow font stack - For compact text and labels */
+  --font-narrow: "Neue Plak W01 Narrow Regular", "Neue Plak W01 Narrow SemiBold",
+    "Montserrat", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +42,389 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #181716;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography utility classes matching Baunfire's system */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-component {
+  font-family: var(--font-component);
+}
+
+.font-narrow {
+  font-family: var(--font-narrow);
+}
+
+/* Heading styles using Montserrat (matching Baunfire) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  transform: scaleX(0.98);
+  transform-origin: left;
+}
+
+.watermark {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 38vw;
+  color: #232221;
+  font-family: var(--font-display);
+  font-weight: 900;
+  opacity: 0.18;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+  z-index: 0;
+}
+
+/* Custom hover underline effect */
+.hover-underline::after,
+.hover-underline::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff0000, #00ffff);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+/* Rotating Cube Styles */
+.rotating-cube-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.rotating-cube {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate3d 12s infinite linear;
+}
+
+.cube-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-component);
+  text-align: center;
+  backface-visibility: visible;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #2a2a2a, #383838);
+  border: 2px solid;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cube-face::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  top: -100%;
+  left: -100%;
+  transition: all 0.5s ease;
+  transform: translateZ(20px);
+}
+
+.cube-face::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    transparent 100%
+  );
+  opacity: 0.3;
+}
+
+.cube-front {
+  transform: translateZ(60px);
+  border-color: #f84525;
+}
+
+.cube-back {
+  transform: translateZ(-60px) rotateY(180deg);
+  border-color: #00bcd4;
+}
+
+.cube-right {
+  transform: translateX(60px) rotateY(90deg);
+  border-color: #4caf50;
+}
+
+.cube-left {
+  transform: translateX(-60px) rotateY(-90deg);
+  border-color: #ff4081;
+}
+
+.cube-top {
+  transform: translateY(-60px) rotateX(90deg);
+  border-color: #ffc107;
+}
+
+.cube-bottom {
+  transform: translateY(60px) rotateX(-90deg);
+  border-color: #9c27b0;
+}
+
+@keyframes rotate3d {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  25% {
+    transform: rotateX(90deg) rotateY(90deg);
+  }
+  50% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    transform: rotateX(270deg) rotateY(270deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+/* Responsive cube sizing */
+@media (max-width: 768px) {
+  .rotating-cube {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cube-face {
+    font-size: 0.6rem;
+  }
+
+  .cube-front {
+    transform: translateZ(40px);
+  }
+  .cube-back {
+    transform: translateZ(-40px) rotateY(180deg);
+  }
+  .cube-right {
+    transform: translateX(40px) rotateY(90deg);
+  }
+  .cube-left {
+    transform: translateX(-40px) rotateY(-90deg);
+  }
+  .cube-top {
+    transform: translateY(-40px) rotateX(90deg);
+  }
+  .cube-bottom {
+    transform: translateY(40px) rotateX(-90deg);
+  }
+}
+
+/* Blog Section Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.delay-700 {
+  animation-delay: 700ms;
+}
+
+/* Blog card hover effects */
+.blog-card-image {
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.blog-card:hover .blog-card-image {
+  transform: scale(1.05);
+}
+
+/* Custom scrollbar for blog section */
+.blog-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.blog-section::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.blog-section::-webkit-scrollbar-thumb {
+  background: #f84525;
+  border-radius: 3px;
+}
+
+/* About page specific animations */
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-left {
+  animation: fade-in-left 1s ease-out forwards;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* Intersection Observer triggered animations */
+.area-about-intro.appear::before {
+  transform: scale(1);
+}
+
+.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Blog post content styles */
+.prose {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.prose h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1.5rem 0;
+  color: #000;
+  line-height: 1.2;
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  color: #000;
+  line-height: 1.3;
+}
+
+.prose p {
+  margin: 1.5rem 0;
+  line-height: 1.8;
+}
+
+.prose ul {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin: 0.75rem 0;
+  line-height: 1.7;
+  position: relative;
+}
+
+.prose li::before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  top: 0.75rem;
+  width: 4px;
+  height: 4px;
+  background-color: #f84525;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .prose h2 {
+    font-size: 1.75rem;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .prose h3 {
+    font-size: 1.25rem;
+    margin: 1.5rem 0 0.75rem 0;
+  }
+
+  .prose p {
+    margin: 1.25rem 0;
+  }
+
+  .prose ul {
+    margin: 1.25rem 0;
+  }
 }

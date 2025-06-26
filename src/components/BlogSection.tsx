@@ -1,0 +1,191 @@
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+
+const BlogSection = () => {
+  const blogPosts = [
+    {
+      id: 1,
+      category: "Web Tasarım",
+      title: "Modern Web Sitelerinde Kullanıcı Deneyimi Optimizasyonu",
+      image: "/bento/web-tasarım.jpg",
+      slug: "web-sitelerinde-kullanici-deneyimi",
+      isEven: false,
+    },
+    {
+      id: 2,
+      category: "Dijital Pazarlama",
+      title: "E-Ticaret Sitelerinde Dönüşüm Oranlarını Artırmanın Yolları",
+      image: "/bento/dijital-pazarlama.jpg",
+      slug: "e-ticaret-donusum-oranlari",
+      isEven: true,
+    },
+    {
+      id: 3,
+      category: "Mobil Uygulama",
+      title: "Mobil-First Yaklaşımı ile Responsive Tasarım Prensipleri",
+      image: "/bento/mobil-uygulama.jpg",
+      slug: "mobil-first-responsive-tasarim",
+      isEven: false,
+    },
+    {
+      id: 4,
+      category: "Yazılım Geliştirme",
+      title: "Next.js ve React ile Performanslı Web Uygulamaları Geliştirme",
+      image: "/bento/yazılım-geliştirme.jpg",
+      slug: "nextjs-react-performansli-uygulamalar",
+      isEven: true,
+    },
+  ];
+
+  return (
+    <section className="relative py-32 md:py-40 bg-white overflow-hidden">
+      {/* Background decorative element */}
+      <div className="absolute top-8 right-0 md:right-[-55px] opacity-15 pointer-events-none">
+        <div className="w-16 h-16 md:w-24 md:h-24">
+          <svg viewBox="0 0 100 100" className="w-full h-full fill-black">
+            <circle cx="50" cy="50" r="2" />
+            <circle cx="20" cy="20" r="1.5" />
+            <circle cx="80" cy="20" r="1.5" />
+            <circle cx="20" cy="80" r="1.5" />
+            <circle cx="80" cy="80" r="1.5" />
+            <circle cx="50" cy="20" r="1" />
+            <circle cx="50" cy="80" r="1" />
+            <circle cx="20" cy="50" r="1" />
+            <circle cx="80" cy="50" r="1" />
+          </svg>
+        </div>
+      </div>
+
+      <div className="max-w-[1200px] mx-auto px-5 md:px-10">
+        {/* Section Header */}
+        <div className="flex justify-between items-end mb-20 md:mb-32">
+          <div className="flex-1">
+            <div className="mb-2">
+              <span className="inline-block bg-[#f84525] text-white text-xs md:text-sm font-medium px-3 py-1 rounded-full uppercase tracking-wider">
+                BLOG
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black leading-[0.9] tracking-tight">
+              <div className="overflow-hidden">
+                <div className="animate-fade-in-up">Güncel</div>
+              </div>
+              <div className="overflow-hidden">
+                <div
+                  className="animate-fade-in-up"
+                  style={{ animationDelay: "0.1s" }}
+                >
+                  içerikler.
+                </div>
+              </div>
+            </h2>
+            <div className="mt-6 md:mt-8 max-w-lg">
+              <p className="text-black/70 text-lg md:text-xl leading-relaxed">
+                Web tasarım, dijital pazarlama ve teknoloji trendleri hakkında
+                uzman görüşleri ve pratik ipuçları.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Blog Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[6.666%] gap-y-32 md:gap-y-40 mb-20 md:mb-32">
+          {blogPosts.map((post) => (
+            <article
+              key={post.id}
+              className={`group max-w-[560px] relative cursor-pointer transition-all duration-700 hover:transform hover:scale-[1.02] ${
+                post.isEven ? "md:transform md:translate-y-24" : ""
+              }`}
+            >
+              <Link href={`/blog/${post.slug}`} className="block">
+                {/* Image Container */}
+                <div className="relative overflow-hidden rounded-lg mb-6 md:mb-8">
+                  <div className="aspect-[4/3] bg-gray-800 relative">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={560}
+                      height={420}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-black/20 transition-opacity duration-500 group-hover:opacity-0" />
+
+                    {/* Hover overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="px-5 md:px-6">
+                  {/* Category */}
+                  <h4 className="text-[#f84525] text-xs md:text-sm font-medium uppercase tracking-wider mb-3 md:mb-4 transition-colors duration-300 group-hover:text-black">
+                    {post.category}
+                  </h4>
+
+                  {/* Title */}
+                  <h5 className="text-black text-xl md:text-2xl lg:text-3xl font-bold leading-tight transition-colors duration-300 group-hover:text-[#f84525]">
+                    {post.title}
+                  </h5>
+
+                  {/* Read more indicator */}
+                  <div className="mt-4 md:mt-6 opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2">
+                    <span className="text-black/70 text-sm font-medium uppercase tracking-wider flex items-center">
+                      Devamını Oku
+                      <svg
+                        className="ml-2 w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            </article>
+          ))}
+        </div>
+
+        {/* More Button */}
+        <div className="flex justify-center">
+          <Link
+            href="/blog"
+            className="group relative bg-transparent border-2 border-black/20 text-black px-8 md:px-12 py-4 md:py-5 rounded-full font-medium text-sm md:text-base uppercase tracking-wider transition-all duration-500 hover:border-[#f84525] hover:bg-[#f84525] hover:text-white hover:transform hover:scale-105 overflow-hidden inline-block"
+          >
+            {/* Button background animation */}
+            <div className="absolute inset-0 bg-[#f84525] transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0" />
+
+            <span className="relative z-10 flex items-center">
+              Tüm Yazıları Gör
+              <svg
+                className="ml-3 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </span>
+          </Link>
+        </div>
+      </div>
+
+      {/* Large watermark */}
+      <div className="watermark text-[#f5f5f5] opacity-20">B</div>
+    </section>
+  );
+};
+
+export default BlogSection;

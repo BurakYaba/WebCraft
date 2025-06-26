@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WebCraft - Turkish Web Agency Website
 
-## Getting Started
+A modern, responsive website for WebCraft, a Turkish web design and digital agency. Built with Next.js 15, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Features
+
+- **Modern Design**: Inspired by Baunfire's sophisticated design approach
+- **Responsive**: Fully responsive design for all devices
+- **Performance**: Optimized with Next.js 15 and Turbopack
+- **SEO Ready**: Built with SEO best practices
+- **Contact Form**: Professional contact page with form
+- **Blog System**: Complete blog with individual post pages
+- **Turkish Content**: Full Turkish language support
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
+- **Build Tool**: Turbopack
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── blog/              # Blog pages
+│   ├── hakkimizda/        # About page
+│   ├── hizmetler/         # Services page
+│   ├── iletisim/          # Contact page
+│   └── layout.tsx         # Root layout
+├── components/            # React components
+│   ├── Header.tsx         # Navigation header
+│   ├── Footer.tsx         # Footer component
+│   ├── HeroSection.tsx    # Hero section
+│   ├── BlogSection.tsx    # Blog section
+│   └── ...                # Other components
+└── globals.css            # Global styles
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/webcraft-website.git
+cd webcraft-website
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Learn More
+## 🎨 Design Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Color Scheme**: Red (#f84525) and black/gray palette
+- **Typography**: Modern, clean typography with proper hierarchy
+- **Animations**: Smooth transitions and hover effects
+- **Layout**: Grid-based responsive layouts
+- **Components**: Reusable, modular components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Home**: Landing page with hero section and services
+- **About**: Company information and team details
+- **Services**: Detailed service offerings
+- **Blog**: Blog listing and individual post pages
+- **Contact**: Contact form and company information
 
-## Deploy on Vercel
+## 🔧 Configuration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project uses:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `tailwind.config.js` for Tailwind CSS configuration
+- `next.config.ts` for Next.js configuration
+- `tsconfig.json` for TypeScript configuration
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📞 Contact
+
+For questions or support, please contact:
+
+- Email: info@webcraft.com.tr
+- Website: https://webcraft.com.tr
