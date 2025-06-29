@@ -1,25 +1,36 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 import FireflyEffect from "./FireflyEffect";
 
 export default function AboutUs() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url(/about-us.webp)" }}
-      />
+      {/* Optimized Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/about-us.webp"
+          alt="WebCraft Web Tasarım Ajansı Hakkında"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+          quality={85}
+          priority={false}
+        />
+      </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/50 z-10" />
 
-      {/* Firefly Effect */}
-      <FireflyEffect />
+      {/* Firefly Effect - Fixed positioning */}
+      <div className="absolute inset-0 z-20 pointer-events-none">
+        <FireflyEffect />
+      </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 py-20">
+      <div className="relative z-30 w-full max-w-6xl mx-auto px-4 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <motion.div
@@ -30,12 +41,14 @@ export default function AboutUs() {
             className="text-white"
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-display">
-              Hakkımızda
+              Profesyonel Web Tasarım Ajansı
             </h2>
             <p className="text-lg md:text-xl mb-8 text-white/90 font-body leading-relaxed">
-              2015 yılından bu yana dijital dünyada markaların başarısı için
-              çalışıyoruz. Modern teknolojiler ve yaratıcı tasarım
-              anlayışımızla, işletmenizi dijital dünyada öne çıkarıyoruz.
+              2015 yılından bu yana <strong>web tasarım</strong>,{" "}
+              <strong>SEO hizmeti</strong> ve <strong>dijital pazarlama</strong>{" "}
+              alanlarında uzmanlaşmış bir ekibiz. Modern teknolojiler ve
+              yaratıcı tasarım anlayışımızla, işletmenizi dijital dünyada öne
+              çıkarıyoruz.
             </p>
 
             <div className="grid grid-cols-2 gap-6 mb-8">
@@ -71,13 +84,15 @@ export default function AboutUs() {
               </div>
             </div>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full font-semibold transition-colors duration-300"
-            >
-              Daha Fazla Bilgi
-            </motion.button>
+            <Link href="/hakkimizda">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full font-semibold transition-colors duration-300"
+              >
+                Web Tasarım Ajansımızı Tanıyın
+              </motion.button>
+            </Link>
           </motion.div>
 
           {/* Features List */}
@@ -107,11 +122,12 @@ export default function AboutUs() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">
-                    Hızlı ve Güvenilir
+                    SEO Uyumlu Web Tasarım
                   </h3>
                   <p className="text-white/80 text-sm leading-relaxed">
-                    Projelerinizi zamanında ve kaliteli bir şekilde teslim
-                    ediyoruz. Güvenlik ve performans her zaman önceliğimizdir.
+                    Arama motorlarına uyumlu <strong>web tasarım</strong> ile
+                    siteniz Google&apos;da üst sıralarda yer alır. SEO hizmeti
+                    ile organik trafiğinizi artırıyoruz.
                   </p>
                 </div>
               </div>
@@ -136,11 +152,12 @@ export default function AboutUs() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">
-                    Yaratıcı Çözümler
+                    Sosyal Medya Yönetimi
                   </h3>
                   <p className="text-white/80 text-sm leading-relaxed">
-                    Her proje için özel ve yaratıcı çözümler geliştiriyoruz.
-                    Standart kalıpların dışında düşünüyoruz.
+                    Profesyonel <strong>sosyal medya yönetimi</strong> ile
+                    markanızı sosyal platformlarda güçlendiriyoruz. Instagram,
+                    Facebook ve LinkedIn yönetimi hizmetleri.
                   </p>
                 </div>
               </div>
@@ -165,11 +182,12 @@ export default function AboutUs() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">
-                    Müşteri Odaklı
+                    Dijital Pazarlama Ajansı
                   </h3>
                   <p className="text-white/80 text-sm leading-relaxed">
-                    Müşterilerimizin ihtiyaçlarını anlıyor ve onların başarısı
-                    için çalışıyoruz. Sürekli iletişim halindeyiz.
+                    Kapsamlı <strong>dijital pazarlama</strong> çözümleri ile
+                    markanızı büyütüyoruz. Web tasarım fiyatları ve SEO hizmeti
+                    paketlerimizle uygun maliyetli çözümler.
                   </p>
                 </div>
               </div>

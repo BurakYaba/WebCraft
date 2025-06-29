@@ -284,19 +284,57 @@ h6 {
 }
 
 .animate-fade-in-up {
-  animation: fade-in-up 0.8s ease-out forwards;
+  animation: fade-in-up 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Service Cards Smooth Animation */
+@keyframes service-card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-service-card {
+  animation: service-card-enter 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    forwards;
+}
+
+/* Improved stagger delays */
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
 }
 
 .delay-300 {
   animation-delay: 300ms;
 }
 
+.delay-400 {
+  animation-delay: 400ms;
+}
+
 .delay-500 {
   animation-delay: 500ms;
 }
 
+.delay-600 {
+  animation-delay: 600ms;
+}
+
 .delay-700 {
   animation-delay: 700ms;
+}
+
+.delay-800 {
+  animation-delay: 800ms;
 }
 
 /* Blog card hover effects */

@@ -7,7 +7,7 @@ import { Instagram, Linkedin, Twitter, Facebook } from "lucide-react";
 import Image from "next/image";
 
 const MENU_LINKS = [
-  { label: "Islerimiz", href: "#islerimiz" },
+  { label: "Islerimiz", href: "/islerimiz" },
   { label: "Hizmetler", href: "/hizmetler" },
   { label: "Hakkimizda", href: "/hakkimizda" },
   { label: "Blog", href: "/blog" },

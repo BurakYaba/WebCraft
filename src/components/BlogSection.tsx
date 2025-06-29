@@ -7,33 +7,33 @@ const BlogSection = () => {
     {
       id: 1,
       category: "Web Tasarım",
-      title: "Modern Web Sitelerinde Kullanıcı Deneyimi Optimizasyonu",
+      title: "SEO Uyumlu Web Tasarımı ile Google'da Üst Sıralarda Yer Alın",
       image: "/bento/web-tasarım.jpg",
-      slug: "web-sitelerinde-kullanici-deneyimi",
+      slug: "seo-uyumlu-web-tasarimi",
       isEven: false,
     },
     {
       id: 2,
       category: "Dijital Pazarlama",
-      title: "E-Ticaret Sitelerinde Dönüşüm Oranlarını Artırmanın Yolları",
+      title: "Sosyal Medya Yönetimi ile Markanızı Büyütün",
       image: "/bento/dijital-pazarlama.jpg",
-      slug: "e-ticaret-donusum-oranlari",
+      slug: "sosyal-medya-yonetimi-marka-buyutme",
       isEven: true,
     },
     {
       id: 3,
-      category: "Mobil Uygulama",
-      title: "Mobil-First Yaklaşımı ile Responsive Tasarım Prensipleri",
+      category: "SEO Hizmeti",
+      title: "Profesyonel SEO Hizmeti ile Organik Trafiğinizi Artırın",
       image: "/bento/mobil-uygulama.jpg",
-      slug: "mobil-first-responsive-tasarim",
+      slug: "profesyonel-seo-hizmeti",
       isEven: false,
     },
     {
       id: 4,
-      category: "Yazılım Geliştirme",
-      title: "Next.js ve React ile Performanslı Web Uygulamaları Geliştirme",
+      category: "Web Tasarım Fiyatları",
+      title: "Web Tasarım Fiyatları ve Uygun Maliyetli Çözümler",
       image: "/bento/yazılım-geliştirme.jpg",
-      slug: "nextjs-react-performansli-uygulamalar",
+      slug: "web-tasarim-fiyatlari",
       isEven: true,
     },
   ];
@@ -63,26 +63,28 @@ const BlogSection = () => {
           <div className="flex-1">
             <div className="mb-2">
               <span className="inline-block bg-[#f84525] text-white text-xs md:text-sm font-medium px-3 py-1 rounded-full uppercase tracking-wider">
-                BLOG
+                WEB TASARIM BLOG
               </span>
             </div>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black leading-[0.9] tracking-tight">
               <div className="overflow-hidden">
-                <div className="animate-fade-in-up">Güncel</div>
+                <div className="animate-fade-in-up">Web Tasarım</div>
               </div>
               <div className="overflow-hidden">
                 <div
                   className="animate-fade-in-up"
                   style={{ animationDelay: "0.1s" }}
                 >
-                  içerikler.
+                  ve SEO Rehberi
                 </div>
               </div>
             </h2>
             <div className="mt-6 md:mt-8 max-w-lg">
               <p className="text-black/70 text-lg md:text-xl leading-relaxed">
-                Web tasarım, dijital pazarlama ve teknoloji trendleri hakkında
-                uzman görüşleri ve pratik ipuçları.
+                <strong>Web tasarım</strong>, <strong>SEO hizmeti</strong> ve{" "}
+                <strong>dijital pazarlama</strong> konularında uzman görüşleri.
+                Web tasarım fiyatları ve sosyal medya yönetimi hakkında pratik
+                ipuçları.
               </p>
             </div>
           </div>
@@ -163,7 +165,7 @@ const BlogSection = () => {
             <div className="absolute inset-0 bg-[#f84525] transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0" />
 
             <span className="relative z-10 flex items-center">
-              Tüm Yazıları Gör
+              Tüm Web Tasarım Yazıları
               <svg
                 className="ml-3 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                 fill="none"

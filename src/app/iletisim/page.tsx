@@ -1,7 +1,35 @@
-import React from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import React, { lazy, Suspense } from "react";
+import { Metadata } from "next";
+import Header from "../../components/Header";
 import { Mail, Phone, MapPin } from "lucide-react";
+
+// Lazy load Footer
+const Footer = lazy(() => import("../../components/Footer"));
+
+// Loading component for better UX
+const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
+  <div
+    className={`${height} bg-gray-100 animate-pulse flex items-center justify-center`}
+  >
+    <div className="w-8 h-8 border-4 border-red-500/20 border-t-red-500 rounded-full animate-spin" />
+  </div>
+);
+
+export const metadata: Metadata = {
+  title:
+    "Web Tasarım ve SEO Hizmeti İletişim | WebCraft - Ücretsiz Teklif Alın",
+  description:
+    "Web tasarım, SEO hizmeti ve dijital pazarlama için ücretsiz teklif alın. Web tasarım fiyatları ve sosyal medya yönetimi hizmetleri için bizimle iletişime geçin.",
+  keywords:
+    "web tasarım teklif, SEO hizmeti fiyat, dijital pazarlama ajansı iletişim, web tasarım fiyatları, sosyal medya yönetimi",
+  openGraph: {
+    title: "Web Tasarım ve SEO Hizmeti İletişim | WebCraft",
+    description:
+      "Web tasarım, SEO hizmeti ve dijital pazarlama için ücretsiz teklif alın.",
+    type: "website",
+    locale: "tr_TR",
+  },
+};
 
 export default function ContactPage() {
   return (
@@ -15,17 +43,18 @@ export default function ContactPage() {
             {/* Left Content */}
             <div className="lg:w-1/2 lg:pr-16 mb-12 lg:mb-0">
               <div className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-4">
-                İletişim
+                Web Tasarım ve SEO Hizmeti
               </div>
               <h1 className="text-4xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight mb-6">
-                Projenizi
+                Web Tasarım
                 <br />
-                <span className="text-red-600">Konuşalım</span>
+                <span className="text-red-600">Teklifi Alın</span>
               </h1>
               <p className="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-md">
-                Dijital dönüşüm yolculuğunuzda size yardımcı olmak için
-                buradayız. Projeniz hakkında konuşmak için bizimle iletişime
-                geçin.
+                <strong>Web tasarım</strong>, <strong>SEO hizmeti</strong> ve{" "}
+                <strong>dijital pazarlama</strong> projeleriniz için ücretsiz
+                teklif alın. Web tasarım fiyatları ve sosyal medya yönetimi
+                hizmetlerimiz hakkında bilgi edinin.
               </p>
             </div>
 
@@ -77,6 +106,20 @@ export default function ContactPage() {
                   />
                 </div>
 
+                <div className="mb-6">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Hizmet Türü
+                  </label>
+                  <select className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent focus:border-red-600 focus:outline-none transition-colors">
+                    <option value="">Hizmet seçiniz</option>
+                    <option value="web-tasarim">Web Tasarım</option>
+                    <option value="seo-hizmeti">SEO Hizmeti</option>
+                    <option value="sosyal-medya">Sosyal Medya Yönetimi</option>
+                    <option value="dijital-pazarlama">Dijital Pazarlama</option>
+                    <option value="e-ticaret">E-Ticaret Sitesi</option>
+                  </select>
+                </div>
+
                 <div className="mb-8">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Proje Detayları
@@ -84,7 +127,7 @@ export default function ContactPage() {
                   <textarea
                     rows={6}
                     className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent focus:border-red-600 focus:outline-none transition-colors resize-none"
-                    placeholder="Projeniz hakkında detayları paylaşın..."
+                    placeholder="Web tasarım projeniz, SEO ihtiyaçlarınız veya dijital pazarlama hedefleriniz hakkında detayları paylaşın..."
                   />
                 </div>
 
@@ -92,7 +135,7 @@ export default function ContactPage() {
                   type="submit"
                   className="w-full bg-gray-900 text-white py-4 px-8 rounded-full font-medium text-lg hover:bg-red-600 transition-colors duration-300 flex items-center justify-center"
                 >
-                  <span>Gönder</span>
+                  <span>Ücretsiz Teklif Al</span>
                   <div className="w-2 h-2 bg-white rounded-full ml-4"></div>
                 </button>
               </form>
@@ -177,7 +220,9 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Footer />
+      <Suspense fallback={<SectionSkeleton height="h-64" />}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

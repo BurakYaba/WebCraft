@@ -1,4 +1,5 @@
 import RotatingCube from "./RotatingCube";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -31,7 +32,7 @@ export default function HeroSection() {
             className="text-red-500 font-bold tracking-[0.35em] uppercase text-[10px] md:text-xs mb-10 mt-4 md:mt-0 font-narrow ml-2 md:ml-4"
             style={{ letterSpacing: "0.35em" }}
           >
-            BIZ WEBCRAFT&apos;IZ
+            PROFESYONEL WEB TASARIM AJANSI
           </div>
           <div className="ml-8 md:ml-16 lg:ml-20">
             <h1
@@ -40,18 +41,44 @@ export default function HeroSection() {
                 letterSpacing: "-0.01em",
               }}
             >
-              Web&apos;e odaklanan
+              Web Tasarım ve
               <br />
-              dijital ajans.
+              <span className="text-red-500">Dijital Pazarlama</span>
+              <br />
+              Ajansı
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-white/80 mb-10 max-w-2xl text-left font-body leading-relaxed">
-              Yaratıcı bir ekibiz; tasarımcılar, geliştiriciler, stratejistler
-              ve prodüktörlerden oluşuyoruz. Silicon Valley&apos;nin kalbinde,
-              markalar için üst düzey web siteleri inşa ediyoruz.
+              Profesyonel <strong>web tasarım</strong>,{" "}
+              <strong>SEO hizmeti</strong> ve{" "}
+              <strong>sosyal medya yönetimi</strong> ile markanızı dijital
+              dünyada öne çıkarıyoruz. Kurumsal web sitesi tasarımı ve dijital
+              pazarlama çözümleri sunuyoruz.
             </p>
-            <button className="hover-underline relative inline-block text-white font-bold tracking-wider text-sm md:text-base uppercase transition-all duration-300 mb-2 font-component">
-              BIZI TANIYIN
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <Link
+                href="/iletisim"
+                className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-sm md:text-base uppercase tracking-wider"
+              >
+                ÜCRETSİZ TEKLİF AL
+              </Link>
+              <Link
+                href="/hakkimizda"
+                className="border border-white text-white hover:bg-white hover:text-black font-bold py-3 px-8 rounded-full transition-all duration-300 text-sm md:text-base uppercase tracking-wider"
+              >
+                BİZİ TANIYIN
+              </Link>
+            </div>
+            <div className="text-sm text-white/60">
+              <p>
+                ✓ <strong>Web tasarım fiyatları</strong> için hemen teklif alın
+              </p>
+              <p>
+                ✓ <strong>SEO hizmeti</strong> ile arama motorlarında öne çıkın
+              </p>
+              <p>
+                ✓ <strong>Sosyal medya yönetimi</strong> ile markanızı büyütün
+              </p>
+            </div>
           </div>
         </div>
       </div>

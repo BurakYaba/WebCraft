@@ -1,203 +1,308 @@
-import React from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import React, { lazy, Suspense } from "react";
+import { Metadata } from "next";
+import Header from "../../../components/Header";
 import { notFound } from "next/navigation";
 import { Facebook, Instagram } from "lucide-react";
 import Link from "next/link";
 
-// This would typically come from a CMS or database
-const getBlogPost = (slug: string) => {
-  const blogPosts = [
-    {
-      id: 1,
-      category: "Web Tasarım",
-      title: "Modern Web Sitelerinde Kullanıcı Deneyimi Optimizasyonu",
-      excerpt:
-        "Kullanıcı deneyimini iyileştirmek için uygulanabilir stratejiler ve tasarım prensipleri.",
-      content: `
-        <p>Kullanıcı deneyimi (UX), modern web tasarımının en kritik unsurlarından biridir. Başarılı bir web sitesi, sadece görsel olarak çekici olmakla kalmaz, aynı zamanda kullanıcıların ihtiyaçlarını karşılayacak şekilde tasarlanır.</p>
-        
-        <h2>UX Optimizasyonunun Temelleri</h2>
-        <p>Kullanıcı deneyimi optimizasyonu, kullanıcıların web sitenizle etkileşimini iyileştirmeye odaklanan sistematik bir yaklaşımdır. Bu süreç, kullanıcı araştırması, tasarım prensipleri ve sürekli test etme döngüsünü içerir.</p>
-        
-        <h3>1. Kullanıcı Araştırması</h3>
-        <p>Etkili UX tasarımının ilk adımı, hedef kitlenizi anlamaktır. Kullanıcı araştırması şunları içerir:</p>
-        <ul>
-          <li>Kullanıcı anketleri ve mülakatlar</li>
-          <li>Davranışsal analiz ve heatmap çalışmaları</li>
-          <li>Rekabet analizi</li>
-          <li>Persona geliştirme</li>
-        </ul>
-        
-        <h3>2. Bilgi Mimarisi</h3>
-        <p>Web sitenizin içeriğini mantıklı ve kullanıcı dostu bir şekilde organize etmek kritik önem taşır. İyi bir bilgi mimarisi:</p>
-        <ul>
-          <li>Açık ve anlaşılır navigasyon yapısı</li>
-          <li>Mantıklı içerik hiyerarşisi</li>
-          <li>Etkili arama ve filtreleme seçenekleri</li>
-        </ul>
-        
-        <h2>Pratik UX İyileştirme Teknikleri</h2>
-        
-        <h3>Sayfa Yükleme Hızı</h3>
-        <p>Kullanıcılar hızlı yüklenen sayfaları tercih eder. Sayfa hızını artırmak için:</p>
-        <ul>
-          <li>Görselleri optimize edin</li>
-          <li>CSS ve JavaScript dosyalarını sıkıştırın</li>
-          <li>CDN kullanın</li>
-          <li>Lazy loading uygulayın</li>
-        </ul>
-        
-        <h3>Mobil Uyumluluk</h3>
-        <p>Mobil-first yaklaşımı benimseyin ve tüm cihazlarda mükemmel bir deneyim sunun. Bu şunları içerir:</p>
-        <ul>
-          <li>Responsive tasarım</li>
-          <li>Dokunmatik öğeler için uygun boyutlar</li>
-          <li>Mobil navigasyon optimizasyonu</li>
-        </ul>
-        
-        <h2>Sonuç</h2>
-        <p>UX optimizasyonu sürekli bir süreçtir. Kullanıcı geri bildirimlerini toplayın, A/B testleri yapın ve sürekli iyileştirme yaklaşımını benimseyin. Unutmayın, en iyi kullanıcı deneyimi, kullanıcılarınızın ihtiyaçlarını anladığınızda ve bu ihtiyaçları karşılayacak çözümler sunduğunuzda ortaya çıkar.</p>
-      `,
-      image: "/bento/web-tasarım.jpg",
-      slug: "web-sitelerinde-kullanici-deneyimi",
-      date: "15 Aralık 2024",
-      readTime: "5 dk",
-      author: "WebCraft Ekibi",
-    },
-    {
-      id: 2,
-      category: "Dijital Pazarlama",
-      title: "E-Ticaret Sitelerinde Dönüşüm Oranlarını Artırmanın Yolları",
-      excerpt:
-        "E-ticaret sitelerinde satışları artırmak için kanıtlanmış yöntemler ve optimizasyon teknikleri.",
-      content: `
-        <p>E-ticaret sitelerinde dönüşüm oranı optimizasyonu (CRO), ziyaretçileri müşteriye dönüştürme sürecini iyileştirmeye odaklanan stratejik bir yaklaşımdır.</p>
-        
-        <h2>Dönüşüm Oranı Nedir?</h2>
-        <p>Dönüşüm oranı, web sitenizi ziyaret eden kullanıcıların yüzde kaçının istenen eylemi (satın alma, kayıt olma, vb.) gerçekleştirdiğini gösteren metriktir.</p>
-        
-        <h2>Dönüşüm Oranını Artırma Stratejileri</h2>
-        
-        <h3>1. Site Hızı Optimizasyonu</h3>
-        <p>Yavaş yüklenen sayfalar müşteri kaybına neden olur. Site hızını artırmak için:</p>
-        <ul>
-          <li>Görsel dosyalarını sıkıştırın</li>
-          <li>Gereksiz eklentileri kaldırın</li>
-          <li>Kaliteli hosting kullanın</li>
-        </ul>
-        
-        <h3>2. Güven Sinyalleri</h3>
-        <p>Müşteri güvenini artırmak için:</p>
-        <ul>
-          <li>SSL sertifikası kullanın</li>
-          <li>Müşteri yorumlarını gösterin</li>
-          <li>Güvenlik rozetleri ekleyin</li>
-          <li>İletişim bilgilerini açık bir şekilde paylaşın</li>
-        </ul>
-        
-        <h3>3. Ürün Sayfası Optimizasyonu</h3>
-        <p>Etkili ürün sayfaları için:</p>
-        <ul>
-          <li>Yüksek kaliteli ürün görselleri</li>
-          <li>Detaylı ürün açıklamaları</li>
-          <li>Müşteri değerlendirmeleri</li>
-          <li>Açık fiyatlandırma</li>
-        </ul>
-        
-        <h2>Sonuç</h2>
-        <p>Dönüşüm oranı optimizasyonu, sürekli test etme ve iyileştirme gerektiren bir süreçtir. Veriye dayalı kararlar alın ve müşteri deneyimini sürekli geliştirin.</p>
-      `,
-      image: "/bento/dijital-pazarlama.jpg",
-      slug: "e-ticaret-donusum-oranlari",
-      date: "12 Aralık 2024",
-      readTime: "7 dk",
-      author: "WebCraft Ekibi",
-    },
-    {
-      id: 3,
-      category: "Mobil Uygulama",
-      title: "Mobil-First Yaklaşımı ile Responsive Tasarım Prensipleri",
-      excerpt:
-        "Mobil cihazlar öncelikli tasarım yaklaşımı ile responsive web siteleri oluşturma rehberi.",
-      content: `
-        <p>Mobil-first yaklaşımı, web tasarımında mobil cihazları önceleyerek başlayan ve daha sonra masaüstü cihazlara uyarlanan bir tasarım metodolojisidir.</p>
-        
-        <h2>Mobil-First Neden Önemli?</h2>
-        <p>Günümüzde internet trafiğinin büyük çoğunluğu mobil cihazlardan gelmektedir. Bu nedenle mobil deneyimi öncelemek kritik önem taşır.</p>
-        
-        <h3>Responsive Tasarım Prensipleri</h3>
-        <ul>
-          <li>Esnek grid sistemleri</li>
-          <li>Uyarlanabilir görseller</li>
-          <li>Media queries kullanımı</li>
-          <li>Dokunmatik arayüz optimizasyonu</li>
-        </ul>
-        
-        <h2>Uygulama Teknikleri</h2>
-        <p>Başarılı responsive tasarım için CSS Grid, Flexbox ve modern CSS tekniklerini kullanın.</p>
-      `,
-      image: "/bento/mobil-uygulama.jpg",
-      slug: "mobil-first-responsive-tasarim",
-      date: "10 Aralık 2024",
-      readTime: "6 dk",
-      author: "WebCraft Ekibi",
-    },
-    {
-      id: 4,
-      category: "Yazılım Geliştirme",
-      title: "Next.js ve React ile Performanslı Web Uygulamaları Geliştirme",
-      excerpt:
-        "Modern web uygulamaları için Next.js ve React kullanarak yüksek performanslı çözümler geliştirme.",
-      content: `
-        <p>Next.js, React tabanlı web uygulamaları geliştirmek için güçlü bir framework&#39;tür. Server-side rendering, static site generation ve birçok optimizasyon özelliği sunar.</p>
-        
-        <h2>Next.js&#39;in Avantajları</h2>
-        <ul>
-          <li>Otomatik kod bölme (code splitting)</li>
-          <li>Server-side rendering (SSR)</li>
-          <li>Static site generation (SSG)</li>
-          <li>API routes</li>
-          <li>Görsel optimizasyonu</li>
-        </ul>
-        
-        <h3>Performans Optimizasyonu</h3>
-        <p>Next.js ile yüksek performanslı uygulamalar geliştirmek için en iyi pratikleri öğrenin.</p>
-      `,
-      image: "/bento/yazılım-geliştirme.jpg",
-      slug: "nextjs-react-performansli-uygulamalar",
-      date: "8 Aralık 2024",
-      readTime: "8 dk",
-      author: "WebCraft Ekibi",
-    },
-    {
-      id: 5,
-      category: "SEO",
-      title: "2024&#39;te SEO Trendleri ve Arama Motoru Optimizasyonu",
-      excerpt:
-        "Güncel SEO stratejileri ve arama motoru algoritmalarında öne çıkmanın yolları.",
-      content: `
-        <p>2024 yılında SEO dünyası sürekli değişiyor. Arama motorları kullanıcı deneyimini ve içerik kalitesini daha da önemsiyor.</p>
-        
-        <h2>2024 SEO Trendleri</h2>
-        <ul>
-          <li>Core Web Vitals optimizasyonu</li>
-          <li>AI ve makine öğrenmesi etkisi</li>
-          <li>Voice search optimizasyonu</li>
-          <li>E-A-T (Expertise, Authoritativeness, Trustworthiness)</li>
-        </ul>
-        
-        <h3>Teknik SEO</h3>
-        <p>Site hızı, mobil uyumluluk ve yapısal veri işaretlemesi gibi teknik faktörler kritik önem taşır.</p>
-      `,
-      image: "/bento/web-tasarım.jpg",
-      slug: "2024-seo-trendleri",
-      date: "5 Aralık 2024",
-      readTime: "6 dk",
-      author: "WebCraft Ekibi",
-    },
-  ];
+// Lazy load Footer
+const Footer = lazy(() => import("../../../components/Footer"));
 
+// Loading component for better UX
+const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
+  <div
+    className={`${height} bg-gray-100 animate-pulse flex items-center justify-center`}
+  >
+    <div className="w-8 h-8 border-4 border-red-500/20 border-t-red-500 rounded-full animate-spin" />
+  </div>
+);
+
+// Optimized blog posts data - moved outside component to prevent re-creation
+const blogPosts = [
+  {
+    id: 1,
+    category: "Web Tasarım",
+    title: "SEO Uyumlu Web Tasarımı ile Google'da Üst Sıralarda Yer Alın",
+    excerpt:
+      "Arama motorlarına uyumlu web tasarım teknikleri ve SEO hizmeti ile organik trafiğinizi artırın.",
+    content: `
+      <p>SEO uyumlu web tasarımı, modern dijital pazarlama stratejilerinin temel taşlarından biridir. Başarılı bir web sitesi, sadece görsel olarak çekici olmakla kalmaz, aynı zamanda arama motorlarında üst sıralarda yer alacak şekilde optimize edilir.</p>
+      
+      <h2>SEO Uyumlu Web Tasarımının Temelleri</h2>
+      <p>SEO hizmeti ile entegre web tasarımı, kullanıcı deneyimini ve arama motoru görünürlüğünü aynı anda optimize etmeye odaklanır. Bu yaklaşım, organik trafiğinizi artırırken kullanıcı memnuniyetini de sağlar.</p>
+      
+      <h3>1. Teknik SEO Optimizasyonu</h3>
+      <p>Web tasarım sürecinde teknik SEO unsurlarını göz önünde bulundurun:</p>
+      <ul>
+        <li>Hızlı sayfa yükleme süreleri</li>
+        <li>Mobil uyumlu tasarım</li>
+        <li>Temiz ve semantik HTML yapısı</li>
+        <li>Optimize edilmiş görseller</li>
+        <li>Structured data markup</li>
+      </ul>
+      
+      <h3>2. İçerik Stratejisi</h3>
+      <p>SEO hizmeti ile uyumlu içerik oluşturma:</p>
+      <ul>
+        <li>Hedef anahtar kelimeler için optimize edilmiş başlıklar</li>
+        <li>Kaliteli ve bilgilendirici içerik</li>
+        <li>İç linkleme stratejisi</li>
+        <li>Meta açıklamalar ve başlık etiketleri</li>
+      </ul>
+      
+      <h2>Web Tasarım Fiyatları ve SEO Değeri</h2>
+      
+      <h3>Yatırım Getirisi</h3>
+      <p>SEO uyumlu web tasarımı, web tasarım fiyatları açısından daha yüksek bir başlangıç maliyeti gerektirebilir, ancak uzun vadede organik trafik artışı ile bu yatırımı fazlasıyla karşılar.</p>
+      
+      <h3>Rekabet Avantajı</h3>
+      <p>SEO hizmeti ile desteklenen web tasarımı, rakiplerinizden öne çıkmanızı sağlar ve dijital pazarlama stratejinizi güçlendirir.</p>
+      
+      <h2>Sonuç</h2>
+      <p>SEO uyumlu web tasarımı, modern işletmeler için vazgeçilmez bir gerekliliktir. Profesyonel web tasarım ajansı ile çalışarak, hem görsel çekicilik hem de arama motoru optimizasyonu sağlayabilirsiniz.</p>
+    `,
+    image: "/bento/web-tasarım.jpg",
+    slug: "seo-uyumlu-web-tasarimi",
+    date: "15 Aralık 2024",
+    readTime: "5 dk",
+    author: "WebCraft Ekibi",
+  },
+  {
+    id: 2,
+    category: "Dijital Pazarlama",
+    title: "Sosyal Medya Yönetimi ile Markanızı Büyütün",
+    excerpt:
+      "Profesyonel sosyal medya yönetimi stratejileri ile markanızı sosyal platformlarda güçlendirin.",
+    content: `
+      <p>Sosyal medya yönetimi, modern dijital pazarlama stratejilerinin en etkili araçlarından biridir. Doğru yaklaşımla markanızı sosyal platformlarda güçlendirebilir ve hedef kitlenizle etkili iletişim kurabilirsiniz.</p>
+      
+      <h2>Sosyal Medya Yönetimi Nedir?</h2>
+      <p>Sosyal medya yönetimi, markanızın sosyal medya hesaplarının stratejik olarak yönetilmesi, içerik üretimi ve topluluk etkileşimini içeren kapsamlı bir süreçtir.</p>
+      
+      <h2>Etkili Sosyal Medya Yönetimi Stratejileri</h2>
+      
+      <h3>1. Platform Seçimi</h3>
+      <p>Hedef kitlenizin bulunduğu platformları belirleyin:</p>
+      <ul>
+        <li>Instagram: Görsel içerik ve genç kitle</li>
+        <li>LinkedIn: B2B ve profesyonel ağ</li>
+        <li>Facebook: Geniş kitle ve topluluk oluşturma</li>
+        <li>Twitter: Anlık güncellemeler ve haber paylaşımı</li>
+      </ul>
+      
+      <h3>2. İçerik Stratejisi</h3>
+      <p>Etkili sosyal medya yönetimi için içerik planlaması:</p>
+      <ul>
+        <li>Düzenli içerik takvimi</li>
+        <li>Çeşitli içerik türleri (görsel, video, yazı)</li>
+        <li>Marka tutarlılığı</li>
+        <li>Trend konuları takip etme</li>
+      </ul>
+      
+      <h3>3. Topluluk Yönetimi</h3>
+      <p>Takipçilerinizle etkili iletişim kurun:</p>
+      <ul>
+        <li>Yorumlara hızlı yanıt</li>
+        <li>Kullanıcı içeriği paylaşımı</li>
+        <li>Etkileşim oranını artırma</li>
+        <li>Kriz yönetimi</li>
+      </ul>
+      
+      <h2>Sosyal Medya Yönetimi Fiyatları</h2>
+      <p>Profesyonel sosyal medya yönetimi hizmetleri, markanızın büyüklüğüne ve ihtiyaçlarına göre değişkenlik gösterir. Web tasarım ajansı ile birlikte sosyal medya yönetimi paketleri oluşturabilirsiniz.</p>
+      
+      <h2>Sonuç</h2>
+      <p>Sosyal medya yönetimi, dijital pazarlama stratejinizin vazgeçilmez bir parçasıdır. Doğru yaklaşımla markanızı sosyal platformlarda güçlendirebilir ve organik büyüme sağlayabilirsiniz.</p>
+    `,
+    image: "/bento/dijital-pazarlama.jpg",
+    slug: "sosyal-medya-yonetimi-marka-buyutme",
+    date: "12 Aralık 2024",
+    readTime: "7 dk",
+    author: "WebCraft Ekibi",
+  },
+  {
+    id: 3,
+    category: "SEO Hizmeti",
+    title: "Profesyonel SEO Hizmeti ile Organik Trafiğinizi Artırın",
+    excerpt:
+      "SEO hizmeti ile arama motorlarında üst sıralarda yer alın ve organik trafiğinizi artırın.",
+    content: `
+      <p>Profesyonel SEO hizmeti, web sitenizin arama motorlarında üst sıralarda yer almasını sağlayarak organik trafiğinizi artıran kapsamlı bir dijital pazarlama stratejisidir.</p>
+      
+      <h2>SEO Hizmeti Nedir?</h2>
+      <p>SEO (Search Engine Optimization), web sitenizin arama motorlarında daha görünür olmasını sağlayan teknik ve stratejik optimizasyon sürecidir.</p>
+      
+      <h2>SEO Hizmeti Kapsamı</h2>
+      
+      <h3>1. Teknik SEO</h3>
+      <p>Web sitesinin teknik yapısının optimize edilmesi:</p>
+      <ul>
+        <li>Site hızı optimizasyonu</li>
+        <li>Mobil uyumluluk</li>
+        <li>URL yapısı optimizasyonu</li>
+        <li>XML sitemap oluşturma</li>
+        <li>Robots.txt optimizasyonu</li>
+      </ul>
+      
+      <h3>2. İçerik SEO</h3>
+      <p>İçerik kalitesi ve optimizasyonu:</p>
+      <ul>
+        <li>Anahtar kelime araştırması</li>
+        <li>İçerik optimizasyonu</li>
+        <li>Meta açıklamalar</li>
+        <li>Başlık etiketleri</li>
+        <li>İç linkleme stratejisi</li>
+      </ul>
+      
+      <h3>3. Off-Page SEO</h3>
+      <p>Web sitesi dışındaki faktörler:</p>
+      <ul>
+        <li>Backlink oluşturma</li>
+        <li>Sosyal medya sinyalleri</li>
+        <li>Marka mention'ları</li>
+        <li>Online itibar yönetimi</li>
+      </ul>
+      
+      <h2>SEO Hizmeti Fiyatları</h2>
+      <p>SEO hizmeti fiyatları, projenin kapsamına ve hedeflenen anahtar kelimelere göre değişiklik gösterir. Web tasarım ajansı ile birlikte kapsamlı SEO paketleri oluşturabilirsiniz.</p>
+      
+      <h2>Sonuç</h2>
+      <p>Profesyonel SEO hizmeti, uzun vadeli organik trafik artışı sağlar ve dijital pazarlama stratejinizin temelini oluşturur. Doğru SEO stratejisi ile arama motorlarında üst sıralarda yer alabilirsiniz.</p>
+    `,
+    image: "/bento/mobil-uygulama.jpg",
+    slug: "profesyonel-seo-hizmeti",
+    date: "10 Aralık 2024",
+    readTime: "6 dk",
+    author: "WebCraft Ekibi",
+  },
+  {
+    id: 4,
+    category: "Web Tasarım Fiyatları",
+    title: "Web Tasarım Fiyatları ve Uygun Maliyetli Çözümler",
+    excerpt:
+      "Web tasarım fiyatları hakkında detaylı bilgi ve uygun maliyetli web tasarım çözümleri.",
+    content: `
+      <p>Web tasarım fiyatları, işletmenizin dijital varlığını oluştururken en önemli faktörlerden biridir. Doğru web tasarım ajansı seçimi ve uygun maliyetli çözümler ile bütçenize uygun profesyonel web sitesi oluşturabilirsiniz.</p>
+      
+      <h2>Web Tasarım Fiyatlarını Etkileyen Faktörler</h2>
+      <p>Web tasarım fiyatları, projenin kapsamına ve gereksinimlerine göre değişiklik gösterir.</p>
+      
+      <h3>1. Tasarım Karmaşıklığı</h3>
+      <ul>
+        <li>Özel tasarım vs hazır tema</li>
+        <li>Sayfa sayısı</li>
+        <li>Özel fonksiyonlar</li>
+        <li>Responsive tasarım</li>
+      </ul>
+      
+      <h3>2. Teknik Gereksinimler</h3>
+      <ul>
+        <li>E-ticaret entegrasyonu</li>
+        <li>Özel yazılım geliştirme</li>
+        <li>Veritabanı entegrasyonu</li>
+        <li>API entegrasyonları</li>
+      </ul>
+      
+      <h3>3. İçerik Yönetimi</h3>
+      <ul>
+        <li>CMS entegrasyonu</li>
+        <li>İçerik oluşturma</li>
+        <li>SEO optimizasyonu</li>
+        <li>Çoklu dil desteği</li>
+      </ul>
+      
+      <h2>Uygun Maliyetli Web Tasarım Çözümleri</h2>
+      
+      <h3>Paket Seçenekleri</h3>
+      <p>Web tasarım ajansı olarak farklı bütçelere uygun paketler sunuyoruz:</p>
+      <ul>
+        <li>Başlangıç Paketi: Temel web sitesi</li>
+        <li>Kurumsal Paket: Profesyonel web tasarım</li>
+        <li>E-ticaret Paketi: Online satış sitesi</li>
+        <li>Premium Paket: Özel tasarım ve geliştirme</li>
+      </ul>
+      
+      <h2>Sonuç</h2>
+      <p>Web tasarım fiyatları, yatırımınızın kalitesini belirler. Profesyonel web tasarım ajansı ile çalışarak, bütçenize uygun en iyi çözümü bulabilirsiniz.</p>
+    `,
+    image: "/bento/yazılım-geliştirme.jpg",
+    slug: "web-tasarim-fiyatlari",
+    date: "8 Aralık 2024",
+    readTime: "8 dk",
+    author: "WebCraft Ekibi",
+  },
+  {
+    id: 5,
+    category: "SEO",
+    title: "2024'te SEO Trendleri ve Arama Motoru Optimizasyonu",
+    excerpt:
+      "Güncel SEO stratejileri ve arama motoru algoritmalarında öne çıkmanın yolları.",
+    content: `
+      <p>2024 yılında SEO dünyası sürekli değişiyor. Arama motorları kullanıcı deneyimini ve içerik kalitesini daha da önemsiyor.</p>
+      
+      <h2>2024 SEO Trendleri</h2>
+      <ul>
+        <li>Core Web Vitals optimizasyonu</li>
+        <li>AI ve makine öğrenmesi etkisi</li>
+        <li>Voice search optimizasyonu</li>
+        <li>E-A-T (Expertise, Authoritativeness, Trustworthiness)</li>
+      </ul>
+      
+      <h3>Teknik SEO</h3>
+      <p>2024'te teknik SEO daha da önem kazandı. Web tasarım ve SEO hizmeti entegrasyonu kritik hale geldi.</p>
+    `,
+    image: "/bento/web-tasarım.jpg",
+    slug: "2024-seo-trendleri",
+    date: "5 Aralık 2024",
+    readTime: "6 dk",
+    author: "WebCraft Ekibi",
+  },
+];
+
+// Generate metadata for each blog post
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getBlogPost(slug);
+
+  if (!post) {
+    return {
+      title: "Blog Yazısı Bulunamadı | WebCraft",
+      description: "Aradığınız blog yazısı bulunamadı.",
+    };
+  }
+
+  return {
+    title: `${post.title} | WebCraft Blog`,
+    description: post.excerpt,
+    keywords: `${post.category.toLowerCase()}, web tasarım, SEO hizmeti, dijital pazarlama, ${post.title.toLowerCase()}`,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      locale: "tr_TR",
+      images: [
+        {
+          url: post.image,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+    },
+  };
+}
+
+const getBlogPost = (slug: string) => {
   return blogPosts.find((post) => post.slug === slug);
 };
 
@@ -366,7 +471,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </section>
       </main>
 
-      <Footer />
+      <Suspense fallback={<SectionSkeleton height="h-64" />}>
+        <Footer />
+      </Suspense>
     </>
   );
 }

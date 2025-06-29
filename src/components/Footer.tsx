@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Instagram, Linkedin, Twitter, Facebook } from "lucide-react";
 
 const Footer = () => {
@@ -29,11 +30,11 @@ const Footer = () => {
   ];
 
   const navigationLinks = [
-    { name: "Çalışmalarımız", href: "/work" },
+    { name: "Çalışmalarımız", href: "/islerimiz" },
     { name: "Hizmetlerimiz", href: "/hizmetler" },
-    { name: "Hakkımızda", href: "/about" },
+    { name: "Hakkımızda", href: "/hakkimizda" },
     { name: "Blog", href: "/blog" },
-    { name: "İletişim", href: "/contact" },
+    { name: "İletişim", href: "/iletisim" },
   ];
 
   return (
@@ -63,14 +64,18 @@ const Footer = () => {
             <div className="mb-6">
               <Link href="/" className="inline-block group">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-[#f84525] rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
-                    <span className="text-white font-bold text-lg md:text-xl">
-                      W
-                    </span>
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-[#f84525] rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 overflow-hidden">
+                    <Image
+                      src="/webcraftLogo.png"
+                      alt="WebCraft Logo"
+                      width={48}
+                      height={48}
+                      className="w-full h-full object-contain p-1"
+                    />
                   </div>
                   <div>
                     <h3 className="text-white font-bold text-xl md:text-2xl tracking-tight">
-                      WEBCRAFT
+                      WebCraft
                     </h3>
                   </div>
                 </div>
@@ -207,7 +212,7 @@ const Footer = () => {
       </div>
 
       {/* Large watermark */}
-      <div className="watermark text-[#232221] opacity-5">W</div>
+      <div className="watermark text-[#232221] opacity-5">WebCraft</div>
     </footer>
   );
 };
