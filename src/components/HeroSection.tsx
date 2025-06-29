@@ -13,6 +13,7 @@ export default function HeroSection() {
         className="absolute right-4 md:right-56 top-1/3 z-10 w-8 h-8 md:w-12 md:h-12"
         fill="none"
         viewBox="0 0 60 60"
+        aria-hidden="true"
       >
         <g>
           <circle cx="6" cy="6" r="2" fill="#f84525" />
@@ -36,7 +37,7 @@ export default function HeroSection() {
           </div>
           <div className="ml-8 md:ml-16 lg:ml-20">
             <h1
-              className="font-extrabold text-[1.8rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] xl:text-[4rem] leading-[1.1] mb-8 text-left font-display max-w-3xl"
+              className="hero-critical font-extrabold text-[1.8rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] xl:text-[4rem] leading-[1.1] mb-8 text-left max-w-3xl"
               style={{
                 letterSpacing: "-0.01em",
               }}
@@ -47,7 +48,8 @@ export default function HeroSection() {
               <br />
               Ajansı
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-white/80 mb-10 max-w-2xl text-left font-body leading-relaxed">
+            {/* Critical LCP element - optimized for faster rendering */}
+            <p className="hero-text mb-10 max-w-2xl text-left">
               Profesyonel <strong>web tasarım</strong>,{" "}
               <strong>SEO hizmeti</strong> ve{" "}
               <strong>sosyal medya yönetimi</strong> ile markanızı dijital
@@ -58,12 +60,14 @@ export default function HeroSection() {
               <Link
                 href="/iletisim"
                 className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-sm md:text-base uppercase tracking-wider"
+                prefetch={true}
               >
                 ÜCRETSİZ TEKLİF AL
               </Link>
               <Link
                 href="/hakkimizda"
                 className="border border-white text-white hover:bg-white hover:text-black font-bold py-3 px-8 rounded-full transition-all duration-300 text-sm md:text-base uppercase tracking-wider"
+                prefetch={true}
               >
                 BİZİ TANIYIN
               </Link>
@@ -82,7 +86,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      {/* Rotating Cube */}
+      {/* Rotating Cube - loaded with lower priority */}
       <div className="absolute right-16 md:right-32 lg:right-40 bottom-24 md:bottom-32 z-10">
         <RotatingCube />
       </div>

@@ -1,22 +1,15 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 // Optimized font loading with better performance
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
   display: "swap",
   preload: true,
   fallback: ["system-ui", "arial"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "swap",
-  preload: true,
-  fallback: ["monospace"],
+  variable: "--font-montserrat",
 });
 
 export const viewport: Viewport = {
@@ -185,14 +178,65 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="tr" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="tr" className={montserrat.variable}>
       <head>
+        {/* Preload critical resources */}
+        <link
+          rel="preload"
+          href="/webcraftLogo.png"
+          as="image"
+          type="image/png"
+        />
+        <link
+          rel="preload"
+          href="/bento/center1.webp"
+          as="image"
+          type="image/webp"
+        />
+
+        {/* Preconnect to external domains */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+
+        {/* Critical CSS for hero section */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+            /* Critical hero styles for faster LCP */
+            .hero-critical {
+              font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+              font-weight: 700;
+              letter-spacing: -0.01em;
+              line-height: 1.1;
+              color: #ffffff;
+            }
+            .hero-text {
+              font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+              font-size: 1.25rem;
+              line-height: 1.6;
+              color: rgba(255, 255, 255, 0.8);
+              contain: layout style paint;
+            }
+            @media (min-width: 640px) {
+              .hero-text { font-size: 1.125rem; }
+            }
+            @media (min-width: 768px) {
+              .hero-text { font-size: 1.25rem; }
+            }
+          `,
+          }}
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className={`${geistSans.className} antialiased`}>{children}</body>
+      <body className={`${montserrat.className} antialiased`}>{children}</body>
     </html>
   );
 }
