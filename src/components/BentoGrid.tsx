@@ -1,10 +1,8 @@
 "use client";
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
-// Lazy load the heavy Three.js component
-const RotatingEarth = lazy(() => import("./RotatingEarth"));
+import RotatingEarth from "./RotatingEarth";
 
 interface ServiceCardProps {
   title: string;
@@ -100,13 +98,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   );
 };
 
-// Loading fallback for RotatingEarth
-const EarthFallback = () => (
-  <div className="w-full h-full flex items-center justify-center">
-    <div className="w-[200px] h-[200px] rounded-full border-4 border-red-500/20 border-t-red-500 animate-spin" />
-  </div>
-);
-
 export default function BentoGrid() {
   const services = [
     {
@@ -189,9 +180,7 @@ export default function BentoGrid() {
 
         {/* Center rotating Earth with lazy loading */}
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[274px] h-[274px] z-10 hidden md:block">
-          <Suspense fallback={<EarthFallback />}>
-            <RotatingEarth className="w-full h-full" />
-          </Suspense>
+          <RotatingEarth className="w-full h-full" />
         </div>
 
         {/* Bottom row */}
