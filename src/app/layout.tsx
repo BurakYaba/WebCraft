@@ -10,6 +10,7 @@ const montserrat = Montserrat({
   preload: true,
   fallback: ["system-ui", "arial"],
   variable: "--font-montserrat",
+  adjustFontFallback: true,
 });
 
 export const viewport: Viewport = {
@@ -213,19 +214,34 @@ export default function RootLayout({
               letter-spacing: -0.01em;
               line-height: 1.1;
               color: #ffffff;
+              /* Performance optimizations */
+              contain: layout style paint;
+              will-change: auto;
+              backface-visibility: hidden;
+              transform: translateZ(0);
             }
             .hero-text {
               font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
               font-size: 1.25rem;
               line-height: 1.6;
               color: rgba(255, 255, 255, 0.8);
+              /* Performance optimizations */
               contain: layout style paint;
+              will-change: auto;
+              backface-visibility: hidden;
+              transform: translateZ(0);
             }
             @media (min-width: 640px) {
               .hero-text { font-size: 1.125rem; }
             }
             @media (min-width: 768px) {
               .hero-text { font-size: 1.25rem; }
+            }
+            /* Optimize watermark for better performance */
+            .watermark {
+              contain: layout style paint;
+              will-change: auto;
+              transform: translateZ(0);
             }
           `,
           }}
