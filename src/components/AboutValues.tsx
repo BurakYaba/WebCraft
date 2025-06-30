@@ -161,7 +161,7 @@ export default function AboutValues() {
             </div>
 
             {/* Rotating Elements */}
-            <div className="absolute inset-0 flex items-center justify-center animate-spin-slow">
+            <div className="absolute inset-0 flex items-center justify-center animate-spin-slow-2d">
               {values.map((_, index) => (
                 <div
                   key={index}

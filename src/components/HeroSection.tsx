@@ -72,17 +72,6 @@ export default function HeroSection() {
                 BİZİ TANIYIN
               </Link>
             </div>
-            <div className="text-sm text-white/60">
-              <p>
-                ✓ <strong>Web tasarım fiyatları</strong> için hemen teklif alın
-              </p>
-              <p>
-                ✓ <strong>SEO hizmeti</strong> ile arama motorlarında öne çıkın
-              </p>
-              <p>
-                ✓ <strong>Sosyal medya yönetimi</strong> ile markanızı büyütün
-              </p>
-            </div>
           </div>
         </div>
       </div>
