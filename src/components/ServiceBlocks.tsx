@@ -112,7 +112,7 @@ export default function ServiceBlocks() {
             {/* Background text */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div
-                className={`text-[4rem] sm:text-[5rem] md:text-[7rem] lg:text-[10rem] xl:text-[12rem] 2xl:text-[15rem] font-bold text-white/5 transition-all duration-2000 whitespace-nowrap ${
+                className={`text-[4rem] sm:text-[5rem] md:text-[7rem] lg:text-[10rem] xl:text-[12rem] 2xl:text-[15rem] font-bold text-white/5 transition-all duration-1000 transition-linear whitespace-nowrap ${
                   visibleBlocks.has(service.id)
                     ? "opacity-100 transform scale-100"
                     : "opacity-0 transform scale-110"
@@ -132,7 +132,7 @@ export default function ServiceBlocks() {
                   } space-y-6 sm:space-y-8`}
                 >
                   <div
-                    className={`transition-all duration-1000 delay-300 text-center sm:text-left ${
+                    className={`transition-all duration-1000 transition-linear text-center sm:text-left ${
                       visibleBlocks.has(service.id)
                         ? "opacity-100 transform translate-y-0"
                         : "opacity-0 transform translate-y-10"
@@ -154,9 +154,9 @@ export default function ServiceBlocks() {
                   } relative flex justify-center`}
                 >
                   <div
-                    className={`relative w-64 h-80 sm:w-72 sm:h-96 md:w-80 md:h-[420px] lg:h-[480px] xl:h-[520px] mx-auto transform transition-all duration-1500 ${
+                    className={`relative w-64 h-80 sm:w-72 sm:h-96 md:w-80 md:h-[420px] lg:h-[480px] xl:h-[520px] mx-auto transform transition-all duration-1000 transition-linear ${
                       visibleBlocks.has(service.id)
-                        ? `opacity-100 ${
+                        ? `${
                             index % 2 === 0
                               ? "rotate-6 sm:rotate-8 lg:rotate-12"
                               : "-rotate-6 sm:-rotate-8 lg:-rotate-12"
@@ -166,7 +166,7 @@ export default function ServiceBlocks() {
                   >
                     {/* Image container with clip-path animation */}
                     <div
-                      className={`w-full h-full overflow-hidden transition-all duration-1500 delay-500 rounded-lg ${
+                      className={`w-full h-full overflow-hidden transition-all duration-1000 transition-linear rounded-lg ${
                         visibleBlocks.has(service.id)
                           ? "clip-path-full"
                           : "clip-path-zero"
@@ -178,7 +178,7 @@ export default function ServiceBlocks() {
                       }}
                     >
                       <div
-                        className={`w-full h-full transform transition-all duration-2000 delay-700 ${
+                        className={`w-full h-full transform transition-all duration-1000 transition-linear ${
                           visibleBlocks.has(service.id)
                             ? `${
                                 index % 2 === 0

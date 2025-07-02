@@ -43,7 +43,7 @@ const HeroSection = memo(function HeroSection() {
           >
             PROFESYONEL WEB TASARIM AJANSI
           </div>
-          <div className="ml-8 md:ml-16 lg:ml-20 w-full">
+          <div className="w-full md:ml-16 lg:ml-20">
             <h1
               className="hero-critical font-extrabold text-[1.8rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] xl:text-[4rem] leading-[1.1] mb-8 text-left max-w-3xl"
               style={{
@@ -57,24 +57,24 @@ const HeroSection = memo(function HeroSection() {
               Ajansı
             </h1>
             {/* Critical LCP element - optimized for faster rendering */}
-            <p className="hero-text mb-10 max-w-2xl text-left">
+            <p className="hero-text mb-10 max-w-full sm:max-w-2xl text-center sm:text-left">
               Profesyonel <strong>web tasarım</strong>,{" "}
               <strong>SEO hizmeti</strong> ve{" "}
               <strong>sosyal medya yönetimi</strong> ile markanızı dijital
               dünyada öne çıkarıyoruz. Kurumsal web sitesi tasarımı ve dijital
               pazarlama çözümleri sunuyoruz.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 text-left">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8 text-center sm:text-left w-full sm:w-auto">
               <Link
                 href="/iletisim"
-                className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-sm md:text-base uppercase tracking-wider"
+                className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-sm md:text-base uppercase tracking-wider w-full sm:w-auto"
                 prefetch={true}
               >
                 ÜCRETSİZ TEKLİF AL
               </Link>
               <Link
                 href="/hakkimizda"
-                className="border border-white text-white hover:bg-white hover:text-black font-bold py-3 px-8 rounded-full transition-all duration-300 text-sm md:text-base uppercase tracking-wider"
+                className="border border-white text-white hover:bg-white hover:text-black font-bold py-3 px-8 rounded-full transition-all duration-300 text-sm md:text-base uppercase tracking-wider w-full sm:w-auto"
                 prefetch={true}
               >
                 BİZİ TANIYIN
