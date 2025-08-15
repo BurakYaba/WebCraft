@@ -274,14 +274,21 @@ export default function Header() {
                   info@webcraft.com
                 </a>
                 <a
-                  href="tel:+905551112233"
+                  href="tel:+905079441715"
                   className="text-[18px] text-red-500 underline underline-offset-4 mb-1 font-medium"
                 >
-                  +90 555 111 22 33
+                  +90 (507) 944 17 15
+                </a>
+                <a
+                  href="tel:+905318335986"
+                  className="text-[18px] text-red-500 underline underline-offset-4 mb-1 font-medium"
+                >
+                  +90 (531) 833 59 86
                 </a>
                 <div className="mt-2 text-[#6f6f6f] text-[16px] max-w-xs md:text-right">
-                  123 WebCraft Cad., Kat 5<br />
-                  Istanbul, Turkiye
+                  Babataşı Mah. 778 Sokak No: 32/A
+                  <br />
+                  Fethiye - Muğla, Türkiye
                 </div>
                 <div className="flex gap-6 mt-8 text-[1.7rem] opacity-70 hover:opacity-100 transition-opacity duration-500">
                   {/* Instagram */}
@@ -327,14 +334,21 @@ export default function Header() {
                   info@webcraft.com
                 </a>
                 <a
-                  href="tel:+905551112233"
+                  href="tel:+905079441715"
                   className="text-[18px] text-red-500 underline underline-offset-4 mb-1 font-medium"
                 >
-                  +90 555 111 22 33
+                  +90 (507) 944 17 15
+                </a>
+                <a
+                  href="tel:+905318335986"
+                  className="text-[18px] text-red-500 underline underline-offset-4 mb-1 font-medium"
+                >
+                  +90 (531) 833 59 86
                 </a>
                 <div className="mt-2 text-[#6f6f6f] text-[16px] max-w-xs text-right">
-                  123 WebCraft Cad., Kat 5<br />
-                  Istanbul, Turkiye
+                  Babataşı Mah. 778 Sokak No: 32/A
+                  <br />
+                  Fethiye - Muğla, Türkiye
                 </div>
                 <div className="flex gap-6 mt-8 text-[1.7rem] opacity-70 hover:opacity-100 transition-opacity duration-500">
                   {/* Instagram */}

@@ -155,10 +155,17 @@ const Footer = () => {
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
               </a>
               <a
-                href="tel:+905001234567"
+                href="tel:+905079441715"
                 className="group block text-[#f84525] text-base md:text-lg font-medium hover:text-white transition-colors duration-300 relative"
               >
-                +90 (500) 123 45 67
+                +90 (507) 944 17 15
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
+              </a>
+              <a
+                href="tel:+905318335986"
+                className="group block text-[#f84525] text-base md:text-lg font-medium hover:text-white transition-colors duration-300 relative"
+              >
+                +90 (531) 833 59 86
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
               </a>
             </div>
@@ -166,13 +173,13 @@ const Footer = () => {
             {/* Address */}
             <div className="text-white/50 text-sm leading-relaxed">
               <p>
-                Maslak Mahallesi
+                Babataşı Mahallesi
                 <br />
-                Büyükdere Caddesi No: 123
+                778 Sokak No: 32/A
                 <br />
-                Kat: 5, Sarıyer
+                Fethiye - Muğla
                 <br />
-                34485 İstanbul, Türkiye
+                Türkiye
               </p>
             </div>
           </div>

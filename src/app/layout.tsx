@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     default: "WebCraft - Web Tasarım ve Dijital Pazarlama Ajansı",
     template: "%s | WebCraft",
   },
+  icons: {
+    icon: [
+      { url: "/webcraftLogo.png", sizes: "32x32", type: "image/png" },
+      { url: "/webcraftLogo.png", sizes: "16x16", type: "image/png" },
+    ],
+    shortcut: "/webcraftLogo.png",
+    apple: "/webcraftLogo.png",
+  },
   description:
     "Profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri. Web tasarım fiyatları ve kurumsal web sitesi tasarımı hizmetleri.",
   keywords:
@@ -91,7 +99,7 @@ export const metadata: Metadata = {
     "apple-mobile-web-app-status-bar-style": "default",
     "apple-mobile-web-app-title": "WebCraft",
     "application-name": "WebCraft",
-    "msapplication-TileImage": "/icon-192.png",
+    "msapplication-TileImage": "/webcraftLogo.png",
   },
 };
 
@@ -107,15 +115,14 @@ const structuredData = {
   foundingDate: "2015",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Levent Mahallesi, Büyükdere Caddesi No: 123, Kat: 5",
-    addressLocality: "Beşiktaş",
-    addressRegion: "İstanbul",
-    postalCode: "34330",
+    streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
+    addressLocality: "Fethiye",
+    addressRegion: "Muğla",
     addressCountry: "TR",
   },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+90-212-123-45-67",
+    telephone: "+90-507-944-17-15",
     contactType: "customer service",
     availableLanguage: "Turkish",
   },
@@ -181,6 +188,22 @@ export default function RootLayout({
   return (
     <html lang="tr" className={montserrat.variable}>
       <head>
+        {/* Favicon */}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/webcraftLogo.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/webcraftLogo.png"
+        />
+        <link rel="shortcut icon" href="/webcraftLogo.png" />
+        <link rel="apple-touch-icon" href="/webcraftLogo.png" />
+
         {/* Preload critical resources */}
         <link
           rel="preload"

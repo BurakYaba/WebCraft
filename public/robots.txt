@@ -41,4 +41,5 @@ Disallow: /wp-login.php
 # Allow important files
 Allow: /sitemap.xml
 Allow: /robots.txt
-Allow: /manifest.json 
+Allow: /manifest.json
+Allow: /webcraftLogo.png 

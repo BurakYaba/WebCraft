@@ -184,18 +184,18 @@ export default function ContactPage() {
               </h3>
               <p className="text-gray-600 mb-2">
                 <a
-                  href="tel:+902121234567"
+                  href="tel:+905079441715"
                   className="hover:text-red-600 transition-colors"
                 >
-                  +90 (212) 123 45 67
+                  +90 (507) 944 17 15
                 </a>
               </p>
               <p className="text-gray-600">
                 <a
-                  href="tel:+905321234567"
+                  href="tel:+905318335986"
                   className="hover:text-red-600 transition-colors"
                 >
-                  +90 (532) 123 45 67
+                  +90 (531) 833 59 86
                 </a>
               </p>
             </div>
@@ -209,11 +209,11 @@ export default function ContactPage() {
                 Adres
               </h3>
               <p className="text-gray-600">
-                Levent Mahallesi, Büyükdere Caddesi
+                Babataşı Mahallesi, 778 Sokak
                 <br />
-                No: 123, Kat: 5
+                No: 32/A
                 <br />
-                Beşiktaş, İstanbul
+                Fethiye - Muğla
               </p>
             </div>
           </div>
