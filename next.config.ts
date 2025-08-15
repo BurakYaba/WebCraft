@@ -35,7 +35,7 @@ const nextConfig: NextConfig = {
   //   return config;
   // },
 
-  // Security headers
+  // Security and cache headers
   async headers() {
     return [
       {
@@ -76,6 +76,34 @@ const nextConfig: NextConfig = {
       {
         source:
           "/:path*.(js|css|png|jpg|jpeg|gif|webp|avif|svg|ico|woff|woff2|ttf|eot)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      // Favicon and icon headers
+      {
+        source: "/favicon.ico",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/icon.png",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/apple-icon.png",
         headers: [
           {
             key: "Cache-Control",

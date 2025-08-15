@@ -28,11 +28,32 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/webcraftLogo.png", sizes: "32x32", type: "image/png" },
       { url: "/webcraftLogo.png", sizes: "16x16", type: "image/png" },
+      { url: "/webcraftLogo.png", sizes: "32x32", type: "image/png" },
+      { url: "/webcraftLogo.png", sizes: "48x48", type: "image/png" },
     ],
     shortcut: "/webcraftLogo.png",
-    apple: "/webcraftLogo.png",
+    apple: [{ url: "/webcraftLogo.png", sizes: "180x180", type: "image/png" }],
+    other: [
+      {
+        rel: "icon",
+        url: "/webcraftLogo.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/webcraftLogo.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/webcraftLogo.png",
+        sizes: "48x48",
+        type: "image/png",
+      },
+    ],
   },
   description:
     "Profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri. Web tasarım fiyatları ve kurumsal web sitesi tasarımı hizmetleri.",
@@ -188,7 +209,13 @@ export default function RootLayout({
   return (
     <html lang="tr" className={montserrat.variable}>
       <head>
-        {/* Favicon */}
+        {/* Favicon - Multiple formats for maximum compatibility */}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/webcraftLogo.png"
+        />
         <link
           rel="icon"
           type="image/png"
@@ -198,11 +225,13 @@ export default function RootLayout({
         <link
           rel="icon"
           type="image/png"
-          sizes="16x16"
+          sizes="48x48"
           href="/webcraftLogo.png"
         />
         <link rel="shortcut icon" href="/webcraftLogo.png" />
-        <link rel="apple-touch-icon" href="/webcraftLogo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/webcraftLogo.png" />
+        <link rel="icon" href="/webcraftLogo.png" />
+        <link rel="mask-icon" href="/webcraftLogo.png" color="#f84525" />
 
         {/* Preload critical resources */}
         <link
