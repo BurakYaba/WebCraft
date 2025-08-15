@@ -37,34 +37,85 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  // About Page Schema for SEO
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "WebCraft Hakkında",
+    description:
+      "2015 yılından bu yana web tasarım, SEO ve dijital pazarlama alanlarında uzmanlaşmış WebCraft ajansı",
+    url: "https://webcraft.com.tr/hakkimizda",
+    mainEntity: {
+      "@type": "Organization",
+      name: "WebCraft",
+      alternateName: "WebCraft Web Tasarım Ajansı",
+      description:
+        "Profesyonel web tasarım, SEO hizmeti ve dijital pazarlama çözümleri sunan ajans",
+      foundingDate: "2015",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
+        addressLocality: "Fethiye",
+        addressRegion: "Muğla",
+        addressCountry: "TR",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+90-507-944-17-15",
+        contactType: "customer service",
+        availableLanguage: "Turkish",
+      },
+      email: "info@webcraft.com.tr",
+      url: "https://webcraft.com.tr",
+      knowsAbout: [
+        "Web Tasarım",
+        "SEO",
+        "Dijital Pazarlama",
+        "Sosyal Medya Yönetimi",
+        "E-ticaret",
+        "Mobil Uygulama Geliştirme",
+      ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Web Tasarım ve Dijital Pazarlama Hizmetleri",
+      },
+    },
+  };
+
   return (
-    <main className="min-h-screen bg-white">
-      <Header />
-      <AboutHero />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
+      <main className="min-h-screen bg-white">
+        <Header />
+        <AboutHero />
 
-      <Suspense fallback={<SectionSkeleton height="h-96" />}>
-        <AboutStatement />
-      </Suspense>
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <AboutStatement />
+        </Suspense>
 
-      <Suspense fallback={<SectionSkeleton height="h-96" />}>
-        <AboutValues />
-      </Suspense>
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <AboutValues />
+        </Suspense>
 
-      <Suspense fallback={<SectionSkeleton height="h-screen" />}>
-        <AboutStudio />
-      </Suspense>
+        <Suspense fallback={<SectionSkeleton height="h-screen" />}>
+          <AboutStudio />
+        </Suspense>
 
-      <Suspense fallback={<SectionSkeleton height="h-96" />}>
-        <AboutTestimonials />
-      </Suspense>
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <AboutTestimonials />
+        </Suspense>
 
-      <Suspense fallback={<SectionSkeleton height="h-96" />}>
-        <AboutAwards />
-      </Suspense>
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <AboutAwards />
+        </Suspense>
 
-      <Suspense fallback={<SectionSkeleton height="h-64" />}>
-        <Footer />
-      </Suspense>
-    </main>
+        <Suspense fallback={<SectionSkeleton height="h-64" />}>
+          <Footer />
+        </Suspense>
+      </main>
+    </>
   );
 }

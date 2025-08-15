@@ -26,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/islerimiz`,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/blog`,
@@ -67,6 +67,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/2024-seo-trendleri`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/minimalist-tasarim-yaklasimlari`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/online-magaza-kurulumu`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/guclu-marka-imaji-olusturma`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/web-sitesi-guvenligi`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/web-analitik-araclari`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,

@@ -24,7 +24,7 @@ const blogPosts = [
     category: "Web Tasarım",
     title: "SEO Uyumlu Web Tasarımı ile Google'da Üst Sıralarda Yer Alın",
     excerpt:
-      "SEO uyumlu web tasarımı ile Google'da üst sıralarda yer alın. Profesyonel web tasarım ajansı ile organik trafiğinizi artırın ve dijital pazarlama başarınızı katlayın.",
+      "SEO uyumlu web tasarımı ile Google'da üst sıralarda yer alın. Profesyonel web tasarım ajansı ile organik trafiğinızı artırın ve dijital pazarlama başarınızı katlayın.",
     content: `
       <p>Günümüzde başarılı bir web sitesi sadece güzel görünmekle kalmaz, aynı zamanda arama motorlarında üst sıralarda yer alarak hedef kitlenize ulaşmanızı sağlar. SEO uyumlu web tasarımı, modern dijital pazarlama stratejilerinin temel taşlarından biridir ve işletmenizin online başarısını doğrudan etkiler.</p>
       
@@ -3005,15 +3005,65 @@ export async function generateMetadata({
     };
   }
 
+  // Generate keywords based on post content and category
+  const baseKeywords = [
+    post.category.toLowerCase(),
+    "web tasarım",
+    "dijital pazarlama",
+    "SEO",
+    "WebCraft",
+  ];
+
+  // Add specific keywords based on category
+  const categoryKeywords = {
+    "Web Tasarım": ["web tasarım", "web sitesi", "responsive tasarım", "UI/UX"],
+    "SEO Hizmeti": [
+      "SEO",
+      "arama motoru optimizasyonu",
+      "Google",
+      "organik trafik",
+    ],
+    "Dijital Pazarlama": [
+      "dijital pazarlama",
+      "sosyal medya",
+      "online pazarlama",
+    ],
+    "E-ticaret": ["e-ticaret", "online mağaza", "dijital satış"],
+    "Mobil Uygulama": ["mobil uygulama", "iOS", "Android", "app geliştirme"],
+    "Web Güvenliği": ["web güvenliği", "siber güvenlik", "SSL", "güvenlik"],
+    "Web Analitik": ["web analitik", "Google Analytics", "veri analizi"],
+    "Marka Kimliği": ["marka kimliği", "branding", "kurumsal kimlik"],
+  };
+
+  const specificKeywords =
+    categoryKeywords[post.category as keyof typeof categoryKeywords] || [];
+  const allKeywords = [
+    ...baseKeywords,
+    ...specificKeywords,
+    ...post.title.toLowerCase().split(" "),
+  ].join(", ");
+
   return {
     title: `${post.title} | WebCraft Blog`,
     description: post.excerpt,
-    keywords: `${post.category.toLowerCase()}, web tasarım, SEO hizmeti, dijital pazarlama, ${post.title.toLowerCase()}`,
+    keywords: allKeywords,
+    authors: [{ name: "WebCraft" }],
+    creator: "WebCraft",
+    publisher: "WebCraft",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+    metadataBase: new URL("https://webcraft.com.tr"),
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      type: "article",
-      locale: "tr_TR",
+      url: `https://webcraft.com.tr/blog/${post.slug}`,
+      siteName: "WebCraft",
       images: [
         {
           url: post.image,
@@ -3022,14 +3072,48 @@ export async function generateMetadata({
           alt: post.title,
         },
       ],
+      locale: "tr_TR",
+      type: "article",
+      publishedTime: post.date,
+      authors: ["WebCraft"],
+      tags: [post.category, "web tasarım", "dijital pazarlama"],
     },
     twitter: {
       card: "summary_large_image",
+      site: "@webcraft",
+      creator: "@webcraft",
       title: post.title,
       description: post.excerpt,
       images: [post.image],
     },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    verification: {
+      google: "your-google-verification-code",
+    },
+    other: {
+      "article:published_time": post.date,
+      "article:author": "WebCraft",
+      "article:section": post.category,
+      "article:tag": [post.category, "web tasarım", "dijital pazarlama"],
+    },
   };
+}
+
+// Generate static params for all blog posts
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
 const getBlogPost = (slug: string) => {

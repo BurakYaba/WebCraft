@@ -156,8 +156,42 @@ const blogPosts = [
 ];
 
 const BlogPage = () => {
+  // Blog Listing Schema for SEO
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "WebCraft Blog",
+    description:
+      "Web tasarım, SEO ve dijital pazarlama konularında uzman görüşleri ve rehberler",
+    url: "https://webcraft.com.tr/blog",
+    publisher: {
+      "@type": "Organization",
+      name: "WebCraft",
+      url: "https://webcraft.com.tr",
+    },
+    blogPost: blogPosts.map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.excerpt,
+      author: {
+        "@type": "Organization",
+        name: "WebCraft",
+      },
+      datePublished: post.date,
+      dateModified: post.date,
+      url: `https://webcraft.com.tr/blog/${post.slug}`,
+      image: post.image,
+      articleSection: post.category,
+      keywords: post.category,
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       <Header />
 
       <main className="min-h-screen bg-[#181716]">

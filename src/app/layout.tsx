@@ -124,7 +124,7 @@ export const metadata: Metadata = {
   },
 };
 
-// Structured Data for Organization
+// Structured Data for Organization and Local Business
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -195,6 +195,132 @@ const structuredData = {
           name: "Dijital Pazarlama",
           description:
             "Kapsamlı dijital pazarlama ve reklam yönetimi hizmetleri",
+        },
+      },
+    ],
+  },
+};
+
+// Local Business Schema for Fethiye Location
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "WebCraft",
+  alternateName: "WebCraft Web Tasarım Ajansı",
+  description: "Profesyonel web tasarım, SEO ve dijital pazarlama ajansı",
+  url: "https://webcraft.com.tr",
+  logo: "https://webcraft.com.tr/webcraftLogo.png",
+  image: "https://webcraft.com.tr/webcraftLogo.png",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
+    addressLocality: "Fethiye",
+    addressRegion: "Muğla",
+    postalCode: "48300",
+    addressCountry: "TR",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "36.6213",
+    longitude: "29.1164",
+  },
+  telephone: "+90-507-944-17-15",
+  email: "info@webcraft.com.tr",
+  openingHours: "Mo-Fr 09:00-18:00",
+  priceRange: "$$",
+  paymentAccepted: "Cash, Credit Card, Bank Transfer",
+  areaServed: {
+    "@type": "City",
+    name: "Fethiye",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Web Tasarım ve Dijital Pazarlama Hizmetleri",
+  },
+  serviceArea: {
+    "@type": "Country",
+    name: "Turkey",
+  },
+  category: "Web Design Agency",
+  knowsAbout: [
+    "Web Tasarım",
+    "SEO",
+    "Dijital Pazarlama",
+    "Sosyal Medya Yönetimi",
+    "E-ticaret",
+    "Mobil Uygulama Geliştirme",
+  ],
+};
+
+// Service Schema for Detailed Service Descriptions
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Web Tasarım ve Dijital Pazarlama Hizmetleri",
+  description:
+    "Profesyonel web tasarım, SEO, sosyal medya yönetimi ve dijital pazarlama çözümleri",
+  provider: {
+    "@type": "Organization",
+    name: "WebCraft",
+    url: "https://webcraft.com.tr",
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "Turkey",
+  },
+  serviceType: [
+    "Web Design",
+    "SEO Service",
+    "Digital Marketing",
+    "Social Media Management",
+    "E-commerce Development",
+    "Mobile App Development",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Web Tasarım ve Dijital Pazarlama Paketleri",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Web Tasarım Hizmeti",
+          description: "Modern, responsive ve SEO uyumlu web sitesi tasarımı",
+          serviceOutput: "Profesyonel web sitesi",
+          serviceAudience: "İşletmeler ve kurumlar",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "SEO Hizmeti",
+          description:
+            "Arama motoru optimizasyonu ile Google'da üst sıralarda yer alma",
+          serviceOutput: "Arama motorlarında üst sıralarda yer alma",
+          serviceAudience: "Online görünürlük isteyen işletmeler",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Sosyal Medya Yönetimi",
+          description:
+            "Sosyal platformlarda marka varlığı ve müşteri etkileşimi",
+          serviceOutput: "Güçlü sosyal medya varlığı",
+          serviceAudience: "Sosyal medyada aktif olmak isteyen markalar",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Dijital Pazarlama",
+          description:
+            "Kapsamlı dijital pazarlama stratejileri ve kampanya yönetimi",
+          serviceOutput: "Artırılmış online satış ve marka bilinirliği",
+          serviceAudience: "Dijital büyüme hedefleyen işletmeler",
         },
       },
     ],
@@ -302,6 +428,16 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
         />
       </head>
       <body className={`${montserrat.className} antialiased`}>{children}</body>

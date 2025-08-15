@@ -140,7 +140,7 @@ const BlogSection = () => {
 
         {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[6.666%] gap-y-32 md:gap-y-40 mb-20 md:mb-32">
-          {blogPosts.map((post) => (
+          {blogPosts.slice(0, 4).map((post) => (
             <article
               key={post.id}
               className={`group max-w-[560px] relative cursor-pointer transition-all duration-700 hover:transform hover:scale-[1.02] ${
