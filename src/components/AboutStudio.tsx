@@ -92,7 +92,7 @@ export default function AboutStudio() {
             {/* Description */}
             <div className="text-lg text-gray-600 leading-relaxed space-y-4">
               <p>
-                Istanbul&apos;un kalbinde, modern ve ilham verici bir ortamda
+                Fethiye&apos;nin kalbinde, modern ve ilham verici bir ortamda
                 calısıyoruz. Stüdyomuz, yaratıcılığın ve inovasyonun buluştuğu
                 bir merkez olarak tasarlandı.
               </p>
