@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function ServicesHero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,23 +64,25 @@ export default function ServicesHero() {
               : "opacity-0 transform translate-y-10"
           }`}
         >
-          <button className="group relative inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold text-xs sm:text-sm uppercase tracking-wider rounded-full hover:bg-red-500 hover:text-white transition-all duration-300">
-            <span className="hidden sm:inline">PROJELERIMIZI INCELE</span>
-            <span className="sm:hidden">PROJELER</span>
-            <svg
-              className="ml-2 sm:ml-3 w-3 h-3 sm:w-4 sm:h-4 transform group-hover:translate-x-1 transition-transform duration-300"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
+          <Link href="/islerimiz">
+            <button className="group relative inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold text-xs sm:text-sm uppercase tracking-wider rounded-full hover:bg-red-500 hover:text-white transition-all duration-300">
+              <span className="hidden sm:inline">PROJELERIMIZI INCELE</span>
+              <span className="sm:hidden">PROJELER</span>
+              <svg
+                className="ml-2 sm:ml-3 w-3 h-3 sm:w-4 sm:h-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </Link>
         </div>
 
         {/* Background large text */}

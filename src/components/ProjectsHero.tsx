@@ -1,8 +1,14 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function ProjectsHero() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-[#181716] overflow-hidden">
       {/* Background Pattern */}
@@ -17,7 +23,7 @@ export default function ProjectsHero() {
         {/* Main Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
@@ -30,7 +36,7 @@ export default function ProjectsHero() {
         <motion.p
           className="text-lg sm:text-xl lg:text-2xl text-white/70 max-w-3xl mx-auto mb-12 leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{
             duration: 0.8,
             delay: 0.2,
@@ -45,7 +51,7 @@ export default function ProjectsHero() {
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{
             duration: 0.8,
             delay: 0.4,
@@ -77,33 +83,38 @@ export default function ProjectsHero() {
             </div>
           </div>
         </motion.div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.8,
-            ease: [0.25, 0.46, 0.45, 0.94],
-          }}
-        >
-          <div className="flex flex-col items-center gap-2">
-            <span className="text-white/60 text-xs uppercase tracking-wider">
-              Kaydır
-            </span>
-            <div className="w-px h-8 bg-gradient-to-b from-white/60 to-transparent animate-pulse" />
-          </div>
-        </motion.div>
       </div>
+
+      {/* Scroll Indicator - positioned relative to the entire section */}
+      <motion.div
+        className="absolute right-2 md:right-8 bottom-8 md:bottom-24 flex flex-col items-center z-20"
+        initial={{ opacity: 0, y: -10 }}
+        animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.8,
+          ease: [0.25, 0.46, 0.45, 0.94],
+        }}
+      >
+        <div className="flex flex-col items-center gap-2">
+          <div className="w-px h-8 md:h-12 bg-white/40 mb-2"></div>
+          <span
+            className="uppercase tracking-widest text-[9px] md:text-xs text-white/70"
+            style={{ writingMode: "vertical-rl", letterSpacing: "0.2em" }}
+          >
+            KAYDIR
+          </span>
+        </div>
+      </motion.div>
 
       {/* Large Background Text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div
           className="text-[8rem] sm:text-[12rem] lg:text-[16rem] xl:text-[20rem] font-bold text-white/5 select-none"
           initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 1, scale: 1 }}
+          animate={
+            isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1.1 }
+          }
           transition={{
             duration: 1.2,
             delay: 0.3,
