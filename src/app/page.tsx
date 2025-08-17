@@ -79,7 +79,7 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#181716] relative overflow-hidden">
+    <main className="min-h-screen bg-[#181716] relative overflow-hidden z-0">
       <Header />
       <HeroSection />
 

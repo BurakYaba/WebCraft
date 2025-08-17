@@ -5,7 +5,7 @@ import BentoGrid from "./BentoGrid";
 
 export default function ServicesSection() {
   return (
-    <section className="relative bg-white py-20 md:py-32">
+    <section className="relative bg-white py-20 md:py-32 z-10">
       <div className="relative z-10 w-full">
         <motion.div
           className="text-center mb-16 md:mb-24"

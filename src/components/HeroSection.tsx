@@ -35,7 +35,7 @@ const HeroSection = memo(function HeroSection() {
       </svg>
 
       {/* Left-aligned Content Container */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-16 md:px-20 lg:px-24">
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-16 md:px-20 lg:px-24">
         <div className="flex flex-col items-start justify-center max-w-4xl">
           <div
             className="text-red-500 font-bold tracking-[0.35em] uppercase text-[10px] md:text-xs mb-10 mt-4 md:mt-0 font-narrow ml-2 md:ml-4 text-left"
@@ -85,7 +85,7 @@ const HeroSection = memo(function HeroSection() {
       </div>
 
       {/* Rotating Cube - only rendered on desktop (sm and above) for better mobile performance */}
-      <div className="hidden sm:block absolute right-16 md:right-32 lg:right-40 bottom-24 md:bottom-32 z-10">
+      <div className="hidden sm:block absolute right-16 md:right-32 lg:right-40 bottom-24 md:bottom-32 z-20">
         <Suspense
           fallback={
             <div className="w-[100px] h-[100px] md:w-[70px] md:h-[70px]" />
@@ -96,7 +96,7 @@ const HeroSection = memo(function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute right-2 md:right-8 bottom-8 md:bottom-24 flex flex-col items-center z-10">
+      <div className="absolute right-2 md:right-8 bottom-8 md:bottom-24 flex flex-col items-center z-20">
         <div className="w-px h-8 md:h-12 bg-white/40 mb-2"></div>
         <span
           className="uppercase tracking-widest text-[9px] md:text-xs text-white/70"

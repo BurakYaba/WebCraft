@@ -56,6 +56,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         duration: duration,
         ease: [0.25, 0.46, 0.45, 0.94],
       }}
+      style={{ zIndex: 5 }}
     >
       {/* Optimized Background Image */}
       {backgroundImage && (
@@ -138,7 +139,7 @@ export default function BentoGrid() {
   ];
 
   return (
-    <div className="w-full max-w-[1200px] mx-auto px-4 py-20">
+    <div className="w-full max-w-[1200px] mx-auto px-4 py-20 relative z-10">
       <div className="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-3 md:gap-4 lg:gap-5 relative">
         {/* Top row */}
         <ServiceCard

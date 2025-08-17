@@ -86,7 +86,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full flex items-center justify-between px-8 md:px-12 py-6 md:py-8 z-30 bg-transparent">
+    <header className="fixed top-0 left-0 w-full flex items-center justify-between px-8 md:px-12 py-6 md:py-8 z-50 bg-transparent">
       {/* Logo */}
       <Link href="/" className="flex items-center gap-3 cursor-pointer">
         <Image
@@ -214,7 +214,7 @@ export default function Header() {
       {menuOpen && (
         <>
           <div
-            className="fixed inset-0 z-40 pointer-events-none"
+            className="fixed inset-0 z-[55] pointer-events-none"
             aria-hidden="true"
           >
             <div
@@ -230,7 +230,7 @@ export default function Header() {
             ></div>
           </div>
           <nav
-            className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-transparent transition-opacity duration-300 ${
+            className={`fixed inset-0 z-[60] flex flex-col items-center justify-center bg-transparent transition-opacity duration-300 ${
               showContent ? "opacity-100" : "opacity-0"
             }`}
             style={{ pointerEvents: showContent ? "auto" : "none" }}
