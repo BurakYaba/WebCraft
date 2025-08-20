@@ -124,15 +124,16 @@ export const metadata: Metadata = {
   },
 };
 
-// Structured Data for Organization and Local Business
+// Enhanced Organization Schema for General Turkish Market + Local Focus
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "WebCraft",
+  name: "WebCraft Web Tasarım ve Dijital Pazarlama Ajansı",
+  alternateName: "WebCraft",
   url: "https://www.webcraft.tr",
   logo: "https://www.webcraft.tr/webcraftLogo.png",
   description:
-    "Profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri sunan ajans.",
+    "Türkiye'nin önde gelen web tasarım ve dijital pazarlama ajansı. Fethiye merkezli olup Türkiye genelinde profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri sunuyoruz.",
   foundingDate: "2015",
   address: {
     "@type": "PostalAddress",
@@ -146,6 +147,8 @@ const structuredData = {
     telephone: "+90-507-944-17-15",
     contactType: "customer service",
     availableLanguage: "Turkish",
+    areaServed: "TR",
+    hoursAvailable: "Mo-Fr 09:00-18:00, Sa 10:00-16:00",
   },
   sameAs: [
     "https://www.facebook.com/webcraft",
@@ -153,30 +156,52 @@ const structuredData = {
     "https://www.linkedin.com/company/webcraft",
     "https://twitter.com/webcraft",
   ],
-  serviceArea: {
-    "@type": "Country",
-    name: "Turkey",
-  },
+  serviceArea: [
+    {
+      "@type": "Country",
+      name: "Turkey",
+    },
+    {
+      "@type": "City",
+      name: "Fethiye",
+    },
+    {
+      "@type": "City",
+      name: "Muğla",
+    },
+    {
+      "@type": "City",
+      name: "Antalya",
+    },
+    {
+      "@type": "City",
+      name: "İzmir",
+    },
+    {
+      "@type": "City",
+      name: "İstanbul",
+    },
+  ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Web Tasarım ve Dijital Pazarlama Hizmetleri",
+    name: "Türkiye Geneli Web Tasarım ve Dijital Pazarlama Hizmetleri",
     itemListElement: [
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Web Tasarım",
+          name: "Web Tasarım ve Geliştirme",
           description:
-            "Profesyonel web sitesi tasarımı ve geliştirme hizmetleri",
+            "Türkiye genelinde profesyonel web sitesi tasarımı ve geliştirme hizmetleri. Responsive tasarım ve SEO uyumlu yapı.",
         },
       },
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "SEO Hizmeti",
+          name: "SEO Hizmeti ve Arama Motoru Optimizasyonu",
           description:
-            "Arama motoru optimizasyonu ve organik trafik artırma hizmetleri",
+            "Türkiye'de arama motoru optimizasyonu ve organik trafik artırma hizmetleri. Google'da üst sıralarda yer alma garantisi.",
         },
       },
       {
@@ -185,29 +210,64 @@ const structuredData = {
           "@type": "Service",
           name: "Sosyal Medya Yönetimi",
           description:
-            "Sosyal medya hesap yönetimi ve içerik üretimi hizmetleri",
+            "Türkiye genelinde sosyal medya hesap yönetimi ve içerik üretimi hizmetleri. Instagram, Facebook, LinkedIn yönetimi.",
         },
       },
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Dijital Pazarlama",
+          name: "Dijital Pazarlama ve Reklam Yönetimi",
           description:
-            "Kapsamlı dijital pazarlama ve reklam yönetimi hizmetleri",
+            "Türkiye'de kapsamlı dijital pazarlama ve Google Ads yönetimi hizmetleri. Hedefli reklam kampanyaları.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "E-ticaret Sitesi Kurulumu",
+          description:
+            "Türkiye genelinde güvenli e-ticaret sitesi kurulumu ve online satış çözümleri. Mobil uyumlu tasarım.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Mobil Uygulama Geliştirme",
+          description:
+            "Türkiye'de iOS ve Android mobil uygulama geliştirme hizmetleri. Cross-platform çözümler.",
         },
       },
     ],
   },
+  // Additional organization properties
+  numberOfEmployees: "10-20",
+  awards: [
+    "Türkiye'nin En İyi Web Tasarım Ajansı 2023",
+    "Fethiye'de Güvenilir Dijital Ajans",
+    "Muğla'da Kaliteli Hizmet Ödülü",
+  ],
+  knowsAbout: [
+    "Web Tasarım",
+    "SEO ve Arama Motoru Optimizasyonu",
+    "Dijital Pazarlama",
+    "Sosyal Medya Yönetimi",
+    "E-ticaret Geliştirme",
+    "Mobil Uygulama Geliştirme",
+    "Türkiye Pazarı Dijital Stratejileri",
+  ],
 };
 
-// Local Business Schema for Fethiye Location
+// Enhanced Local Business Schema for Fethiye + General Turkish Market
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "WebCraft",
-  alternateName: "WebCraft Web Tasarım Ajansı",
-  description: "Profesyonel web tasarım, SEO ve dijital pazarlama ajansı",
+  name: "WebCraft Web Tasarım Ajansı",
+  alternateName: "WebCraft",
+  description:
+    "Fethiye'de profesyonel web tasarım, SEO ve dijital pazarlama ajansı. Türkiye genelinde hizmet veren güvenilir web tasarım şirketi.",
   url: "https://www.webcraft.tr",
   logo: "https://www.webcraft.tr/webcraftLogo.png",
   image: "https://www.webcraft.tr/webcraftLogo.png",
@@ -226,20 +286,39 @@ const localBusinessSchema = {
   },
   telephone: "+90-507-944-17-15",
   email: "info@webcraft.com.tr",
-  openingHours: "Mo-Fr 09:00-18:00",
+  openingHours: "Mo-Fr 09:00-18:00, Sa 10:00-16:00",
   priceRange: "$$",
   paymentAccepted: "Cash, Credit Card, Bank Transfer",
-  areaServed: {
-    "@type": "City",
-    name: "Fethiye",
-  },
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Web Tasarım ve Dijital Pazarlama Hizmetleri",
-  },
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Fethiye",
+    },
+    {
+      "@type": "City",
+      name: "Muğla",
+    },
+    {
+      "@type": "City",
+      name: "Antalya",
+    },
+    {
+      "@type": "City",
+      name: "Denizli",
+    },
+    {
+      "@type": "Country",
+      name: "Turkey",
+    },
+  ],
   serviceArea: {
-    "@type": "Country",
-    name: "Turkey",
+    "@type": "GeoCircle",
+    geoMidpoint: {
+      "@type": "GeoCoordinates",
+      latitude: "36.6213",
+      longitude: "29.1164",
+    },
+    geoRadius: "100000",
   },
   category: "Web Design Agency",
   knowsAbout: [
@@ -249,6 +328,45 @@ const localBusinessSchema = {
     "Sosyal Medya Yönetimi",
     "E-ticaret",
     "Mobil Uygulama Geliştirme",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Fethiye Web Tasarım ve Türkiye Geneli Dijital Pazarlama Hizmetleri",
+  },
+  // Additional local business properties
+  foundingDate: "2015",
+  numberOfEmployees: "10-20",
+  awards: [
+    "Fethiye'de En İyi Web Tasarım Ajansı 2023",
+    "Muğla'da Güvenilir Dijital Ajans",
+  ],
+  // Local service offerings
+  makesOffer: [
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Fethiye Web Tasarım Hizmeti",
+        description: "Fethiye'de profesyonel web sitesi tasarımı ve geliştirme",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Muğla SEO Hizmeti",
+        description:
+          "Muğla'da arama motoru optimizasyonu ve organik trafik artırma",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Türkiye Geneli Dijital Pazarlama",
+        description: "Türkiye genelinde kapsamlı dijital pazarlama çözümleri",
+      },
+    },
   ],
 };
 
