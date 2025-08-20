@@ -40,6 +40,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    // Legal pages
+    {
+      url: `${baseUrl}/gizlilik-politikasi`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/kullanim-sartlari`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/cerez-politikasi`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
     // Blog posts
     {
       url: `${baseUrl}/blog/seo-uyumlu-web-tasarimi`,

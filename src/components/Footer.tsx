@@ -40,7 +40,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-[#1a1918] py-16 md:py-18 overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
         <div className="absolute top-8 left-10 w-2 h-2 bg-white rounded-full animate-pulse"></div>
         <div
           className="absolute top-12 right-20 w-1 h-1 bg-[#f84525] rounded-full animate-pulse"
@@ -194,25 +194,28 @@ const Footer = () => {
             </div>
 
             {/* Legal Links */}
-            <div className="flex items-center space-x-6 md:space-x-8">
-              <a
-                href="/privacy"
-                className="text-white/50 text-sm md:text-base hover:text-white transition-colors duration-300"
+            <div className="flex items-center space-x-6 md:space-x-8 relative z-10">
+              <Link
+                href="/gizlilik-politikasi"
+                className="group block text-[#f84525] text-sm md:text-base font-medium hover:text-white transition-colors duration-300 relative"
               >
                 Gizlilik Politikası
-              </a>
-              <a
-                href="/terms"
-                className="text-white/50 text-sm md:text-base hover:text-white transition-colors duration-300"
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
+              </Link>
+              <Link
+                href="/kullanim-sartlari"
+                className="group block text-[#f84525] text-sm md:text-base font-medium hover:text-white transition-colors duration-300 relative"
               >
                 Kullanım Şartları
-              </a>
-              <a
-                href="/cookies"
-                className="text-white/50 text-sm hover:text-white transition-colors duration-300"
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
+              </Link>
+              <Link
+                href="/cerez-politikasi"
+                className="group block text-[#f84525] text-sm font-medium hover:text-white transition-colors duration-300 relative"
               >
                 Çerez Politikası
-              </a>
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
+              </Link>
             </div>
           </div>
         </div>
