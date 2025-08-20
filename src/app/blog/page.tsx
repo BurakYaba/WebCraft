@@ -163,11 +163,11 @@ const BlogPage = () => {
     name: "WebCraft Blog",
     description:
       "Web tasarım, SEO ve dijital pazarlama konularında uzman görüşleri ve rehberler",
-    url: "https://webcraft.com.tr/blog",
+    url: "https://www.webcraft.tr/blog",
     publisher: {
       "@type": "Organization",
       name: "WebCraft",
-      url: "https://webcraft.com.tr",
+      url: "https://www.webcraft.tr",
     },
     blogPost: blogPosts.map((post) => ({
       "@type": "BlogPosting",
@@ -179,7 +179,7 @@ const BlogPage = () => {
       },
       datePublished: post.date,
       dateModified: post.date,
-      url: `https://webcraft.com.tr/blog/${post.slug}`,
+      url: `https://www.webcraft.tr/blog/${post.slug}`,
       image: post.image,
       articleSection: post.category,
       keywords: post.category,

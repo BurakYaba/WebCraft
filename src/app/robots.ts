@@ -20,7 +20,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: "/",
       },
     ],
-    sitemap: "https://webcraft.com.tr/sitemap.xml",
-    host: "https://webcraft.com.tr",
+    sitemap: "https://www.webcraft.tr/sitemap.xml",
+    host: "https://www.webcraft.tr",
   };
 }

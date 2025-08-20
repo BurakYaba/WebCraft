@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://webcraft.com.tr"),
+  metadataBase: new URL("https://www.webcraft.tr"),
   alternates: {
     canonical: "/",
   },
@@ -129,8 +129,8 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "WebCraft",
-  url: "https://webcraft.com.tr",
-  logo: "https://webcraft.com.tr/webcraftLogo.png",
+  url: "https://www.webcraft.tr",
+  logo: "https://www.webcraft.tr/webcraftLogo.png",
   description:
     "Profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri sunan ajans.",
   foundingDate: "2015",
@@ -208,9 +208,9 @@ const localBusinessSchema = {
   name: "WebCraft",
   alternateName: "WebCraft Web Tasarım Ajansı",
   description: "Profesyonel web tasarım, SEO ve dijital pazarlama ajansı",
-  url: "https://webcraft.com.tr",
-  logo: "https://webcraft.com.tr/webcraftLogo.png",
-  image: "https://webcraft.com.tr/webcraftLogo.png",
+  url: "https://www.webcraft.tr",
+  logo: "https://www.webcraft.tr/webcraftLogo.png",
+  image: "https://www.webcraft.tr/webcraftLogo.png",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
@@ -262,7 +262,7 @@ const serviceSchema = {
   provider: {
     "@type": "Organization",
     name: "WebCraft",
-    url: "https://webcraft.com.tr",
+    url: "https://www.webcraft.tr",
   },
   areaServed: {
     "@type": "Country",

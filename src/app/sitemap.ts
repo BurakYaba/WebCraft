@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://webcraft.com.tr";
+  const baseUrl = "https://www.webcraft.tr";
 
   return [
     {
