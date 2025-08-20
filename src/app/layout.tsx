@@ -335,6 +335,12 @@ export default function RootLayout({
   return (
     <html lang="tr" className={montserrat.variable}>
       <head>
+        {/* Google Site Verification */}
+        <meta
+          name="google-site-verification"
+          content="GqJRNNMTgz5SQ_k9i0bUdDCxTmcYKf85eNHov3fwiog"
+        />
+
         {/* Favicon - Multiple formats for maximum compatibility */}
         <link
           rel="icon"
