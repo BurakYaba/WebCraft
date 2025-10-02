@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Montserrat } from "next/font/google";
+import Script from "next/script";
+import GTMTracker from "@/components/GTMTracker";
 import "./globals.css";
 
 // Optimized font loading with better performance
@@ -18,47 +20,37 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#f84525",
 };
 
 export const metadata: Metadata = {
   title: {
-    default: "WebCraft - Web Tasarım ve Dijital Pazarlama Ajansı",
+    default: "WebCraft - Profesyonel Web Tasarım ve SEO Hizmetleri",
     template: "%s | WebCraft",
   },
-  icons: {
-    icon: [
-      { url: "/webcraftLogo.png", sizes: "16x16", type: "image/png" },
-      { url: "/webcraftLogo.png", sizes: "32x32", type: "image/png" },
-      { url: "/webcraftLogo.png", sizes: "48x48", type: "image/png" },
-    ],
-    shortcut: "/webcraftLogo.png",
-    apple: [{ url: "/webcraftLogo.png", sizes: "180x180", type: "image/png" }],
-    other: [
-      {
-        rel: "icon",
-        url: "/webcraftLogo.png",
-        sizes: "16x16",
-        type: "image/png",
-      },
-      {
-        rel: "icon",
-        url: "/webcraftLogo.png",
-        sizes: "32x32",
-        type: "image/png",
-      },
-      {
-        rel: "icon",
-        url: "/webcraftLogo.png",
-        sizes: "48x48",
-        type: "image/png",
-      },
-    ],
-  },
   description:
-    "Profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri. Web tasarım fiyatları ve kurumsal web sitesi tasarımı hizmetleri.",
-  keywords:
-    "web tasarım, SEO hizmeti, sosyal medya yönetimi, dijital pazarlama ajansı, web tasarım fiyatları, kurumsal web sitesi tasarımı",
+    "WebCraft ile profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Fethiye ve Muğla'da güvenilir web tasarım ajansı. Modern, responsive ve SEO uyumlu web siteleri.",
+  keywords: [
+    "web tasarım",
+    "web sitesi tasarımı",
+    "SEO hizmeti",
+    "dijital pazarlama",
+    "web tasarım ajansı",
+    "Fethiye web tasarım",
+    "Muğla SEO",
+    "e-ticaret web tasarımı",
+    "kurumsal web sitesi",
+    "profesyonel web tasarım",
+    "responsive web tasarım",
+    "modern web sitesi",
+    "web geliştirme",
+    "dijital ajans",
+    "marka tasarımı",
+    "sosyal medya yönetimi",
+    "Google Ads",
+    "arama motoru optimizasyonu",
+    "web analitik",
+    "online mağaza",
+  ],
   authors: [{ name: "WebCraft" }],
   creator: "WebCraft",
   publisher: "WebCraft",
@@ -70,32 +62,34 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.webcraft.tr"),
   alternates: {
     canonical: "/",
+    languages: {
+      "tr-TR": "/",
+    },
   },
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://webcraft.com.tr",
+    url: "https://www.webcraft.tr",
     siteName: "WebCraft",
-    title: "WebCraft - Web Tasarım ve Dijital Pazarlama Ajansı",
+    title: "WebCraft - Profesyonel Web Tasarım ve SEO Hizmetleri",
     description:
-      "Profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri.",
+      "WebCraft ile profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Fethiye ve Muğla'da güvenilir web tasarım ajansı.",
     images: [
       {
         url: "/webcraftLogo.png",
         width: 1200,
         height: 630,
-        alt: "WebCraft Web Tasarım ve Dijital Pazarlama Ajansı",
+        alt: "WebCraft - Profesyonel Web Tasarım ve SEO Hizmetleri",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@webcraft",
-    creator: "@webcraft",
-    title: "WebCraft - Web Tasarım ve Dijital Pazarlama Ajansı",
+    title: "WebCraft - Profesyonel Web Tasarım ve SEO Hizmetleri",
     description:
-      "Profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri.",
+      "WebCraft ile profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Fethiye ve Muğla'da güvenilir web tasarım ajansı.",
     images: ["/webcraftLogo.png"],
+    creator: "@webcraft",
   },
   robots: {
     index: true,
@@ -105,343 +99,11 @@ export const metadata: Metadata = {
       follow: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
-      "max-snippet": -1,
+      "max-snippet":-1,
     },
   },
   verification: {
     google: "GqJRNNMTgz5SQ_k9i0bUdDCxTmcYKf85eNHov3fwiog",
-  },
-  category: "technology",
-  classification: "Web Design Agency",
-  other: {
-    "theme-color": "#f84525",
-    "msapplication-TileColor": "#f84525",
-    "apple-mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-status-bar-style": "default",
-    "apple-mobile-web-app-title": "WebCraft",
-    "application-name": "WebCraft",
-    "msapplication-TileImage": "/webcraftLogo.png",
-  },
-};
-
-// Enhanced Organization Schema for General Turkish Market + Local Focus
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "WebCraft Web Tasarım ve Dijital Pazarlama Ajansı",
-  alternateName: "WebCraft",
-  url: "https://www.webcraft.tr",
-  logo: "https://www.webcraft.tr/webcraftLogo.png",
-  description:
-    "Türkiye'nin önde gelen web tasarım ve dijital pazarlama ajansı. Fethiye merkezli olup Türkiye genelinde profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri sunuyoruz.",
-  foundingDate: "2015",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
-    addressLocality: "Fethiye",
-    addressRegion: "Muğla",
-    addressCountry: "TR",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+90-507-944-17-15",
-    contactType: "customer service",
-    availableLanguage: "Turkish",
-    areaServed: "TR",
-    hoursAvailable: "Mo-Fr 09:00-18:00, Sa 10:00-16:00",
-  },
-  sameAs: [
-    "https://www.facebook.com/webcraft",
-    "https://www.instagram.com/webcraft",
-    "https://www.linkedin.com/company/webcraft",
-    "https://twitter.com/webcraft",
-  ],
-  serviceArea: [
-    {
-      "@type": "Country",
-      name: "Turkey",
-    },
-    {
-      "@type": "City",
-      name: "Fethiye",
-    },
-    {
-      "@type": "City",
-      name: "Muğla",
-    },
-    {
-      "@type": "City",
-      name: "Antalya",
-    },
-    {
-      "@type": "City",
-      name: "İzmir",
-    },
-    {
-      "@type": "City",
-      name: "İstanbul",
-    },
-  ],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Türkiye Geneli Web Tasarım ve Dijital Pazarlama Hizmetleri",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Web Tasarım ve Geliştirme",
-          description:
-            "Türkiye genelinde profesyonel web sitesi tasarımı ve geliştirme hizmetleri. Responsive tasarım ve SEO uyumlu yapı.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "SEO Hizmeti ve Arama Motoru Optimizasyonu",
-          description:
-            "Türkiye'de arama motoru optimizasyonu ve organik trafik artırma hizmetleri. Google'da üst sıralarda yer alma garantisi.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Sosyal Medya Yönetimi",
-          description:
-            "Türkiye genelinde sosyal medya hesap yönetimi ve içerik üretimi hizmetleri. Instagram, Facebook, LinkedIn yönetimi.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Dijital Pazarlama ve Reklam Yönetimi",
-          description:
-            "Türkiye'de kapsamlı dijital pazarlama ve Google Ads yönetimi hizmetleri. Hedefli reklam kampanyaları.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "E-ticaret Sitesi Kurulumu",
-          description:
-            "Türkiye genelinde güvenli e-ticaret sitesi kurulumu ve online satış çözümleri. Mobil uyumlu tasarım.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Mobil Uygulama Geliştirme",
-          description:
-            "Türkiye'de iOS ve Android mobil uygulama geliştirme hizmetleri. Cross-platform çözümler.",
-        },
-      },
-    ],
-  },
-  // Additional organization properties
-  numberOfEmployees: "10-20",
-  awards: [
-    "Türkiye'nin En İyi Web Tasarım Ajansı 2023",
-    "Fethiye'de Güvenilir Dijital Ajans",
-    "Muğla'da Kaliteli Hizmet Ödülü",
-  ],
-  knowsAbout: [
-    "Web Tasarım",
-    "SEO ve Arama Motoru Optimizasyonu",
-    "Dijital Pazarlama",
-    "Sosyal Medya Yönetimi",
-    "E-ticaret Geliştirme",
-    "Mobil Uygulama Geliştirme",
-    "Türkiye Pazarı Dijital Stratejileri",
-  ],
-};
-
-// Enhanced Local Business Schema for Fethiye + General Turkish Market
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "WebCraft Web Tasarım Ajansı",
-  alternateName: "WebCraft",
-  description:
-    "Fethiye'de profesyonel web tasarım, SEO ve dijital pazarlama ajansı. Türkiye genelinde hizmet veren güvenilir web tasarım şirketi.",
-  url: "https://www.webcraft.tr",
-  logo: "https://www.webcraft.tr/webcraftLogo.png",
-  image: "https://www.webcraft.tr/webcraftLogo.png",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
-    addressLocality: "Fethiye",
-    addressRegion: "Muğla",
-    postalCode: "48300",
-    addressCountry: "TR",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: "36.6213",
-    longitude: "29.1164",
-  },
-  telephone: "+90-507-944-17-15",
-  email: "info@webcraft.com.tr",
-  openingHours: "Mo-Fr 09:00-18:00, Sa 10:00-16:00",
-  priceRange: "$$",
-  paymentAccepted: "Cash, Credit Card, Bank Transfer",
-  areaServed: [
-    {
-      "@type": "City",
-      name: "Fethiye",
-    },
-    {
-      "@type": "City",
-      name: "Muğla",
-    },
-    {
-      "@type": "City",
-      name: "Antalya",
-    },
-    {
-      "@type": "City",
-      name: "Denizli",
-    },
-    {
-      "@type": "Country",
-      name: "Turkey",
-    },
-  ],
-  serviceArea: {
-    "@type": "GeoCircle",
-    geoMidpoint: {
-      "@type": "GeoCoordinates",
-      latitude: "36.6213",
-      longitude: "29.1164",
-    },
-    geoRadius: "100000",
-  },
-  category: "Web Design Agency",
-  knowsAbout: [
-    "Web Tasarım",
-    "SEO",
-    "Dijital Pazarlama",
-    "Sosyal Medya Yönetimi",
-    "E-ticaret",
-    "Mobil Uygulama Geliştirme",
-  ],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Fethiye Web Tasarım ve Türkiye Geneli Dijital Pazarlama Hizmetleri",
-  },
-  // Additional local business properties
-  foundingDate: "2015",
-  numberOfEmployees: "10-20",
-  awards: [
-    "Fethiye'de En İyi Web Tasarım Ajansı 2023",
-    "Muğla'da Güvenilir Dijital Ajans",
-  ],
-  // Local service offerings
-  makesOffer: [
-    {
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: "Fethiye Web Tasarım Hizmeti",
-        description: "Fethiye'de profesyonel web sitesi tasarımı ve geliştirme",
-      },
-    },
-    {
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: "Muğla SEO Hizmeti",
-        description:
-          "Muğla'da arama motoru optimizasyonu ve organik trafik artırma",
-      },
-    },
-    {
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: "Türkiye Geneli Dijital Pazarlama",
-        description: "Türkiye genelinde kapsamlı dijital pazarlama çözümleri",
-      },
-    },
-  ],
-};
-
-// Service Schema for Detailed Service Descriptions
-const serviceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Web Tasarım ve Dijital Pazarlama Hizmetleri",
-  description:
-    "Profesyonel web tasarım, SEO, sosyal medya yönetimi ve dijital pazarlama çözümleri",
-  provider: {
-    "@type": "Organization",
-    name: "WebCraft",
-    url: "https://www.webcraft.tr",
-  },
-  areaServed: {
-    "@type": "Country",
-    name: "Turkey",
-  },
-  serviceType: [
-    "Web Design",
-    "SEO Service",
-    "Digital Marketing",
-    "Social Media Management",
-    "E-commerce Development",
-    "Mobile App Development",
-  ],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Web Tasarım ve Dijital Pazarlama Paketleri",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Web Tasarım Hizmeti",
-          description: "Modern, responsive ve SEO uyumlu web sitesi tasarımı",
-          serviceOutput: "Profesyonel web sitesi",
-          serviceAudience: "İşletmeler ve kurumlar",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "SEO Hizmeti",
-          description:
-            "Arama motoru optimizasyonu ile Google'da üst sıralarda yer alma",
-          serviceOutput: "Arama motorlarında üst sıralarda yer alma",
-          serviceAudience: "Online görünürlük isteyen işletmeler",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Sosyal Medya Yönetimi",
-          description:
-            "Sosyal platformlarda marka varlığı ve müşteri etkileşimi",
-          serviceOutput: "Güçlü sosyal medya varlığı",
-          serviceAudience: "Sosyal medyada aktif olmak isteyen markalar",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Dijital Pazarlama",
-          description:
-            "Kapsamlı dijital pazarlama stratejileri ve kampanya yönetimi",
-          serviceOutput: "Artırılmış online satış ve marka bilinirliği",
-          serviceAudience: "Dijital büyüme hedefleyen işletmeler",
-        },
-      },
-    ],
   },
 };
 
@@ -453,7 +115,7 @@ export default function RootLayout({
   return (
     <html lang="tr" className={montserrat.variable}>
       <head>
-        {/* Google Tag Manager */}
+        {/* Google Tag Manager - Must be in head for proper tracking */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -464,31 +126,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
         {/* End Google Tag Manager */}
-
-        {/* Google Analytics 4 */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-TYXDJVMSP3"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-TYXDJVMSP3', {
-                page_title: document.title,
-                page_location: window.location.href,
-                send_page_view: true,
-                custom_map: {
-                  'custom_parameter_1': 'web_design_agency',
-                  'custom_parameter_2': 'seo_service'
-                }
-              });
-            `,
-          }}
-        />
-        {/* End Google Analytics 4 */}
 
         {/* Google Site Verification */}
         <meta
@@ -512,13 +149,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <link
           rel="icon"
           type="image/png"
-          sizes="48x48"
+          sizes="96x96"
           href="/webcraftLogo.png"
         />
-        <link rel="shortcut icon" href="/webcraftLogo.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/webcraftLogo.png" />
-        <link rel="icon" href="/webcraftLogo.png" />
-        <link rel="mask-icon" href="/webcraftLogo.png" color="#f84525" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/icon-192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/icon-512.png"
+        />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="/favicon.png" />
+
+        {/* PWA Manifest */}
+        <link rel="manifest" href="/manifest.json" />
+
+        {/* Preconnect to external domains for better performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
 
         {/* Preload critical resources */}
         <link
@@ -527,81 +183,237 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           as="image"
           type="image/png"
         />
-        <link
-          rel="preload"
-          href="/bento/center1.webp"
-          as="image"
-          type="image/webp"
-        />
 
-        {/* Preconnect to external domains */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-
-        {/* Critical CSS for hero section */}
+        {/* Critical CSS for LCP optimization */}
         <style
           dangerouslySetInnerHTML={{
             __html: `
-            /* Critical hero styles for faster LCP */
-            .hero-critical {
-              font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-              font-weight: 700;
-              letter-spacing: -0.01em;
-              line-height: 1.1;
-              color: #ffffff;
-              /* Performance optimizations */
-              contain: layout style paint;
-              will-change: auto;
-              backface-visibility: hidden;
-              transform: translateZ(0);
-            }
-            .hero-text {
-              font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-              font-size: 1.25rem;
-              line-height: 1.6;
-              color: rgba(255, 255, 255, 0.8);
-              /* Performance optimizations */
-              contain: layout style paint;
-              will-change: auto;
-              backface-visibility: hidden;
-              transform: translateZ(0);
-            }
-            @media (min-width: 640px) {
-              .hero-text { font-size: 1.125rem; }
-            }
-            @media (min-width: 768px) {
-              .hero-text { font-size: 1.25rem; }
-            }
-            /* Optimize watermark for better performance */
-            .watermark {
-              contain: layout style paint;
-              will-change: auto;
-              transform: translateZ(0);
-            }
-          `,
+              .hero-section { 
+                background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+              }
+              .hero-title {
+                font-size: clamp(2.5rem, 5vw, 4rem);
+                font-weight: 700;
+                line-height: 1.1;
+                color: #1f2937;
+              }
+              .hero-subtitle {
+                font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+                color: #6b7280;
+                line-height: 1.6;
+              }
+              .cta-button {
+                background: #dc2626;
+                color: white;
+                padding: 0.75rem 2rem;
+                border-radius: 9999px;
+                font-weight: 700;
+                transition: all 0.3s ease;
+                text-decoration: none;
+                display: inline-block;
+              }
+              .cta-button:hover {
+                background: #b91c1c;
+                transform: translateY(-2px);
+              }
+            `,
           }}
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
+        {/* Structured Data - Organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema),
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "WebCraft",
+              alternateName: "WebCraft Web Tasarım Ajansı",
+              url: "https://www.webcraft.tr",
+              logo: "https://www.webcraft.tr/webcraftLogo.png",
+              description:
+                "WebCraft, profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri sunan güvenilir web tasarım ajansıdır. Fethiye ve Muğla'da hizmet vermektedir.",
+              foundingDate: "2015",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Fethiye",
+                addressRegion: "Muğla",
+                addressCountry: "TR",
+              },
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+90-507-944-17-15",
+                contactType: "customer service",
+                availableLanguage: "Turkish",
+              },
+              sameAs: [
+                "https://www.facebook.com/webcraft",
+                "https://www.instagram.com/webcraft",
+                "https://www.linkedin.com/company/webcraft",
+                "https://www.twitter.com/webcraft",
+              ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Web Tasarım ve Dijital Pazarlama Hizmetleri",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Web Tasarım",
+                      description: "Profesyonel web sitesi tasarımı ve geliştirme hizmetleri",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "SEO Hizmeti",
+                      description: "Arama motoru optimizasyonu ve dijital pazarlama hizmetleri",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "E-Ticaret Çözümleri",
+                      description: "Online mağaza kurulumu ve e-ticaret web sitesi tasarımı",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Kurumsal Web Sitesi",
+                      description: "Kurumsal kimlik ve profesyonel web sitesi tasarımı",
+                    },
+                  },
+                ],
+              },
+            }),
           }}
         />
+
+        {/* Structured Data - Local Business */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "WebCraft Web Tasarım Ajansı",
+              image: "https://www.webcraft.tr/webcraftLogo.png",
+              description:
+                "Fethiye ve Muğla'da profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri sunan güvenilir web tasarım ajansı.",
+              url: "https://www.webcraft.tr",
+              telephone: "+90-507-944-17-15",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Fethiye",
+                addressRegion: "Muğla",
+                addressCountry: "TR",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "36.6213",
+                longitude: "29.1161",
+              },
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                opens: "09:00",
+                closes: "18:00",
+              },
+              priceRange: "₺₺",
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                reviewCount: "127",
+              },
+            }),
+          }}
+        />
+
+        {/* Structured Data - WebSite */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "WebCraft",
+              url: "https://www.webcraft.tr",
+              description:
+                "Profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Fethiye ve Muğla'da güvenilir web tasarım ajansı.",
+              publisher: {
+                "@type": "Organization",
+                name: "WebCraft",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://www.webcraft.tr/webcraftLogo.png",
+                },
+              },
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://www.webcraft.tr/search?q={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+
+        {/* Structured Data - Service */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              name: "Web Tasarım ve SEO Hizmetleri",
+              description:
+                "Profesyonel web tasarım, SEO optimizasyonu ve dijital pazarlama hizmetleri. Fethiye ve Muğla'da güvenilir hizmet.",
+              provider: {
+                "@type": "Organization",
+                name: "WebCraft",
+                url: "https://www.webcraft.tr",
+              },
+              areaServed: {
+                "@type": "Country",
+                name: "Turkey",
+              },
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Web Tasarım Hizmetleri",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Web Sitesi Tasarımı",
+                      description: "Modern, responsive ve SEO uyumlu web sitesi tasarımı",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "SEO Hizmeti",
+                      description: "Arama motoru optimizasyonu ve Google'da üst sıralarda yer alma",
+                    },
+                  },
+                ],
+              },
+            }),
+          }}
         />
       </head>
-      <body className={`${montserrat.className} antialiased`}>
+      <body className="antialiased">
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -613,7 +425,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
         {/* End Google Tag Manager (noscript) */}
 
+        {/* GTM Page Tracking - Tracks all page views */}
+        <GTMTracker />
+
         {children}
+
+        {/* Google Analytics 4 - Using Next.js Script component */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-TYXDJVMSP3"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TYXDJVMSP3', {
+              page_title: document.title,
+              page_location: window.location.href,
+              send_page_view: true,
+              custom_map: {
+                'custom_parameter_1': 'web_design_agency',
+                'custom_parameter_2': 'seo_service'
+              }
+            });
+          `}
+        </Script>
       </body>
     </html>
   );

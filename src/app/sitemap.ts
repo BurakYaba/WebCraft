@@ -40,6 +40,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    // Location-specific landing pages
+    {
+      url: `${baseUrl}/fethiye-web-tasarim`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/mugla-seo`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    // Industry-specific landing pages
+    {
+      url: `${baseUrl}/e-ticaret-web-tasarim`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/kurumsal-web-sitesi`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    // Competitor-focused landing page
+    {
+      url: `${baseUrl}/en-iyi-web-tasarim-ajansi`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     // Legal pages
     {
       url: `${baseUrl}/gizlilik-politikasi`,
