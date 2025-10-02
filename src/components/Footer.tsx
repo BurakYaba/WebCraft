@@ -35,6 +35,12 @@ const Footer = () => {
     { name: "Hakkımızda", href: "/hakkimizda" },
     { name: "Blog", href: "/blog" },
     { name: "İletişim", href: "/iletisim" },
+    // New SEO landing pages
+    { name: "Fethiye Web Tasarım", href: "/fethiye-web-tasarim" },
+    { name: "Muğla SEO", href: "/mugla-seo" },
+    { name: "E-ticaret Web Tasarım", href: "/e-ticaret-web-tasarim" },
+    { name: "Kurumsal Web Sitesi", href: "/kurumsal-web-sitesi" },
+    { name: "En İyi Web Tasarım Ajansı", href: "/en-iyi-web-tasarim-ajansi" },
   ];
 
   return (
