@@ -465,6 +465,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
         {/* End Google Tag Manager */}
 
+        {/* Google Analytics 4 */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-TYXDJVMSP3"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-TYXDJVMSP3', {
+                page_title: document.title,
+                page_location: window.location.href,
+                send_page_view: true,
+                custom_map: {
+                  'custom_parameter_1': 'web_design_agency',
+                  'custom_parameter_2': 'seo_service'
+                }
+              });
+            `,
+          }}
+        />
+        {/* End Google Analytics 4 */}
+
         {/* Google Site Verification */}
         <meta
           name="google-site-verification"
