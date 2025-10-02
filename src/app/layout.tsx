@@ -99,7 +99,7 @@ export const metadata: Metadata = {
       follow: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
-      "max-snippet":-1,
+      "max-snippet": -1,
     },
   },
   verification: {
@@ -134,24 +134,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
 
         {/* Favicon - Multiple formats for maximum compatibility */}
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/webcraftLogo.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/webcraftLogo.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="96x96"
-          href="/webcraftLogo.png"
-        />
+        <link rel="icon" type="image/png" sizes="16x16" href="/icon-192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon-192.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/icon-192.png" />
         <link
           rel="icon"
           type="image/png"
@@ -165,14 +150,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           href="/icon-512.png"
         />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="shortcut icon" href="/icon-192.png" />
 
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
 
         {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
 
@@ -196,14 +185,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               }
               .hero-title {
                 font-size: clamp(2.5rem, 5vw, 4rem);
-                font-weight: 700;
-                line-height: 1.1;
+              font-weight: 700;
+              line-height: 1.1;
                 color: #1f2937;
-              }
+            }
               .hero-subtitle {
                 font-size: clamp(1.125rem, 2.5vw, 1.25rem);
                 color: #6b7280;
-                line-height: 1.6;
+              line-height: 1.6;
               }
               .cta-button {
                 background: #dc2626;
@@ -218,8 +207,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               .cta-button:hover {
                 background: #b91c1c;
                 transform: translateY(-2px);
-              }
-            `,
+            }
+          `,
           }}
         />
 
@@ -264,7 +253,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     itemOffered: {
                       "@type": "Service",
                       name: "Web Tasarım",
-                      description: "Profesyonel web sitesi tasarımı ve geliştirme hizmetleri",
+                      description:
+                        "Profesyonel web sitesi tasarımı ve geliştirme hizmetleri",
                     },
                   },
                   {
@@ -272,7 +262,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     itemOffered: {
                       "@type": "Service",
                       name: "SEO Hizmeti",
-                      description: "Arama motoru optimizasyonu ve dijital pazarlama hizmetleri",
+                      description:
+                        "Arama motoru optimizasyonu ve dijital pazarlama hizmetleri",
                     },
                   },
                   {
@@ -280,7 +271,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     itemOffered: {
                       "@type": "Service",
                       name: "E-Ticaret Çözümleri",
-                      description: "Online mağaza kurulumu ve e-ticaret web sitesi tasarımı",
+                      description:
+                        "Online mağaza kurulumu ve e-ticaret web sitesi tasarımı",
                     },
                   },
                   {
@@ -288,7 +280,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     itemOffered: {
                       "@type": "Service",
                       name: "Kurumsal Web Sitesi",
-                      description: "Kurumsal kimlik ve profesyonel web sitesi tasarımı",
+                      description:
+                        "Kurumsal kimlik ve profesyonel web sitesi tasarımı",
                     },
                   },
                 ],
@@ -323,7 +316,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               },
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
-                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                ],
                 opens: "09:00",
                 closes: "18:00",
               },
@@ -360,7 +359,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "@type": "SearchAction",
                 target: {
                   "@type": "EntryPoint",
-                  urlTemplate: "https://www.webcraft.tr/search?q={search_term_string}",
+                  urlTemplate:
+                    "https://www.webcraft.tr/search?q={search_term_string}",
                 },
                 "query-input": "required name=search_term_string",
               },
@@ -396,7 +396,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     itemOffered: {
                       "@type": "Service",
                       name: "Web Sitesi Tasarımı",
-                      description: "Modern, responsive ve SEO uyumlu web sitesi tasarımı",
+                      description:
+                        "Modern, responsive ve SEO uyumlu web sitesi tasarımı",
                     },
                   },
                   {
@@ -404,7 +405,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     itemOffered: {
                       "@type": "Service",
                       name: "SEO Hizmeti",
-                      description: "Arama motoru optimizasyonu ve Google'da üst sıralarda yer alma",
+                      description:
+                        "Arama motoru optimizasyonu ve Google'da üst sıralarda yer alma",
                     },
                   },
                 ],
