@@ -19,12 +19,11 @@ const SectionSkeleton = ({ height = "h-96" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title:
-    "Web Tasarım ve Dijital Pazarlama Ajansı | WebCraft - SEO Hizmeti ve Sosyal Medya Yönetimi",
+  title: "Web Tasarım Fethiye | Profesyonel Web Sitesi Tasarımı | WebCraft",
   description:
-    "Profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri. Web tasarım fiyatları ve kurumsal web sitesi tasarımı hizmetleri. Ücretsiz teklif alın.",
+    "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz. Hemen iletişime geçin!",
   keywords:
-    "web tasarım, SEO hizmeti, sosyal medya yönetimi, dijital pazarlama ajansı, web tasarım fiyatları, kurumsal web sitesi tasarımı, web tasarım ajansı",
+    "web tasarım Fethiye, web tasarım Muğla, web tasarımcı Fethiye, web tasarım ajansı Fethiye, Fethiye web tasarım, Muğla web tasarım, web sitesi Fethiye, SEO hizmeti Fethiye, dijital pazarlama Fethiye, web tasarım fiyatları",
   authors: [{ name: "WebCraft" }],
   creator: "WebCraft",
   publisher: "WebCraft",
@@ -38,9 +37,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Web Tasarım ve Dijital Pazarlama Ajansı | WebCraft",
+    title: "Web Tasarım Fethiye | Profesyonel Web Sitesi Tasarımı | WebCraft",
     description:
-      "Profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri.",
+      "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz.",
     url: "https://webcraft.com.tr",
     siteName: "WebCraft",
     images: [
@@ -48,7 +47,7 @@ export const metadata: Metadata = {
         url: "/webcraftLogo.png",
         width: 1200,
         height: 630,
-        alt: "WebCraft Web Tasarım ve Dijital Pazarlama Ajansı",
+        alt: "WebCraft Web Tasarım Fethiye - Profesyonel Web Sitesi Tasarımı",
       },
     ],
     locale: "tr_TR",
@@ -56,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Tasarım ve Dijital Pazarlama Ajansı | WebCraft",
+    title: "Web Tasarım Fethiye | Profesyonel Web Sitesi Tasarımı | WebCraft",
     description:
-      "Profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri.",
+      "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz.",
     images: ["/webcraftLogo.png"],
   },
   robots: {

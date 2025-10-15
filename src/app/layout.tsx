@@ -24,32 +24,36 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "WebCraft - Profesyonel Web Tasarım ve SEO Hizmetleri",
+    default: "Web Tasarım Fethiye | Profesyonel Web Sitesi Tasarımı | WebCraft",
     template: "%s | WebCraft",
   },
   description:
-    "WebCraft ile profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Fethiye ve Muğla'da güvenilir web tasarım ajansı. Modern, responsive ve SEO uyumlu web siteleri.",
+    "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz. Hemen iletişime geçin!",
   keywords: [
-    "web tasarım",
-    "web sitesi tasarımı",
-    "SEO hizmeti",
-    "dijital pazarlama",
-    "web tasarım ajansı",
+    "web tasarım Fethiye",
+    "web tasarım Muğla",
+    "web tasarımcı Fethiye",
+    "web tasarım ajansı Fethiye",
     "Fethiye web tasarım",
-    "Muğla SEO",
+    "Muğla web tasarım",
+    "web sitesi Fethiye",
+    "web sitesi tasarımı",
+    "profesyonel web tasarım",
+    "SEO hizmeti Fethiye",
+    "dijital pazarlama Fethiye",
     "e-ticaret web tasarımı",
     "kurumsal web sitesi",
-    "profesyonel web tasarım",
     "responsive web tasarım",
     "modern web sitesi",
-    "web geliştirme",
-    "dijital ajans",
-    "marka tasarımı",
+    "web geliştirme Fethiye",
+    "dijital ajans Fethiye",
     "sosyal medya yönetimi",
-    "Google Ads",
+    "Google Ads Fethiye",
     "arama motoru optimizasyonu",
     "web analitik",
-    "online mağaza",
+    "online mağaza kurulumu",
+    "web tasarım fiyatları",
+    "web tasarım hizmetleri",
   ],
   authors: [{ name: "WebCraft" }],
   creator: "WebCraft",
@@ -71,9 +75,9 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     url: "https://www.webcraft.tr",
     siteName: "WebCraft",
-    title: "WebCraft - Profesyonel Web Tasarım ve SEO Hizmetleri",
+    title: "Web Tasarım Fethiye | Profesyonel Web Sitesi Tasarımı | WebCraft",
     description:
-      "WebCraft ile profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Fethiye ve Muğla'da güvenilir web tasarım ajansı.",
+      "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz.",
     images: [
       {
         url: "/webcraftLogo.png",
@@ -85,9 +89,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "WebCraft - Profesyonel Web Tasarım ve SEO Hizmetleri",
+    title: "Web Tasarım Fethiye | Profesyonel Web Sitesi Tasarımı | WebCraft",
     description:
-      "WebCraft ile profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Fethiye ve Muğla'da güvenilir web tasarım ajansı.",
+      "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz.",
     images: ["/webcraftLogo.png"],
     creator: "@webcraft",
   },
@@ -224,7 +228,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               url: "https://www.webcraft.tr",
               logo: "https://www.webcraft.tr/webcraftLogo.png",
               description:
-                "WebCraft, profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri sunan güvenilir web tasarım ajansıdır. Fethiye ve Muğla'da hizmet vermektedir.",
+                "WebCraft, Fethiye ve Muğla'da profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri sunan güvenilir web tasarım ajansıdır. 5 yıldır bölgede hizmet vermektedir.",
               foundingDate: "2015",
               address: {
                 "@type": "PostalAddress",
@@ -300,7 +304,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               name: "WebCraft Web Tasarım Ajansı",
               image: "https://www.webcraft.tr/webcraftLogo.png",
               description:
-                "Fethiye ve Muğla'da profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri sunan güvenilir web tasarım ajansı.",
+                "Fethiye ve Muğla'da profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri sunan güvenilir web tasarım ajansı. 5 yıldır bölgede hizmet veriyoruz.",
               url: "https://www.webcraft.tr",
               telephone: "+90-507-944-17-15",
               address: {
@@ -346,7 +350,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               name: "WebCraft",
               url: "https://www.webcraft.tr",
               description:
-                "Profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Fethiye ve Muğla'da güvenilir web tasarım ajansı.",
+                "Fethiye ve Muğla'da profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. 5 yıldır bölgede güvenilir hizmet veriyoruz.",
               publisher: {
                 "@type": "Organization",
                 name: "WebCraft",
@@ -377,7 +381,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               "@type": "Service",
               name: "Web Tasarım ve SEO Hizmetleri",
               description:
-                "Profesyonel web tasarım, SEO optimizasyonu ve dijital pazarlama hizmetleri. Fethiye ve Muğla'da güvenilir hizmet.",
+                "Fethiye ve Muğla'da profesyonel web tasarım, SEO optimizasyonu ve dijital pazarlama hizmetleri. 5 yıldır bölgede güvenilir hizmet veriyoruz.",
               provider: {
                 "@type": "Organization",
                 name: "WebCraft",
