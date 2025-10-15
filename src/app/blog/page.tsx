@@ -17,15 +17,17 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Web Tasarım ve SEO Blog | WebCraft - Dijital Pazarlama Rehberi",
+  title:
+    "Web Tasarım Blog Fethiye | SEO Rehberi ve Dijital Pazarlama İpuçları | WebCraft",
   description:
-    "Web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama konularında uzman görüşleri. Web tasarım fiyatları ve SEO rehberi.",
+    "Fethiye'de web tasarım, SEO hizmeti ve dijital pazarlama konularında uzman görüşleri. 5 yıllık deneyimimizle pratik ipuçları ve rehberler.",
   keywords:
-    "web tasarım blog, SEO hizmeti rehberi, sosyal medya yönetimi, dijital pazarlama blog, web tasarım fiyatları",
+    "web tasarım blog Fethiye, SEO rehberi Fethiye, dijital pazarlama blog, web tasarım fiyatları, Fethiye web tasarım ajansı",
   openGraph: {
-    title: "Web Tasarım ve SEO Blog | WebCraft",
+    title:
+      "Web Tasarım Blog Fethiye | SEO Rehberi ve Dijital Pazarlama İpuçları | WebCraft",
     description:
-      "Web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama konularında uzman görüşleri.",
+      "Fethiye'de web tasarım, SEO hizmeti ve dijital pazarlama konularında uzman görüşleri. 5 yıllık deneyimimizle pratik ipuçları ve rehberler.",
     type: "website",
     locale: "tr_TR",
   },
@@ -84,9 +86,10 @@ const blogPosts = [
   {
     id: 5,
     category: "SEO",
-    title: "2024'te SEO Trendleri ve Arama Motoru Optimizasyonu",
+    title:
+      "2025 SEO Trendleri: Google'da Üst Sıralarda Yer Alın | Fethiye Web Tasarım",
     excerpt:
-      "2024 yılında SEO dünyasında yaşanan büyük değişimler, AI etkisi, Core Web Vitals ve kullanıcı deneyimi odaklı optimizasyon stratejileri.",
+      "2025'te Google'da üst sıralarda yer almak için bilmeniz gereken SEO trendleri. Fethiye'de web tasarım ajansı olarak 5 yıllık deneyimimizle paylaşıyoruz.",
     image: "/bento/web-tasarım.jpg",
     slug: "2024-seo-trendleri",
     date: "5 Aralık 2024",
@@ -144,9 +147,9 @@ const blogPosts = [
   {
     id: 10,
     category: "Web Analitik",
-    title: "Web Analitik Araçları ile Dijital Performansınızı Ölçün",
+    title: "2025'te En İyi Web Analitik Araçları | Fethiye Web Tasarım",
     excerpt:
-      "Web analitik araçları ile dijital performansınızı ölçün. Profesyonel analitik ajansı ile kapsamlı veri analizi çözümleri oluşturun ve iş kararlarınızı veri ile destekleyin.",
+      "2025'te en iyi web analitik araçları ve nasıl kullanılacağı. Fethiye'de web tasarım ajansı olarak hangi araçları öneriyoruz? Detaylı rehber.",
     image: "/bento/dijital-pazarlama.jpg",
     slug: "web-analitik-araclari",
     date: "22 Kasım 2024",

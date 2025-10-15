@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | WebCraft",
   },
   description:
-    "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz. Hemen iletişime geçin!",
+    "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Uygun fiyatlı paketler. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz. Hemen iletişime geçin!",
   keywords: [
     "web tasarım Fethiye",
     "web tasarım Muğla",

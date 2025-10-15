@@ -21,7 +21,7 @@ const SectionSkeleton = ({ height = "h-96" }: { height?: string }) => (
 export const metadata: Metadata = {
   title: "Web Tasarım Fethiye | Profesyonel Web Sitesi Tasarımı | WebCraft",
   description:
-    "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz. Hemen iletişime geçin!",
+    "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Uygun fiyatlı paketler. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz. Hemen iletişime geçin!",
   keywords:
     "web tasarım Fethiye, web tasarım Muğla, web tasarımcı Fethiye, web tasarım ajansı Fethiye, Fethiye web tasarım, Muğla web tasarım, web sitesi Fethiye, SEO hizmeti Fethiye, dijital pazarlama Fethiye, web tasarım fiyatları",
   authors: [{ name: "WebCraft" }],
