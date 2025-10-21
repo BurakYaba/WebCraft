@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://webcraft.com.tr"),
+  metadataBase: new URL("https://www.webcraft.tr"),
   alternates: {
     canonical: "/islerimiz",
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Web Tasarım Projeleri ve Portföy | WebCraft",
     description:
       "Web tasarım, SEO ve dijital pazarlama projelerimizi inceleyin. Kurumsal web sitesi tasarımı ve e-ticaret örnekleri.",
-    url: "https://webcraft.com.tr/islerimiz",
+    url: "https://www.webcraft.tr/islerimiz",
     siteName: "WebCraft",
     images: [
       {

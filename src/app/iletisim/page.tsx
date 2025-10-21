@@ -39,7 +39,7 @@ export default function ContactPage() {
     name: "WebCraft İletişim Sayfası",
     description:
       "Web tasarım, SEO ve dijital pazarlama hizmetleri için iletişime geçin",
-    url: "https://webcraft.com.tr/iletisim",
+    url: "https://www.webcraft.tr/iletisim",
     mainEntity: {
       "@type": "Organization",
       name: "WebCraft",
@@ -58,7 +58,7 @@ export default function ContactPage() {
         availableLanguage: "Turkish",
       },
       email: "info@webcraft.com.tr",
-      url: "https://webcraft.com.tr",
+      url: "https://www.webcraft.tr",
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -133,7 +133,7 @@ export default function ContactPage() {
                       </label>
                       <input
                         type="text"
-                        className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent focus:border-red-600 focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent text-gray-900 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors"
                         placeholder="Adınız ve soyadınız"
                       />
                     </div>
@@ -143,7 +143,7 @@ export default function ContactPage() {
                       </label>
                       <input
                         type="email"
-                        className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent focus:border-red-600 focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent text-gray-900 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors"
                         placeholder="ornek@email.com"
                       />
                     </div>
@@ -155,7 +155,7 @@ export default function ContactPage() {
                     </label>
                     <input
                       type="tel"
-                      className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent focus:border-red-600 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent text-gray-900 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors"
                       placeholder="+90 (5XX) XXX XX XX"
                     />
                   </div>
@@ -166,7 +166,7 @@ export default function ContactPage() {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent focus:border-red-600 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent text-gray-900 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors"
                       placeholder="Şirket adınız"
                     />
                   </div>
@@ -175,7 +175,7 @@ export default function ContactPage() {
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Hizmet Türü
                     </label>
-                    <select className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent focus:border-red-600 focus:outline-none transition-colors">
+                    <select className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent text-gray-900 focus:border-red-600 focus:outline-none transition-colors">
                       <option value="">Hizmet seçiniz</option>
                       <option value="web-tasarim">Web Tasarım</option>
                       <option value="seo-hizmeti">SEO Hizmeti</option>
@@ -195,7 +195,7 @@ export default function ContactPage() {
                     </label>
                     <textarea
                       rows={6}
-                      className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent focus:border-red-600 focus:outline-none transition-colors resize-none"
+                      className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent text-gray-900 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors resize-none"
                       placeholder="Web tasarım projeniz, SEO ihtiyaçlarınız veya dijital pazarlama hedefleriniz hakkında detayları paylaşın..."
                     />
                   </div>

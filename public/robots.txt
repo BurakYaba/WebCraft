@@ -1,11 +1,11 @@
 # WebCraft Web Tasarım ve Dijital Pazarlama Ajansı
-# https://webcraft.com.tr
+# https://www.webcraft.tr
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://webcraft.com.tr/sitemap.xml
+Sitemap: https://www.webcraft.tr/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

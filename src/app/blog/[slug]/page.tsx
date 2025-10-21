@@ -3055,14 +3055,14 @@ export async function generateMetadata({
       address: false,
       telephone: false,
     },
-    metadataBase: new URL("https://webcraft.com.tr"),
+    metadataBase: new URL("https://www.webcraft.tr"),
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://webcraft.com.tr/blog/${post.slug}`,
+      url: `https://www.webcraft.tr/blog/${post.slug}`,
       siteName: "WebCraft",
       images: [
         {

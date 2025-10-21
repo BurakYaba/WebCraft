@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Web Tasarım Fethiye | Profesyonel Web Sitesi Tasarımı | WebCraft",
     description:
       "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz.",
-    url: "https://webcraft.com.tr",
+    url: "https://www.webcraft.tr",
     siteName: "WebCraft",
     images: [
       {

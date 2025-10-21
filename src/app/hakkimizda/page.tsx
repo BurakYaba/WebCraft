@@ -44,7 +44,7 @@ export default function AboutPage() {
     name: "WebCraft Hakkında",
     description:
       "2015 yılından bu yana web tasarım, SEO ve dijital pazarlama alanlarında uzmanlaşmış WebCraft ajansı",
-    url: "https://webcraft.com.tr/hakkimizda",
+    url: "https://www.webcraft.tr/hakkimizda",
     mainEntity: {
       "@type": "Organization",
       name: "WebCraft",
@@ -66,7 +66,7 @@ export default function AboutPage() {
         availableLanguage: "Turkish",
       },
       email: "info@webcraft.com.tr",
-      url: "https://webcraft.com.tr",
+      url: "https://www.webcraft.tr",
       knowsAbout: [
         "Web Tasarım",
         "SEO",
