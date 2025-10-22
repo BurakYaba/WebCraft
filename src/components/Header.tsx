@@ -178,7 +178,7 @@ export default function Header() {
           href="/iletisim"
           className="hidden sm:block hover-underline relative uppercase tracking-wider text-xs md:text-sm font-semibold text-red-500 pb-1 transition-colors focus:outline-none font-narrow"
         >
-          İLETİŞİME GEÇ
+          İLETİŞİM
         </Link>
         {/* Hamburger menu for mobile */}
         <button
