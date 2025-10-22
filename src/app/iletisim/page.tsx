@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "../../components/Header";
+import ContactForm from "../../components/ContactForm";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 // Lazy load Footer
@@ -125,89 +126,7 @@ export default function ContactPage() {
 
               {/* Right Content - Contact Form */}
               <div className="lg:w-1/2">
-                <form className="bg-gray-50 p-8 lg:p-12 rounded-lg">
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Ad Soyad
-                      </label>
-                      <input
-                        type="text"
-                        className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent text-gray-900 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors"
-                        placeholder="Adınız ve soyadınız"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        E-posta
-                      </label>
-                      <input
-                        type="email"
-                        className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent text-gray-900 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors"
-                        placeholder="ornek@email.com"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Telefon
-                    </label>
-                    <input
-                      type="tel"
-                      className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent text-gray-900 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors"
-                      placeholder="+90 (5XX) XXX XX XX"
-                    />
-                  </div>
-
-                  <div className="mb-6">
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Şirket
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent text-gray-900 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors"
-                      placeholder="Şirket adınız"
-                    />
-                  </div>
-
-                  <div className="mb-6">
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Hizmet Türü
-                    </label>
-                    <select className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent text-gray-900 focus:border-red-600 focus:outline-none transition-colors">
-                      <option value="">Hizmet seçiniz</option>
-                      <option value="web-tasarim">Web Tasarım</option>
-                      <option value="seo-hizmeti">SEO Hizmeti</option>
-                      <option value="sosyal-medya">
-                        Sosyal Medya Yönetimi
-                      </option>
-                      <option value="dijital-pazarlama">
-                        Dijital Pazarlama
-                      </option>
-                      <option value="e-ticaret">E-Ticaret Sitesi</option>
-                    </select>
-                  </div>
-
-                  <div className="mb-8">
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Proje Detayları
-                    </label>
-                    <textarea
-                      rows={6}
-                      className="w-full px-4 py-3 border-b-2 border-gray-300 bg-transparent text-gray-900 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors resize-none"
-                      placeholder="Web tasarım projeniz, SEO ihtiyaçlarınız veya dijital pazarlama hedefleriniz hakkında detayları paylaşın..."
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full bg-gray-900 text-white py-4 px-8 rounded-full font-medium text-lg hover:bg-red-600 transition-colors duration-300 flex items-center justify-center"
-                  >
-                    <span>Ücretsiz Teklif Al</span>
-                    <div className="w-2 h-2 bg-white rounded-full ml-4"></div>
-                  </button>
-                </form>
+                <ContactForm />
               </div>
             </div>
           </div>

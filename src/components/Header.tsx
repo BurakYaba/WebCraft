@@ -7,11 +7,11 @@ import { Instagram, Linkedin, Twitter, Facebook } from "lucide-react";
 import Image from "next/image";
 
 const MENU_LINKS = [
-  { label: "Islerimiz", href: "/islerimiz" },
+  { label: "İşlerimiz", href: "/islerimiz" },
   { label: "Hizmetler", href: "/hizmetler" },
-  { label: "Hakkimizda", href: "/hakkimizda" },
+  { label: "Hakkımızda", href: "/hakkimizda" },
   { label: "Blog", href: "/blog" },
-  { label: "Iletisim", href: "/iletisim" },
+  { label: "İletişim", href: "/iletisim" },
 ];
 
 export default function Header() {
@@ -178,7 +178,7 @@ export default function Header() {
           href="/iletisim"
           className="hidden sm:block hover-underline relative uppercase tracking-wider text-xs md:text-sm font-semibold text-red-500 pb-1 transition-colors focus:outline-none font-narrow"
         >
-          ILETISIME GEC
+          İLETİŞİME GEÇ
         </Link>
         {/* Hamburger menu for mobile */}
         <button
