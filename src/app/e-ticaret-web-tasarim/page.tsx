@@ -1,10 +1,10 @@
 import React, { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "@/components/Header";
-import { 
-  ShoppingCart, 
-  Package, 
-  Truck, 
+import {
+  ShoppingCart,
+  Package,
+  Truck,
   Star,
   MapPin,
   Phone,
@@ -135,8 +135,9 @@ export default function EticaretWebTasarimPage() {
                   <span className="text-red-600">Kurulumu</span>
                 </h1>
                 <p className="text-lg lg:text-xl text-gray-300 leading-relaxed max-w-md mb-8">
-                  Profesyonel e-ticaret web sitesi tasarımı ile online satışlarınızı
-                  artırın. Güvenli ödeme sistemleri ve mobil uyumlu çözümler.
+                  Profesyonel e-ticaret web sitesi tasarımı ile online
+                  satışlarınızı artırın. Güvenli ödeme sistemleri ve mobil
+                  uyumlu çözümler.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -173,9 +174,7 @@ export default function EticaretWebTasarimPage() {
                     </div>
                     <div className="flex items-center">
                       <Mail className="w-5 h-5 text-red-600 mr-3" />
-                      <span className="text-white">
-                        info@webcraft.com.tr
-                      </span>
+                      <span className="text-white">info@webcraft.tr</span>
                     </div>
                     <div className="flex items-center">
                       <Clock className="w-5 h-5 text-red-600 mr-3" />
@@ -198,8 +197,9 @@ export default function EticaretWebTasarimPage() {
                 E-Ticaret Hizmetlerimiz
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Profesyonel e-ticaret web sitesi tasarımından ödeme sistemi entegrasyonuna
-                kadar tüm hizmetlerimiz. Online satışlarınızı artırın.
+                Profesyonel e-ticaret web sitesi tasarımından ödeme sistemi
+                entegrasyonuna kadar tüm hizmetlerimiz. Online satışlarınızı
+                artırın.
               </p>
             </div>
             <Suspense fallback={<SectionSkeleton height="h-96" />}>
@@ -216,8 +216,9 @@ export default function EticaretWebTasarimPage() {
                 Neden E-Ticaret Web Sitesi?
               </h2>
               <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-                E-ticaret web siteniz, işletmenizin dijital dünyadaki vitrinidir.
-                7/24 satış yapabilir, müşterilerinize daha iyi hizmet verebilirsiniz.
+                E-ticaret web siteniz, işletmenizin dijital dünyadaki
+                vitrinidir. 7/24 satış yapabilir, müşterilerinize daha iyi
+                hizmet verebilirsiniz.
               </p>
             </div>
 
@@ -243,8 +244,8 @@ export default function EticaretWebTasarimPage() {
                   Geniş Ürün Yelpazesi
                 </h3>
                 <p className="text-gray-300">
-                  Fiziksel mağaza sınırları olmadan binlerce ürün sergileyebilir,
-                  stok yönetimi yapabilirsiniz.
+                  Fiziksel mağaza sınırları olmadan binlerce ürün
+                  sergileyebilir, stok yönetimi yapabilirsiniz.
                 </p>
               </div>
 
@@ -273,8 +274,8 @@ export default function EticaretWebTasarimPage() {
                   E-Ticaret Sitenizin Özellikleri
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Modern e-ticaret web sitenizde bulunması gereken tüm özellikler
-                  ve teknolojiler ile donatılmış çözümler sunuyoruz.
+                  Modern e-ticaret web sitenizde bulunması gereken tüm
+                  özellikler ve teknolojiler ile donatılmış çözümler sunuyoruz.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start">
@@ -341,8 +342,8 @@ export default function EticaretWebTasarimPage() {
                   1. Analiz
                 </h3>
                 <p className="text-gray-300">
-                  İşletmenizi ve hedef kitlenizi analiz ederiz. Ürün kategorileri
-                  ve satış stratejisi belirleriz.
+                  İşletmenizi ve hedef kitlenizi analiz ederiz. Ürün
+                  kategorileri ve satış stratejisi belirleriz.
                 </p>
               </div>
 
@@ -367,8 +368,8 @@ export default function EticaretWebTasarimPage() {
                   3. Geliştirme
                 </h3>
                 <p className="text-gray-300">
-                  Ödeme sistemleri, kargo entegrasyonu ve güvenlik önlemleri
-                  ile tam fonksiyonel site geliştiririz.
+                  Ödeme sistemleri, kargo entegrasyonu ve güvenlik önlemleri ile
+                  tam fonksiyonel site geliştiririz.
                 </p>
               </div>
 
@@ -380,8 +381,8 @@ export default function EticaretWebTasarimPage() {
                   4. Yayın
                 </h3>
                 <p className="text-gray-300">
-                  Siteyi yayına alırız. SEO optimizasyonu ve performans
-                  takibi ile sürekli destek sağlarız.
+                  Siteyi yayına alırız. SEO optimizasyonu ve performans takibi
+                  ile sürekli destek sağlarız.
                 </p>
               </div>
             </div>

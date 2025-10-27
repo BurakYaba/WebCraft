@@ -6,7 +6,6 @@ import {
   TrendingUp,
   Target,
   BarChart3,
-  
   Award,
   MapPin,
   Phone,
@@ -161,9 +160,7 @@ export default function MuglaSeoPage() {
                     </div>
                     <div className="flex items-center">
                       <Mail className="w-5 h-5 text-red-600 mr-3" />
-                      <span className="text-white">
-                        info@webcraft.com.tr
-                      </span>
+                      <span className="text-white">info@webcraft.tr</span>
                     </div>
                     <div className="flex items-center">
                       <Clock className="w-5 h-5 text-red-600 mr-3" />

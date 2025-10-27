@@ -154,10 +154,10 @@ const Footer = () => {
             {/* Contact Info */}
             <div className="space-y-4 mb-6">
               <a
-                href="mailto:info@webcraft.com.tr"
+                href="mailto:info@webcraft.tr"
                 className="group block text-[#f84525] text-base md:text-lg font-medium hover:text-white transition-colors duration-300 relative"
               >
-                info@webcraft.com.tr
+                info@webcraft.tr
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
               </a>
               <a

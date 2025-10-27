@@ -55,7 +55,7 @@ export default function FethiyeWebTasarimPage() {
       longitude: "29.1164",
     },
     telephone: "+90-507-944-17-15",
-    email: "info@webcraft.com.tr",
+    email: "info@webcraft.tr",
     areaServed: {
       "@type": "City",
       name: "Fethiye",
@@ -175,9 +175,7 @@ export default function FethiyeWebTasarimPage() {
                     </div>
                     <div className="flex items-center">
                       <Mail className="w-5 h-5 text-red-600 mr-3" />
-                      <span className="text-white">
-                        info@webcraft.com.tr
-                      </span>
+                      <span className="text-white">info@webcraft.tr</span>
                     </div>
                     <div className="flex items-center">
                       <Clock className="w-5 h-5 text-red-600 mr-3" />

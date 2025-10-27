@@ -268,10 +268,10 @@ export default function Header() {
               {/* Right: Contact Info & Socials (hidden on desktop, shown on mobile for stacking) */}
               <div className="flex-1 flex flex-col items-start md:items-end justify-center gap-2 md:gap-4 mt-12 md:mt-0 text-[#111] md:hidden">
                 <a
-                  href="mailto:info@webcraft.com"
+                  href="mailto:info@webcraft.tr"
                   className="text-[18px] text-red-500 underline underline-offset-4 mb-1 font-medium"
                 >
-                  info@webcraft.com
+                  info@webcraft.tr
                 </a>
                 <a
                   href="tel:+905079441715"
@@ -328,10 +328,10 @@ export default function Header() {
               {/* Bottom Right: Contact Info & Socials (desktop only) */}
               <div className="hidden md:flex flex-col items-end gap-2 md:gap-4 absolute bottom-10 right-10 text-[#111] pr-6 md:pr-12 lg:pr-20">
                 <a
-                  href="mailto:info@webcraft.com"
+                  href="mailto:info@webcraft.tr"
                   className="text-[18px] text-red-500 underline underline-offset-4 mb-1 font-medium"
                 >
-                  info@webcraft.com
+                  info@webcraft.tr
                 </a>
                 <a
                   href="tel:+905079441715"

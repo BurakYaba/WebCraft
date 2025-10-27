@@ -163,7 +163,7 @@ export default function PrivacyPolicyPage() {
                       <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
                       <strong className="text-orange-400">E-posta:</strong>
                     </div>
-                    <p className="text-gray-300">info@webcraft.com.tr</p>
+                    <p className="text-gray-300">info@webcraft.tr</p>
                   </div>
                   <div className="bg-white/5 border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-all duration-300 md:col-span-2">
                     <div className="flex items-center space-x-3 mb-2">
@@ -408,9 +408,7 @@ export default function PrivacyPolicyPage() {
               <div className="bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <p className="mb-3">
                   <strong className="text-white">E-posta:</strong>
-                  <span className="text-[#f84525] ml-2">
-                    kvkk@webcraft.com.tr
-                  </span>
+                  <span className="text-[#f84525] ml-2">kvkk@webcraft.tr</span>
                 </p>
                 <p className="mb-3">
                   <strong className="text-white">Telefon:</strong>

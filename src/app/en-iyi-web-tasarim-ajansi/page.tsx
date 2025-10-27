@@ -63,9 +63,7 @@ export default function EnIyiWebTasarimAjansiPage() {
       telephone: "+90-507-944-17-15",
       contactType: "customer service",
     },
-    sameAs: [
-      "https://www.webcraft.tr",
-    ],
+    sameAs: ["https://www.webcraft.tr"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Web Tasarım Hizmetleri",
@@ -146,8 +144,9 @@ export default function EnIyiWebTasarimAjansiPage() {
                   <span className="text-red-600">Lider Web Ajansı</span>
                 </h1>
                 <p className="text-lg lg:text-xl text-gray-300 leading-relaxed max-w-md mb-8">
-                  Profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri ile
-                  işletmenizi dijital dünyada öne çıkarın. 50+ başarılı proje.
+                  Profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri
+                  ile işletmenizi dijital dünyada öne çıkarın. 50+ başarılı
+                  proje.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -184,9 +183,7 @@ export default function EnIyiWebTasarimAjansiPage() {
                     </div>
                     <div className="flex items-center">
                       <Mail className="w-5 h-5 text-red-600 mr-3" />
-                      <span className="text-white">
-                        info@webcraft.com.tr
-                      </span>
+                      <span className="text-white">info@webcraft.tr</span>
                     </div>
                     <div className="flex items-center">
                       <Clock className="w-5 h-5 text-red-600 mr-3" />
@@ -284,8 +281,9 @@ export default function EnIyiWebTasarimAjansiPage() {
                   WebCraft&apos;ın Avantajları
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Türkiye&apos;nin en iyi web tasarım ajansı olarak müşterilerimize
-                  sunduğumuz benzersiz avantajlar ve kaliteli hizmetler.
+                  Türkiye&apos;nin en iyi web tasarım ajansı olarak
+                  müşterilerimize sunduğumuz benzersiz avantajlar ve kaliteli
+                  hizmetler.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start">
@@ -295,8 +293,8 @@ export default function EnIyiWebTasarimAjansiPage() {
                         Hızlı Teslimat
                       </h4>
                       <p className="text-gray-600">
-                        Modern teknolojiler ve deneyimli ekibimizle projelerinizi
-                        zamanında teslim ediyoruz
+                        Modern teknolojiler ve deneyimli ekibimizle
+                        projelerinizi zamanında teslim ediyoruz
                       </p>
                     </div>
                   </div>
@@ -338,8 +336,8 @@ export default function EnIyiWebTasarimAjansiPage() {
                 WebCraft Sürecimiz
               </h2>
               <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-                Profesyonel web tasarım sürecimizden proje teslimine kadar
-                adım adım nasıl çalıştığımızı keşfedin.
+                Profesyonel web tasarım sürecimizden proje teslimine kadar adım
+                adım nasıl çalıştığımızı keşfedin.
               </p>
             </div>
 
@@ -365,8 +363,8 @@ export default function EnIyiWebTasarimAjansiPage() {
                   2. Planlama
                 </h3>
                 <p className="text-gray-300">
-                  Projenizi detaylı olarak planlarız. Teknik gereksinimleri
-                  ve zaman çizelgesini belirleriz.
+                  Projenizi detaylı olarak planlarız. Teknik gereksinimleri ve
+                  zaman çizelgesini belirleriz.
                 </p>
               </div>
 
@@ -378,8 +376,8 @@ export default function EnIyiWebTasarimAjansiPage() {
                   3. Geliştirme
                 </h3>
                 <p className="text-gray-300">
-                  Modern teknolojilerle web sitenizi geliştiririz. Tasarım
-                  ve kodlama aşamalarını tamamlarız.
+                  Modern teknolojilerle web sitenizi geliştiririz. Tasarım ve
+                  kodlama aşamalarını tamamlarız.
                 </p>
               </div>
 
@@ -391,8 +389,8 @@ export default function EnIyiWebTasarimAjansiPage() {
                   4. Teslimat
                 </h3>
                 <p className="text-gray-300">
-                  Projenizi teslim ederiz. Eğitim ve sürekli destek
-                          hizmetleri sunarız.
+                  Projenizi teslim ederiz. Eğitim ve sürekli destek hizmetleri
+                  sunarız.
                 </p>
               </div>
             </div>

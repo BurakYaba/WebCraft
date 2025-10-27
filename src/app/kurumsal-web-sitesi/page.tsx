@@ -1,10 +1,10 @@
 import React, { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "@/components/Header";
-import { 
-  Building2, 
-  Award, 
-  Globe, 
+import {
+  Building2,
+  Award,
+  Globe,
   Star,
   MapPin,
   Phone,
@@ -136,8 +136,8 @@ export default function KurumsalWebSitesiPage() {
                   <span className="text-red-600">Kurumsal Kimlik</span>
                 </h1>
                 <p className="text-lg lg:text-xl text-gray-300 leading-relaxed max-w-md mb-8">
-                  Kurumsal web siteniz ile profesyonel görünüm kazanın. Güvenilirlik
-                  ve kurumsal kimlik için modern web çözümleri.
+                  Kurumsal web siteniz ile profesyonel görünüm kazanın.
+                  Güvenilirlik ve kurumsal kimlik için modern web çözümleri.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -174,9 +174,7 @@ export default function KurumsalWebSitesiPage() {
                     </div>
                     <div className="flex items-center">
                       <Mail className="w-5 h-5 text-red-600 mr-3" />
-                      <span className="text-white">
-                        info@webcraft.com.tr
-                      </span>
+                      <span className="text-white">info@webcraft.tr</span>
                     </div>
                     <div className="flex items-center">
                       <Clock className="w-5 h-5 text-red-600 mr-3" />
@@ -328,8 +326,8 @@ export default function KurumsalWebSitesiPage() {
                 Kurumsal Web Sürecimiz
               </h2>
               <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-                Kurumsal web sitenizin tasarımından yayına alınmasına kadar
-                adım adım sürecimizi keşfedin.
+                Kurumsal web sitenizin tasarımından yayına alınmasına kadar adım
+                adım sürecimizi keşfedin.
               </p>
             </div>
 
@@ -342,8 +340,8 @@ export default function KurumsalWebSitesiPage() {
                   1. Analiz
                 </h3>
                 <p className="text-gray-300">
-                  Şirketinizi ve hedef kitlenizi analiz ederiz. Kurumsal
-                  kimlik ve web stratejisi belirleriz.
+                  Şirketinizi ve hedef kitlenizi analiz ederiz. Kurumsal kimlik
+                  ve web stratejisi belirleriz.
                 </p>
               </div>
 
@@ -381,8 +379,8 @@ export default function KurumsalWebSitesiPage() {
                   4. Yayın
                 </h3>
                 <p className="text-gray-300">
-                  Siteyi yayına alırız. SEO optimizasyonu ve sürekli destek
-                  ile kurumsal web varlığınızı güçlendiririz.
+                  Siteyi yayına alırız. SEO optimizasyonu ve sürekli destek ile
+                  kurumsal web varlığınızı güçlendiririz.
                 </p>
               </div>
             </div>

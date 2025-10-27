@@ -58,7 +58,7 @@ export default function ContactPage() {
         contactType: "customer service",
         availableLanguage: "Turkish",
       },
-      email: "info@webcraft.com.tr",
+      email: "info@webcraft.tr",
       url: "https://www.webcraft.tr",
     },
     hasOfferCatalog: {
@@ -146,18 +146,18 @@ export default function ContactPage() {
                 </h3>
                 <p className="text-gray-600 mb-2">
                   <a
-                    href="mailto:info@webcraft.com.tr"
+                    href="mailto:info@webcraft.tr"
                     className="hover:text-red-600 transition-colors"
                   >
-                    info@webcraft.com.tr
+                    info@webcraft.tr
                   </a>
                 </p>
                 <p className="text-gray-600">
                   <a
-                    href="mailto:hello@webcraft.com.tr"
+                    href="mailto:hello@webcraft.tr"
                     className="hover:text-red-600 transition-colors"
                   >
-                    hello@webcraft.com.tr
+                    hello@webcraft.tr
                   </a>
                 </p>
               </div>

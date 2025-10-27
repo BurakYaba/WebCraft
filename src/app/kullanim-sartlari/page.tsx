@@ -458,9 +458,7 @@ export default function TermsOfUsePage() {
               <div className="bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <p className="mb-3">
                   <strong className="text-white">E-posta:</strong>
-                  <span className="text-[#f84525] ml-2">
-                    info@webcraft.com.tr
-                  </span>
+                  <span className="text-[#f84525] ml-2">info@webcraft.tr</span>
                 </p>
                 <p className="mb-3">
                   <strong className="text-white">Telefon:</strong>

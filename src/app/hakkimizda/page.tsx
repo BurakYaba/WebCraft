@@ -65,7 +65,7 @@ export default function AboutPage() {
         contactType: "customer service",
         availableLanguage: "Turkish",
       },
-      email: "info@webcraft.com.tr",
+      email: "info@webcraft.tr",
       url: "https://www.webcraft.tr",
       knowsAbout: [
         "Web Tasarım",

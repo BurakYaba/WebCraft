@@ -116,5 +116,5 @@ This project is licensed under the MIT License.
 
 For questions or support, please contact:
 
-- Email: info@webcraft.com.tr
+- Email: info@webcraft.tr
 - Website: https://www.webcraft.tr
