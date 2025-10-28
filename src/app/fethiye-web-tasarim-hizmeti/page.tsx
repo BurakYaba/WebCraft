@@ -22,16 +22,16 @@ export const metadata: Metadata = {
   description:
     "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. 5 yıldır Fethiye'de hizmet veriyoruz. Ücretsiz teklif alın!",
   keywords: [
-    "web tasarım Fethiye",
     "Fethiye web tasarım",
-    "web tasarımcı Fethiye",
-    "web tasarım ajansı Fethiye",
-    "profesyonel web tasarım Fethiye",
-    "web sitesi tasarımı Fethiye",
-    "responsive web tasarım Fethiye",
-    "modern web sitesi Fethiye",
-    "web tasarım fiyatları Fethiye",
-    "kurumsal web sitesi Fethiye",
+    "Fethiye web tasarım",
+    "Fethiye web tasarımcı",
+    "Fethiye web tasarım ajansı",
+    "Fethiye profesyonel web tasarım",
+    "Fethiye web sitesi tasarımı",
+    "Fethiye responsive web tasarım",
+    "Fethiye modern web sitesi",
+    "Fethiye web tasarım fiyatları",
+    "Fethiye kurumsal web sitesi",
   ],
   openGraph: {
     title:

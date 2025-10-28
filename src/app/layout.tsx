@@ -24,19 +24,19 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Web Tasarım Fethiye | Profesyonel Web Sitesi Tasarımı | WebCraft",
+    default: "Fethiye Web Tasarım | Profesyonel Web Sitesi Tasarımı | WebCraft",
     template: "%s | WebCraft",
   },
   description:
     "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Uygun fiyatlı paketler. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz. Hemen iletişime geçin!",
   keywords: [
-    "web tasarım Fethiye",
-    "web tasarım Muğla",
-    "web tasarımcı Fethiye",
-    "web tasarım ajansı Fethiye",
     "Fethiye web tasarım",
+    "web tasarım Muğla",
+    "Fethiye web tasarımcı",
+    "Fethiye web tasarım ajansı",
+    "Fethiye web sitesi",
     "Muğla web tasarım",
-    "web sitesi Fethiye",
+    "Fethiye web sitesi tasarımı",
     "web sitesi tasarımı",
     "profesyonel web tasarım",
     "SEO hizmeti Fethiye",
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     url: "https://www.webcraft.tr",
     siteName: "WebCraft",
-    title: "Web Tasarım Fethiye | Profesyonel Web Sitesi Tasarımı | WebCraft",
+    title: "Fethiye Web Tasarım | Profesyonel Web Sitesi Tasarımı | WebCraft",
     description:
       "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz.",
     images: [
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Tasarım Fethiye | Profesyonel Web Sitesi Tasarımı | WebCraft",
+    title: "Fethiye Web Tasarım | Profesyonel Web Sitesi Tasarımı | WebCraft",
     description:
       "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz.",
     images: ["/webcraftLogo.png"],

@@ -11,7 +11,7 @@ const Footer = lazy(() => import("../../components/Footer"));
 export const metadata: Metadata = {
   title: "Web Tasarım Projeleri ve Portföy | WebCraft - Tamamlanan İşlerimiz",
   description:
-    "Web tasarım, SEO ve dijital pazarlama projelerimizi inceleyin. Kurumsal web sitesi tasarımı, e-ticaret ve mobil uygulama örnekleri. Profesyonel web tasarım ajansı portföyü.",
+    "Web tasarım, SEO ve dijital pazarlama projelerimizi inceleyin. Kurumsal web sitesi tasarımı, e-ticaret ve mobil uygulama örnekleri. Profesyonel web tasarım ajansı.",
   keywords:
     "web tasarım projeleri, portföy, tamamlanan işler, web tasarım örnekleri, kurumsal web sitesi tasarımı, e-ticaret sitesi, mobil uygulama, dijital pazarlama projeleri",
   authors: [{ name: "WebCraft" }],

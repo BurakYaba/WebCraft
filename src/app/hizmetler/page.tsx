@@ -22,13 +22,13 @@ const SectionSkeleton = ({ height = "h-96" }: { height?: string }) => (
 export const metadata: Metadata = {
   title: "Web Tasarım ve Dijital Pazarlama Hizmetleri | WebCraft",
   description:
-    "Profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri. Web tasarım fiyatları ve kurumsal web sitesi tasarımı hizmetleri.",
+    "Fethiye ve Muğla'da profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Ücretsiz teklif alın. 5 yıldır bölgede hizmet veriyoruz.",
   keywords:
     "web tasarım, SEO hizmeti, sosyal medya yönetimi, dijital pazarlama ajansı, web tasarım fiyatları, kurumsal web sitesi tasarımı",
   openGraph: {
     title: "Web Tasarım ve Dijital Pazarlama Hizmetleri | WebCraft",
     description:
-      "Profesyonel web tasarım, SEO hizmeti, sosyal medya yönetimi ve dijital pazarlama çözümleri.",
+      "Fethiye ve Muğla'da profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Ücretsiz teklif alın. 5 yıldır bölgede hizmet veriyoruz.",
     type: "website",
     locale: "tr_TR",
   },
