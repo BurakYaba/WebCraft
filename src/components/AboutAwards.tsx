@@ -3,25 +3,25 @@ import { useEffect, useRef } from "react";
 
 const awards = [
   {
-    name: "En Iyi Dijital Ajans",
+    name: "En İyi Dijital Ajans",
     organization: "Turkiye Dijital Odulleri",
     year: "2023",
-    category: "Web Tasarim",
+    category: "Web Tasarım",
   },
   {
-    name: "Yilin Yenilikcisi",
+    name: "Yılın Yenilikcisi",
     organization: "Tech Awards",
     year: "2023",
     category: "E-Ticaret",
   },
   {
-    name: "Musteri Memnuniyeti",
+    name: "Müşteri Memnuniyeti",
     organization: "Digital Excellence",
     year: "2022",
     category: "Hizmet Kalitesi",
   },
   {
-    name: "Yaraticilik Odulu",
+    name: "Yaratıcılık Ödülü",
     organization: "Creative Turkey",
     year: "2022",
     category: "Dijital Pazarlama",
@@ -68,15 +68,15 @@ export default function AboutAwards() {
         {/* Section Header */}
         <div className="mb-20">
           <div className="text-white/60 text-xs uppercase tracking-[0.6em] mb-6">
-            Basarilarimiz
+            Başarılarımız
           </div>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-8">
-            Kazandigimiz
+            Kazandığımız
             <br />
             <span className="text-red-200">Takdirler</span>
           </h2>
           <p className="text-white/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Sektorun oncu markalarından aldığımız odullerle, kalitemizi ve
+            Sektörün öncü markalarından aldığımız ödüllerle, kalitemizi ve
             yaratıcılığımızı kanıtlıyoruz.
           </p>
         </div>
@@ -129,7 +129,7 @@ export default function AboutAwards() {
               4+
             </div>
             <div className="text-white/60 text-sm uppercase tracking-wider">
-              Odul
+              Ödül
             </div>
           </div>
           <div className="text-center">
@@ -153,7 +153,7 @@ export default function AboutAwards() {
               25+
             </div>
             <div className="text-white/60 text-sm uppercase tracking-wider">
-              Mutlu Musteri
+              Mutlu Müşteri
             </div>
           </div>
         </div>
@@ -163,14 +163,14 @@ export default function AboutAwards() {
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-bold text-white">
               Siz de Bizimle
-              <span className="text-red-200"> Kazanin</span>
+              <span className="text-red-200"> Kazanın</span>
             </h3>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
               Projenizle birlikte yeni başarı hikayelerinin parçası olun.
             </p>
             <div className="pt-4">
               <button className="bg-white text-red-500 hover:bg-red-50 px-8 py-4 rounded-full text-sm font-semibold uppercase tracking-wider transition-all duration-300 hover:scale-105">
-                Hemen Baslayin
+                Hemen Başlayın
               </button>
             </div>
           </div>

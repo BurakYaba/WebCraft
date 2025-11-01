@@ -504,7 +504,7 @@ export default function CookiePolicyPage() {
                 <p className="mb-3">
                   <strong className="text-white">Adres:</strong>
                   <span className="text-[#f84525] ml-2">
-                    Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye/Muğla
+                    Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye - Muğla
                   </span>
                 </p>
                 <p className="mb-3">

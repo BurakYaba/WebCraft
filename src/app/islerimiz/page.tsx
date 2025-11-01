@@ -128,11 +128,35 @@ export default function ProjectsPage() {
     ],
   };
 
+  // Breadcrumb schema for projects page
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Ana Sayfa",
+        item: "https://www.webcraft.tr",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "İşlerimiz",
+        item: "https://www.webcraft.tr/islerimiz",
+      },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(portfolioSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <main className="min-h-screen bg-[#181716]">
         <Header />

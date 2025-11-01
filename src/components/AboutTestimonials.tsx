@@ -6,15 +6,15 @@ const testimonials = [
     company: "TechStart",
     logo: "TS",
     quote:
-      "WebCraft ile calismanin keyfini yasadık. Profesyonel yaklasımlari ve yaratici cozumleri sayesinde markamizin dijital gorunurlugu ciddi sekilde artti.",
-    author: "Ahmet Yilmaz",
+      "WebCraft ile çalışmanın keyfini yaşadık. Profesyonel yaklaşımları ve yaratıcı çözümleri sayesinde markamızın dijital görünürlüğü ciddi şekilde arttı.",
+    author: "Ahmet Yılmaz",
     position: "CEO",
   },
   {
     company: "EcoGreen",
     logo: "EG",
     quote:
-      "Surdurulebilir cozumler konusunda uzmanlik arayan bir sirket olarak, WebCraft'in hem teknik hem de yaratici yaklasimindan cok memnun kaldik.",
+      "Sürdürülebilir çözümler konusunda uzmanlık arayan bir şirket olarak, WebCraft'in hem teknik hem de yaratıcı yaklaşımından çok memnun kaldık.",
     author: "Zeynep Kaya",
     position: "Pazarlama Direktoru",
   },
@@ -22,7 +22,7 @@ const testimonials = [
     company: "DigitalFlow",
     logo: "DF",
     quote:
-      "E-ticaret projemizde WebCraft'in deneyimi ve yenilikciliği sayesinde hedefledigimiz sonuclara ulastik. Kesinlikle tavsiye ederim.",
+      "E-ticaret projemizde WebCraft'in deneyimi ve yenilikçiliği sayesinde hedeflediğimiz sonuçlara ulaştık. Kesinlikle tavsiye ederim.",
     author: "Mehmet Demir",
     position: "Kurucu",
   },
@@ -69,9 +69,9 @@ export default function AboutTestimonials() {
                     &quot;
                   </div>
                   <h2 className="text-2xl md:text-3xl font-bold">
-                    Musteri Memnuniyeti
+                    Müşteri Memnuniyeti
                     <br />
-                    <span className="text-red-200">Bizim Onceliğimiz</span>
+                    <span className="text-red-200">Bizim Önceliğimiz</span>
                   </h2>
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function AboutTestimonials() {
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
               Siz de Hikayenizin
-              <span className="text-red-500"> Parcasi Olun</span>
+              <span className="text-red-500"> Parçası Olun</span>
             </h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Projenizi hayata geçirmek ve dijital dünyadaki yerinizi almak için
@@ -146,7 +146,7 @@ export default function AboutTestimonials() {
             </p>
             <div className="pt-4">
               <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full text-sm uppercase tracking-wider transition-all duration-300 hover:scale-105">
-                Projeni Baslat
+                Projeni Başlat
               </button>
             </div>
           </div>

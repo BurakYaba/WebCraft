@@ -16,6 +16,10 @@ import {
 const BentoGrid = lazy(() => import("@/components/BentoGrid"));
 // Lazy load Footer
 const Footer = lazy(() => import("@/components/Footer"));
+// Lazy load ServiceFAQSection
+const ServiceFAQSection = lazy(
+  () => import("@/components/ServiceFAQSection")
+);
 
 // Loading component for better UX
 const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
@@ -42,6 +46,64 @@ export const metadata: Metadata = {
 };
 
 export default function EticaretWebTasarimPage() {
+  // E-commerce FAQ data
+  const ecommerceFAQs = [
+    {
+      question: "E-ticaret web sitesi ne kadar sürer?",
+      answer:
+        "E-ticaret web sitesi projesi genellikle 4-8 hafta içinde tamamlanır. Süre, ürün sayısı, ödeme sistemi entegrasyonları ve özel isteklerinize bağlı olarak değişebilir. Profesyonel ekibimiz, projenizi zamanında teslim eder.",
+    },
+    {
+      question: "E-ticaret web tasarım fiyatları nasıl belirlenir?",
+      answer:
+        "E-ticaret web tasarım fiyatları projenin kapsamına, ürün sayısına, ödeme sistemi entegrasyonlarına, kargo entegrasyonlarına ve özel özelliklere göre belirlenir. Her proje özel olarak değerlendirilir. Detaylı fiyat teklifi için ücretsiz teklif alabilirsiniz.",
+    },
+    {
+      question: "Hangi ödeme sistemlerini entegre edebilirsiniz?",
+      answer:
+        "İyzico, PayTR, PayU, Stripe gibi tüm popüler ödeme sistemlerini entegre edebiliriz. Ayrıca, banka kartları, havale/EFT ve kapıda ödeme seçenekleri de mevcuttur.",
+    },
+    {
+      question: "E-ticaret sitesi mobil uyumlu olur mu?",
+      answer:
+        "Evet, tüm e-ticaret web sitelerimiz responsive (mobil uyumlu) olarak tasarlanır. Masaüstü, tablet ve mobil cihazlarda mükemmel çalışır ve kullanıcı deneyimi sağlar.",
+    },
+    {
+      question: "E-ticaret sitesi için kargo entegrasyonu yapıyor musunuz?",
+      answer:
+        "Evet, MNG Kargo, Yurtiçi Kargo, Aras Kargo, Sürat Kargo gibi popüler kargo firmaları ile entegrasyon sağlıyoruz. Kargo takip sistemi ve otomatik bildirimler de mevcuttur.",
+    },
+    {
+      question: "E-ticaret sitesi güvenliği nasıl sağlanıyor?",
+      answer:
+        "Tüm e-ticaret web sitelerimiz SSL sertifikası ile korunur. Güvenli ödeme sistemleri, güvenlik duvarı ve düzenli yedekleme sistemleri ile verileriniz güvende tutulur.",
+    },
+    {
+      question: "E-ticaret sitesi için içerik yönetimi nasıl çalışır?",
+      answer:
+        "Kolay kullanımlı admin paneli ile ürün ekleme, stok yönetimi, sipariş takibi ve raporlama işlemlerini kendiniz yapabilirsiniz. Ayrıca, teknik destek ekibimiz her zaman yardımcı olmaya hazırdır.",
+    },
+    {
+      question: "E-ticaret sitesi SEO uyumlu mu?",
+      answer:
+        "Evet, tüm e-ticaret web sitelerimiz SEO uyumlu olarak geliştirilir. Ürün sayfaları, kategori sayfaları ve meta bilgileri optimize edilir. Ayrıca, SEO hizmeti ile Google'da üst sıralarda yer almanızı sağlıyoruz.",
+    },
+  ];
+
+  // FAQPage schema for e-commerce
+  const ecommerceFAQSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage" as const,
+    mainEntity: ecommerceFAQs.map((faq) => ({
+      "@type": "Question" as const,
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer" as const,
+        text: faq.answer,
+      },
+    })),
+  };
+
   // E-commerce Service Schema
   const ecommerceSchema = {
     "@context": "https://schema.org",
@@ -165,7 +227,7 @@ export default function EticaretWebTasarimPage() {
                     <div className="flex items-center">
                       <MapPin className="w-5 h-5 text-red-600 mr-3" />
                       <span className="text-white">
-                        Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye
+                        Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye - Muğla
                       </span>
                     </div>
                     <div className="flex items-center">
@@ -415,6 +477,11 @@ export default function EticaretWebTasarimPage() {
             </div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <ServiceFAQSection faqs={ecommerceFAQs} schema={ecommerceFAQSchema} />
+        </Suspense>
 
         <Suspense fallback={<SectionSkeleton height="h-64" />}>
           <Footer />

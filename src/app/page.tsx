@@ -7,6 +7,7 @@ import HeroSection from "../components/HeroSection";
 const ServicesSection = lazy(() => import("../components/ServicesSection"));
 const AboutUs = lazy(() => import("../components/AboutUs"));
 const BlogSection = lazy(() => import("../components/BlogSection"));
+const FAQSection = lazy(() => import("../components/FAQSection"));
 const Footer = lazy(() => import("../components/Footer"));
 
 // Loading component for better UX
@@ -19,11 +20,11 @@ const SectionSkeleton = ({ height = "h-96" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Fethiye Web Tasarım | Profesyonel Web Sitesi Tasarımı | WebCraft",
+  title: "Web Tasarım Ajansı | Profesyonel Web Sitesi Tasarımı | WebCraft",
   description:
-    "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Uygun fiyatlı paketler. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz. Hemen iletişime geçin!",
+    "Profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Uygun fiyatlı paketler. Ücretsiz teklif alın. Hemen iletişime geçin!",
   keywords:
-    "Fethiye web tasarım, muğla web tasarım, web tasarımcı Fethiye, web tasarım ajansı Fethiye, Fethiye web tasarım, Muğla web tasarım, web sitesi Fethiye, SEO hizmeti Fethiye, dijital pazarlama Fethiye, web tasarım fiyatları",
+    "web tasarım, profesyonel web tasarım, web tasarımcı, web tasarım ajansı, web sitesi, SEO hizmeti, dijital pazarlama, web tasarım fiyatları",
   authors: [{ name: "WebCraft" }],
   creator: "WebCraft",
   publisher: "WebCraft",
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Fethiye Web Tasarım | Profesyonel Web Sitesi Tasarımı | WebCraft",
+    title: "Web Tasarım Ajansı | Profesyonel Web Sitesi Tasarımı | WebCraft",
     description:
-      "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz.",
+      "Profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın.",
     url: "https://www.webcraft.tr",
     siteName: "WebCraft",
     images: [
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
         url: "/webcraftLogo.png",
         width: 1200,
         height: 630,
-        alt: "WebCraft Fethiye Web Tasarım- Profesyonel Web Sitesi Tasarımı",
+        alt: "WebCraft - Profesyonel Web Sitesi Tasarımı",
       },
     ],
     locale: "tr_TR",
@@ -55,9 +56,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fethiye Web Tasarım | Profesyonel Web Sitesi Tasarımı | WebCraft",
+    title: "Web Tasarım Ajansı | Profesyonel Web Sitesi Tasarımı | WebCraft",
     description:
-      "Fethiye'de profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın. 5 yıldır Fethiye ve Muğla'da hizmet veriyoruz.",
+      "Profesyonel web tasarım hizmeti! Modern, responsive ve SEO uyumlu web siteleri. Ücretsiz teklif alın.",
     images: ["/webcraftLogo.png"],
   },
   robots: {
@@ -77,26 +78,52 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  // AggregateRating schema for homepage
+  const aggregateRatingSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "WebCraft",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "50",
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
+
   return (
-    <main className="min-h-screen bg-[#181716] relative overflow-hidden z-0">
-      <Header />
-      <HeroSection />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(aggregateRatingSchema),
+        }}
+      />
+      <main className="min-h-screen bg-[#181716] relative overflow-hidden z-0">
+        <Header />
+        <HeroSection />
 
-      <Suspense fallback={<SectionSkeleton height="h-screen" />}>
-        <ServicesSection />
-      </Suspense>
+        <Suspense fallback={<SectionSkeleton height="h-screen" />}>
+          <ServicesSection />
+        </Suspense>
 
-      <Suspense fallback={<SectionSkeleton height="h-96" />}>
-        <AboutUs />
-      </Suspense>
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <AboutUs />
+        </Suspense>
 
-      <Suspense fallback={<SectionSkeleton height="h-96" />}>
-        <BlogSection />
-      </Suspense>
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <FAQSection />
+        </Suspense>
 
-      <Suspense fallback={<SectionSkeleton height="h-64" />}>
-        <Footer />
-      </Suspense>
-    </main>
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <BlogSection />
+        </Suspense>
+
+        <Suspense fallback={<SectionSkeleton height="h-64" />}>
+          <Footer />
+        </Suspense>
+      </main>
+    </>
   );
 }

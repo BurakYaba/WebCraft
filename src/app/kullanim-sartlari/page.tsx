@@ -437,8 +437,7 @@ export default function TermsOfUsePage() {
                   başvuru
                 </li>
                 <li>
-                  <strong>Yetkili Mahkeme:</strong> Fethiye Asliye Hukuk
-                  Mahkemesi
+                  <strong>Yetkili Mahkeme:</strong> Türkiye Cumhuriyeti Mahkemeleri
                 </li>
                 <li>
                   <strong>Uygulanacak Hukuk:</strong> Türk Hukuku
@@ -467,7 +466,7 @@ export default function TermsOfUsePage() {
                 <p className="mb-3">
                   <strong className="text-white">Adres:</strong>
                   <span className="text-[#f84525] ml-2">
-                    Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye/Muğla
+                    Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye - Muğla
                   </span>
                 </p>
                 <p className="mb-3">

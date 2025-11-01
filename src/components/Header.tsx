@@ -348,7 +348,7 @@ export default function Header() {
                 <div className="mt-2 text-[#6f6f6f] text-[16px] max-w-xs text-right">
                   Babataşı Mah. 778 Sokak No: 32/A
                   <br />
-                  Fethiye - Muğla, Türkiye
+                  Türkiye
                 </div>
                 <div className="flex gap-6 mt-8 text-[1.7rem] opacity-70 hover:opacity-100 transition-opacity duration-500">
                   {/* Instagram */}

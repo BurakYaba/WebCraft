@@ -22,19 +22,39 @@ const SectionSkeleton = ({ height = "h-96" }: { height?: string }) => (
 export const metadata: Metadata = {
   title: "Web Tasarım ve Dijital Pazarlama Hizmetleri | WebCraft",
   description:
-    "Fethiye ve Muğla'da profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Ücretsiz teklif alın. 5 yıldır bölgede hizmet veriyoruz.",
+    "Profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Ücretsiz teklif alın.",
   keywords:
     "web tasarım, SEO hizmeti, sosyal medya yönetimi, dijital pazarlama ajansı, web tasarım fiyatları, kurumsal web sitesi tasarımı",
   openGraph: {
     title: "Web Tasarım ve Dijital Pazarlama Hizmetleri | WebCraft",
     description:
-      "Fethiye ve Muğla'da profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Ücretsiz teklif alın. 5 yıldır bölgede hizmet veriyoruz.",
+      "Profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Ücretsiz teklif alın.",
     type: "website",
     locale: "tr_TR",
   },
 };
 
 export default function Services() {
+  // Breadcrumb schema for services page
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Ana Sayfa",
+        item: "https://www.webcraft.tr",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Hizmetler",
+        item: "https://www.webcraft.tr/hizmetler",
+      },
+    ],
+  };
+
   // Service Schema for Detailed Service Descriptions
   const servicesSchema = {
     "@context": "https://schema.org",
@@ -143,6 +163,10 @@ export default function Services() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <div className="min-h-screen bg-[#181716] relative overflow-hidden">
         <Header />

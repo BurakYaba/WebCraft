@@ -54,8 +54,6 @@ export default function EnIyiWebTasarimAjansiPage() {
     logo: "https://www.webcraft.tr/webcraftLogo.png",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Fethiye",
-      addressRegion: "Muğla",
       addressCountry: "TR",
     },
     contactPoint: {
@@ -174,7 +172,7 @@ export default function EnIyiWebTasarimAjansiPage() {
                     <div className="flex items-center">
                       <MapPin className="w-5 h-5 text-red-600 mr-3" />
                       <span className="text-white">
-                        Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye
+                        Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye - Muğla
                       </span>
                     </div>
                     <div className="flex items-center">

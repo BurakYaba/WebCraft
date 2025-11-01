@@ -24,6 +24,32 @@ const nextConfig: NextConfig = {
   // Powered by header
   poweredByHeader: false,
 
+  // Redirects for deleted local SEO pages to homepage
+  async redirects() {
+    return [
+      {
+        source: "/fethiye-web-tasarim",
+        destination: "/",
+        permanent: true, // 301 redirect
+      },
+      {
+        source: "/fethiye-web-tasarim-hizmeti",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/mugla-seo",
+        destination: "/hizmetler",
+        permanent: true,
+      },
+      {
+        source: "/mugla-seo-ajansi",
+        destination: "/hizmetler",
+        permanent: true,
+      },
+    ];
+  },
+
   // Bundle analyzer (uncomment for analysis)
   // webpack: (config, { isServer }) => {
   //   if (!isServer) {

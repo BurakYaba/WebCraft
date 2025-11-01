@@ -3120,6 +3120,38 @@ const getBlogPost = (slug: string) => {
   return blogPosts.find((post) => post.slug === slug);
 };
 
+// Helper function to format date for schema (convert Turkish date to ISO format)
+function formatDateForSchema(dateString: string): string {
+  // Map Turkish month names to numbers
+  const monthMap: { [key: string]: string } = {
+    Ocak: "01",
+    Şubat: "02",
+    Mart: "03",
+    Nisan: "04",
+    Mayıs: "05",
+    Haziran: "06",
+    Temmuz: "07",
+    Ağustos: "08",
+    Eylül: "09",
+    Ekim: "10",
+    Kasım: "11",
+    Aralık: "12",
+  };
+
+  // Parse date string like "15 Aralık 2024"
+  const parts = dateString.split(" ");
+  if (parts.length === 3) {
+    const day = parts[0].padStart(2, "0");
+    const month = monthMap[parts[1]];
+    const year = parts[2];
+    if (month) {
+      return `${year}-${month}-${day}`;
+    }
+  }
+  // Fallback: return current date if parsing fails
+  return new Date().toISOString().split("T")[0];
+}
+
 interface BlogPostPageProps {
   params: Promise<{
     slug: string;
@@ -3134,8 +3166,80 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
+  // Article schema for SEO
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    image: `https://www.webcraft.tr${post.image}`,
+    datePublished: formatDateForSchema(post.date),
+    dateModified: formatDateForSchema(post.date),
+    author: {
+      "@type": "Organization",
+      name: "WebCraft",
+      url: "https://www.webcraft.tr",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "WebCraft",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.webcraft.tr/webcraftLogo.png",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.webcraft.tr/blog/${post.slug}`,
+    },
+    articleSection: post.category,
+    keywords: [
+      post.category,
+      "web tasarım",
+      "dijital pazarlama",
+      "SEO",
+      "WebCraft",
+    ],
+  };
+
+  // Breadcrumb schema for navigation
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Ana Sayfa",
+        item: "https://www.webcraft.tr",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: "https://www.webcraft.tr/blog",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: `https://www.webcraft.tr/blog/${post.slug}`,
+      },
+    ],
+  };
+
   return (
     <>
+      {/* Article Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header />
 
       <main className="min-h-screen bg-[#181716]">

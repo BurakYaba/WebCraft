@@ -48,8 +48,6 @@ export default function ContactPage() {
       address: {
         "@type": "PostalAddress",
         streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
-        addressLocality: "Fethiye",
-        addressRegion: "Muğla",
         addressCountry: "TR",
       },
       contactPoint: {
@@ -93,11 +91,35 @@ export default function ContactPage() {
     },
   };
 
+  // Breadcrumb schema for contact page
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Ana Sayfa",
+        item: "https://www.webcraft.tr",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "İletişim",
+        item: "https://www.webcraft.tr/iletisim",
+      },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <div className="min-h-screen bg-white">
         <Header />

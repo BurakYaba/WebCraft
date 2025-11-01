@@ -1,7 +1,60 @@
 import { MetadataRoute } from "next";
 
+// Import blog posts to dynamically generate sitemap entries
+// This ensures the sitemap stays in sync with actual blog posts
+const blogPosts = [
+  {
+    slug: "seo-uyumlu-web-tasarimi",
+    date: "2024-12-15",
+  },
+  {
+    slug: "sosyal-medya-yonetimi-marka-buyutme",
+    date: "2024-12-12",
+  },
+  {
+    slug: "profesyonel-seo-hizmeti",
+    date: "2024-12-10",
+  },
+  {
+    slug: "web-tasarim-fiyatlari",
+    date: "2024-12-08",
+  },
+  {
+    slug: "2024-seo-trendleri",
+    date: "2024-12-05",
+  },
+  {
+    slug: "minimalist-tasarim-yaklasimlari",
+    date: "2024-12-03",
+  },
+  {
+    slug: "online-magaza-kurulumu",
+    date: "2024-12-01",
+  },
+  {
+    slug: "guclu-marka-imaji-olusturma",
+    date: "2024-11-28",
+  },
+  {
+    slug: "web-sitesi-guvenligi",
+    date: "2024-11-25",
+  },
+  {
+    slug: "web-analitik-araclari",
+    date: "2024-11-22",
+  },
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.webcraft.tr";
+
+  // Generate blog post entries dynamically
+  const blogEntries = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
 
   return [
     {
@@ -36,19 +89,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/iletisim`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    // Location-specific landing pages
-    {
-      url: `${baseUrl}/fethiye-web-tasarim`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/mugla-seo`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -92,66 +132,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
-    // Blog posts
+    // FAQ page
     {
-      url: `${baseUrl}/blog/seo-uyumlu-web-tasarimi`,
+      url: `${baseUrl}/sss`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.7,
     },
-    {
-      url: `${baseUrl}/blog/sosyal-medya-yonetimi-marka-buyutme`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/profesyonel-seo-hizmeti`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/web-tasarim-fiyatlari`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/2024-seo-trendleri`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/minimalist-tasarim-yaklasimlari`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/online-magaza-kurulumu`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/guclu-marka-imaji-olusturma`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/web-sitesi-guvenligi`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/web-analitik-araclari`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
+    // Blog posts - dynamically generated
+    ...blogEntries,
   ];
 }

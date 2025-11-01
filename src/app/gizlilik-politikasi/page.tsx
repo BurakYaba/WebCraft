@@ -148,7 +148,7 @@ export default function PrivacyPolicyPage() {
                       <strong className="text-green-400">Adres:</strong>
                     </div>
                     <p className="text-gray-300">
-                      Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye/Muğla
+                      Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye - Muğla
                     </p>
                   </div>
                   <div className="bg-white/5 border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-all duration-300">
@@ -417,7 +417,7 @@ export default function PrivacyPolicyPage() {
                 <p className="mb-3">
                   <strong className="text-white">Adres:</strong>
                   <span className="text-[#f84525] ml-2">
-                    Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye/Muğla
+                    Babataşı Mahallesi, 778 Sokak No: 32/A, Türkiye
                   </span>
                 </p>
                 <p className="mb-3">

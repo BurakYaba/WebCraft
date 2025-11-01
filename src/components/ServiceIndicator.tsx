@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 
 const services = [
   { id: "web-tasarim", name: "WEB TASARIM" },
-  { id: "dijital-pazarlama", name: "DIJITAL PAZARLAMA" },
-  { id: "e-ticaret", name: "E-TICARET" },
-  { id: "mobil-uygulama", name: "MOBIL UYGULAMA" },
-  { id: "yazilim-gelistirme", name: "YAZILIM GELISTIRME" },
+  { id: "dijital-pazarlama", name: "DİJİTAL PAZARLAMA" },
+  { id: "e-ticaret", name: "E-TİCARET" },
+  { id: "mobil-uygulama", name: "MOBİL UYGULAMA" },
+  { id: "yazilim-gelistirme", name: "YAZILIM GELİŞTİRME" },
 ];
 
 export default function ServiceIndicator() {

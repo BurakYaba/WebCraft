@@ -18,16 +18,16 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "Web Tasarım Blog Fethiye | SEO Rehberi ve Dijital Pazarlama İpuçları | WebCraft",
+    "Web Tasarım Blog | SEO Rehberi ve Dijital Pazarlama İpuçları | WebCraft",
   description:
-    "Fethiye'de web tasarım, SEO hizmeti ve dijital pazarlama konularında uzman görüşleri. 5 yıllık deneyimimizle pratik ipuçları ve rehberler.",
+    "Web tasarım, SEO hizmeti ve dijital pazarlama konularında uzman görüşleri. Pratik ipuçları ve rehberler.",
   keywords:
-    "web tasarım blog Fethiye, SEO rehberi Fethiye, dijital pazarlama blog, web tasarım fiyatları, Fethiye web tasarım ajansı",
+    "web tasarım blog, SEO rehberi, dijital pazarlama blog, web tasarım fiyatları, web tasarım ajansı",
   openGraph: {
     title:
-      "Web Tasarım Blog Fethiye | SEO Rehberi ve Dijital Pazarlama İpuçları | WebCraft",
+      "Web Tasarım Blog | SEO Rehberi ve Dijital Pazarlama İpuçları | WebCraft",
     description:
-      "Fethiye'de web tasarım, SEO hizmeti ve dijital pazarlama konularında uzman görüşleri. 5 yıllık deneyimimizle pratik ipuçları ve rehberler.",
+      "Web tasarım, SEO hizmeti ve dijital pazarlama konularında uzman görüşleri. Pratik ipuçları ve rehberler.",
     type: "website",
     locale: "tr_TR",
   },
@@ -87,9 +87,9 @@ const blogPosts = [
     id: 5,
     category: "SEO",
     title:
-      "2025 SEO Trendleri: Google'da Üst Sıralarda Yer Alın | Fethiye Web Tasarım",
+      "2025 SEO Trendleri: Google'da Üst Sıralarda Yer Alın",
     excerpt:
-      "2025'te Google'da üst sıralarda yer almak için bilmeniz gereken SEO trendleri. Fethiye'de web tasarım ajansı olarak 5 yıllık deneyimimizle paylaşıyoruz.",
+      "2025'te Google'da üst sıralarda yer almak için bilmeniz gereken SEO trendleri. Web tasarım ajansı olarak deneyimimizle paylaşıyoruz.",
     image: "/bento/web-tasarım.jpg",
     slug: "2024-seo-trendleri",
     date: "5 Aralık 2024",
@@ -147,9 +147,9 @@ const blogPosts = [
   {
     id: 10,
     category: "Web Analitik",
-    title: "2025'te En İyi Web Analitik Araçları | Fethiye Web Tasarım",
+    title: "2025'te En İyi Web Analitik Araçları",
     excerpt:
-      "2025'te en iyi web analitik araçları ve nasıl kullanılacağı. Fethiye'de web tasarım ajansı olarak hangi araçları öneriyoruz? Detaylı rehber.",
+      "2025'te en iyi web analitik araçları ve nasıl kullanılacağı. Web tasarım ajansı olarak hangi araçları öneriyoruz? Detaylı rehber.",
     image: "/bento/dijital-pazarlama.jpg",
     slug: "web-analitik-araclari",
     date: "22 Kasım 2024",
@@ -189,11 +189,35 @@ const BlogPage = () => {
     })),
   };
 
+  // Breadcrumb schema for blog listing page
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Ana Sayfa",
+        item: "https://www.webcraft.tr",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: "https://www.webcraft.tr/blog",
+      },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <Header />
 

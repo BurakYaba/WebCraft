@@ -1,5 +1,6 @@
 import { lazy, Suspense, memo } from "react";
 import Link from "next/link";
+import GoogleReviewsBadge from "./GoogleReviewsBadge";
 
 // Lazy load the RotatingCube to improve LCP
 const RotatingCube = lazy(() => import("./RotatingCube"));
@@ -95,8 +96,13 @@ const HeroSection = memo(function HeroSection() {
         </Suspense>
       </div>
 
+      {/* Google Reviews Badge - below the cube */}
+      <div className="hidden sm:block absolute right-16 md:right-32 lg:right-40 bottom-8 md:bottom-12 z-20">
+        <GoogleReviewsBadge reviewCount={50} rating={4.9} />
+      </div>
+
       {/* Scroll indicator */}
-      <div className="absolute right-2 md:right-8 bottom-8 md:bottom-24 flex flex-col items-center z-20">
+      <div className="absolute right-2 md:right-8 bottom-4 md:bottom-8 flex flex-col items-center z-20">
         <div className="w-px h-8 md:h-12 bg-white/40 mb-2"></div>
         <span
           className="uppercase tracking-widest text-[9px] md:text-xs text-white/70"

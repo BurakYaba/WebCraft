@@ -27,7 +27,7 @@ export default function ServicesHero() {
           }`}
           style={{ letterSpacing: "0.35em" }}
         >
-          HIZMETLERIMIZ
+          HiZMETLERİMİZ
         </div>
 
         {/* Main heading */}
@@ -66,7 +66,7 @@ export default function ServicesHero() {
         >
           <Link href="/islerimiz">
             <button className="group relative inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold text-xs sm:text-sm uppercase tracking-wider rounded-full hover:bg-red-500 hover:text-white transition-all duration-300">
-              <span className="hidden sm:inline">PROJELERIMIZI INCELE</span>
+              <span className="hidden sm:inline">PROJELERİMİZİ İNCELE</span>
               <span className="sm:hidden">PROJELER</span>
               <svg
                 className="ml-2 sm:ml-3 w-3 h-3 sm:w-4 sm:h-4 transform group-hover:translate-x-1 transition-transform duration-300"
