@@ -293,7 +293,9 @@ export default function Header() {
                 <div className="flex gap-6 mt-8 text-[1.7rem] opacity-70 hover:opacity-100 transition-opacity duration-500">
                   {/* Instagram */}
                   <a
-                    href="#"
+                    href="https://instagram.com/webcraft"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="Instagram"
                     className="hover:text-red-500 transition-colors"
                   >
@@ -301,7 +303,9 @@ export default function Header() {
                   </a>
                   {/* Facebook */}
                   <a
-                    href="#"
+                    href="https://facebook.com/webcraft"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="Facebook"
                     className="hover:text-red-500 transition-colors"
                   >
@@ -309,7 +313,9 @@ export default function Header() {
                   </a>
                   {/* Twitter */}
                   <a
-                    href="#"
+                    href="https://twitter.com/webcraft"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="Twitter"
                     className="hover:text-red-500 transition-colors"
                   >
@@ -317,7 +323,9 @@ export default function Header() {
                   </a>
                   {/* LinkedIn */}
                   <a
-                    href="#"
+                    href="https://linkedin.com/company/webcraft"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="LinkedIn"
                     className="hover:text-red-500 transition-colors"
                   >
@@ -353,7 +361,9 @@ export default function Header() {
                 <div className="flex gap-6 mt-8 text-[1.7rem] opacity-70 hover:opacity-100 transition-opacity duration-500">
                   {/* Instagram */}
                   <a
-                    href="#"
+                    href="https://instagram.com/webcraft"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="Instagram"
                     className="hover:text-red-500 transition-colors"
                   >
@@ -361,7 +371,9 @@ export default function Header() {
                   </a>
                   {/* Facebook */}
                   <a
-                    href="#"
+                    href="https://facebook.com/webcraft"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="Facebook"
                     className="hover:text-red-500 transition-colors"
                   >
@@ -369,7 +381,9 @@ export default function Header() {
                   </a>
                   {/* Twitter */}
                   <a
-                    href="#"
+                    href="https://twitter.com/webcraft"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="Twitter"
                     className="hover:text-red-500 transition-colors"
                   >
@@ -377,7 +391,9 @@ export default function Header() {
                   </a>
                   {/* LinkedIn */}
                   <a
-                    href="#"
+                    href="https://linkedin.com/company/webcraft"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="LinkedIn"
                     className="hover:text-red-500 transition-colors"
                   >

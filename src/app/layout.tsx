@@ -62,9 +62,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.webcraft.tr"),
   alternates: {
     canonical: "/",
-    languages: {
-      "tr-TR": "/",
-    },
   },
   openGraph: {
     type: "website",

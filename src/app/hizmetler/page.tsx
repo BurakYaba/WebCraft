@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Metadata } from "next";
+import Link from "next/link";
 import Header from "../../components/Header";
 import ServicesHero from "../../components/ServicesHero";
 
@@ -25,6 +26,10 @@ export const metadata: Metadata = {
     "Profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Ücretsiz teklif alın.",
   keywords:
     "web tasarım, SEO hizmeti, sosyal medya yönetimi, dijital pazarlama ajansı, web tasarım fiyatları, kurumsal web sitesi tasarımı",
+  metadataBase: new URL("https://www.webcraft.tr"),
+  alternates: {
+    canonical: "/hizmetler",
+  },
   openGraph: {
     title: "Web Tasarım ve Dijital Pazarlama Hizmetleri | WebCraft",
     description:
@@ -172,6 +177,54 @@ export default function Services() {
         <Header />
         <main>
           <ServicesHero />
+
+          {/* Additional Content Section for SEO */}
+          <section className="py-16 md:py-24 bg-[#1a1918]">
+            <div className="max-w-4xl mx-auto px-6 md:px-10 text-white/80">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                Web Tasarım ve Dijital Pazarlama Hizmetlerimiz
+              </h2>
+              <p className="text-lg md:text-xl leading-relaxed mb-6">
+                WebCraft olarak, 2015 yılından bu yana web tasarım, SEO hizmeti ve dijital pazarlama alanlarında profesyonel çözümler sunuyoruz. Modern teknolojiler ve yaratıcı tasarım yaklaşımı ile işletmenizin dijital varlığını güçlendiriyoruz.
+              </p>
+              <p className="text-lg md:text-xl leading-relaxed mb-6">
+                Kurumsal web sitesi tasarımından e-ticaret web tasarımına, SEO hizmetinden sosyal medya yönetimine kadar geniş bir hizmet yelpazesi sunuyoruz. Her projede, müşterilerimizin ihtiyaçlarına özel çözümler geliştiriyor ve dijital pazarlama başarısını hedefliyoruz.
+              </p>
+              <p className="text-lg md:text-xl leading-relaxed mb-6">
+                Web tasarım fiyatları, projenin kapsamına ve özelliklerine göre belirlenir. Her işletme için en uygun çözümü sunmak amacıyla, detaylı analiz yaparak size özel teklifler hazırlıyoruz. Profesyonel ekibimiz, modern web teknolojileri ve SEO en iyi uygulamaları ile web sitenizin Google&apos;da üst sıralarda yer almasını sağlıyor.
+              </p>
+              <p className="text-lg md:text-xl leading-relaxed mb-6">
+                Mobil uyumlu web tasarımı, hızlı yükleme süreleri ve kullanıcı dostu arayüzler ile web sitenizin hem görsel olarak çekici hem de fonksiyonel olmasını sağlıyoruz. Dijital pazarlama stratejileri ile markanızın online görünürlüğünü artırıyor ve organik trafiğinizi yükseltiyoruz.
+              </p>
+              <div className="mt-8 pt-8 border-t border-white/10">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                  İlgili Blog Yazılarımız
+                </h3>
+                <ul className="space-y-2 text-lg md:text-xl">
+                  <li>
+                    <Link href="/blog/seo-uyumlu-web-tasarimi" className="text-red-400 hover:text-red-300 underline underline-offset-4 transition-colors">
+                      SEO Uyumlu Web Tasarımı ile Google&apos;da Üst Sıralarda Yer Alın
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog/2024-seo-trendleri" className="text-red-400 hover:text-red-300 underline underline-offset-4 transition-colors">
+                      2024&apos;te SEO Trendleri ve Arama Motoru Optimizasyonu
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog/web-sitesi-guvenligi" className="text-red-400 hover:text-red-300 underline underline-offset-4 transition-colors">
+                      Web Sitesi Güvenliği ile Dijital Varlığınızı Koruyun
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog/web-analitik-araclari" className="text-red-400 hover:text-red-300 underline underline-offset-4 transition-colors">
+                      Web Analitik Araçları ile Dijital Performansınızı Ölçün
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
 
           <Suspense fallback={<SectionSkeleton height="h-screen" />}>
             <ServiceBlocks />

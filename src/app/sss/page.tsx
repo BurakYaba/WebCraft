@@ -14,13 +14,17 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Sıkça Sorulan Sorular (SSS) | WebCraft - Web Tasarım ve SEO Hizmeti",
+  title: "Sıkça Sorulan Sorular | WebCraft SSS",
   description:
     "Web tasarım, SEO hizmeti ve dijital pazarlama hakkında sıkça sorulan sorular. Web tasarım fiyatları, SEO hizmeti, e-ticaret web tasarımı ve daha fazlası hakkında merak ettiğiniz her şey.",
   keywords:
     "web tasarım SSS, SEO SSS, web tasarım soruları, web tasarım fiyatları, SEO hizmeti soruları, e-ticaret SSS",
+  metadataBase: new URL("https://www.webcraft.tr"),
+  alternates: {
+    canonical: "/sss",
+  },
   openGraph: {
-    title: "Sıkça Sorulan Sorular (SSS) | WebCraft",
+    title: "Sıkça Sorulan Sorular | WebCraft SSS",
     description:
       "Web tasarım, SEO hizmeti ve dijital pazarlama hakkında sıkça sorulan sorular ve cevapları.",
     type: "website",
@@ -166,6 +170,14 @@ export default function FAQPage() {
       <main className="min-h-screen bg-white">
         <Header />
         <div className="pt-32 pb-20">
+          <div className="max-w-4xl mx-auto px-5 md:px-10 mb-12">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
+              Sıkça Sorulan Sorular
+            </h1>
+            <p className="text-lg text-gray-600">
+              Web tasarım, SEO hizmeti ve dijital pazarlama hakkında merak ettiğiniz soruların cevapları.
+            </p>
+          </div>
           <FAQSection />
         </div>
         <Suspense fallback={<SectionSkeleton height="h-64" />}>

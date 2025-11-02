@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { Metadata } from "next";
+import Link from "next/link";
 import Header from "../../components/Header";
 import ContactForm from "../../components/ContactForm";
 import { Mail, Phone, MapPin } from "lucide-react";
@@ -17,14 +18,17 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title:
-    "Web Tasarım ve SEO Hizmeti İletişim | WebCraft - Ücretsiz Teklif Alın",
+  title: "Web Tasarım İletişim | WebCraft - Ücretsiz Teklif",
   description:
     "Web tasarım, SEO hizmeti ve dijital pazarlama için ücretsiz teklif alın. Web tasarım fiyatları ve sosyal medya yönetimi hizmetleri için bizimle iletişime geçin.",
   keywords:
     "web tasarım teklif, SEO hizmeti fiyat, dijital pazarlama ajansı iletişim, web tasarım fiyatları, sosyal medya yönetimi",
+  metadataBase: new URL("https://www.webcraft.tr"),
+  alternates: {
+    canonical: "/iletisim",
+  },
   openGraph: {
-    title: "Web Tasarım ve SEO Hizmeti İletişim | WebCraft",
+    title: "Web Tasarım İletişim | WebCraft - Ücretsiz Teklif",
     description:
       "Web tasarım, SEO hizmeti ve dijital pazarlama için ücretsiz teklif alın.",
     type: "website",
@@ -138,12 +142,30 @@ export default function ContactPage() {
                   <br />
                   <span className="text-red-600">Teklifi Alın</span>
                 </h1>
-                <p className="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-md">
+                <p className="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-md mb-4">
                   <strong>Web tasarım</strong>, <strong>SEO hizmeti</strong> ve{" "}
                   <strong>dijital pazarlama</strong> projeleriniz için ücretsiz
                   teklif alın. Web tasarım fiyatları ve sosyal medya yönetimi
                   hizmetlerimiz hakkında bilgi edinin.
                 </p>
+                <p className="text-base lg:text-lg text-gray-500 leading-relaxed max-w-md mb-4">
+                  Profesyonel web tasarım ajansı olarak, kurumsal web sitesi tasarımı, e-ticaret web tasarımı, SEO hizmeti ve dijital pazarlama çözümleri sunuyoruz. 2015 yılından bu yana 200+ başarılı proje tamamladık ve müşteri memnuniyetini ön planda tutuyoruz. Modern teknolojiler ve yaratıcı tasarım yaklaşımı ile web sitenizin hem görsel olarak çekici hem de arama motorlarında üst sıralarda yer almasını sağlıyoruz.
+                </p>
+                <div className="mt-6 pt-6 border-t border-gray-200 max-w-md">
+                  <p className="text-sm text-gray-500 mb-3">İlgili blog yazılarımız:</p>
+                  <ul className="space-y-2 text-sm">
+                    <li>
+                      <Link href="/blog/seo-uyumlu-web-tasarimi" className="text-red-600 hover:text-red-700 underline underline-offset-2 transition-colors">
+                        SEO Uyumlu Web Tasarımı Rehberi
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/blog/web-tasarim-fiyatlari" className="text-red-600 hover:text-red-700 underline underline-offset-2 transition-colors">
+                        Web Tasarım Fiyatları ve Çözümler
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               {/* Right Content - Contact Form */}

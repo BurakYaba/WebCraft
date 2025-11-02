@@ -27,12 +27,15 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title:
-    "Kurumsal Web Sitesi Tasarımı | WebCraft - Profesyonel Kurumsal Kimlik",
+  title: "Kurumsal Web Sitesi Tasarımı | WebCraft",
   description:
     "Profesyonel kurumsal web sitesi tasarımı. Kurumsal kimlik, güvenilirlik ve profesyonel görünüm için modern kurumsal web çözümleri. Kurumsal web tasarım.",
   keywords:
     "kurumsal web sitesi, kurumsal web tasarımı, kurumsal kimlik, profesyonel web sitesi, kurumsal web çözümleri",
+  metadataBase: new URL("https://www.webcraft.tr"),
+  alternates: {
+    canonical: "/kurumsal-web-sitesi",
+  },
   openGraph: {
     title: "Kurumsal Web Sitesi Tasarımı | WebCraft",
     description:

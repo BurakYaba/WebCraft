@@ -4,11 +4,15 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Gizlilik Politikası | WebCraft - Veri Koruma ve Gizlilik",
+  title: "Gizlilik Politikası | WebCraft",
   description:
     "WebCraft gizlilik politikası. Kişisel verilerinizin nasıl korunduğu, toplandığı ve kullanıldığı hakkında detaylı bilgi. KVKK uyumlu veri koruma.",
   keywords:
     "gizlilik politikası, veri koruma, KVKK, kişisel veri, webcraft gizlilik, veri güvenliği",
+  metadataBase: new URL("https://www.webcraft.tr"),
+  alternates: {
+    canonical: "/gizlilik-politikasi",
+  },
   openGraph: {
     title: "Gizlilik Politikası | WebCraft",
     description: "WebCraft gizlilik politikası ve veri koruma bilgileri.",

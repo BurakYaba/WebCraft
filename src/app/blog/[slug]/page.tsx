@@ -3044,7 +3044,7 @@ export async function generateMetadata({
   ].join(", ");
 
   return {
-    title: `${post.title} | WebCraft Blog`,
+    title: post.title,
     description: post.excerpt,
     keywords: allKeywords,
     authors: [{ name: "WebCraft" }],

@@ -29,11 +29,15 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "En İyi Web Tasarım Ajansı | WebCraft - Türkiye'nin Lider Web Ajansı",
+  title: "En İyi Web Tasarım Ajansı | WebCraft",
   description:
     "Türkiye'nin en iyi web tasarım ajansı WebCraft. Profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. 50+ başarılı proje, %98 müşteri memnuniyeti.",
   keywords:
     "en iyi web tasarım ajansı, Türkiye web tasarım ajansı, lider web ajansı, profesyonel web tasarım, web tasarım şirketi",
+  metadataBase: new URL("https://www.webcraft.tr"),
+  alternates: {
+    canonical: "/en-iyi-web-tasarim-ajansi",
+  },
   openGraph: {
     title: "En İyi Web Tasarım Ajansı | WebCraft",
     description:

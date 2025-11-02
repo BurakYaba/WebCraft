@@ -4,11 +4,15 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Kullanım Şartları | WebCraft - Hizmet Koşulları ve Yasal Şartlar",
+  title: "Kullanım Şartları | WebCraft",
   description:
     "WebCraft kullanım şartları. Web tasarım, SEO ve dijital pazarlama hizmetlerimizin kullanım koşulları, haklar ve yükümlülükler hakkında detaylı bilgi.",
   keywords:
     "kullanım şartları, hizmet koşulları, webcraft şartlar, yasal koşullar, hizmet anlaşması",
+  metadataBase: new URL("https://www.webcraft.tr"),
+  alternates: {
+    canonical: "/kullanim-sartlari",
+  },
   openGraph: {
     title: "Kullanım Şartları | WebCraft",
     description: "WebCraft hizmet kullanım şartları ve yasal koşullar.",

@@ -31,11 +31,15 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "E-Ticaret Web Tasarımı | WebCraft - Online Mağaza Kurulumu",
+  title: "E-Ticaret Web Tasarımı | WebCraft",
   description:
     "Profesyonel e-ticaret web sitesi tasarımı. Online mağaza kurulumu, güvenli ödeme sistemleri ve mobil uyumlu e-ticaret çözümleri. Satışlarınızı artırın.",
   keywords:
     "e-ticaret web tasarımı, online mağaza kurulumu, e-ticaret sitesi, e-ticaret çözümleri, online satış sitesi",
+  metadataBase: new URL("https://www.webcraft.tr"),
+  alternates: {
+    canonical: "/e-ticaret-web-tasarim",
+  },
   openGraph: {
     title: "E-Ticaret Web Tasarımı | WebCraft",
     description:

@@ -17,15 +17,13 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title:
-    "Web Tasarım Blog | SEO Rehberi ve Dijital Pazarlama İpuçları | WebCraft",
+  title: "Web Tasarım Blog | SEO ve Dijital Pazarlama Rehberi",
   description:
     "Web tasarım, SEO hizmeti ve dijital pazarlama konularında uzman görüşleri. Pratik ipuçları ve rehberler.",
   keywords:
     "web tasarım blog, SEO rehberi, dijital pazarlama blog, web tasarım fiyatları, web tasarım ajansı",
   openGraph: {
-    title:
-      "Web Tasarım Blog | SEO Rehberi ve Dijital Pazarlama İpuçları | WebCraft",
+    title: "Web Tasarım Blog | SEO ve Dijital Pazarlama Rehberi",
     description:
       "Web tasarım, SEO hizmeti ve dijital pazarlama konularında uzman görüşleri. Pratik ipuçları ve rehberler.",
     type: "website",

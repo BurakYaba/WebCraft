@@ -1,0 +1,39 @@
+# WebCraft - Web Tasarım ve Dijital Pazarlama Ajansı
+
+## Hakkımızda
+
+WebCraft, 2015 yılından bu yana web tasarım, SEO hizmeti ve dijital pazarlama alanlarında profesyonel hizmet sunan bir web tasarım ajansıdır. Türkiye genelinde ve uluslararası müşterilere modern, responsive ve SEO uyumlu web siteleri geliştiriyoruz.
+
+## Hizmetlerimiz
+
+- **Web Tasarım**: Modern, responsive ve SEO uyumlu web sitesi tasarımı
+- **SEO Hizmeti**: Arama motoru optimizasyonu ile Google'da üst sıralarda yer alma
+- **E-Ticaret Web Tasarımı**: Online mağaza kurulumu ve e-ticaret çözümleri
+- **Kurumsal Web Sitesi**: Profesyonel kurumsal kimlik ve web çözümleri
+- **Dijital Pazarlama**: Kapsamlı dijital pazarlama stratejileri ve kampanya yönetimi
+- **Sosyal Medya Yönetimi**: Instagram, Facebook, LinkedIn, Twitter yönetimi
+- **Mobil Uygulama Geliştirme**: iOS ve Android mobil uygulama tasarımı ve geliştirme
+
+## İletişim
+
+- **E-posta**: info@webcraft.tr
+- **Telefon**: +90 (507) 944 17 15, +90 (531) 833 59 86
+- **Adres**: Babataşı Mah. 778 Sokak No: 32/A, Fethiye - Muğla, Türkiye
+- **Website**: https://www.webcraft.tr
+
+## Önemli Sayfalar
+
+- Ana Sayfa: https://www.webcraft.tr
+- Hizmetler: https://www.webcraft.tr/hizmetler
+- Blog: https://www.webcraft.tr/blog
+- İletişim: https://www.webcraft.tr/iletisim
+- Hakkımızda: https://www.webcraft.tr/hakkimizda
+- Portföy: https://www.webcraft.tr/islerimiz
+- SSS: https://www.webcraft.tr/sss
+
+## Özel Sayfalar
+
+- E-Ticaret Web Tasarımı: https://www.webcraft.tr/e-ticaret-web-tasarim
+- Kurumsal Web Sitesi: https://www.webcraft.tr/kurumsal-web-sitesi
+- En İyi Web Tasarım Ajansı: https://www.webcraft.tr/en-iyi-web-tasarim-ajansi
+

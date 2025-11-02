@@ -4,11 +4,15 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Çerez Politikası | WebCraft - Cookie Kullanımı ve Gizlilik",
+  title: "Çerez Politikası | WebCraft",
   description:
     "WebCraft çerez politikası. Web sitemizde kullanılan çerezler, amaçları ve nasıl kontrol edileceği hakkında detaylı bilgi. GDPR uyumlu çerez yönetimi.",
   keywords:
     "çerez politikası, cookie policy, webcraft çerez, çerez kullanımı, gdpr çerez",
+  metadataBase: new URL("https://www.webcraft.tr"),
+  alternates: {
+    canonical: "/cerez-politikasi",
+  },
   openGraph: {
     title: "Çerez Politikası | WebCraft",
     description: "WebCraft çerez politikası ve cookie kullanım bilgileri.",
