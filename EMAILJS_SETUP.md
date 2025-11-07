@@ -37,6 +37,18 @@ Mesaj:
 {{message}}
 
 ---
+KONUM BİLGİLERİ (IP Bazlı):
+{{location_info}}
+
+Detaylı Konum:
+- IP Adresi: {{location_ip}}
+- Ülke: {{location_country}} ({{location_country_code}})
+- Bölge: {{location_region}}
+- Şehir: {{location_city}}
+- Saat Dilimi: {{location_timezone}}
+- ISP: {{location_isp}}
+
+---
 Bu mesaj WebCraft web sitesinden gönderilmiştir.
 Gönderen: {{from_email}}
 Yanıtla: {{reply_to}}

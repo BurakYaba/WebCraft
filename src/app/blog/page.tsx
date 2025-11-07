@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     "Web tasarım, SEO hizmeti ve dijital pazarlama konularında uzman görüşleri. Pratik ipuçları ve rehberler.",
   keywords:
     "web tasarım blog, SEO rehberi, dijital pazarlama blog, web tasarım fiyatları, web tasarım ajansı",
+  alternates: {
+    canonical: "/blog",
+  },
   openGraph: {
     title: "Web Tasarım Blog | SEO ve Dijital Pazarlama Rehberi",
     description:

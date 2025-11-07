@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { getLocationData, formatLocationForEmail, type LocationData } from "@/utils/locationUtils";
 
 interface FormData {
   name: string;
@@ -50,7 +51,22 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
     setSubmitStatus("idle");
     setErrorMessage("");
 
-    try {
+      try {
+        // Capture location data (IP-based only, no permission required)
+        let locationData: LocationData = {};
+        let locationString = "";
+        
+        try {
+          // Get location data (IP-based geolocation only)
+          locationData = await getLocationData();
+          locationString = formatLocationForEmail(locationData);
+          console.log("Location data captured:", locationData);
+        } catch (locationError) {
+          console.error("Error capturing location:", locationError);
+          // Continue with form submission even if location fails
+          locationString = "Konum bilgisi alınamadı.";
+        }
+
       // EmailJS configuration
       const serviceId =
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "your_service_id";
@@ -73,6 +89,15 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
         to_name: "WebCraft Team",
         user_email: "burakyaba@hotmail.com",
         recipient_email: "burakyaba@hotmail.com",
+        // Location information (IP-based only)
+        location_info: locationString,
+        location_ip: locationData.ip || "Bilinmiyor",
+        location_country: locationData.country || "Bilinmiyor",
+        location_city: locationData.city || "Bilinmiyor",
+        location_region: locationData.region || "Bilinmiyor",
+        location_timezone: locationData.timezone || "Bilinmiyor",
+        location_isp: locationData.isp || "Bilinmiyor",
+        location_country_code: locationData.countryCode || "Bilinmiyor",
       };
 
       // Debug logging
