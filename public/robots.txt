@@ -33,6 +33,9 @@ Disallow: /
 User-agent: SemrushBot
 Disallow: /
 
+# Block Next.js build files (these are build artifacts, not meant for indexing)
+Disallow: /_next/
+
 # Block access to admin areas (if any)
 Disallow: /admin/
 Disallow: /wp-admin/

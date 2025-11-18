@@ -6,6 +6,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: [
+          "/_next/", // Block Next.js build files
+          "/api/", // Block API routes if any
+        ],
       },
       {
         userAgent: "MJ12bot",
