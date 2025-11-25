@@ -131,6 +131,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
 
         {/* Favicon - Multiple formats for maximum compatibility */}
+        {/* Standard favicon.ico - Google checks this first */}
+        <link rel="icon" type="image/png" href="/icon-192.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/icon-192.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/icon-192.png" />
         <link rel="icon" type="image/png" sizes="96x96" href="/icon-192.png" />
