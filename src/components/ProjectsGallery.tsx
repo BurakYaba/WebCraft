@@ -12,9 +12,46 @@ interface Project {
   tags: string[];
   year: string;
   client?: string;
+  url?: string;
+  featured?: boolean;
 }
 
 const projects: Project[] = [
+  // Real Projects
+  {
+    id: "fluenta",
+    title: "Fluenta - İngilizce Öğrenme Platformu",
+    description: "AI destekli 3D avatarlarla interaktif İngilizce öğrenme deneyimi sunan kapsamlı eğitim platformu",
+    category: "Web Tasarım",
+    image: "/projects/fluenta.png",
+    tags: ["Next.js", "React", "TypeScript", "AI"],
+    year: "2025",
+    client: "Fluenta",
+    url: "https://www.fluenta-ai.com/",
+  },
+  {
+    id: "mentoria",
+    title: "Mentoria - Özel Ders Platformu",
+    description: "Öğrenci ve öğretmenleri akıllı eşleştirme sistemiyle buluşturan güvenilir özel ders platformu",
+    category: "Web Tasarım",
+    image: "/projects/mentoria.png",
+    tags: ["Next.js", "React", "TypeScript", "TailwindCSS"],
+    year: "2025",
+    client: "Mentoria",
+    url: "https://www.mentoria.tr/",
+  },
+  {
+    id: "atlantis",
+    title: "Atlantis Kreş ve Gündüz Bakımevi",
+    description: "Muğla Menteşe'de Montessori, Reggio Emilia ve High Scope eğitim modelleriyle modern kreş web sitesi",
+    category: "Web Tasarım",
+    image: "/projects/atlantis.png",
+    tags: ["Next.js", "React", "TailwindCSS"],
+    year: "2025",
+    client: "Atlantis Kreş",
+    url: "https://www.atlantiskres.com/",
+  },
+  // Mock Projects
   {
     id: "1",
     title: "E-Ticaret Platformu",
@@ -144,55 +181,131 @@ export default function ProjectsGallery() {
                   duration: 0.6,
                   delay: index * 0.1,
                 }}
-                className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer"
+                className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
               >
-                {/* Project Image */}
-                <div className="relative h-64 overflow-hidden">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
+                {project.url ? (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block cursor-pointer"
+                  >
+                    {/* Project Image */}
+                    <div className="relative h-64 overflow-hidden">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
 
-                  {/* Year Badge */}
-                  <div className="absolute top-4 right-4 bg-red-500 text-white text-xs px-3 py-1 rounded-full font-medium">
-                    {project.year}
+                      {/* Year Badge */}
+                      <div className="absolute top-4 right-4 bg-red-500 text-white text-xs px-3 py-1 rounded-full font-medium">
+                        {project.year}
+                      </div>
+
+                      {/* Featured Badge */}
+                      {project.featured && (
+                        <div className="absolute top-4 left-4 bg-green-500 text-white text-xs px-3 py-1 rounded-full font-medium flex items-center gap-1">
+                          <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                          Gerçek Proje
+                        </div>
+                      )}
+
+                      {/* External Link Icon */}
+                      <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-gray-800 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    {/* Project Info */}
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm text-red-500 font-medium">
+                          {project.category}
+                        </span>
+                        {project.client && (
+                          <span className="text-xs text-gray-500">
+                            {project.client}
+                          </span>
+                        )}
+                      </div>
+
+                      <h3 className="text-xl font-bold text-gray-900 mb-3">
+                        {project.title}
+                      </h3>
+
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        {project.description}
+                      </p>
+
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {project.tags.slice(0, 3).map((tag) => (
+                          <span
+                            key={tag}
+                            className="px-3 py-1 bg-gray-100 text-xs rounded-full text-gray-600"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </a>
+                ) : (
+                  <div className="cursor-default">
+                    {/* Project Image */}
+                    <div className="relative h-64 overflow-hidden">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+
+                      {/* Year Badge */}
+                      <div className="absolute top-4 right-4 bg-red-500 text-white text-xs px-3 py-1 rounded-full font-medium">
+                        {project.year}
+                      </div>
+                    </div>
+
+                    {/* Project Info */}
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm text-red-500 font-medium">
+                          {project.category}
+                        </span>
+                        {project.client && (
+                          <span className="text-xs text-gray-500">
+                            {project.client}
+                          </span>
+                        )}
+                      </div>
+
+                      <h3 className="text-xl font-bold text-gray-900 mb-3">
+                        {project.title}
+                      </h3>
+
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        {project.description}
+                      </p>
+
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {project.tags.slice(0, 3).map((tag) => (
+                          <span
+                            key={tag}
+                            className="px-3 py-1 bg-gray-100 text-xs rounded-full text-gray-600"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                </div>
-
-                {/* Project Info */}
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-red-500 font-medium">
-                      {project.category}
-                    </span>
-                    {project.client && (
-                      <span className="text-xs text-gray-500">
-                        {project.client}
-                      </span>
-                    )}
-                  </div>
-
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    {project.title}
-                  </h3>
-
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {project.description}
-                  </p>
-
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {project.tags.slice(0, 3).map((tag) => (
-                      <span
-                        key={tag}
-                        className="px-3 py-1 bg-gray-100 text-xs rounded-full text-gray-600"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+                )}
               </motion.div>
             ))}
           </AnimatePresence>
