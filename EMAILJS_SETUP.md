@@ -58,7 +58,7 @@ Yanıtla: {{reply_to}}
 
 1. Set "To Email" field to: `{{to_email}}`
 2. Set "Reply To" field to: `{{reply_to}}`
-3. This ensures emails go to burakyaba@hotmail.com instead of your account email
+3. This ensures emails go to brkyaba@gmail.com instead of your account email
 
 4. Save the template and copy your **Template ID** (starts with "template\_")
 

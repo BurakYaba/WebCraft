@@ -100,7 +100,7 @@ Yanıtla: {{reply_to}}
 
 1. Go to `/iletisim` page
 2. Fill out and submit the form
-3. Check your email (burakyaba@hotmail.com)
+3. Check your email (brkyaba@gmail.com)
 4. You should see location information included
 
 ### 3. Check Browser Console

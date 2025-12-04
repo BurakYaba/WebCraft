@@ -83,12 +83,12 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
         company: formData.company,
         service: formData.service,
         message: formData.message,
-        to_email: "burakyaba@hotmail.com", // Your designated email
+        to_email: "brkyaba@gmail.com", // Your designated email
         reply_to: formData.email, // Reply to the person who filled the form
         // Alternative variables that EmailJS might recognize
         to_name: "WebCraft Team",
-        user_email: "burakyaba@hotmail.com",
-        recipient_email: "burakyaba@hotmail.com",
+        user_email: "brkyaba@gmail.com",
+        recipient_email: "brkyaba@gmail.com",
         // Location information (IP-based only)
         location_info: locationString,
         location_ip: locationData.ip || "Bilinmiyor",
