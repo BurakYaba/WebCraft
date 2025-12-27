@@ -236,10 +236,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 availableLanguage: "Turkish",
               },
               sameAs: [
-                "https://www.facebook.com/webcraft",
-                "https://www.instagram.com/webcraft",
-                "https://www.linkedin.com/company/webcraft",
-                "https://www.twitter.com/webcraft",
+                "https://www.facebook.com/profile.php?id=61585946570262",
+                "https://www.instagram.com/webcraft_web/",
+                "https://www.linkedin.com/company/110657155/",
+                "https://x.com/webcraft_real",
               ],
               hasOfferCatalog: {
                 "@type": "OfferCatalog",

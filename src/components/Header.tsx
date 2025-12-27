@@ -293,7 +293,7 @@ export default function Header() {
                 <div className="flex gap-6 mt-8 text-[1.7rem] opacity-70 hover:opacity-100 transition-opacity duration-500">
                   {/* Instagram */}
                   <a
-                    href="https://instagram.com/webcraft"
+                    href="https://www.instagram.com/webcraft_web/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
@@ -303,7 +303,7 @@ export default function Header() {
                   </a>
                   {/* Facebook */}
                   <a
-                    href="https://facebook.com/webcraft"
+                    href="https://www.facebook.com/profile.php?id=61585946570262"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook"
@@ -313,7 +313,7 @@ export default function Header() {
                   </a>
                   {/* Twitter */}
                   <a
-                    href="https://twitter.com/webcraft"
+                    href="https://x.com/webcraft_real"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Twitter"
@@ -323,7 +323,7 @@ export default function Header() {
                   </a>
                   {/* LinkedIn */}
                   <a
-                    href="https://linkedin.com/company/webcraft"
+                    href="https://www.linkedin.com/company/110657155/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
@@ -361,7 +361,7 @@ export default function Header() {
                 <div className="flex gap-6 mt-8 text-[1.7rem] opacity-70 hover:opacity-100 transition-opacity duration-500">
                   {/* Instagram */}
                   <a
-                    href="https://instagram.com/webcraft"
+                    href="https://www.instagram.com/webcraft_web/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
@@ -371,7 +371,7 @@ export default function Header() {
                   </a>
                   {/* Facebook */}
                   <a
-                    href="https://facebook.com/webcraft"
+                    href="https://www.facebook.com/profile.php?id=61585946570262"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook"
@@ -381,7 +381,7 @@ export default function Header() {
                   </a>
                   {/* Twitter */}
                   <a
-                    href="https://twitter.com/webcraft"
+                    href="https://x.com/webcraft_real"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Twitter"
@@ -391,7 +391,7 @@ export default function Header() {
                   </a>
                   {/* LinkedIn */}
                   <a
-                    href="https://linkedin.com/company/webcraft"
+                    href="https://www.linkedin.com/company/110657155/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
