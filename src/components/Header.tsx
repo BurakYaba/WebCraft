@@ -323,7 +323,7 @@ export default function Header() {
                   </a>
                   {/* LinkedIn */}
                   <a
-                    href="https://www.linkedin.com/company/110657155/"
+                    href="https://www.linkedin.com/company/webcraft-real"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
@@ -391,7 +391,7 @@ export default function Header() {
                   </a>
                   {/* LinkedIn */}
                   <a
-                    href="https://www.linkedin.com/company/110657155/"
+                    href="https://www.linkedin.com/company/webcraft-real"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"

@@ -238,7 +238,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               sameAs: [
                 "https://www.facebook.com/profile.php?id=61585946570262",
                 "https://www.instagram.com/webcraft_web/",
-                "https://www.linkedin.com/company/110657155/",
+                "https://www.linkedin.com/company/webcraft-real",
                 "https://x.com/webcraft_real",
               ],
               hasOfferCatalog: {
