@@ -33,16 +33,13 @@ Disallow: /
 User-agent: SemrushBot
 Disallow: /
 
+# Allow Next.js optimized images (must come before Disallow /_next/)
+Allow: /_next/image
+
 # Block Next.js build files (these are build artifacts, not meant for indexing)
 Disallow: /_next/
 
 # Block access to admin areas (if any)
 Disallow: /admin/
 Disallow: /wp-admin/
-Disallow: /wp-login.php
-
-# Allow important files
-Allow: /sitemap.xml
-Allow: /robots.txt
-Allow: /manifest.json
-Allow: /webcraftLogo.png 
+Disallow: /wp-login.php 
