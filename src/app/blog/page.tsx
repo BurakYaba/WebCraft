@@ -37,6 +37,30 @@ export const metadata: Metadata = {
 // Optimized blog posts data - moved outside component to prevent re-creation
 const blogPosts = [
   {
+    id: 12,
+    category: "Web Tasarım",
+    title: "Profesyonel Web Tasarım Nedir? Kimler İçin Gerekli?",
+    excerpt:
+      "Profesyonel web tasarım nedir ve kimler için gereklidir? Küçük işletmelerden büyük kurumlara kadar profesyonel web tasarımın önemi, faydaları ve ne zaman gerekli olduğunu öğrenin.",
+    image: "/bento/web-tasarım.jpg",
+    slug: "profesyonel-web-tasarim-nedir-kimler-icin-gerekli",
+    date: "22 Ocak 2025",
+    readTime: "20 dk",
+    isEven: false,
+  },
+  {
+    id: 11,
+    category: "Web Tasarım",
+    title: "Kurumsal Web Sitesi Yaptırırken Yapılan 7 Kritik Hata",
+    excerpt:
+      "Kurumsal web sitesi yaptırırken yapılan en yaygın 7 kritik hatayı öğrenin. Profesyonel web tasarım ajansı deneyimiyle bu hatalardan kaçınarak başarılı bir kurumsal web sitesi oluşturun.",
+    image: "/bento/web-tasarım.jpg",
+    slug: "kurumsal-web-sitesi-yaptirirken-yapilan-7-kritik-hata",
+    date: "20 Ocak 2025",
+    readTime: "18 dk",
+    isEven: false,
+  },
+  {
     id: 1,
     category: "Web Tasarım",
     title: "SEO Uyumlu Web Tasarımı ile Google'da Üst Sıralarda Yer Alın",
@@ -87,8 +111,7 @@ const blogPosts = [
   {
     id: 5,
     category: "SEO",
-    title:
-      "2025 SEO Trendleri: Google'da Üst Sıralarda Yer Alın",
+    title: "2025 SEO Trendleri: Google'da Üst Sıralarda Yer Alın",
     excerpt:
       "2025'te Google'da üst sıralarda yer almak için bilmeniz gereken SEO trendleri. Web tasarım ajansı olarak deneyimimizle paylaşıyoruz.",
     image: "/bento/web-tasarım.jpg",

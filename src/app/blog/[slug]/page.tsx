@@ -20,6 +20,721 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 // Optimized blog posts data - moved outside component to prevent re-creation
 const blogPosts = [
   {
+    id: 12,
+    category: "Web Tasarım",
+    title: "Profesyonel Web Tasarım Nedir? Kimler İçin Gerekli?",
+    excerpt:
+      "Profesyonel web tasarım nedir ve kimler için gereklidir? Küçük işletmelerden büyük kurumlara kadar profesyonel web tasarımın önemi, faydaları ve ne zaman gerekli olduğunu öğrenin.",
+    content: `
+      <p>Günümüz dijital dünyasında, bir web sitesine sahip olmak artık bir lüks değil, bir zorunluluktur. Ancak sadece bir web sitesine sahip olmak yeterli değildir. Profesyonel web tasarım, işletmenizin dijital başarısının temelini oluşturur ve markanızın online dünyadaki ilk izlenimini belirler.</p>
+      
+      <p>Bu yazıda, profesyonel web tasarımın ne olduğunu, kimler için gerekli olduğunu ve neden önemli olduğunu detaylı olarak ele alacağız. 8+ yıllık web tasarım deneyimimiz ve 200+ başarılı projemizle, profesyonel <a href="/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım</a> hizmetlerinin işletmenize nasıl değer katacağını açıklayacağız.</p>
+      
+      <h2>Profesyonel Web Tasarım Nedir?</h2>
+      
+      <p>Profesyonel web tasarım, sadece görsel olarak çekici bir web sitesi oluşturmak değildir. Kapsamlı bir süreçtir ve şu unsurları içerir:</p>
+      
+      <h3>1. Stratejik Planlama ve Analiz</h3>
+      
+      <p>Profesyonel web tasarım, detaylı bir planlama süreci ile başlar:</p>
+      
+      <ul>
+        <li><strong>Hedef kitle analizi:</strong> Web sitenizin kime hitap edeceğini belirlemek</li>
+        <li><strong>Rakip analizi:</strong> Sektörünüzdeki rakiplerinizin web sitelerini incelemek</li>
+        <li><strong>İş hedefleri belirleme:</strong> Web sitenizin hangi amaçlara hizmet edeceğini netleştirmek</li>
+        <li><strong>İçerik stratejisi:</strong> Hangi bilgilerin nasıl sunulacağını planlamak</li>
+        <li><strong>Teknik gereksinimler:</strong> Web sitenizin hangi özelliklere ihtiyaç duyduğunu belirlemek</li>
+      </ul>
+      
+      <h3>2. Kullanıcı Deneyimi (UX) Odaklı Tasarım</h3>
+      
+      <p>Profesyonel web tasarım, kullanıcı deneyimini önceliklendirir:</p>
+      
+      <ul>
+        <li><strong>Sezgisel navigasyon:</strong> Kullanıcıların kolayca istedikleri bilgiyi bulabilmesi</li>
+        <li><strong>Hızlı yükleme süreleri:</strong> Kullanıcıların beklemek zorunda kalmaması</li>
+        <li><strong>Mobil uyumluluk:</strong> Tüm cihazlarda mükemmel görünüm ve işlevsellik</li>
+        <li><strong>Erişilebilirlik:</strong> Tüm kullanıcılar için erişilebilir tasarım (WCAG standartları)</li>
+        <li><strong>Dönüşüm odaklı tasarım:</strong> Kullanıcıları istenen aksiyonlara yönlendiren tasarım</li>
+      </ul>
+      
+      <h3>3. Modern Teknolojiler ve Standartlar</h3>
+      
+      <p>Profesyonel web tasarım, güncel teknolojileri kullanır:</p>
+      
+      <ul>
+        <li><strong>Responsive tasarım:</strong> Tüm cihazlarda mükemmel çalışan tasarım</li>
+        <li><strong>SEO optimizasyonu:</strong> Arama motorları için optimize edilmiş yapı</li>
+        <li><strong>Güvenlik standartları:</strong> SSL sertifikası ve güvenlik önlemleri</li>
+        <li><strong>Performans optimizasyonu:</strong> Hızlı yükleme ve optimize edilmiş kod</li>
+        <li><strong>Güncel web standartları:</strong> HTML5, CSS3, ve modern JavaScript</li>
+      </ul>
+      
+      <h3>4. Marka Kimliği ve Görsel Tasarım</h3>
+      
+      <p>Profesyonel web tasarım, markanızı yansıtır:</p>
+      
+      <ul>
+        <li><strong>Marka renkleri ve tipografi:</strong> Marka kimliğinize uygun görsel tasarım</li>
+        <li><strong>Tutarlı tasarım dili:</strong> Tüm sayfalarda tutarlı görsel dil</li>
+        <li><strong>Yüksek kaliteli görseller:</strong> Profesyonel fotoğraflar ve grafikler</li>
+        <li><strong>Modern ve çekici tasarım:</strong> Güncel tasarım trendlerini takip eden görünüm</li>
+        <li><strong>Benzersiz tasarım:</strong> Rakiplerinizden farklılaşan özgün tasarım</li>
+      </ul>
+      
+      <h2>Profesyonel Web Tasarım vs. DIY/Template Çözümler</h2>
+      
+      <p>Birçok işletme, maliyet tasarrufu için hazır şablonlar veya DIY (kendin yap) çözümler kullanmayı düşünür. Ancak profesyonel web tasarım ile bu çözümler arasında önemli farklar vardır:</p>
+      
+      <h3>Hazır Şablonların Sınırlamaları</h3>
+      
+      <ul>
+        <li><strong>Sınırlı özelleştirme:</strong> Şablonlar, özel ihtiyaçlarınıza uyum sağlamakta zorlanır</li>
+        <li><strong>Görsel benzerlik:</strong> Binlerce başka web sitesi ile aynı görünümü paylaşabilirsiniz</li>
+        <li><strong>SEO sorunları:</strong> Şablonlar genellikle SEO için optimize edilmemiştir</li>
+        <li><strong>Performans sorunları:</strong> Gereksiz kodlar ve özellikler yavaş yükleme sürelerine neden olur</li>
+        <li><strong>Güvenlik açıkları:</strong> Güncellenmemiş şablonlar güvenlik riski oluşturabilir</li>
+        <li><strong>Teknik destek eksikliği:</strong> Sorun yaşadığınızda profesyonel destek bulmak zor olabilir</li>
+      </ul>
+      
+      <h3>Profesyonel Web Tasarımın Avantajları</h3>
+      
+      <ul>
+        <li><strong>Özel tasarım:</strong> İşletmenize özel, benzersiz bir web sitesi</li>
+        <li><strong>Tam özelleştirme:</strong> İhtiyaçlarınıza göre tamamen özelleştirilebilir</li>
+        <li><strong>SEO optimizasyonu:</strong> Arama motorları için optimize edilmiş yapı</li>
+        <li><strong>Yüksek performans:</strong> Hızlı yükleme süreleri ve optimize edilmiş kod</li>
+        <li><strong>Güvenlik:</strong> Profesyonel güvenlik önlemleri ve düzenli güncellemeler</li>
+        <li><strong>Teknik destek:</strong> Sürekli destek ve bakım hizmetleri</li>
+        <li><strong>Uzun vadeli değer:</strong> Yatırımınız sürekli değer üretir</li>
+      </ul>
+      
+      <h2>Kimler İçin Profesyonel Web Tasarım Gerekli?</h2>
+      
+      <p>Profesyonel web tasarım, farklı türde işletmeler için farklı nedenlerle gereklidir. İşte profesyonel <a href="/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım</a> hizmetine ihtiyaç duyan işletme türleri:</p>
+      
+      <h3>1. Küçük ve Orta Ölçekli İşletmeler (KOBİ'ler)</h3>
+      
+      <p>Küçük ve orta ölçekli işletmeler için profesyonel web tasarım kritik öneme sahiptir:</p>
+      
+      <ul>
+        <li><strong>Dijital varlık oluşturma:</strong> Küçük işletmeler için web sitesi, en önemli pazarlama aracıdır</li>
+        <li><strong>Rekabet avantajı:</strong> Büyük rakiplerle rekabet edebilmek için profesyonel görünüm</li>
+        <li><strong>Müşteri güveni:</strong> Profesyonel web sitesi, müşteri güvenini artırır</li>
+        <li><strong>Maliyet etkin pazarlama:</strong> Geleneksel pazarlamaya göre daha düşük maliyetli dijital pazarlama</li>
+        <li><strong>7/24 erişilebilirlik:</strong> Müşterilerinize her zaman erişilebilir olma</li>
+      </ul>
+      
+      <h3>2. Kurumsal İşletmeler</h3>
+      
+      <p>Kurumsal işletmeler için profesyonel web tasarım, marka itibarı ve kurumsal kimlik için gereklidir:</p>
+      
+      <ul>
+        <li><strong>Kurumsal kimlik:</strong> Profesyonel görünüm ile marka değerini artırma</li>
+        <li><strong>Çoklu departman yönetimi:</strong> Farklı departmanlar için organize içerik yönetimi</li>
+        <li><strong>Ölçeklenebilirlik:</strong> Büyüyen işletme ihtiyaçlarına uyum sağlayabilen yapı</li>
+        <li><strong>Entegrasyon ihtiyaçları:</strong> CRM, ERP ve diğer kurumsal sistemlerle entegrasyon</li>
+        <li><strong>Güvenlik ve uyumluluk:</strong> Kurumsal güvenlik standartlarına uyum</li>
+      </ul>
+      
+      <h3>3. E-Ticaret İşletmeleri</h3>
+      
+      <p>Online satış yapan işletmeler için profesyonel web tasarım, satış başarısı için kritiktir:</p>
+      
+      <ul>
+        <li><strong>Güvenli ödeme sistemleri:</strong> Müşteri güveni için güvenli ödeme altyapısı</li>
+        <li><strong>Kullanıcı dostu alışveriş deneyimi:</strong> Kolay navigasyon ve hızlı satın alma süreci</li>
+        <li><strong>Ürün yönetimi:</strong> Binlerce ürünü etkili şekilde sergileme</li>
+        <li><strong>Stok yönetimi entegrasyonu:</strong> Otomatik stok takip sistemleri</li>
+        <li><strong>Mobil optimizasyon:</strong> Mobil alışveriş için optimize edilmiş tasarım</li>
+        <li><strong>SEO optimizasyonu:</strong> Ürün sayfalarının arama motorlarında görünürlüğü</li>
+      </ul>
+      
+      <h3>4. Yeni Başlayan İşletmeler ve Start-up'lar</h3>
+      
+      <p>Yeni kurulan işletmeler için profesyonel web tasarım, ilk izlenim için kritiktir:</p>
+      
+      <ul>
+        <li><strong>İlk izlenim:</strong> Potansiyel müşterilerin işletmeniz hakkındaki ilk izlenimi</li>
+        <li><strong>Kredibilite:</strong> Yeni işletmeler için güven oluşturma</li>
+        <li><strong>Hızlı büyüme:</strong> Dijital pazarlama ile hızlı büyüme potansiyeli</li>
+        <li><strong>Yatırımcı çekme:</strong> Profesyonel görünüm ile yatırımcı ilgisi</li>
+        <li><strong>Ölçeklenebilir altyapı:</strong> Büyüyen işletme ihtiyaçlarına uyum sağlayabilen yapı</li>
+      </ul>
+      
+      <h3>5. Hizmet Sektörü İşletmeleri</h3>
+      
+      <p>Hizmet sektöründe faaliyet gösteren işletmeler için profesyonel web tasarım özellikle önemlidir:</p>
+      
+      <ul>
+        <li><strong>Hizmet tanıtımı:</strong> Hizmetlerinizi etkili şekilde tanıtma</li>
+        <li><strong>Randevu sistemleri:</strong> Online randevu alma sistemleri</li>
+        <li><strong>Portföy sergileme:</strong> Önceki işlerinizi ve başarılarınızı sergileme</li>
+        <li><strong>Müşteri referansları:</strong> Memnun müşterilerin yorumlarını gösterme</li>
+        <li><strong>İletişim kolaylığı:</strong> Kolay iletişim formları ve iletişim bilgileri</li>
+      </ul>
+      
+      <h3>6. Yerel İşletmeler</h3>
+      
+      <p>Yerel işletmeler için profesyonel web tasarım, yerel müşterilere ulaşmak için gereklidir:</p>
+      
+      <ul>
+        <li><strong>Yerel SEO:</strong> Yerel aramalarda görünürlük</li>
+        <li><strong>Google My Business entegrasyonu:</strong> Yerel arama sonuçlarında görünme</li>
+        <li><strong>Konum bilgileri:</strong> Harita entegrasyonu ve konum bilgileri</li>
+        <li><strong>Yerel içerik:</strong> Yerel müşterilere hitap eden içerik</li>
+        <li><strong>Mobil optimizasyon:</strong> Mobil cihazlardan arama yapan yerel müşteriler için önemli</li>
+      </ul>
+      
+      <h2>Profesyonel Web Tasarımın İşletmenize Faydaları</h2>
+      
+      <p>Profesyonel web tasarım, işletmenize çeşitli şekillerde değer katar. Bu faydalar, yatırımınızın getirisini (ROI) önemli ölçüde artırır:</p>
+      
+      <h3>1. Artan Müşteri Güveni ve Kredibilite</h3>
+      
+      <p>Profesyonel bir web sitesi, müşteri güvenini artırır:</p>
+      
+      <ul>
+        <li><strong>İlk izlenim:</strong> Profesyonel görünüm, olumlu ilk izlenim oluşturur</li>
+        <li><strong>Güvenilirlik:</strong> İyi tasarlanmış web siteleri daha güvenilir görünür</li>
+        <li><strong>Marka değeri:</strong> Profesyonel tasarım, marka değerini artırır</li>
+        <li><strong>Rekabet avantajı:</strong> Rakiplerinizden öne çıkmanızı sağlar</li>
+        <li><strong>Müşteri memnuniyeti:</strong> Kullanıcı dostu tasarım, müşteri memnuniyetini artırır</li>
+      </ul>
+      
+      <h3>2. Gelişmiş SEO Performansı</h3>
+      
+      <p>Profesyonel web tasarım, SEO performansınızı artırır:</p>
+      
+      <ul>
+        <li><strong>Arama motoru optimizasyonu:</strong> Arama motorlarında üst sıralarda yer alma</li>
+        <li><strong>Organik trafik:</strong> Ücretsiz organik trafik çekme</li>
+        <li><strong>Anahtar kelime optimizasyonu:</strong> Hedef anahtar kelimelerde görünürlük</li>
+        <li><strong>Teknik SEO:</strong> Site hızı, mobil uyumluluk ve diğer teknik faktörler</li>
+        <li><strong>Uzun vadeli değer:</strong> SEO yatırımı sürekli değer üretir</li>
+      </ul>
+      
+      <h3>3. Artan Dönüşüm Oranları</h3>
+      
+      <p>Profesyonel web tasarım, dönüşüm oranlarınızı artırır:</p>
+      
+      <ul>
+        <li><strong>Net çağrılar (CTA):</strong> Kullanıcıları istenen aksiyonlara yönlendirme</li>
+        <li><strong>Kullanıcı deneyimi:</strong> Kolay navigasyon ve kullanım</li>
+        <li><strong>Güven işaretleri:</strong> Müşteri güvenini artıran öğeler</li>
+        <li><strong>Hızlı yükleme:</strong> Kullanıcıların siteyi terk etmemesi</li>
+        <li><strong>Mobil optimizasyon:</strong> Mobil kullanıcılar için optimize edilmiş deneyim</li>
+      </ul>
+      
+      <h3>4. Maliyet Tasarrufu</h3>
+      
+      <p>Profesyonel web tasarım, uzun vadede maliyet tasarrufu sağlar:</p>
+      
+      <ul>
+        <li><strong>Azaltılmış reklam maliyetleri:</strong> Organik trafik ile reklam maliyetlerinde azalma</li>
+        <li><strong>Operasyonel verimlilik:</strong> Otomatik süreçler ile işletme maliyetlerinde azalma</li>
+        <li><strong>Bakım maliyetleri:</strong> Profesyonel tasarım, daha az bakım gerektirir</li>
+        <li><strong>Uzun vadeli değer:</strong> Yatırımınız sürekli değer üretir</li>
+        <li><strong>ROI:</strong> Yüksek yatırım getirisi</li>
+      </ul>
+      
+      <h3>5. Ölçeklenebilirlik ve Büyüme</h3>
+      
+      <p>Profesyonel web tasarım, işletmenizin büyümesine uyum sağlar:</p>
+      
+      <ul>
+        <li><strong>Genişletilebilir yapı:</strong> Yeni özellikler ve sayfalar ekleme kolaylığı</li>
+        <li><strong>Teknoloji entegrasyonu:</strong> Yeni teknolojilere kolay entegrasyon</li>
+        <li><strong>İçerik yönetimi:</strong> Kolay içerik güncelleme ve yönetimi</li>
+        <li><strong>Performans optimizasyonu:</strong> Artan trafiğe uyum sağlayabilen altyapı</li>
+        <li><strong>Uzun vadeli çözüm:</strong> Gelecekteki ihtiyaçlarınızı karşılayabilen yapı</li>
+      </ul>
+      
+      <h2>Profesyonel Web Tasarım Ne Zaman Gerekli?</h2>
+      
+      <p>Profesyonel web tasarım, belirli durumlarda özellikle kritik öneme sahiptir:</p>
+      
+      <h3>1. Yeni İşletme Kurulumu</h3>
+      
+      <p>Yeni bir işletme kurarken, profesyonel web tasarım ilk adımlardan biri olmalıdır:</p>
+      
+      <ul>
+        <li><strong>Dijital varlık oluşturma:</strong> İşletmenizin dijital dünyadaki temelini oluşturma</li>
+        <li><strong>Marka kimliği:</strong> Marka kimliğinizi dijital dünyada yansıtma</li>
+        <li><strong>İlk müşteriler:</strong> İlk müşterilerinize ulaşma aracı</li>
+        <li><strong>Rekabet avantajı:</strong> Piyasaya girişte rekabet avantajı</li>
+      </ul>
+      
+      <h3>2. Mevcut Web Sitesinin Yenilenmesi</h3>
+      
+      <p>Eski veya etkisiz bir web siteniz varsa, profesyonel yeniden tasarım gerekebilir:</p>
+      
+      <ul>
+        <li><strong>Eski teknoloji:</strong> Güncel olmayan teknolojiler ve standartlar</li>
+        <li><strong>Kötü kullanıcı deneyimi:</strong> Kullanıcıların siteyi kullanmakta zorlanması</li>
+        <li><strong>Düşük dönüşüm oranları:</strong> İstenen aksiyonların alınamaması</li>
+        <li><strong>SEO sorunları:</strong> Arama motorlarında görünürlük sorunları</li>
+        <li><strong>Mobil uyumsuzluk:</strong> Mobil cihazlarda kötü görünüm</li>
+      </ul>
+      
+      <h3>3. İş Büyümesi ve Genişleme</h3>
+      
+      <p>İşletmeniz büyüdükçe, web sitenizin de büyümesi gerekir:</p>
+      
+      <ul>
+        <li><strong>Yeni hizmetler:</strong> Yeni hizmetlerin tanıtımı için sayfa ekleme</li>
+        <li><strong>Artık trafik:</strong> Artan ziyaretçi sayısına uyum sağlayabilen altyapı</li>
+        <li><strong>Yeni özellikler:</strong> İşletme ihtiyaçlarına göre yeni özellikler ekleme</li>
+        <li><strong>Çoklu dil desteği:</strong> Uluslararası müşteriler için çoklu dil desteği</li>
+      </ul>
+      
+      <h3>4. Rekabet Avantajı İhtiyacı</h3>
+      
+      <p>Rakiplerinizden öne çıkmak için profesyonel web tasarım gerekebilir:</p>
+      
+      <ul>
+        <li><strong>Pazar payı kaybı:</strong> Rakiplerinize karşı pazar payı kaybetme</li>
+        <li><strong>Dijital varlık eksikliği:</strong> Dijital dünyada yetersiz görünüm</li>
+        <li><strong>Müşteri kaybı:</strong> Müşterilerin rakiplerinize yönelmesi</li>
+        <li><strong>Marka değeri:</strong> Marka değerini artırma ihtiyacı</li>
+      </ul>
+      
+      <h2>Profesyonel Web Tasarım Süreci</h2>
+      
+      <p>Profesyonel web tasarım, sistematik bir süreçtir. Bu süreç şu aşamalardan oluşur:</p>
+      
+      <h3>1. İhtiyaç Analizi ve Planlama</h3>
+      
+      <p>Proje başlangıcında detaylı bir analiz yapılır:</p>
+      
+      <ul>
+        <li><strong>Hedef kitle analizi:</strong> Web sitenizin kime hitap edeceğini belirleme</li>
+        <li><strong>İş hedefleri:</strong> Web sitenizin hangi amaçlara hizmet edeceğini netleştirme</li>
+        <li><strong>Rakip analizi:</strong> Sektörünüzdeki rakiplerinizi inceleme</li>
+        <li><strong>Teknik gereksinimler:</strong> Hangi özelliklere ihtiyaç duyulduğunu belirleme</li>
+        <li><strong>Bütçe planlaması:</strong> Proje bütçesini belirleme</li>
+      </ul>
+      
+      <h3>2. Tasarım ve Geliştirme</h3>
+      
+      <p>Tasarım ve geliştirme aşaması:</p>
+      
+      <ul>
+        <li><strong>Wireframe ve mockup:</strong> Tasarımın görsel planlaması</li>
+        <li><strong>Görsel tasarım:</strong> Marka kimliğine uygun görsel tasarım</li>
+        <li><strong>Frontend geliştirme:</strong> Kullanıcı arayüzünün kodlanması</li>
+        <li><strong>Backend geliştirme:</strong> Sunucu tarafı geliştirme</li>
+        <li><strong>İçerik entegrasyonu:</strong> İçeriklerin web sitesine eklenmesi</li>
+      </ul>
+      
+      <h3>3. Test ve Optimizasyon</h3>
+      
+      <p>Web sitesi tamamlandıktan sonra kapsamlı testler yapılır:</p>
+      
+      <ul>
+        <li><strong>Fonksiyonellik testleri:</strong> Tüm özelliklerin çalıştığını doğrulama</li>
+        <li><strong>Uyumluluk testleri:</strong> Farklı tarayıcılar ve cihazlarda test</li>
+        <li><strong>Performans testleri:</strong> Hız ve performans optimizasyonu</li>
+        <li><strong>SEO testleri:</strong> SEO optimizasyonunun doğrulanması</li>
+        <li><strong>Güvenlik testleri:</strong> Güvenlik açıklarının kontrol edilmesi</li>
+      </ul>
+      
+      <h3>4. Yayına Alma ve Destek</h3>
+      
+      <p>Web sitesi yayına alındıktan sonra:</p>
+      
+      <ul>
+        <li><strong>Yayına alma:</strong> Web sitesinin canlıya alınması</li>
+        <li><strong>Eğitim:</strong> İçerik yönetim sistemi kullanım eğitimi</li>
+        <li><strong>Teknik destek:</strong> Sorun giderme ve destek hizmetleri</li>
+        <li><strong>Bakım:</strong> Düzenli güncelleme ve bakım hizmetleri</li>
+        <li><strong>İyileştirme:</strong> Sürekli performans iyileştirmeleri</li>
+      </ul>
+      
+      <h2>Profesyonel Web Tasarım İçin WebCraft</h2>
+      
+      <p>8+ yıllık deneyimimiz ve 200+ başarılı projemizle, profesyonel <a href="/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım</a> hizmetleri sunuyoruz. İşletmenizin ihtiyaçlarına özel çözümler geliştirerek, dijital başarınızı destekliyoruz.</p>
+      
+      <h3>WebCraft'tan Bekleyebileceğiniz Hizmetler</h3>
+      
+      <p>Profesyonel web tasarım ajansı olarak size şu hizmetleri sunuyoruz:</p>
+      
+      <ul>
+        <li><strong>Kapsamlı analiz:</strong> İşletmenizin ihtiyaçlarını detaylı analiz</li>
+        <li><strong>Özel tasarım:</strong> Markanıza özel benzersiz tasarım</li>
+        <li><strong>SEO optimizasyonu:</strong> Arama motorları için optimize edilmiş yapı</li>
+        <li><strong>Mobil uyumluluk:</strong> Tüm cihazlarda mükemmel görünüm</li>
+        <li><strong>Teknik mükemmellik:</strong> Güvenlik, performans ve standartlara uyum</li>
+        <li><strong>Sürekli destek:</strong> Bakım, güncelleme ve iyileştirme hizmetleri</li>
+      </ul>
+      
+      <h3>Neden WebCraft?</h3>
+      
+      <ul>
+        <li><strong>8+ yıllık deneyim:</strong> Web tasarım alanında uzmanlaşmış ekibimiz</li>
+        <li><strong>200+ başarılı proje:</strong> Farklı sektörlerde kanıtlanmış başarılarımız</li>
+        <li><strong>Müşteri odaklı yaklaşım:</strong> Her projede müşteri memnuniyetini öncelikleriz</li>
+        <li><strong>Modern teknolojiler:</strong> En güncel web teknolojilerini kullanırız</li>
+        <li><strong>Şeffaf süreç:</strong> Proje sürecinde düzenli iletişim ve raporlama</li>
+        <li><strong>Uzun vadeli işbirliği:</strong> Web sitenizin sürekli başarısı için destek</li>
+      </ul>
+      
+      <h2>Sonuç ve Sonraki Adımlar</h2>
+      
+      <p>Profesyonel web tasarım, modern işletmeler için vazgeçilmez bir gerekliliktir. Küçük işletmelerden büyük kurumlara kadar, tüm işletmeler profesyonel web tasarımın faydalarından yararlanabilir.</p>
+      
+      <p>Profesyonel <a href="/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım</a> hizmeti, sadece görsel olarak çekici bir web sitesi oluşturmak değil, işletmenizin dijital başarısını destekleyen kapsamlı bir çözümdür. Doğru web tasarım ajansı ile çalışarak, markanızı dijital dünyada öne çıkarabilir ve iş hedeflerinize ulaşabilirsiniz.</p>
+      
+      <h3>Hemen Harekete Geçin</h3>
+      
+      <p>Profesyonel web tasarım projeniz için:</p>
+      
+      <ul>
+        <li><strong>Ücretsiz danışmanlık</strong> için bizimle iletişime geçin</li>
+        <li><strong>Kişiselleştirilmiş teklif</strong> alın</li>
+        <li><strong>Portföyümüzü</strong> inceleyin</li>
+        <li><strong>Referanslarımızla</strong> konuşun</li>
+      </ul>
+      
+      <p>Profesyonel web tasarım hizmetlerimiz hakkında detaylı bilgi almak için <strong>WebCraft web tasarım ajansı</strong> ile iletişime geçin. Dijital dünyada markanızı öne çıkaralım!</p>
+      
+      <div class="bg-blue-50 border-l-4 border-blue-400 p-4 my-8">
+        <h4 class="text-blue-800 font-semibold mb-2">💡 Uzman İpucu</h4>
+        <p class="text-blue-700">Profesyonel web tasarım, sadece bir maliyet değil, işletmenizin dijital başarısı için yapılan bir yatırımdır. Doğru yatırım, uzun vadede önemli getiriler sağlar ve işletmenizin büyümesine katkıda bulunur.</p>
+      </div>
+      
+      <div class="bg-green-50 border-l-4 border-green-400 p-4 my-8">
+        <h4 class="text-green-800 font-semibold mb-2">🚀 WebCraft'tan Özel Teklif</h4>
+        <p class="text-green-700">Profesyonel web tasarım projeleriniz için %20 indirim fırsatı! Web tasarım ajansı ile çalışarak dijital başarınızı artırın. Hemen teklif alın!</p>
+      </div>
+    `,
+    image: "/bento/web-tasarım.jpg",
+    slug: "profesyonel-web-tasarim-nedir-kimler-icin-gerekli",
+    date: "22 Ocak 2025",
+    readTime: "20 dk",
+    author: "WebCraft Web Tasarım Uzmanı",
+  },
+  {
+    id: 11,
+    category: "Web Tasarım",
+    title: "Kurumsal Web Sitesi Yaptırırken Yapılan 7 Kritik Hata",
+    excerpt:
+      "Kurumsal web sitesi yaptırırken yapılan en yaygın 7 kritik hatayı öğrenin. Profesyonel web tasarım ajansı deneyimiyle bu hatalardan kaçınarak başarılı bir kurumsal web sitesi oluşturun.",
+    content: `
+      <p>Kurumsal web sitesi, modern işletmelerin dijital dünyadaki vitrinidir. Ancak birçok işletme, web sitesi yaptırırken kritik hatalar yaparak hem zaman hem de para kaybediyor. 8+ yıllık web tasarım deneyimimiz boyunca, yüzlerce kurumsal web sitesi projesinde karşılaştığımız en yaygın hataları sizinle paylaşıyoruz.</p>
+      
+      <p>Bu yazıda, kurumsal web sitesi yaptırırken yapılan 7 kritik hatayı detaylı olarak ele alacağız. Her hatanın neden sorun olduğunu, nasıl önlenebileceğini ve doğru yaklaşımın ne olduğunu açıklayacağız. Bu bilgiler, <a href="/kurumsal-web-sitesi" class="text-[#f84525] hover:underline font-semibold">kurumsal web sitesi</a> projenizde maliyetli hatalardan kaçınmanıza yardımcı olacak.</p>
+      
+      <h2>Kurumsal Web Sitesi Neden Önemli?</h2>
+      
+      <p>Kurumsal web sitesi, işletmenizin dijital kimliğinin temelidir. Modern tüketiciler, bir işletmeyle ilgili karar vermeden önce mutlaka web sitesini ziyaret eder. Web siteniz, potansiyel müşterilerinize ilk izlenimi verir ve güven oluşturur.</p>
+      
+      <p>Ancak yanlış yapılandırılmış veya eksik bir kurumsal web sitesi, işletmenizin itibarına zarar verebilir ve müşteri kaybına neden olabilir. Bu nedenle, web sitesi yaptırırken dikkatli olmak ve yaygın hatalardan kaçınmak kritik öneme sahiptir.</p>
+      
+      <h2>1. Hata: Hedef Kitle ve İş Hedeflerini Netleştirmemek</h2>
+      
+      <h3>Neden Bu Bir Hata?</h3>
+      
+      <p>Birçok işletme, kurumsal web sitesi yaptırmaya başlarken "güzel bir web sitesi" istediğini söyler, ancak web sitesinin kime hitap edeceğini, hangi iş hedeflerine hizmet edeceğini netleştirmez. Bu, sonuçta işlevsiz ve etkisiz bir web sitesi ile sonuçlanır.</p>
+      
+      <p>Hedef kitle analizi yapılmadan oluşturulan web siteleri genellikle:</p>
+      
+      <ul>
+        <li><strong>Yanlış ton ve dil kullanır:</strong> Teknik bir kitleye hitap ederken sade bir dil kullanmak veya tam tersi</li>
+        <li><strong>Yanlış içerik önceliklendirmesi yapar:</strong> Hedef kitlenin ilgilenmediği bilgilere odaklanır</li>
+        <li><strong>Yanlış tasarım tercihleri yapar:</strong> Hedef kitleye uygun olmayan görsel stiller kullanır</li>
+        <li><strong>Dönüşüm fırsatlarını kaçırır:</strong> Hedef kitleyi anlamadığı için doğru çağrılara yer vermez</li>
+      </ul>
+      
+      <h3>Doğru Yaklaşım</h3>
+      
+      <p>Kurumsal web sitesi projesine başlamadan önce şu soruları yanıtlamalısınız:</p>
+      
+      <ul>
+        <li><strong>Hedef kitleniz kim?</strong> (Yaş, cinsiyet, meslek, ilgi alanları, dijital davranışları)</li>
+        <li><strong>Web sitenizin birincil amacı nedir?</strong> (Bilgi verme, satış yapma, iletişim kurma, marka bilinirliği)</li>
+        <li><strong>Hangi aksiyonları almalarını istiyorsunuz?</strong> (İletişim formu doldurma, telefon etme, ürün satın alma)</li>
+        <li><strong>Rakipleriniz ne yapıyor?</strong> (Rakip analizi ile sektör standartlarını anlayın)</li>
+        <li><strong>Başarı kriterleriniz nelerdir?</strong> (Ziyaretçi sayısı, dönüşüm oranı, iletişim formu sayısı)</li>
+      </ul>
+      
+      <p>Bu analiz, web tasarım ajansınızla çalışırken net bir brief oluşturmanıza ve sonuçta hedeflerinize uygun bir web sitesi elde etmenize yardımcı olur.</p>
+      
+      <div class="bg-blue-50 border-l-4 border-blue-400 p-4 my-8">
+        <h4 class="text-blue-800 font-semibold mb-2">💡 Uzman İpucu</h4>
+        <p class="text-blue-700">Hedef kitle analizi için müşteri görüşmeleri, anketler ve mevcut müşteri verilerinizi kullanın. Ayrıca Google Analytics gibi araçlarla mevcut web sitenizin ziyaretçi davranışlarını analiz edebilirsiniz.</p>
+      </div>
+      
+      <h2>2. Hata: Mobil Uyumluluğu Göz Ardı Etmek</h2>
+      
+      <h3>Neden Bu Bir Hata?</h3>
+      
+      <p>2025 yılında hala birçok işletme, kurumsal web sitesini önce masaüstü için tasarlayıp mobil uyumluluğu sonradan düşünüyor. Bu yaklaşım, hem kullanıcı deneyimi hem de SEO performansı açısından ciddi sorunlara yol açar.</p>
+      
+      <p>İstatistiklere göre:</p>
+      
+      <ul>
+        <li>Web trafiğinin %60'ından fazlası mobil cihazlardan geliyor</li>
+        <li>Google, tüm web sitelerini mobil öncelikli olarak indexliyor</li>
+        <li>Mobil kullanıcılar, yavaş veya kötü tasarlanmış siteleri hemen terk ediyor</li>
+        <li>Mobil uyumlu olmayan siteler, arama motorlarında daha düşük sıralarda yer alıyor</li>
+      </ul>
+      
+      <h3>Doğru Yaklaşım</h3>
+      
+      <p>Kurumsal web sitesi tasarımında mobil öncelikli (mobile-first) yaklaşımı benimseyin:</p>
+      
+      <ul>
+        <li><strong>Responsive tasarım kullanın:</strong> Web siteniz tüm cihazlarda (mobil, tablet, masaüstü) mükemmel görünmeli</li>
+        <li><strong>Touch-friendly butonlar:</strong> Mobil kullanıcılar için yeterince büyük ve erişilebilir butonlar</li>
+        <li><strong>Hızlı yükleme süreleri:</strong> Mobil cihazlarda 3 saniyeden kısa sürede yüklenmeli</li>
+        <li><strong>Basitleştirilmiş navigasyon:</strong> Mobil menüler kullanıcı dostu olmalı</li>
+        <li><strong>Optimize edilmiş görseller:</strong> Mobil cihazlar için optimize edilmiş görsel boyutları</li>
+      </ul>
+      
+      <p>Profesyonel bir <a href="/kurumsal-web-sitesi" class="text-[#f84525] hover:underline font-semibold">kurumsal web sitesi</a> tasarımı, tüm cihazlarda mükemmel bir deneyim sunmalıdır.</p>
+      
+      <h2>3. Hata: SEO'yu Sonradan Düşünmek</h2>
+      
+      <h3>Neden Bu Bir Hata?</h3>
+      
+      <p>Birçok işletme, web sitesini önce tasarlayıp geliştirir, sonra SEO'yu düşünür. Bu yaklaşım, sonradan yapılan SEO çalışmalarının etkisiz kalmasına ve ekstra maliyetlere neden olur.</p>
+      
+      <p>SEO'yu sonradan düşünmenin sorunları:</p>
+      
+      <ul>
+        <li><strong>Teknik SEO sorunları:</strong> Site yapısı, URL yapısı, meta etiketler gibi temel SEO unsurları yanlış yapılandırılmış olabilir</li>
+        <li><strong>İçerik optimizasyonu zorlaşır:</strong> Mevcut içerik yapısını değiştirmek zaman ve maliyet gerektirir</li>
+        <li><strong>Yeniden tasarım ihtiyacı:</strong> SEO gereksinimleri nedeniyle tasarımın büyük kısmını değiştirmek gerekebilir</li>
+        <li><strong>Kayıp zaman:</strong> SEO'yu sonradan eklemek, arama motorlarında görünürlük kazanmak için daha uzun süre beklemek anlamına gelir</li>
+      </ul>
+      
+      <h3>Doğru Yaklaşım</h3>
+      
+      <p>SEO, kurumsal web sitesi projesinin başından itibaren planlanmalıdır:</p>
+      
+      <ul>
+        <li><strong>Anahtar kelime araştırması:</strong> Proje başında hedef anahtar kelimeleri belirleyin</li>
+        <li><strong>SEO dostu URL yapısı:</strong> Anlamlı, kısa ve anahtar kelime içeren URL'ler</li>
+        <li><strong>Meta etiket optimizasyonu:</strong> Her sayfa için özel title ve description</li>
+        <li><strong>Başlık hiyerarşisi:</strong> H1, H2, H3 etiketlerinin doğru kullanımı</li>
+        <li><strong>İç linkleme stratejisi:</strong> Sayfalar arası mantıklı bağlantılar</li>
+        <li><strong>Görsel optimizasyonu:</strong> Alt metinler ve optimize edilmiş görsel dosya adları</li>
+        <li><strong>Hızlı yükleme süreleri:</strong> SEO için kritik olan sayfa hızı optimizasyonu</li>
+        <li><strong>Schema markup:</strong> Arama motorları için yapılandırılmış veri</li>
+      </ul>
+      
+      <p>SEO uyumlu bir kurumsal web sitesi, arama motorlarında daha hızlı indexlenir ve üst sıralarda yer alma şansı artar.</p>
+      
+      <h2>4. Hata: İçerik Stratejisi Olmadan İçerik Eklemek</h2>
+      
+      <h3>Neden Bu Bir Hata?</h3>
+      
+      <p>Birçok kurumsal web sitesi, içerik stratejisi olmadan oluşturulur. Bu, web sitesinde tutarsız, eksik veya gereksiz içeriklerin bulunmasına neden olur. İçerik, web sitenizin kalbidir ve stratejik olarak planlanmalıdır.</p>
+      
+      <p>İçerik stratejisi olmadan oluşturulan web sitelerinde görülen sorunlar:</p>
+      
+      <ul>
+        <li><strong>Tutarsız ton ve dil:</strong> Farklı sayfalarda farklı yazım stilleri</li>
+        <li><strong>Eksik bilgiler:</strong> Ziyaretçilerin aradığı önemli bilgilerin eksik olması</li>
+        <li><strong>Gereksiz içerik:</strong> Hedef kitleyi ilgilendirmeyen bilgiler</li>
+        <li><strong>Güncel olmayan içerik:</strong> Eski bilgiler ve güncellenmemiş içerikler</li>
+        <li><strong>SEO uyumsuzluğu:</strong> Anahtar kelimelerin doğal olmayan kullanımı</li>
+      </ul>
+      
+      <h3>Doğru Yaklaşım</h3>
+      
+      <p>Kurumsal web sitesi için kapsamlı bir içerik stratejisi oluşturun:</p>
+      
+      <ul>
+        <li><strong>İçerik envanteri:</strong> Hangi sayfalarda hangi içeriklerin olacağını belirleyin</li>
+        <li><strong>İçerik hiyerarşisi:</strong> Önemli bilgileri öne çıkarın, detayları alt bölümlere yerleştirin</li>
+        <li><strong>Tutarlı ton ve dil:</strong> Marka sesinize uygun bir yazım stili belirleyin</li>
+        <li><strong>Kullanıcı odaklı içerik:</strong> Ziyaretçilerinizin sorularına yanıt veren içerikler</li>
+        <li><strong>Görsel içerik planı:</strong> Metinlerle uyumlu görseller, videolar, infografikler</li>
+        <li><strong>İçerik güncelleme takvimi:</strong> Düzenli içerik güncellemeleri için plan</li>
+        <li><strong>CTA (Call-to-Action) stratejisi:</strong> Her sayfada net aksiyon çağrıları</li>
+      </ul>
+      
+      <p>İyi planlanmış bir içerik stratejisi, hem kullanıcı deneyimini hem de SEO performansını artırır.</p>
+      
+      <h2>5. Hata: Güvenlik ve Performansı Önemsememek</h2>
+      
+      <h3>Neden Bu Bir Hata?</h3>
+      
+      <p>Birçok işletme, kurumsal web sitesi yaptırırken güvenlik ve performans konularını göz ardı eder. Ancak bu iki faktör, web sitenizin başarısı için kritik öneme sahiptir.</p>
+      
+      <p>Güvenlik ve performans sorunlarının sonuçları:</p>
+      
+      <ul>
+        <li><strong>Güvenlik açıkları:</strong> Siber saldırılara açık web siteleri, müşteri verilerini riske atar</li>
+        <li><strong>Yavaş yükleme süreleri:</strong> Yavaş siteler, kullanıcıların %53'ünün siteyi terk etmesine neden olur</li>
+        <li><strong>SEO cezaları:</strong> Güvensiz veya yavaş siteler, arama motorlarında düşük sıralarda yer alır</li>
+        <li><strong>Müşteri güven kaybı:</strong> Güvenlik uyarıları veya yavaş performans, marka itibarına zarar verir</li>
+        <li><strong>Mobil kullanıcı kaybı:</strong> Yavaş siteler, özellikle mobil kullanıcıları kaybettirir</li>
+      </ul>
+      
+      <h3>Doğru Yaklaşım</h3>
+      
+      <p>Kurumsal web sitesi projenizde güvenlik ve performansı önceliklendirin:</p>
+      
+      <p><strong>Güvenlik için:</strong></p>
+      <ul>
+        <li><strong>SSL sertifikası:</strong> HTTPS protokolü ile güvenli bağlantı</li>
+        <li><strong>Düzenli güvenlik güncellemeleri:</strong> Platform ve eklentilerin güncel tutulması</li>
+        <li><strong>Güvenlik eklentileri:</strong> Güvenlik duvarı ve malware koruması</li>
+        <li><strong>Düzenli yedekleme:</strong> Veri kaybına karşı koruma</li>
+        <li><strong>Güçlü şifre politikaları:</strong> Yönetim paneline erişim güvenliği</li>
+      </ul>
+      
+      <p><strong>Performans için:</strong></p>
+      <ul>
+        <li><strong>Görsel optimizasyonu:</strong> Sıkıştırılmış ve optimize edilmiş görseller</li>
+        <li><strong>Kod optimizasyonu:</strong> Minify edilmiş CSS ve JavaScript dosyaları</li>
+        <li><strong>CDN kullanımı:</strong> İçeriğin dünya genelinde hızlı sunulması</li>
+        <li><strong>Kaliteli hosting:</strong> Hızlı ve güvenilir sunucu altyapısı</li>
+        <li><strong>Önbellekleme (Caching):</strong> Sayfa yükleme hızını artıran önbellek stratejileri</li>
+        <li><strong>Performans testleri:</strong> Düzenli hız testleri ve optimizasyon</li>
+      </ul>
+      
+      <p>Güvenli ve hızlı bir kurumsal web sitesi, hem kullanıcı deneyimini hem de SEO performansını artırır.</p>
+      
+      <h2>6. Hata: Kullanıcı Deneyimini (UX) Göz Ardı Etmek</h2>
+      
+      <h3>Neden Bu Bir Hata?</h3>
+      
+      <p>Birçok işletme, kurumsal web sitesini sadece görsel olarak çekici hale getirmeye odaklanır, ancak kullanıcı deneyimini (UX) göz ardı eder. Güzel görünen ancak kullanıcı dostu olmayan web siteleri, dönüşüm oranlarını düşürür.</p>
+      
+      <p>Kötü kullanıcı deneyiminin sonuçları:</p>
+      
+      <ul>
+        <li><strong>Yüksek çıkma oranı (Bounce Rate):</strong> Kullanıcılar siteyi hemen terk eder</li>
+        <li><strong>Düşük dönüşüm oranı:</strong> Ziyaretçiler istenen aksiyonları almaz</li>
+        <li><strong>Kötü SEO performansı:</strong> Google, kullanıcı deneyimi metriklerini sıralama faktörü olarak kullanır</li>
+        <li><strong>Müşteri memnuniyetsizliği:</strong> Kötü deneyim, marka itibarına zarar verir</li>
+        <li><strong>Rekabet dezavantajı:</strong> Rakiplerinizden geride kalırsınız</li>
+      </ul>
+      
+      <h3>Doğru Yaklaşım</h3>
+      
+      <p>Kurumsal web sitesi tasarımında kullanıcı deneyimini önceliklendirin:</p>
+      
+      <ul>
+        <li><strong>Sezgisel navigasyon:</strong> Kullanıcıların kolayca istedikleri bilgiyi bulabilmesi</li>
+        <li><strong>Net bilgi mimarisi:</strong> Mantıklı sayfa organizasyonu ve kategoriler</li>
+        <li><strong>Hızlı erişim:</strong> Önemli bilgilere (iletişim, hizmetler) kolay erişim</li>
+        <li><strong>Okunabilir tipografi:</strong> Uygun font boyutları ve satır aralıkları</li>
+        <li><strong>Yeterli beyaz alan:</strong> Göz yorgunluğunu önleyen dengeli tasarım</li>
+        <li><strong>Net CTA butonları:</strong> Belirgin ve anlaşılır aksiyon çağrıları</li>
+        <li><strong>Hata mesajları:</strong> Kullanıcı dostu hata mesajları ve yönlendirmeler</li>
+        <li><strong>Erişilebilirlik:</strong> Tüm kullanıcılar için erişilebilir tasarım (WCAG standartları)</li>
+        <li><strong>Kullanıcı testleri:</strong> Gerçek kullanıcılarla test edilmiş tasarım</li>
+      </ul>
+      
+      <p>Kullanıcı odaklı bir kurumsal web sitesi, ziyaretçilerinizin ihtiyaçlarını karşılar ve dönüşüm oranlarını artırır.</p>
+      
+      <h2>7. Hata: Sürekli Bakım ve Güncelleme Planı Olmadan Projeyi Bitirmek</h2>
+      
+      <h3>Neden Bu Bir Hata?</h3>
+      
+      <p>Birçok işletme, kurumsal web sitesi tamamlandıktan sonra "iş bitti" diye düşünür. Ancak web sitesi, canlı bir varlıktır ve sürekli bakım, güncelleme ve iyileştirme gerektirir.</p>
+      
+      <p>Bakım planı olmadan bırakılan web sitelerinde görülen sorunlar:</p>
+      
+      <ul>
+        <li><strong>Güvenlik açıkları:</strong> Güncellenmemiş platformlar ve eklentiler, güvenlik riski oluşturur</li>
+        <li><strong>Eski içerikler:</strong> Güncellenmemiş bilgiler, ziyaretçileri yanıltır</li>
+        <li><strong>Performans düşüşü:</strong> Optimize edilmemiş yeni içerikler, site hızını düşürür</li>
+        <li><strong>SEO gerilemesi:</strong> Güncellenmemiş SEO stratejileri, arama motoru sıralamalarında düşüşe neden olur</li>
+        <li><strong>Teknoloji geride kalma:</strong> Yeni teknolojiler ve standartlara uyum sağlanamaz</li>
+        <li><strong>Rekabet dezavantajı:</strong> Sürekli güncellenen rakiplerin gerisinde kalma</li>
+      </ul>
+      
+      <h3>Doğru Yaklaşım</h3>
+      
+      <p>Kurumsal web sitesi projeniz için kapsamlı bir bakım ve güncelleme planı oluşturun:</p>
+      
+      <ul>
+        <li><strong>Düzenli güvenlik güncellemeleri:</strong> Platform, tema ve eklenti güncellemeleri</li>
+        <li><strong>İçerik güncelleme takvimi:</strong> Düzenli blog yazıları, haberler, duyurular</li>
+        <li><strong>Performans izleme:</strong> Düzenli hız testleri ve optimizasyon</li>
+        <li><strong>SEO takibi:</strong> Arama motoru sıralamaları, anahtar kelime performansı izleme</li>
+        <li><strong>Analitik raporlama:</strong> Google Analytics ile düzenli performans analizi</li>
+        <li><strong>Kullanıcı geri bildirimi:</strong> Ziyaretçi geri bildirimlerini toplama ve değerlendirme</li>
+        <li><strong>Teknoloji güncellemeleri:</strong> Yeni teknolojilere ve standartlara uyum</li>
+        <li><strong>Yedekleme stratejisi:</strong> Düzenli veri yedekleme ve kurtarma planı</li>
+      </ul>
+      
+      <p>Profesyonel bir <a href="/kurumsal-web-sitesi" class="text-[#f84525] hover:underline font-semibold">kurumsal web sitesi</a> hizmeti, sadece tasarım ve geliştirme değil, aynı zamanda sürekli bakım ve destek de içermelidir.</p>
+      
+      <h2>Bu Hatalardan Kaçınmak İçin Profesyonel Destek</h2>
+      
+      <p>Kurumsal web sitesi yaptırırken bu hatalardan kaçınmak, deneyim ve uzmanlık gerektirir. Profesyonel bir web tasarım ajansı ile çalışmak, bu hataları önlemenin en etkili yoludur.</p>
+      
+      <h3>WebCraft'tan Bekleyebileceğiniz Hizmetler</h3>
+      
+      <p>8+ yıllık deneyimimiz ve 200+ başarılı projemizle, kurumsal web sitesi projelerinizde:</p>
+      
+      <ul>
+        <li><strong>Kapsamlı analiz:</strong> Hedef kitle, rakip ve iş hedefleri analizi</li>
+        <li><strong>Stratejik planlama:</strong> SEO, içerik ve kullanıcı deneyimi odaklı planlama</li>
+        <li><strong>Profesyonel tasarım:</strong> Modern, responsive ve kullanıcı dostu tasarım</li>
+        <li><strong>Teknik mükemmellik:</strong> Güvenlik, performans ve SEO optimizasyonu</li>
+        <li><strong>Sürekli destek:</strong> Bakım, güncelleme ve iyileştirme hizmetleri</li>
+      </ul>
+      
+      <h3>Neden WebCraft?</h3>
+      
+      <ul>
+        <li><strong>8+ yıllık deneyim:</strong> Kurumsal web sitesi tasarımında uzmanlaşmış ekibimiz</li>
+        <li><strong>200+ başarılı proje:</strong> Farklı sektörlerde kanıtlanmış başarılarımız</li>
+        <li><strong>Kapsamlı hizmet:</strong> Tasarımdan bakıma kadar tüm süreçlerde destek</li>
+        <li><strong>Müşteri odaklı yaklaşım:</strong> Her projede iş hedeflerinize odaklanırız</li>
+        <li><strong>Şeffaf süreç:</strong> Proje sürecinde düzenli iletişim ve raporlama</li>
+        <li><strong>Uzun vadeli işbirliği:</strong> Web sitenizin sürekli başarısı için destek</li>
+      </ul>
+      
+      <h2>Sonuç ve Sonraki Adımlar</h2>
+      
+      <p>Kurumsal web sitesi yaptırırken yapılan bu 7 kritik hata, işletmenizin dijital başarısını engelleyebilir. Bu hatalardan kaçınmak için:</p>
+      
+      <ol>
+        <li><strong>Hedef kitle ve iş hedeflerinizi netleştirin</strong></li>
+        <li><strong>Mobil uyumluluğu önceliklendirin</strong></li>
+        <li><strong>SEO'yu projenin başından planlayın</strong></li>
+        <li><strong>Kapsamlı bir içerik stratejisi oluşturun</strong></li>
+        <li><strong>Güvenlik ve performansı önemsemeyi unutmayın</strong></li>
+        <li><strong>Kullanıcı deneyimini önceliklendirin</strong></li>
+        <li><strong>Bakım ve güncelleme planı oluşturun</strong></li>
+      </ol>
+      
+      <p>Profesyonel bir <a href="/kurumsal-web-sitesi" class="text-[#f84525] hover:underline font-semibold">kurumsal web sitesi</a> projesi için WebCraft ile iletişime geçin. Deneyimli ekibimiz, bu hatalardan kaçınarak başarılı bir kurumsal web sitesi oluşturmanıza yardımcı olacaktır.</p>
+      
+      <h3>Hemen Harekete Geçin</h3>
+      
+      <p>Kurumsal web sitesi projeniz için:</p>
+      
+      <ul>
+        <li><strong>Ücretsiz danışmanlık</strong> için bizimle iletişime geçin</li>
+        <li><strong>Kişiselleştirilmiş teklif</strong> alın</li>
+        <li><strong>Başarı hikayelerimizi</strong> inceleyin</li>
+        <li><strong>Referanslarımızla</strong> konuşun</li>
+      </ul>
+      
+      <p>Kurumsal web sitesi tasarımı ve dijital çözümler hakkında detaylı bilgi almak için <strong>WebCraft web tasarım ajansı</strong> ile iletişime geçin. Dijital dünyada markanızı öne çıkaralım!</p>
+      
+      <div class="bg-green-50 border-l-4 border-green-400 p-4 my-8">
+        <h4 class="text-green-800 font-semibold mb-2">🚀 WebCraft'tan Özel Teklif</h4>
+        <p class="text-green-700">Kurumsal web sitesi projeleriniz için %15 indirim fırsatı! Profesyonel web tasarım ajansı ile bu kritik hatalardan kaçınarak başarılı bir kurumsal web sitesi oluşturun. Hemen teklif alın!</p>
+      </div>
+    `,
+    image: "/bento/web-tasarım.jpg",
+    slug: "kurumsal-web-sitesi-yaptirirken-yapilan-7-kritik-hata",
+    date: "20 Ocak 2025",
+    readTime: "18 dk",
+    author: "WebCraft Web Tasarım Uzmanı",
+  },
+  {
     id: 1,
     category: "Web Tasarım",
     title: "SEO Uyumlu Web Tasarımı ile Google'da Üst Sıralarda Yer Alın",
@@ -3120,6 +3835,30 @@ const getBlogPost = (slug: string) => {
   return blogPosts.find((post) => post.slug === slug);
 };
 
+// Get related posts based on category (excluding current post)
+const getRelatedPosts = (currentSlug: string, limit: number = 3) => {
+  const currentPost = getBlogPost(currentSlug);
+  if (!currentPost) return [];
+
+  // First, try to get posts from the same category
+  let related = blogPosts.filter(
+    (post) =>
+      post.slug !== currentSlug && post.category === currentPost.category
+  );
+
+  // If not enough posts in same category, add posts from other categories
+  if (related.length < limit) {
+    const otherPosts = blogPosts.filter(
+      (post) =>
+        post.slug !== currentSlug && post.category !== currentPost.category
+    );
+    related = [...related, ...otherPosts];
+  }
+
+  // Return limited number of posts
+  return related.slice(0, limit);
+};
+
 // Helper function to format date for schema (convert Turkish date to ISO format)
 function formatDateForSchema(dateString: string): string {
   // Map Turkish month names to numbers
@@ -3165,6 +3904,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   if (!post) {
     notFound();
   }
+
+  // Get related posts
+  const relatedPosts = getRelatedPosts(slug, 3);
 
   // Article schema for SEO
   const articleSchema = {
@@ -3360,28 +4102,28 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   <h3 className="text-lg font-bold text-black mb-6">
                     İlgili Yazılar
                   </h3>
-                  <div className="space-y-6">
-                    <a href="#" className="block group">
-                      <h4 className="text-sm font-medium text-black group-hover:text-[#f84525] transition-colors leading-tight">
-                        Mobil-First Yaklaşımı ile Responsive Tasarım
-                      </h4>
-                      <p className="text-xs text-black/60 mt-2">5 dk okuma</p>
-                    </a>
-
-                    <a href="#" className="block group">
-                      <h4 className="text-sm font-medium text-black group-hover:text-[#f84525] transition-colors leading-tight">
-                        SEO Trendleri ve Optimizasyon
-                      </h4>
-                      <p className="text-xs text-black/60 mt-2">6 dk okuma</p>
-                    </a>
-
-                    <a href="#" className="block group">
-                      <h4 className="text-sm font-medium text-black group-hover:text-[#f84525] transition-colors leading-tight">
-                        Web Sitesi Güvenliği
-                      </h4>
-                      <p className="text-xs text-black/60 mt-2">8 dk okuma</p>
-                    </a>
-                  </div>
+                  {relatedPosts.length > 0 ? (
+                    <div className="space-y-6">
+                      {relatedPosts.map((relatedPost) => (
+                        <Link
+                          key={relatedPost.id}
+                          href={`/blog/${relatedPost.slug}`}
+                          className="block group"
+                        >
+                          <h4 className="text-sm font-medium text-black group-hover:text-[#f84525] transition-colors leading-tight">
+                            {relatedPost.title}
+                          </h4>
+                          <p className="text-xs text-black/60 mt-2">
+                            {relatedPost.readTime} okuma
+                          </p>
+                        </Link>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-sm text-black/60">
+                      Henüz ilgili yazı bulunmamaktadır.
+                    </p>
+                  )}
                 </div>
               </div>
             </div>

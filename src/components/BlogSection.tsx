@@ -5,6 +5,22 @@ import Image from "next/image";
 const BlogSection = () => {
   const blogPosts = [
     {
+      id: 12,
+      category: "Web Tasarım",
+      title: "Profesyonel Web Tasarım Nedir? Kimler İçin Gerekli?",
+      image: "/bento/web-tasarım.jpg",
+      slug: "profesyonel-web-tasarim-nedir-kimler-icin-gerekli",
+      isEven: false,
+    },
+    {
+      id: 11,
+      category: "Web Tasarım",
+      title: "Kurumsal Web Sitesi Yaptırırken Yapılan 7 Kritik Hata",
+      image: "/bento/web-tasarım.jpg",
+      slug: "kurumsal-web-sitesi-yaptirirken-yapilan-7-kritik-hata",
+      isEven: false,
+    },
+    {
       id: 1,
       category: "Web Tasarım",
       title: "SEO Uyumlu Web Tasarımı ile Google'da Üst Sıralarda Yer Alın",
