@@ -51,7 +51,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
   const CardContent = (
     <motion.div
-      className={`relative overflow-hidden group ${className} ${link ? "cursor-pointer" : ""}`}
+      className={`relative overflow-hidden group h-full ${link ? "cursor-pointer" : ""}`}
       initial={directionVariants[direction]}
       whileInView={{ x: 0, y: 0, opacity: 1 }}
       viewport={{ once: true, margin: "-50px" }}
@@ -103,13 +103,17 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
   if (link) {
     return (
-      <Link href={link} className="block">
+      <Link href={link} className={`block h-full ${className || ""}`}>
         {CardContent}
       </Link>
     );
   }
 
-  return CardContent;
+  return (
+    <div className={className}>
+      {CardContent}
+    </div>
+  );
 };
 
 export default function BentoGrid() {
