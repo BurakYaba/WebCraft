@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ServiceBlock {
   id: string;
@@ -11,7 +12,11 @@ interface ServiceBlock {
   bgText: string;
 }
 
-const services: ServiceBlock[] = [
+interface ServiceBlockWithLink extends ServiceBlock {
+  link: string;
+}
+
+const services: ServiceBlockWithLink[] = [
   {
     id: "web-tasarim",
     title: "Web Tasarım",
@@ -19,6 +24,7 @@ const services: ServiceBlock[] = [
       "Modern ve kullanıcı dostu web siteleri tasarlıyoruz. Responsive tasarım, UI/UX optimizasyonu ve SEO dostu yapı ile markanızı dijital dünyada güçlü bir şekilde temsil ediyoruz. Her proje, kullanıcı deneyimini ön planda tutarak özenle tasarlanır.",
     image: "/bento/web-tasarım.jpg",
     bgText: "WEB",
+    link: "/hizmetler/web-tasarim",
   },
   {
     id: "dijital-pazarlama",
@@ -27,6 +33,7 @@ const services: ServiceBlock[] = [
       "Markanızı dijital dünyada öne çıkarıyoruz. SEO/SEM stratejileri, sosyal medya yönetimi ve içerik pazarlaması ile hedef kitlenize ulaşmanızı sağlıyoruz. Veri odaklı yaklaşımımızla ölçülebilir sonuçlar elde ediyoruz.",
     image: "/bento/dijital-pazarlama.jpg",
     bgText: "DIJITAL",
+    link: "/hizmetler/dijital-pazarlama",
   },
   {
     id: "e-ticaret",
@@ -35,6 +42,7 @@ const services: ServiceBlock[] = [
       "Online satış platformları geliştiriyoruz. Güvenli ödeme sistemleri, stok yönetimi ve mobil uyumlu tasarım ile e-ticaret sitenizi başarıya taşıyoruz. Kullanıcı dostu arayüz ve hızlı performans garantisi sunuyoruz.",
     image: "/bento/e-ticaret.jpg",
     bgText: "TICARET",
+    link: "/e-ticaret-web-tasarim",
   },
   {
     id: "mobil-uygulama",
@@ -43,6 +51,7 @@ const services: ServiceBlock[] = [
       "iOS ve Android uygulamaları geliştiriyoruz. Native ve cross-platform çözümler ile kullanıcılarınıza en iyi mobil deneyimi sunuyoruz. Push bildirimler, offline çalışma ve performans optimizasyonu ile fark yaratıyoruz.",
     image: "/bento/mobil-uygulama.jpg",
     bgText: "MOBIL",
+    link: "/hizmetler/mobil-uygulama",
   },
   {
     id: "yazilim-gelistirme",
@@ -51,6 +60,7 @@ const services: ServiceBlock[] = [
       "Özel yazılım çözümleri sunuyoruz. Web uygulamaları, API entegrasyonları ve kurumsal yazılımlar ile iş süreçlerinizi dijitalleştiriyoruz. Bakım ve destek hizmetlerimizle uzun vadeli ortaklık kuruyoruz.",
     image: "/bento/yazılım-geliştirme.jpg",
     bgText: "YAZILIM",
+    link: "/hizmetler/yazilim-gelistirme",
   },
 ];
 
@@ -131,20 +141,37 @@ export default function ServiceBlocks() {
                     index % 2 === 0 ? "lg:order-1" : "lg:order-2"
                   } space-y-6 sm:space-y-8`}
                 >
-                  <div
-                    className={`transition-all duration-1000 transition-linear text-center sm:text-left ${
+                  <Link
+                    href={service.link}
+                    className={`block transition-all duration-1000 transition-linear text-center sm:text-left group/card ${
                       visibleBlocks.has(service.id)
                         ? "opacity-100 transform translate-y-0"
                         : "opacity-0 transform translate-y-10"
                     }`}
                   >
-                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 group-hover/card:text-red-500 transition-colors duration-300">
                       {service.title}
                     </h3>
-                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/70 leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto sm:mx-0 px-2 sm:px-0">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/70 leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto sm:mx-0 px-2 sm:px-0 mb-6">
                       {service.description}
                     </p>
-                  </div>
+                    <div className="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 sm:px-8 rounded-full transition-all duration-300 text-sm sm:text-base group-hover/card:scale-105">
+                      Detayları İncele
+                      <svg
+                        className="ml-2 w-4 h-4 transform group-hover/card:translate-x-1 transition-transform duration-300"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                  </Link>
                 </div>
 
                 {/* Image */}
@@ -153,8 +180,9 @@ export default function ServiceBlocks() {
                     index % 2 === 0 ? "lg:order-2" : "lg:order-1"
                   } relative flex justify-center`}
                 >
-                  <div
-                    className={`relative w-64 h-80 sm:w-72 sm:h-96 md:w-80 md:h-[420px] lg:h-[480px] xl:h-[520px] mx-auto transform transition-all duration-1000 transition-linear ${
+                  <Link
+                    href={service.link}
+                    className={`group block relative w-64 h-80 sm:w-72 sm:h-96 md:w-80 md:h-[420px] lg:h-[480px] xl:h-[520px] mx-auto transform transition-all duration-1000 transition-linear ${
                       visibleBlocks.has(service.id)
                         ? `${
                             index % 2 === 0
@@ -162,7 +190,7 @@ export default function ServiceBlocks() {
                               : "-rotate-6 sm:-rotate-8 lg:-rotate-12"
                           } scale-100`
                         : "opacity-0 rotate-0 scale-110"
-                    }`}
+                    } group-hover:scale-105`}
                   >
                     {/* Image container with clip-path animation */}
                     <div
@@ -201,7 +229,7 @@ export default function ServiceBlocks() {
                     {/* Decorative elements */}
                     <div className="absolute -top-2 sm:-top-3 lg:-top-4 -right-2 sm:-right-3 lg:-right-4 w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8 bg-red-500 rounded-full opacity-80"></div>
                     <div className="absolute -bottom-3 sm:-bottom-4 lg:-bottom-6 -left-3 sm:-left-4 lg:-left-6 w-3 h-3 sm:w-4 sm:h-4 lg:w-6 lg:h-6 bg-white/20 rounded-full"></div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import RotatingEarth from "./RotatingEarth";
 
 interface ServiceCardProps {
@@ -11,6 +12,7 @@ interface ServiceCardProps {
   className?: string;
   direction: "left" | "right" | "up" | "down";
   backgroundImage?: string;
+  link?: string;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
@@ -20,6 +22,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   className,
   direction,
   backgroundImage,
+  link,
 }) => {
   const directionVariants = {
     left: { x: -80, opacity: 0 },
@@ -46,9 +49,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   const baseDuration = 0.8;
   const duration = baseDuration + (distance / 100) * 0.2;
 
-  return (
+  const CardContent = (
     <motion.div
-      className={`relative overflow-hidden group ${className}`}
+      className={`relative overflow-hidden group ${className} ${link ? "cursor-pointer" : ""}`}
       initial={directionVariants[direction]}
       whileInView={{ x: 0, y: 0, opacity: 1 }}
       viewport={{ once: true, margin: "-50px" }}
@@ -97,6 +100,16 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       </div>
     </motion.div>
   );
+
+  if (link) {
+    return (
+      <Link href={link} className="block">
+        {CardContent}
+      </Link>
+    );
+  }
+
+  return CardContent;
 };
 
 export default function BentoGrid() {
@@ -107,6 +120,7 @@ export default function BentoGrid() {
       features: ["Responsive Tasarım", "UI/UX Optimizasyonu", "SEO Dostu Yapı"],
       direction: "left" as const,
       backgroundImage: "/bento/web-tasarım.jpg",
+      link: "/hizmetler/web-tasarim",
     },
     {
       title: "Dijital Pazarlama",
@@ -114,6 +128,7 @@ export default function BentoGrid() {
       features: ["SEO/SEM", "Sosyal Medya", "İçerik Stratejisi"],
       direction: "up" as const,
       backgroundImage: "/bento/dijital-pazarlama.jpg",
+      link: "/hizmetler/dijital-pazarlama",
     },
     {
       title: "E-Ticaret",
@@ -121,6 +136,7 @@ export default function BentoGrid() {
       features: ["Güvenli Ödeme", "Stok Yönetimi", "Mobil Uyumlu"],
       direction: "right" as const,
       backgroundImage: "/bento/e-ticaret.jpg",
+      link: "/e-ticaret-web-tasarim",
     },
     {
       title: "Mobil Uygulama",
@@ -128,6 +144,7 @@ export default function BentoGrid() {
       features: ["Native Geliştirme", "Cross-Platform", "Push Bildirimler"],
       direction: "left" as const,
       backgroundImage: "/bento/mobil-uygulama.jpg",
+      link: "/hizmetler/mobil-uygulama",
     },
     {
       title: "Yazılım Geliştirme",
@@ -135,6 +152,7 @@ export default function BentoGrid() {
       features: ["Web Uygulamaları", "API Entegrasyonu", "Bakım & Destek"],
       direction: "right" as const,
       backgroundImage: "/bento/yazılım-geliştirme.jpg",
+      link: "/hizmetler/yazilim-gelistirme",
     },
   ];
 
