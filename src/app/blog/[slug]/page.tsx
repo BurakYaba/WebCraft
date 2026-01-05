@@ -28,7 +28,7 @@ const blogPosts = [
     content: `
       <p>Günümüz dijital dünyasında, bir web sitesine sahip olmak artık bir lüks değil, bir zorunluluktur. Ancak sadece bir web sitesine sahip olmak yeterli değildir. Profesyonel web tasarım, işletmenizin dijital başarısının temelini oluşturur ve markanızın online dünyadaki ilk izlenimini belirler.</p>
       
-      <p>Bu yazıda, profesyonel web tasarımın ne olduğunu, kimler için gerekli olduğunu ve neden önemli olduğunu detaylı olarak ele alacağız. 8+ yıllık web tasarım deneyimimiz ve 200+ başarılı projemizle, profesyonel <a href="/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım</a> hizmetlerinin işletmenize nasıl değer katacağını açıklayacağız.</p>
+      <p>Bu yazıda, profesyonel web tasarımın ne olduğunu, kimler için gerekli olduğunu ve neden önemli olduğunu detaylı olarak ele alacağız. 8+ yıllık web tasarım deneyimimiz ve 200+ başarılı projemizle, profesyonel <a href="/hizmetler/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım</a> hizmetlerinin işletmenize nasıl değer katacağını açıklayacağız.</p>
       
       <h2>Profesyonel Web Tasarım Nedir?</h2>
       
@@ -111,7 +111,7 @@ const blogPosts = [
       
       <h2>Kimler İçin Profesyonel Web Tasarım Gerekli?</h2>
       
-      <p>Profesyonel web tasarım, farklı türde işletmeler için farklı nedenlerle gereklidir. İşte profesyonel <a href="/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım</a> hizmetine ihtiyaç duyan işletme türleri:</p>
+      <p>Profesyonel web tasarım, farklı türde işletmeler için farklı nedenlerle gereklidir. İşte profesyonel <a href="/hizmetler/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım</a> hizmetine ihtiyaç duyan işletme türleri:</p>
       
       <h3>1. Küçük ve Orta Ölçekli İşletmeler (KOBİ'ler)</h3>
       
@@ -353,7 +353,7 @@ const blogPosts = [
       
       <h2>Profesyonel Web Tasarım İçin WebCraft</h2>
       
-      <p>8+ yıllık deneyimimiz ve 200+ başarılı projemizle, profesyonel <a href="/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım</a> hizmetleri sunuyoruz. İşletmenizin ihtiyaçlarına özel çözümler geliştirerek, dijital başarınızı destekliyoruz.</p>
+      <p>8+ yıllık deneyimimiz ve 200+ başarılı projemizle, profesyonel <a href="/hizmetler/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım</a> hizmetleri sunuyoruz. İşletmenizin ihtiyaçlarına özel çözümler geliştirerek, dijital başarınızı destekliyoruz.</p>
       
       <h3>WebCraft'tan Bekleyebileceğiniz Hizmetler</h3>
       
@@ -383,7 +383,7 @@ const blogPosts = [
       
       <p>Profesyonel web tasarım, modern işletmeler için vazgeçilmez bir gerekliliktir. Küçük işletmelerden büyük kurumlara kadar, tüm işletmeler profesyonel web tasarımın faydalarından yararlanabilir.</p>
       
-      <p>Profesyonel <a href="/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım</a> hizmeti, sadece görsel olarak çekici bir web sitesi oluşturmak değil, işletmenizin dijital başarısını destekleyen kapsamlı bir çözümdür. Doğru web tasarım ajansı ile çalışarak, markanızı dijital dünyada öne çıkarabilir ve iş hedeflerinize ulaşabilirsiniz.</p>
+      <p>Profesyonel <a href="/hizmetler/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım</a> hizmeti, sadece görsel olarak çekici bir web sitesi oluşturmak değil, işletmenizin dijital başarısını destekleyen kapsamlı bir çözümdür. Doğru web tasarım ajansı ile çalışarak, markanızı dijital dünyada öne çıkarabilir ve iş hedeflerinize ulaşabilirsiniz.</p>
       
       <h3>Hemen Harekete Geçin</h3>
       
