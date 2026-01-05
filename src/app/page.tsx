@@ -5,6 +5,7 @@ import HeroSection from "../components/HeroSection";
 
 // Lazy load below-the-fold components
 const ServicesSection = lazy(() => import("../components/ServicesSection"));
+const AnimatedOrbitSection = lazy(() => import("../components/AnimatedOrbitSection"));
 const AboutUs = lazy(() => import("../components/AboutUs"));
 const BlogSection = lazy(() => import("../components/BlogSection"));
 const FAQSection = lazy(() => import("../components/FAQSection"));
@@ -106,6 +107,10 @@ export default function HomePage() {
 
         <Suspense fallback={<SectionSkeleton height="h-screen" />}>
           <ServicesSection />
+        </Suspense>
+
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <AnimatedOrbitSection />
         </Suspense>
 
         <Suspense fallback={<SectionSkeleton height="h-96" />}>

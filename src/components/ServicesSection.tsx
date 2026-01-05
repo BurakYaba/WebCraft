@@ -5,7 +5,14 @@ import BentoGrid from "./BentoGrid";
 
 export default function ServicesSection() {
   return (
-    <section className="relative bg-white py-20 md:py-32 z-10">
+    <section className="relative bg-white py-20 md:py-32 z-10 overflow-hidden">
+      {/* Gradient overlay at bottom to transition to black */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-64 md:h-96 lg:h-[400px] pointer-events-none z-0"
+        style={{
+          background: "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.8) 70%, rgba(0,0,0,1) 100%)",
+        }}
+      />
       <div className="relative z-10 w-full">
         <motion.div
           className="text-center mb-16 md:mb-24"

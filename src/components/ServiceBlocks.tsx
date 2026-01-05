@@ -170,7 +170,7 @@ export default function ServiceBlocks() {
                           d="M9 5l7 7-7 7"
                         />
                       </svg>
-                    </div>
+                  </div>
                   </Link>
                 </div>
 
