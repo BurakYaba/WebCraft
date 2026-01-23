@@ -187,7 +187,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
       />
       {/* FAQ Schema is output by ServiceFAQSection component */}
 
-      <div className="min-h-screen bg-[#181716]">
+      <main className="min-h-screen bg-[#181716]">
         <Header />
 
         {/* Hero Section */}
@@ -279,8 +279,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 {service.title} Sürecimiz
               </h2>
               <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-                2015 yılından bu yana {service.experienceYears} yıllık deneyimimiz
-                ile {service.projectCount} başarılı proje tamamladık
+                2015 yılından bu yana {service.experienceYears} yıllık
+                deneyimimiz ile {service.projectCount} başarılı proje tamamladık
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -388,8 +388,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <Suspense fallback={<SectionSkeleton height="h-64" />}>
           <Footer />
         </Suspense>
-      </div>
+      </main>
     </>
   );
 }
-

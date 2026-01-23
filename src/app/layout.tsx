@@ -211,29 +211,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
 
-        {/* Structured Data - Organization */}
+        {/* Structured Data - LocalBusiness (Organization + Location) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
+              "@type": ["LocalBusiness", "ProfessionalService"],
               name: "WebCraft",
               alternateName: "WebCraft Web Tasarım Ajansı",
               url: "https://www.webcraft.tr",
               logo: "https://www.webcraft.tr/webcraftLogo.png",
+              image: "https://www.webcraft.tr/webcraftLogo.png",
               description:
                 "WebCraft, profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri sunan güvenilir web tasarım ajansıdır.",
               foundingDate: "2015",
+              priceRange: "$$",
               address: {
                 "@type": "PostalAddress",
+                streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
+                addressLocality: "Fethiye",
+                addressRegion: "Muğla",
+                postalCode: "48300",
                 addressCountry: "TR",
               },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "36.6213",
+                longitude: "29.1164",
+              },
+              telephone: "+90-507-944-17-15",
+              email: "info@webcraft.tr",
+              openingHours: "Mo-Fr 09:00-18:00",
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+90-507-944-17-15",
                 contactType: "customer service",
                 availableLanguage: "Turkish",
+                areaServed: "TR",
               },
               sameAs: [
                 "https://www.facebook.com/profile.php?id=61585946570262",

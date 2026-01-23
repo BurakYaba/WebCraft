@@ -45,6 +45,33 @@ const services: ServiceBlockWithLink[] = [
     link: "/e-ticaret-web-tasarim",
   },
   {
+    id: "performans-odakli",
+    title: "Performans Odaklı Web",
+    description:
+      "Hızlı yüklenen, Core Web Vitals optimizasyonlu web siteleri. Next.js teknolojisi ile saniyeler içinde açılan sayfalar. Google PageSpeed 90+ skor garantisi ile maksimum performans.",
+    image: "/bento/web-tasarım.jpg",
+    bgText: "HIZLI",
+    link: "/hizmetler/performans-odakli-web-tasarim",
+  },
+  {
+    id: "kobi-web",
+    title: "KOBİ Web Tasarım",
+    description:
+      "Küçük ve orta büyüklükteki işletmelere özel web tasarım paketleri. Profesyonel web sitesi, hızlı teslimat ve kolay yönetim paneli ile işletmenizin dijital varlığını güçlendirin.",
+    image: "/bento/web-tasarım.jpg",
+    bgText: "KOBİ",
+    link: "/hizmetler/kobi-web-tasarim",
+  },
+  {
+    id: "seo-uyumlu",
+    title: "SEO Uyumlu Web Sitesi",
+    description:
+      "Google'da üst sıralarda yer alan, teknik SEO standartlarına uygun web siteleri. Anahtar kelime araştırması, içerik optimizasyonu ve organik trafik artışı garantisi.",
+    image: "/bento/dijital-pazarlama.jpg",
+    bgText: "SEO",
+    link: "/hizmetler/seo-uyumlu-web-sitesi",
+  },
+  {
     id: "mobil-uygulama",
     title: "Mobil Uygulama",
     description:
@@ -80,7 +107,7 @@ export default function ServiceBlocks() {
             }
           });
         },
-        { threshold: 0.3 }
+        { threshold: 0.3 },
       );
 
       if (blockRefs.current[service.id]) {
@@ -170,7 +197,7 @@ export default function ServiceBlocks() {
                           d="M9 5l7 7-7 7"
                         />
                       </svg>
-                  </div>
+                    </div>
                   </Link>
                 </div>
 

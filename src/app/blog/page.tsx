@@ -37,6 +37,80 @@ export const metadata: Metadata = {
 // Optimized blog posts data - moved outside component to prevent re-creation
 const blogPosts = [
   {
+    id: 18,
+    category: "Yerel SEO",
+    title:
+      "Fethiye Web Tasarım Rehberi: Turizm İşletmeleri için Dijital Çözümler",
+    excerpt:
+      "Fethiye'deki turizm işletmeleri için web tasarım rehberi. Otel, pansiyon ve tur operatörleri için özel dijital çözümler ve yerel SEO stratejileri.",
+    image: "/bento/web-tasarım.jpg",
+    slug: "fethiye-web-tasarim-rehberi",
+    date: "8 Ocak 2026",
+    readTime: "15 dk",
+    isEven: false,
+  },
+  {
+    id: 17,
+    category: "Yerel SEO",
+    title: "Yerel SEO Stratejileri: Google Haritalar'da Üst Sıralarda Yer Alın",
+    excerpt:
+      "Yerel SEO stratejileri ile Google Haritalar'da üst sıralarda yer alın. Yerel işletmeler için Google My Business optimizasyonu ve bölgesel anahtar kelime stratejileri.",
+    image: "/bento/dijital-pazarlama.jpg",
+    slug: "yerel-seo-stratejileri",
+    date: "10 Ocak 2026",
+    readTime: "18 dk",
+    isEven: true,
+  },
+  {
+    id: 16,
+    category: "Teknik SEO",
+    title: "Teknik SEO Kontrol Listesi: 2026 Kapsamlı Rehber",
+    excerpt:
+      "2026 yılı için kapsamlı teknik SEO kontrol listesi. Site hızı, mobil uyumluluk, yapılandırılmış veri ve Core Web Vitals optimizasyonu stratejileri.",
+    image: "/bento/web-tasarım.jpg",
+    slug: "teknik-seo-kontrol-listesi",
+    date: "12 Ocak 2026",
+    readTime: "22 dk",
+    isEven: false,
+  },
+  {
+    id: 15,
+    category: "Dijital Dönüşüm",
+    title:
+      "KOBİ Dijital Dönüşüm Rehberi: Küçük İşletmeler için Dijital Stratejiler",
+    excerpt:
+      "Küçük ve orta ölçekli işletmeler için dijital dönüşüm rehberi. Web sitesi, e-ticaret ve dijital pazarlama ile işletmenizi büyütün.",
+    image: "/bento/yazılım-geliştirme.jpg",
+    slug: "kobi-dijital-donusum-rehberi",
+    date: "15 Ocak 2026",
+    readTime: "20 dk",
+    isEven: true,
+  },
+  {
+    id: 14,
+    category: "Web Performans",
+    title: "Core Web Vitals Rehberi: Google'ın Performans Metrikleri",
+    excerpt:
+      "Core Web Vitals nedir ve web sitenizi nasıl optimize edersiniz? LCP, FID, CLS metriklerini iyileştirmek için kapsamlı rehber.",
+    image: "/bento/web-tasarım.jpg",
+    slug: "core-web-vitals-rehberi",
+    date: "18 Ocak 2026",
+    readTime: "16 dk",
+    isEven: false,
+  },
+  {
+    id: 13,
+    category: "Web Performans",
+    title: "Web Sitesi Hızı Nasıl Artırılır? Kapsamlı Performans Rehberi",
+    excerpt:
+      "Web sitesi hızını artırmak için pratik yöntemler. Görsel optimizasyonu, caching stratejileri, CDN kullanımı ve kod optimizasyonu teknikleri.",
+    image: "/bento/web-tasarım.jpg",
+    slug: "web-sitesi-hizi-nasil-artirilir",
+    date: "20 Ocak 2026",
+    readTime: "18 dk",
+    isEven: true,
+  },
+  {
     id: 12,
     category: "Web Tasarım",
     title: "Profesyonel Web Tasarım Nedir? Kimler İçin Gerekli?",
@@ -368,7 +442,7 @@ const BlogPage = () => {
 
                       {/* Meta info */}
                       <div className="flex items-center text-sm text-black/50 space-x-4 mb-4">
-                        <span>{post.date}</span>
+                        <time dateTime={post.date}>{post.date}</time>
                         <span>•</span>
                         <span>{post.readTime} okuma</span>
                       </div>

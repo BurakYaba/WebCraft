@@ -125,7 +125,7 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <div className="min-h-screen bg-white">
+      <main className="min-h-screen bg-white">
         <Header />
 
         {/* Hero Section */}
@@ -149,18 +149,32 @@ export default function ContactPage() {
                   hizmetlerimiz hakkında bilgi edinin.
                 </p>
                 <p className="text-base lg:text-lg text-gray-500 leading-relaxed max-w-md mb-4">
-                  Profesyonel web tasarım ajansı olarak, kurumsal web sitesi tasarımı, e-ticaret web tasarımı, SEO hizmeti ve dijital pazarlama çözümleri sunuyoruz. 2015 yılından bu yana 200+ başarılı proje tamamladık ve müşteri memnuniyetini ön planda tutuyoruz. Modern teknolojiler ve yaratıcı tasarım yaklaşımı ile web sitenizin hem görsel olarak çekici hem de arama motorlarında üst sıralarda yer almasını sağlıyoruz.
+                  Profesyonel web tasarım ajansı olarak, kurumsal web sitesi
+                  tasarımı, e-ticaret web tasarımı, SEO hizmeti ve dijital
+                  pazarlama çözümleri sunuyoruz. 2015 yılından bu yana 200+
+                  başarılı proje tamamladık ve müşteri memnuniyetini ön planda
+                  tutuyoruz. Modern teknolojiler ve yaratıcı tasarım yaklaşımı
+                  ile web sitenizin hem görsel olarak çekici hem de arama
+                  motorlarında üst sıralarda yer almasını sağlıyoruz.
                 </p>
                 <div className="mt-6 pt-6 border-t border-gray-200 max-w-md">
-                  <p className="text-sm text-gray-500 mb-3">İlgili blog yazılarımız:</p>
+                  <p className="text-sm text-gray-500 mb-3">
+                    İlgili blog yazılarımız:
+                  </p>
                   <ul className="space-y-2 text-sm">
                     <li>
-                      <Link href="/blog/seo-uyumlu-web-tasarimi" className="text-red-600 hover:text-red-700 underline underline-offset-2 transition-colors">
+                      <Link
+                        href="/blog/seo-uyumlu-web-tasarimi"
+                        className="text-red-600 hover:text-red-700 underline underline-offset-2 transition-colors"
+                      >
                         SEO Uyumlu Web Tasarımı Rehberi
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog/web-tasarim-fiyatlari" className="text-red-600 hover:text-red-700 underline underline-offset-2 transition-colors">
+                      <Link
+                        href="/blog/web-tasarim-fiyatlari"
+                        className="text-red-600 hover:text-red-700 underline underline-offset-2 transition-colors"
+                      >
                         Web Tasarım Fiyatları ve Çözümler
                       </Link>
                     </li>
@@ -255,7 +269,7 @@ export default function ContactPage() {
         <Suspense fallback={<SectionSkeleton height="h-64" />}>
           <Footer />
         </Suspense>
-      </div>
+      </main>
     </>
   );
 }

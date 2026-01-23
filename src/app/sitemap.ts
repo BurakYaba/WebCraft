@@ -1,8 +1,43 @@
 import { MetadataRoute } from "next";
 
-// Import blog posts to dynamically generate sitemap entries
-// This ensures the sitemap stays in sync with actual blog posts
+// All blog posts with their slugs and dates
+// Each post has its own static page at /blog/{slug}/
 const blogPosts = [
+  // NEW KEYWORD-OPTIMIZED POSTS (2026)
+  {
+    slug: "web-sitesi-hizi-nasil-artirilir",
+    date: "2026-01-20",
+  },
+  {
+    slug: "core-web-vitals-rehberi",
+    date: "2026-01-18",
+  },
+  {
+    slug: "kobi-dijital-donusum-rehberi",
+    date: "2026-01-15",
+  },
+  {
+    slug: "teknik-seo-kontrol-listesi",
+    date: "2026-01-12",
+  },
+  {
+    slug: "yerel-seo-stratejileri",
+    date: "2026-01-10",
+  },
+  {
+    slug: "fethiye-web-tasarim-rehberi",
+    date: "2026-01-08",
+  },
+
+  // EXISTING POSTS (2025)
+  {
+    slug: "profesyonel-web-tasarim-nedir-kimler-icin-gerekli",
+    date: "2025-01-22",
+  },
+  {
+    slug: "kurumsal-web-sitesi-yaptirirken-yapilan-7-kritik-hata",
+    date: "2025-01-20",
+  },
   {
     slug: "seo-uyumlu-web-tasarimi",
     date: "2024-12-15",
@@ -100,6 +135,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    // Niche service pages
+    {
+      url: `${baseUrl}/hizmetler/performans-odakli-web-tasarim`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/hizmetler/kobi-web-tasarim`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/hizmetler/seo-uyumlu-web-sitesi`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     {
       url: `${baseUrl}/islerimiz`,
       lastModified: new Date(),
@@ -134,6 +188,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Competitor-focused landing page
     {
       url: `${baseUrl}/en-iyi-web-tasarim-ajansi`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    // Local SEO pages
+    {
+      url: `${baseUrl}/fethiye-web-tasarim-hizmetleri`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/mugla-web-tasarim-seo-hizmetleri`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

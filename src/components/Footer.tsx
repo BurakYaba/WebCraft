@@ -40,6 +40,16 @@ const Footer = () => {
     { name: "E-ticaret Web Tasarım", href: "/e-ticaret-web-tasarim" },
     { name: "Kurumsal Web Sitesi", href: "/kurumsal-web-sitesi" },
     { name: "En İyi Web Tasarım Ajansı", href: "/en-iyi-web-tasarim-ajansi" },
+    // Niche service pages
+    {
+      name: "Performans Odaklı Web Tasarım",
+      href: "/hizmetler/performans-odakli-web-tasarim",
+    },
+    { name: "KOBİ Web Tasarım", href: "/hizmetler/kobi-web-tasarim" },
+    { name: "SEO Uyumlu Web Sitesi", href: "/hizmetler/seo-uyumlu-web-sitesi" },
+    // Local SEO pages
+    { name: "Fethiye Web Tasarım", href: "/fethiye-web-tasarim-hizmetleri" },
+    { name: "Muğla Web Tasarım", href: "/mugla-web-tasarim-seo-hizmetleri" },
   ];
 
   return (

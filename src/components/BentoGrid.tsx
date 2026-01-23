@@ -71,7 +71,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             quality={85}
-            priority={false}
+            loading="lazy"
           />
         </div>
       )}
@@ -109,11 +109,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     );
   }
 
-  return (
-    <div className={className}>
-      {CardContent}
-    </div>
-  );
+  return <div className={className}>{CardContent}</div>;
 };
 
 export default function BentoGrid() {

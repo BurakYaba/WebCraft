@@ -17,9 +17,7 @@ const BentoGrid = lazy(() => import("@/components/BentoGrid"));
 // Lazy load Footer
 const Footer = lazy(() => import("@/components/Footer"));
 // Lazy load ServiceFAQSection
-const ServiceFAQSection = lazy(
-  () => import("@/components/ServiceFAQSection")
-);
+const ServiceFAQSection = lazy(() => import("@/components/ServiceFAQSection"));
 
 // Loading component for better UX
 const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
@@ -156,7 +154,7 @@ export default function EticaretWebTasarimPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(ecommerceSchema) }}
       />
-      <div className="min-h-screen bg-[#181716]">
+      <main className="min-h-screen bg-[#181716]">
         <Header />
 
         {/* Hero Section */}
@@ -490,7 +488,7 @@ export default function EticaretWebTasarimPage() {
         <Suspense fallback={<SectionSkeleton height="h-64" />}>
           <Footer />
         </Suspense>
-      </div>
+      </main>
     </>
   );
 }

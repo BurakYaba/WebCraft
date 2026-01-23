@@ -101,7 +101,7 @@ export default function EnIyiWebTasarimAjansiPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(bestAgencySchema) }}
       />
-      <div className="min-h-screen bg-[#181716]">
+      <main className="min-h-screen bg-[#181716]">
         <Header />
 
         {/* Hero Section */}
@@ -429,7 +429,7 @@ export default function EnIyiWebTasarimAjansiPage() {
         <Suspense fallback={<SectionSkeleton height="h-64" />}>
           <Footer />
         </Suspense>
-      </div>
+      </main>
     </>
   );
 }
