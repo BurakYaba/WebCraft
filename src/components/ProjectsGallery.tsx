@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Project {
   id: string;
@@ -19,37 +20,53 @@ interface Project {
 const projects: Project[] = [
   // Real Projects
   {
-    id: "fluenta",
+    id: "fluenta-ai",
     title: "Fluenta - İngilizce Öğrenme Platformu",
-    description: "AI destekli 3D avatarlarla interaktif İngilizce öğrenme deneyimi sunan kapsamlı eğitim platformu",
+    description:
+      "AI destekli 3D avatarlarla interaktif İngilizce öğrenme deneyimi sunan kapsamlı eğitim platformu",
     category: "Web Tasarım",
     image: "/projects/fluenta.png",
     tags: ["Next.js", "React", "TypeScript", "AI"],
     year: "2025",
     client: "Fluenta",
-    url: "https://www.fluenta-ai.com/",
+    url: "/islerimiz/fluenta-ai",
+    featured: true,
   },
   {
     id: "mentoria",
     title: "Mentoria - Özel Ders Platformu",
-    description: "Öğrenci ve öğretmenleri akıllı eşleştirme sistemiyle buluşturan güvenilir özel ders platformu",
+    description:
+      "Öğrenci ve öğretmenleri akıllı eşleştirme sistemiyle buluşturan güvenilir özel ders platformu",
     category: "Web Tasarım",
     image: "/projects/mentoria.png",
     tags: ["Next.js", "React", "TypeScript", "TailwindCSS"],
     year: "2025",
     client: "Mentoria",
-    url: "https://www.mentoria.tr/",
+    url: "/islerimiz/mentoria",
   },
   {
     id: "atlantis",
     title: "Atlantis Kreş ve Gündüz Bakımevi",
-    description: "Muğla Menteşe'de Montessori, Reggio Emilia ve High Scope eğitim modelleriyle modern kreş web sitesi",
+    description:
+      "Muğla Menteşe'de Montessori, Reggio Emilia ve High Scope eğitim modelleriyle modern kreş web sitesi",
     category: "Web Tasarım",
     image: "/projects/atlantis.png",
     tags: ["Next.js", "React", "TailwindCSS"],
     year: "2025",
     client: "Atlantis Kreş",
-    url: "https://www.atlantiskres.com/",
+    url: "/islerimiz/atlantis",
+  },
+  {
+    id: "skoll-beauty",
+    title: "Skoll Salon - Güzellik ve Bakım Salonu",
+    description:
+      "Modern tasarım ve online randevu sistemi ile Fethiye'nin önde gelen güzellik salonunun dijital vitrini",
+    category: "Web Tasarım",
+    image: "/projects/skoll.png",
+    tags: ["Next.js", "React", "Online Randevu", "SEO"],
+    year: "2025",
+    client: "Skoll Salon",
+    url: "/islerimiz/skoll-beauty",
   },
   // Mock Projects
   {
@@ -169,11 +186,10 @@ export default function ProjectsGallery() {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <AnimatePresence key={activeCategory}>
+          <AnimatePresence mode="wait">
             {filteredProjects.map((project, index) => (
               <motion.div
-                key={project.id}
-                layout
+                key={`${activeCategory}-${project.id}`}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -50 }}
@@ -184,12 +200,7 @@ export default function ProjectsGallery() {
                 className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
               >
                 {project.url ? (
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block cursor-pointer"
-                  >
+                  <Link href={project.url} className="block cursor-pointer">
                     {/* Project Image */}
                     <div className="relative h-64 overflow-hidden">
                       <Image
@@ -204,20 +215,20 @@ export default function ProjectsGallery() {
                         {project.year}
                       </div>
 
-                      {/* Featured Badge */}
-                      {project.featured && (
-                        <div className="absolute top-4 left-4 bg-green-500 text-white text-xs px-3 py-1 rounded-full font-medium flex items-center gap-1">
-                          <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                          Gerçek Proje
-                        </div>
-                      )}
-
                       {/* External Link Icon */}
                       <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-gray-800 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
                         </svg>
                       </div>
                     </div>
@@ -254,7 +265,7 @@ export default function ProjectsGallery() {
                         ))}
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 ) : (
                   <div className="cursor-default">
                     {/* Project Image */}

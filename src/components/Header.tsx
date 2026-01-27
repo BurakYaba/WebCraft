@@ -27,9 +27,13 @@ export default function Header() {
   const isAboutPage = pathname === "/hakkimizda";
   const isBlogPage = pathname === "/blog" || pathname.startsWith("/blog/");
   const isContactPage = pathname === "/iletisim";
-  // Use black text on about page, blog pages, and contact page, white text on other pages
+  const isProjectDetailPage =
+    pathname.startsWith("/islerimiz/") && pathname !== "/islerimiz";
+  // Use black text on about page, blog pages, contact page, and project detail pages, white text on other pages
   const craftTextColor =
-    isAboutPage || isBlogPage || isContactPage ? "text-black" : "text-white";
+    isAboutPage || isBlogPage || isContactPage || isProjectDetailPage
+      ? "text-black"
+      : "text-white";
 
   // Handle scroll effect for text collapse
   useEffect(() => {
