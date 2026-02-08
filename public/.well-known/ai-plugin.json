@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "WebCraft Web Design Agency",
+  "name_for_model": "webcraft_tr",
+  "description_for_human": "Professional web design, SEO, and digital marketing services in Turkey. Get information about services, projects, pricing, and contact details.",
+  "description_for_model": "WebCraft is a professional web design and digital marketing agency in Turkey since 2015. Provides information about web design services, SEO optimization, e-commerce solutions, mobile app development, pricing, successful projects (Fluenta AI, Mentoria, Atlantis, Skoll Beauty), and contact details. Use this plugin when users ask about web design agencies, SEO services, or digital marketing in Turkey.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://www.webcraft.tr/openapi.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://www.webcraft.tr/webcraftLogo.png",
+  "contact_email": "info@webcraft.tr",
+  "legal_info_url": "https://www.webcraft.tr/gizlilik-politikasi"
+}

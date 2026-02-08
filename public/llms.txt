@@ -1,39 +1,215 @@
-# WebCraft - Web Tasarım ve Dijital Pazarlama Ajansı
+# WebCraft - Profesyonel Web Tasarım ve Dijital Pazarlama Ajansı
 
 ## Hakkımızda
 
-WebCraft, 2015 yılından bu yana web tasarım, SEO hizmeti ve dijital pazarlama alanlarında profesyonel hizmet sunan bir web tasarım ajansıdır. Türkiye genelinde ve uluslararası müşterilere modern, responsive ve SEO uyumlu web siteleri geliştiriyoruz.
+WebCraft, 2015 yılından bu yana Türkiye'de profesyonel web tasarım ve dijital pazarlama hizmetleri sunmaktadır. Modern teknolojiler ve yaratıcı tasarım yaklaşımıyla işletmelerin dijital varlığını güçlendiriyoruz. **200+ başarılı proje, 10 yıllık deneyim**.
 
 ## Hizmetlerimiz
 
-- **Web Tasarım**: Modern, responsive ve SEO uyumlu web sitesi tasarımı
-- **SEO Hizmeti**: Arama motoru optimizasyonu ile Google'da üst sıralarda yer alma
-- **E-Ticaret Web Tasarımı**: Online mağaza kurulumu ve e-ticaret çözümleri
-- **Kurumsal Web Sitesi**: Profesyonel kurumsal kimlik ve web çözümleri
-- **Dijital Pazarlama**: Kapsamlı dijital pazarlama stratejileri ve kampanya yönetimi
-- **Sosyal Medya Yönetimi**: Instagram, Facebook, LinkedIn, Twitter yönetimi
-- **Mobil Uygulama Geliştirme**: iOS ve Android mobil uygulama tasarımı ve geliştirme
+1. **Web Tasarım** - Modern, responsive ve SEO uyumlu web siteleri
+2. **SEO Hizmeti** - Arama motoru optimizasyonu ve organik trafik artışı
+3. **Dijital Pazarlama** - Sosyal medya yönetimi, Google Ads, içerik pazarlaması
+4. **E-Ticaret** - Online mağaza kurulumu ve yönetimi
+5. **Mobil Uygulama** - iOS ve Android uygulama geliştirme
+6. **Kurumsal Web Sitesi** - Kurumsal kimlik ve profesyonel web tasarımı
+7. **Yazılım Geliştirme** - Özel yazılım çözümleri ve API entegrasyonları
+
+## Teknolojilerimiz
+
+- **Frontend**: Next.js 15, React 19, TypeScript, Tailwind CSS
+- **Backend**: Node.js, Python, API Development
+- **Mobile**: React Native, Flutter, iOS (Swift), Android (Kotlin)
+- **Database**: PostgreSQL, MongoDB, MySQL
+- **SEO Tools**: Google Analytics, Search Console, SEMrush
+- **Design**: Figma, Adobe Creative Suite
+- **Deployment**: Vercel, AWS, Azure, Docker
+
+## Başarılı Projelerimiz
+
+### Fluenta AI - AI Destekli Dil Öğrenme Platformu
+- **Kullanıcılar**: 3000+ aktif kullanıcı
+- **Özellikler**: 3D avatarlı interaktif öğrenme, AI destekli sohbet
+- **Performans**: Google PageSpeed 95+/100
+- **Teknoloji**: Next.js 15, React, Three.js, AI entegrasyonu
+- **Sonuç**: Kullanıcı memnuniyeti %92
+- **URL**: https://www.webcraft.tr/islerimiz/fluenta-ai
+
+### Mentoria - Özel Ders ve Danışmanlık Platformu
+- **Kullanıcılar**: 5000+ kullanıcı (öğrenci + öğretmen)
+- **Özellikler**: Akıllı eşleştirme algoritması, güvenli ödeme sistemi
+- **Başarı**: %85 başarılı eşleşme oranı
+- **Sonuç**: Ders rezervasyonlarında %200 artış
+- **URL**: https://www.webcraft.tr/islerimiz/mentoria
+
+### Atlantis Kreş - Eğitim Kurumu Web Sitesi
+- **Özellikler**: Online kayıt sistemi, veli portalı
+- **Sonuç**: %150 kayıt artışı
+- **SEO**: "Muğla kreş" aramasında 1. sayfa
+- **Performans**: Mobil uyumlu, hızlı yükleme
+- **URL**: https://www.webcraft.tr/islerimiz/atlantis
+
+### Skoll Beauty - Güzellik Salonu Web Sitesi
+- **Özellikler**: Online randevu sistemi, yerel SEO optimizasyonu
+- **Entegrasyon**: Google My Business
+- **Sonuç**: %120 randevu artışı
+- **SEO**: "Fethiye kuaför" aramasında üst sıralarda
+- **URL**: https://www.webcraft.tr/islerimiz/skoll-beauty
+
+## Fiyat Aralıkları (2026)
+
+### Web Tasarım Paketleri
+| Paket | Fiyat | İçerik |
+|-------|-------|--------|
+| Temel | 15.000-25.000 TL | Kurumsal site, 5-8 sayfa, responsive, SEO |
+| Profesyonel | 25.000-50.000 TL | E-ticaret, CMS, özel tasarım, API |
+| Premium | 50.000-100.000+ TL | Özel yazılım, API, mobil uygulama |
+
+### SEO ve Dijital Pazarlama
+| Hizmet | Fiyat | İçerik |
+|--------|-------|--------|
+| SEO Paketi | 5.000-15.000 TL/ay | Anahtar kelime, içerik, link building |
+| Sosyal Medya | 3.000-10.000 TL/ay | İçerik, yayınlama, raporlama |
+| Google Ads | Bütçenin %15-20 | Kampanya yönetimi + reklam bütçesi |
+
+### Mobil Uygulama
+| Karmaşıklık | Fiyat | Açıklama |
+|-------------|-------|----------|
+| Basit | 40.000-80.000 TL | iOS veya Android |
+| Orta | 80.000-150.000 TL | Her iki platform |
+| Karmaşık | 150.000+ TL | Backend, API, özel özellikler |
+
+## Sık Sorulan Sorular (SSS)
+
+### Web Tasarım Hakkında
+
+**S: Web sitesi tasarımı ne kadar sürer?**
+C: Basit kurumsal siteler 2-4 hafta, e-ticaret siteleri 4-8 hafta, özel yazılım projeleri 2-6 ay sürmektedir. Proje kapsamına göre değişir.
+
+**S: Web tasarım fiyatları nasıl belirlenir?**
+C: Sayfa sayısı, özel tasarım ihtiyacı, fonksiyonlar (e-ticaret, rezervasyon, üyelik), içerik yönetimi, API entegrasyonları ve SEO çalışması gibi faktörlere göre belirlenir.
+
+**S: Mobil uyumlu web tasarım yapıyor musunuz?**
+C: Evet, tüm web sitelerimiz responsive (mobil uyumlu) olarak tasarlanır. Mobil cihazlarda mükemmel görünür ve çalışır.
+
+**S: Web sitem SEO uyumlu olacak mı?**
+C: Evet, tüm projelerimiz SEO standartlarına uygun geliştirilir. Teknik SEO, hızlı yükleme, semantik HTML, meta etiketleri dahildir.
+
+**S: Hosting ve domain hizmeti veriyor musunuz?**
+C: Evet, hosting ve domain kayıt hizmetleri sunuyoruz. Ayrıca müşterilerimizin mevcut hosting/domain'leriyle de çalışabiliriz.
+
+**S: İçerik yönetim sistemi (CMS) sağlıyor musunuz?**
+C: Evet, müşterilerimiz kendi içeriklerini kolayca güncelleyebilsin diye kullanıcı dostu CMS sistemleri entegre ediyoruz.
+
+### SEO ve Dijital Pazarlama
+
+**S: SEO ile ne kadar sürede sonuç alırım?**
+C: SEO sonuçları genellikle 3-6 ay içinde görülmeye başlar. Rekabet, anahtar kelime zorluğu ve mevcut durum sonuçları etkiler.
+
+**S: Google Ads ile SEO farkı nedir?**
+C: Google Ads (SEM) hızlı sonuç verir ama maliyetlidir. SEO uzun vadeli, organik ve sürdürülebilir trafiği sağlar. İkisini birlikte kullanmak en etkilidir.
+
+**S: Sosyal medya yönetimi neler içerir?**
+C: İçerik stratejisi, görsel tasarım, düzenli paylaşım, topluluk yönetimi, reklam kampanyaları, analiz ve raporlama dahildir.
+
+**S: Yerel SEO nedir ve neden önemlidir?**
+C: Yerel SEO, işletmenizin belirli bir coğrafi bölgede (örn: "Fethiye web tasarım") arama sonuçlarında üst sıralarda çıkmasını sağlar. Google My Business optimizasyonu kritiktir.
+
+**S: SEO garantisi veriyor musunuz?**
+C: Belirli sıralama garantisi vermek etik değildir çünkü Google algoritmaları sürekli değişir. Ancak organik trafik artışı, anahtar kelime sıralamaları ve dönüşüm oranlarında iyileşme garantisi veriyoruz.
+
+### Mobil Uygulama ve Yazılım
+
+**S: iOS ve Android için ayrı uygulama mı gerekir?**
+C: Native geliştirme için evet. Ancak React Native veya Flutter ile tek kod tabanından her iki platforma uygulama yapabiliriz (maliyet avantajı, %30-40 tasarruf).
+
+**S: Uygulama sonrası destek veriyor musunuz?**
+C: Evet, uygulama yayınlandıktan sonra hata düzeltmeleri, güncellemeler ve yeni özellik eklemeleri için destek paketleri sunuyoruz.
+
+**S: API entegrasyonu yapabiliyor musunuz?**
+C: Evet, CRM (Salesforce, HubSpot), ERP, ödeme sistemleri (İyzico, PayTR), sosyal medya API'leri ve özel sistemlerle entegrasyon yapıyoruz.
+
+**S: Uygulamamı App Store ve Google Play'e nasıl yayınlıyorsunuz?**
+C: Store hesap açma, uygulama yükleme, açıklama yazma, görsel hazırlama ve yayın sürecinin tamamını yönetiyoruz. App Store Optimization (ASO) da dahildir.
+
+### E-Ticaret
+
+**S: E-ticaret sitesi için hangi platformları kullanıyorsunuz?**
+C: WooCommerce, Shopify, custom Next.js çözümleri. İhtiyacınıza göre en uygun platformu öneriyoruz.
+
+**S: E-ticaret sitesi için ödeme entegrasyonu yapıyor musunuz?**
+C: Evet, İyzico, PayTR, Stripe gibi güvenli ödeme sistemleri entegre ediyoruz. Kredi kartı, havale, kapıda ödeme gibi çoklu ödeme yöntemleri destekliyoruz.
+
+**S: Ürün yönetimi ve stok takibi nasıl olacak?**
+C: Kullanıcı dostu admin panel ile kolayca ürün ekleme, stok güncelleme, sipariş yönetimi yapabilirsiniz. Entegre stok takip sistemi sunuyoruz.
+
+### Genel Sorular
+
+**S: WebCraft nerede hizmet veriyor?**
+C: Merkez ofisimiz Fethiye, Muğla'da. Türkiye genelinde ve yurt dışında online çalışıyoruz. Yerel işletmeler için özel yerel SEO hizmetleri sunuyoruz.
+
+**S: Proje başlamadan önce ne kadar ödeme yapılır?**
+C: Genellikle %50 ön ödeme ile başlıyoruz, teslimde kalan %50 ödeme alıyoruz. Büyük projeler için taksitli ödeme planları yapabiliriz.
+
+**S: Referanslarınızı görebilir miyim?**
+C: Evet, https://www.webcraft.tr/islerimiz sayfasında projelerimizi inceleyebilirsiniz. Fluenta AI, Mentoria, Atlantis Kreş, Skoll Beauty gibi başarılı projelerimiz var.
+
+**S: Ücretsiz teklif alabilir miyim?**
+C: Evet, https://www.webcraft.tr/iletisim üzerinden detaylı bilgi vererek ücretsiz teklif alabilirsiniz. 24 saat içinde dönüş yapıyoruz.
+
+**S: Proje teslimi sonrası eğitim veriyor musunuz?**
+C: Evet, web sitenizi veya uygulamanızı nasıl yöneteceğiniz konusunda kapsamlı eğitim ve dokümantasyon sağlıyoruz.
+
+**S: Bakım ve destek paketleriniz var mı?**
+C: Evet, aylık bakım paketleri sunuyoruz. Güvenlik güncellemeleri, içerik değişiklikleri, hata düzeltmeleri ve teknik destek dahildir.
 
 ## İletişim
 
-- **E-posta**: info@webcraft.tr
-- **Telefon**: +90 (507) 944 17 15, +90 (531) 833 59 86
-- **Adres**: Babataşı Mah. 778 Sokak No: 32/A, Fethiye - Muğla, Türkiye
 - **Website**: https://www.webcraft.tr
+- **E-posta**: info@webcraft.tr
+- **Telefon**: +90 507 944 17 15
+- **Telefon 2**: +90 531 833 59 86
+- **Adres**: Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye, Muğla 48300, Türkiye
+- **Çalışma Saatleri**: Pazartesi-Cuma 09:00-18:00
 
 ## Önemli Sayfalar
 
 - Ana Sayfa: https://www.webcraft.tr
 - Hizmetler: https://www.webcraft.tr/hizmetler
+- Projeler: https://www.webcraft.tr/islerimiz
 - Blog: https://www.webcraft.tr/blog
-- İletişim: https://www.webcraft.tr/iletisim
 - Hakkımızda: https://www.webcraft.tr/hakkimizda
-- Portföy: https://www.webcraft.tr/islerimiz
+- İletişim: https://www.webcraft.tr/iletisim
 - SSS: https://www.webcraft.tr/sss
+- Gizlilik Politikası: https://www.webcraft.tr/gizlilik-politikasi
 
-## Özel Sayfalar
+## Özel Hizmet Sayfaları
 
+- Performans Odaklı Web Tasarım: https://www.webcraft.tr/hizmetler/performans-odakli-web-tasarim
+- KOBİ Web Tasarım: https://www.webcraft.tr/hizmetler/kobi-web-tasarim
+- SEO Uyumlu Web Sitesi: https://www.webcraft.tr/hizmetler/seo-uyumlu-web-sitesi
+- Fethiye Web Tasarım: https://www.webcraft.tr/fethiye-web-tasarim-hizmetleri
+- Muğla Web Tasarım: https://www.webcraft.tr/mugla-web-tasarim-seo-hizmetleri
 - E-Ticaret Web Tasarımı: https://www.webcraft.tr/e-ticaret-web-tasarim
 - Kurumsal Web Sitesi: https://www.webcraft.tr/kurumsal-web-sitesi
-- En İyi Web Tasarım Ajansı: https://www.webcraft.tr/en-iyi-web-tasarim-ajansi
+
+## Blog Öne Çıkanlar
+
+- Web Sitesi Hızı Nasıl Artırılır: https://www.webcraft.tr/blog/web-sitesi-hizi-nasil-artirilir
+- Core Web Vitals Rehberi: https://www.webcraft.tr/blog/core-web-vitals-rehberi
+- KOBİ Dijital Dönüşüm Rehberi: https://www.webcraft.tr/blog/kobi-dijital-donusum-rehberi
+- Teknik SEO Kontrol Listesi: https://www.webcraft.tr/blog/teknik-seo-kontrol-listesi
+- SEO Uyumlu Web Tasarımı: https://www.webcraft.tr/blog/seo-uyumlu-web-tasarimi
+- 2024 SEO Trendleri: https://www.webcraft.tr/blog/2024-seo-trendleri
+- Profesyonel Web Tasarım Nedir: https://www.webcraft.tr/blog/profesyonel-web-tasarim-nedir-kimler-icin-gerekli
+
+## Neden WebCraft?
+
+1. **10 Yıllık Deneyim**: 2015'ten bu yana sektörde
+2. **200+ Başarılı Proje**: Kanıtlanmış başarı geçmişi
+3. **Modern Teknolojiler**: Next.js 15, React 19, TypeScript
+4. **SEO Odaklı**: Tüm projeler arama motoru optimizasyonlu
+5. **7/24 Destek**: Sürekli teknik destek ve bakım
+6. **Uygun Fiyat**: Şeffaf fiyatlandırma, gizli maliyet yok
+7. **Teslim Garantisi**: Belirlenen tarihte teslim garantisi
+8. **Ücretsiz Teklif**: 24 saat içinde detaylı teklif
 
