@@ -36,18 +36,29 @@ const Footer = () => {
     { name: "Blog", href: "/blog" },
     { name: "SSS", href: "/sss" },
     { name: "İletişim", href: "/iletisim" },
-    // SEO landing pages
+  ];
+
+  // Column 2 links
+  const column1Links = navigationLinks;
+
+  // Column 3 links
+  const column2Links = [
+    { name: "Kaynak Merkezi", href: "/kaynak-merkezi" },
+    { name: "Sözlük", href: "/sozluk" },
+    { name: "Karşılaştırmalar", href: "/karsilastirma/webcraft-vs-diy" },
     { name: "E-ticaret Web Tasarım", href: "/e-ticaret-web-tasarim" },
     { name: "Kurumsal Web Sitesi", href: "/kurumsal-web-sitesi" },
     { name: "En İyi Web Tasarım Ajansı", href: "/en-iyi-web-tasarim-ajansi" },
-    // Niche service pages
+  ];
+
+  // Column 4 links
+  const column3Links = [
     {
       name: "Performans Odaklı Web Tasarım",
       href: "/hizmetler/performans-odakli-web-tasarim",
     },
     { name: "KOBİ Web Tasarım", href: "/hizmetler/kobi-web-tasarim" },
     { name: "SEO Uyumlu Web Sitesi", href: "/hizmetler/seo-uyumlu-web-sitesi" },
-    // Local SEO pages
     { name: "Fethiye Web Tasarım", href: "/fethiye-web-tasarim-hizmetleri" },
     { name: "Muğla Web Tasarım", href: "/mugla-web-tasarim-seo-hizmetleri" },
   ];
@@ -71,38 +82,54 @@ const Footer = () => {
         ></div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-          {/* Column 1 - WebCraft, Slogan & Social */}
-          <div className="footer-brand flex flex-col">
-            {/* Logo */}
-            <div className="mb-6">
-              <Link href="/" className="inline-block group">
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-[#f84525] rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 overflow-hidden">
-                    <Image
-                      src="/webcraftLogo.png"
-                      alt="WebCraft Logo"
-                      width={48}
-                      height={48}
-                      className="w-full h-full object-contain p-1"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-white font-bold text-xl md:text-2xl tracking-tight">
-                      WebCraft
-                    </h3>
-                  </div>
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        {/* Row 1 - Headers */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
+          {/* Column 1 - WebCraft Logo */}
+          <div className="footer-brand">
+            <Link href="/" className="inline-block group">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-[#f84525] rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 overflow-hidden">
+                  <Image
+                    src="/webcraftLogo.png"
+                    alt="WebCraft Logo"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-contain p-1"
+                  />
                 </div>
-              </Link>
-            </div>
+                <div>
+                  <h3 className="text-white font-bold text-xl md:text-2xl tracking-tight">
+                    WebCraft
+                  </h3>
+                </div>
+              </div>
+            </Link>
+          </div>
 
+          {/* Columns 2-4 - Keşfedin Header (spans 3 columns) */}
+          <div className="md:col-span-3">
+            <h3 className="text-white font-bold text-lg uppercase tracking-wider">
+              Keşfedin
+            </h3>
+          </div>
+
+          {/* Column 5 - İletişime Geçin Header */}
+          <div>
+            <h3 className="text-white font-bold text-lg uppercase tracking-wider">
+              İletişime Geçin
+            </h3>
+          </div>
+        </div>
+
+        {/* Row 2 - Content */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+          {/* Column 1 - Slogan & Social Links */}
+          <div className="footer-brand flex flex-col">
             {/* Slogan */}
             <div className="mb-8">
               <p className="text-white/80 text-base md:text-lg leading-relaxed font-medium">
-                Dijital dünyada markanızın
-                <span className="text-[#f84525]"> güçlü </span>
-                varlığını inşa ediyoruz.
+                Dijital dünyada markanızın güçlü varlığını inşa ediyoruz.
               </p>
             </div>
 
@@ -132,53 +159,78 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2 - Keşfedin Navigation */}
-          <div className="footer-navigation">
-            <h3 className="text-white font-bold text-lg uppercase tracking-wider mb-6">
-              Keşfedin
-            </h3>
-            <nav>
-              <ul className="space-y-3">
-                {navigationLinks.map((link) => (
-                  <li key={link.name}>
-                    <a
-                      href={link.href}
-                      className="group inline-block text-white/70 text-base hover:text-white transition-all duration-300 relative"
-                    >
-                      {link.name}
-                      <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f84525] transition-all duration-300 group-hover:w-full"></div>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
+          {/* Column 2 - First set of links */}
+          <nav>
+            <ul className="space-y-3">
+              {column1Links.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="group inline-block text-white/70 text-sm hover:text-white transition-all duration-300 relative"
+                  >
+                    {link.name}
+                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f84525] transition-all duration-300 group-hover:w-full"></div>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-          {/* Column 3 - İletişime Geçin Contact */}
+          {/* Column 3 - Second set of links */}
+          <nav>
+            <ul className="space-y-3">
+              {column2Links.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="group inline-block text-white/70 text-sm hover:text-white transition-all duration-300 relative"
+                  >
+                    {link.name}
+                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f84525] transition-all duration-300 group-hover:w-full"></div>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* Column 4 - Third set of links */}
+          <nav>
+            <ul className="space-y-3">
+              {column3Links.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="group inline-block text-white/70 text-sm hover:text-white transition-all duration-300 relative"
+                  >
+                    {link.name}
+                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f84525] transition-all duration-300 group-hover:w-full"></div>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* Column 5 - Contact Info */}
           <div className="footer-contact">
-            <h3 className="text-white font-bold text-lg uppercase tracking-wider mb-6">
-              İletişime Geçin
-            </h3>
-
             {/* Contact Info */}
             <div className="space-y-4 mb-6">
               <a
                 href="mailto:info@webcraft.tr"
-                className="group block text-[#f84525] text-base md:text-lg font-medium hover:text-white transition-colors duration-300 relative"
+                className="group block text-[#f84525] text-sm md:text-base font-medium hover:text-white transition-colors duration-300 relative"
               >
                 info@webcraft.tr
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
               </a>
               <a
                 href="tel:+905079441715"
-                className="group block text-[#f84525] text-base md:text-lg font-medium hover:text-white transition-colors duration-300 relative"
+                className="group block text-[#f84525] text-sm md:text-base font-medium hover:text-white transition-colors duration-300 relative"
               >
                 +90 (507) 944 17 15
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
               </a>
               <a
                 href="tel:+905318335986"
-                className="group block text-[#f84525] text-base md:text-lg font-medium hover:text-white transition-colors duration-300 relative"
+                className="group block text-[#f84525] text-sm md:text-base font-medium hover:text-white transition-colors duration-300 relative"
               >
                 +90 (531) 833 59 86
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>

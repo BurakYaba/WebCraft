@@ -197,6 +197,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    // Resource Center & Knowledge Base
+    {
+      url: `${baseUrl}/kaynak-merkezi`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/sozluk`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    // Comparison Pages
+    {
+      url: `${baseUrl}/karsilastirma/webcraft-vs-diy`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/karsilastirma/freelancer-vs-ajans`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/karsilastirma/platformlar`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
     // Industry-specific landing pages
     {
       url: `${baseUrl}/e-ticaret-web-tasarim`,
