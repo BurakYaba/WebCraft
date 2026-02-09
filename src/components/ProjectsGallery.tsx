@@ -68,6 +68,18 @@ const projects: Project[] = [
     client: "Skoll Salon",
     url: "/islerimiz/skoll-beauty",
   },
+  {
+    id: "home-and-car",
+    title: "Home and Car - Edremit Emlak Platformu",
+    description:
+      "Kapsamlı CMS ve mülk yönetim sistemi ile modern emlak platformu. 50+ özellik ve yerel SEO optimizasyonu",
+    category: "Web Tasarım",
+    image: "/projects/homeandcar.png",
+    tags: ["Next.js 16", "TypeScript", "PostgreSQL", "CMS"],
+    year: "2026",
+    client: "Home and Car",
+    url: "/islerimiz/home-and-car",
+  },
   // Mock Projects
   {
     id: "1",

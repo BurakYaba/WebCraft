@@ -186,6 +186,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/islerimiz/home-and-car`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: "weekly",
