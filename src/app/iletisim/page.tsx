@@ -49,17 +49,39 @@ export default function ContactPage() {
       "@type": "Organization",
       name: "WebCraft",
       description: "Web tasarım ve dijital pazarlama ajansı",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
-        addressCountry: "TR",
-      },
-      contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "+90-507-944-17-15",
-        contactType: "customer service",
-        availableLanguage: "Turkish",
-      },
+      address: [
+        {
+          "@type": "PostalAddress",
+          streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
+          addressLocality: "Fethiye",
+          addressRegion: "Muğla",
+          postalCode: "48300",
+          addressCountry: "TR",
+        },
+        {
+          "@type": "PostalAddress",
+          streetAddress: "Station Rd, Cuffley",
+          addressLocality: "Potters Bar",
+          postalCode: "EN6 4HY",
+          addressCountry: "GB",
+        },
+      ],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+90-507-944-17-15",
+          contactType: "customer service",
+          availableLanguage: "Turkish",
+          areaServed: "TR",
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+44-7990-965247",
+          contactType: "customer service",
+          availableLanguage: ["Turkish", "English"],
+          areaServed: "GB",
+        },
+      ],
       email: "info@webcraft.tr",
       url: "https://www.webcraft.tr",
     },
@@ -225,25 +247,43 @@ export default function ContactPage() {
                 <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Phone className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   Telefon
                 </h3>
-                <p className="text-gray-600 mb-2">
-                  <a
-                    href="tel:+905079441715"
-                    className="hover:text-red-600 transition-colors"
-                  >
-                    +90 (507) 944 17 15
-                  </a>
-                </p>
-                <p className="text-gray-600">
-                  <a
-                    href="tel:+905318335986"
-                    className="hover:text-red-600 transition-colors"
-                  >
-                    +90 (531) 833 59 86
-                  </a>
-                </p>
+                <div className="mb-4">
+                  <p className="text-sm font-semibold text-gray-700 mb-2">
+                    Türkiye Ofisi
+                  </p>
+                  <p className="text-gray-600 mb-1">
+                    <a
+                      href="tel:+905079441715"
+                      className="hover:text-red-600 transition-colors"
+                    >
+                      +90 (507) 944 17 15
+                    </a>
+                  </p>
+                  <p className="text-gray-600">
+                    <a
+                      href="tel:+905318335986"
+                      className="hover:text-red-600 transition-colors"
+                    >
+                      +90 (531) 833 59 86
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-700 mb-2">
+                    UK Ofisi
+                  </p>
+                  <p className="text-gray-600">
+                    <a
+                      href="tel:+447990965247"
+                      className="hover:text-red-600 transition-colors"
+                    >
+                      +44 7990 965 247
+                    </a>
+                  </p>
+                </div>
               </div>
 
               {/* Address */}
@@ -251,16 +291,33 @@ export default function ContactPage() {
                 <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <MapPin className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   Adres
                 </h3>
-                <p className="text-gray-600">
-                  Babataşı Mahallesi, 778 Sokak
-                  <br />
-                  No: 32/A
-                  <br />
-                  Fethiye - Muğla
-                </p>
+                <div className="mb-4">
+                  <p className="text-sm font-semibold text-gray-700 mb-2">
+                    Türkiye Ofisi
+                  </p>
+                  <p className="text-gray-600">
+                    Babataşı Mahallesi, 778 Sokak
+                    <br />
+                    No: 32/A
+                    <br />
+                    Fethiye - Muğla, Türkiye
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-700 mb-2">
+                    UK Ofisi
+                  </p>
+                  <p className="text-gray-600">
+                    Station Rd, Cuffley
+                    <br />
+                    Potters Bar
+                    <br />
+                    Birleşik Krallık, EN6 4HY
+                  </p>
+                </div>
               </div>
             </div>
           </div>

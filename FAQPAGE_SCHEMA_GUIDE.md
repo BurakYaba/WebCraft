@@ -81,7 +81,7 @@ Add this code to your `/sss` page right before the closing `</div>` of your main
           name: "WebCraft nerede hizmet veriyor?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Merkez ofisimiz Fethiye, Muğla'da bulunmaktadır. Türkiye genelinde ve yurt dışında online olarak hizmet veriyoruz. Yerel işletmeler için özel yerel SEO hizmetleri sunuyoruz. Adres: Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye, Muğla 48300.",
+            text: "İki ofisimiz bulunmaktadır. Türkiye ofisimiz Fethiye, Muğla'da (Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye, Muğla 48300), UK ofisimiz ise Londra'da (Station Rd, Cuffley, Potters Bar, EN6 4HY) yer almaktadır. Türkiye genelinde, Avrupa'da ve yurt dışında online olarak hizmet veriyoruz.",
           },
         },
         {
@@ -89,7 +89,7 @@ Add this code to your `/sss` page right before the closing `</div>` of your main
           name: "Ücretsiz teklif alabilir miyim?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Evet, https://www.webcraft.tr/iletisim üzerinden detaylı bilgi vererek ücretsiz teklif alabilirsiniz. 24 saat içinde size geri dönüş yapıyoruz. İletişim: +90 507 944 17 15, info@webcraft.tr",
+            text: "Evet, https://www.webcraft.tr/iletisim üzerinden detaylı bilgi vererek ücretsiz teklif alabilirsiniz. 24 saat içinde size geri dönüş yapıyoruz. İletişim - Türkiye: +90 507 944 17 15, UK: +44 7990 965 247, E-posta: info@webcraft.tr",
           },
         },
       ],

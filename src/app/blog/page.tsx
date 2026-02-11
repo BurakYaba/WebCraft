@@ -321,9 +321,9 @@ const BlogPage = () => {
 
       <main className="min-h-screen bg-[#181716]">
         {/* Page Header */}
-        <section className="relative pt-[180px] pb-[180px] md:pt-[116px] md:pb-[90px] bg-[#f9f9f9]">
+        <section className="relative pt-[180px] pb-[180px] md:pt-[116px] md:pb-[90px] bg-[#f9f9f9] overflow-hidden">
           {/* Background decorative element */}
-          <div className="absolute top-8 right-0 md:right-[-55px] opacity-15 pointer-events-none">
+          <div className="absolute top-8 right-0 md:right-4 opacity-15 pointer-events-none">
             <div className="w-16 h-16 md:w-24 md:h-24">
               <svg viewBox="0 0 100 100" className="w-full h-full fill-black">
                 <circle cx="50" cy="50" r="2" />

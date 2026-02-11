@@ -146,17 +146,39 @@ export default function AboutPage() {
       description:
         "Profesyonel web tasarım, SEO hizmeti ve dijital pazarlama çözümleri sunan ajans",
       foundingDate: "2015",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
-        addressCountry: "TR",
-      },
-      contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "+90-507-944-17-15",
-        contactType: "customer service",
-        availableLanguage: "Turkish",
-      },
+      address: [
+        {
+          "@type": "PostalAddress",
+          streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
+          addressLocality: "Fethiye",
+          addressRegion: "Muğla",
+          postalCode: "48300",
+          addressCountry: "TR",
+        },
+        {
+          "@type": "PostalAddress",
+          streetAddress: "Station Rd, Cuffley",
+          addressLocality: "Potters Bar",
+          postalCode: "EN6 4HY",
+          addressCountry: "GB",
+        },
+      ],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+90-507-944-17-15",
+          contactType: "customer service",
+          availableLanguage: "Turkish",
+          areaServed: "TR",
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+44-7990-965247",
+          contactType: "customer service",
+          availableLanguage: ["Turkish", "English"],
+          areaServed: "GB",
+        },
+      ],
       email: "info@webcraft.tr",
       url: "https://www.webcraft.tr",
       knowsAbout: [

@@ -234,7 +234,7 @@ export default function Header() {
             ></div>
           </div>
           <nav
-            className={`fixed inset-0 z-[60] flex flex-col items-center justify-center bg-transparent transition-opacity duration-300 ${
+            className={`fixed inset-0 z-[60] flex flex-col items-center justify-center bg-transparent transition-opacity duration-300 overflow-y-auto ${
               showContent ? "opacity-100" : "opacity-0"
             }`}
             style={{ pointerEvents: showContent ? "auto" : "none" }}
@@ -250,14 +250,14 @@ export default function Header() {
                 <span className="absolute left-0 top-5 w-6 h-0.5 bg-black rounded -rotate-45"></span>
               </span>
             </button>
-            <div className="w-full max-w-6xl flex flex-col md:flex-row justify-between items-start md:items-center px-6 md:px-20 gap-12 md:gap-0">
+            <div className="w-full max-w-6xl flex flex-col md:flex-row justify-between items-start md:items-center px-6 md:px-20 gap-6 md:gap-0 py-20 md:py-0">
               {/* Left: Menu Items */}
-              <div className="flex-1 flex flex-col items-start justify-center gap-3 md:gap-5">
+              <div className="flex-1 flex flex-col items-start justify-center gap-2 md:gap-5">
                 {MENU_LINKS.map((item) => (
                   <a
                     key={item.href}
                     href={item.href}
-                    className="block font-extrabold text-[2rem] md:text-[2.8rem] leading-tight text-[#111] transition-all duration-300 group font-display"
+                    className="block font-extrabold text-[1.6rem] md:text-[2.8rem] leading-tight text-[#111] transition-all duration-300 group font-display"
                     style={{
                       letterSpacing: "-0.01em",
                     }}
@@ -270,31 +270,56 @@ export default function Header() {
                 ))}
               </div>
               {/* Right: Contact Info & Socials (hidden on desktop, shown on mobile for stacking) */}
-              <div className="flex-1 flex flex-col items-start md:items-end justify-center gap-2 md:gap-4 mt-12 md:mt-0 text-[#111] md:hidden">
+              <div className="flex-1 flex flex-col items-start md:items-end justify-center gap-1 md:gap-4 mt-4 md:mt-0 text-[#111] md:hidden">
                 <a
                   href="mailto:info@webcraft.tr"
-                  className="text-[18px] text-red-500 underline underline-offset-4 mb-1 font-medium"
+                  className="text-[16px] text-red-500 underline underline-offset-4 mb-1 font-medium"
                 >
                   info@webcraft.tr
                 </a>
-                <a
-                  href="tel:+905079441715"
-                  className="text-[18px] text-red-500 underline underline-offset-4 mb-1 font-medium"
-                >
-                  +90 (507) 944 17 15
-                </a>
-                <a
-                  href="tel:+905318335986"
-                  className="text-[18px] text-red-500 underline underline-offset-4 mb-1 font-medium"
-                >
-                  +90 (531) 833 59 86
-                </a>
-                <div className="mt-2 text-[#6f6f6f] text-[16px] max-w-xs md:text-right">
-                  Babataşı Mah. 778 Sokak No: 32/A
-                  <br />
-                  Fethiye - Muğla, Türkiye
+
+                {/* Turkey Office */}
+                <div className="mb-1">
+                  <p className="text-[13px] text-[#6f6f6f] font-semibold mb-0.5">
+                    Türkiye Ofisi
+                  </p>
+                  <a
+                    href="tel:+905079441715"
+                    className="text-[14px] text-red-500 underline underline-offset-4 mb-0.5 font-medium block"
+                  >
+                    +90 (507) 944 17 15
+                  </a>
+                  <a
+                    href="tel:+905318335986"
+                    className="text-[14px] text-red-500 underline underline-offset-4 mb-1 font-medium block"
+                  >
+                    +90 (531) 833 59 86
+                  </a>
+                  <div className="text-[#6f6f6f] text-[12px] max-w-xs leading-tight">
+                    Babataşı Mah. 778 Sokak No: 32/A
+                    <br />
+                    Fethiye - Muğla, Türkiye
+                  </div>
                 </div>
-                <div className="flex gap-6 mt-8 text-[1.7rem] opacity-70 hover:opacity-100 transition-opacity duration-500">
+
+                {/* UK Office */}
+                <div>
+                  <p className="text-[13px] text-[#6f6f6f] font-semibold mb-0.5">
+                    UK Ofisi
+                  </p>
+                  <a
+                    href="tel:+447990965247"
+                    className="text-[14px] text-red-500 underline underline-offset-4 mb-1 font-medium block"
+                  >
+                    +44 7990 965 247
+                  </a>
+                  <div className="text-[#6f6f6f] text-[12px] max-w-xs leading-tight">
+                    Station Rd, Cuffley
+                    <br />
+                    Potters Bar, EN6 4HY
+                  </div>
+                </div>
+                <div className="flex gap-4 mt-4 text-[1.4rem] opacity-70 hover:opacity-100 transition-opacity duration-500">
                   {/* Instagram */}
                   <a
                     href="https://www.instagram.com/webcraft_web/"
@@ -303,7 +328,7 @@ export default function Header() {
                     aria-label="Instagram"
                     className="hover:text-red-500 transition-colors"
                   >
-                    <Instagram size={28} />
+                    <Instagram size={24} />
                   </a>
                   {/* Facebook */}
                   <a
@@ -313,7 +338,7 @@ export default function Header() {
                     aria-label="Facebook"
                     className="hover:text-red-500 transition-colors"
                   >
-                    <Facebook size={28} />
+                    <Facebook size={24} />
                   </a>
                   {/* Twitter */}
                   <a
@@ -323,7 +348,7 @@ export default function Header() {
                     aria-label="Twitter"
                     className="hover:text-red-500 transition-colors"
                   >
-                    <Twitter size={28} />
+                    <Twitter size={24} />
                   </a>
                   {/* LinkedIn */}
                   <a
@@ -333,7 +358,7 @@ export default function Header() {
                     aria-label="LinkedIn"
                     className="hover:text-red-500 transition-colors"
                   >
-                    <Linkedin size={28} />
+                    <Linkedin size={24} />
                   </a>
                 </div>
               </div>
@@ -341,26 +366,51 @@ export default function Header() {
               <div className="hidden md:flex flex-col items-end gap-2 md:gap-4 absolute bottom-10 right-10 text-[#111] pr-6 md:pr-12 lg:pr-20">
                 <a
                   href="mailto:info@webcraft.tr"
-                  className="text-[18px] text-red-500 underline underline-offset-4 mb-1 font-medium"
+                  className="text-[18px] text-red-500 underline underline-offset-4 mb-2 font-medium"
                 >
                   info@webcraft.tr
                 </a>
-                <a
-                  href="tel:+905079441715"
-                  className="text-[18px] text-red-500 underline underline-offset-4 mb-1 font-medium"
-                >
-                  +90 (507) 944 17 15
-                </a>
-                <a
-                  href="tel:+905318335986"
-                  className="text-[18px] text-red-500 underline underline-offset-4 mb-1 font-medium"
-                >
-                  +90 (531) 833 59 86
-                </a>
-                <div className="mt-2 text-[#6f6f6f] text-[16px] max-w-xs text-right">
-                  Babataşı Mah. 778 Sokak No: 32/A
-                  <br />
-                  Türkiye
+
+                {/* Turkey Office */}
+                <div className="text-right mb-3">
+                  <p className="text-[14px] text-[#6f6f6f] font-semibold mb-1">
+                    Türkiye Ofisi
+                  </p>
+                  <a
+                    href="tel:+905079441715"
+                    className="text-[16px] text-red-500 underline underline-offset-4 mb-1 font-medium block"
+                  >
+                    +90 (507) 944 17 15
+                  </a>
+                  <a
+                    href="tel:+905318335986"
+                    className="text-[16px] text-red-500 underline underline-offset-4 mb-2 font-medium block"
+                  >
+                    +90 (531) 833 59 86
+                  </a>
+                  <div className="text-[#6f6f6f] text-[14px] max-w-xs">
+                    Babataşı Mah. 778 Sokak No: 32/A
+                    <br />
+                    Fethiye - Muğla, Türkiye
+                  </div>
+                </div>
+
+                {/* UK Office */}
+                <div className="text-right">
+                  <p className="text-[14px] text-[#6f6f6f] font-semibold mb-1">
+                    UK Ofisi
+                  </p>
+                  <a
+                    href="tel:+447990965247"
+                    className="text-[16px] text-red-500 underline underline-offset-4 mb-2 font-medium block"
+                  >
+                    +44 7990 965 247
+                  </a>
+                  <div className="text-[#6f6f6f] text-[14px] max-w-xs">
+                    Station Rd, Cuffley
+                    <br />
+                    Potters Bar, EN6 4HY
+                  </div>
                 </div>
                 <div className="flex gap-6 mt-8 text-[1.7rem] opacity-70 hover:opacity-100 transition-opacity duration-500">
                   {/* Instagram */}

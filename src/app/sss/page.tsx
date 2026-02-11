@@ -135,7 +135,7 @@ export default function FAQPage() {
         name: "Web tasarım ajansınız nerede bulunuyor?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "WebCraft web tasarım ajansı Fethiye - Muğla'da bulunuyor. Ancak, Türkiye genelinde ve uluslararası müşterilere uzaktan web tasarım, SEO ve dijital pazarlama hizmetleri sunuyoruz. Online toplantılar ve dijital iletişim kanalları ile projelerimizi yürütüyoruz.",
+          text: "WebCraft'ın iki ofisi bulunmaktadır: Türkiye ofisimiz Fethiye - Muğla'da, UK ofisimiz ise Londra'dadır. Türkiye genelinde, Avrupa'da ve uluslararası müşterilere web tasarım, SEO ve dijital pazarlama hizmetleri sunuyoruz. Online toplantılar ve dijital iletişim kanalları ile projelerimizi yürütüyoruz.",
         },
       },
       {
@@ -175,7 +175,8 @@ export default function FAQPage() {
               Sıkça Sorulan Sorular
             </h1>
             <p className="text-lg text-gray-600">
-              Web tasarım, SEO hizmeti ve dijital pazarlama hakkında merak ettiğiniz soruların cevapları.
+              Web tasarım, SEO hizmeti ve dijital pazarlama hakkında merak
+              ettiğiniz soruların cevapları.
             </p>
           </div>
           <FAQSection />
@@ -187,4 +188,3 @@ export default function FAQPage() {
     </>
   );
 }
-

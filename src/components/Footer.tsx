@@ -212,8 +212,8 @@ const Footer = () => {
 
           {/* Column 5 - Contact Info */}
           <div className="footer-contact">
-            {/* Contact Info */}
-            <div className="space-y-4 mb-6">
+            {/* Email */}
+            <div className="space-y-3 mb-6">
               <a
                 href="mailto:info@webcraft.tr"
                 className="group block text-[#f84525] text-sm md:text-base font-medium hover:text-white transition-colors duration-300 relative"
@@ -221,33 +221,67 @@ const Footer = () => {
                 info@webcraft.tr
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
               </a>
-              <a
-                href="tel:+905079441715"
-                className="group block text-[#f84525] text-sm md:text-base font-medium hover:text-white transition-colors duration-300 relative"
-              >
-                +90 (507) 944 17 15
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
-              </a>
-              <a
-                href="tel:+905318335986"
-                className="group block text-[#f84525] text-sm md:text-base font-medium hover:text-white transition-colors duration-300 relative"
-              >
-                +90 (531) 833 59 86
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
-              </a>
             </div>
 
-            {/* Address */}
-            <div className="text-white/50 text-sm leading-relaxed">
-              <p>
-                Babataşı Mahallesi
-                <br />
-                778 Sokak No: 32/A
-                <br />
-                Fethiye - Muğla
-                <br />
-                Türkiye
-              </p>
+            {/* Turkey Office */}
+            <div className="mb-6">
+              <h4 className="text-white/80 text-xs uppercase tracking-wider font-semibold mb-3">
+                Türkiye Ofisi
+              </h4>
+              <div className="space-y-2 mb-3">
+                <a
+                  href="tel:+905079441715"
+                  className="group block text-[#f84525] text-sm font-medium hover:text-white transition-colors duration-300 relative"
+                >
+                  +90 (507) 944 17 15
+                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a>
+                <a
+                  href="tel:+905318335986"
+                  className="group block text-[#f84525] text-sm font-medium hover:text-white transition-colors duration-300 relative"
+                >
+                  +90 (531) 833 59 86
+                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a>
+              </div>
+              <div className="text-white/50 text-xs leading-relaxed">
+                <p>
+                  Babataşı Mahallesi
+                  <br />
+                  778 Sokak No: 32/A
+                  <br />
+                  Fethiye - Muğla
+                  <br />
+                  Türkiye
+                </p>
+              </div>
+            </div>
+
+            {/* UK Office */}
+            <div>
+              <h4 className="text-white/80 text-xs uppercase tracking-wider font-semibold mb-3">
+                UK Ofisi
+              </h4>
+              <div className="space-y-2 mb-3">
+                <a
+                  href="tel:+447990965247"
+                  className="group block text-[#f84525] text-sm font-medium hover:text-white transition-colors duration-300 relative"
+                >
+                  +44 7990 965 247
+                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a>
+              </div>
+              <div className="text-white/50 text-xs leading-relaxed">
+                <p>
+                  Station Rd, Cuffley
+                  <br />
+                  Potters Bar
+                  <br />
+                  Birleşik Krallık
+                  <br />
+                  EN6 4HY
+                </p>
+              </div>
             </div>
           </div>
         </div>

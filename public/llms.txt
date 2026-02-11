@@ -145,7 +145,7 @@ C: Kullanıcı dostu admin panel ile kolayca ürün ekleme, stok güncelleme, si
 ### Genel Sorular
 
 **S: WebCraft nerede hizmet veriyor?**
-C: Merkez ofisimiz Fethiye, Muğla'da. Türkiye genelinde ve yurt dışında online çalışıyoruz. Yerel işletmeler için özel yerel SEO hizmetleri sunuyoruz.
+C: İki ofisimiz bulunmaktadır: Türkiye ofisimiz Fethiye, Muğla'da ve UK ofisimiz Londra'dadır. Türkiye genelinde, Avrupa'da ve yurt dışında online olarak hizmet veriyoruz. Yerel işletmeler için özel yerel SEO hizmetleri sunuyoruz.
 
 **S: Proje başlamadan önce ne kadar ödeme yapılır?**
 C: Genellikle %50 ön ödeme ile başlıyoruz, teslimde kalan %50 ödeme alıyoruz. Büyük projeler için taksitli ödeme planları yapabiliriz.
@@ -166,9 +166,16 @@ C: Evet, aylık bakım paketleri sunuyoruz. Güvenlik güncellemeleri, içerik d
 
 - **Website**: https://www.webcraft.tr
 - **E-posta**: info@webcraft.tr
+
+### Türkiye Ofisi
 - **Telefon**: +90 507 944 17 15
 - **Telefon 2**: +90 531 833 59 86
 - **Adres**: Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye, Muğla 48300, Türkiye
+
+### UK Ofisi
+- **Telefon**: +44 7990 965 247
+- **Adres**: Station Rd, Cuffley, Potters Bar, Birleşik Krallık EN6 4HY
+
 - **Çalışma Saatleri**: Pazartesi-Cuma 09:00-18:00
 
 ## Önemli Sayfalar

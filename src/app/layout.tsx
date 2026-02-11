@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Montserrat } from "next/font/google";
 import Script from "next/script";
 import GTMTracker from "@/components/GTMTracker";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 import "./globals.css";
 
 // Optimized font loading with better performance
@@ -349,10 +350,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 name: "WebCraft",
                 url: "https://www.webcraft.tr",
               },
-              areaServed: {
-                "@type": "Country",
-                name: "Turkey",
-              },
+              areaServed: [
+                {
+                  "@type": "Country",
+                  name: "Turkey",
+                },
+                {
+                  "@type": "Country",
+                  name: "United Kingdom",
+                },
+              ],
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
                 name: "Web Tasarım Hizmetleri",
@@ -397,6 +404,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <GTMTracker />
 
         {children}
+
+        {/* WhatsApp Floating Button */}
+        <WhatsAppFloat />
 
         {/* Google Analytics 4 - Using Next.js Script component */}
         <Script
