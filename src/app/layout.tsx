@@ -427,6 +427,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 'custom_parameter_2': 'seo_service'
               }
             });
+            gtag('config', 'AW-17976612124');
           `}
         </Script>
       </body>
