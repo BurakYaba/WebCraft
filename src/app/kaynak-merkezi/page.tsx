@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { lazy, Suspense } from "react";
 import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 import Link from "next/link";
 import {
   CheckCircle,
@@ -48,24 +50,11 @@ export const metadata: Metadata = {
 };
 
 export default function KaynakMerkeziPage() {
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Ana Sayfa",
-        item: "https://www.webcraft.tr",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Kaynak Merkezi",
-        item: "https://www.webcraft.tr/kaynak-merkezi",
-      },
-    ],
-  };
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Kaynak Merkezi", url: "/kaynak-merkezi" },
+    ]);
 
   return (
     <>
@@ -75,6 +64,8 @@ export default function KaynakMerkeziPage() {
       />
       <main className="min-h-screen bg-white">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
+        <Breadcrumb items={breadcrumbItems} />
 
         {/* Hero Section */}
         <section className="pt-32 pb-20 bg-gradient-to-br from-gray-50 to-white">

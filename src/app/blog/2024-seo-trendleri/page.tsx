@@ -1,8 +1,10 @@
 import { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 const Footer = lazy(() => import("@/components/Footer"));
 const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
@@ -32,30 +34,12 @@ export const metadata: Metadata = {
 };
 
 export default function SeoTrendleri2024() {
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Ana Sayfa",
-        item: "https://www.webcraft.tr",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Blog",
-        item: "https://www.webcraft.tr/blog",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "2024 SEO Trendleri",
-        item: "https://www.webcraft.tr/blog/2024-seo-trendleri",
-      },
-    ],
-  };
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Blog", url: "/blog" },
+      { name: "2024 SEO Trendleri", url: "/blog/2024-seo-trendleri" },
+    ]);
   const blogPostingSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -91,6 +75,7 @@ export default function SeoTrendleri2024() {
       />
       <div className="min-h-screen bg-white">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
         <main>
           <section className="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-white">
             <div className="max-w-4xl mx-auto px-6 md:px-10">

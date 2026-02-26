@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
 
@@ -36,6 +37,15 @@ export const metadata: Metadata = {
 };
 
 export default function KurumsalWebSitesiHatalari() {
+  const breadcrumbItems = [
+    { name: "Ana Sayfa", url: "/" },
+    { name: "Blog", url: "/blog" },
+    {
+      name: "Kurumsal Web Sitesi Yaptırırken Yapılan 7 Kritik Hata",
+      url: "/blog/kurumsal-web-sitesi-yaptirirken-yapilan-7-kritik-hata",
+    },
+  ];
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -101,6 +111,7 @@ export default function KurumsalWebSitesiHatalari() {
       />
       <div className="min-h-screen bg-white">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
         <main>
           {/* Hero Section */}
           <section className="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-white">

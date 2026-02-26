@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Header from "../../components/Header";
 import ContactForm from "../../components/ContactForm";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 // Lazy load Footer
@@ -117,25 +119,12 @@ export default function ContactPage() {
     },
   };
 
-  // Breadcrumb schema for contact page
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Ana Sayfa",
-        item: "https://www.webcraft.tr",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "İletişim",
-        item: "https://www.webcraft.tr/iletisim",
-      },
-    ],
-  };
+  // Breadcrumb for contact page
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "İletişim", url: "/iletisim" },
+    ]);
 
   return (
     <>
@@ -149,10 +138,11 @@ export default function ContactPage() {
       />
       <main className="min-h-screen bg-white">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
 
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32">
-          <div className="container mx-auto px-4 lg:px-8">
+          <div className="container mx-auto px-16 md:px-20 lg:px-24">
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
               {/* Left Content */}
               <div className="lg:w-1/2 lg:pr-16 mb-12 lg:mb-0">
@@ -214,7 +204,7 @@ export default function ContactPage() {
 
         {/* Additional Info Section */}
         <section className="bg-gray-50 py-20 lg:py-32">
-          <div className="container mx-auto px-4 lg:px-8">
+          <div className="container mx-auto px-16 md:px-20 lg:px-24">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {/* Email */}
               <div className="text-center">

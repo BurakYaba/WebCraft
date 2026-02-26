@@ -1,6 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 import {
   MapPin,
   Phone,
@@ -140,25 +142,15 @@ export default function FethiyeWebTasarimPage() {
     })),
   };
 
-  // Breadcrumb Schema
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
+  // Breadcrumb
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
       {
-        "@type": "ListItem",
-        position: 1,
-        name: "Ana Sayfa",
-        item: "https://www.webcraft.tr",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
         name: "Fethiye Web Tasarım Hizmetleri",
-        item: "https://www.webcraft.tr/fethiye-web-tasarim-hizmetleri",
+        url: "/fethiye-web-tasarim-hizmetleri",
       },
-    ],
-  };
+    ]);
 
   return (
     <>
@@ -180,6 +172,7 @@ export default function FethiyeWebTasarimPage() {
       />
       <main className="min-h-screen bg-[#181716]">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
 
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32">

@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
 
@@ -32,6 +33,15 @@ export const metadata: Metadata = {
 };
 
 export default function MinimalistTasarim() {
+  const breadcrumbItems = [
+    { name: "Ana Sayfa", url: "/" },
+    { name: "Blog", url: "/blog" },
+    {
+      name: "Minimalist Tasarım Yaklaşımları ve Modern Web Tasarımı",
+      url: "/blog/minimalist-tasarim-yaklasimlari",
+    },
+  ];
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -91,6 +101,7 @@ export default function MinimalistTasarim() {
       />
       <div className="min-h-screen bg-white">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
         <main>
           <section className="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-white">
             <div className="max-w-4xl mx-auto px-6 md:px-10">

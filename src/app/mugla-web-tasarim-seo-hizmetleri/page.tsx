@@ -1,6 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 import {
   MapPin,
   Phone,
@@ -136,8 +138,24 @@ export default function MuglaWebTasarimPage() {
     ],
   };
 
+  // Breadcrumb
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      {
+        name: "Muğla Web Tasarım ve SEO Hizmetleri",
+        url: "/mugla-web-tasarim-seo-hizmetleri",
+      },
+    ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -146,6 +164,7 @@ export default function MuglaWebTasarimPage() {
       />
       <main className="min-h-screen bg-[#181716]">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
 
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32">

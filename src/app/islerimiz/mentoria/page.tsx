@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Mentoria - Özel Ders Platformu | WebCraft Projesi",
@@ -38,9 +40,37 @@ export const metadata: Metadata = {
 };
 
 export default function MentoriaProjectPage() {
+  // Breadcrumb for Mentoria project page
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "İşlerimiz", url: "/islerimiz" },
+      { name: "Mentoria", url: "/islerimiz/mentoria" },
+    ]);
+
+  // WebPage schema for the project
+  const projectSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Mentoria - Özel Ders Platformu",
+    description:
+      "Mentoria için geliştirdiğimiz akıllı eşleştirme sistemiyle öğrenci ve öğretmenleri buluşturan güvenilir özel ders platformu. Next.js, React, TypeScript ile modern web tasarım projesi.",
+    url: "https://www.webcraft.tr/islerimiz/mentoria",
+    inLanguage: "tr",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header />
+      <Breadcrumb items={breadcrumbItems} />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 px-6 md:px-10 overflow-hidden">

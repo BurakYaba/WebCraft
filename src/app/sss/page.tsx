@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Header from "@/components/Header";
 import FAQSection from "@/components/FAQSection";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 import { lazy, Suspense } from "react";
 
 const Footer = lazy(() => import("@/components/Footer"));
@@ -33,25 +35,12 @@ export const metadata: Metadata = {
 };
 
 export default function FAQPage() {
-  // Breadcrumb schema for FAQ page
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Ana Sayfa",
-        item: "https://www.webcraft.tr",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Sıkça Sorulan Sorular",
-        item: "https://www.webcraft.tr/sss",
-      },
-    ],
-  };
+  // Breadcrumb for FAQ page
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Sıkça Sorulan Sorular", url: "/sss" },
+    ]);
 
   // FAQPage schema
   const faqSchema = {
@@ -169,6 +158,8 @@ export default function FAQPage() {
       />
       <main className="min-h-screen bg-white">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
+        <Breadcrumb items={breadcrumbItems} />
         <div className="pt-32 pb-20">
           <div className="max-w-4xl mx-auto px-5 md:px-10 mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">

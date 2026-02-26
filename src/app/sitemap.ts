@@ -203,6 +203,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/tesekkurler`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
     // Resource Center & Knowledge Base
     {
       url: `${baseUrl}/kaynak-merkezi`,

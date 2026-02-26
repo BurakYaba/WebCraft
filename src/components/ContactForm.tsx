@@ -1,8 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import emailjs from "@emailjs/browser";
-import { getLocationData, formatLocationForEmail, type LocationData } from "@/utils/locationUtils";
+import {
+  getLocationData,
+  formatLocationForEmail,
+  type LocationData,
+} from "@/utils/locationUtils";
 
 interface FormData {
   name: string;
@@ -18,6 +23,7 @@ interface ContactFormProps {
 }
 
 export default function ContactForm({ className = "" }: ContactFormProps) {
+  const router = useRouter();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -36,7 +42,7 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
   const handleInputChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -51,21 +57,21 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
     setSubmitStatus("idle");
     setErrorMessage("");
 
+    try {
+      // Capture location data (IP-based only, no permission required)
+      let locationData: LocationData = {};
+      let locationString = "";
+
       try {
-        // Capture location data (IP-based only, no permission required)
-        let locationData: LocationData = {};
-        let locationString = "";
-        
-        try {
-          // Get location data (IP-based geolocation only)
-          locationData = await getLocationData();
-          locationString = formatLocationForEmail(locationData);
-          console.log("Location data captured:", locationData);
-        } catch (locationError) {
-          console.error("Error capturing location:", locationError);
-          // Continue with form submission even if location fails
-          locationString = "Konum bilgisi alınamadı.";
-        }
+        // Get location data (IP-based geolocation only)
+        locationData = await getLocationData();
+        locationString = formatLocationForEmail(locationData);
+        console.log("Location data captured:", locationData);
+      } catch (locationError) {
+        console.error("Error capturing location:", locationError);
+        // Continue with form submission even if location fails
+        locationString = "Konum bilgisi alınamadı.";
+      }
 
       // EmailJS configuration
       const serviceId =
@@ -112,22 +118,26 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
       // Send email
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
 
-      setSubmitStatus("success");
+      // Push GTM event before redirect
+      if (typeof window !== "undefined") {
+        const dataLayer = (window as Window & { dataLayer?: unknown[] })
+          .dataLayer;
+        if (dataLayer) {
+          dataLayer.push({
+            event: "form_submission",
+            form_name: "contact_form",
+            form_location: window.location.pathname,
+          });
+        }
+      }
 
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        service: "",
-        message: "",
-      });
+      // Redirect to thank you page
+      router.push("/tesekkurler");
     } catch (error) {
       console.error("EmailJS Error:", error);
       setSubmitStatus("error");
       setErrorMessage(
-        "Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin."
+        "Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin.",
       );
     } finally {
       setIsSubmitting(false);
@@ -139,33 +149,6 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
       onSubmit={handleSubmit}
       className={`bg-gray-50 p-8 lg:p-12 rounded-lg ${className}`}
     >
-      {/* Success Message */}
-      {submitStatus === "success" && (
-        <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-          <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <svg
-                className="h-5 w-5 text-green-400"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="ml-3">
-              <p className="text-sm font-medium">
-                Mesajınız başarıyla gönderildi! En kısa sürede size dönüş
-                yapacağız.
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Error Message */}
       {submitStatus === "error" && (
         <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">

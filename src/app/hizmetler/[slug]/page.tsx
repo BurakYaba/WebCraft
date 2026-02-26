@@ -3,8 +3,9 @@ import { notFound } from "next/navigation";
 import { lazy, Suspense } from "react";
 import Header from "@/components/Header";
 import ServiceHero from "@/components/ServiceHero";
+import Breadcrumb from "@/components/Breadcrumb";
 import { getService, getAllServices } from "@/data/services";
-import { generateBreadcrumbSchema } from "@/utils/breadcrumbSchema";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 import ServiceFAQSection from "@/components/ServiceFAQSection";
 import RelatedServices from "@/components/RelatedServices";
 import { CheckCircle, ArrowRight } from "lucide-react";
@@ -166,12 +167,13 @@ export default async function ServicePage({ params }: ServicePageProps) {
     })),
   };
 
-  // Breadcrumb Schema
-  const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Ana Sayfa", url: "/" },
-    { name: "Hizmetler", url: "/hizmetler" },
-    { name: service.title, url: `/hizmetler/${service.slug}` },
-  ]);
+  // Breadcrumb
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Hizmetler", url: "/hizmetler" },
+      { name: service.title, url: `/hizmetler/${service.slug}` },
+    ]);
 
   return (
     <>
@@ -189,6 +191,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
       <main className="min-h-screen bg-[#181716]">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
 
         {/* Hero Section */}
         <ServiceHero

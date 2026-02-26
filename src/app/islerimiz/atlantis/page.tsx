@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Atlantis Kreş - Modern Anaokulu Web Sitesi | WebCraft Projesi",
@@ -38,9 +40,37 @@ export const metadata: Metadata = {
 };
 
 export default function AtlantisProjectPage() {
+  // Breadcrumb for Atlantis project page
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "İşlerimiz", url: "/islerimiz" },
+      { name: "Atlantis Kreş", url: "/islerimiz/atlantis" },
+    ]);
+
+  // WebPage schema for the project
+  const projectSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Atlantis Kreş - Modern Anaokulu Web Sitesi",
+    description:
+      "Atlantis Kreş için geliştirdiğimiz Montessori, Reggio Emilia ve High Scope eğitim modelleriyle modern kreş web sitesi. Veli portalı, online kayıt ve galeri sistemi.",
+    url: "https://www.webcraft.tr/islerimiz/atlantis",
+    inLanguage: "tr",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header />
+      <Breadcrumb items={breadcrumbItems} />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 px-6 md:px-10 overflow-hidden">

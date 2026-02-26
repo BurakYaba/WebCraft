@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { lazy, Suspense } from "react";
 import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 import Link from "next/link";
 import { Check, X } from "lucide-react";
 
@@ -40,30 +42,12 @@ export const metadata: Metadata = {
 };
 
 export default function WebCraftVsDIYPage() {
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Ana Sayfa",
-        item: "https://www.webcraft.tr",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Karşılaştırma",
-        item: "https://www.webcraft.tr/karsilastirma",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "WebCraft vs DIY",
-        item: "https://www.webcraft.tr/karsilastirma/webcraft-vs-diy",
-      },
-    ],
-  };
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Karşılaştırma", url: "/karsilastirma" },
+      { name: "WebCraft vs DIY", url: "/karsilastirma/webcraft-vs-diy" },
+    ]);
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -100,6 +84,7 @@ export default function WebCraftVsDIYPage() {
       />
       <main className="min-h-screen bg-white">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
 
         {/* Hero Section */}
         <section className="pt-32 pb-20 bg-gradient-to-br from-red-50 via-purple-50 to-white">

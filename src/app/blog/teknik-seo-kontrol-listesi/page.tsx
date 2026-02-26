@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
 
@@ -36,6 +37,15 @@ export const metadata: Metadata = {
 };
 
 export default function TeknikSEOKontrolListesi() {
+  const breadcrumbItems = [
+    { name: "Ana Sayfa", url: "/" },
+    { name: "Blog", url: "/blog" },
+    {
+      name: "Teknik SEO Kontrol Listesi: 2026 Kapsamlı Rehber",
+      url: "/blog/teknik-seo-kontrol-listesi",
+    },
+  ];
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -101,6 +111,7 @@ export default function TeknikSEOKontrolListesi() {
 
       <div className="min-h-screen bg-white">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
 
         <main>
           <article className="pt-32 pb-16">

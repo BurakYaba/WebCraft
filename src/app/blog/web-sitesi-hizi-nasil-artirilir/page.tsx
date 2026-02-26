@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
 
@@ -15,7 +16,8 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Web Sitesi Hızı Nasıl Artırılır? 2025 Performans Optimizasyon Rehberi",
+  title:
+    "Web Sitesi Hızı Nasıl Artırılır? 2025 Performans Optimizasyon Rehberi",
   description:
     "Web sitesi hızını artırma rehberi. Core Web Vitals, görsel optimizasyonu, kod minify, CDN kullanımı ve sunucu performansı ile sayfa hızını optimize edin. 2025 stratejileri.",
   keywords:
@@ -36,6 +38,15 @@ export const metadata: Metadata = {
 };
 
 export default function WebSitesiHiziNasilArtirilir() {
+  const breadcrumbItems = [
+    { name: "Ana Sayfa", url: "/" },
+    { name: "Blog", url: "/blog" },
+    {
+      name: "Web Sitesi Hızı Nasıl Artırılır? 2025 Performans Optimizasyon Rehberi",
+      url: "/blog/web-sitesi-hizi-nasil-artirilir",
+    },
+  ];
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -64,7 +75,8 @@ export default function WebSitesiHiziNasilArtirilir() {
   const blogPostingSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Web Sitesi Hızı Nasıl Artırılır? 2025 Performans Optimizasyon Rehberi",
+    headline:
+      "Web Sitesi Hızı Nasıl Artırılır? 2025 Performans Optimizasyon Rehberi",
     description:
       "Web sitesi hızını artırma rehberi. Core Web Vitals, görsel optimizasyonu, kod minify, CDN kullanımı ve sunucu performansı ile sayfa hızını optimize edin.",
     image: "https://www.webcraft.tr/bento/web-tasarım.jpg",
@@ -101,6 +113,7 @@ export default function WebSitesiHiziNasilArtirilir() {
 
       <div className="min-h-screen bg-white">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
 
         <main>
           <article className="pt-32 pb-16">
@@ -122,7 +135,8 @@ export default function WebSitesiHiziNasilArtirilir() {
                     </div>
 
                     <h1 className="text-4xl md:text-5xl font-bold text-black mb-4 leading-tight">
-                      Web Sitesi Hızı Nasıl Artırılır? 2025 Performans Optimizasyon Rehberi
+                      Web Sitesi Hızı Nasıl Artırılır? 2025 Performans
+                      Optimizasyon Rehberi
                     </h1>
 
                     <div className="flex items-center gap-4 text-black/60 text-sm">

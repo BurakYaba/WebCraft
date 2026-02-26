@@ -1,6 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 import {
   Award,
   Trophy,
@@ -48,6 +50,14 @@ export const metadata: Metadata = {
 };
 
 export default function EnIyiWebTasarimAjansiPage() {
+  // Generate breadcrumb
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Hizmetler", url: "/hizmetler" },
+      { name: "En İyi Web Tasarım Ajansı", url: "/en-iyi-web-tasarim-ajansi" },
+    ]);
+
   // Best Web Design Agency Schema
   const bestAgencySchema = {
     "@context": "https://schema.org",
@@ -101,8 +111,13 @@ export default function EnIyiWebTasarimAjansiPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(bestAgencySchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <main className="min-h-screen bg-[#181716]">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
 
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32">

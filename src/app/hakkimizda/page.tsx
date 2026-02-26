@@ -1,6 +1,8 @@
 import { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 import AboutHero from "@/components/AboutHero";
 
 // Lazy load below-the-fold components
@@ -196,25 +198,12 @@ export default function AboutPage() {
     },
   };
 
-  // Breadcrumb schema for about page
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Ana Sayfa",
-        item: "https://www.webcraft.tr",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Hakkımızda",
-        item: "https://www.webcraft.tr/hakkimizda",
-      },
-    ],
-  };
+  // Breadcrumb for about page
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Hakkımızda", url: "/hakkimizda" },
+    ]);
 
   return (
     <>
@@ -232,6 +221,7 @@ export default function AboutPage() {
       />
       <main className="min-h-screen bg-white">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
         <AboutHero />
 
         <Suspense fallback={<SectionSkeleton height="h-96" />}>

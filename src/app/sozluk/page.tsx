@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { lazy, Suspense } from "react";
 import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 import Link from "next/link";
 import { Book } from "lucide-react";
 
@@ -519,24 +521,11 @@ const terms: Record<string, Term[]> = {
 };
 
 export default function SozlukPage() {
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Ana Sayfa",
-        item: "https://www.webcraft.tr",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Sözlük",
-        item: "https://www.webcraft.tr/sozluk",
-      },
-    ],
-  };
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Sözlük", url: "/sozluk" },
+    ]);
 
   return (
     <>
@@ -546,6 +535,8 @@ export default function SozlukPage() {
       />
       <main className="min-h-screen bg-white">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
+        <Breadcrumb items={breadcrumbItems} />
 
         {/* Hero Section */}
         <section className="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-white">

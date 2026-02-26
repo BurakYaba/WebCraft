@@ -2,10 +2,13 @@ import { lazy, Suspense } from "react";
 import { Metadata } from "next";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
+import { generateBreadcrumbSchema } from "@/utils/breadcrumbSchema";
 
 // Lazy load below-the-fold components
 const ServicesSection = lazy(() => import("../components/ServicesSection"));
-const AnimatedOrbitSection = lazy(() => import("../components/AnimatedOrbitSection"));
+const AnimatedOrbitSection = lazy(
+  () => import("../components/AnimatedOrbitSection"),
+);
 const AboutUs = lazy(() => import("../components/AboutUs"));
 const BlogSection = lazy(() => import("../components/BlogSection"));
 const FAQSection = lazy(() => import("../components/FAQSection"));
@@ -79,6 +82,11 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  // Breadcrumb schema for homepage
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Ana Sayfa", url: "/" },
+  ]);
+
   // AggregateRating schema for homepage
   const aggregateRatingSchema = {
     "@context": "https://schema.org",
@@ -95,6 +103,12 @@ export default function HomePage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

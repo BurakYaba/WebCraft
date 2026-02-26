@@ -2,7 +2,8 @@ import { Metadata } from "next";
 import { lazy, Suspense } from "react";
 import Header from "@/components/Header";
 import ServiceHero from "@/components/ServiceHero";
-import { generateBreadcrumbSchema } from "@/utils/breadcrumbSchema";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 import ServiceFAQSection from "@/components/ServiceFAQSection";
 import RelatedServices from "@/components/RelatedServices";
 import {
@@ -142,15 +143,16 @@ export default function PerformansOdakliWebTasarimPage() {
     })),
   };
 
-  // Breadcrumb Schema
-  const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Ana Sayfa", url: "/" },
-    { name: "Hizmetler", url: "/hizmetler" },
-    {
-      name: "Performans Odaklı Web Tasarım",
-      url: "/hizmetler/performans-odakli-web-tasarim",
-    },
-  ]);
+  // Breadcrumb
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Hizmetler", url: "/hizmetler" },
+      {
+        name: "Performans Odaklı Web Tasarım",
+        url: "/hizmetler/performans-odakli-web-tasarim",
+      },
+    ]);
 
   return (
     <>
@@ -167,6 +169,8 @@ export default function PerformansOdakliWebTasarimPage() {
 
       <main className="min-h-screen bg-[#181716]">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
+        <Breadcrumb items={breadcrumbItems} />
 
         {/* Hero Section */}
         <ServiceHero

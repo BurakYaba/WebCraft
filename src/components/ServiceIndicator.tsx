@@ -5,10 +5,37 @@ import Link from "next/link";
 
 const services = [
   { id: "web-tasarim", name: "WEB TASARIM", link: "/hizmetler/web-tasarim" },
-  { id: "dijital-pazarlama", name: "DİJİTAL PAZARLAMA", link: "/hizmetler/dijital-pazarlama" },
+  {
+    id: "dijital-pazarlama",
+    name: "DİJİTAL PAZARLAMA",
+    link: "/hizmetler/dijital-pazarlama",
+  },
   { id: "e-ticaret", name: "E-TİCARET", link: "/e-ticaret-web-tasarim" },
-  { id: "mobil-uygulama", name: "MOBİL UYGULAMA", link: "/hizmetler/mobil-uygulama" },
-  { id: "yazilim-gelistirme", name: "YAZILIM GELİŞTİRME", link: "/hizmetler/yazilim-gelistirme" },
+  {
+    id: "performans-odakli",
+    name: "PERFORMANS ODAKLI WEB",
+    link: "/hizmetler/performans-odakli-web-tasarim",
+  },
+  {
+    id: "kobi-web",
+    name: "KOBİ WEB TASARIM",
+    link: "/hizmetler/kobi-web-tasarim",
+  },
+  {
+    id: "seo-uyumlu",
+    name: "SEO UYUMLU WEB",
+    link: "/hizmetler/seo-uyumlu-web-sitesi",
+  },
+  {
+    id: "mobil-uygulama",
+    name: "MOBİL UYGULAMA",
+    link: "/hizmetler/mobil-uygulama",
+  },
+  {
+    id: "yazilim-gelistirme",
+    name: "YAZILIM GELİŞTİRME",
+    link: "/hizmetler/yazilim-gelistirme",
+  },
 ];
 
 export default function ServiceIndicator() {

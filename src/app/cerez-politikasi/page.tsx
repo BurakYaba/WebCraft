@@ -2,6 +2,8 @@ import React from "react";
 import { Metadata } from "next";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Çerez Politikası | WebCraft",
@@ -47,13 +49,24 @@ const cookiePolicySchema = {
 };
 
 export default function CookiePolicyPage() {
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Çerez Politikası", url: "/cerez-politikasi" },
+    ]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(cookiePolicySchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header />
+      <Breadcrumb items={breadcrumbItems} />
 
       <main className="min-h-screen bg-gradient-to-br from-[#181716] via-[#1a1918] to-[#1c1b1a]">
         {/* Page Header */}

@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Header from "../../components/Header";
 import ServicesHero from "../../components/ServicesHero";
+import Breadcrumb from "@/components/Breadcrumb";
+import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 // Lazy load below-the-fold components
 const ServiceBlocks = lazy(() => import("../../components/ServiceBlocks"));
@@ -40,25 +42,12 @@ export const metadata: Metadata = {
 };
 
 export default function Services() {
-  // Breadcrumb schema for services page
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Ana Sayfa",
-        item: "https://www.webcraft.tr",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Hizmetler",
-        item: "https://www.webcraft.tr/hizmetler",
-      },
-    ],
-  };
+  // Breadcrumb for services page
+  const { schema: breadcrumbSchema, items: breadcrumbItems } =
+    generateBreadcrumb([
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Hizmetler", url: "/hizmetler" },
+    ]);
 
   // Service Schema for Detailed Service Descriptions
   const servicesSchema = {
@@ -175,6 +164,7 @@ export default function Services() {
       />
       <div className="min-h-screen bg-[#181716] relative overflow-hidden">
         <Header />
+        <Breadcrumb items={breadcrumbItems} />
         <main>
           <ServicesHero />
 
@@ -212,19 +202,28 @@ export default function Services() {
                 stratejileri ile markanızın online görünürlüğünü artırıyor ve
                 organik trafiğinizi yükseltiyoruz.
               </p>
+            </div>
+          </section>
 
-              <div className="mt-12 pt-8 border-t border-white/10">
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
+          <Suspense fallback={<SectionSkeleton height="h-screen" />}>
+            <ServiceBlocks />
+          </Suspense>
+
+          {/* Special Services, Local Services, and Related Blog Posts */}
+          <section className="py-16 md:py-24 bg-[#1a1918]">
+            <div className="max-w-7xl mx-auto px-6 md:px-10">
+              <div className="mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
                   Özel Hizmet Alanlarımız
-                </h3>
-                <div className="grid md:grid-cols-3 gap-6 mb-8">
+                </h2>
+                <div className="grid md:grid-cols-3 gap-6">
                   <Link
                     href="/hizmetler/performans-odakli-web-tasarim"
                     className="block bg-gray-800/50 p-6 rounded-lg hover:bg-gray-800/70 transition-colors"
                   >
-                    <h4 className="text-xl font-bold text-white mb-3">
+                    <h3 className="text-xl font-bold text-white mb-3">
                       ⚡ Performans Odaklı Web
-                    </h4>
+                    </h3>
                     <p className="text-white/70 text-sm">
                       Core Web Vitals optimizasyonu, hızlı yükleme ve Next.js
                       teknolojisi
@@ -234,9 +233,9 @@ export default function Services() {
                     href="/hizmetler/kobi-web-tasarim"
                     className="block bg-gray-800/50 p-6 rounded-lg hover:bg-gray-800/70 transition-colors"
                   >
-                    <h4 className="text-xl font-bold text-white mb-3">
+                    <h3 className="text-xl font-bold text-white mb-3">
                       🏢 KOBİ Web Tasarım
-                    </h4>
+                    </h3>
                     <p className="text-white/70 text-sm">
                       Küçük işletmelere özel, uygun fiyatlı web tasarım
                       paketleri
@@ -246,27 +245,29 @@ export default function Services() {
                     href="/hizmetler/seo-uyumlu-web-sitesi"
                     className="block bg-gray-800/50 p-6 rounded-lg hover:bg-gray-800/70 transition-colors"
                   >
-                    <h4 className="text-xl font-bold text-white mb-3">
+                    <h3 className="text-xl font-bold text-white mb-3">
                       🔍 SEO Uyumlu Web Sitesi
-                    </h4>
+                    </h3>
                     <p className="text-white/70 text-sm">
                       Google&apos;da üst sıralarda yer alan, teknik SEO odaklı
                       web siteleri
                     </p>
                   </Link>
                 </div>
+              </div>
 
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 mt-8">
+              <div className="mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
                   Yerel Hizmet Alanlarımız
-                </h3>
-                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                </h2>
+                <div className="grid md:grid-cols-2 gap-6">
                   <Link
                     href="/fethiye-web-tasarim-hizmetleri"
                     className="block bg-gray-800/50 p-6 rounded-lg hover:bg-gray-800/70 transition-colors"
                   >
-                    <h4 className="text-xl font-bold text-white mb-3">
+                    <h3 className="text-xl font-bold text-white mb-3">
                       📍 Fethiye Web Tasarım
-                    </h4>
+                    </h3>
                     <p className="text-white/70 text-sm">
                       Fethiye&apos;deki işletmelere özel, turizm sektörüne
                       yönelik web tasarım ve dijital pazarlama hizmetleri
@@ -276,9 +277,9 @@ export default function Services() {
                     href="/mugla-web-tasarim-seo-hizmetleri"
                     className="block bg-gray-800/50 p-6 rounded-lg hover:bg-gray-800/70 transition-colors"
                   >
-                    <h4 className="text-xl font-bold text-white mb-3">
+                    <h3 className="text-xl font-bold text-white mb-3">
                       🌊 Muğla Web Tasarım
-                    </h4>
+                    </h3>
                     <p className="text-white/70 text-sm">
                       Muğla&apos;nın tüm ilçelerinde (Fethiye, Bodrum, Marmaris)
                       web tasarım ve SEO hizmetleri
@@ -287,11 +288,11 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="mt-8 pt-8 border-t border-white/10">
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                   İlgili Blog Yazılarımız
-                </h3>
-                <ul className="space-y-2 text-lg md:text-xl">
+                </h2>
+                <ul className="space-y-3 text-lg md:text-xl">
                   <li>
                     <Link
                       href="/blog/seo-uyumlu-web-tasarimi"
@@ -329,10 +330,6 @@ export default function Services() {
               </div>
             </div>
           </section>
-
-          <Suspense fallback={<SectionSkeleton height="h-screen" />}>
-            <ServiceBlocks />
-          </Suspense>
         </main>
 
         <Suspense fallback={<SectionSkeleton height="h-32" />}>

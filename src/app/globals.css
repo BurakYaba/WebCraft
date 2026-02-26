@@ -8,16 +8,19 @@
   --foreground: #171717;
 
   /* Primary font stack - Montserrat with system fallbacks */
-  --font-primary: var(--font-montserrat), -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-primary:
+    var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* Display font stack - Montserrat for headings and bold text */
-  --font-display: var(--font-montserrat), -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display:
+    var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* Body font stack - Montserrat for readable text */
-  --font-body: var(--font-montserrat), -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body:
+    var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* Component font stack - Montserrat variants for UI elements */
   --font-component: var(--font-montserrat), sans-serif;
@@ -478,4 +481,19 @@ h6 {
   .prose ul {
     margin: 1.25rem 0;
   }
+}
+
+/* Thank you page animations */
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
 }
