@@ -224,6 +224,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // Comparison Pages
     {
+      url: `${baseUrl}/karsilastirma`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/karsilastirma/webcraft-vs-diy`,
       lastModified: new Date(),
       changeFrequency: "monthly",
