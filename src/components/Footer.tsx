@@ -46,7 +46,7 @@ const Footer = () => {
     { name: "Kaynak Merkezi", href: "/kaynak-merkezi" },
     { name: "Sözlük", href: "/sozluk" },
     { name: "Karşılaştırmalar", href: "/karsilastirma/webcraft-vs-diy" },
-    { name: "E-ticaret Web Tasarım", href: "/e-ticaret-web-tasarim" },
+    { name: "E-ticaret Web Tasarım", href: "/hizmetler/e-ticaret" },
     { name: "Kurumsal Web Sitesi", href: "/kurumsal-web-sitesi" },
     { name: "En İyi Web Tasarım Ajansı", href: "/en-iyi-web-tasarim-ajansi" },
   ];

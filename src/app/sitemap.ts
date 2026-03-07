@@ -243,7 +243,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // Industry-specific landing pages
     {
-      url: `${baseUrl}/e-ticaret-web-tasarim`,
+      url: `${baseUrl}/hizmetler/e-ticaret`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

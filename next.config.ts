@@ -47,6 +47,11 @@ const nextConfig: NextConfig = {
         destination: "/hizmetler",
         permanent: true,
       },
+      {
+        source: "/e-ticaret-web-tasarim",
+        destination: "/hizmetler/e-ticaret",
+        permanent: true,
+      },
     ];
   },
 

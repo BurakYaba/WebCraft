@@ -42,7 +42,7 @@ const services: ServiceBlockWithLink[] = [
       "Online satış platformları geliştiriyoruz. Güvenli ödeme sistemleri, stok yönetimi ve mobil uyumlu tasarım ile e-ticaret sitenizi başarıya taşıyoruz. Kullanıcı dostu arayüz ve hızlı performans garantisi sunuyoruz.",
     image: "/bento/e-ticaret.jpg",
     bgText: "TICARET",
-    link: "/e-ticaret-web-tasarim",
+    link: "/hizmetler/e-ticaret",
   },
   {
     id: "performans-odakli",

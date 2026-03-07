@@ -136,7 +136,7 @@ export default function BentoGrid() {
       features: ["Güvenli Ödeme", "Stok Yönetimi", "Mobil Uyumlu"],
       direction: "right" as const,
       backgroundImage: "/bento/e-ticaret.jpg",
-      link: "/e-ticaret-web-tasarim",
+      link: "/hizmetler/e-ticaret",
     },
     {
       title: "Mobil Uygulama",

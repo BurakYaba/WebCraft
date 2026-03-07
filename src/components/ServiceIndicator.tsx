@@ -10,7 +10,7 @@ const services = [
     name: "DİJİTAL PAZARLAMA",
     link: "/hizmetler/dijital-pazarlama",
   },
-  { id: "e-ticaret", name: "E-TİCARET", link: "/e-ticaret-web-tasarim" },
+  { id: "e-ticaret", name: "E-TİCARET", link: "/hizmetler/e-ticaret" },
   {
     id: "performans-odakli",
     name: "PERFORMANS ODAKLI WEB",

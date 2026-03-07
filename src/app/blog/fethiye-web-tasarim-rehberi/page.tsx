@@ -301,7 +301,7 @@ export default function FethiyeWebTasarimRehberi() {
       
       <p>Otel ve konaklama dışında, Fethiye'de tur operatörleri, tekne turları, dalış merkezleri gibi aktivite sağlayıcıları da e-ticaret özellikli web sitelerine ihtiyaç duyar.</p>
       
-      <p><a href="/e-ticaret-web-tasarim" class="text-[#f84525] hover:underline font-semibold">E-ticaret web tasarım hizmetlerimiz</a> ile online bilet satışı, tur rezervasyonu ve ödeme sistemleri entegrasyonu sağlıyoruz.</p>
+      <p><a href="/hizmetler/e-ticaret" class="text-[#f84525] hover:underline font-semibold">E-ticaret web tasarım hizmetlerimiz</a> ile online bilet satışı, tur rezervasyonu ve ödeme sistemleri entegrasyonu sağlıyoruz.</p>
       
       <h3>Tur ve Aktivite E-Ticaret Özellikleri</h3>
       

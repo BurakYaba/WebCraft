@@ -143,7 +143,7 @@ export default function OnlineMagazaKurulumu() {
                   ve başarılı bir e-ticaret web sitesi oluşturma stratejilerini
                   detaylı olarak ele alacağız.{" "}
                   <Link
-                    href="/e-ticaret-web-tasarim"
+                    href="/hizmetler/e-ticaret"
                     className="text-red-600 hover:text-red-700 font-semibold underline"
                   >
                     E-ticaret web tasarım
@@ -218,7 +218,7 @@ export default function OnlineMagazaKurulumu() {
                   Profesyonel online mağaza kurulumu ile e-ticaret başarısına
                   ulaşın.{" "}
                   <Link
-                    href="/e-ticaret-web-tasarim"
+                    href="/hizmetler/e-ticaret"
                     className="text-red-600 hover:text-red-700 font-semibold underline"
                   >
                     E-ticaret web tasarım

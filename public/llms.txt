@@ -196,7 +196,7 @@ C: Evet, aylık bakım paketleri sunuyoruz. Güvenlik güncellemeleri, içerik d
 - SEO Uyumlu Web Sitesi: https://www.webcraft.tr/hizmetler/seo-uyumlu-web-sitesi
 - Fethiye Web Tasarım: https://www.webcraft.tr/fethiye-web-tasarim-hizmetleri
 - Muğla Web Tasarım: https://www.webcraft.tr/mugla-web-tasarim-seo-hizmetleri
-- E-Ticaret Web Tasarımı: https://www.webcraft.tr/e-ticaret-web-tasarim
+- E-Ticaret Web Tasarımı: https://www.webcraft.tr/hizmetler/e-ticaret
 - Kurumsal Web Sitesi: https://www.webcraft.tr/kurumsal-web-sitesi
 
 ## Blog Öne Çıkanlar
