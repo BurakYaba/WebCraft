@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "Skoll Salon için modern tasarım, online randevu sistemi ve yerel SEO ile Fethiye'nin öne çıkan güzellik salonu web sitesi. Profesyonel kuaför web tasarım hizmeti.",
   keywords:
     "güzellik salonu web sitesi, kuaför web tasarımı, online randevu sistemi, spa web sitesi, profesyonel web tasarım, yerel SEO, Fethiye web tasarım, beauty salon website",
+  alternates: {
+    canonical: "/islerimiz/skoll-beauty",
+  },
   openGraph: {
     title: "Skoll Salon Web Sitesi | Güzellik Salonu Dijital Çözümleri",
     description:
