@@ -247,6 +247,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${baseUrl}/hizmetler/yapay-zeka-chatbot`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/hizmetler/yapay-zeka-otomasyon`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     // Industry-specific landing pages
     {
       url: `${baseUrl}/hizmetler/e-ticaret`,

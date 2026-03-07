@@ -45,33 +45,6 @@ const services: ServiceBlockWithLink[] = [
     link: "/hizmetler/e-ticaret",
   },
   {
-    id: "performans-odakli",
-    title: "Performans Odaklı Web",
-    description:
-      "Hızlı yüklenen, Core Web Vitals optimizasyonlu web siteleri. Next.js teknolojisi ile saniyeler içinde açılan sayfalar. Google PageSpeed 90+ skor garantisi ile maksimum performans.",
-    image: "/bento/web-tasarım.jpg",
-    bgText: "HIZLI",
-    link: "/hizmetler/performans-odakli-web-tasarim",
-  },
-  {
-    id: "kobi-web",
-    title: "KOBİ Web Tasarım",
-    description:
-      "Küçük ve orta büyüklükteki işletmelere özel web tasarım paketleri. Profesyonel web sitesi, hızlı teslimat ve kolay yönetim paneli ile işletmenizin dijital varlığını güçlendirin.",
-    image: "/bento/web-tasarım.jpg",
-    bgText: "KOBİ",
-    link: "/hizmetler/kobi-web-tasarim",
-  },
-  {
-    id: "seo-uyumlu",
-    title: "SEO Uyumlu Web Sitesi",
-    description:
-      "Google'da üst sıralarda yer alan, teknik SEO standartlarına uygun web siteleri. Anahtar kelime araştırması, içerik optimizasyonu ve organik trafik artışı garantisi.",
-    image: "/bento/dijital-pazarlama.jpg",
-    bgText: "SEO",
-    link: "/hizmetler/seo-uyumlu-web-sitesi",
-  },
-  {
     id: "mobil-uygulama",
     title: "Mobil Uygulama",
     description:
@@ -79,6 +52,24 @@ const services: ServiceBlockWithLink[] = [
     image: "/bento/mobil-uygulama.jpg",
     bgText: "MOBIL",
     link: "/hizmetler/mobil-uygulama",
+  },
+  {
+    id: "yapay-zeka-chatbot",
+    title: "Yapay Zeka Chatbot",
+    description:
+      "İşletmeniz için yapay zeka destekli chatbot çözümleri geliştiriyoruz. 7/24 otomatik müşteri desteği, satış asistanlığı ve lead toplama ile iş süreçlerinizi otomatikleştirin.",
+    image: "/chatbot.webp",
+    bgText: "AI",
+    link: "/hizmetler/yapay-zeka-chatbot",
+  },
+  {
+    id: "yapay-zeka-otomasyon",
+    title: "AI Otomasyon",
+    description:
+      "Yapay zeka destekli iş süreçleri otomasyonu ile tekrarlayan görevleri ortadan kaldırın. Akıllı belge işleme, veri analizi ve iş akışı optimizasyonu ile verimliliğinizi %60'a kadar artırın.",
+    image: "/automation.webp",
+    bgText: "AUTO",
+    link: "/hizmetler/yapay-zeka-otomasyon",
   },
   {
     id: "yazilim-gelistirme",

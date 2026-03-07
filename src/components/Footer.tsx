@@ -45,8 +45,10 @@ const Footer = () => {
   const column2Links = [
     { name: "Kaynak Merkezi", href: "/kaynak-merkezi" },
     { name: "Sözlük", href: "/sozluk" },
-    { name: "Karşılaştırmalar", href: "/karsilastirma/webcraft-vs-diy" },
+    { name: "Karşılaştırmalar", href: "/karsilastirma" },
     { name: "E-ticaret Web Tasarım", href: "/hizmetler/e-ticaret" },
+    { name: "AI Chatbot", href: "/hizmetler/yapay-zeka-chatbot" },
+    { name: "AI Otomasyon", href: "/hizmetler/yapay-zeka-otomasyon" },
     { name: "Kurumsal Web Sitesi", href: "/kurumsal-web-sitesi" },
     { name: "En İyi Web Tasarım Ajansı", href: "/en-iyi-web-tasarim-ajansi" },
   ];

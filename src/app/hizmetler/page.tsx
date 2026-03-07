@@ -149,6 +149,42 @@ export default function Services() {
         serviceType: "Mobile App Development",
         keywords: "mobil uygulama, iOS, Android, app geliştirme",
       },
+      {
+        "@type": "Service",
+        position: 7,
+        name: "Yapay Zeka Chatbot Geliştirme",
+        description:
+          "İşletmeler için yapay zeka destekli chatbot ve müşteri hizmetleri otomasyonu",
+        provider: {
+          "@type": "Organization",
+          name: "WebCraft",
+        },
+        serviceOutput: "AI destekli chatbot ve otomasyon sistemi",
+        serviceAudience:
+          "Müşteri hizmetlerini otomatikleştirmek isteyen işletmeler",
+        areaServed: "Turkey",
+        serviceType: "AI Chatbot Development",
+        keywords:
+          "yapay zeka chatbot, AI chatbot, müşteri hizmetleri otomasyonu, WhatsApp chatbot",
+      },
+      {
+        "@type": "Service",
+        position: 8,
+        name: "Yapay Zeka İş Otomasyonu",
+        description:
+          "AI destekli iş süreçleri otomasyonu, akıllı belge işleme ve veri analizi",
+        provider: {
+          "@type": "Organization",
+          name: "WebCraft",
+        },
+        serviceOutput:
+          "Otomatikleştirilmiş iş süreçleri ve AI otomasyon sistemleri",
+        serviceAudience: "İş süreçlerini otomatikleştirmek isteyen işletmeler",
+        areaServed: "Turkey",
+        serviceType: "AI Business Automation",
+        keywords:
+          "yapay zeka otomasyon, AI otomasyon, iş süreçleri otomasyonu, akıllı belge işleme, RPA",
+      },
     ],
   };
 

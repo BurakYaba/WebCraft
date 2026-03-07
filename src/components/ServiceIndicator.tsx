@@ -12,24 +12,19 @@ const services = [
   },
   { id: "e-ticaret", name: "E-TİCARET", link: "/hizmetler/e-ticaret" },
   {
-    id: "performans-odakli",
-    name: "PERFORMANS ODAKLI WEB",
-    link: "/hizmetler/performans-odakli-web-tasarim",
-  },
-  {
-    id: "kobi-web",
-    name: "KOBİ WEB TASARIM",
-    link: "/hizmetler/kobi-web-tasarim",
-  },
-  {
-    id: "seo-uyumlu",
-    name: "SEO UYUMLU WEB",
-    link: "/hizmetler/seo-uyumlu-web-sitesi",
-  },
-  {
     id: "mobil-uygulama",
     name: "MOBİL UYGULAMA",
     link: "/hizmetler/mobil-uygulama",
+  },
+  {
+    id: "yapay-zeka-chatbot",
+    name: "AI CHATBOT",
+    link: "/hizmetler/yapay-zeka-chatbot",
+  },
+  {
+    id: "yapay-zeka-otomasyon",
+    name: "AI OTOMASYON",
+    link: "/hizmetler/yapay-zeka-otomasyon",
   },
   {
     id: "yazilim-gelistirme",

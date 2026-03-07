@@ -844,6 +844,320 @@ E-ticaret web tasarım hizmetlerimiz şunları içerir:
 
     relatedServices: ["web-tasarim", "dijital-pazarlama", "yazilim-gelistirme"],
   },
+
+  {
+    slug: "yapay-zeka-chatbot",
+    title: "Yapay Zeka Chatbot Geliştirme",
+    shortTitle: "AI Chatbot",
+    description:
+      "İşletmeniz için yapay zeka destekli chatbot çözümleri geliştiriyoruz. 7/24 otomatik müşteri desteği, satış asistanlığı ve lead toplama ile iş süreçlerinizi otomatikleştirin.",
+    excerpt:
+      "Yapay zeka chatbot geliştirme hizmeti ile müşteri hizmetlerinizi otomatikleştirin. GPT tabanlı akıllı chatbot, WhatsApp entegrasyonu ve çok dilli destek. İş verimliliğinizi %40 artırın.",
+    heroImage: "/chatbot.webp",
+    watermark: "AI",
+
+    metaTitle: "Yapay Zeka Chatbot Geliştirme | AI Chatbot Hizmeti | WebCraft",
+    metaDescription:
+      "İşletmeniz için yapay zeka destekli chatbot geliştirme. GPT entegrasyonu, WhatsApp chatbot, 7/24 otomatik müşteri desteği ve satış asistanlığı. Müşteri memnuniyetini artırın, maliyetleri düşürün.",
+    keywords:
+      "yapay zeka chatbot, AI chatbot geliştirme, chatbot hizmeti, WhatsApp chatbot, GPT chatbot, müşteri hizmetleri otomasyonu, chatbot fiyatları, akıllı chatbot, yapay zeka asistan, işletme chatbot",
+
+    whatSection: {
+      title: "Yapay Zeka Chatbot Nedir?",
+      content: `Yapay zeka chatbot, doğal dil işleme (NLP) ve makine öğrenimi teknolojileri kullanarak müşterilerinizle otomatik olarak iletişim kuran akıllı yazılım sistemidir. Geleneksel kural tabanlı botların aksine, AI chatbotlar konuşmanın bağlamını anlar, karmaşık soruları yanıtlar ve zamanla öğrenerek kendini geliştirir.
+
+WebCraft olarak, GPT ve benzeri büyük dil modelleri (LLM) üzerine özelleştirilmiş chatbot çözümleri geliştiriyoruz. Her chatbot, işletmenizin bilgi tabanı, ürün kataloğu ve iş süreçlerine göre eğitilir. Böylece müşterilerinize 7/24 doğru, tutarlı ve markanıza uygun yanıtlar sunar.
+
+AI chatbot çözümlerimiz şunları kapsar:
+- GPT tabanlı doğal dil anlama ve yanıt üretme
+- İşletmenize özel bilgi tabanı entegrasyonu
+- Web sitesi, WhatsApp, Instagram ve Telegram entegrasyonu
+- Çok dilli destek (Türkçe, İngilizce ve daha fazlası)
+- Satış hunisi otomasyonu ve lead toplama
+- Canlı destek ekibine akıllı yönlendirme
+- Analitik dashboard ve konuşma raporlama`,
+    },
+
+    whySection: {
+      title: "Neden Yapay Zeka Chatbot?",
+      content: `Müşterileriniz 7/24 hızlı yanıt bekliyor. Geleneksel müşteri hizmetleri yöntemleri hem maliyetli hem de ölçeklenemez. Yapay zeka chatbot, müşteri deneyimini iyileştirirken operasyonel maliyetlerinizi önemli ölçüde düşürür. Araştırmalara göre, AI chatbot kullanan işletmeler müşteri hizmetleri maliyetlerini %30-50 oranında azaltabilir.`,
+      benefits: [
+        "7/24 kesintisiz otomatik müşteri desteği",
+        "Müşteri hizmetleri maliyetlerinde %30-50 tasarruf",
+        "Anlık yanıt süreleri ile müşteri memnuniyeti artışı",
+        "Eş zamanlı sınırsız müşteri görüşmesi kapasitesi",
+        "Satış süreçlerini otomatikleştirme ve lead toplama",
+        "Çok kanallı iletişim (web, WhatsApp, sosyal medya)",
+        "Veri odaklı müşteri içgörüleri ve analitik",
+        "İnsan hatalı yanıtları ortadan kaldırma",
+      ],
+    },
+
+    features: [
+      {
+        title: "GPT Tabanlı Akıllı Yanıtlar",
+        description:
+          "OpenAI GPT ve benzeri LLM teknolojileri ile doğal, bağlama uygun ve insan benzeri yanıtlar üreten chatbot. İşletmenizin bilgi tabanına göre özelleştirilmiş.",
+      },
+      {
+        title: "Çok Kanallı Entegrasyon",
+        description:
+          "Web siteniz, WhatsApp Business, Instagram DM, Telegram ve Facebook Messenger üzerinden tek bir chatbot ile müşterilerinize ulaşın.",
+      },
+      {
+        title: "Özel Bilgi Tabanı Eğitimi",
+        description:
+          "Chatbotunuz, ürün kataloğunuz, SSS'leriniz, fiyat listeniz ve şirket politikalarınızla eğitilir. Her zaman doğru ve güncel bilgi sunar.",
+      },
+      {
+        title: "Satış Asistanlığı",
+        description:
+          "Müşterilerinizi satış hunisinde yönlendiren, ürün öneren, fiyat teklifi oluşturan ve randevu planlayan akıllı satış asistanı.",
+      },
+      {
+        title: "Canlı Desteğe Akıllı Yönlendirme",
+        description:
+          "Chatbotun çözemediği karmaşık soruları otomatik olarak insan temsilcisine yönlendiren akıllı eskalasyon sistemi. Tüm konuşma geçmişi aktarılır.",
+      },
+      {
+        title: "Analitik ve Raporlama",
+        description:
+          "Konuşma metrikleri, müşteri memnuniyeti skoru, sıkça sorulan sorular ve dönüşüm oranları ile chatbot performansını gerçek zamanlı takip edin.",
+      },
+    ],
+
+    process: [
+      {
+        number: 1,
+        title: "İhtiyaç Analizi ve Strateji",
+        description:
+          "İşletmenizin müşteri hizmetleri süreçlerini, sıkça sorulan soruları ve hedeflerinizi analiz ederiz. Chatbot stratejisi ve kapsamını birlikte belirleriz.",
+      },
+      {
+        number: 2,
+        title: "Bilgi Tabanı ve Eğitim",
+        description:
+          "Ürün kataloğunuz, SSS'leriniz ve şirket bilgilerinizle chatbotun bilgi tabanını oluştururuz. AI modelini işletmenize özel olarak eğitiriz.",
+      },
+      {
+        number: 3,
+        title: "Geliştirme ve Entegrasyon",
+        description:
+          "Chatbotu geliştirip web sitenize, WhatsApp'a ve diğer kanallara entegre ederiz. CRM, e-ticaret ve diğer sistemlerle bağlantıları kurarız.",
+      },
+      {
+        number: 4,
+        title: "Test, Yayın ve Optimizasyon",
+        description:
+          "Kapsamlı testler sonrası chatbotu yayına alırız. Konuşma analitiğini takip eder, yanıt kalitesini sürekli iyileştiririz. Aylık performans raporları sunarız.",
+      },
+    ],
+
+    faqs: [
+      {
+        question: "Yapay zeka chatbot ne kadar sürede hazır olur?",
+        answer:
+          "Projenin kapsamına bağlı olarak, temel bir AI chatbot 2-3 haftada, kapsamlı çok kanallı chatbot çözümleri 4-8 haftada tamamlanır. Bilgi tabanı eğitimi ve entegrasyonlar süreyi etkileyen ana faktörlerdir.",
+      },
+      {
+        question: "Chatbot hangi platformlarda çalışır?",
+        answer:
+          "Geliştirdiğimiz chatbotlar web sitenizde, WhatsApp Business, Instagram DM, Facebook Messenger, Telegram ve özel mobil uygulamalarda çalışabilir. Tek bir AI beyin, tüm kanallarda tutarlı deneyim sunar.",
+      },
+      {
+        question: "Chatbot Türkçe anlıyor mu?",
+        answer:
+          "Evet, chatbotlarımız Türkçe doğal dil işleme konusunda özelleştirilmiştir. Türkçe dilbilgisi, günlük konuşma kalıpları ve sektörel terminolojiyi anlayarak doğal yanıtlar üretir. Ayrıca İngilizce ve diğer dillerde de destek sunabilir.",
+      },
+      {
+        question: "Mevcut sistemlerimizle entegre olabilir mi?",
+        answer:
+          "Evet, chatbotlarımız CRM sistemleri (Salesforce, HubSpot), e-ticaret platformları (Shopify, WooCommerce), ödeme sistemleri, randevu sistemleri ve özel API'ler ile entegre edilebilir. Mevcut iş akışlarınıza sorunsuz bağlanır.",
+      },
+      {
+        question: "Yapay zeka chatbot ne kadar maliyetlidir?",
+        answer:
+          "Chatbot maliyeti projenin kapsamına, entegrasyon sayısına ve özel gereksinimlere göre belirlenir. Temel chatbot paketleri 15.000₺'den başlayıp, kurumsal çözümler 50.000₺ ve üzerine çıkabilir. Aylık bakım ve API kullanım ücretleri ayrıca değerlendirilir. Detaylı fiyat teklifi için ücretsiz danışmanlık alabilirsiniz.",
+      },
+      {
+        question: "Chatbot ne kadar doğru yanıt verir?",
+        answer:
+          "İşletmenizin bilgi tabanıyla eğitilen chatbotlarımız, eğitildikleri konularda %90-95 doğruluk oranına sahiptir. Yanlış bilgi vermemesi için 'hallusiasyon koruma' mekanizmaları ve 'bilmediğini kabul etme' mantığı kurulur. Sürekli öğrenme ile doğruluk oranı zamanla artar.",
+      },
+    ],
+
+    experienceYears: 10,
+    projectCount: "50+",
+    expertise: [
+      "GPT ve LLM Entegrasyonu",
+      "Doğal Dil İşleme (NLP)",
+      "WhatsApp Business API",
+      "Çok Kanallı Chatbot Mimarisi",
+      "Konuşma Tasarımı (Conversation Design)",
+      "AI Model Eğitimi ve Fine-tuning",
+    ],
+
+    relatedServices: ["yazilim-gelistirme", "web-tasarim", "e-ticaret"],
+  },
+
+  {
+    slug: "yapay-zeka-otomasyon",
+    title: "Yapay Zeka ile İş Otomasyonu",
+    shortTitle: "AI Otomasyon",
+    description:
+      "Yapay zeka destekli iş süreçleri otomasyonu ile tekrarlayan görevleri ortadan kaldırın. Akıllı belge işleme, e-posta otomasyonu, veri analizi ve iş akışı optimizasyonu ile verimliliğinizi %60'a kadar artırın.",
+    excerpt:
+      "AI otomasyon hizmeti ile iş süreçlerinizi akıllı hale getirin. Belge işleme, veri analizi, e-posta otomasyonu ve iş akışı optimizasyonu. Tekrarlayan görevleri otomatikleştirin, maliyetleri düşürün.",
+    heroImage: "/automation.webp",
+    watermark: "AUTO",
+
+    metaTitle: "Yapay Zeka İş Otomasyonu | AI Otomasyon Hizmeti | WebCraft",
+    metaDescription:
+      "Yapay zeka ile iş süreçleri otomasyonu. Akıllı belge işleme, e-posta otomasyonu, veri analizi ve iş akışı optimizasyonu. Tekrarlayan görevleri ortadan kaldırın, verimliliği %60 artırın.",
+    keywords:
+      "yapay zeka otomasyon, AI otomasyon, iş süreçleri otomasyonu, akıllı belge işleme, RPA, iş akışı otomasyonu, yapay zeka entegrasyonu, otomasyon çözümleri, AI iş otomasyonu, süreç otomasyonu",
+
+    whatSection: {
+      title: "Yapay Zeka ile İş Otomasyonu Nedir?",
+      content: `Yapay zeka iş otomasyonu, makine öğrenimi, doğal dil işleme ve bilgisayarlı görü gibi AI teknolojilerini kullanarak iş süreçlerini otomatikleştirme ve optimize etme sürecidir. Geleneksel otomasyon araçlarından farklı olarak, AI otomasyon sistemleri karar verebilir, öğrenebilir ve karmaşık, yapılandırılmamış verileri işleyebilir.
+
+WebCraft olarak, işletmenizin tekrarlayan ve zaman alıcı görevlerini yapay zeka ile otomatikleştiriyoruz. Fatura işlemeden müşteri e-postalarının sınıflandırılmasına, veri girişinden rapor oluşturmaya kadar birçok iş sürecini akıllı hale getiriyoruz. Böylece ekibiniz stratejik ve yaratıcı işlere odaklanabilir.
+
+AI otomasyon çözümlerimiz şunları kapsar:
+- Akıllı belge işleme (fatura, sözleşme, form tanıma)
+- E-posta sınıflandırma ve otomatik yanıtlama
+- Veri çıkarma, dönüştürme ve analiz
+- İş akışı otomasyonu ve süreç optimizasyonu
+- CRM ve ERP sistemleri ile entegrasyon
+- Raporlama ve dashboard otomasyonu
+- Tahmine dayalı analitik ve karar destek sistemleri`,
+    },
+
+    whySection: {
+      title: "Neden Yapay Zeka Otomasyonu?",
+      content: `İşletmeler her gün saatlerini tekrarlayan, düşük değerli görevlere harcıyor. Manuel veri girişi, belge işleme, e-posta yönetimi ve rapor oluşturma gibi görevler hem zaman kaybına hem de insan hatalarına yol açıyor. AI otomasyon, bu süreçleri %60-80 oranında hızlandırabilir ve hata oranını %90'a kadar azaltabilir.`,
+      benefits: [
+        "Tekrarlayan görevlerde %60-80 zaman tasarrufu",
+        "İnsan hatalarını %90'a kadar azaltma",
+        "Operasyonel maliyetlerde önemli düşüş",
+        "Ekibinizin stratejik işlere odaklanması",
+        "7/24 kesintisiz süreç işleme kapasitesi",
+        "Ölçeklenebilir ve tutarlı iş çıktıları",
+        "Veriye dayalı karar alma ve öngörüler",
+        "Hızlı ROI ve kısa geri ödeme süresi",
+      ],
+    },
+
+    features: [
+      {
+        title: "Akıllı Belge İşleme",
+        description:
+          "Fatura, sözleşme, form ve diğer belgeleri AI ile otomatik tanıma, veri çıkarma ve sisteme kaydetme. OCR ve NLP teknolojileri ile yapılandırılmamış verileri anlamlı bilgiye dönüştürme.",
+      },
+      {
+        title: "E-posta ve İletişim Otomasyonu",
+        description:
+          "Gelen e-postaları otomatik sınıflandırma, önceliklendirme ve yanıtlama. Müşteri taleplerini kategorize etme ve ilgili departmana yönlendirme.",
+      },
+      {
+        title: "İş Akışı Optimizasyonu",
+        description:
+          "Mevcut iş süreçlerinizi analiz ederek darboğazları tespit etme ve AI destekli otomatik iş akışları oluşturma. Onay süreçleri, görev atama ve takibi otomatikleştirme.",
+      },
+      {
+        title: "Veri Analizi ve Raporlama",
+        description:
+          "Büyük veri setlerini AI ile analiz etme, trendleri tespit etme ve otomatik rapor oluşturma. Gerçek zamanlı dashboard'lar ve tahmine dayalı analitik.",
+      },
+      {
+        title: "CRM ve ERP Entegrasyonu",
+        description:
+          "Mevcut CRM (Salesforce, HubSpot) ve ERP sistemlerinizle sorunsuz entegrasyon. Veri senkronizasyonu, otomatik kayıt oluşturma ve süreç tetikleme.",
+      },
+      {
+        title: "Özel AI Model Geliştirme",
+        description:
+          "İşletmenize özel makine öğrenimi modelleri geliştirme. Tahmine dayalı bakım, talep tahmini, fiyatlandırma optimizasyonu ve anomali tespiti.",
+      },
+    ],
+
+    process: [
+      {
+        number: 1,
+        title: "Süreç Analizi ve Keşif",
+        description:
+          "Mevcut iş süreçlerinizi detaylı olarak analiz eder, otomasyon fırsatlarını belirler ve ROI potansiyelini hesaplarız. Öncelikli otomasyon alanlarını birlikte belirleriz.",
+      },
+      {
+        number: 2,
+        title: "Çözüm Tasarımı ve PoC",
+        description:
+          "Belirlenen süreçler için AI otomasyon çözümünü tasarlar ve küçük ölçekli bir kavram kanıtı (PoC) ile fizibilitesini doğrularız. Sonuçları birlikte değerlendiririz.",
+      },
+      {
+        number: 3,
+        title: "Geliştirme ve Entegrasyon",
+        description:
+          "AI modellerini geliştirip eğitir, otomasyon iş akışlarını kurar ve mevcut sistemlerinize entegre ederiz. Kapsamlı testler ile güvenilirliği doğrularız.",
+      },
+      {
+        number: 4,
+        title: "Yayın, İzleme ve Sürekli İyileştirme",
+        description:
+          "Otomasyon çözümünü yayına alır, performansını gerçek zamanlı izleriz. Düzenli optimizasyonlar ve yeni otomasyon fırsatları ile sürekli iyileştirme sağlarız.",
+      },
+    ],
+
+    faqs: [
+      {
+        question: "AI otomasyon projesi ne kadar sürede tamamlanır?",
+        answer:
+          "Projenin kapsamına bağlı olarak, tek bir süreç otomasyonu 2-4 haftada, kapsamlı çok süreçli otomasyon projeleri 6-12 haftada tamamlanır. Kavram kanıtı (PoC) aşaması genellikle 1-2 hafta sürer ve hızlı sonuç almanızı sağlar.",
+      },
+      {
+        question: "Hangi iş süreçleri otomatikleştirilebilir?",
+        answer:
+          "Belge işleme (fatura, sözleşme), e-posta sınıflandırma ve yanıtlama, veri girişi ve doğrulama, rapor oluşturma, müşteri segmentasyonu, envanter yönetimi, onay süreçleri ve çok daha fazlası otomatikleştirilebilir. Genel kural olarak, tekrarlayan ve kural tabanlı her süreç AI ile otomatikleştirilebilir.",
+      },
+      {
+        question: "AI otomasyon mevcut sistemlerimizle uyumlu mu?",
+        answer:
+          "Evet, otomasyon çözümlerimiz API'ler aracılığıyla mevcut CRM (Salesforce, HubSpot), ERP, muhasebe yazılımları, e-posta sistemleri ve diğer iş uygulamalarınızla sorunsuz entegre olur. Özel entegrasyon ihtiyaçları için de çözüm üretiriz.",
+      },
+      {
+        question: "AI otomasyon ne kadar güvenilir?",
+        answer:
+          "AI otomasyon sistemlerimiz %95+ doğruluk oranıyla çalışır. Kritik süreçlerde insan onayı adımları eklenebilir (human-in-the-loop). Ayrıca anomali tespiti ve hata yönetimi mekanizmalarıyla beklenmedik durumlar otomatik olarak ele alınır.",
+      },
+      {
+        question: "AI otomasyon maliyeti ne kadar?",
+        answer:
+          "Otomasyon maliyeti, otomatikleştirilecek süreç sayısı, karmaşıklık düzeyi ve entegrasyon gereksinimlerine göre belirlenir. Temel tek süreç otomasyonları 20.000₺'den başlayıp, kapsamlı kurumsal çözümler 75.000₺ ve üzerine çıkabilir. Genellikle yatırım 3-6 ay içinde geri döner. Ücretsiz danışmanlık ile ROI analizi yapabiliriz.",
+      },
+      {
+        question: "Çalışanlarımızın işini alacak mı?",
+        answer:
+          "AI otomasyon, çalışanların işini almak için değil, değerli zamanlarını serbest bırakmak için tasarlanır. Tekrarlayan ve düşük değerli görevler otomatikleştirilirken, çalışanlarınız müşteri ilişkileri, strateji geliştirme ve yaratıcı işler gibi yüksek değerli görevlere odaklanabilir. Araştırmalar, AI otomasyonun iş memnuniyetini artırdığını göstermektedir.",
+      },
+    ],
+
+    experienceYears: 10,
+    projectCount: "30+",
+    expertise: [
+      "İş Süreçleri Otomasyonu (BPA)",
+      "Akıllı Belge İşleme (IDP)",
+      "Makine Öğrenimi ve AI Modelleme",
+      "RPA ve AI Entegrasyonu",
+      "İş Akışı Tasarımı ve Optimizasyonu",
+      "API Entegrasyonu ve Sistem Bağlantıları",
+    ],
+
+    relatedServices: [
+      "yapay-zeka-chatbot",
+      "yazilim-gelistirme",
+      "web-tasarim",
+    ],
+  },
 ];
 
 export function getService(slug: string): Service | undefined {
