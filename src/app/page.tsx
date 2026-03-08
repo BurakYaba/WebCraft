@@ -76,9 +76,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code",
-  },
 };
 
 export default function HomePage() {
@@ -95,7 +92,7 @@ export default function HomePage() {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
-      reviewCount: "50",
+      reviewCount: 50,
       bestRating: "5",
       worstRating: "1",
     },

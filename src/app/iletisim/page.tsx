@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     "Web tasarım, SEO hizmeti ve dijital pazarlama için ücretsiz teklif alın. Web tasarım fiyatları ve sosyal medya yönetimi hizmetleri için bizimle iletişime geçin.",
   keywords:
     "web tasarım teklif, SEO hizmeti fiyat, dijital pazarlama ajansı iletişim, web tasarım fiyatları, sosyal medya yönetimi",
+  authors: [{ name: "WebCraft" }],
+  creator: "WebCraft",
+  publisher: "WebCraft",
   metadataBase: new URL("https://www.webcraft.tr"),
   alternates: {
     canonical: "/iletisim",

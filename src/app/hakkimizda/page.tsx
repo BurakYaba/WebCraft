@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     "2015 yılından bu yana web tasarım, SEO hizmeti ve dijital pazarlama alanlarında uzmanlaşmış WebCraft ajansı. Profesyonel web tasarım ajansı olarak hizmet veriyoruz.",
   keywords:
     "web tasarım ajansı, SEO hizmeti, dijital pazarlama ajansı, web tasarım firması, sosyal medya yönetimi",
+  authors: [{ name: "WebCraft" }],
+  creator: "WebCraft",
+  publisher: "WebCraft",
   metadataBase: new URL("https://www.webcraft.tr"),
   alternates: {
     canonical: "/hakkimizda",
@@ -50,7 +53,7 @@ export default function AboutPage() {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
-      reviewCount: "50",
+      reviewCount: 50,
       bestRating: "5",
       worstRating: "1",
     },

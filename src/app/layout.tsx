@@ -125,12 +125,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
         {/* End Google Tag Manager */}
 
-        {/* Google Site Verification */}
-        <meta
-          name="google-site-verification"
-          content="GqJRNNMTgz5SQ_k9i0bUdDCxTmcYKf85eNHov3fwiog"
-        />
-
         {/* Favicon - Multiple formats for maximum compatibility */}
         {/* Standard favicon.ico - Google checks this first */}
         <link rel="icon" type="image/png" href="/icon-192.png" />
@@ -322,15 +316,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   url: "https://www.webcraft.tr/webcraftLogo.png",
                 },
               },
-              potentialAction: {
-                "@type": "SearchAction",
-                target: {
-                  "@type": "EntryPoint",
-                  urlTemplate:
-                    "https://www.webcraft.tr/search?q={search_term_string}",
-                },
-                "query-input": "required name=search_term_string",
-              },
             }),
           }}
         />
@@ -415,8 +400,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
-             Layer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-TYXDJVMSP3', {
               page_title: document.title,

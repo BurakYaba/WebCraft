@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     "Web tasarım, SEO hizmeti ve dijital pazarlama konularında uzman görüşleri. Pratik ipuçları ve rehberler.",
   keywords:
     "web tasarım blog, SEO rehberi, dijital pazarlama blog, web tasarım fiyatları, web tasarım ajansı",
+  authors: [{ name: "WebCraft" }],
+  creator: "WebCraft",
+  publisher: "WebCraft",
   alternates: {
     canonical: "/blog",
   },

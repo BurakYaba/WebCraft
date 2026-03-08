@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Teşekkürler | WebCraft - Mesajınız İletildi",
   description:
     "Başvurunuz için teşekkür ederiz. En kısa sürede size dönüş yapacağız.",
-  robots: "noindex, nofollow", // Prevent indexing of thank you page
+  robots: { index: false, follow: false }, // Prevent indexing of thank you page
 };
 
 export default function ThankYouPage() {
