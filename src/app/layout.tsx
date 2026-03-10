@@ -393,6 +393,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {/* WhatsApp Floating Button */}
         <WhatsAppFloat />
 
+        {/* Privacy-friendly analytics by Plausible */}
+        <Script
+          src="https://plausible.io/js/pa-q191e8vCHRe438HLugJ4V.js"
+          strategy="afterInteractive"
+        />
+        <Script id="plausible-init" strategy="afterInteractive">
+          {`
+            window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+            plausible.init()
+          `}
+        </Script>
+
         {/* Google Analytics 4 - Using Next.js Script component */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-TYXDJVMSP3"
