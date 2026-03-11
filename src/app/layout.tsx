@@ -125,12 +125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
         {/* End Google Tag Manager */}
 
-        {/* Favicon - Multiple formats for maximum compatibility */}
-        {/* Standard favicon.ico - Google checks this first */}
-        <link rel="icon" type="image/png" href="/icon-192.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/icon-192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/icon-192.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/icon-192.png" />
+        {/* Favicon */}
         <link
           rel="icon"
           type="image/png"
@@ -144,67 +139,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           href="/icon-512.png"
         />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/icon-192.png" />
 
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
 
         {/* Preconnect to external domains for better performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" />
-
-        {/* Preload critical resources */}
-        <link
-          rel="preload"
-          href="/webcraftLogo.png"
-          as="image"
-          type="image/png"
-        />
-
-        {/* Critical CSS for LCP optimization */}
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-              .hero-section { 
-                background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
-                min-height: 100vh;
-                display: flex;
-                align-items: center;
-              }
-              .hero-title {
-                font-size: clamp(2.5rem, 5vw, 4rem);
-              font-weight: 700;
-              line-height: 1.1;
-                color: #1f2937;
-            }
-              .hero-subtitle {
-                font-size: clamp(1.125rem, 2.5vw, 1.25rem);
-                color: #6b7280;
-              line-height: 1.6;
-              }
-              .cta-button {
-                background: #dc2626;
-                color: white;
-                padding: 0.75rem 2rem;
-                border-radius: 9999px;
-                font-weight: 700;
-                transition: all 0.3s ease;
-                text-decoration: none;
-                display: inline-block;
-              }
-              .cta-button:hover {
-                background: #b91c1c;
-                transform: translateY(-2px);
-            }
-          `,
-          }}
-        />
 
         {/* Structured Data - LocalBusiness (Organization + Location) */}
         <script
@@ -405,28 +345,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           `}
         </Script>
 
-        {/* Google Analytics 4 - Using Next.js Script component */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-TYXDJVMSP3"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-TYXDJVMSP3', {
-              page_title: document.title,
-              page_location: window.location.href,
-              send_page_view: true,
-              custom_map: {
-                'custom_parameter_1': 'web_design_agency',
-                'custom_parameter_2': 'seo_service'
-              }
-            });
-            gtag('config', 'AW-17976612124');
-          `}
-        </Script>
+        {/* GA4 (G-TYXDJVMSP3) and Google Ads (AW-17976612124) are fired via GTM — no standalone gtag.js needed */}
       </body>
     </html>
   );

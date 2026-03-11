@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
 
 const faqs = [
   {
@@ -30,7 +29,8 @@ const faqs = [
       "Evet, web tasarım projesi teslim sonrası teknik destek sağlıyoruz. Bakım ve güncelleme paketlerimiz ile web sitenizin güvenliğini, performansını ve içeriklerini sürekli güncel tutuyoruz. 7/24 destek hizmetimiz ile her zaman yanınızdayız.",
   },
   {
-    question: "E-ticaret web sitesi için hangi ödeme sistemlerini entegre edebilirsiniz?",
+    question:
+      "E-ticaret web sitesi için hangi ödeme sistemlerini entegre edebilirsiniz?",
     answer:
       "E-ticaret web siteleriniz için tüm popüler ödeme sistemlerini entegre edebiliriz. İyzico, PayTR, PayU, Stripe gibi ödeme sistemleri ile çalışıyoruz. Ayrıca, banka kartları ve havale/EFT ödeme seçenekleri de mevcuttur.",
   },
@@ -55,7 +55,8 @@ const faqs = [
       "WebCraft web tasarım ajansı Fethiye - Muğla'da bulunuyor. Ancak, Türkiye genelinde ve uluslararası müşterilere uzaktan web tasarım, SEO ve dijital pazarlama hizmetleri sunuyoruz. Online toplantılar ve dijital iletişim kanalları ile projelerimizi yürütüyoruz.",
   },
   {
-    question: "Web sitesi tasarımında copyright ve telif hakları nasıl işliyor?",
+    question:
+      "Web sitesi tasarımında copyright ve telif hakları nasıl işliyor?",
     answer:
       "Tamamlanan web tasarım projesi, proje sahibinin mülkiyetindedir. Tasarım hakları, içerik hakları ve kod hakları müşteriye aittir. Ancak, kullandığımız üçüncü parti yazılımlar ve görseller için gerekli lisansları temin ediyoruz.",
   },
@@ -68,6 +69,26 @@ const faqs = [
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  // Single IntersectionObserver for the entire section
+  useEffect(() => {
+    const section = sectionRef.current?.closest("section");
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          section.classList.add("faq-visible");
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "-50px", threshold: 0.1 },
+    );
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
 
   // FAQPage schema for SEO
   const faqSchema = {
@@ -92,12 +113,9 @@ export default function FAQSection() {
       <section className="relative py-32 md:py-40 bg-white overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
-          <motion.div
-            className="text-center mb-16 md:mb-24"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+          <div
+            ref={sectionRef}
+            className="text-center mb-16 md:mb-24 faq-animate"
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
               Sıkça Sorulan
@@ -108,18 +126,15 @@ export default function FAQSection() {
               Web tasarım, SEO hizmeti ve dijital pazarlama hakkında merak
               ettiğiniz soruların cevapları
             </p>
-          </motion.div>
+          </div>
 
           {/* FAQ List */}
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <motion.div
+              <div
                 key={index}
-                className="border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg faq-item"
+                style={{ transitionDelay: `${index * 80}ms` }}
               >
                 <button
                   onClick={() =>
@@ -155,21 +170,17 @@ export default function FAQSection() {
                   }`}
                 >
                   <div className="px-6 py-5 bg-gray-50 border-t border-gray-200">
-                    <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <p className="text-gray-700 leading-relaxed">
+                      {faq.answer}
+                    </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
           {/* CTA */}
-          <motion.div
-            className="mt-16 text-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          >
+          <div className="mt-16 text-center faq-animate">
             <p className="text-lg text-gray-600 mb-6">
               Aradığınız cevabı bulamadınız mı?
             </p>
@@ -179,10 +190,9 @@ export default function FAQSection() {
             >
               Bize Sorun
             </a>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>
   );
 }
-

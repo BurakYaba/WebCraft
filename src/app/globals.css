@@ -91,27 +91,16 @@ h6 {
   user-select: none;
   line-height: 1;
   z-index: 0;
-  /* Performance optimizations */
   contain: layout style paint;
-  will-change: auto;
-  transform: translateZ(0); /* Force GPU acceleration */
 }
 
 /* Optimized hero text styles for better LCP */
 .hero-text {
   contain: layout style paint;
-  will-change: auto;
-  /* Reduce paint complexity */
-  backface-visibility: hidden;
-  transform: translateZ(0);
 }
 
 .hero-critical {
   contain: layout style paint;
-  will-change: auto;
-  /* Reduce paint complexity */
-  backface-visibility: hidden;
-  transform: translateZ(0);
 }
 
 /* Custom hover underline effect */
@@ -496,4 +485,34 @@ h6 {
 
 .animate-bounce-slow {
   animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* Content-visibility optimization for below-fold sections */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+
+/* FAQ Section CSS-only animations (replaces framer-motion) */
+.faq-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.faq-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.3s ease;
+}
+
+.faq-visible .faq-animate,
+.faq-visible .faq-item {
+  opacity: 1;
+  transform: translateY(0);
 }

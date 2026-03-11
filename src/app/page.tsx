@@ -1,18 +1,19 @@
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
 import { Metadata } from "next";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import { generateBreadcrumbSchema } from "@/utils/breadcrumbSchema";
 
-// Lazy load below-the-fold components
-const ServicesSection = lazy(() => import("../components/ServicesSection"));
-const AnimatedOrbitSection = lazy(
+// Lazy load below-the-fold components using next/dynamic for optimal code splitting
+const ServicesSection = dynamic(() => import("../components/ServicesSection"));
+const AnimatedOrbitSection = dynamic(
   () => import("../components/AnimatedOrbitSection"),
 );
-const AboutUs = lazy(() => import("../components/AboutUs"));
-const BlogSection = lazy(() => import("../components/BlogSection"));
-const FAQSection = lazy(() => import("../components/FAQSection"));
-const Footer = lazy(() => import("../components/Footer"));
+const AboutUs = dynamic(() => import("../components/AboutUs"));
+const BlogSection = dynamic(() => import("../components/BlogSection"));
+const FAQSection = dynamic(() => import("../components/FAQSection"));
+const Footer = dynamic(() => import("../components/Footer"));
 
 // Loading component for better UX
 const SectionSkeleton = ({ height = "h-96" }: { height?: string }) => (
@@ -120,25 +121,35 @@ export default function HomePage() {
           <ServicesSection />
         </Suspense>
 
-        <Suspense fallback={<SectionSkeleton height="h-96" />}>
-          <AnimatedOrbitSection />
-        </Suspense>
+        <div className="cv-auto">
+          <Suspense fallback={<SectionSkeleton height="h-96" />}>
+            <AnimatedOrbitSection />
+          </Suspense>
+        </div>
 
-        <Suspense fallback={<SectionSkeleton height="h-96" />}>
-          <AboutUs />
-        </Suspense>
+        <div className="cv-auto">
+          <Suspense fallback={<SectionSkeleton height="h-96" />}>
+            <AboutUs />
+          </Suspense>
+        </div>
 
-        <Suspense fallback={<SectionSkeleton height="h-96" />}>
-          <FAQSection />
-        </Suspense>
+        <div className="cv-auto">
+          <Suspense fallback={<SectionSkeleton height="h-96" />}>
+            <FAQSection />
+          </Suspense>
+        </div>
 
-        <Suspense fallback={<SectionSkeleton height="h-96" />}>
-          <BlogSection />
-        </Suspense>
+        <div className="cv-auto">
+          <Suspense fallback={<SectionSkeleton height="h-96" />}>
+            <BlogSection />
+          </Suspense>
+        </div>
 
-        <Suspense fallback={<SectionSkeleton height="h-64" />}>
-          <Footer />
-        </Suspense>
+        <div className="cv-auto">
+          <Suspense fallback={<SectionSkeleton height="h-64" />}>
+            <Footer />
+          </Suspense>
+        </div>
       </main>
     </>
   );

@@ -1,9 +1,10 @@
-import { lazy, Suspense, memo } from "react";
+import { Suspense, memo } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import GoogleReviewsBadge from "./GoogleReviewsBadge";
 
 // Lazy load the RotatingCube to improve LCP
-const RotatingCube = lazy(() => import("./RotatingCube"));
+const RotatingCube = dynamic(() => import("./RotatingCube"));
 
 const HeroSection = memo(function HeroSection() {
   return (

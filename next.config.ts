@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
       "lucide-react",
       "@react-three/fiber",
       "@react-three/drei",
+      "framer-motion",
+      "gsap",
+      "three",
     ],
   },
 

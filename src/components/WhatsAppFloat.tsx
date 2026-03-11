@@ -1,7 +1,7 @@
 "use client";
 
 export default function WhatsAppFloat() {
-  const phoneNumber = "447990965247"; // +44 7990 965 247 without spaces/symbols
+  const phoneNumber = "905079441715"; // +90 507 944 17 15 without spaces/symbols
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
   return (
@@ -15,7 +15,7 @@ export default function WhatsAppFloat() {
         <span className="whats-text">
           WhatsApp
           <br />
-          <small>+44 7990 965 247</small>
+          <small>+90 507 944 17 15</small>
         </span>
       </a>
 

@@ -5,9 +5,12 @@ const FireflyEffect: React.FC = () => {
   const fireflies = Array.from({ length: 15 }, (_, i) => i + 1);
 
   return (
-    <div className="firefly-container">
+    <div className="firefly-container hidden sm:block">
       {fireflies.map((i) => (
-        <div key={i} className={`firefly firefly-${i}`}>
+        <div
+          key={i}
+          className={`firefly firefly-${i}${i > 8 ? " firefly-desktop-only" : ""}`}
+        >
           <div className="firefly-before"></div>
           <div className="firefly-after"></div>
         </div>
@@ -50,7 +53,9 @@ const FireflyEffect: React.FC = () => {
           background: white;
           opacity: 0;
           box-shadow: 0 0 0vw 0vw yellow;
-          animation: drift ease alternate infinite, flash ease infinite;
+          animation:
+            drift ease alternate infinite,
+            flash ease infinite;
         }
 
         /* Firefly 1 */
@@ -912,6 +917,13 @@ const FireflyEffect: React.FC = () => {
           5% {
             opacity: 1;
             box-shadow: 0 0 2vw 0.4vw yellow;
+          }
+        }
+
+        /* Hide fireflies 9-15 on tablet-sized screens for better performance */
+        @media (max-width: 1024px) {
+          .firefly-desktop-only {
+            display: none;
           }
         }
       `}</style>
