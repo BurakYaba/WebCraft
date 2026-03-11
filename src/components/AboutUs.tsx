@@ -3,7 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import FireflyEffect from "./FireflyEffect";
+import dynamic from "next/dynamic";
+const FireflyEffect = dynamic(() => import("./FireflyEffect"), { ssr: false });
 
 export default function AboutUs() {
   return (

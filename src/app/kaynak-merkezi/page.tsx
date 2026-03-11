@@ -1,3 +1,4 @@
+import "@/styles/prose.css";
 import { Metadata } from "next";
 import { lazy, Suspense } from "react";
 import Header from "@/components/Header";
