@@ -42,7 +42,7 @@ export default function Header() {
       setIsScrolled(scrollY > 30); // Start collapse very early for ultra-smooth transition
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -99,6 +99,7 @@ export default function Header() {
           width={40}
           height={40}
           className="w-8 h-8 md:w-10 md:h-10 object-contain"
+          priority
         />
         <div className="flex">
           {/* Web letters */}

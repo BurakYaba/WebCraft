@@ -74,8 +74,6 @@ h6 {
   font-family: var(--font-display);
   font-weight: 700;
   letter-spacing: -0.01em;
-  transform: scaleX(0.98);
-  transform-origin: left;
 }
 
 .watermark {
@@ -94,14 +92,7 @@ h6 {
   contain: layout style paint;
 }
 
-/* Optimized hero text styles for better LCP */
-.hero-text {
-  contain: layout style paint;
-}
-
-.hero-critical {
-  contain: layout style paint;
-}
+/* Hero text styles */
 
 /* Custom hover underline effect */
 .hover-underline::after,
