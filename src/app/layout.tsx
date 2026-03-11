@@ -8,7 +8,7 @@ import "./globals.css";
 // Optimized font loading with better performance
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "700"],
   display: "swap",
   preload: true,
   fallback: ["system-ui", "arial"],
@@ -113,7 +113,6 @@ export default function RootLayout({
   return (
     <html lang="tr" className={montserrat.variable}>
       <head>
-
         {/* Favicon */}
         <link
           rel="icon"

@@ -71,7 +71,7 @@ export default function OnlineMagazaKurulumu() {
     "@type": "BlogPosting",
     headline: "Online Mağaza Kurulumu ve E-Ticaret Web Sitesi",
     description: "E-ticaret web sitesi kurulumu rehberi.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.jpg",
+    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
     author: { "@type": "Person", name: "WebCraft E-Ticaret Uzmanı" },
     publisher: {
       "@type": "Organization",
@@ -122,7 +122,7 @@ export default function OnlineMagazaKurulumu() {
               </div>
               <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/bento/web-tasarım.jpg"
+                  src="/bento/web-tasarım.webp"
                   alt="Online Mağaza Kurulumu"
                   className="w-full h-full object-cover"
                 />

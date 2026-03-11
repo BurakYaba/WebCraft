@@ -78,7 +78,7 @@ export default function KobiDijitalDonusumRehberi() {
       "KOBİ Dijital Dönüşüm Rehberi 2025: Adım Adım Dijitalleşme Stratejisi",
     description:
       "KOBİ'ler için dijital dönüşüm rehberi. Web sitesi, e-ticaret, sosyal medya ve dijital pazarlama ile küçük işletmenizi dijitalleştirin.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.jpg",
+    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
     author: {
       "@type": "Person",
       name: "WebCraft Web Tasarım Uzmanı",

@@ -77,7 +77,7 @@ export default function KurumsalWebSitesiHatalari() {
     headline: "Kurumsal Web Sitesi Yaptırırken Yapılan 7 Kritik Hata",
     description:
       "Kurumsal web sitesi yaptırırken yapılan kritik hatalardan kaçının.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.jpg",
+    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
     author: {
       "@type": "Person",
       name: "WebCraft Web Tasarım Uzmanı",
@@ -133,7 +133,7 @@ export default function KurumsalWebSitesiHatalari() {
               </div>
               <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/bento/web-tasarım.jpg"
+                  src="/bento/web-tasarım.webp"
                   alt="Kurumsal Web Sitesi Hataları"
                   className="w-full h-full object-cover"
                 />

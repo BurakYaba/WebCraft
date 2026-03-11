@@ -78,7 +78,7 @@ export default function SeoUyumluWebTasarimi() {
     headline: "SEO Uyumlu Web Tasarımı ile Google'da Üst Sıralarda Yer Alın",
     description:
       "SEO uyumlu web tasarımı rehberi. Organik trafiğinizi artırın.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.jpg",
+    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
     author: {
       "@type": "Person",
       name: "WebCraft Web Tasarım Uzmanı",
@@ -133,7 +133,7 @@ export default function SeoUyumluWebTasarimi() {
               </div>
               <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/bento/web-tasarım.jpg"
+                  src="/bento/web-tasarım.webp"
                   alt="SEO Uyumlu Web Tasarımı"
                   className="w-full h-full object-cover"
                 />

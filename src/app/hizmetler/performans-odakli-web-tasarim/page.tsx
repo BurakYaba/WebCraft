@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "WebCraft",
     images: [
       {
-        url: "/bento/web-tasarım.jpg",
+        url: "/bento/web-tasarım.webp",
         width: 1200,
         height: 630,
         alt: "Performans Odaklı Web Tasarım",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "Performans Odaklı Web Tasarım | Hızlı Web Siteleri | WebCraft",
     description:
       "Performans odaklı web tasarım hizmeti. Core Web Vitals optimizasyonu ve hızlı yükleme süreleri.",
-    images: ["/bento/web-tasarım.jpg"],
+    images: ["/bento/web-tasarım.webp"],
   },
   robots: {
     index: true,
@@ -178,7 +178,7 @@ export default function PerformansOdakliWebTasarimPage() {
           subtitle="Hızlı Web Siteleri"
           description="Core Web Vitals optimizasyonu ve Next.js teknolojisi ile 2 saniyede yüklenen, arama motorlarında üst sıralarda yer alan web siteleri geliştiriyoruz."
           watermark="P"
-          backgroundImage="/bento/web-tasarım.jpg"
+          backgroundImage="/bento/web-tasarım.webp"
         />
 
         {/* What Section */}

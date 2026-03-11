@@ -45,7 +45,7 @@ export default function SeoTrendleri2024() {
     "@type": "BlogPosting",
     headline: "2024 SEO Trendleri ve Arama Motoru Optimizasyonu",
     description: "2024 yılının en güncel SEO trendleri ve stratejileri.",
-    image: "https://www.webcraft.tr/bento/dijital-pazarlama.jpg",
+    image: "https://www.webcraft.tr/bento/dijital-pazarlama.webp",
     author: { "@type": "Person", name: "WebCraft SEO Uzmanı" },
     publisher: {
       "@type": "Organization",
@@ -96,7 +96,7 @@ export default function SeoTrendleri2024() {
               </div>
               <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/bento/dijital-pazarlama.jpg"
+                  src="/bento/dijital-pazarlama.webp"
                   alt="2024 SEO Trendleri"
                   className="w-full h-full object-cover"
                 />

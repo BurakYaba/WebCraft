@@ -77,7 +77,7 @@ export default function TeknikSEOKontrolListesi() {
     headline: "Teknik SEO Kontrol Listesi: 2026 Kapsamlı Rehber",
     description:
       "Teknik SEO kontrol listesi ile web sitenizi Google için optimize edin. XML sitemap, robots.txt, canonical tags ve schema markup rehberi.",
-    image: "https://www.webcraft.tr/bento/dijital-pazarlama.jpg",
+    image: "https://www.webcraft.tr/bento/dijital-pazarlama.webp",
     author: {
       "@type": "Person",
       name: "WebCraft SEO Uzmanı",

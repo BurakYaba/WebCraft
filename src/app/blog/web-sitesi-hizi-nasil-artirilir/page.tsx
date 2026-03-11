@@ -79,7 +79,7 @@ export default function WebSitesiHiziNasilArtirilir() {
       "Web Sitesi Hızı Nasıl Artırılır? 2025 Performans Optimizasyon Rehberi",
     description:
       "Web sitesi hızını artırma rehberi. Core Web Vitals, görsel optimizasyonu, kod minify, CDN kullanımı ve sunucu performansı ile sayfa hızını optimize edin.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.jpg",
+    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
     author: {
       "@type": "Person",
       name: "WebCraft Web Tasarım Uzmanı",

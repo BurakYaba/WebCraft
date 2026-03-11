@@ -71,7 +71,7 @@ export default function WebAnalitikAraclari() {
     "@type": "BlogPosting",
     headline: "Web Analitik Araçları: Google Analytics ve Veri Analizi",
     description: "Web analitik araçları rehberi.",
-    image: "https://www.webcraft.tr/bento/dijital-pazarlama.jpg",
+    image: "https://www.webcraft.tr/bento/dijital-pazarlama.webp",
     author: { "@type": "Person", name: "WebCraft Analitik Uzmanı" },
     publisher: {
       "@type": "Organization",
@@ -122,7 +122,7 @@ export default function WebAnalitikAraclari() {
               </div>
               <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/bento/dijital-pazarlama.jpg"
+                  src="/bento/dijital-pazarlama.webp"
                   alt="Web Analitik Araçları"
                   className="w-full h-full object-cover"
                 />

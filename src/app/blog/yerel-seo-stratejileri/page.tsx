@@ -78,7 +78,7 @@ export default function YerelSEOStratejileri() {
       "Yerel SEO Stratejileri: Google Haritalar'da Üst Sıralarda Yer Alın",
     description:
       "Yerel SEO stratejileri ile Google My Business, Google Haritalar ve yerel aramalarında üst sıralarda yer alın. NAP tutarlılığı ve müşteri yorumları rehberi.",
-    image: "https://www.webcraft.tr/bento/dijital-pazarlama.jpg",
+    image: "https://www.webcraft.tr/bento/dijital-pazarlama.webp",
     author: {
       "@type": "Person",
       name: "WebCraft SEO Uzmanı",

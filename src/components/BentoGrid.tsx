@@ -119,7 +119,7 @@ export default function BentoGrid() {
       description: "Modern ve kullanıcı dostu web siteleri tasarlıyoruz.",
       features: ["Responsive Tasarım", "UI/UX Optimizasyonu", "SEO Dostu Yapı"],
       direction: "left" as const,
-      backgroundImage: "/bento/web-tasarım.jpg",
+      backgroundImage: "/bento/web-tasarım.webp",
       link: "/hizmetler/web-tasarim",
     },
     {
@@ -127,7 +127,7 @@ export default function BentoGrid() {
       description: "Markanızı dijital dünyada öne çıkarıyoruz.",
       features: ["SEO/SEM", "Sosyal Medya", "İçerik Stratejisi"],
       direction: "up" as const,
-      backgroundImage: "/bento/dijital-pazarlama.jpg",
+      backgroundImage: "/bento/dijital-pazarlama.webp",
       link: "/hizmetler/dijital-pazarlama",
     },
     {
@@ -135,7 +135,7 @@ export default function BentoGrid() {
       description: "Online satış platformları geliştiriyoruz.",
       features: ["Güvenli Ödeme", "Stok Yönetimi", "Mobil Uyumlu"],
       direction: "right" as const,
-      backgroundImage: "/bento/e-ticaret.jpg",
+      backgroundImage: "/bento/e-ticaret.webp",
       link: "/hizmetler/e-ticaret",
     },
     {
@@ -143,7 +143,7 @@ export default function BentoGrid() {
       description: "iOS ve Android uygulamaları geliştiriyoruz.",
       features: ["Native Geliştirme", "Cross-Platform", "Push Bildirimler"],
       direction: "left" as const,
-      backgroundImage: "/bento/mobil-uygulama.jpg",
+      backgroundImage: "/bento/mobil-uygulama.webp",
       link: "/hizmetler/mobil-uygulama",
     },
     {
@@ -151,7 +151,7 @@ export default function BentoGrid() {
       description: "Özel yazılım çözümleri sunuyoruz.",
       features: ["Web Uygulamaları", "API Entegrasyonu", "Bakım & Destek"],
       direction: "right" as const,
-      backgroundImage: "/bento/yazılım-geliştirme.jpg",
+      backgroundImage: "/bento/yazılım-geliştirme.webp",
       link: "/hizmetler/yazilim-gelistirme",
     },
   ];

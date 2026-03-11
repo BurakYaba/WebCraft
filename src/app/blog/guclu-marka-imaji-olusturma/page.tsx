@@ -71,7 +71,7 @@ export default function GuluMarkaImaji() {
     "@type": "BlogPosting",
     headline: "Güçlü Marka İmajı Oluşturma Stratejileri",
     description: "Marka kimliği ve imaj oluşturma stratejileri.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.jpg",
+    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
     author: { "@type": "Person", name: "WebCraft Marka Uzmanı" },
     publisher: {
       "@type": "Organization",
@@ -122,7 +122,7 @@ export default function GuluMarkaImaji() {
               </div>
               <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/bento/web-tasarım.jpg"
+                  src="/bento/web-tasarım.webp"
                   alt="Güçlü Marka İmajı"
                   className="w-full h-full object-cover"
                 />

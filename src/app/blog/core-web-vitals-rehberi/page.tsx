@@ -76,7 +76,7 @@ export default function CoreWebVitalsRehberi() {
       "Core Web Vitals Rehberi 2025: LCP, FID, CLS Metrikleri ve Optimizasyon",
     description:
       "Core Web Vitals rehberi: LCP, FID ve CLS metriklerini anlayın ve optimize edin. Google'ın performans kriterlerini karşılayarak SEO sıralamanızı artırın.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.jpg",
+    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
     author: {
       "@type": "Person",
       name: "WebCraft Web Tasarım Uzmanı",

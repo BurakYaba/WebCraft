@@ -80,7 +80,7 @@ export default function FethiyeWebTasarimRehberi() {
       "Fethiye Web Tasarım Rehberi: Turizm İşletmeleri için Dijital Çözümler",
     description:
       "Fethiye turizm sektörü için web tasarım rehberi. Otel web siteleri, rezervasyon sistemleri ve çok dilli web tasarım stratejileri.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.jpg",
+    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
     author: {
       "@type": "Person",
       name: "WebCraft Web Tasarım Uzmanı",

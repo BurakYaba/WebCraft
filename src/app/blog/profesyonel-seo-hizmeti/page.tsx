@@ -76,7 +76,7 @@ export default function ProfesyonelSeoHizmeti() {
     headline: "Profesyonel SEO Hizmeti ile Organik Trafiğinizi Artırın",
     description:
       "Profesyonel SEO hizmeti rehberi. Organik trafiğinizi artırın.",
-    image: "https://www.webcraft.tr/bento/dijital-pazarlama.jpg",
+    image: "https://www.webcraft.tr/bento/dijital-pazarlama.webp",
     author: {
       "@type": "Person",
       name: "WebCraft SEO Uzmanı",
@@ -130,7 +130,7 @@ export default function ProfesyonelSeoHizmeti() {
               </div>
               <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/bento/dijital-pazarlama.jpg"
+                  src="/bento/dijital-pazarlama.webp"
                   alt="Profesyonel SEO Hizmeti"
                   className="w-full h-full object-cover"
                 />

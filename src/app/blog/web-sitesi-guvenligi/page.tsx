@@ -71,7 +71,7 @@ export default function WebSitesiGuvenligi() {
     "@type": "BlogPosting",
     headline: "Web Sitesi Güvenliği: SSL, HTTPS ve Güvenlik Önlemleri",
     description: "Web sitesi güvenliği rehberi.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.jpg",
+    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
     author: { "@type": "Person", name: "WebCraft Güvenlik Uzmanı" },
     publisher: {
       "@type": "Organization",
@@ -122,7 +122,7 @@ export default function WebSitesiGuvenligi() {
               </div>
               <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/bento/web-tasarım.jpg"
+                  src="/bento/web-tasarım.webp"
                   alt="Web Sitesi Güvenliği"
                   className="w-full h-full object-cover"
                 />

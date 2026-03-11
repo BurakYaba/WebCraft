@@ -77,7 +77,7 @@ export default function SosyalMedyaYonetimi() {
     headline: "Sosyal Medya Yönetimi ile Markanızı Büyütün",
     description:
       "Profesyonel sosyal medya yönetimi stratejileri ve uygulama rehberi.",
-    image: "https://www.webcraft.tr/bento/dijital-pazarlama.jpg",
+    image: "https://www.webcraft.tr/bento/dijital-pazarlama.webp",
     author: {
       "@type": "Person",
       name: "WebCraft Dijital Pazarlama Uzmanı",
@@ -131,7 +131,7 @@ export default function SosyalMedyaYonetimi() {
               </div>
               <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/bento/dijital-pazarlama.jpg"
+                  src="/bento/dijital-pazarlama.webp"
                   alt="Sosyal Medya Yönetimi"
                   className="w-full h-full object-cover"
                 />

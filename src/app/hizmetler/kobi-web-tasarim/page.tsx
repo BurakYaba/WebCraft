@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "WebCraft",
     images: [
       {
-        url: "/bento/web-tasarım.jpg",
+        url: "/bento/web-tasarım.webp",
         width: 1200,
         height: 630,
         alt: "KOBİ Web Tasarım",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "KOBİ Web Tasarım | Profesyonel Web Siteleri | WebCraft",
     description:
       "Küçük ve orta ölçekli işletmeler için profesyonel web tasarım hizmeti.",
-    images: ["/bento/web-tasarım.jpg"],
+    images: ["/bento/web-tasarım.webp"],
   },
   robots: {
     index: true,
@@ -169,7 +169,7 @@ export default function KobiWebTasarimPage() {
           subtitle="Profesyonel Web Siteleri"
           description="Küçük ve orta ölçekli işletmeler için profesyonel web tasarım hizmetleri. SEO uyumlu, mobil uyumlu ve modern tasarım çözümleri."
           watermark="K"
-          backgroundImage="/bento/web-tasarım.jpg"
+          backgroundImage="/bento/web-tasarım.webp"
         />
 
         {/* What Section */}

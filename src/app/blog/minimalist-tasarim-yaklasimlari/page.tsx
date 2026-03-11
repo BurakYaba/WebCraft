@@ -71,7 +71,7 @@ export default function MinimalistTasarim() {
     "@type": "BlogPosting",
     headline: "Minimalist Tasarım Yaklaşımları ve Modern Web Tasarımı",
     description: "Minimalist web tasarım rehberi.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.jpg",
+    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
     author: { "@type": "Person", name: "WebCraft Web Tasarım Uzmanı" },
     publisher: {
       "@type": "Organization",
@@ -122,7 +122,7 @@ export default function MinimalistTasarim() {
               </div>
               <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/bento/web-tasarım.jpg"
+                  src="/bento/web-tasarım.webp"
                   alt="Minimalist Tasarım"
                   className="w-full h-full object-cover"
                 />

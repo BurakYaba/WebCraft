@@ -52,7 +52,6 @@ const FireflyEffect: React.FC = () => {
         .firefly::after {
           background: white;
           opacity: 0;
-          box-shadow: 0 0 0vw 0vw yellow;
           animation:
             drift ease alternate infinite,
             flash ease infinite;
@@ -912,11 +911,11 @@ const FireflyEffect: React.FC = () => {
           30%,
           100% {
             opacity: 0;
-            box-shadow: 0 0 0vw 0vw yellow;
+            filter: drop-shadow(0 0 0 rgba(255, 255, 0, 0));
           }
           5% {
             opacity: 1;
-            box-shadow: 0 0 2vw 0.4vw yellow;
+            filter: drop-shadow(0 0 0.3vw rgba(255, 255, 0, 0.9));
           }
         }
 

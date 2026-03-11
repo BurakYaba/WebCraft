@@ -77,7 +77,7 @@ export default function ProfesyonelWebTasarimNedir() {
     headline: "Profesyonel Web Tasarım Nedir? Kimler İçin Gerekli?",
     description:
       "Profesyonel web tasarımın önemi, faydaları ve kimler için gerekli olduğunu öğrenin.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.jpg",
+    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
     author: {
       "@type": "Person",
       name: "WebCraft Web Tasarım Uzmanı",
@@ -133,7 +133,7 @@ export default function ProfesyonelWebTasarimNedir() {
               </div>
               <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/bento/web-tasarım.jpg"
+                  src="/bento/web-tasarım.webp"
                   alt="Profesyonel Web Tasarım"
                   className="w-full h-full object-cover"
                 />

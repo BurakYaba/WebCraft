@@ -22,7 +22,7 @@ const services: ServiceBlockWithLink[] = [
     title: "Web Tasarım",
     description:
       "Modern ve kullanıcı dostu web siteleri tasarlıyoruz. Responsive tasarım, UI/UX optimizasyonu ve SEO dostu yapı ile markanızı dijital dünyada güçlü bir şekilde temsil ediyoruz. Her proje, kullanıcı deneyimini ön planda tutarak özenle tasarlanır.",
-    image: "/bento/web-tasarım.jpg",
+    image: "/bento/web-tasarım.webp",
     bgText: "WEB",
     link: "/hizmetler/web-tasarim",
   },
@@ -31,7 +31,7 @@ const services: ServiceBlockWithLink[] = [
     title: "Dijital Pazarlama",
     description:
       "Markanızı dijital dünyada öne çıkarıyoruz. SEO/SEM stratejileri, sosyal medya yönetimi ve içerik pazarlaması ile hedef kitlenize ulaşmanızı sağlıyoruz. Veri odaklı yaklaşımımızla ölçülebilir sonuçlar elde ediyoruz.",
-    image: "/bento/dijital-pazarlama.jpg",
+    image: "/bento/dijital-pazarlama.webp",
     bgText: "DIJITAL",
     link: "/hizmetler/dijital-pazarlama",
   },
@@ -40,7 +40,7 @@ const services: ServiceBlockWithLink[] = [
     title: "E-Ticaret",
     description:
       "Online satış platformları geliştiriyoruz. Güvenli ödeme sistemleri, stok yönetimi ve mobil uyumlu tasarım ile e-ticaret sitenizi başarıya taşıyoruz. Kullanıcı dostu arayüz ve hızlı performans garantisi sunuyoruz.",
-    image: "/bento/e-ticaret.jpg",
+    image: "/bento/e-ticaret.webp",
     bgText: "TICARET",
     link: "/hizmetler/e-ticaret",
   },
@@ -49,7 +49,7 @@ const services: ServiceBlockWithLink[] = [
     title: "Mobil Uygulama",
     description:
       "iOS ve Android uygulamaları geliştiriyoruz. Native ve cross-platform çözümler ile kullanıcılarınıza en iyi mobil deneyimi sunuyoruz. Push bildirimler, offline çalışma ve performans optimizasyonu ile fark yaratıyoruz.",
-    image: "/bento/mobil-uygulama.jpg",
+    image: "/bento/mobil-uygulama.webp",
     bgText: "MOBIL",
     link: "/hizmetler/mobil-uygulama",
   },
@@ -76,7 +76,7 @@ const services: ServiceBlockWithLink[] = [
     title: "Yazılım Geliştirme",
     description:
       "Özel yazılım çözümleri sunuyoruz. Web uygulamaları, API entegrasyonları ve kurumsal yazılımlar ile iş süreçlerinizi dijitalleştiriyoruz. Bakım ve destek hizmetlerimizle uzun vadeli ortaklık kuruyoruz.",
-    image: "/bento/yazılım-geliştirme.jpg",
+    image: "/bento/yazılım-geliştirme.webp",
     bgText: "YAZILIM",
     link: "/hizmetler/yazilim-gelistirme",
   },

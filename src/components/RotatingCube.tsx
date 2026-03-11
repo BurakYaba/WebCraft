@@ -1,4 +1,5 @@
 "use client";
+import "@/styles/rotating-cube.css";
 import { useEffect, useState } from "react";
 
 // Custom hook to detect mobile devices

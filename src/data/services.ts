@@ -62,7 +62,7 @@ export const services: Service[] = [
       "Modern ve kullanıcı dostu web siteleri tasarlıyoruz. Responsive tasarım, UI/UX optimizasyonu ve SEO dostu yapı ile markanızı dijital dünyada güçlü bir şekilde temsil ediyoruz.",
     excerpt:
       "Profesyonel web tasarım hizmeti ile modern, responsive ve SEO uyumlu web siteleri oluşturuyoruz. 2015 yılından bu yana 200+ başarılı proje tamamladık.",
-    heroImage: "/bento/web-tasarım.jpg",
+    heroImage: "/bento/web-tasarım.webp",
     watermark: "W",
 
     metaTitle:
@@ -218,7 +218,7 @@ Profesyonel web tasarımımız şunları içerir:
       "Markanızı dijital dünyada öne çıkarıyoruz. SEO/SEM stratejileri, sosyal medya yönetimi ve içerik pazarlaması ile hedef kitlenize ulaşmanızı sağlıyoruz.",
     excerpt:
       "Profesyonel dijital pazarlama hizmeti ile markanızı dijital dünyada öne çıkarın. SEO, sosyal medya yönetimi ve içerik pazarlaması çözümleri. 2015'ten beri 200+ başarılı proje.",
-    heroImage: "/bento/dijital-pazarlama.jpg",
+    heroImage: "/bento/dijital-pazarlama.webp",
     watermark: "D",
 
     metaTitle:
@@ -374,7 +374,7 @@ Dijital pazarlama hizmetlerimiz şunları içerir:
       "iOS ve Android uygulamaları geliştiriyoruz. Native ve cross-platform çözümler ile kullanıcılarınıza en iyi mobil deneyimi sunuyoruz.",
     excerpt:
       "Profesyonel mobil uygulama geliştirme hizmeti. iOS ve Android uygulamaları, native ve cross-platform çözümler. 2015'ten beri 50+ mobil uygulama projesi tamamladık.",
-    heroImage: "/bento/mobil-uygulama.jpg",
+    heroImage: "/bento/mobil-uygulama.webp",
     watermark: "M",
 
     metaTitle:
@@ -530,7 +530,7 @@ Mobil uygulama geliştirme hizmetlerimiz şunları içerir:
       "Özel yazılım çözümleri sunuyoruz. Web uygulamaları, API entegrasyonları ve kurumsal yazılımlar ile iş süreçlerinizi dijitalleştiriyoruz.",
     excerpt:
       "Profesyonel yazılım geliştirme hizmeti. Özel web uygulamaları, API entegrasyonları ve kurumsal yazılım çözümleri. 2015'ten beri 100+ yazılım projesi tamamladık.",
-    heroImage: "/bento/yazılım-geliştirme.jpg",
+    heroImage: "/bento/yazılım-geliştirme.webp",
     watermark: "Y",
 
     metaTitle: "Yazılım Geliştirme Hizmeti | Özel Yazılım Çözümleri | WebCraft",
@@ -685,7 +685,7 @@ Yazılım geliştirme hizmetlerimiz şunları içerir:
       "Profesyonel e-ticaret web sitesi tasarımı ve online mağaza kurulumu. Güvenli ödeme sistemleri, stok yönetimi ve mobil uyumlu tasarım ile satışlarınızı artırıyoruz.",
     excerpt:
       "E-ticaret web sitesi ve online mağaza kurulumu hizmeti. Güvenli ödeme, kargo entegrasyonu, stok yönetimi. 2015'ten beri 100+ e-ticaret projesi.",
-    heroImage: "/bento/e-ticaret.jpg",
+    heroImage: "/bento/e-ticaret.webp",
     watermark: "E",
 
     metaTitle: "E-Ticaret Web Tasarımı | Online Mağaza Kurulumu | WebCraft",

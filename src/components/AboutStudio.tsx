@@ -4,19 +4,19 @@ import Image from "next/image";
 
 const studioImages = [
   {
-    src: "/bento/web-tasarım.jpg",
+    src: "/bento/web-tasarım.webp",
     alt: "WebCraft Ofis - Yaratici Alan",
   },
   {
-    src: "/bento/dijital-pazarlama.jpg",
+    src: "/bento/dijital-pazarlama.webp",
     alt: "WebCraft Ekibi - Isbirligi",
   },
   {
-    src: "/bento/e-ticaret.jpg",
+    src: "/bento/e-ticaret.webp",
     alt: "WebCraft Teknoloji - Yenilik",
   },
   {
-    src: "/bento/mobil-uygulama.jpg",
+    src: "/bento/mobil-uygulama.webp",
     alt: "WebCraft Proje - Gelistirme",
   },
 ];
