@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import RotatingEarth from "./RotatingEarth";
+import WireframeGlobe from "./WireframeGlobe";
 
 interface ServiceCardProps {
   title: string;
@@ -199,7 +199,7 @@ export default function BentoGrid() {
 
         {/* Center rotating Earth with lazy loading */}
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[274px] h-[274px] z-10 hidden md:block">
-          <RotatingEarth className="w-full h-full" />
+          <WireframeGlobe className="w-full h-full" />
         </div>
 
         {/* Bottom row */}

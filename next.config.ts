@@ -1,16 +1,15 @@
 import type { NextConfig } from "next";
 
+const withBundleAnalyzer =
+  process.env.ANALYZE === "true"
+    ? // eslint-disable-next-line @typescript-eslint/no-require-imports
+      require("@next/bundle-analyzer")({ enabled: true, openAnalyzer: false })
+    : (c: NextConfig) => c;
+
 const nextConfig: NextConfig = {
   // Performance optimizations
   experimental: {
-    optimizePackageImports: [
-      "lucide-react",
-      "@react-three/fiber",
-      "@react-three/drei",
-      "framer-motion",
-      "gsap",
-      "three",
-    ],
+    optimizePackageImports: ["lucide-react", "framer-motion"],
   },
 
   // Image optimization
@@ -149,4 +148,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withBundleAnalyzer(nextConfig);

@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -131,11 +132,13 @@ export default function SeoUyumluWebTasarimi() {
                 <span>•</span>
                 <span>WebCraft Web Tasarım Uzmanı</span>
               </div>
-              <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
-                <img
+              <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
+                <Image
                   src="/bento/web-tasarım.webp"
                   alt="SEO Uyumlu Web Tasarımı"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  priority
                 />
               </div>
             </div>
