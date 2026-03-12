@@ -18,25 +18,17 @@ export default function ServicesHero() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 text-center relative z-10">
-        {/* Small label */}
+        {/* Small label - no animation to avoid LCP delay */}
         <div
-          className={`text-red-500 font-bold tracking-[0.35em] uppercase text-[10px] sm:text-xs md:text-sm mb-6 sm:mb-8 transition-all duration-1000 delay-300 ${
-            isVisible
-              ? "opacity-100 transform translate-y-0"
-              : "opacity-0 transform translate-y-10"
-          }`}
+          className="text-red-500 font-bold tracking-[0.35em] uppercase text-[10px] sm:text-xs md:text-sm mb-6 sm:mb-8"
           style={{ letterSpacing: "0.35em" }}
         >
           HiZMETLERİMİZ
         </div>
 
-        {/* Main heading */}
+        {/* Main heading - no animation to avoid LCP delay */}
         <h1
-          className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 sm:mb-8 leading-tight transition-all duration-1000 delay-500 ${
-            isVisible
-              ? "opacity-100 transform translate-y-0"
-              : "opacity-0 transform translate-y-10"
-          }`}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 sm:mb-8 leading-tight"
           style={{ transform: "scaleX(0.98)", transformOrigin: "center" }}
         >
           Neler
@@ -44,14 +36,8 @@ export default function ServicesHero() {
           Yapıyoruz
         </h1>
 
-        {/* Description */}
-        <p
-          className={`text-base sm:text-lg md:text-xl text-white/80 max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12 leading-relaxed px-2 sm:px-0 transition-all duration-1000 delay-700 ${
-            isVisible
-              ? "opacity-100 transform translate-y-0"
-              : "opacity-0 transform translate-y-10"
-          }`}
-        >
+        {/* Description - no animation to avoid LCP delay */}
+        <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12 leading-relaxed px-2 sm:px-0">
           En iyi bildiğimiz ve yaptığımız şeyler. Dijital dünyada markanızı öne
           çıkaracak çözümler sunuyoruz.
         </p>

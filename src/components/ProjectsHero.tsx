@@ -20,32 +20,19 @@ export default function ProjectsHero() {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Main Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-        >
+        {/* Main Heading - no animation to avoid LCP delay */}
+        <div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
             <span className="block">İşlerimiz</span>
             <span className="block text-red-500 mt-2">Portföyümüz</span>
           </h1>
-        </motion.div>
+        </div>
 
-        {/* Subtitle */}
-        <motion.p
-          className="text-lg sm:text-xl lg:text-2xl text-white/70 max-w-3xl mx-auto mb-12 leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.2,
-            ease: [0.25, 0.46, 0.45, 0.94],
-          }}
-        >
+        {/* Subtitle - no animation to avoid LCP delay */}
+        <p className="text-lg sm:text-xl lg:text-2xl text-white/70 max-w-3xl mx-auto mb-12 leading-relaxed">
           Yaratıcılığımızı ve uzmanlığımızı bir araya getirerek ortaya
           çıkardığımız dijital deneyimler ve başarı hikayeleri.
-        </motion.p>
+        </p>
 
         {/* Stats */}
         <motion.div

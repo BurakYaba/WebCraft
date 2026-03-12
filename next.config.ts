@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
   // Performance optimizations
   experimental: {
     optimizePackageImports: ["lucide-react", "framer-motion"],
+    inlineCss: true,
   },
 
   // Image optimization
