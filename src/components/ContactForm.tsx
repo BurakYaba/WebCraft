@@ -147,7 +147,7 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
   return (
     <form
       onSubmit={handleSubmit}
-      className={`bg-gray-50 p-8 lg:p-12 rounded-lg ${className}`}
+      className={`bg-gray-50 p-4 sm:p-6 lg:p-12 rounded-lg ${className}`}
     >
       {/* Error Message */}
       {submitStatus === "error" && (

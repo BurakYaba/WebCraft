@@ -145,7 +145,7 @@ export default function ContactPage() {
 
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32">
-          <div className="container mx-auto px-16 md:px-20 lg:px-24">
+          <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
               {/* Left Content */}
               <div className="lg:w-1/2 lg:pr-16 mb-12 lg:mb-0">
@@ -207,7 +207,7 @@ export default function ContactPage() {
 
         {/* Additional Info Section */}
         <section className="bg-gray-50 py-20 lg:py-32">
-          <div className="container mx-auto px-16 md:px-20 lg:px-24">
+          <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {/* Email */}
               <div className="text-center">
