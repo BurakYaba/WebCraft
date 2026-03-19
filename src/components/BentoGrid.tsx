@@ -1,9 +1,11 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import WireframeGlobe from "./WireframeGlobe";
+import dynamic from "next/dynamic";
+
+const GlobeCanvas = dynamic(() => import("./GlobeCanvas"), { ssr: false });
 
 interface ServiceCardProps {
   title: string;
@@ -199,7 +201,9 @@ export default function BentoGrid() {
 
         {/* Center rotating Earth with lazy loading */}
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[274px] h-[274px] z-10 hidden md:block">
-          <WireframeGlobe className="w-full h-full" />
+          <Suspense fallback={null}>
+            <GlobeCanvas className="w-full h-full" />
+          </Suspense>
         </div>
 
         {/* Bottom row */}
