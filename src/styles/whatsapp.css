@@ -65,3 +65,10 @@
 .whats-float:hover .whats-icon {
   transform: rotate(360deg);
 }
+
+/* Hide the desktop slide-out float on mobile — replaced by the sticky bottom bar */
+@media (max-width: 639px) {
+  .whats-float {
+    display: none;
+  }
+}

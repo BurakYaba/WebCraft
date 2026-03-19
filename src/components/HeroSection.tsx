@@ -52,35 +52,56 @@ const HeroSection = memo(function HeroSection() {
                 letterSpacing: "-0.01em",
               }}
             >
-              Web Tasarım ve
+              3 Saniyede Açılan,
               <br />
-              <span className="text-red-500">Dijital Pazarlama</span>
+              <span className="text-red-500">Google&apos;a Hazır</span>
               <br />
-              Ajansı
+              Web Siteleri
             </h1>
             {/* Critical LCP element - optimized for faster rendering */}
             <p className="hero-text mb-10 max-w-full sm:max-w-2xl text-center sm:text-left">
-              Profesyonel <strong>web tasarım</strong>,{" "}
-              <strong>SEO hizmeti</strong> ve{" "}
-              <strong>sosyal medya yönetimi</strong> ile markanızı dijital
-              dünyada öne çıkarıyoruz. Kurumsal web sitesi tasarımı ve dijital
-              pazarlama çözümleri sunuyoruz.
+              Site yaptırıp sonuç alamayan işletmeler için{" "}
+              <strong>performans odaklı web tasarım</strong>,{" "}
+              <strong>teknik SEO</strong> ve <strong>dijital pazarlama</strong>{" "}
+              çözümleri. 200&apos;den fazla projede kanıtlanmış yaklaşım.
             </p>
+
+            {/* Inline trust signal — visible on all screen sizes */}
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8 text-sm text-white/70">
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block" />
+                200+ Tamamlanan Proje
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block" />
+                8+ Yıllık Deneyim
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block" />
+                Google&apos;da 4.9★
+              </span>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4 mb-8 text-center sm:text-left w-full sm:w-auto">
               <Link
                 href="/iletisim"
                 className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-sm md:text-base uppercase tracking-wider w-full sm:w-auto"
                 prefetch={true}
               >
-                ÜCRETSİZ TEKLİF AL
+                Ücretsiz Analiz Al
               </Link>
               <Link
-                href="/hakkimizda"
+                href="/islerimiz"
                 className="border border-white text-white hover:bg-white hover:text-black font-bold py-3 px-8 rounded-full transition-all duration-300 text-sm md:text-base uppercase tracking-wider w-full sm:w-auto"
                 prefetch={true}
               >
-                BİZİ TANIYIN
+                Projelerimizi Gör
               </Link>
+            </div>
+
+            {/* Google Reviews Badge — shown on mobile too (was desktop-only before) */}
+            <div className="block sm:hidden mt-2">
+              <GoogleReviewsBadge reviewCount={50} rating={4.9} />
             </div>
           </div>
         </div>
@@ -97,7 +118,7 @@ const HeroSection = memo(function HeroSection() {
         </Suspense>
       </div>
 
-      {/* Google Reviews Badge - below the cube */}
+      {/* Google Reviews Badge - desktop only (positioned absolutely) */}
       <div className="hidden sm:block absolute right-16 md:right-32 lg:right-40 bottom-8 md:bottom-12 z-20">
         <GoogleReviewsBadge reviewCount={50} rating={4.9} />
       </div>

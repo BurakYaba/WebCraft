@@ -325,8 +325,44 @@ export default function RootLayout({
 
         {children}
 
-        {/* WhatsApp Floating Button */}
+        {/* WhatsApp Floating Button - desktop slide-out */}
         <WhatsAppFloat />
+
+        {/* Mobile sticky bottom bar — one-tap WhatsApp + call */}
+        <div className="fixed bottom-0 left-0 right-0 z-50 flex sm:hidden border-t border-white/10 bg-[#181716]/95 backdrop-blur-sm">
+          <a
+            href="https://wa.me/905079441715"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 flex items-center justify-center gap-2 py-3.5 bg-[#25d366] text-white font-bold text-sm"
+          >
+            <svg
+              viewBox="0 0 32 32"
+              fill="currentColor"
+              width="20"
+              height="20"
+              aria-hidden="true"
+            >
+              <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.173 1.387 1.387-5.173-0.292-0.507c-1.223-2.162-1.87-4.588-1.87-7.070 0-7.435 6.048-13.483 13.483-13.483s13.483 6.048 13.483 13.483c0 7.435-6.006 13.525-13.44 13.525zM21.305 18.629c-0.292-0.146-1.723-0.85-1.985-0.948s-0.458-0.146-0.652 0.146c-0.195 0.292-0.754 0.948-0.925 1.143s-0.341 0.219-0.633 0.073c-0.292-0.146-1.232-0.452-2.346-1.443-0.867-0.771-1.45-1.723-1.621-2.015s-0.017-0.448 0.127-0.594c0.131-0.131 0.292-0.341 0.438-0.511s0.195-0.292 0.292-0.487c0.098-0.195 0.049-0.365-0.024-0.511s-0.652-1.569-0.894-2.151c-0.236-0.567-0.476-0.49-0.652-0.499-0.168-0.008-0.361-0.010-0.554-0.010s-0.511 0.073-0.779 0.365c-0.268 0.292-1.024 1.001-1.024 2.441s1.048 2.833 1.194 3.028c0.146 0.195 2.059 3.138 4.983 4.401 0.696 0.301 1.239 0.481 1.663 0.615 0.699 0.219 1.335 0.188 1.837 0.114 0.561-0.083 1.723-0.704 1.965-1.383s0.243-1.261 0.17-1.383c-0.073-0.122-0.268-0.195-0.56-0.341z" />
+            </svg>
+            WhatsApp
+          </a>
+          <a
+            href="tel:+905079441715"
+            className="flex-1 flex items-center justify-center gap-2 py-3.5 bg-red-500 text-white font-bold text-sm"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="18"
+              height="18"
+              aria-hidden="true"
+            >
+              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+            Hemen Ara
+          </a>
+        </div>
 
         {/* Privacy-friendly analytics by Plausible */}
         <Script

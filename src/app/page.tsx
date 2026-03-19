@@ -7,6 +7,9 @@ import { generateBreadcrumbSchema } from "@/utils/breadcrumbSchema";
 
 // Lazy load below-the-fold components using next/dynamic for optimal code splitting
 const ServicesSection = dynamic(() => import("../components/ServicesSection"));
+const SocialProofStrip = dynamic(
+  () => import("../components/SocialProofStrip"),
+);
 const AboutUs = dynamic(() => import("../components/AboutUs"));
 const BlogSection = dynamic(() => import("../components/BlogSection"));
 const FAQSection = dynamic(() => import("../components/FAQSection"));
@@ -117,6 +120,12 @@ export default function HomePage() {
         <Suspense fallback={<SectionSkeleton height="h-screen" />}>
           <ServicesSection />
         </Suspense>
+
+        <div className="cv-auto">
+          <Suspense fallback={<SectionSkeleton height="h-96" />}>
+            <SocialProofStrip />
+          </Suspense>
+        </div>
 
         <div className="cv-auto">
           <Suspense fallback={<SectionSkeleton height="h-96" />}>
