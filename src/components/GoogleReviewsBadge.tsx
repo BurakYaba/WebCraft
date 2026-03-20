@@ -18,11 +18,11 @@ export default function GoogleReviewsBadge({
       href={googleBusinessUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-3 hover:bg-white/20 transition-all duration-300 group"
+      className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-3 py-2.5 hover:bg-white/20 transition-all duration-300 group max-w-full"
     >
       {/* Google Logo */}
       <svg
-        className="w-6 h-6"
+        className="w-5 h-5 flex-shrink-0"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -46,11 +46,11 @@ export default function GoogleReviewsBadge({
       </svg>
 
       {/* Stars */}
-      <div className="flex items-center gap-0.5">
+      <div className="flex items-center gap-0.5 flex-shrink-0">
         {[...Array(5)].map((_, i) => (
           <Star
             key={i}
-            className="w-4 h-4"
+            className="w-3.5 h-3.5"
             style={{ fill: "#fbbf24", color: "#fbbf24", stroke: "#fbbf24" }}
             fill="#fbbf24"
             stroke="#fbbf24"
@@ -59,13 +59,13 @@ export default function GoogleReviewsBadge({
       </div>
 
       {/* Review Count Text */}
-      <span className="text-white text-sm font-medium whitespace-nowrap">
-        {reviewCount} değerlendirmemizi İnceleyin!
+      <span className="text-white text-xs font-medium leading-snug">
+        {reviewCount} değerlendirmemizi inceleyin!
       </span>
 
       {/* Heart Icon */}
       <Heart
-        className="w-4 h-4 group-hover:scale-110 transition-transform duration-300"
+        className="w-3.5 h-3.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300"
         style={{ fill: "#ef4444", color: "#ef4444", stroke: "#ef4444" }}
         fill="#ef4444"
         stroke="#ef4444"
