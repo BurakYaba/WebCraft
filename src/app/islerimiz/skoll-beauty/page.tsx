@@ -164,7 +164,7 @@ export default function SkollBeautyPage() {
               <div className="relative">
                 <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl shadow-red-500/20 border border-gray-200">
                   <Image
-                    src="/projects/skoll.png"
+                    src="/projects/skoll.webp"
                     alt="Skoll Salon Web Sitesi"
                     width={1920}
                     height={1080}

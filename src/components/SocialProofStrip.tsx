@@ -2,11 +2,14 @@
 import { Star } from "lucide-react";
 
 const projects = [
-  { src: "/projects/atlantis.png", alt: "Atlantis Projesi" },
-  { src: "/projects/fluenta.png", alt: "Fluenta Projesi" },
-  { src: "/projects/homeandcar.png", alt: "Home & Car Projesi" },
-  { src: "/projects/mentoria.png", alt: "Mentoria Projesi" },
-  { src: "/projects/skoll.png", alt: "Skoll Projesi" },
+  { src: "/projects/atlantis.webp", alt: "Atlantis Projesi" },
+  { src: "/projects/fluenta.webp", alt: "Fluenta Projesi" },
+  { src: "/projects/homeandcar.webp", alt: "Home & Car Projesi" },
+  { src: "/projects/mentoria.webp", alt: "Mentoria Projesi" },
+  { src: "/projects/skoll.webp", alt: "Skoll Projesi" },
+  { src: "/projects/trend.webp", alt: "Trend Projesi" },
+  { src: "/projects/fethiyetem.webp", alt: "Fethiyetem Projesi" },
+  { src: "/projects/elit.webp", alt: "Elit Projesi" },
 ];
 
 // Duplicate for seamless CSS marquee loop
@@ -101,15 +104,13 @@ export default function SocialProofStrip() {
           {marqueeProjects.map((p, i) => (
             <div
               key={i}
-              className="flex-shrink-0 w-52 md:w-72 rounded-xl overflow-hidden border border-white/10"
+              className="flex-shrink-0 w-72 md:w-96 rounded-xl overflow-hidden border border-white/10 bg-[#1a1918]"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={p.src}
                 alt={p.alt}
-                width={288}
-                height={180}
-                className="w-full h-32 md:h-44 object-cover object-top"
+                className="w-full h-auto block"
                 loading="lazy"
               />
             </div>

@@ -25,7 +25,7 @@ const projects: Project[] = [
     description:
       "AI destekli 3D avatarlarla interaktif İngilizce öğrenme deneyimi sunan kapsamlı eğitim platformu",
     category: "Web Tasarım",
-    image: "/projects/fluenta.png",
+    image: "/projects/fluenta.webp",
     tags: ["Next.js", "React", "TypeScript", "AI"],
     year: "2025",
     client: "Fluenta",
@@ -38,7 +38,7 @@ const projects: Project[] = [
     description:
       "Öğrenci ve öğretmenleri akıllı eşleştirme sistemiyle buluşturan güvenilir özel ders platformu",
     category: "Web Tasarım",
-    image: "/projects/mentoria.png",
+    image: "/projects/mentoria.webp",
     tags: ["Next.js", "React", "TypeScript", "TailwindCSS"],
     year: "2025",
     client: "Mentoria",
@@ -50,7 +50,7 @@ const projects: Project[] = [
     description:
       "Muğla Menteşe'de Montessori, Reggio Emilia ve High Scope eğitim modelleriyle modern kreş web sitesi",
     category: "Web Tasarım",
-    image: "/projects/atlantis.png",
+    image: "/projects/atlantis.webp",
     tags: ["Next.js", "React", "TailwindCSS"],
     year: "2025",
     client: "Atlantis Kreş",
@@ -62,7 +62,7 @@ const projects: Project[] = [
     description:
       "Modern tasarım ve online randevu sistemi ile Fethiye'nin önde gelen güzellik salonunun dijital vitrini",
     category: "Web Tasarım",
-    image: "/projects/skoll.png",
+    image: "/projects/skoll.webp",
     tags: ["Next.js", "React", "Online Randevu", "SEO"],
     year: "2025",
     client: "Skoll Salon",
@@ -74,7 +74,7 @@ const projects: Project[] = [
     description:
       "Kapsamlı CMS ve mülk yönetim sistemi ile modern emlak platformu. 50+ özellik ve yerel SEO optimizasyonu",
     category: "Web Tasarım",
-    image: "/projects/homeandcar.png",
+    image: "/projects/homeandcar.webp",
     tags: ["Next.js 16", "TypeScript", "PostgreSQL", "CMS"],
     year: "2026",
     client: "Home and Car",

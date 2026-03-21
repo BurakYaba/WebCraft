@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "WebCraft",
     images: [
       {
-        url: "/projects/mentoria.png",
+        url: "/projects/mentoria.webp",
         width: 1200,
         height: 630,
         alt: "Mentoria - Özel Ders Platformu",
@@ -169,7 +169,7 @@ export default function MentoriaProjectPage() {
               <div className="relative">
                 <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl shadow-red-500/20 border border-gray-200">
                   <Image
-                    src="/projects/mentoria.png"
+                    src="/projects/mentoria.webp"
                     alt="Mentoria - Özel Ders Platformu"
                     width={1920}
                     height={1080}
@@ -1073,7 +1073,7 @@ export default function MentoriaProjectPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/projects/fluenta.png"
+                    src="/projects/fluenta.webp"
                     alt="Fluenta"
                     width={600}
                     height={400}
@@ -1100,7 +1100,7 @@ export default function MentoriaProjectPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/projects/skoll.png"
+                    src="/projects/skoll.webp"
                     alt="Skoll Salon"
                     width={600}
                     height={400}
@@ -1126,7 +1126,7 @@ export default function MentoriaProjectPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/projects/atlantis.png"
+                    src="/projects/atlantis.webp"
                     alt="Atlantis Kreş"
                     width={600}
                     height={400}
