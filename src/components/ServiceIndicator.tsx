@@ -10,6 +10,11 @@ const services = [
     name: "DİJİTAL PAZARLAMA",
     link: "/hizmetler/dijital-pazarlama",
   },
+  {
+    id: "seo-hizmeti",
+    name: "SEO HİZMETİ",
+    link: "/hizmetler/seo-hizmeti",
+  },
   { id: "e-ticaret", name: "E-TİCARET", link: "/hizmetler/e-ticaret" },
   {
     id: "mobil-uygulama",

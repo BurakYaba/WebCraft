@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import BentoGrid from "./BentoGrid";
+import ServiceCards from "./ServiceCards";
 
 export default function ServicesSection() {
   const headingRef = useRef<HTMLDivElement>(null);
@@ -48,7 +48,7 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <BentoGrid />
+        <ServiceCards />
       </div>
     </section>
   );

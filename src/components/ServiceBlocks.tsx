@@ -36,6 +36,15 @@ const services: ServiceBlockWithLink[] = [
     link: "/hizmetler/dijital-pazarlama",
   },
   {
+    id: "seo-hizmeti",
+    title: "SEO Hizmeti",
+    description:
+      "Profesyonel SEO hizmeti ile Google'da üst sıralarda yer alın. Teknik SEO, anahtar kelime stratejisi, içerik optimizasyonu ve backlink çalışmaları ile organik trafiğinizi artırıyoruz. 2015'ten beri 150'den fazla başarılı SEO projesi.",
+    image: "/bento/SEO.webp",
+    bgText: "SEO",
+    link: "/hizmetler/seo-hizmeti",
+  },
+  {
     id: "e-ticaret",
     title: "E-Ticaret",
     description:
@@ -58,7 +67,7 @@ const services: ServiceBlockWithLink[] = [
     title: "Yapay Zeka Chatbot",
     description:
       "İşletmeniz için yapay zeka destekli chatbot çözümleri geliştiriyoruz. 7/24 otomatik müşteri desteği, satış asistanlığı ve lead toplama ile iş süreçlerinizi otomatikleştirin.",
-    image: "/chatbot.webp",
+    image: "/bento/chatbot.webp",
     bgText: "AI",
     link: "/hizmetler/yapay-zeka-chatbot",
   },
@@ -67,7 +76,7 @@ const services: ServiceBlockWithLink[] = [
     title: "AI Otomasyon",
     description:
       "Yapay zeka destekli iş süreçleri otomasyonu ile tekrarlayan görevleri ortadan kaldırın. Akıllı belge işleme, veri analizi ve iş akışı optimizasyonu ile verimliliğinizi %60'a kadar artırın.",
-    image: "/automation.webp",
+    image: "/bento/automation.webp",
     bgText: "AUTO",
     link: "/hizmetler/yapay-zeka-otomasyon",
   },

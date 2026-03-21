@@ -363,7 +363,163 @@ Dijital pazarlama hizmetlerimiz şunları içerir:
       "Dijital Pazarlama Stratejisi",
     ],
 
-    relatedServices: ["web-tasarim", "e-ticaret", "yazilim-gelistirme"],
+    relatedServices: ["web-tasarim", "seo-hizmeti", "e-ticaret"],
+  },
+
+  {
+    slug: "seo-hizmeti",
+    title: "SEO Hizmeti",
+    shortTitle: "SEO",
+    description:
+      "Profesyonel SEO hizmeti ile Google'da üst sıralarda yer alın. Teknik SEO, anahtar kelime stratejisi, içerik optimizasyonu ve backlink çalışmaları ile organik trafiğinizi artırıyoruz.",
+    excerpt:
+      "Profesyonel SEO hizmeti ile arama motorlarında üst sıralara çıkın. Teknik SEO, içerik optimizasyonu ve backlink stratejisi. 2015'ten beri 150+ başarılı SEO projesi tamamladık.",
+    heroImage: "/bento/SEO.webp",
+    watermark: "S",
+
+    metaTitle: "SEO Hizmeti | Arama Motoru Optimizasyonu | WebCraft",
+    metaDescription:
+      "Profesyonel SEO hizmeti ile Google'da üst sıralarda yer alın. Teknik SEO, anahtar kelime araştırması, içerik optimizasyonu ve backlink stratejisi. Organik trafik artışı garantisi. 2015'ten beri 150+ SEO projesi.",
+    keywords:
+      "SEO hizmeti, arama motoru optimizasyonu, google seo, teknik seo, seo ajansı, organik trafik, seo danışmanlık, seo stratejisi, yerel seo, backlink",
+
+    whatSection: {
+      title: "SEO Hizmeti Nedir?",
+      content: `SEO (Arama Motoru Optimizasyonu), web sitenizin Google, Bing ve diğer arama motorlarında hedef anahtar kelimeler için üst sıralarda görünmesini sağlayan bir dizi teknik ve içerik çalışmasıdır. İyi bir SEO stratejisi, ücretli reklam harcaması yapmadan sürdürülebilir organik trafik ve nitelikli potansiyel müşteri akışı oluşturur.
+
+WebCraft olarak, 2015 yılından bu yana 150'den fazla işletme için kapsamlı SEO hizmeti sunuyoruz. Teknik SEO denetiminden içerik stratejisine, yerel SEO çalışmalarından otorite backlink inşasına kadar her aşamayı veri odaklı bir yaklaşımla yönetiyoruz.
+
+SEO hizmetlerimiz şunları kapsar:
+- Kapsamlı teknik SEO denetimi ve optimizasyonu
+- Anahtar kelime araştırması ve rekabet analizi
+- Sayfa içi (on-page) SEO optimizasyonu
+- İçerik stratejisi ve SEO uyumlu içerik üretimi
+- Backlink profili analizi ve otorite link inşası
+- Yerel SEO ve Google İşletme Profili optimizasyonu
+- Core Web Vitals ve site hızı optimizasyonu
+- Google Search Console ve Analytics raporlama`,
+    },
+
+    whySection: {
+      title: "Neden Profesyonel SEO Hizmeti?",
+      content: `Google'a her gün milyarlarca sorgu yapılmaktadır. Hedef müşterileriniz sizi arıyor; soru, rakiplerinizden önce mi yoksa sonra mı bulunduğunuzdur. Profesyonel SEO hizmeti, işletmenizin arama sonuçlarında rakiplerinin önüne geçmesini ve kalıcı bir dijital büyüme sağlamasını mümkün kılar.`,
+      benefits: [
+        "Google'da üst sıralarda sürdürülebilir görünürlük",
+        "Organik trafik ile düşük maliyetli müşteri edinimi",
+        "Markanıza olan güven ve otoritenin artması",
+        "Nitelikli ziyaretçiler ile yüksek dönüşüm oranı",
+        "Reklamlar kesildiğinde de devam eden organik büyüme",
+        "Yerel ve ulusal hedef kitlelere eş zamanlı ulaşım",
+        "Rakip analizine dayalı stratejik avantaj",
+        "Ölçülebilir ROI ve şeffaf raporlama",
+      ],
+    },
+
+    features: [
+      {
+        title: "Teknik SEO Denetimi",
+        description:
+          "Tarama hataları, yinelenen içerik, hız sorunları, indexleme ve mobil uyumluluk başta olmak üzere 100+ teknik kriter analizi.",
+      },
+      {
+        title: "Anahtar Kelime Araştırması",
+        description:
+          "Arama hacmi, rekabet düzeyi ve ticari niyet analizine dayalı anahtar kelime stratejisi ile en değerli sorgu kümelerini hedefleme.",
+      },
+      {
+        title: "Sayfa İçi (On-Page) SEO",
+        description:
+          "Title tag, meta açıklama, H1-H6 hiyerarşisi, schema markup, iç bağlantı yapısı ve görsellerin SEO uyumlu optimizasyonu.",
+      },
+      {
+        title: "İçerik Stratejisi",
+        description:
+          "SEO odaklı blog yazıları, hizmet sayfaları ve landing page içerikleri ile arama niyetini karşılayan kaliteli içerik üretimi.",
+      },
+      {
+        title: "Backlink ve Otorite İnşası",
+        description:
+          "Güvenilir ve sektörle alakalı kaynaklardan doğal backlink kazanımı ile domain otoritesini ve sıralama gücünü artırma.",
+      },
+      {
+        title: "Yerel SEO",
+        description:
+          "Google İşletme Profili optimizasyonu, NAP tutarlılığı ve yerel atıf çalışmaları ile bölgesel aramalarda üst sıralara çıkma.",
+      },
+    ],
+
+    process: [
+      {
+        number: 1,
+        title: "SEO Denetimi ve Analiz",
+        description:
+          "Mevcut web sitenizi, anahtar kelime profilinizi ve rakiplerinizi kapsamlı biçimde analiz ediyor; öncelikli fırsatları ve engelleri belirliyoruz.",
+      },
+      {
+        number: 2,
+        title: "Strateji ve Yol Haritası",
+        description:
+          "Hedeflerinize ve bütçenize uygun, ölçülebilir hedefler içeren 6-12 aylık bir SEO yol haritası oluşturuyoruz.",
+      },
+      {
+        number: 3,
+        title: "Optimizasyon ve İçerik",
+        description:
+          "Teknik düzeltmeleri hayata geçiriyor, sayfa içi optimizasyonları yapıyor ve içerik planını uygulamaya alıyoruz.",
+      },
+      {
+        number: 4,
+        title: "Raporlama ve Sürekli Geliştirme",
+        description:
+          "Aylık detaylı raporlar sunuyor; sıralama, trafik ve dönüşüm verilerine göre stratejiyi sürekli iyileştiriyoruz.",
+      },
+    ],
+
+    faqs: [
+      {
+        question: "SEO sonuçları ne kadar sürede görülür?",
+        answer:
+          "SEO organik bir süreçtir. Teknik düzeltmeler ve sayfa içi optimizasyonlar 4-8 hafta içinde etkisini göstermeye başlar. Anlamlı trafik artışı genellikle 3-6 ay içinde gözlemlenir; rekabetçi anahtar kelimelerde üst sıralara yerleşmek 6-12 ay sürebilir. Sonuçlar rakip yoğunluğuna ve sitenin mevcut durumuna göre değişir.",
+      },
+      {
+        question: "SEO hizmeti maliyeti nasıl belirlenir?",
+        answer:
+          "SEO hizmeti paketlerimiz; sitenizin mevcut durumu, hedeflediğiniz anahtar kelimeler, pazar rekabeti ve talep ettiğiniz hizmet kapsamına göre kişiselleştirilir. Her proje özel olarak değerlendirilir; ücretsiz ön analiz ve teklif için bizimle iletişime geçebilirsiniz.",
+      },
+      {
+        question: "Google'ın ilk sayfasına çıkmayı garanti ediyor musunuz?",
+        answer:
+          "Hiçbir SEO ajansı belirli bir sıralama garantisi veremez; zira Google'ın algoritması sürekli güncellenir. Bununla birlikte, kanıtlanmış yöntemler ve şeffaf bir yaklaşımla çalışıyor; müşterilerimizin büyük çoğunluğu 6-9 ay içinde hedef anahtar kelimelerinde ilk sayfa sıralamalarına ulaşıyor.",
+      },
+      {
+        question: "Yerel SEO hizmeti sunuyor musunuz?",
+        answer:
+          "Evet. Google İşletme Profili optimizasyonu, yerel alıntılar (citations), NAP tutarlılığı ve yerel içerik stratejisi ile bölgenizdeki aramalarda öne çıkmanızı sağlıyoruz. Özellikle Fethiye, Muğla ve çevresi için güçlü yerel SEO deneyimimiz bulunmaktadır.",
+      },
+      {
+        question: "Mevcut web sitemin SEO'sunu iyileştirebilir misiniz?",
+        answer:
+          "Evet. Yeni bir site şart değil; mevcut sitenizde teknik denetim, sayfa içi optimizasyon ve içerik güncellemeleri ile kısa sürede somut iyileştirmeler sağlayabiliriz. Ücretsiz ön SEO analizimiz ile nereden başlamanız gerektiğini birlikte belirliyoruz.",
+      },
+      {
+        question: "SEO ile Google Ads arasındaki fark nedir?",
+        answer:
+          "Google Ads (ücretli reklam), bütçe olduğu sürece anlık görünürlük sağlar; bütçe kesildiğinde trafik de durur. SEO ise zaman içinde organik otorite inşa eder ve uzun vadede çok daha düşük maliyetle sürekli trafik getirir. En etkili dijital strateji genellikle her ikisini birlikte kullanmaktır.",
+      },
+    ],
+
+    experienceYears: 10,
+    projectCount: "150+",
+    expertise: [
+      "Teknik SEO ve Site Denetimi",
+      "Anahtar Kelime Araştırması ve Rekabet Analizi",
+      "Sayfa İçi (On-Page) SEO",
+      "İçerik Stratejisi ve SEO İçerik Üretimi",
+      "Backlink ve Otorite İnşası",
+      "Yerel SEO ve Google İşletme Profili",
+    ],
+
+    relatedServices: ["dijital-pazarlama", "web-tasarim", "e-ticaret"],
   },
 
   {
@@ -853,7 +1009,7 @@ E-ticaret web tasarım hizmetlerimiz şunları içerir:
       "İşletmeniz için yapay zeka destekli chatbot çözümleri geliştiriyoruz. 7/24 otomatik müşteri desteği, satış asistanlığı ve lead toplama ile iş süreçlerinizi otomatikleştirin.",
     excerpt:
       "Yapay zeka chatbot geliştirme hizmeti ile müşteri hizmetlerinizi otomatikleştirin. GPT tabanlı akıllı chatbot, WhatsApp entegrasyonu ve çok dilli destek. İş verimliliğinizi %40 artırın.",
-    heroImage: "/chatbot.webp",
+    heroImage: "/bento/chatbot.webp",
     watermark: "AI",
 
     metaTitle: "Yapay Zeka Chatbot Geliştirme | AI Chatbot Hizmeti | WebCraft",
@@ -1008,7 +1164,7 @@ AI chatbot çözümlerimiz şunları kapsar:
       "Yapay zeka destekli iş süreçleri otomasyonu ile tekrarlayan görevleri ortadan kaldırın. Akıllı belge işleme, e-posta otomasyonu, veri analizi ve iş akışı optimizasyonu ile verimliliğinizi %60'a kadar artırın.",
     excerpt:
       "AI otomasyon hizmeti ile iş süreçlerinizi akıllı hale getirin. Belge işleme, veri analizi, e-posta otomasyonu ve iş akışı optimizasyonu. Tekrarlayan görevleri otomatikleştirin, maliyetleri düşürün.",
-    heroImage: "/automation.webp",
+    heroImage: "/bento/automation.webp",
     watermark: "AUTO",
 
     metaTitle: "Yapay Zeka İş Otomasyonu | AI Otomasyon Hizmeti | WebCraft",

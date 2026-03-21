@@ -191,6 +191,7 @@ C: Evet, aylık bakım paketleri sunuyoruz. Güvenlik güncellemeleri, içerik d
 
 ## Özel Hizmet Sayfaları
 
+- SEO Hizmeti: https://www.webcraft.tr/hizmetler/seo-hizmeti
 - Performans Odaklı Web Tasarım: https://www.webcraft.tr/hizmetler/performans-odakli-web-tasarim
 - KOBİ Web Tasarım: https://www.webcraft.tr/hizmetler/kobi-web-tasarim
 - SEO Uyumlu Web Sitesi: https://www.webcraft.tr/hizmetler/seo-uyumlu-web-sitesi

@@ -135,6 +135,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    // Main SEO service page
+    {
+      url: `${baseUrl}/hizmetler/seo-hizmeti`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
     // Niche service pages
     {
       url: `${baseUrl}/hizmetler/performans-odakli-web-tasarim`,
