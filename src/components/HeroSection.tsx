@@ -37,62 +37,62 @@ const HeroSection = memo(function HeroSection() {
       </svg>
 
       {/* Left-aligned Content Container */}
-      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-16 md:px-20 lg:px-24">
-        <div className="flex flex-col items-start justify-center max-w-4xl">
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-8 md:px-10 lg:px-14">
+        <div className="flex flex-col items-center lg:items-start justify-center max-w-5xl w-full">
           <div
-            className="text-red-500 font-bold tracking-[0.35em] uppercase text-[10px] md:text-xs mb-10 mt-4 md:mt-0 font-narrow ml-2 md:ml-4 text-left"
+            className="text-red-500 hidden md:block font-bold tracking-[0.35em] uppercase text-[10px] md:text-xs mb-10 mt-4 md:mt-0 font-narrow text-left"
             style={{ letterSpacing: "0.35em" }}
           >
-            PROFESYONEL WEB TASARIM AJANSI
+            200+ Proje &bull; 8+ Yıllık Deneyim &bull; Google&apos;da 4.9★
           </div>
-          <div className="w-full md:ml-16 lg:ml-20">
+          <div className="w-full">
             <h1
-              className="hero-critical font-extrabold text-[1.8rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] xl:text-[4rem] leading-[1.1] mb-8 text-left max-w-3xl"
+              className="hero-critical font-extrabold text-[1.2rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.0rem] leading-[1.15] mb-8 text-center lg:text-left max-w-5xl"
               style={{
                 letterSpacing: "-0.01em",
               }}
             >
-              3 Saniyede Açılan,
+              Profesyonel Web Tasarım Ajansı
               <br />
-              <span className="text-red-500">Google&apos;a Hazır</span>
+              <span className="text-red-500">3 Saniyede Açılan,</span>
               <br />
-              Web Siteleri
+              Müşteri Getiren Web Siteleri
             </h1>
             {/* Critical LCP element - optimized for faster rendering */}
-            <p className="hero-text mb-10 max-w-full sm:max-w-2xl text-center sm:text-left">
-              Site yaptırıp sonuç alamayan işletmeler için{" "}
-              <strong>performans odaklı web tasarım</strong>,{" "}
-              <strong>teknik SEO</strong> ve <strong>dijital pazarlama</strong>{" "}
-              çözümleri. 200&apos;den fazla projede kanıtlanmış yaklaşım.
+            <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90 mb-10 max-w-full sm:max-w-2xl text-center sm:text-left">
+              Performans odaklı, hızlı ve SEO uyumlu web siteleriyle markanızı
+              büyütüyoruz.
+              <br />
+              <span className="text-white block sm:inline">
+                <span className="block sm:inline">İşletmeniz için</span>{" "}
+                <span className="dropping-texts">
+                  <span className="text-red-500 font-bold">
+                    daha fazla müşteri.
+                  </span>
+                  <span className="text-red-500 font-bold">
+                    daha fazla dönüşüm.
+                  </span>
+                  <span className="text-red-500 font-bold">
+                    daha iyi bilinirlik.
+                  </span>
+                  <span className="text-red-500 font-bold">
+                    daha fazla görünürlük.
+                  </span>
+                </span>
+              </span>
             </p>
 
-            {/* Inline trust signal — visible on all screen sizes */}
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8 text-sm text-white/70">
-              <span className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block" />
-                200+ Tamamlanan Proje
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block" />
-                8+ Yıllık Deneyim
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block" />
-                Google&apos;da 4.9★
-              </span>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 text-center sm:text-left w-full sm:w-auto">
+            <div className="flex flex-row gap-2 sm:gap-3 mb-8 justify-center lg:justify-start">
               <Link
                 href="/iletisim"
-                className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-sm md:text-base uppercase tracking-wider w-full sm:w-auto"
+                className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 sm:py-3 px-4 sm:px-7 rounded-full transition-all duration-300 text-[10px] sm:text-sm md:text-base uppercase tracking-wide text-center"
                 prefetch={true}
               >
                 Ücretsiz Analiz Al
               </Link>
               <Link
                 href="/islerimiz"
-                className="border border-white text-white hover:bg-white hover:text-black font-bold py-3 px-8 rounded-full transition-all duration-300 text-sm md:text-base uppercase tracking-wider w-full sm:w-auto"
+                className="border border-white text-white hover:bg-white hover:text-black font-bold py-2 sm:py-3 px-4 sm:px-7 rounded-full transition-all duration-300 text-[10px] sm:text-sm md:text-base uppercase tracking-wide text-center"
                 prefetch={true}
               >
                 Projelerimizi Gör
@@ -100,7 +100,7 @@ const HeroSection = memo(function HeroSection() {
             </div>
 
             {/* Google Reviews Badge — shown on mobile too (was desktop-only before) */}
-            <div className="block sm:hidden mt-2">
+            <div className="flex justify-center sm:hidden mt-2">
               <GoogleReviewsBadge reviewCount={50} rating={4.9} />
             </div>
           </div>

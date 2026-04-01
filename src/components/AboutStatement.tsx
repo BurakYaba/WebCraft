@@ -14,7 +14,7 @@ export default function AboutStatement() {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     if (sectionRef.current) {
@@ -63,11 +63,11 @@ export default function AboutStatement() {
 
               <div className="text-lg md:text-xl text-gray-600 leading-relaxed space-y-4">
                 <p>
-                  2020 yılında kurulan WebCraft, Türkiye&apos;nin önde gelen
-                  dijital ajanslarından biri olma yolunda kararlı adımlarla
-                  ilerliyor. Yaratıcılık, teknoloji ve stratejiyi harmanlayan
-                  yaklaşımımızla, markaların dijital dönüşüm yolculuğunda
-                  güvenilir partneri oluyoruz.
+                  2015 yılından bu yana faaliyet gösteren WebCraft,
+                  Türkiye&apos;nin önde gelen dijital ajanslarından biri olma
+                  yolunda kararlı adımlarla ilerliyor. Yaratıcılık, teknoloji ve
+                  stratejiyi harmanlayan yaklaşımımızla, markaların dijital
+                  dönüşüm yolculuğunda güvenilir partneri oluyoruz.
                 </p>
 
                 <p>

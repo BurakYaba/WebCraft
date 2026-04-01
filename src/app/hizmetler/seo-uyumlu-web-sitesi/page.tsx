@@ -11,10 +11,10 @@ import {
   ArrowRight,
   Search,
   TrendingUp,
-  FileText,
-  Link2,
+  Code2,
+  Share2,
   Award,
-  BarChart,
+  Settings,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -33,7 +33,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 export const metadata: Metadata = {
   title: "SEO Uyumlu Web Sitesi | Google'da Üst Sıralara Çıkın | WebCraft",
   description:
-    "SEO uyumlu web sitesi tasarımı ile Google'da üst sıralarda yer alın. Teknik SEO optimizasyonu, anahtar kelime araştırması ve içerik stratejisi. Organik trafik artışı garantisi.",
+    "SEO uyumlu web sitesi tasarımı ile Google'da üst sıralarda yer alın. Teknik SEO altyapısı, semantik HTML yapısı, schema markup ve Core Web Vitals optimizasyonu ile doğru temelden başlayın.",
   keywords:
     "seo uyumlu web sitesi, google seo, arama motoru optimizasyonu, teknik seo, seo web tasarım, google'da üst sıralara çıkma",
   authors: [{ name: "WebCraft" }],
@@ -90,7 +90,7 @@ export default function SeoUyumluWebSitesiPage() {
     {
       question: "SEO uyumlu web sitesi ne kadar sürer?",
       answer:
-        "SEO uyumlu web sitesi projesi genellikle 3-6 hafta içinde tamamlanır. Anahtar kelime araştırması, içerik stratejisi, teknik SEO optimizasyonu ve test süreçleri dahildir. SEO sonuçları ise 3-6 ay içinde görülmeye başlar.",
+        "SEO uyumlu web sitesi projesi genellikle 3-6 hafta içinde tamamlanır. Teknik SEO kurulumu, schema markup, meta etiket yapılandırması, site haritası oluşturma ve test süreçleri dahildir. İlk organik sinyaller 2-3 ay içinde görülmeye başlar.",
     },
     {
       question: "Mevcut web sitemi SEO uyumlu hale getirebilir misiniz?",
@@ -100,12 +100,12 @@ export default function SeoUyumluWebSitesiPage() {
     {
       question: "SEO uyumlu web sitesi ile ne kadar trafik artışı olur?",
       answer:
-        "SEO uyumlu web siteleri ortalama %30-50 organik trafik artışı sağlar. Doğru anahtar kelime stratejisi ve kaliteli içerik ile 6 ay içinde trafik ikiye katlanabilir. Müşterilerimizin %80'i 1 yıl içinde trafik artışı görür.",
+        "SEO uyumlu altyapıya sahip bir site, teknik engeller olmadan Google tarafından taranır ve daha hızlı sıralanmaya başlar. Trafik artışının büyüklüğü içerik kalitesine ve rekabete göre değişse de doğru teknik temel, her SEO çalışmasının verimliliğini artırır.",
     },
     {
       question: "SEO uyumlu web sitesi Google'da ne kadar sürede sıralanır?",
       answer:
-        "Yeni web siteleri Google'da sıralanmaya 2-3 ay içinde başlar. İlk sonuçlar 3-6 ay içinde görülür. Rekabetçi anahtar kelimelerde üst sıralara çıkmak 6-12 ay sürebilir. Düzenli içerik güncellemeleri ve backlink stratejisi ile süre kısalır.",
+        "Yeni web siteleri Google'da sıralanmaya 2-3 ay içinde başlar. İlk sonuçlar 3-6 ay içinde görülür. Rekabetçi anahtar kelimelerde üst sıralara çıkmak 6-12 ay sürebilir. Teknik altyapısı güçlü siteler bu süreçte daha avantajlı bir başlangıç noktasına sahip olur.",
     },
   ];
 
@@ -170,13 +170,12 @@ export default function SeoUyumluWebSitesiPage() {
       <main className="min-h-screen bg-[#181716]">
         <Header />
         <Breadcrumb items={breadcrumbItems} />
-        <Breadcrumb items={breadcrumbItems} />
 
         {/* Hero Section */}
         <ServiceHero
           title="SEO Uyumlu Web Sitesi"
           subtitle="Google'da Üst Sıralara Çıkın"
-          description="Teknik SEO optimizasyonu, anahtar kelime stratejisi ve içerik optimizasyonu ile Google'da üst sıralarda yer alan web siteleri tasarlıyoruz. %30-50 organik trafik artışı garantisi."
+          description="Teknik SEO altyapısı, semantik HTML yapısı, schema markup ve Core Web Vitals optimizasyonu ile Google'ın anlayabileceği web siteleri inşa ediyoruz. Başarı için doğru temeli hazırlıyoruz."
           watermark="S"
           backgroundImage="/bento/web-tasarım.webp"
         />
@@ -214,9 +213,9 @@ export default function SeoUyumluWebSitesiPage() {
                 Teknik SEO optimizasyonu, site haritası oluşturma, robots.txt
                 yapılandırması, schema markup, meta etiketler, alt etiketler,
                 canonical URL&apos;ler ve breadcrumb navigasyonu gibi tüm SEO
-                standartlarını uyguluyoruz. Ayrıca, Google Search Console ve
-                Google Analytics entegrasyonu ile web sitenizin performansını
-                sürekli izliyoruz.
+                standartlarını uyguluyoruz. Google Search Console ve Google
+                Analytics entegrasyonunu proje tesliminde kuruyoruz; izleme
+                altyapınız baştan hazır olur.
               </p>
             </div>
           </div>
@@ -310,13 +309,14 @@ export default function SeoUyumluWebSitesiPage() {
               </div>
 
               <div className="p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-red-600 transition-colors duration-300">
-                <FileText className="w-12 h-12 text-red-600 mb-4" />
+                <Code2 className="w-12 h-12 text-red-600 mb-4" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Anahtar Kelime Stratejisi
+                  Semantik HTML Yapısı
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Hedef kitlenizin aradığı anahtar kelimeleri belirleme ve
-                  içeriklerinize entegre ederek organik trafik artışı sağlama
+                  H1–H6 başlık hiyerarşisi, anlamlı etiketler ve temiz URL
+                  yapısı ile Google&apos;ın sayfanızı doğru yorumlamasını
+                  sağlama
                 </p>
               </div>
 
@@ -332,13 +332,13 @@ export default function SeoUyumluWebSitesiPage() {
               </div>
 
               <div className="p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-red-600 transition-colors duration-300">
-                <Link2 className="w-12 h-12 text-red-600 mb-4" />
+                <Share2 className="w-12 h-12 text-red-600 mb-4" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Bağlantı Stratejisi
+                  Open Graph ve Sosyal Meta
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  İç bağlantılar, dış bağlantılar ve backlink stratejisi ile
-                  site otoritesini artırma ve Google sıralamasını yükseltme
+                  og:title, og:description ve og:image etiketleri ile sosyal
+                  medyada ve arama sonuçlarında güçlü bir görünüm sağlama
                 </p>
               </div>
 
@@ -355,13 +355,13 @@ export default function SeoUyumluWebSitesiPage() {
               </div>
 
               <div className="p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-red-600 transition-colors duration-300">
-                <BarChart className="w-12 h-12 text-red-600 mb-4" />
+                <Settings className="w-12 h-12 text-red-600 mb-4" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Performans İzleme
+                  Search Console Kurulumu
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Google Search Console, Google Analytics ve SEO araçları ile
-                  sürekli performans takibi ve raporlama
+                  Google Search Console ve Analytics hesaplarını sitenize
+                  bağlıyor, doğrulama ve index isteklerini teslimde tamamlıyoruz
                 </p>
               </div>
             </div>
@@ -511,12 +511,35 @@ export default function SeoUyumluWebSitesiPage() {
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-red-600 mr-3 flex-shrink-0 mt-0.5" />
                     <span className="text-gray-300">
-                      Düzenli içerik güncellemeleri
+                      Sayfa hız optimizasyonu (Core Web Vitals)
                     </span>
                   </li>
                 </ul>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Ongoing SEO CTA Divider */}
+        <section className="py-12 bg-gray-50 border-y border-gray-200">
+          <div className="max-w-4xl mx-auto px-6 md:px-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+              <p className="text-gray-900 font-semibold text-lg">
+                Siteniz yayına girdikten sonra sürekli SEO yönetimi mi
+                arıyorsunuz?
+              </p>
+              <p className="text-gray-600 mt-1">
+                Anahtar kelime kampanyaları, backlink stratejisi ve aylık
+                raporlama farklı bir uzmanlık gerektirir.
+              </p>
+            </div>
+            <Link
+              href="/hizmetler/seo-hizmeti"
+              className="flex-shrink-0 inline-flex items-center bg-red-600 text-white font-bold py-3 px-6 rounded-full hover:bg-red-700 transition-colors duration-300"
+            >
+              SEO Hizmetimiz
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
           </div>
         </section>
 
@@ -538,11 +561,11 @@ export default function SeoUyumluWebSitesiPage() {
                   1
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Anahtar Kelime Araştırması
+                  Hedef Kelime Analizi
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Hedef kitlenizin aradığı anahtar kelimeleri belirliyoruz.
-                  Rekabet analizi ve arama hacmi araştırması yapıyoruz.
+                  Sayfalarınızın hangi sorgulara yanıt vereceğini belirliyor,
+                  içerik yapısını ve URL mimarisini buna göre planlıyoruz.
                 </p>
               </div>
 
@@ -577,11 +600,12 @@ export default function SeoUyumluWebSitesiPage() {
                   4
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  İzleme ve Raporlama
+                  Kurulum ve Teslim
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Google Search Console ve Analytics ile performansı izliyor,
-                  aylık SEO raporları sunuyoruz.
+                  Search Console doğrulaması, index isteği ve Analytics
+                  kurulumunu tamamlayarak sitenizi izlemeye hazır teslim
+                  ediyoruz.
                 </p>
               </div>
             </div>
@@ -622,8 +646,8 @@ export default function SeoUyumluWebSitesiPage() {
                   <div>
                     <h3 className="font-semibold mb-1">Güvenilirlik</h3>
                     <p className="text-red-100">
-                      %98 müşteri memnuniyeti, %30-50 organik trafik artışı ve
-                      sürekli SEO izleme hizmetleri
+                      %98 müşteri memnuniyeti ve teknik SEO standartlarını
+                      eksiksiz uygulayan proje teslimleri
                     </p>
                   </div>
                 </div>

@@ -12,7 +12,7 @@ export interface LocationData {
   city?: string;
   timezone?: string;
   isp?: string;
-  
+
   // Additional info
   userAgent?: string;
   language?: string;
@@ -27,15 +27,15 @@ export async function getIPLocation(): Promise<Partial<LocationData>> {
   try {
     // Using ipapi.co - free tier allows 1000 requests/day
     // Alternative: ip-api.com (free tier: 45 requests/minute)
-    const response = await fetch('https://ipapi.co/json/', {
-      method: 'GET',
+    const response = await fetch("https://ipapi.co/json/", {
+      method: "GET",
       headers: {
-        'Accept': 'application/json',
+        Accept: "application/json",
       },
     });
 
     if (!response.ok) {
-      throw new Error('IP geolocation API failed');
+      throw new Error("IP geolocation API failed");
     }
 
     const data = await response.json();
@@ -53,37 +53,9 @@ export async function getIPLocation(): Promise<Partial<LocationData>> {
       timestamp: new Date().toISOString(),
     };
   } catch (error) {
-    console.error('Error fetching IP location:', error);
-    
-    // Fallback: Try alternative API (ip-api.com)
-    try {
-      const fallbackResponse = await fetch('http://ip-api.com/json/', {
-        method: 'GET',
-        headers: {
-          'Accept': 'application/json',
-        },
-      });
+    console.error("Error fetching IP location:", error);
 
-      if (fallbackResponse.ok) {
-        const fallbackData = await fallbackResponse.json();
-        return {
-          ip: fallbackData.query,
-          country: fallbackData.country,
-          countryCode: fallbackData.countryCode,
-          region: fallbackData.regionName,
-          city: fallbackData.city,
-          timezone: fallbackData.timezone,
-          isp: fallbackData.isp,
-          language: navigator.language || navigator.languages?.[0],
-          userAgent: navigator.userAgent,
-          timestamp: new Date().toISOString(),
-        };
-      }
-    } catch (fallbackError) {
-      console.error('Fallback IP geolocation also failed:', fallbackError);
-    }
-
-    // Return minimal data if all APIs fail
+    // Return minimal data if API fails
     return {
       language: navigator.language || navigator.languages?.[0],
       userAgent: navigator.userAgent,
@@ -118,7 +90,7 @@ export function formatLocationForEmail(location: LocationData): string {
       location.country,
     ].filter(Boolean);
     if (locationParts.length > 0) {
-      parts.push(`Konum: ${locationParts.join(', ')}`);
+      parts.push(`Konum: ${locationParts.join(", ")}`);
     }
   }
 
@@ -134,16 +106,14 @@ export function formatLocationForEmail(location: LocationData): string {
     parts.push(`ISP: ${location.isp}`);
   }
 
-
   if (location.language) {
     parts.push(`Dil: ${location.language}`);
   }
 
   if (location.timestamp) {
     const date = new Date(location.timestamp);
-    parts.push(`Zaman: ${date.toLocaleString('tr-TR')}`);
+    parts.push(`Zaman: ${date.toLocaleString("tr-TR")}`);
   }
 
-  return parts.length > 0 ? parts.join('\n') : 'Konum bilgisi alınamadı.';
+  return parts.length > 0 ? parts.join("\n") : "Konum bilgisi alınamadı.";
 }
-

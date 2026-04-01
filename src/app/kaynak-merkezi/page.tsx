@@ -66,7 +66,6 @@ export default function KaynakMerkeziPage() {
       <main className="min-h-screen bg-white">
         <Header />
         <Breadcrumb items={breadcrumbItems} />
-        <Breadcrumb items={breadcrumbItems} />
 
         {/* Hero Section */}
         <section className="pt-32 pb-20 bg-gradient-to-br from-gray-50 to-white">

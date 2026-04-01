@@ -95,68 +95,78 @@ export default function FreelancerVsAjansPage() {
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-200">
+                  <tbody className="divide-y divide-gray-200 text-gray-900">
                     <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Güvenilirlik</td>
+                      <td className="px-6 py-4 font-semibold text-gray-900">
+                        Güvenilirlik
+                      </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <X className="w-6 h-6 text-yellow-600" />
-                          <span className="text-sm">Değişken</span>
+                          <span className="text-sm text-gray-900">
+                            Değişken
+                          </span>
                         </div>
                       </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <Check className="w-6 h-6 text-green-600" />
-                          <span className="text-sm">Kurumsal güvence</span>
+                          <span className="text-sm text-gray-900">
+                            Kurumsal güvence
+                          </span>
                         </div>
                       </td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">
+                      <td className="px-6 py-4 font-semibold text-gray-900">
                         Uzmanlık Yelpazesi
                       </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <X className="w-6 h-6 text-red-600" />
-                          <span className="text-sm">Tek kişi, sınırlı</span>
+                          <span className="text-sm text-gray-900">
+                            Tek kişi, sınırlı
+                          </span>
                         </div>
                       </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <Check className="w-6 h-6 text-green-600" />
-                          <span className="text-sm">
+                          <span className="text-sm text-gray-900">
                             Ekip: Tasarımcı, Developer, SEO
                           </span>
                         </div>
                       </td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">
+                      <td className="px-6 py-4 font-semibold text-gray-900">
                         Proje Yönetimi
                       </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <X className="w-6 h-6 text-yellow-600" />
-                          <span className="text-sm">Temel takip</span>
+                          <span className="text-sm text-gray-900">
+                            Temel takip
+                          </span>
                         </div>
                       </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <Check className="w-6 h-6 text-green-600" />
-                          <span className="text-sm">
+                          <span className="text-sm text-gray-900">
                             Profesyonel süreç yönetimi
                           </span>
                         </div>
                       </td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">
+                      <td className="px-6 py-4 font-semibold text-gray-900">
                         Süreklilik / Destek
                       </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <X className="w-6 h-6 text-red-600" />
-                          <span className="text-sm">
+                          <span className="text-sm text-gray-900">
                             Hasta/tatil/projeden çıkma riski
                           </span>
                         </div>
@@ -164,50 +174,58 @@ export default function FreelancerVsAjansPage() {
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <Check className="w-6 h-6 text-green-600" />
-                          <span className="text-sm">
+                          <span className="text-sm text-gray-900">
                             7/24 kesintisiz destek
                           </span>
                         </div>
                       </td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Yasal Koruma</td>
+                      <td className="px-6 py-4 font-semibold text-gray-900">
+                        Yasal Koruma
+                      </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <X className="w-6 h-6 text-red-600" />
-                          <span className="text-sm">Bireysel sözleşme</span>
+                          <span className="text-sm text-gray-900">
+                            Bireysel sözleşme
+                          </span>
                         </div>
                       </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <Check className="w-6 h-6 text-green-600" />
-                          <span className="text-sm">
+                          <span className="text-sm text-gray-900">
                             Kurumsal sözleşme + garanti
                           </span>
                         </div>
                       </td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">
+                      <td className="px-6 py-4 font-semibold text-gray-900">
                         Zaman Çizelgesi
                       </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <X className="w-6 h-6 text-yellow-600" />
-                          <span className="text-sm">Esnek ama belirsiz</span>
+                          <span className="text-sm text-gray-900">
+                            Esnek ama belirsiz
+                          </span>
                         </div>
                       </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <Check className="w-6 h-6 text-green-600" />
-                          <span className="text-sm">
+                          <span className="text-sm text-gray-900">
                             Net milestones + deadline
                           </span>
                         </div>
                       </td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Maliyet</td>
+                      <td className="px-6 py-4 font-semibold text-gray-900">
+                        Maliyet
+                      </td>
                       <td className="px-6 py-4 text-center">
                         <div className="flex flex-col items-center gap-2">
                           <span className="text-2xl font-bold text-gray-900">
@@ -254,23 +272,33 @@ export default function FreelancerVsAjansPage() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                    <span>Bütçeniz kısıtlı (10.000₺ altı)</span>
+                    <span className="text-gray-700">
+                      Bütçeniz kısıtlı (10.000₺ altı)
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                    <span>Basit web sitesi (5-10 sayfa)</span>
+                    <span className="text-gray-700">
+                      Basit web sitesi (5-10 sayfa)
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                    <span>Aciliyet yok, esnek zaman çizelgesi</span>
+                    <span className="text-gray-700">
+                      Aciliyet yok, esnek zaman çizelgesi
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                    <span>Kişisel proje, MVP testi</span>
+                    <span className="text-gray-700">
+                      Kişisel proje, MVP testi
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                    <span>Tanıdığınız, güvendiğiniz bir freelancer var</span>
+                    <span className="text-gray-700">
+                      Tanıdığınız, güvendiğiniz bir freelancer var
+                    </span>
                   </li>
                 </ul>
                 <div className="mt-6 p-4 bg-blue-50 rounded-xl">
@@ -296,29 +324,39 @@ export default function FreelancerVsAjansPage() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                    <span>Kurumsal/büyüyen işletmesiniz</span>
+                    <span className="text-gray-700">
+                      Kurumsal/büyüyen işletmesiniz
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                    <span>
+                    <span className="text-gray-700">
                       Karmaşık fonksiyonlar (e-ticaret, API, özel özellikler)
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                    <span>Net deadline, zamanında teslim kritik</span>
+                    <span className="text-gray-700">
+                      Net deadline, zamanında teslim kritik
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                    <span>SEO, performans, güvenlik önemli</span>
+                    <span className="text-gray-700">
+                      SEO, performans, güvenlik önemli
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                    <span>Sürekli destek ve bakım gerekli</span>
+                    <span className="text-gray-700">
+                      Sürekli destek ve bakım gerekli
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
-                    <span>Uzun vadeli dijital varlık inşa ediyorsunuz</span>
+                    <span className="text-gray-700">
+                      Uzun vadeli dijital varlık inşa ediyorsunuz
+                    </span>
                   </li>
                 </ul>
                 <div className="mt-6 p-4 bg-green-50 rounded-xl border-l-4 border-green-600">

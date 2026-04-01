@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Star, Heart } from "lucide-react";
+import { Star } from "lucide-react";
 
 interface GoogleReviewsBadgeProps {
   googleBusinessUrl?: string;
@@ -18,7 +18,7 @@ export default function GoogleReviewsBadge({
       href={googleBusinessUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-3 py-2.5 hover:bg-white/20 transition-all duration-300 group max-w-full"
+      className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-3 py-1.5 lg:py-2.5 hover:bg-white/20 transition-all duration-300 group max-w-full"
     >
       {/* Google Logo */}
       <svg
@@ -59,17 +59,9 @@ export default function GoogleReviewsBadge({
       </div>
 
       {/* Review Count Text */}
-      <span className="text-white text-xs font-medium leading-snug">
+      <span className="text-white text-[10px] md:text-xs font-medium leading-snug">
         {reviewCount} değerlendirmemizi inceleyin!
       </span>
-
-      {/* Heart Icon */}
-      <Heart
-        className="w-3.5 h-3.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300"
-        style={{ fill: "#ef4444", color: "#ef4444", stroke: "#ef4444" }}
-        fill="#ef4444"
-        stroke="#ef4444"
-      />
     </Link>
   );
 }

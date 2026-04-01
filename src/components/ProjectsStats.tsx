@@ -5,17 +5,17 @@ import { motion } from "framer-motion";
 export default function ProjectsStats() {
   const stats = [
     {
-      number: "50+",
+      number: "200+",
       label: "Tamamlanan Proje",
       description: "Başarıyla teslim edilen dijital çözümler",
     },
     {
-      number: "25+",
+      number: "50+",
       label: "Mutlu Müşteri",
       description: "Uzun vadeli iş ortaklıkları kurduğumuz firmalar",
     },
     {
-      number: "3+",
+      number: "8+",
       label: "Yıllık Deneyim",
       description: "Dijital dünyada birikimli uzmanlık",
     },

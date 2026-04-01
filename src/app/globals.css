@@ -210,3 +210,134 @@ h6 {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ── Dropping texts animation (hero subheader) ── */
+.dropping-texts {
+  display: inline-block;
+  width: 280px;
+  text-align: left;
+  height: 1.6em;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+}
+
+.dropping-texts > span {
+  font-size: 0px;
+  opacity: 0;
+  margin-left: -20px;
+  position: absolute;
+  white-space: nowrap;
+  top: 0;
+}
+
+.dropping-texts > span:nth-child(1) {
+  animation: dropping-roll 8s linear infinite 0s;
+}
+.dropping-texts > span:nth-child(2) {
+  animation: dropping-roll 8s linear infinite 2s;
+}
+.dropping-texts > span:nth-child(3) {
+  animation: dropping-roll 8s linear infinite 4s;
+}
+.dropping-texts > span:nth-child(4) {
+  animation: dropping-roll 8s linear infinite 6s;
+}
+
+@keyframes dropping-roll {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -20px;
+    margin-top: 0px;
+  }
+  3% {
+    opacity: 1;
+  }
+  5% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  22% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  27% {
+    font-size: 0px;
+    opacity: 0.5;
+    margin-left: 15px;
+    margin-top: 60px;
+  }
+  100% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -20px;
+    margin-top: 0px;
+  }
+}
+
+/* Mobile-centered variant — uses left+translateX instead of margin-left */
+@keyframes dropping-roll-mobile {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  3% {
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  5% {
+    font-size: inherit;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  22% {
+    font-size: inherit;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  27% {
+    font-size: 0px;
+    opacity: 0.5;
+    left: 55%;
+    transform: translateX(-50%);
+  }
+  100% {
+    font-size: 0px;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 639px) {
+  .dropping-texts {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+  }
+  .dropping-texts > span {
+    margin-left: 0;
+  }
+  .dropping-texts > span:nth-child(1) {
+    animation: dropping-roll-mobile 8s linear infinite 0s;
+  }
+  .dropping-texts > span:nth-child(2) {
+    animation: dropping-roll-mobile 8s linear infinite 2s;
+  }
+  .dropping-texts > span:nth-child(3) {
+    animation: dropping-roll-mobile 8s linear infinite 4s;
+  }
+  .dropping-texts > span:nth-child(4) {
+    animation: dropping-roll-mobile 8s linear infinite 6s;
+  }
+}

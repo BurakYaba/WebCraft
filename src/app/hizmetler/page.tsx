@@ -249,44 +249,120 @@ export default function Services() {
           <section className="py-16 md:py-24 bg-[#1a1918]">
             <div className="max-w-7xl mx-auto px-6 md:px-10">
               <div className="mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-                  Özel Hizmet Alanlarımız
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                  Uzmanlaşmış Çözümler
                 </h2>
-                <div className="grid md:grid-cols-3 gap-6">
+                <p className="text-white/60 text-lg mb-8">
+                  Sektörünüze ve ihtiyacınıza özel, derinlemesine geliştirilmiş
+                  web ve dijital hizmetler.
+                </p>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                   <Link
                     href="/hizmetler/performans-odakli-web-tasarim"
-                    className="block bg-gray-800/50 p-6 rounded-lg hover:bg-gray-800/70 transition-colors"
+                    className="group block bg-gray-800/50 border border-gray-700/50 p-6 rounded-lg hover:bg-gray-800/80 hover:border-red-800/50 transition-all"
                   >
-                    <h3 className="text-xl font-bold text-white mb-3">
-                      ⚡ Performans Odaklı Web
+                    <div className="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
+                      <svg
+                        className="w-5 h-5 text-red-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M13 10V3L4 14h7v7l9-11h-7z"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-400 transition-colors">
+                      Performans Odaklı Web
                     </h3>
-                    <p className="text-white/70 text-sm">
-                      Core Web Vitals optimizasyonu, hızlı yükleme ve Next.js
-                      teknolojisi
+                    <p className="text-white/60 text-sm leading-relaxed">
+                      Core Web Vitals optimizasyonu, Next.js ve 2 saniyenin
+                      altında yükleme süresi.
                     </p>
                   </Link>
                   <Link
                     href="/hizmetler/kobi-web-tasarim"
-                    className="block bg-gray-800/50 p-6 rounded-lg hover:bg-gray-800/70 transition-colors"
+                    className="group block bg-gray-800/50 border border-gray-700/50 p-6 rounded-lg hover:bg-gray-800/80 hover:border-red-800/50 transition-all"
                   >
-                    <h3 className="text-xl font-bold text-white mb-3">
-                      🏢 KOBİ Web Tasarım
+                    <div className="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
+                      <svg
+                        className="w-5 h-5 text-red-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-400 transition-colors">
+                      KOBİ Web Tasarım
                     </h3>
-                    <p className="text-white/70 text-sm">
-                      Küçük işletmelere özel, uygun fiyatlı web tasarım
-                      paketleri
+                    <p className="text-white/60 text-sm leading-relaxed">
+                      Küçük ve orta ölçekli işletmelere özel, bütçe dostu
+                      profesyonel web siteleri.
                     </p>
                   </Link>
                   <Link
                     href="/hizmetler/seo-uyumlu-web-sitesi"
-                    className="block bg-gray-800/50 p-6 rounded-lg hover:bg-gray-800/70 transition-colors"
+                    className="group block bg-gray-800/50 border border-gray-700/50 p-6 rounded-lg hover:bg-gray-800/80 hover:border-red-800/50 transition-all"
                   >
-                    <h3 className="text-xl font-bold text-white mb-3">
-                      🔍 SEO Uyumlu Web Sitesi
+                    <div className="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
+                      <svg
+                        className="w-5 h-5 text-red-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-400 transition-colors">
+                      SEO Uyumlu Web Sitesi
                     </h3>
-                    <p className="text-white/70 text-sm">
-                      Google&apos;da üst sıralarda yer alan, teknik SEO odaklı
-                      web siteleri
+                    <p className="text-white/60 text-sm leading-relaxed">
+                      Teknik SEO altyapısı yerleşik, schema markup ve site hızı
+                      optimize edilmiş web siteleri.
+                    </p>
+                  </Link>
+                  <Link
+                    href="/kurumsal-web-sitesi"
+                    className="group block bg-gray-800/50 border border-gray-700/50 p-6 rounded-lg hover:bg-gray-800/80 hover:border-red-800/50 transition-all"
+                  >
+                    <div className="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
+                      <svg
+                        className="w-5 h-5 text-red-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-400 transition-colors">
+                      Kurumsal Web Sitesi
+                    </h3>
+                    <p className="text-white/60 text-sm leading-relaxed">
+                      Kurumsal kimlik, çok bölümlü yapı ve B2B müşteri güveni
+                      için tasarlanmış kurumsal web siteleri.
                     </p>
                   </Link>
                 </div>

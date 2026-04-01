@@ -47,7 +47,7 @@ export default function ProjectsHero() {
         >
           <div className="text-center">
             <div className="text-3xl lg:text-4xl font-bold text-red-500 mb-2">
-              50+
+              200+
             </div>
             <div className="text-white/60 text-sm uppercase tracking-wider">
               Proje
@@ -55,7 +55,7 @@ export default function ProjectsHero() {
           </div>
           <div className="text-center">
             <div className="text-3xl lg:text-4xl font-bold text-red-500 mb-2">
-              25+
+              50+
             </div>
             <div className="text-white/60 text-sm uppercase tracking-wider">
               Mutlu Müşteri
@@ -63,7 +63,7 @@ export default function ProjectsHero() {
           </div>
           <div className="text-center">
             <div className="text-3xl lg:text-4xl font-bold text-red-500 mb-2">
-              3+
+              8+
             </div>
             <div className="text-white/60 text-sm uppercase tracking-wider">
               Yıl Deneyim

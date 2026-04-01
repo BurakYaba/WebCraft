@@ -71,6 +71,16 @@ const comparisons = [
     gradient: "from-gray-50 to-blue-50",
     borderColor: "border-gray-500",
   },
+  {
+    title: "Web Tasarım Ajansı Nasıl Seçilir?",
+    description:
+      "Portfolio analizi, referans kontrolü, sözleşme tuzakları, fiyat-performans dengesi ve SEO uzmanlığı — doğru ajansı bulmak için 7 kritik kriter ve kırmızı bayrak listesi.",
+    href: "/en-iyi-web-tasarim-ajansi",
+    icon: "🎯",
+    tags: ["7 Kriter", "Ajans Seçimi", "Rehber"],
+    gradient: "from-amber-50 to-orange-50",
+    borderColor: "border-amber-500",
+  },
 ];
 
 export default function KarsilastirmaPage() {
