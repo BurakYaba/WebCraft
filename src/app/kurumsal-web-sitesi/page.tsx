@@ -299,7 +299,7 @@ export default function KurumsalWebSitesiPage() {
                 Kurumsal Web Sitesi Neden Farklı?
               </h2>
               <p className="text-lg text-gray-600">
-                KOBİ'lere yapılan bir web sitesi ile 50+ çalışanlı, çok
+                KOBİ&apos;lere yapılan bir web sitesi ile 50+ çalışanlı, çok
                 departmanlı bir şirkete yapılan web sitesi birbirinden köklü
                 biçimde ayrışır. Aşağıdakilerden en az ikisi sizin için
                 gerekliyse, ihtiyacınız kurumsal web sitesidir:
@@ -536,10 +536,10 @@ export default function KurumsalWebSitesiPage() {
                 <p className="text-gray-300 leading-relaxed mb-6">
                   6698 Sayılı KVKK kapsamındaki yükümlülüklerinizi web sitenizde
                   eksiksiz karşılamak artık bir tercih değil, zorunluluk.
-                  Kurumsal web sitelerinde sadece "Gizlilik Politikası" sayfası
-                  koymak yeterli değil; ziyaretçi verilerinin nasıl toplandığı,
-                  işlendiği ve saklandığı teknik altyapıyla birlikte
-                  belgelenmeli.
+                  Kurumsal web sitelerinde sadece &quot;Gizlilik
+                  Politikası&quot; sayfası koymak yeterli değil; ziyaretçi
+                  verilerinin nasıl toplandığı, işlendiği ve saklandığı teknik
+                  altyapıyla birlikte belgelenmeli.
                 </p>
                 <ul className="space-y-3">
                   {[
