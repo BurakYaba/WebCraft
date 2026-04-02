@@ -29,6 +29,12 @@ Crawl-delay: 1
 # Allow all major search engines
 User-agent: Googlebot
 Allow: /
+Allow: /_next/image
+Disallow: /_next/static/
+Disallow: /_next/media/
+Disallow: /apple-icon
+Disallow: /icon
+Disallow: /api/
 
 User-agent: Bingbot
 Allow: /

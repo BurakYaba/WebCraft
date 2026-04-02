@@ -162,6 +162,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/hizmetler/yapay-zeka-chatbot`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/islerimiz`,
       lastModified: new Date(),
       changeFrequency: "weekly",

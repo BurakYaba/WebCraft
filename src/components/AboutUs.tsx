@@ -42,7 +42,7 @@ export default function AboutUs() {
             className="text-white"
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-display">
-              Profesyonel Web Tasarım Ajansı
+              Sonuç Odaklı Dijital Büyüme
             </h2>
             <p className="text-lg md:text-xl mb-8 text-white/90 font-body leading-relaxed">
               2015 yılından bu yana <strong>web tasarım</strong>,{" "}
