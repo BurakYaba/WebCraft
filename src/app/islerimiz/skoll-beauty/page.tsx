@@ -10,16 +10,16 @@ export const metadata: Metadata = {
   title:
     "Skoll Salon Web Sitesi | Güzellik Salonu Dijital Çözümleri | WebCraft",
   description:
-    "Skoll Salon için modern tasarım, online randevu sistemi ve yerel SEO ile Fethiye'nin öne çıkan güzellik salonu web sitesi. Profesyonel kuaför web tasarım hizmeti.",
+    "Skoll Salon için modern tasarım, online randevu sistemi ve yerel SEO ile Muğla'nın öne çıkan güzellik salonu web sitesi. Profesyonel kuaför web tasarım hizmeti.",
   keywords:
-    "güzellik salonu web sitesi, kuaför web tasarımı, online randevu sistemi, spa web sitesi, profesyonel web tasarım, yerel SEO, Fethiye web tasarım, beauty salon website",
+    "güzellik salonu web sitesi, kuaför web tasarımı, online randevu sistemi, spa web sitesi, profesyonel web tasarım, yerel SEO, Muğla web tasarım, beauty salon website",
   alternates: {
     canonical: "/islerimiz/skoll-beauty",
   },
   openGraph: {
     title: "Skoll Salon Web Sitesi | Güzellik Salonu Dijital Çözümleri",
     description:
-      "Modern tasarım ve online randevu sistemi ile Fethiye'nin önde gelen güzellik salonunun dijital dönüşüm hikayesi.",
+      "Modern tasarım ve online randevu sistemi ile Muğla'nın önde gelen güzellik salonunun dijital dönüşüm hikayesi.",
     type: "article",
     locale: "tr_TR",
   },
@@ -40,7 +40,7 @@ export default function SkollBeautyPage() {
     "@type": "WebPage",
     name: "Skoll Salon Web Sitesi | Güzellik Salonu Dijital Çözümleri",
     description:
-      "Skoll Salon için modern tasarım, online randevu sistemi ve yerel SEO ile Fethiye'nin öne çıkan güzellik salonu web sitesi. Profesyonel kuaför web tasarım hizmeti.",
+      "Skoll Salon için modern tasarım, online randevu sistemi ve yerel SEO ile Muğla'nın öne çıkan güzellik salonu web sitesi. Profesyonel kuaför web tasarım hizmeti.",
     url: "https://www.webcraft.tr/islerimiz/skoll-beauty",
     inLanguage: "tr",
   };
@@ -59,7 +59,7 @@ export default function SkollBeautyPage() {
       <Breadcrumb items={breadcrumbItems} />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 px-6 md:px-10 overflow-hidden">
+        <section className="relative pt-24 md:pt-32 pb-12 md:pb-20 px-6 md:px-10 overflow-hidden">
           {/* Background gradient effects */}
           <div className="absolute inset-0 " />
           <div className="absolute top-20 left-10 w-72 h-72  rounded-full blur-3xl" />
@@ -77,14 +77,14 @@ export default function SkollBeautyPage() {
                   </span>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
                   <span className="text-red-500">Skoll Salon</span>
                   <br />
                   <span className="text-gray-900">Dijital Dönüşüm</span>
                 </h1>
 
-                <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                  Fethiye&apos;nin önde gelen güzellik ve bakım salonlarından
+                <p className="text-base md:text-xl text-gray-700 mb-8 leading-relaxed">
+                  Muğla&apos;nın önde gelen güzellik ve bakım salonlarından
                   Skoll Salon için modern{" "}
                   <Link
                     href="/hizmetler/web-tasarim"
@@ -103,28 +103,24 @@ export default function SkollBeautyPage() {
                 </p>
 
                 {/* Key Metrics */}
-                <div className="grid grid-cols-3 gap-6 mb-8">
-                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-4 border border-red-200">
-                    <div className="text-3xl font-bold text-red-500 mb-1">
-                      %120
+                <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 mb-8">
+                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-red-200">
+                    <div className="text-base sm:text-2xl md:text-3xl font-bold text-red-500 mb-1">
+                      WhatsApp
                     </div>
-                    <div className="text-sm text-gray-600">
-                      Online Randevu Artışı
-                    </div>
+                    <div className="text-sm text-gray-600">Online Randevu</div>
                   </div>
-                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-4 border border-red-200">
-                    <div className="text-3xl font-bold text-red-500 mb-1">
-                      3x
+                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-red-200">
+                    <div className="text-base sm:text-2xl md:text-3xl font-bold text-red-500 mb-1">
+                      Next.js
                     </div>
-                    <div className="text-sm text-gray-600">Web Trafiği</div>
+                    <div className="text-sm text-gray-600">Platform</div>
                   </div>
-                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-4 border border-red-200">
-                    <div className="text-3xl font-bold text-red-500 mb-1">
-                      4.8/5
+                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-red-200">
+                    <div className="text-base sm:text-2xl md:text-3xl font-bold text-red-500 mb-1">
+                      Yerel SEO
                     </div>
-                    <div className="text-sm text-gray-600">
-                      Müşteri Memnuniyeti
-                    </div>
+                    <div className="text-sm text-gray-600">Google Sıralama</div>
                   </div>
                 </div>
 
@@ -134,7 +130,7 @@ export default function SkollBeautyPage() {
                     href="https://skollbeauty.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg shadow-red-500/25"
+                    className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-4 py-2 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-base hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg shadow-red-500/25"
                   >
                     Siteyi Ziyaret Et
                     <svg
@@ -153,7 +149,7 @@ export default function SkollBeautyPage() {
                   </a>
                   <Link
                     href="/islerimiz"
-                    className="inline-flex items-center gap-2 bg-white backdrop-blur-sm text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 border border-gray-300"
+                    className="inline-flex items-center gap-2 bg-white backdrop-blur-sm text-gray-900 px-4 py-2 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-base hover:bg-gray-100 transition-all duration-300 border border-gray-300"
                   >
                     ← Tüm Projeler
                   </Link>
@@ -181,15 +177,15 @@ export default function SkollBeautyPage() {
         </section>
 
         {/* Project Overview - Beauty Industry Focused */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
             <div className="bg-gray-50 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-gray-200">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                 Proje Özeti: Güzellik Sektöründe Dijital Dönüşüm
               </h2>
               <div className="prose prose-invert max-w-none">
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Fethiye&apos;de saç, vücut ve tırnak bakımı alanında hizmet
+                <p className="text-sm md:text-sm md:text-sm md:text-lg text-gray-700 leading-relaxed mb-6">
+                  Muğla&apos;da saç, vücut ve tırnak bakımı alanında hizmet
                   veren <strong className="text-gray-900">Skoll Salon</strong>,
                   modern bir{" "}
                   <Link
@@ -202,7 +198,7 @@ export default function SkollBeautyPage() {
                   salonu sektöründe online görünürlük ve randevu yönetimi kritik
                   önem taşıyor.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-lg text-gray-700 leading-relaxed">
                   WebCraft olarak, Skoll Salon için estetik değerleri yansıtan
                   bir tasarım dili oluşturduk.{" "}
                   <strong className="text-gray-900">
@@ -217,7 +213,7 @@ export default function SkollBeautyPage() {
                     yerel SEO optimizasyonu
                   </Link>{" "}
                   ile müşteri edinme maliyetlerini düşürürken online
-                  rezervasyonları %120 oranında artırdık.
+                  rezervasyonları dijitale taşıdık.
                 </p>
               </div>
             </div>
@@ -225,13 +221,13 @@ export default function SkollBeautyPage() {
         </section>
 
         {/* Client Challenge - Problem-Solution Format */}
-        <section className="py-20 px-6 md:px-10 bg-white">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Müşteri İhtiyacı ve Çözümümüz
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Güzellik sektöründe dijital varlık ve randevu yönetimi
                 zorlukları
               </p>
@@ -239,8 +235,8 @@ export default function SkollBeautyPage() {
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Challenge */}
-              <div className="bg-red-50 backdrop-blur-sm rounded-2xl p-8 border border-red-200">
-                <div className="flex items-center gap-3 mb-6">
+              <div className="bg-red-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-red-200">
+                <div className="flex items-center gap-2 mb-4 md:mb-6">
                   <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-red-400"
@@ -256,12 +252,12 @@ export default function SkollBeautyPage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">
+                  <h3 className="text-sm md:text-2xl font-bold text-gray-900">
                     Zorluklar
                   </h3>
                 </div>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-gray-700">
+                <ul className="space-y-2 md:space-y-4">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       Eski web sitesi mobil uyumlu değildi ve{" "}
@@ -270,7 +266,7 @@ export default function SkollBeautyPage() {
                       </strong>
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       Randevular sadece telefonla alınıyor,{" "}
@@ -280,7 +276,7 @@ export default function SkollBeautyPage() {
                       yaşanıyordu
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       Hizmetler ve fiyatlar net değil,{" "}
@@ -290,14 +286,14 @@ export default function SkollBeautyPage() {
                       çoktu
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       <strong className="text-gray-900">Yerel rekabette</strong>{" "}
                       dijital varlık eksikliği dezavantaj yaratıyordu
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       Salon atmosferini ve hizmet kalitesini{" "}
@@ -310,8 +306,8 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Solution */}
-              <div className="bg-green-50 backdrop-blur-sm rounded-2xl p-8 border border-green-200">
-                <div className="flex items-center gap-3 mb-6">
+              <div className="bg-green-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-green-200">
+                <div className="flex items-center gap-2 mb-4 md:mb-6">
                   <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-green-600"
@@ -327,12 +323,12 @@ export default function SkollBeautyPage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">
+                  <h3 className="text-sm md:text-2xl font-bold text-gray-900">
                     Çözümlerimiz
                   </h3>
                 </div>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-gray-700">
+                <ul className="space-y-2 md:space-y-4">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <Link
@@ -344,7 +340,7 @@ export default function SkollBeautyPage() {
                       ile tüm cihazlarda mükemmel görünüm
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <strong className="text-gray-900">
@@ -353,7 +349,7 @@ export default function SkollBeautyPage() {
                       ile mesai dışı rezervasyonlar
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       Detaylı{" "}
@@ -363,7 +359,7 @@ export default function SkollBeautyPage() {
                       ile şeffaflık
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <Link
@@ -372,11 +368,11 @@ export default function SkollBeautyPage() {
                       >
                         Yerel SEO optimizasyonu
                       </Link>{" "}
-                      ile &quot;Fethiye güzellik salonu&quot; aramalarında üst
+                      ile &quot;Muğla güzellik salonu&quot; aramalarında üst
                       sıralarda yer alma
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <strong className="text-gray-900">
@@ -392,20 +388,20 @@ export default function SkollBeautyPage() {
         </section>
 
         {/* Design Approach - Visual Focus */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Tasarım Yaklaşımımız
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Lüks ve şıklığı yansıtan görsel tasarım dili
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
               {/* Design Element 1 */}
-              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
+              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
                 <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
                     className="w-8 h-8 text-gray-900"
@@ -421,10 +417,10 @@ export default function SkollBeautyPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                   Lüks Renk Paleti
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Siyah, beyaz ve altın tonlarını kullanarak{" "}
                   <strong className="text-gray-900">sofistike ve lüks</strong>{" "}
                   bir atmosfer yarattık. Premium markalarda kullanılan bu klasik
@@ -434,7 +430,7 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Design Element 2 */}
-              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
+              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
                 <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
                     className="w-8 h-8 text-gray-900"
@@ -450,10 +446,10 @@ export default function SkollBeautyPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                   Görsel Ağırlıklı İçerik
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Profesyonel fotoğraflarla{" "}
                   <strong className="text-gray-900">hizmet kalitesini</strong>{" "}
                   gösterdik. Her hizmet için detaylı görsel galeri oluşturduk.
@@ -461,7 +457,7 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Design Element 3 */}
-              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
+              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
                 <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
                     className="w-8 h-8 text-gray-900"
@@ -477,10 +473,10 @@ export default function SkollBeautyPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                   Mobil Öncelikli
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Kullanıcıların %75&apos;i mobil cihazdan eriştiği için{" "}
                   <strong className="text-gray-900">mobile-first</strong>{" "}
                   yaklaşımla tasarladık. Tek elle kullanım optimizasyonu yaptık.
@@ -491,26 +487,26 @@ export default function SkollBeautyPage() {
         </section>
 
         {/* Key Features - Service-Specific */}
-        <section className="py-20 px-6 md:px-10 bg-white">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Temel Özellikler ve Fonksiyonlar
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Güzellik salonlarına özel dijital çözümler
               </p>
             </div>
 
             <div className="space-y-6">
               {/* Feature 1 */}
-              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="text-2xl font-bold text-gray-900">1</span>
+                    <span className="text-sm md:text-2xl font-bold text-gray-900">1</span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-sm md:text-2xl font-bold text-gray-900 mb-3">
                       Online Randevu Sistemi
                     </h3>
                     <p className="text-gray-700 leading-relaxed mb-4">
@@ -536,13 +532,13 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Feature 2 */}
-              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="text-2xl font-bold text-gray-900">2</span>
+                    <span className="text-sm md:text-2xl font-bold text-gray-900">2</span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-sm md:text-2xl font-bold text-gray-900 mb-3">
                       Hizmet Katalogu ve Fiyatlandırma
                     </h3>
                     <p className="text-gray-700 leading-relaxed mb-4">
@@ -567,13 +563,13 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Feature 3 */}
-              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="text-2xl font-bold text-gray-900">3</span>
+                    <span className="text-sm md:text-2xl font-bold text-gray-900">3</span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-sm md:text-2xl font-bold text-gray-900 mb-3">
                       Yerel SEO ve Google Maps Entegrasyonu
                     </h3>
                     <p className="text-gray-700 leading-relaxed mb-4">
@@ -605,13 +601,13 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Feature 4 */}
-              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="text-2xl font-bold text-gray-900">4</span>
+                    <span className="text-sm md:text-2xl font-bold text-gray-900">4</span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-sm md:text-2xl font-bold text-gray-900 mb-3">
                       Sosyal Medya Entegrasyonu
                     </h3>
                     <p className="text-gray-700 leading-relaxed mb-4">
@@ -639,22 +635,22 @@ export default function SkollBeautyPage() {
         </section>
 
         {/* Tech Stack - Beauty Industry Tools */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Teknoloji Yığını
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Modern web teknolojileri ve sektöre özel entegrasyonlar
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Tech 1 */}
-              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="text-4xl mb-4">⚛️</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/nextjs.svg" alt="Next.js" className="w-10 h-10 object-contain" /></div>
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   Next.js & React
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -663,9 +659,9 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Tech 2 */}
-              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="text-4xl mb-4">📅</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform"><svg className="w-10 h-10 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" strokeWidth="2"/><path d="M16 2v4M8 2v4M3 10h18" strokeWidth="2"/></svg></div>
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   Randevu API
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -674,9 +670,9 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Tech 3 */}
-              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="text-4xl mb-4">🎨</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/tailwindcss.svg" alt="TailwindCSS" className="w-10 h-10 object-contain" /></div>
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   TailwindCSS
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -685,9 +681,9 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Tech 4 */}
-              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="text-4xl mb-4">🔍</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/googlemybusiness.svg" alt="Google My Business" className="w-10 h-10 object-contain" /></div>
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   Local SEO Tools
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -696,9 +692,9 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Tech 5 */}
-              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="text-4xl mb-4">📱</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/instagram.svg" alt="Instagram" className="w-10 h-10 object-contain" /></div>
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   Instagram API
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -707,9 +703,9 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Tech 6 */}
-              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="text-4xl mb-4">💬</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/whatsapp.svg" alt="WhatsApp" className="w-10 h-10 object-contain" /></div>
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   WhatsApp Business
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -718,9 +714,9 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Tech 7 */}
-              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="text-4xl mb-4">📊</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/googleanalytics.svg" alt="Analytics" className="w-10 h-10 object-contain" /></div>
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   Analytics
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -729,9 +725,9 @@ export default function SkollBeautyPage() {
               </div>
 
               {/* Tech 8 */}
-              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="text-4xl mb-4">🚀</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Vercel</h3>
+              <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/vercel.svg" alt="Vercel" className="w-10 h-10 object-contain" /></div>
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">Vercel</h3>
                 <p className="text-gray-600 text-sm">
                   Hızlı ve güvenilir hosting altyapısı
                 </p>
@@ -741,38 +737,36 @@ export default function SkollBeautyPage() {
         </section>
 
         {/* Results & Impact */}
-        <section className="py-20 px-6 md:px-10 bg-white">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Proje Sonuçları ve Etkisi
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Ölçülebilir başarı ve iş sonuçları
               </p>
             </div>
 
             {/* Impact Stats */}
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 text-center">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-5 sm:p-8 border border-gray-200 text-center">
                 <div className="text-5xl md:text-6xl font-bold text-gray-900 mb-3">
-                  %120
+                  WhatsApp
                 </div>
-                <div className="text-lg text-gray-700 mb-2">
-                  Online Randevu Artışı
-                </div>
-                <div className="text-sm text-white/50">İlk 3 ayda</div>
+                <div className="text-lg text-gray-700 mb-2">Online Randevu</div>
+                <div className="text-sm text-white/50">Entegrasyon</div>
               </div>
 
-              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 text-center">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-5 sm:p-8 border border-gray-200 text-center">
                 <div className="text-5xl md:text-6xl font-bold text-gray-900 mb-3">
-                  3x
+                  Next.js
                 </div>
-                <div className="text-lg text-gray-700 mb-2">Web Trafiği</div>
-                <div className="text-sm text-white/50">Organik büyüme</div>
+                <div className="text-lg text-gray-700 mb-2">Platform</div>
+                <div className="text-sm text-white/50">Modern altyapı</div>
               </div>
 
-              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 text-center">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-5 sm:p-8 border border-gray-200 text-center">
                 <div className="text-5xl md:text-6xl font-bold text-gray-900 mb-3">
                   %85
                 </div>
@@ -780,27 +774,23 @@ export default function SkollBeautyPage() {
                 <div className="text-sm text-white/50">Responsive tasarım</div>
               </div>
 
-              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 text-center">
+              <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-5 sm:p-8 border border-gray-200 text-center">
                 <div className="text-5xl md:text-6xl font-bold text-gray-900 mb-3">
-                  4.8/5
+                  %99.9
                 </div>
-                <div className="text-lg text-gray-700 mb-2">
-                  Müşteri Memnuniyeti
-                </div>
-                <div className="text-sm text-white/50">
-                  Online değerlendirmeler
-                </div>
+                <div className="text-lg text-gray-700 mb-2">Uptime</div>
+                <div className="text-sm text-white/50">Kesintisiz hizmet</div>
               </div>
             </div>
 
             {/* Detailed Impact */}
             <div className="bg-gray-50 backdrop-blur-xl rounded-2xl p-8 md:p-12 border border-gray-200">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
                 İş Sonuçları ve Dönüşümler
               </h3>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="text-xl font-bold text-red-500 mb-4">
+                  <h4 className="text-base md:text-xl font-bold text-red-500 mb-4">
                     Dijital Dönüşüm
                   </h4>
                   <ul className="space-y-3 text-gray-700">
@@ -840,7 +830,7 @@ export default function SkollBeautyPage() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-red-500 mb-4">
+                  <h4 className="text-base md:text-xl font-bold text-red-500 mb-4">
                     Müşteri Deneyimi
                   </h4>
                   <ul className="space-y-3 text-gray-700">
@@ -864,9 +854,10 @@ export default function SkollBeautyPage() {
                     <li className="flex items-start gap-3">
                       <span className="text-red-500 mt-1">→</span>
                       <span>
-                        Müşteri memnuniyeti anketlerinde{" "}
-                        <strong className="text-gray-900">4.8/5 puan</strong>{" "}
-                        aldı
+                        Müşteri geri bildirimleri olumlu —{" "}
+                        <strong className="text-gray-900">
+                          online rezervasyonu aktif kullanıyorlar
+                        </strong>
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -884,7 +875,7 @@ export default function SkollBeautyPage() {
         </section>
 
         {/* Client Testimonial */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-4xl mx-auto">
             <div className="bg-gray-50 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-gray-200 relative overflow-hidden">
               {/* Quote Icon */}
@@ -903,7 +894,7 @@ export default function SkollBeautyPage() {
                 </p>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-2xl font-bold text-gray-900">
+                  <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-xl md:text-2xl font-bold text-gray-900">
                     S
                   </div>
                   <div>
@@ -921,13 +912,13 @@ export default function SkollBeautyPage() {
         </section>
 
         {/* Why WebCraft - E-E-A-T Content */}
-        <section className="py-20 px-6 md:px-10 bg-white0/5">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-white0/5">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Neden WebCraft?
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Güzellik sektörü için özel dijital çözümler
               </p>
             </div>
@@ -935,11 +926,11 @@ export default function SkollBeautyPage() {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Left Column */}
               <div className="space-y-6">
-                <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-gray-200">
+                  <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                     🎨 Sektör Uzmanlığı
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-sm text-gray-700 leading-relaxed">
                     2015 yılından bu yana{" "}
                     <strong className="text-gray-900">
                       güzellik salonları, spa merkezleri ve wellness
@@ -949,11 +940,11 @@ export default function SkollBeautyPage() {
                   </p>
                 </div>
 
-                <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-gray-200">
+                  <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                     📅 Randevu Sistemi Uzmanlığı
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-sm text-gray-700 leading-relaxed">
                     Özel geliştirdiğimiz{" "}
                     <Link
                       href="/hizmetler/yazilim-gelistirme"
@@ -967,11 +958,11 @@ export default function SkollBeautyPage() {
                   </p>
                 </div>
 
-                <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-gray-200">
+                  <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                     🔍 Yerel SEO Uzmanlığı
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-sm text-gray-700 leading-relaxed">
                     <Link
                       href="/blog/fethiye-web-tasarim-rehberi"
                       className="text-red-500 hover:text-red-500 underline underline-offset-4 transition-colors"
@@ -979,7 +970,7 @@ export default function SkollBeautyPage() {
                       Fethiye ve Muğla bölgesi
                     </Link>{" "}
                     için özel yerel SEO stratejileri ile işletmenizi
-                    Google&apos;da öne çıkarıyoruz. &quot;Fethiye güzellik
+                    Google&apos;da öne çıkarıyoruz. &quot;Muğla güzellik
                     salonu&quot; gibi yerel aramalarında üst sıralarda yer
                     alıyorsunuz.
                   </p>
@@ -988,11 +979,11 @@ export default function SkollBeautyPage() {
 
               {/* Right Column */}
               <div className="space-y-6">
-                <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-gray-200">
+                  <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                     📱 Mobil Optimizasyon
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-sm text-gray-700 leading-relaxed">
                     Güzellik sektöründe müşterilerin büyük çoğunluğu mobil
                     cihazlardan randevu alıyor. Bu nedenle{" "}
                     <Link
@@ -1005,11 +996,11 @@ export default function SkollBeautyPage() {
                   </p>
                 </div>
 
-                <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-gray-200">
+                  <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                     🎯 Dönüşüm Odaklı Tasarım
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-sm text-gray-700 leading-relaxed">
                     Her tasarım kararı,{" "}
                     <strong className="text-gray-900">
                       ziyaretçiyi müşteriye dönüştürme
@@ -1020,11 +1011,11 @@ export default function SkollBeautyPage() {
                   </p>
                 </div>
 
-                <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-gray-200">
+                  <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                     💎 Lüks ve Estetik Tasarım
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-sm text-gray-700 leading-relaxed">
                     Güzellik sektörünün gerektirdiği{" "}
                     <strong className="text-gray-900">estetik değerleri</strong>{" "}
                     ve lüks atmosferi dijitale taşıyoruz. Markanızın kimliğini
@@ -1037,11 +1028,11 @@ export default function SkollBeautyPage() {
 
             {/* Additional Authority Content */}
             <div className="mt-12 bg-gray-50 backdrop-blur-xl rounded-2xl p-8 md:p-12 border border-gray-200">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
                 Güzellik Sektöründe Dijital Başarı
               </h3>
               <div className="prose prose-invert max-w-none">
-                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                <p className="text-sm md:text-sm md:text-lg text-gray-700 leading-relaxed mb-4">
                   WebCraft olarak, güzellik salonları, spa merkezleri, kuaförler
                   ve wellness işletmeleri için{" "}
                   <strong className="text-gray-900">
@@ -1050,7 +1041,7 @@ export default function SkollBeautyPage() {
                   sunuyoruz. 2015 yılından bu yana 50+ güzellik işletmesinin
                   dijital dönüşümünde rol aldık.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                <p className="text-sm md:text-sm md:text-lg text-gray-700 leading-relaxed mb-4">
                   Skoll Salon projesi, güzellik sektöründeki uzmanlığımızı ve{" "}
                   <strong className="text-gray-900">
                     yerel SEO başarımızı
@@ -1059,7 +1050,7 @@ export default function SkollBeautyPage() {
                   ağırlıklı içerik stratejisi ile müşteri edinme maliyetlerini
                   düşürüyor ve rezervasyon oranlarını artırıyoruz.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-lg text-gray-700 leading-relaxed">
                   Güzellik işletmeniz için{" "}
                   <strong className="text-gray-900">modern web sitesi</strong>,{" "}
                   <Link
@@ -1084,13 +1075,13 @@ export default function SkollBeautyPage() {
         </section>
 
         {/* Related Blog Posts */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 İlgili Blog Yazılarımız
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-base md:text-xl text-gray-600">
                 Dijital pazarlama ve web tasarımı hakkında daha fazla bilgi
               </p>
             </div>
@@ -1098,12 +1089,12 @@ export default function SkollBeautyPage() {
             <div className="grid md:grid-cols-3 gap-6">
               <Link
                 href="/blog/yerel-seo-stratejileri"
-                className="bg-gray-50 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group"
+                className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group"
               >
                 <div className="text-red-500 text-sm font-semibold mb-3">
                   SEO
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-500 transition-colors">
+                <h3 className="text-base md:text-base md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-500 transition-colors">
                   Yerel SEO Stratejileri ile Bölgenizdeki Müşterilere Ulaşın
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1114,12 +1105,12 @@ export default function SkollBeautyPage() {
 
               <Link
                 href="/blog/fethiye-web-tasarim-rehberi"
-                className="bg-gray-50 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group"
+                className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group"
               >
                 <div className="text-red-500 text-sm font-semibold mb-3">
                   Web Tasarım
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-500 transition-colors">
+                <h3 className="text-base md:text-base md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-500 transition-colors">
                   Fethiye İşletmeleri İçin Web Tasarım Rehberi
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -1129,12 +1120,12 @@ export default function SkollBeautyPage() {
 
               <Link
                 href="/blog/online-magaza-kurulumu"
-                className="bg-gray-50 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group"
+                className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group"
               >
                 <div className="text-red-500 text-sm font-semibold mb-3">
                   E-Ticaret
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-500 transition-colors">
+                <h3 className="text-base md:text-base md:text-xl font-bold text-gray-900 mb-3 group-hover:text-red-500 transition-colors">
                   Online Mağaza Kurulumu: Başlangıçtan Satışa
                 </h3>
                 <p className="text-gray-600 text-sm">

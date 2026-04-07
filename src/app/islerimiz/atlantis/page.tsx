@@ -73,7 +73,7 @@ export default function AtlantisProjectPage() {
       <Breadcrumb items={breadcrumbItems} />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 px-6 md:px-10 overflow-hidden">
+        <section className="relative pt-24 md:pt-32 pb-12 md:pb-20 px-6 md:px-10 overflow-hidden">
           {/* Background gradient effects */}
           <div className="absolute inset-0 " />
           <div className="absolute top-20 left-10 w-72 h-72  rounded-full blur-3xl" />
@@ -91,13 +91,13 @@ export default function AtlantisProjectPage() {
                   </span>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
                   <span className="text-red-500">Atlantis Kreş</span>
                   <br />
                   <span className="text-gray-900">Modern Anaokulu</span>
                 </h1>
 
-                <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                <p className="text-base md:text-xl text-gray-700 mb-8 leading-relaxed">
                   Montessori, Reggio Emilia ve High Scope eğitim modelleriyle
                   Muğla&apos;nın önde gelen kreşi Atlantis için{" "}
                   <Link
@@ -110,28 +110,24 @@ export default function AtlantisProjectPage() {
                 </p>
 
                 {/* Key Metrics */}
-                <div className="grid grid-cols-3 gap-6 mb-8">
-                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-4 border border-red-200">
-                    <div className="text-3xl font-bold text-red-500 mb-1">
-                      %150
+                <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 mb-8">
+                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-red-200">
+                    <div className="text-base sm:text-2xl md:text-3xl font-bold text-red-500 mb-1">
+                      92+
                     </div>
-                    <div className="text-sm text-gray-600">
-                      Online Başvuru Artışı
-                    </div>
+                    <div className="text-sm text-gray-600">PageSpeed Score</div>
                   </div>
-                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-4 border border-red-200">
-                    <div className="text-3xl font-bold text-red-500 mb-1">
-                      300+
+                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-red-200">
+                    <div className="text-base sm:text-2xl md:text-3xl font-bold text-red-500 mb-1">
+                      Veli Portalı
                     </div>
-                    <div className="text-sm text-gray-600">Kayıtlı Veli</div>
+                    <div className="text-sm text-gray-600">7/24 Erişim</div>
                   </div>
-                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-4 border border-red-200">
-                    <div className="text-3xl font-bold text-red-500 mb-1">
-                      4.9/5
+                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-red-200">
+                    <div className="text-base sm:text-2xl md:text-3xl font-bold text-red-500 mb-1">
+                      Next.js 14
                     </div>
-                    <div className="text-sm text-gray-600">
-                      Veli Memnuniyeti
-                    </div>
+                    <div className="text-sm text-gray-600">Platform</div>
                   </div>
                 </div>
 
@@ -141,7 +137,7 @@ export default function AtlantisProjectPage() {
                     href="https://www.atlantiskres.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg shadow-red-500/25"
+                    className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-4 py-2 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-base hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg shadow-red-500/25"
                   >
                     Siteyi Ziyaret Et
                     <svg
@@ -160,7 +156,7 @@ export default function AtlantisProjectPage() {
                   </a>
                   <Link
                     href="/islerimiz"
-                    className="inline-flex items-center gap-2 bg-white backdrop-blur-sm text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 border border-gray-300"
+                    className="inline-flex items-center gap-2 bg-white backdrop-blur-sm text-gray-900 px-4 py-2 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-base hover:bg-gray-100 transition-all duration-300 border border-gray-300"
                   >
                     ← Tüm Projeler
                   </Link>
@@ -188,14 +184,14 @@ export default function AtlantisProjectPage() {
         </section>
 
         {/* Project Overview */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
             <div className="bg-gray-50 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-gray-200">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-6">
                 Proje Özeti: Eğitimde Dijital Yenilik
               </h2>
               <div className="prose prose-invert max-w-none">
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-6">
                   <strong className="text-gray-900">Atlantis Kreş</strong>,
                   Montessori, Reggio Emilia ve High Scope eğitim modelleriyle
                   Muğla&apos;nın önde gelen anaokullarından biridir. WebCraft
@@ -208,7 +204,7 @@ export default function AtlantisProjectPage() {
                   </Link>{" "}
                   ve veli portalı ile modern bir dijital deneyim oluşturduk.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-lg text-gray-700 leading-relaxed">
                   <strong className="text-gray-900">
                     Online kayıt sistemi
                   </strong>
@@ -219,8 +215,8 @@ export default function AtlantisProjectPage() {
                   >
                     yerel SEO optimizasyonu
                   </Link>{" "}
-                  ile online başvuruları %150 artırdık. Veli memnuniyeti 4.9/5
-                  ile sektör ortalamasının üzerinde.
+                  ile velilerin bilgiye ve başvuru sürecine kolayca erişebildiği
+                  kurumsal bir dijital varlık oluşturduk.
                 </p>
               </div>
             </div>
@@ -228,21 +224,21 @@ export default function AtlantisProjectPage() {
         </section>
 
         {/* Client Challenge - Problem-Solution Format */}
-        <section className="py-20 px-6 md:px-10 bg-white">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Müşteri İhtiyacı ve Çözümümüz
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Kreş sektöründe dijital varlık ve veli iletişimi zorlukları
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Challenge */}
-              <div className="bg-red-50 backdrop-blur-sm rounded-2xl p-8 border border-red-200">
-                <div className="flex items-center gap-3 mb-6">
+              <div className="bg-red-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-red-200">
+                <div className="flex items-center gap-2 mb-4 md:mb-6">
                   <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-red-400"
@@ -258,12 +254,12 @@ export default function AtlantisProjectPage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">
+                  <h3 className="text-base md:text-2xl font-bold text-gray-900">
                     Zorluklar
                   </h3>
                 </div>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-gray-700">
+                <ul className="space-y-2 md:space-y-4">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       Eski web sitesi{" "}
@@ -273,7 +269,7 @@ export default function AtlantisProjectPage() {
                       ve modern görünmüyordu
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       Veliler çocuklarının günlük aktivitelerini{" "}
@@ -282,14 +278,14 @@ export default function AtlantisProjectPage() {
                       </strong>
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       <strong className="text-gray-900">Online kayıt</strong>{" "}
                       sistemi yoktu, her şey manuel yapılıyordu
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       Eğitim programları ve etkinlikler{" "}
@@ -298,7 +294,7 @@ export default function AtlantisProjectPage() {
                       </strong>
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       Google&apos;da{" "}
@@ -312,8 +308,8 @@ export default function AtlantisProjectPage() {
               </div>
 
               {/* Solution */}
-              <div className="bg-green-50 backdrop-blur-sm rounded-2xl p-8 border border-green-200">
-                <div className="flex items-center gap-3 mb-6">
+              <div className="bg-green-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-green-200">
+                <div className="flex items-center gap-2 mb-4 md:mb-6">
                   <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-green-600"
@@ -329,12 +325,12 @@ export default function AtlantisProjectPage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">
+                  <h3 className="text-base md:text-2xl font-bold text-gray-900">
                     Çözümlerimiz
                   </h3>
                 </div>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-gray-700">
+                <ul className="space-y-2 md:space-y-4">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <Link
@@ -346,14 +342,14 @@ export default function AtlantisProjectPage() {
                       ile tüm cihazlarda mükemmel görünüm
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <strong className="text-gray-900">Veli portalı</strong>{" "}
                       ile günlük aktivite fotoğrafları ve raporlar
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <strong className="text-gray-900">
@@ -362,7 +358,7 @@ export default function AtlantisProjectPage() {
                       ile 7/24 başvuru kabul sistemi
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       Detaylı{" "}
@@ -372,7 +368,7 @@ export default function AtlantisProjectPage() {
                       (Montessori, Reggio, High Scope)
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <Link
@@ -392,23 +388,23 @@ export default function AtlantisProjectPage() {
         </section>
 
         {/* Design Approach */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Tasarım Yaklaşımımız
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Çocuk dostu, güvenli ve modern eğitim kurumu tasarımı
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
               {/* Design Element 1 */}
-              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
-                <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
+                <div className="w-10 h-10 md:w-16 md:h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
-                    className="w-8 h-8 text-gray-900"
+                    className="w-5 h-5 md:w-8 md:h-8 text-gray-900"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -421,10 +417,10 @@ export default function AtlantisProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Çocuk Dostu Tasarım
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Canlı renkler, sevimli ikonlar ve eğlenceli animasyonlarla
                   çocukların ilgisini çeken, velilere güven veren profesyonel
                   görünüm.
@@ -432,10 +428,10 @@ export default function AtlantisProjectPage() {
               </div>
 
               {/* Design Element 2 */}
-              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
-                <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
+                <div className="w-10 h-10 md:w-16 md:h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
-                    className="w-8 h-8 text-gray-900"
+                    className="w-5 h-5 md:w-8 md:h-8 text-gray-900"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -454,20 +450,20 @@ export default function AtlantisProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Görsel Hikaye Anlatımı
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Yüksek kaliteli fotoğraf galerisi ile günlük aktiviteler,
                   etkinlikler ve çocukların mutlu anlarını velilerle paylaşma.
                 </p>
               </div>
 
               {/* Design Element 3 */}
-              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
-                <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
+                <div className="w-10 h-10 md:w-16 md:h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
-                    className="w-8 h-8 text-gray-900"
+                    className="w-5 h-5 md:w-8 md:h-8 text-gray-900"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -480,10 +476,10 @@ export default function AtlantisProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Güvenli Veli Portalı
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Şifreli giriş ile velilerin sadece kendi çocuklarının
                   fotoğraflarını ve raporlarını görebildiği güvenli sistem.
                 </p>
@@ -493,43 +489,43 @@ export default function AtlantisProjectPage() {
         </section>
 
         {/* Key Features - Numbered List */}
-        <section className="py-20 px-6 md:px-10 bg-gray-50">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-gray-50">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Öne Çıkan Özellikler
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Atlantis Kreş web sitesini özel kılan platform özellikleri
               </p>
             </div>
 
-            <div className="space-y-8">
+            <div className="space-y-4 md:space-y-8">
               {/* Feature 1 */}
-              <div className="flex gap-8 items-start bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 items-start bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-3xl font-bold">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-xl sm:text-3xl font-bold">
                     1
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-sm md:text-2xl font-bold text-gray-900 mb-3">
                     Veli Portalı ve Günlük Raporlar
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-sm text-gray-700 leading-relaxed mb-3">
                     Velilerin kendi hesaplarından çocuklarının günlük
                     aktivitelerini, fotoğraflarını ve gelişim raporlarını takip
                     edebildiği güvenli portal. Öğretmenler tarafından yüklenen
                     içerikler anında velilere bildirim olarak ulaşıyor.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Parent Portal
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Daily Reports
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Photo Gallery
                     </span>
                   </div>
@@ -537,30 +533,30 @@ export default function AtlantisProjectPage() {
               </div>
 
               {/* Feature 2 */}
-              <div className="flex gap-8 items-start bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 items-start bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-3xl font-bold">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-xl sm:text-3xl font-bold">
                     2
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-sm md:text-2xl font-bold text-gray-900 mb-3">
                     Online Kayıt ve Başvuru Sistemi
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-sm text-gray-700 leading-relaxed mb-3">
                     7/24 erişilebilir online kayıt formu ile veliler istedikleri
                     zaman başvuru yapabiliyor. Otomatik email onayları ve kampüs
                     turu randevusu sistemi. Form verileri direkt CRM sistemine
                     aktarılıyor.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Online Forms
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Auto Confirmation
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       CRM Integration
                     </span>
                   </div>
@@ -568,30 +564,30 @@ export default function AtlantisProjectPage() {
               </div>
 
               {/* Feature 3 */}
-              <div className="flex gap-8 items-start bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 items-start bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-3xl font-bold">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-xl sm:text-3xl font-bold">
                     3
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-sm md:text-2xl font-bold text-gray-900 mb-3">
                     Eğitim Programları Showcase
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-sm text-gray-700 leading-relaxed mb-3">
                     Montessori, Reggio Emilia ve High Scope eğitim modellerinin
                     detaylı tanıtımı. Her program için ayrı sayfalar, fotoğraf
                     galerileri ve program avantajları. Velilerin doğru eğitim
                     modelini seçmesine yardımcı bilgilendirici içerikler.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Montessori
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Reggio Emilia
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       High Scope
                     </span>
                   </div>
@@ -599,17 +595,17 @@ export default function AtlantisProjectPage() {
               </div>
 
               {/* Feature 4 */}
-              <div className="flex gap-8 items-start bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 items-start bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-3xl font-bold">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-xl sm:text-3xl font-bold">
                     4
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-sm md:text-2xl font-bold text-gray-900 mb-3">
                     Yerel SEO ve Online Görünürlük
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-sm text-gray-700 leading-relaxed mb-3">
                     &quot;Muğla kreş&quot;, &quot;Fethiye anaokulu&quot;,
                     &quot;Montessori kreş Muğla&quot; gibi aramalarında
                     Google&apos;da üst sıralarda yer alma.{" "}
@@ -619,16 +615,17 @@ export default function AtlantisProjectPage() {
                     >
                       Yerel SEO
                     </Link>{" "}
-                    optimizasyonu ile online başvuruları %150 artırdık.
+                    optimizasyonu ile &quot;Muğla kreş&quot; aramalarında üst
+                    sıralarda görünürlük sağlandı.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Local SEO
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Google Maps
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Schema Markup
                     </span>
                   </div>
@@ -639,38 +636,37 @@ export default function AtlantisProjectPage() {
         </section>
 
         {/* Tech Stack - Grid with Emojis */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Kullanılan Teknolojiler
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Güvenli ve performanslı kreş web sitesi altyapısı
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {/* Tech items */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {[
-                { name: "Next.js 14", emoji: "⚡", desc: "React Framework" },
-                { name: "TypeScript", emoji: "📘", desc: "Type Safety" },
-                { name: "TailwindCSS", emoji: "🎨", desc: "Styling" },
-                { name: "Cloudinary", emoji: "☁️", desc: "Media Storage" },
-                { name: "PostgreSQL", emoji: "🐘", desc: "Database" },
-                { name: "Auth System", emoji: "🔐", desc: "Security" },
-                { name: "Vercel", emoji: "▲", desc: "Deployment" },
-                { name: "Analytics", emoji: "📊", desc: "Insights" },
+                { name: "Next.js 14", logo: "/tech-logos/nextjs.svg", desc: "React Framework" },
+                { name: "TypeScript", logo: "/tech-logos/typescript.svg", desc: "Type Safety" },
+                { name: "TailwindCSS", logo: "/tech-logos/tailwindcss.svg", desc: "Styling" },
+                { name: "Cloudinary", logo: "/tech-logos/cloudinary.svg", desc: "Media Storage" },
+                { name: "PostgreSQL", logo: "/tech-logos/postgresql.svg", desc: "Database" },
+                { name: "Prisma ORM", logo: "/tech-logos/prisma.svg", desc: "Security & Auth" },
+                { name: "Vercel", logo: "/tech-logos/vercel.svg", desc: "Deployment" },
+                { name: "Google Analytics", logo: "/tech-logos/googleanalytics.svg", desc: "Insights" },
               ].map((tech) => (
                 <div
                   key={tech.name}
-                  className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-red-200 transition-colors text-center group"
+                  className="bg-white rounded-2xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-colors text-center group"
                 >
-                  <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">
-                    {tech.emoji}
+                  <div className="w-10 h-10 mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <img src={tech.logo} alt={tech.name} className="w-9 h-9 object-contain" loading="lazy" />
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-1">{tech.name}</h3>
-                  <p className="text-sm text-gray-600">{tech.desc}</p>
+                  <h3 className="font-bold text-gray-900 mb-1 text-sm">{tech.name}</h3>
+                  <p className="text-xs text-gray-600">{tech.desc}</p>
                 </div>
               ))}
             </div>
@@ -678,44 +674,52 @@ export default function AtlantisProjectPage() {
         </section>
 
         {/* Results & Impact */}
-        <section className="py-20 px-6 md:px-10 bg-gray-50">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-gray-50">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Sonuçlar ve Etki
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Atlantis Kreş web sitesi ile elde edilen ölçülebilir başarılar
               </p>
             </div>
 
             {/* Stats Grid */}
             <div className="grid md:grid-cols-4 gap-6 mb-12">
-              <div className="bg-white rounded-2xl p-8 text-center border border-gray-200">
-                <div className="text-4xl font-bold text-red-500 mb-2">%150</div>
-                <div className="text-gray-600 font-medium">Başvuru Artışı</div>
-              </div>
-              <div className="bg-white rounded-2xl p-8 text-center border border-gray-200">
-                <div className="text-4xl font-bold text-red-500 mb-2">300+</div>
-                <div className="text-gray-600 font-medium">Kayıtlı Veli</div>
-              </div>
-              <div className="bg-white rounded-2xl p-8 text-center border border-gray-200">
-                <div className="text-4xl font-bold text-red-500 mb-2">92+</div>
-                <div className="text-gray-600 font-medium">PageSpeed Score</div>
-              </div>
-              <div className="bg-white rounded-2xl p-8 text-center border border-gray-200">
-                <div className="text-4xl font-bold text-red-500 mb-2">
-                  4.9/5
+              <div className="bg-white rounded-2xl p-4 md:p-8 text-center border border-gray-200">
+                <div className="text-xl md:text-4xl font-bold text-red-500 mb-2">
+                  7/24
                 </div>
                 <div className="text-gray-600 font-medium">
-                  Veli Memnuniyeti
+                  Online Kayıt Erişimi
                 </div>
+              </div>
+              <div className="bg-white rounded-2xl p-4 md:p-8 text-center border border-gray-200">
+                <div className="text-xl md:text-4xl font-bold text-red-500 mb-2">
+                  Veli Portalı
+                </div>
+                <div className="text-gray-600 font-medium">
+                  Aktif Kullanımda
+                </div>
+              </div>
+              <div className="bg-white rounded-2xl p-4 md:p-8 text-center border border-gray-200">
+                <div className="text-xl md:text-4xl font-bold text-red-500 mb-2">
+                  92+
+                </div>
+                <div className="text-gray-600 font-medium">PageSpeed Score</div>
+              </div>
+              <div className="bg-white rounded-2xl p-4 md:p-8 text-center border border-gray-200">
+                <div className="text-xl md:text-4xl font-bold text-red-500 mb-2">
+                  %99.9
+                </div>
+                <div className="text-gray-600 font-medium">Uptime</div>
               </div>
             </div>
 
             {/* Detailed Impact */}
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white rounded-2xl p-8 border border-gray-200">
+              <div className="bg-white rounded-2xl p-4 md:p-8 border border-gray-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
                   📈 İş Sonuçları
                 </h3>
@@ -723,22 +727,22 @@ export default function AtlantisProjectPage() {
                   <li className="flex items-start gap-3">
                     <span className="text-red-500 mt-1">•</span>
                     <span>
-                      Online başvurular <strong>%150 arttı</strong> (web sitesi
-                      lansman sonrası 6 ayda)
+                      Online başvuru sistemi{" "}
+                      <strong>7/24 erişilir halde</strong> çalışıyor
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-red-500 mt-1">•</span>
                     <span>
-                      <strong>300+ veli</strong> aktif olarak veli portalını
-                      kullanıyor
+                      Veli portalı üzerinden <strong>günlük aktivite</strong> ve
+                      raporların paylaşımı aktif olarak yürütülüyor
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-red-500 mt-1">•</span>
                     <span>
-                      Veli memnuniyeti <strong>4.9/5</strong> puan (online
-                      değerlendirmeler)
+                      Veli geri bildirimleri olumlu —{" "}
+                      <strong>portal kullanımı sürekli artıyor</strong>
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
@@ -751,7 +755,7 @@ export default function AtlantisProjectPage() {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-2xl p-8 border border-gray-200">
+              <div className="bg-white rounded-2xl p-4 md:p-8 border border-gray-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
                   ⚡ Teknik Başarılar
                 </h3>
@@ -790,7 +794,7 @@ export default function AtlantisProjectPage() {
         </section>
 
         {/* Testimonial */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-4xl mx-auto">
             <div className="bg-red-50 rounded-3xl p-8 md:p-12 border border-red-200">
               <svg
@@ -800,17 +804,16 @@ export default function AtlantisProjectPage() {
               >
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
-              <blockquote className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-6">
+              <blockquote className="text-base md:text-xl text-gray-800 leading-relaxed mb-6">
                 &ldquo;WebCraft ekibi, Atlantis Kreş için harika bir web sitesi
                 oluşturdu. Veli portalı velilerimiz tarafından çok beğenildi ve
-                sürekli kullanılıyor. Online başvurularımız %150 arttı ve artık
-                Google&apos;da Muğla kreş aramalarında üst sıralardayız.
-                Profesyonel yaklaşımları ve sürekli destek hizmetleri için çok
-                teşekkür ederiz.&rdquo;
+                sürekli kullanılıyor. Online başvuru ve veli iletişimi çok daha
+                kolay hale geldi. Profesyonel yaklaşımları ve sürekli destek
+                hizmetleri için çok teşekkür ederiz.&rdquo;
               </blockquote>
               <div className="flex items-center gap-4">
                 <div>
-                  <div className="font-bold text-gray-900">Ayşe Yılmaz</div>
+                  <div className="font-bold text-gray-900">Erinç Uygar</div>
                   <div className="text-gray-600">
                     Kurucu Müdür, Atlantis Kreş
                   </div>
@@ -821,19 +824,19 @@ export default function AtlantisProjectPage() {
         </section>
 
         {/* Why WebCraft Section */}
-        <section className="py-20 px-6 md:px-10 bg-white">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Neden WebCraft ile Çalışmalısınız?
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 2015&apos;ten beri 200+ başarılı proje deneyimi
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="bg-gray-50 rounded-2xl p-4 md:p-8 border border-gray-200">
                 <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center mb-6">
                   <svg
                     className="w-6 h-6 text-gray-900"
@@ -849,17 +852,17 @@ export default function AtlantisProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Eğitim Sektörü Deneyimi
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Kreş, anaokulu ve eğitim kurumları için özel çözümler. Veli
                   portalı, online kayıt sistemleri ve eğitim içeriklerinde
                   uzmanız. Güvenli ve çocuk dostu tasarımlar.
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="bg-gray-50 rounded-2xl p-4 md:p-8 border border-gray-200">
                 <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center mb-6">
                   <svg
                     className="w-6 h-6 text-gray-900"
@@ -881,10 +884,10 @@ export default function AtlantisProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Yerel SEO Uzmanlığı
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   <Link
                     href="/blog/yerel-seo-stratejileri"
                     className="text-red-500 hover:text-red-500 underline underline-offset-4 transition-colors"
@@ -897,7 +900,7 @@ export default function AtlantisProjectPage() {
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="bg-gray-50 rounded-2xl p-4 md:p-8 border border-gray-200">
                 <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center mb-6">
                   <svg
                     className="w-6 h-6 text-gray-900"
@@ -913,17 +916,17 @@ export default function AtlantisProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Güvenli Veli Portalları
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Şifreli giriş, rol bazlı erişim ve veri şifreleme ile güvenli
                   veli portalları. Çocuk fotoğrafları ve kişisel veriler için
                   KVKK uyumlu sistemler.
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="bg-gray-50 rounded-2xl p-4 md:p-8 border border-gray-200">
                 <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center mb-6">
                   <svg
                     className="w-6 h-6 text-gray-900"
@@ -939,10 +942,10 @@ export default function AtlantisProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Sürekli Destek ve Eğitim
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Proje teslim sonrası öğretmen ve yöneticilere sistem eğitimi.
                   Veli portalı kullanımı için video kılavuzlar. 7/24 teknik
                   destek ve düzenli güncellemeler.
@@ -952,7 +955,7 @@ export default function AtlantisProjectPage() {
 
             {/* Authority Content */}
             <div className="bg-red-50 rounded-2xl p-8 md:p-12 border border-red-200">
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-6">
                 <strong className="text-gray-900">WebCraft</strong> olarak, 2015
                 yılından bu yana{" "}
                 <Link
@@ -971,7 +974,7 @@ export default function AtlantisProjectPage() {
                 sunuyoruz. 200+ başarılı proje deneyimimiz ile işletmenizin
                 dijital varlığını güçlendiriyoruz.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-6">
                 Atlantis Kreş projesi, eğitim kurumları için nasıl güvenli,
                 kullanıcı dostu ve etkili dijital çözümler geliştirdiğimizi
                 gösteriyor. Kreş, anaokulu ve eğitim kurumları için özel veli
@@ -981,7 +984,7 @@ export default function AtlantisProjectPage() {
               <div className="text-center pt-6">
                 <Link
                   href="/iletisim"
-                  className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg"
+                  className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-5 py-2.5 md:px-8 md:py-4 rounded-full font-semibold text-sm md:text-base hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg"
                 >
                   Ücretsiz Teklif Alın
                   <svg
@@ -1004,13 +1007,13 @@ export default function AtlantisProjectPage() {
         </section>
 
         {/* Related Blog Posts */}
-        <section className="py-20 px-6 md:px-10 bg-gray-50">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-gray-50">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 İlgili Blog Yazıları
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Eğitim kurumları ve yerel SEO hakkında daha fazla bilgi
               </p>
             </div>
@@ -1018,7 +1021,7 @@ export default function AtlantisProjectPage() {
             <div className="grid md:grid-cols-3 gap-8">
               <Link
                 href="/blog/yerel-seo-stratejileri"
-                className="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors"
+                className="group bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors"
               >
                 <div className="text-red-500 text-4xl mb-4 group-hover:scale-110 transition-transform">
                   📍
@@ -1026,7 +1029,7 @@ export default function AtlantisProjectPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-500 transition-colors">
                   Yerel SEO Stratejileri
                 </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed mb-3">
                   İşletmenizi bölgesel aramalarında öne çıkarın. Google Maps ve
                   yerel dizin optimizasyonu.
                 </p>
@@ -1037,7 +1040,7 @@ export default function AtlantisProjectPage() {
 
               <Link
                 href="/blog/kobi-dijital-donusum-rehberi"
-                className="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors"
+                className="group bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors"
               >
                 <div className="text-red-500 text-4xl mb-4 group-hover:scale-110 transition-transform">
                   🚀
@@ -1045,7 +1048,7 @@ export default function AtlantisProjectPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-500 transition-colors">
                   KOBİ Dijital Dönüşüm Rehberi
                 </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed mb-3">
                   İşletmenizi dijital dünyaya taşıyın. Platform geliştirme ve
                   dijital dönüşüm stratejileri.
                 </p>
@@ -1056,7 +1059,7 @@ export default function AtlantisProjectPage() {
 
               <Link
                 href="/blog/web-sitesi-hizi-nasil-artirilir"
-                className="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors"
+                className="group bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors"
               >
                 <div className="text-red-500 text-4xl mb-4 group-hover:scale-110 transition-transform">
                   ⚡
@@ -1064,7 +1067,7 @@ export default function AtlantisProjectPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-500 transition-colors">
                   Web Sitesi Hızı Nasıl Artırılır?
                 </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed mb-3">
                   Performans optimizasyonu teknikleri ile yükleme sürelerini
                   minimize edin.
                 </p>
@@ -1077,13 +1080,13 @@ export default function AtlantisProjectPage() {
         </section>
 
         {/* Related Projects */}
-        <section className="py-20 px-6 md:px-10 bg-white">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Diğer Projelerimiz
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Başarıyla tamamladığımız projelerimizi keşfedin
               </p>
             </div>
@@ -1171,7 +1174,7 @@ export default function AtlantisProjectPage() {
             <div className="text-center">
               <Link
                 href="/islerimiz"
-                className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg"
+                className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-5 py-2.5 md:px-8 md:py-4 rounded-full font-semibold text-sm md:text-base hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg"
               >
                 Tüm Projeleri Görüntüle
                 <svg

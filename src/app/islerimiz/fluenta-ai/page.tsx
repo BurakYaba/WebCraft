@@ -73,7 +73,7 @@ export default function FluentaProjectPage() {
       <Breadcrumb items={breadcrumbItems} />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 px-6 md:px-10 overflow-hidden">
+        <section className="relative pt-24 md:pt-32 pb-12 md:pb-20 px-6 md:px-10 overflow-hidden">
           {/* Background gradient effects */}
           <div className="absolute inset-0 " />
           <div className="absolute top-20 left-10 w-72 h-72  rounded-full blur-3xl" />
@@ -91,13 +91,13 @@ export default function FluentaProjectPage() {
                   </span>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
                   <span className="text-red-500">Fluenta</span>
                   <br />
                   <span className="text-gray-900">İngilizce Öğrenme</span>
                 </h1>
 
-                <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                <p className="text-base md:text-xl text-gray-700 mb-8 leading-relaxed">
                   Yapay zeka destekli 3D avatarlarla etkileşimli İngilizce
                   öğrenme platformu Fluenta için{" "}
                   <Link
@@ -117,24 +117,24 @@ export default function FluentaProjectPage() {
                 </p>
 
                 {/* Key Metrics */}
-                <div className="grid grid-cols-3 gap-6 mb-8">
-                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-4 border border-red-200">
-                    <div className="text-3xl font-bold text-red-500 mb-1">
+                <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 mb-8">
+                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-red-200">
+                    <div className="text-base sm:text-2xl md:text-3xl font-bold text-red-500 mb-1">
                       95+
                     </div>
                     <div className="text-sm text-gray-600">PageSpeed Score</div>
                   </div>
-                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-4 border border-red-200">
-                    <div className="text-3xl font-bold text-red-500 mb-1">
-                      3000+
+                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-red-200">
+                    <div className="text-base sm:text-2xl md:text-3xl font-bold text-red-500 mb-1">
+                      6 Hafta
                     </div>
-                    <div className="text-sm text-gray-600">Aktif Kullanıcı</div>
+                    <div className="text-sm text-gray-600">Teslim Süresi</div>
                   </div>
-                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-4 border border-red-200">
-                    <div className="text-3xl font-bold text-red-500 mb-1">
-                      4.8/5
+                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-red-200">
+                    <div className="text-base sm:text-2xl md:text-3xl font-bold text-red-500 mb-1">
+                      Next.js 15
                     </div>
-                    <div className="text-sm text-gray-600">Memnuniyet</div>
+                    <div className="text-sm text-gray-600">Platform</div>
                   </div>
                 </div>
 
@@ -144,7 +144,7 @@ export default function FluentaProjectPage() {
                     href="https://www.fluenta-ai.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg shadow-red-500/25"
+                    className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-4 py-2 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-base hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg shadow-red-500/25"
                   >
                     Siteyi Ziyaret Et
                     <svg
@@ -163,7 +163,7 @@ export default function FluentaProjectPage() {
                   </a>
                   <Link
                     href="/islerimiz"
-                    className="inline-flex items-center gap-2 bg-white backdrop-blur-sm text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 border border-gray-300"
+                    className="inline-flex items-center gap-2 bg-white backdrop-blur-sm text-gray-900 px-4 py-2 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-base hover:bg-gray-100 transition-all duration-300 border border-gray-300"
                   >
                     ← Tüm Projeler
                   </Link>
@@ -191,14 +191,14 @@ export default function FluentaProjectPage() {
         </section>
 
         {/* Project Overview */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
             <div className="bg-gray-50 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-gray-200">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-6">
                 Proje Özeti: AI ile Dil Öğreniminde Yeni Dönem
               </h2>
               <div className="prose prose-invert max-w-none">
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-6">
                   <strong className="text-gray-900">Fluenta</strong>, İngilizce
                   öğrenmeyi yapay zeka teknolojisi ile birleştiren yenilikçi bir
                   eğitim platformudur. WebCraft olarak,{" "}
@@ -211,7 +211,7 @@ export default function FluentaProjectPage() {
                   ve modern teknolojiler kullanarak, kullanıcı deneyimini ön
                   planda tutan bir platform geliştirdik.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-lg text-gray-700 leading-relaxed">
                   3D avatarlarla etkileşimli öğrenme deneyimi,{" "}
                   <strong className="text-gray-900">
                     Next.js 15 ve TypeScript
@@ -223,8 +223,7 @@ export default function FluentaProjectPage() {
                   >
                     SEO uyumlu yapı
                   </Link>{" "}
-                  ile organik trafiği %200 artırdık. İlk 3 ayda 3000+ aktif
-                  kullanıcıya ulaşan başarılı bir eğitim platformu oluşturduk.
+                  ile sıfırdan bir AI destekli eğitim platformu inşa ettik.
                 </p>
               </div>
             </div>
@@ -232,13 +231,13 @@ export default function FluentaProjectPage() {
         </section>
 
         {/* Client Challenge - Problem-Solution Format */}
-        <section className="py-20 px-6 md:px-10 bg-white">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Müşteri İhtiyacı ve Çözümümüz
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Online eğitim platformunda performans ve kullanıcı deneyimi
                 zorlukları
               </p>
@@ -246,8 +245,8 @@ export default function FluentaProjectPage() {
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Challenge */}
-              <div className="bg-red-50 backdrop-blur-sm rounded-2xl p-8 border border-red-200">
-                <div className="flex items-center gap-3 mb-6">
+              <div className="bg-red-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-red-200">
+                <div className="flex items-center gap-2 mb-4 md:mb-6">
                   <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-red-400"
@@ -263,12 +262,12 @@ export default function FluentaProjectPage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">
+                  <h3 className="text-base md:text-2xl font-bold text-gray-900">
                     Zorluklar
                   </h3>
                 </div>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-gray-700">
+                <ul className="space-y-2 md:space-y-4">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       <strong className="text-gray-900">
@@ -277,7 +276,7 @@ export default function FluentaProjectPage() {
                       web tarayıcılarında optimize edilmeliydi
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       Farklı öğrenme seviyelerinde{" "}
@@ -287,7 +286,7 @@ export default function FluentaProjectPage() {
                       sezgisel hale getirilmeliydi
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       <strong className="text-gray-900">
@@ -296,7 +295,7 @@ export default function FluentaProjectPage() {
                       sorunları ve yavaş yükleme süreleri
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       Google&apos;da üst sıralarda{" "}
@@ -304,7 +303,7 @@ export default function FluentaProjectPage() {
                       eksikliği
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       <strong className="text-gray-900">
@@ -317,8 +316,8 @@ export default function FluentaProjectPage() {
               </div>
 
               {/* Solution */}
-              <div className="bg-green-50 backdrop-blur-sm rounded-2xl p-8 border border-green-200">
-                <div className="flex items-center gap-3 mb-6">
+              <div className="bg-green-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-green-200">
+                <div className="flex items-center gap-2 mb-4 md:mb-6">
                   <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-green-600"
@@ -334,12 +333,12 @@ export default function FluentaProjectPage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">
+                  <h3 className="text-base md:text-2xl font-bold text-gray-900">
                     Çözümlerimiz
                   </h3>
                 </div>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-gray-700">
+                <ul className="space-y-2 md:space-y-4">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <Link
@@ -352,7 +351,7 @@ export default function FluentaProjectPage() {
                       çalışıyor
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <strong className="text-gray-900">
@@ -361,7 +360,7 @@ export default function FluentaProjectPage() {
                       ile iteratif tasarım ve kullanıcı testleri
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <Link
@@ -380,7 +379,7 @@ export default function FluentaProjectPage() {
                       optimizasyonu
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <Link
@@ -392,7 +391,7 @@ export default function FluentaProjectPage() {
                       ile Google&apos;da üst sıralarda yer alma
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-400 mt-1">✓</span>
                     <span>
                       <strong className="text-gray-900">
@@ -408,23 +407,23 @@ export default function FluentaProjectPage() {
         </section>
 
         {/* Design Approach */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Tasarım Yaklaşımımız
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Modern, minimalist ve kullanıcı odaklı tasarım dili
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
               {/* Design Element 1 */}
-              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
-                <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
+                <div className="w-10 h-10 md:w-16 md:h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
-                    className="w-8 h-8 text-gray-900"
+                    className="w-5 h-5 md:w-8 md:h-8 text-gray-900"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -437,10 +436,10 @@ export default function FluentaProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Minimalist Tasarım
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Temiz ve{" "}
                   <Link
                     href="/blog/minimalist-tasarim-yaklasimlari"
@@ -454,10 +453,10 @@ export default function FluentaProjectPage() {
               </div>
 
               {/* Design Element 2 */}
-              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
-                <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
+                <div className="w-10 h-10 md:w-16 md:h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
-                    className="w-8 h-8 text-gray-900"
+                    className="w-5 h-5 md:w-8 md:h-8 text-gray-900"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -470,10 +469,10 @@ export default function FluentaProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Responsive Deneyim
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Mobil öncelikli yaklaşımla tüm cihazlarda mükemmel çalışan
                   arayüz. Tablet ve telefonda 3D avatarlar optimize edilmiş
                   performansla çalışıyor.
@@ -481,10 +480,10 @@ export default function FluentaProjectPage() {
               </div>
 
               {/* Design Element 3 */}
-              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
-                <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="group bg-gray-50 backdrop-blur-sm rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300">
+                <div className="w-10 h-10 md:w-16 md:h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
-                    className="w-8 h-8 text-gray-900"
+                    className="w-5 h-5 md:w-8 md:h-8 text-gray-900"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -497,10 +496,10 @@ export default function FluentaProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Hız Optimizasyonu
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   <Link
                     href="/blog/core-web-vitals-rehberi"
                     className="text-red-500 hover:text-red-500 underline underline-offset-4 transition-colors"
@@ -516,43 +515,43 @@ export default function FluentaProjectPage() {
         </section>
 
         {/* Key Features - Numbered List */}
-        <section className="py-20 px-6 md:px-10 bg-gray-50">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-gray-50">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Öne Çıkan Özellikler
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Fluenta platformunu benzersiz kılan teknik ve tasarım
                 özellikleri
               </p>
             </div>
 
-            <div className="space-y-8">
+            <div className="space-y-4 md:space-y-8">
               {/* Feature 1 */}
-              <div className="flex gap-8 items-start bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 items-start bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-3xl font-bold">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-xl sm:text-3xl font-bold">
                     1
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-base md:text-2xl font-bold text-gray-900 mb-3">
                     AI Destekli 3D Avatar Sistemi
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-sm text-gray-700 leading-relaxed mb-3">
                     Kullanıcılarla gerçek zamanlı konuşabilen, doğal dil işleme
                     teknolojisiyle güçlendirilmiş 3D avatarlar. WebGL
                     optimizasyonu ile tüm cihazlarda akıcı çalışma.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       WebGL
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       AI/ML
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Real-time
                     </span>
                   </div>
@@ -560,29 +559,29 @@ export default function FluentaProjectPage() {
               </div>
 
               {/* Feature 2 */}
-              <div className="flex gap-8 items-start bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 items-start bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-3xl font-bold">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-xl sm:text-3xl font-bold">
                     2
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-base md:text-2xl font-bold text-gray-900 mb-3">
                     Kişiselleştirilmiş Öğrenme Yolları
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-sm text-gray-700 leading-relaxed mb-3">
                     Kullanıcının seviyesine ve öğrenme hızına göre dinamik
                     olarak uyarlanan müfredat. AI algoritmaları ile zayıf yönler
                     tespit edilip özel egzersizler öneriliyor.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Adaptive Learning
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Analytics
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Personalization
                     </span>
                   </div>
@@ -590,17 +589,17 @@ export default function FluentaProjectPage() {
               </div>
 
               {/* Feature 3 */}
-              <div className="flex gap-8 items-start bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 items-start bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-3xl font-bold">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-xl sm:text-3xl font-bold">
                     3
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-base md:text-2xl font-bold text-gray-900 mb-3">
                     Performans Odaklı Altyapı
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-sm text-gray-700 leading-relaxed mb-3">
                     Next.js 15, TypeScript ve Vercel Edge ile küresel ölçekte
                     yüksek performans. Server-side rendering ve{" "}
                     <Link
@@ -612,13 +611,13 @@ export default function FluentaProjectPage() {
                     optimizasyonu ile 95+ PageSpeed skoru.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Next.js 15
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       TypeScript
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Vercel Edge
                     </span>
                   </div>
@@ -626,17 +625,17 @@ export default function FluentaProjectPage() {
               </div>
 
               {/* Feature 4 */}
-              <div className="flex gap-8 items-start bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 items-start bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-3xl font-bold">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-red-500 text-gray-900 rounded-2xl flex items-center justify-center text-xl sm:text-3xl font-bold">
                     4
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-base md:text-2xl font-bold text-gray-900 mb-3">
                     SEO ve Organik Büyüme
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-sm text-gray-700 leading-relaxed mb-3">
                     <Link
                       href="/hizmetler/seo-uyumlu-web-sitesi"
                       className="text-red-500 hover:text-red-500 underline underline-offset-4 transition-colors"
@@ -644,16 +643,16 @@ export default function FluentaProjectPage() {
                       SEO uyumlu yapı
                     </Link>
                     , schema markup ve semantic HTML ile arama motorlarında üst
-                    sıralarda yer alma. İlk 3 ayda organik trafik %200 arttı.
+                    sıralarda yer alma.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Technical SEO
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Schema Markup
                     </span>
-                    <span className="px-3 py-1 bg-red-50 text-red-500 text-sm font-medium rounded-full">
+                    <span className="px-2 py-0.5 bg-red-50 text-red-500 text-xs font-medium rounded-full">
                       Organic Growth
                     </span>
                   </div>
@@ -664,38 +663,76 @@ export default function FluentaProjectPage() {
         </section>
 
         {/* Tech Stack - Grid with Emojis */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Kullanılan Teknolojiler
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Modern web teknolojileri ile güçlü ve ölçeklenebilir altyapı
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {/* Tech items */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {[
-                { name: "Next.js 15", emoji: "⚡", desc: "React Framework" },
-                { name: "TypeScript", emoji: "📘", desc: "Type Safety" },
-                { name: "TailwindCSS", emoji: "🎨", desc: "Styling" },
-                { name: "Framer Motion", emoji: "✨", desc: "Animations" },
-                { name: "WebGL", emoji: "🎮", desc: "3D Graphics" },
-                { name: "AI/ML", emoji: "🤖", desc: "Intelligence" },
-                { name: "Vercel", emoji: "▲", desc: "Deployment" },
-                { name: "Analytics", emoji: "📊", desc: "Insights" },
+                {
+                  name: "Next.js 15",
+                  logo: "/tech-logos/nextjs.svg",
+                  desc: "React Framework",
+                },
+                {
+                  name: "TypeScript",
+                  logo: "/tech-logos/typescript.svg",
+                  desc: "Type Safety",
+                },
+                {
+                  name: "TailwindCSS",
+                  logo: "/tech-logos/tailwindcss.svg",
+                  desc: "Styling",
+                },
+                {
+                  name: "Framer Motion",
+                  logo: "/tech-logos/framer.svg",
+                  desc: "Animations",
+                },
+                {
+                  name: "OpenAI",
+                  logo: "/tech-logos/openai.svg",
+                  desc: "AI / ML",
+                },
+                {
+                  name: "Vercel",
+                  logo: "/tech-logos/vercel.svg",
+                  desc: "Deployment",
+                },
+                {
+                  name: "Google Analytics",
+                  logo: "/tech-logos/googleanalytics.svg",
+                  desc: "Insights",
+                },
+                {
+                  name: "React",
+                  logo: "/tech-logos/react.svg",
+                  desc: "UI Library",
+                },
               ].map((tech) => (
                 <div
                   key={tech.name}
-                  className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-red-200 transition-colors text-center group"
+                  className="bg-white rounded-2xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-colors text-center group"
                 >
-                  <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">
-                    {tech.emoji}
+                  <div className="w-10 h-10 mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <img
+                      src={tech.logo}
+                      alt={tech.name}
+                      className="w-9 h-9 object-contain"
+                      loading="lazy"
+                    />
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-1">{tech.name}</h3>
-                  <p className="text-sm text-gray-600">{tech.desc}</p>
+                  <h3 className="font-bold text-gray-900 mb-1 text-sm">
+                    {tech.name}
+                  </h3>
+                  <p className="text-xs text-gray-600">{tech.desc}</p>
                 </div>
               ))}
             </div>
@@ -703,50 +740,48 @@ export default function FluentaProjectPage() {
         </section>
 
         {/* Results & Impact */}
-        <section className="py-20 px-6 md:px-10 bg-gray-50">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-gray-50">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Sonuçlar ve Etki
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Fluenta platformu ile elde edilen ölçülebilir başarılar
               </p>
             </div>
 
             {/* Stats Grid */}
             <div className="grid md:grid-cols-4 gap-6 mb-12">
-              <div className="bg-white rounded-2xl p-8 text-center border border-gray-200">
-                <div className="text-4xl font-bold text-red-500 mb-2">95+</div>
+              <div className="bg-white rounded-2xl p-4 md:p-8 text-center border border-gray-200">
+                <div className="text-xl md:text-4xl font-bold text-red-500 mb-2">
+                  95+
+                </div>
                 <div className="text-gray-600 font-medium">PageSpeed Score</div>
               </div>
-              <div className="bg-white rounded-2xl p-8 text-center border border-gray-200">
-                <div className="text-4xl font-bold text-red-500 mb-2">
-                  3000+
+              <div className="bg-white rounded-2xl p-4 md:p-8 text-center border border-gray-200">
+                <div className="text-xl md:text-4xl font-bold text-red-500 mb-2">
+                  6 Hafta
                 </div>
-                <div className="text-gray-600 font-medium">
-                  Aktif Kullanıcı (3 Ay)
-                </div>
+                <div className="text-gray-600 font-medium">Teslim Süresi</div>
               </div>
-              <div className="bg-white rounded-2xl p-8 text-center border border-gray-200">
-                <div className="text-4xl font-bold text-red-500 mb-2">%200</div>
-                <div className="text-gray-600 font-medium">
-                  Organik Trafik Artışı
+              <div className="bg-white rounded-2xl p-4 md:p-8 text-center border border-gray-200">
+                <div className="text-xl md:text-4xl font-bold text-red-500 mb-2">
+                  1.5s
                 </div>
+                <div className="text-gray-600 font-medium">Yükleme Hızı</div>
               </div>
-              <div className="bg-white rounded-2xl p-8 text-center border border-gray-200">
-                <div className="text-4xl font-bold text-red-500 mb-2">
-                  4.8/5
+              <div className="bg-white rounded-2xl p-4 md:p-8 text-center border border-gray-200">
+                <div className="text-xl md:text-4xl font-bold text-red-500 mb-2">
+                  %99.9
                 </div>
-                <div className="text-gray-600 font-medium">
-                  Kullanıcı Memnuniyeti
-                </div>
+                <div className="text-gray-600 font-medium">Uptime</div>
               </div>
             </div>
 
             {/* Detailed Impact */}
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white rounded-2xl p-8 border border-gray-200">
+              <div className="bg-white rounded-2xl p-4 md:p-8 border border-gray-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
                   📈 İş Sonuçları
                 </h3>
@@ -754,22 +789,22 @@ export default function FluentaProjectPage() {
                   <li className="flex items-start gap-3">
                     <span className="text-red-500 mt-1">•</span>
                     <span>
-                      İlk 3 ayda <strong>3000+ aktif kullanıcı</strong>{" "}
-                      kazanıldı
+                      3D avatar konuşma pratiği modülü <strong>sıfırdan</strong>{" "}
+                      hayata geçirildi
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-red-500 mt-1">•</span>
                     <span>
-                      Organik trafik <strong>%200 arttı</strong> (SEO
-                      optimizasyonu sayesinde)
+                      <strong>A1–C2 seviye yapısı:</strong> 6 farklı dil
+                      seviyesinde içerik sistemi hayata geçirildi
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-red-500 mt-1">•</span>
                     <span>
-                      Kullanıcı engagement oranı <strong>%85</strong>{" "}
-                      seviyesinde
+                      Abonelik paketiyle birlikte{" "}
+                      <strong>güvenli ödeme altyapısı</strong> entegre edildi
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
@@ -782,7 +817,7 @@ export default function FluentaProjectPage() {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-2xl p-8 border border-gray-200">
+              <div className="bg-white rounded-2xl p-4 md:p-8 border border-gray-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
                   ⚡ Teknik Başarılar
                 </h3>
@@ -821,7 +856,7 @@ export default function FluentaProjectPage() {
         </section>
 
         {/* Testimonial */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-4xl mx-auto">
             <div className="bg-red-50 rounded-3xl p-8 md:p-12 border border-red-200">
               <svg
@@ -831,12 +866,11 @@ export default function FluentaProjectPage() {
               >
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
-              <blockquote className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-6">
+              <blockquote className="text-base md:text-xl text-gray-800 leading-relaxed mb-6">
                 &ldquo;WebCraft ekibi, Fluenta platformunu hayal ettiğimizden
                 çok daha iyi bir şekilde hayata geçirdi. 3D avatarların
-                performansı muhteşem ve kullanıcı deneyimi mükemmel. İlk 3 ayda
-                3000+ kullanıcıya ulaşmamız, platformun ne kadar başarılı
-                olduğunu gösteriyor.&rdquo;
+                performansı muhteşem ve kullanıcı deneyimi tam istediğimiz gibi
+                oldu. Bu projeyle hayalimizi gerçeğe taşıdılar.&rdquo;
               </blockquote>
               <div className="flex items-center gap-4">
                 <div>
@@ -849,19 +883,19 @@ export default function FluentaProjectPage() {
         </section>
 
         {/* Why WebCraft Section */}
-        <section className="py-20 px-6 md:px-10 bg-white">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Neden WebCraft ile Çalışmalısınız?
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 2015&apos;ten beri 200+ başarılı proje deneyimi
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="bg-gray-50 rounded-2xl p-5 sm:p-8 border border-gray-200">
                 <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center mb-6">
                   <svg
                     className="w-6 h-6 text-gray-900"
@@ -877,10 +911,10 @@ export default function FluentaProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Performans Odaklı Yaklaşım
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   <Link
                     href="/hizmetler/performans-odakli-web-tasarim"
                     className="text-red-500 hover:text-red-500 underline underline-offset-4 transition-colors"
@@ -899,7 +933,7 @@ export default function FluentaProjectPage() {
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="bg-gray-50 rounded-2xl p-5 sm:p-8 border border-gray-200">
                 <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center mb-6">
                   <svg
                     className="w-6 h-6 text-gray-900"
@@ -915,10 +949,10 @@ export default function FluentaProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   SEO ve Organik Büyüme
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   <Link
                     href="/hizmetler/seo-uyumlu-web-sitesi"
                     className="text-red-500 hover:text-red-500 underline underline-offset-4 transition-colors"
@@ -937,7 +971,7 @@ export default function FluentaProjectPage() {
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="bg-gray-50 rounded-2xl p-5 sm:p-8 border border-gray-200">
                 <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center mb-6">
                   <svg
                     className="w-6 h-6 text-gray-900"
@@ -953,10 +987,10 @@ export default function FluentaProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Modern Teknolojiler
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Next.js, React, TypeScript gibi{" "}
                   <strong>modern web teknolojileri</strong> kullanarak
                   ölçeklenebilir ve güvenli çözümler geliştiriyoruz. Responsive
@@ -964,7 +998,7 @@ export default function FluentaProjectPage() {
                 </p>
               </div>
 
-              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="bg-gray-50 rounded-2xl p-5 sm:p-8 border border-gray-200">
                 <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center mb-6">
                   <svg
                     className="w-6 h-6 text-gray-900"
@@ -980,10 +1014,10 @@ export default function FluentaProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-3">
                   Uygun Fiyat, Yüksek Kalite
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   <Link
                     href="/hizmetler/kobi-web-tasarim"
                     className="text-red-500 hover:text-red-500 underline underline-offset-4 transition-colors"
@@ -999,7 +1033,7 @@ export default function FluentaProjectPage() {
 
             {/* Authority Content */}
             <div className="bg-red-50 rounded-2xl p-8 md:p-12 border border-red-200">
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-6">
                 <strong className="text-gray-900">WebCraft</strong> olarak, 2015
                 yılından bu yana{" "}
                 <Link
@@ -1018,7 +1052,7 @@ export default function FluentaProjectPage() {
                 sunuyoruz. 200+ başarılı proje deneyimimiz ile işletmenizin
                 dijital varlığını güçlendiriyoruz.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-6">
                 Fluenta projesi,{" "}
                 <strong className="text-gray-900">
                   modern web teknolojileri
@@ -1033,7 +1067,7 @@ export default function FluentaProjectPage() {
               <div className="text-center pt-6">
                 <Link
                   href="/iletisim"
-                  className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg"
+                  className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-4 py-2 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-base hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg"
                 >
                   Ücretsiz Teklif Alın
                   <svg
@@ -1056,13 +1090,13 @@ export default function FluentaProjectPage() {
         </section>
 
         {/* Related Blog Posts */}
-        <section className="py-20 px-6 md:px-10 bg-gray-50">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-gray-50">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 İlgili Blog Yazıları
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Web tasarım, SEO ve performans optimizasyonu hakkında daha fazla
                 bilgi
               </p>
@@ -1071,7 +1105,7 @@ export default function FluentaProjectPage() {
             <div className="grid md:grid-cols-3 gap-8">
               <Link
                 href="/blog/web-sitesi-hizi-nasil-artirilir"
-                className="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors"
+                className="group bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors"
               >
                 <div className="text-red-500 text-4xl mb-4 group-hover:scale-110 transition-transform">
                   ⚡
@@ -1079,7 +1113,7 @@ export default function FluentaProjectPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-500 transition-colors">
                   Web Sitesi Hızı Nasıl Artırılır?
                 </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed mb-3">
                   Performans optimizasyonu teknikleri ile web sitenizin yükleme
                   sürelerini minimize edin.
                 </p>
@@ -1090,7 +1124,7 @@ export default function FluentaProjectPage() {
 
               <Link
                 href="/blog/core-web-vitals-rehberi"
-                className="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors"
+                className="group bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors"
               >
                 <div className="text-red-500 text-4xl mb-4 group-hover:scale-110 transition-transform">
                   📊
@@ -1098,7 +1132,7 @@ export default function FluentaProjectPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-500 transition-colors">
                   Core Web Vitals Rehberi
                 </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed mb-3">
                   Google&apos;ın Core Web Vitals metrikleri ile web sitenizin
                   performansını ölçün ve optimize edin.
                 </p>
@@ -1109,7 +1143,7 @@ export default function FluentaProjectPage() {
 
               <Link
                 href="/blog/teknik-seo-kontrol-listesi"
-                className="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-red-200 transition-colors"
+                className="group bg-white rounded-2xl p-5 sm:p-8 border border-gray-200 hover:border-red-200 transition-colors"
               >
                 <div className="text-red-500 text-4xl mb-4 group-hover:scale-110 transition-transform">
                   🔍
@@ -1117,7 +1151,7 @@ export default function FluentaProjectPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-500 transition-colors">
                   Teknik SEO Kontrol Listesi
                 </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed mb-3">
                   Web sitenizin Google&apos;da üst sıralarda yer alması için
                   teknik SEO kontrol listesi.
                 </p>
@@ -1130,13 +1164,13 @@ export default function FluentaProjectPage() {
         </section>
 
         {/* Related Projects */}
-        <section className="py-20 px-6 md:px-10 bg-white">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-4">
                 Diğer Projelerimiz
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Başarıyla tamamladığımız projelerimizi keşfedin
               </p>
             </div>
@@ -1224,7 +1258,7 @@ export default function FluentaProjectPage() {
             <div className="text-center">
               <Link
                 href="/islerimiz"
-                className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg"
+                className="inline-flex items-center gap-2 bg-red-500 text-gray-900 px-4 py-2 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-base hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg"
               >
                 Tüm Projeleri Görüntüle
                 <svg

@@ -341,7 +341,7 @@ export default function KobiDijitalDonusumRehberi() {
       
       <h2>Adım 4: E-Ticaret ve Online Satış Kanalları</h2>
       
-      <p>Ürün satan KOBİ'ler için e-ticaret, gelir akışını önemli ölçüde artırabilir.</p>
+      <p>Ürün satan KOBİ'ler için e-ticaret, gelir akışını önemli ölçüde artırabilir. <a href="/e-ticaret-web-tasarim" class="text-[#f84525] hover:underline font-semibold">E-ticaret web tasarım hizmetimizle</a> İyzico ve PayTR entegrasyonlu, kargo sistemi kurulu, SEO uyumlu online mağazalar kuruyoruz.</p>
       
       <h3>E-Ticaret Platformları</h3>
       

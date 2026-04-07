@@ -56,11 +56,11 @@ const blogPosts = [
   },
   {
     slug: "2024-seo-trendleri",
-    date: "2024-12-05",
+    date: "2026-04-02",
   },
   {
     slug: "minimalist-tasarim-yaklasimlari",
-    date: "2024-12-03",
+    date: "2026-04-02",
   },
   {
     slug: "online-magaza-kurulumu",
@@ -68,15 +68,15 @@ const blogPosts = [
   },
   {
     slug: "guclu-marka-imaji-olusturma",
-    date: "2024-11-28",
+    date: "2026-04-02",
   },
   {
     slug: "web-sitesi-guvenligi",
-    date: "2024-11-25",
+    date: "2026-04-02",
   },
   {
     slug: "web-analitik-araclari",
-    date: "2024-11-22",
+    date: "2026-04-02",
   },
 ];
 
@@ -168,6 +168,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${baseUrl}/hizmetler/yapay-zeka-otomasyon`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/e-ticaret-web-tasarim`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/islerimiz`,
       lastModified: new Date(),
       changeFrequency: "weekly",
@@ -200,6 +212,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/islerimiz/home-and-car`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/islerimiz/yatrehberi`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -254,12 +272,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/hizmetler/yapay-zeka-chatbot`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
     {
       url: `${baseUrl}/hizmetler/yapay-zeka-otomasyon`,

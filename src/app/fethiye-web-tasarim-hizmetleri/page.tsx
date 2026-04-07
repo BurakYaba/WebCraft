@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Header from "@/components/Header";
 import Breadcrumb from "@/components/Breadcrumb";
 import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
+import Link from "next/link";
 import {
   MapPin,
   Phone,
@@ -14,10 +15,12 @@ import {
   TrendingUp,
   Award,
   Zap,
+  ArrowRight,
 } from "lucide-react";
 
 // Lazy load components
-const BentoGrid = lazy(() => import("@/components/BentoGrid"));
+const ServiceCards = lazy(() => import("@/components/ServiceCards"));
+const SocialProofStrip = lazy(() => import("@/components/SocialProofStrip"));
 const Footer = lazy(() => import("@/components/Footer"));
 const ServiceFAQSection = lazy(() => import("@/components/ServiceFAQSection"));
 
@@ -274,7 +277,7 @@ export default function FethiyeWebTasarimPage() {
           </div>
         </section>
 
-        {/* Services Section - Using BentoGrid */}
+        {/* Services Section */}
         <section className="py-20 bg-white">
           <div className="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-16 md:px-20 lg:px-24">
             <div className="text-center mb-16">
@@ -288,7 +291,7 @@ export default function FethiyeWebTasarimPage() {
               </p>
             </div>
             <Suspense fallback={<SectionSkeleton height="h-96" />}>
-              <BentoGrid />
+              <ServiceCards />
             </Suspense>
           </div>
         </section>
@@ -344,7 +347,13 @@ export default function FethiyeWebTasarimPage() {
                 <p className="text-gray-300">
                   &quot;Fethiye otel&quot;, &quot;Fethiye restoran&quot; gibi
                   yerel aramalarda Google&apos;da üst sıralarda yer almanızı
-                  sağlıyoruz.
+                  sağlıyoruz.{" "}
+                  <Link
+                    href="/hizmetler/seo-hizmeti"
+                    className="text-red-400 hover:underline text-sm"
+                  >
+                    SEO hizmet detayları →
+                  </Link>
                 </p>
               </div>
 
@@ -437,7 +446,13 @@ export default function FethiyeWebTasarimPage() {
                       </h4>
                       <p className="text-gray-600">
                         Fethiye&apos;deki tüm yerel işletmeler için kurumsal web
-                        tasarımı ve Google My Business optimizasyonu
+                        tasarımı ve Google My Business optimizasyonu.{" "}
+                        <Link
+                          href="/mugla-web-tasarim-seo-hizmetleri"
+                          className="text-red-600 hover:underline text-sm font-medium"
+                        >
+                          Muğla geneli hizmetler →
+                        </Link>
                       </p>
                     </div>
                   </div>
@@ -463,7 +478,13 @@ export default function FethiyeWebTasarimPage() {
                   <div className="bg-white/10 p-4 rounded-lg">
                     <h4 className="font-semibold mb-2">Özel Projeler</h4>
                     <p className="text-red-100 text-sm">
-                      E-ticaret ve özel fonksiyonlu büyük çaplı projeler
+                      <Link
+                        href="/e-ticaret-web-tasarim"
+                        className="text-white hover:text-red-200 underline"
+                      >
+                        E-ticaret
+                      </Link>{" "}
+                      ve özel fonksiyonlu büyük çaplı projeler
                     </p>
                   </div>
                 </div>
@@ -502,6 +523,64 @@ export default function FethiyeWebTasarimPage() {
               >
                 +90 (507) 944 17 15
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Social Proof */}
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <SocialProofStrip />
+        </Suspense>
+
+        {/* Related Blog Posts */}
+        <section className="py-16 bg-white">
+          <div className="w-full max-w-7xl mx-auto px-6 sm:px-16 md:px-20 lg:px-24">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              Fethiye Web Tasarım İçin Hazırladığımız Kaynaklar
+            </h2>
+            <p className="text-gray-500 text-sm mb-8">
+              Fethiye’de dijital varlığınızı güçlendirmek için pratik rehberler.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  href: "/blog/fethiye-web-tasarim-rehberi",
+                  label: "Rehber",
+                  title: "Fethiye Web Tasarım Rehberi",
+                  desc: "Fethiye’deki turizm işletmeleri için web sitesi nasıl olmalı? Çok dilli destek, rezervasyon sistemi ve yerel SEO.",
+                },
+                {
+                  href: "/blog/yerel-seo-stratejileri",
+                  label: "Rehber",
+                  title: "Yerel SEO Stratejileri",
+                  desc: "Google My Business optimizasyonu, yerel anahtar kelimeler ve Fethiye’ye özel SEO taktikleri.",
+                },
+                {
+                  href: "/blog/web-sitesi-hizi-nasil-artirilir",
+                  label: "Rehber",
+                  title: "Web Sitesi Hızı Nasıl Artırılır?",
+                  desc: "Yavaş site otel rezervasyonlarını kaydırır. Core Web Vitals ve performans optimizasyonu rehberi.",
+                },
+              ].map(({ href, label, title, desc }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="block p-5 border border-gray-200 rounded-xl hover:border-red-200 hover:shadow-sm transition-all group"
+                >
+                  <span className="inline-block text-xs font-semibold text-red-600 uppercase tracking-wide mb-2">
+                    {label}
+                  </span>
+                  <h3 className="text-gray-900 font-semibold text-sm mb-2 group-hover:text-red-600 transition-colors">
+                    {title}
+                  </h3>
+                  <p className="text-gray-500 text-xs leading-relaxed">
+                    {desc}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-xs text-red-500 mt-3 font-medium">
+                    Okuyun <ArrowRight className="w-3 h-3" />
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
         </section>

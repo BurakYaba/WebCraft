@@ -15,6 +15,7 @@ interface Project {
   client?: string;
   url?: string;
   featured?: boolean;
+  result?: string;
 }
 
 const projects: Project[] = [
@@ -24,6 +25,8 @@ const projects: Project[] = [
     title: "Fluenta - İngilizce Öğrenme Platformu",
     description:
       "AI destekli 3D avatarlarla interaktif İngilizce öğrenme deneyimi sunan kapsamlı eğitim platformu",
+    result:
+      "Sıfırdan ürün: abonelik sistemi, çoklu dil seviyesi, 3D avatar konuşma pratiği",
     category: "Web Tasarım",
     image: "/projects/fluenta.webp",
     tags: ["Next.js", "React", "TypeScript", "AI"],
@@ -37,6 +40,8 @@ const projects: Project[] = [
     title: "Mentoria - Özel Ders Platformu",
     description:
       "Öğrenci ve öğretmenleri akıllı eşleştirme sistemiyle buluşturan güvenilir özel ders platformu",
+    result:
+      "Akıllı eşleştirme motoru ile öğrenci–mentorsör bağlantısını tek platformda topladık",
     category: "Web Tasarım",
     image: "/projects/mentoria.webp",
     tags: ["Next.js", "React", "TypeScript", "TailwindCSS"],
@@ -49,6 +54,8 @@ const projects: Project[] = [
     title: "Atlantis Kreş ve Gündüz Bakımevi",
     description:
       "Muğla Menteşe'de Montessori, Reggio Emilia ve High Scope eğitim modelleriyle modern kreş web sitesi",
+    result:
+      "Velilerin bilgi almasını ve başvuru yapmasını sağlayan kurumsal dijital varlık",
     category: "Web Tasarım",
     image: "/projects/atlantis.webp",
     tags: ["Next.js", "React", "TailwindCSS"],
@@ -60,7 +67,9 @@ const projects: Project[] = [
     id: "skoll-beauty",
     title: "Skoll Salon - Güzellik ve Bakım Salonu",
     description:
-      "Modern tasarım ve online randevu sistemi ile Fethiye'nin önde gelen güzellik salonunun dijital vitrini",
+      "Modern tasarım ve online randevu sistemi ile Muğla'nın önde gelen güzellik salonunun dijital vitrini",
+    result:
+      "Telefonla randevudan çıkış: WhatsApp entegrasyonlu online rezervasyon akışı",
     category: "Web Tasarım",
     image: "/projects/skoll.webp",
     tags: ["Next.js", "React", "Online Randevu", "SEO"],
@@ -73,12 +82,28 @@ const projects: Project[] = [
     title: "Home and Car - Edremit Emlak Platformu",
     description:
       "Kapsamlı CMS ve mülk yönetim sistemi ile modern emlak platformu. 50+ özellik ve yerel SEO optimizasyonu",
+    result:
+      "Manuel ilan yönetiminden çıkış: 50+ mülk özelliği, yönetici paneli, bölgede dijital varlık",
     category: "Web Tasarım",
     image: "/projects/homeandcar.webp",
     tags: ["Next.js 16", "TypeScript", "PostgreSQL", "CMS"],
     year: "2026",
     client: "Home and Car",
     url: "/islerimiz/home-and-car",
+  },
+  {
+    id: "yatrehberi",
+    title: "Yat Rehberi - Mavi Yolculuk Platformu",
+    description:
+      "Türkiye'nin Ege ve Akdeniz kıyılarındaki rota, marina ve koy bilgilerini bir araya toplayan dijital rehber",
+    result:
+      "Dağınık denizcilik bilgilerinden çıkış: CMS yönetimli, SEO uyumlu mavi yolculuk platformu",
+    category: "Web Tasarım",
+    image: "/projects/yatrehberi.webp",
+    tags: ["Next.js", "TypeScript", "CMS", "SEO"],
+    year: "2025",
+    client: "Yat Rehberi",
+    url: "/islerimiz/yatrehberi",
   },
   // Mock Projects
   {
@@ -198,7 +223,7 @@ export default function ProjectsGallery() {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="sync">
             {filteredProjects.map((project, index) => (
               <motion.div
                 key={`${activeCategory}-${project.id}`}

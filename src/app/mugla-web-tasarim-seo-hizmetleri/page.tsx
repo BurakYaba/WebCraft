@@ -15,7 +15,8 @@ import {
 } from "lucide-react";
 
 // Lazy load components
-const BentoGrid = lazy(() => import("@/components/BentoGrid"));
+const ServiceCards = lazy(() => import("@/components/ServiceCards"));
+const SocialProofStrip = lazy(() => import("@/components/SocialProofStrip"));
 const Footer = lazy(() => import("@/components/Footer"));
 const ServiceFAQSection = lazy(() => import("@/components/ServiceFAQSection"));
 
@@ -275,7 +276,7 @@ export default function MuglaWebTasarimPage() {
               </p>
             </div>
             <Suspense fallback={<SectionSkeleton height="h-96" />}>
-              <BentoGrid />
+              <ServiceCards />
             </Suspense>
           </div>
         </section>
@@ -423,6 +424,11 @@ export default function MuglaWebTasarimPage() {
             </div>
           </div>
         </section>
+
+        {/* Social Proof */}
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <SocialProofStrip />
+        </Suspense>
 
         {/* FAQ Section */}
         <Suspense fallback={<SectionSkeleton height="h-96" />}>

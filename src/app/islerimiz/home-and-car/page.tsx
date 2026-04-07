@@ -73,7 +73,7 @@ export default function HomeAndCarProjectPage() {
       <Breadcrumb items={breadcrumbItems} />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 px-6 md:px-10 overflow-hidden">
+        <section className="relative pt-24 md:pt-32 pb-12 md:pb-20 px-6 md:px-10 overflow-hidden">
           {/* Background gradient effects */}
           <div className="absolute inset-0 " />
           <div className="absolute top-20 left-10 w-72 h-72  rounded-full blur-3xl" />
@@ -91,13 +91,13 @@ export default function HomeAndCarProjectPage() {
                   </span>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
                   <span className="text-red-500">Home and Car</span>
                   <br />
                   <span className="text-gray-900">Edremit Emlak</span>
                 </h1>
 
-                <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                <p className="text-base md:text-xl text-gray-700 mb-8 leading-relaxed">
                   Balıkesir Edremit bölgesi için kapsamlı mülk yönetim sistemi,
                   CMS ve SEO uyumlu{" "}
                   <Link
@@ -117,25 +117,25 @@ export default function HomeAndCarProjectPage() {
                 </p>
 
                 {/* Key Metrics */}
-                <div className="grid grid-cols-3 gap-6 mb-8">
-                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-4 border border-red-200">
-                    <div className="text-3xl font-bold text-red-500 mb-1">
+                <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 mb-8">
+                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-red-200">
+                    <div className="text-base sm:text-2xl md:text-3xl font-bold text-red-500 mb-1">
                       90+
                     </div>
                     <div className="text-sm text-gray-600">
                       Lighthouse Score
                     </div>
                   </div>
-                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-4 border border-red-200">
-                    <div className="text-3xl font-bold text-red-500 mb-1">
+                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-red-200">
+                    <div className="text-base sm:text-2xl md:text-3xl font-bold text-red-500 mb-1">
                       50+
                     </div>
                     <div className="text-sm text-gray-600">
                       Mülk Özellikleri
                     </div>
                   </div>
-                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-4 border border-red-200">
-                    <div className="text-3xl font-bold text-red-500 mb-1">
+                  <div className="bg-red-50 backdrop-blur-sm rounded-xl p-2 sm:p-4 border border-red-200">
+                    <div className="text-base sm:text-2xl md:text-3xl font-bold text-red-500 mb-1">
                       &lt;2s
                     </div>
                     <div className="text-sm text-gray-600">Yükleme Süresi</div>
@@ -148,7 +148,7 @@ export default function HomeAndCarProjectPage() {
                     href="https://homeandcar.com.tr"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-red-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg shadow-red-500/25"
+                    className="inline-flex items-center gap-2 bg-red-500 text-white px-4 py-2 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-base hover:bg-red-600 transition-all duration-300 hover:scale-105 shadow-lg shadow-red-500/25"
                   >
                     Siteyi Ziyaret Et
                     <svg
@@ -167,7 +167,7 @@ export default function HomeAndCarProjectPage() {
                   </a>
                   <Link
                     href="/islerimiz"
-                    className="inline-flex items-center gap-2 bg-white backdrop-blur-sm text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 border border-gray-300"
+                    className="inline-flex items-center gap-2 bg-white backdrop-blur-sm text-gray-900 px-4 py-2 md:px-8 md:py-4 rounded-full font-semibold text-xs md:text-base hover:bg-gray-100 transition-all duration-300 border border-gray-300"
                   >
                     ← Tüm Projeler
                   </Link>
@@ -195,14 +195,14 @@ export default function HomeAndCarProjectPage() {
         </section>
 
         {/* Project Overview */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
             <div className="bg-gray-50 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-gray-200">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                 Proje Özeti: Emlak Sektöründe Dijital Dönüşüm
               </h2>
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                <p className="text-sm md:text-sm md:text-sm md:text-lg text-gray-700 leading-relaxed mb-6">
                   <strong className="text-gray-900">Home and Car</strong>,
                   Balıkesir Edremit bölgesinde faaliyet gösteren emlak ofisi
                   için geliştirilmiş, modern ve kullanıcı dostu bir dijital
@@ -216,7 +216,7 @@ export default function HomeAndCarProjectPage() {
                   ve kapsamlı CMS ile satılık ve kiralık gayrimenkul ilanlarının
                   profesyonel sunumunu sağladık.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-lg text-gray-700 leading-relaxed">
                   <strong className="text-gray-900">
                     Next.js 16, TypeScript ve PostgreSQL
                   </strong>{" "}
@@ -237,21 +237,21 @@ export default function HomeAndCarProjectPage() {
         </section>
 
         {/* Client Challenge - Problem-Solution Format */}
-        <section className="py-20 px-6 md:px-10 bg-white">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Müşteri İhtiyacı ve Çözümümüz
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Geleneksel emlak ofisinin dijital dönüşüm ihtiyacı
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Challenge */}
-              <div className="bg-red-50 backdrop-blur-sm rounded-2xl p-8 border border-red-200">
-                <div className="flex items-center gap-3 mb-6">
+              <div className="bg-red-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-red-200">
+                <div className="flex items-center gap-2 mb-4 md:mb-6">
                   <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-red-400"
@@ -267,12 +267,12 @@ export default function HomeAndCarProjectPage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">
+                  <h3 className="text-sm md:text-2xl font-bold text-gray-900">
                     Zorluklar
                   </h3>
                 </div>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-gray-700">
+                <ul className="space-y-2 md:space-y-4">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       <strong className="text-gray-900">
@@ -281,7 +281,7 @@ export default function HomeAndCarProjectPage() {
                       zaman kaybına ve hatalara neden oluyordu
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       <strong className="text-gray-900">
@@ -290,7 +290,7 @@ export default function HomeAndCarProjectPage() {
                       yerel pazarda rekabet dezavantajı yaratıyordu
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       <strong className="text-gray-900">
@@ -299,7 +299,7 @@ export default function HomeAndCarProjectPage() {
                       yetersiz ve profesyonel değildi
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-red-500 mt-1">▸</span>
                     <span>
                       <strong className="text-gray-900">
@@ -312,8 +312,8 @@ export default function HomeAndCarProjectPage() {
               </div>
 
               {/* Solution */}
-              <div className="bg-green-50 backdrop-blur-sm rounded-2xl p-8 border border-green-200">
-                <div className="flex items-center gap-3 mb-6">
+              <div className="bg-green-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-green-200">
+                <div className="flex items-center gap-2 mb-4 md:mb-6">
                   <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-green-600"
@@ -329,12 +329,12 @@ export default function HomeAndCarProjectPage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">
+                  <h3 className="text-sm md:text-2xl font-bold text-gray-900">
                     Çözümlerimiz
                   </h3>
                 </div>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-gray-700">
+                <ul className="space-y-2 md:space-y-4">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-600 mt-1">✓</span>
                     <span>
                       <strong className="text-gray-900">
@@ -343,7 +343,7 @@ export default function HomeAndCarProjectPage() {
                       ile kolay mülk ekleme ve düzenleme (50+ özellik)
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-600 mt-1">✓</span>
                     <span>
                       <strong className="text-gray-900">Yerel SEO</strong> ile
@@ -351,7 +351,7 @@ export default function HomeAndCarProjectPage() {
                       sıralarda yer alma
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-600 mt-1">✓</span>
                     <span>
                       <strong className="text-gray-900">
@@ -360,7 +360,7 @@ export default function HomeAndCarProjectPage() {
                       ve Vercel Blob entegrasyonu ile profesyonel sunum
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-700">
+                  <li className="flex items-start gap-3 text-sm text-gray-700">
                     <span className="text-green-600 mt-1">✓</span>
                     <span>
                       <strong className="text-gray-900">
@@ -376,13 +376,13 @@ export default function HomeAndCarProjectPage() {
         </section>
 
         {/* Key Features */}
-        <section className="py-20 px-6 md:px-10 bg-gray-50">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-gray-50">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Öne Çıkan Özellikler
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Modern emlak platformu için kapsamlı çözümler
               </p>
             </div>
@@ -405,7 +405,7 @@ export default function HomeAndCarProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                   Mülk Yönetim Sistemi
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
@@ -445,7 +445,7 @@ export default function HomeAndCarProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                   İçerik Yönetimi (CMS)
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
@@ -485,7 +485,7 @@ export default function HomeAndCarProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                   Yerel SEO Optimizasyonu
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
@@ -525,7 +525,7 @@ export default function HomeAndCarProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                   Responsive Tasarım
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
@@ -565,7 +565,7 @@ export default function HomeAndCarProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                   Güvenlik & Yetkilendirme
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
@@ -605,7 +605,7 @@ export default function HomeAndCarProjectPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-base md:text-xl font-bold text-gray-900 mb-3">
                   İletişim & E-posta
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
@@ -632,21 +632,21 @@ export default function HomeAndCarProjectPage() {
         </section>
 
         {/* Technology Stack */}
-        <section className="py-20 px-6 md:px-10">
+        <section className="py-12 md:py-20 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Teknoloji Yığını
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Modern ve güvenilir teknolojilerle geliştirildi
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Frontend */}
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border border-blue-200">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-4 md:p-6 border border-blue-200">
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-4">
                   Frontend
                 </h3>
                 <ul className="space-y-2 text-sm text-gray-700">
@@ -674,8 +674,8 @@ export default function HomeAndCarProjectPage() {
               </div>
 
               {/* Backend */}
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 border border-green-200">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-4 md:p-6 border border-green-200">
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-4">
                   Backend & Database
                 </h3>
                 <ul className="space-y-2 text-sm text-gray-700">
@@ -699,8 +699,8 @@ export default function HomeAndCarProjectPage() {
               </div>
 
               {/* Services */}
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 border border-purple-200">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-4 md:p-6 border border-purple-200">
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-4">
                   Medya & E-posta
                 </h3>
                 <ul className="space-y-2 text-sm text-gray-700">
@@ -720,8 +720,8 @@ export default function HomeAndCarProjectPage() {
               </div>
 
               {/* Deployment */}
-              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 border border-orange-200">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-4 md:p-6 border border-orange-200">
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-4">
                   Deployment & SEO
                 </h3>
                 <ul className="space-y-2 text-sm text-gray-700">
@@ -748,13 +748,13 @@ export default function HomeAndCarProjectPage() {
         </section>
 
         {/* Results & Metrics */}
-        <section className="py-20 px-6 md:px-10 bg-gradient-to-b from-gray-50 to-white">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-gradient-to-b from-gray-50 to-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Sonuçlar ve Başarılar
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
                 Dijital dönüşüm ile ölçülebilir başarı
               </p>
             </div>
@@ -790,16 +790,16 @@ export default function HomeAndCarProjectPage() {
             </div>
 
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-8">
                 İş Sonuçları
               </h3>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="text-lg font-bold text-gray-900 mb-4">
+                  <h4 className="text-sm md:text-lg font-bold text-gray-900 mb-4">
                     Teknik Başarılar
                   </h4>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-gray-700">
+                    <li className="flex items-start gap-3 text-sm text-gray-700">
                       <svg
                         className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
                         fill="currentColor"
@@ -813,7 +813,7 @@ export default function HomeAndCarProjectPage() {
                       </svg>
                       <span>Production-ready güvenlik standartları</span>
                     </li>
-                    <li className="flex items-start gap-3 text-gray-700">
+                    <li className="flex items-start gap-3 text-sm text-gray-700">
                       <svg
                         className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
                         fill="currentColor"
@@ -827,7 +827,7 @@ export default function HomeAndCarProjectPage() {
                       </svg>
                       <span>Zero-downtime deployment stratejisi</span>
                     </li>
-                    <li className="flex items-start gap-3 text-gray-700">
+                    <li className="flex items-start gap-3 text-sm text-gray-700">
                       <svg
                         className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
                         fill="currentColor"
@@ -841,7 +841,7 @@ export default function HomeAndCarProjectPage() {
                       </svg>
                       <span>Modular ve maintainable kod yapısı</span>
                     </li>
-                    <li className="flex items-start gap-3 text-gray-700">
+                    <li className="flex items-start gap-3 text-sm text-gray-700">
                       <svg
                         className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
                         fill="currentColor"
@@ -858,11 +858,11 @@ export default function HomeAndCarProjectPage() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-gray-900 mb-4">
+                  <h4 className="text-sm md:text-lg font-bold text-gray-900 mb-4">
                     SEO Performansı
                   </h4>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-gray-700">
+                    <li className="flex items-start gap-3 text-sm text-gray-700">
                       <svg
                         className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
                         fill="currentColor"
@@ -876,7 +876,7 @@ export default function HomeAndCarProjectPage() {
                       </svg>
                       <span>Google Search Console entegrasyonu</span>
                     </li>
-                    <li className="flex items-start gap-3 text-gray-700">
+                    <li className="flex items-start gap-3 text-sm text-gray-700">
                       <svg
                         className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
                         fill="currentColor"
@@ -890,7 +890,7 @@ export default function HomeAndCarProjectPage() {
                       </svg>
                       <span>Sitemap ve robots.txt optimizasyonu</span>
                     </li>
-                    <li className="flex items-start gap-3 text-gray-700">
+                    <li className="flex items-start gap-3 text-sm text-gray-700">
                       <svg
                         className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
                         fill="currentColor"
@@ -904,7 +904,7 @@ export default function HomeAndCarProjectPage() {
                       </svg>
                       <span>Meta tags ve structured data</span>
                     </li>
-                    <li className="flex items-start gap-3 text-gray-700">
+                    <li className="flex items-start gap-3 text-sm text-gray-700">
                       <svg
                         className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
                         fill="currentColor"
@@ -926,13 +926,13 @@ export default function HomeAndCarProjectPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 px-6 md:px-10 bg-[#f84525] text-white relative overflow-hidden">
+        <section className="py-12 md:py-20 px-6 md:px-10 bg-[#f84525] text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl" />
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl" />
           </div>
           <div className="max-w-4xl mx-auto text-center relative z-10">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            <h2 className="text-xl md:text-4xl lg:text-5xl font-bold mb-6">
               Sizin İçin de Benzer Bir Proje Geliştirebiliriz
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">

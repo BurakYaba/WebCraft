@@ -122,6 +122,45 @@ export default function SocialProofStrip() {
         {/* Divider */}
         <div className="w-16 h-px bg-red-500/40 mx-auto mb-16" />
 
+        {/* Outcome-based proof stats */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+            <div className="text-3xl md:text-4xl font-bold text-white mb-2">
+              40 → 94
+            </div>
+            <div className="text-sm text-red-400 font-semibold mb-1">
+              PageSpeed Skoru
+            </div>
+            <p className="text-white/50 text-xs leading-relaxed">
+              Yavaş bir siteden 3 ayda %60 organik trafik artışı
+            </p>
+          </div>
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+            <div className="text-3xl md:text-4xl font-bold text-white mb-2">
+              3 Gün
+            </div>
+            <div className="text-sm text-red-400 font-semibold mb-1">
+              Teslim Hızı
+            </div>
+            <p className="text-white/50 text-xs leading-relaxed">
+              Fikir alışverişinden siteye — en hızlı projemiz 72 saatte canlıya
+              alındı
+            </p>
+          </div>
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+            <div className="text-3xl md:text-4xl font-bold text-white mb-2">
+              Aynı Bütçe
+            </div>
+            <div className="text-sm text-red-400 font-semibold mb-1">
+              Daha Fazla Dönüşüm
+            </div>
+            <p className="text-white/50 text-xs leading-relaxed">
+              Reklam bütçesi sabit, dönüşüm oranı belirgin şekilde arttı — tek
+              değişken altyapı
+            </p>
+          </div>
+        </div>
+
         {/* Testimonials grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
