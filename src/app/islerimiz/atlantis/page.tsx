@@ -649,23 +649,63 @@ export default function AtlantisProjectPage() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {[
-                { name: "Next.js 14", logo: "/tech-logos/nextjs.svg", desc: "React Framework" },
-                { name: "TypeScript", logo: "/tech-logos/typescript.svg", desc: "Type Safety" },
-                { name: "TailwindCSS", logo: "/tech-logos/tailwindcss.svg", desc: "Styling" },
-                { name: "Cloudinary", logo: "/tech-logos/cloudinary.svg", desc: "Media Storage" },
-                { name: "PostgreSQL", logo: "/tech-logos/postgresql.svg", desc: "Database" },
-                { name: "Prisma ORM", logo: "/tech-logos/prisma.svg", desc: "Security & Auth" },
-                { name: "Vercel", logo: "/tech-logos/vercel.svg", desc: "Deployment" },
-                { name: "Google Analytics", logo: "/tech-logos/googleanalytics.svg", desc: "Insights" },
+                {
+                  name: "Next.js 14",
+                  logo: "/tech-logos/nextjs.svg",
+                  desc: "React Framework",
+                },
+                {
+                  name: "TypeScript",
+                  logo: "/tech-logos/typescript.svg",
+                  desc: "Type Safety",
+                },
+                {
+                  name: "TailwindCSS",
+                  logo: "/tech-logos/tailwindcss.svg",
+                  desc: "Styling",
+                },
+                {
+                  name: "Cloudinary",
+                  logo: "/tech-logos/cloudinary.svg",
+                  desc: "Media Storage",
+                },
+                {
+                  name: "PostgreSQL",
+                  logo: "/tech-logos/postgresql.svg",
+                  desc: "Database",
+                },
+                {
+                  name: "Prisma ORM",
+                  logo: "/tech-logos/prisma.svg",
+                  desc: "Security & Auth",
+                },
+                {
+                  name: "Vercel",
+                  logo: "/tech-logos/vercel.svg",
+                  desc: "Deployment",
+                },
+                {
+                  name: "Google Analytics",
+                  logo: "/tech-logos/googleanalytics.svg",
+                  desc: "Insights",
+                },
               ].map((tech) => (
                 <div
                   key={tech.name}
                   className="bg-white rounded-2xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-colors text-center group"
                 >
                   <div className="w-10 h-10 mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <img src={tech.logo} alt={tech.name} className="w-9 h-9 object-contain" loading="lazy" />
+                    <Image
+                      src={tech.logo}
+                      alt={tech.name}
+                      width={36}
+                      height={36}
+                      className="w-9 h-9 object-contain"
+                    />
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-1 text-sm">{tech.name}</h3>
+                  <h3 className="font-bold text-gray-900 mb-1 text-sm">
+                    {tech.name}
+                  </h3>
                   <p className="text-xs text-gray-600">{tech.desc}</p>
                 </div>
               ))}

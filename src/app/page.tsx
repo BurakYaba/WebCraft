@@ -18,7 +18,7 @@ const Footer = dynamic(() => import("../components/Footer"));
 // Loading component for better UX
 const SectionSkeleton = ({ height = "h-96" }: { height?: string }) => (
   <div
-    className={`${height} bg-gray-100 animate-pulse flex items-center justify-center`}
+    className={`${height} bg-gray-800 animate-pulse flex items-center justify-center`}
   >
     <div className="w-8 h-8 border-4 border-red-500/20 border-t-red-500 rounded-full animate-spin" />
   </div>

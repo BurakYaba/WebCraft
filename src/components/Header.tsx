@@ -190,6 +190,7 @@ export default function Header() {
           ref={buttonRef}
           className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow hover:scale-105 transition-transform focus:outline-none sm:ml-2"
           aria-label="Menuyu Ac/Kapat"
+          aria-expanded={menuOpen}
           onClick={openMenu}
         >
           <span className="block w-6 h-6 relative">

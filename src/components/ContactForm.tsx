@@ -39,6 +39,11 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
   >("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
+  // Spam protection
+  const [honeypot, setHoneypot] = useState("");
+  const [formLoadedAt] = useState(() => Date.now());
+  const [lastSubmitAt, setLastSubmitAt] = useState(0);
+
   const handleInputChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -53,9 +58,32 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Honeypot check — bots fill hidden fields
+    if (honeypot) {
+      router.push("/tesekkurler");
+      return;
+    }
+
+    // Timing check — form must be open at least 3 seconds
+    const elapsed = Date.now() - formLoadedAt;
+    if (elapsed < 3000) {
+      router.push("/tesekkurler");
+      return;
+    }
+
+    // Rate limit — at least 30 seconds between submissions
+    const now = Date.now();
+    if (lastSubmitAt && now - lastSubmitAt < 30000) {
+      setSubmitStatus("error");
+      setErrorMessage("Lütfen tekrar göndermeden önce biraz bekleyin.");
+      return;
+    }
+
     setIsSubmitting(true);
     setSubmitStatus("idle");
     setErrorMessage("");
+    setLastSubmitAt(now);
 
     try {
       // Capture location data (IP-based only, no permission required)
@@ -149,6 +177,20 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
       onSubmit={handleSubmit}
       className={`bg-gray-50 p-4 sm:p-6 lg:p-12 rounded-lg ${className}`}
     >
+      {/* Honeypot field — invisible to users, filled by bots */}
+      <div className="absolute -left-[9999px]" aria-hidden="true">
+        <label htmlFor="website_url">Website</label>
+        <input
+          type="text"
+          id="website_url"
+          name="website_url"
+          value={honeypot}
+          onChange={(e) => setHoneypot(e.target.value)}
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
+
       {/* Error Message */}
       {submitStatus === "error" && (
         <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">

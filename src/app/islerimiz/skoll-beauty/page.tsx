@@ -503,7 +503,9 @@ export default function SkollBeautyPage() {
               <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="text-sm md:text-2xl font-bold text-gray-900">1</span>
+                    <span className="text-sm md:text-2xl font-bold text-gray-900">
+                      1
+                    </span>
                   </div>
                   <div className="flex-1">
                     <h3 className="text-sm md:text-2xl font-bold text-gray-900 mb-3">
@@ -535,7 +537,9 @@ export default function SkollBeautyPage() {
               <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="text-sm md:text-2xl font-bold text-gray-900">2</span>
+                    <span className="text-sm md:text-2xl font-bold text-gray-900">
+                      2
+                    </span>
                   </div>
                   <div className="flex-1">
                     <h3 className="text-sm md:text-2xl font-bold text-gray-900 mb-3">
@@ -566,7 +570,9 @@ export default function SkollBeautyPage() {
               <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="text-sm md:text-2xl font-bold text-gray-900">3</span>
+                    <span className="text-sm md:text-2xl font-bold text-gray-900">
+                      3
+                    </span>
                   </div>
                   <div className="flex-1">
                     <h3 className="text-sm md:text-2xl font-bold text-gray-900 mb-3">
@@ -604,7 +610,9 @@ export default function SkollBeautyPage() {
               <div className="bg-gray-50 backdrop-blur-sm rounded-2xl p-4 md:p-8 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="text-sm md:text-2xl font-bold text-gray-900">4</span>
+                    <span className="text-sm md:text-2xl font-bold text-gray-900">
+                      4
+                    </span>
                   </div>
                   <div className="flex-1">
                     <h3 className="text-sm md:text-2xl font-bold text-gray-900 mb-3">
@@ -649,7 +657,15 @@ export default function SkollBeautyPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Tech 1 */}
               <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/nextjs.svg" alt="Next.js" className="w-10 h-10 object-contain" /></div>
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Image
+                    src="/tech-logos/nextjs.svg"
+                    alt="Next.js"
+                    width={40}
+                    height={40}
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
                 <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   Next.js & React
                 </h3>
@@ -660,7 +676,24 @@ export default function SkollBeautyPage() {
 
               {/* Tech 2 */}
               <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform"><svg className="w-10 h-10 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" strokeWidth="2"/><path d="M16 2v4M8 2v4M3 10h18" strokeWidth="2"/></svg></div>
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <svg
+                    className="w-10 h-10 text-gray-700"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect
+                      x="3"
+                      y="4"
+                      width="18"
+                      height="18"
+                      rx="2"
+                      strokeWidth="2"
+                    />
+                    <path d="M16 2v4M8 2v4M3 10h18" strokeWidth="2" />
+                  </svg>
+                </div>
                 <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   Randevu API
                 </h3>
@@ -671,7 +704,15 @@ export default function SkollBeautyPage() {
 
               {/* Tech 3 */}
               <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/tailwindcss.svg" alt="TailwindCSS" className="w-10 h-10 object-contain" /></div>
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Image
+                    src="/tech-logos/tailwindcss.svg"
+                    alt="TailwindCSS"
+                    width={40}
+                    height={40}
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
                 <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   TailwindCSS
                 </h3>
@@ -682,7 +723,15 @@ export default function SkollBeautyPage() {
 
               {/* Tech 4 */}
               <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/googlemybusiness.svg" alt="Google My Business" className="w-10 h-10 object-contain" /></div>
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Image
+                    src="/tech-logos/googlemybusiness.svg"
+                    alt="Google My Business"
+                    width={40}
+                    height={40}
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
                 <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   Local SEO Tools
                 </h3>
@@ -693,7 +742,15 @@ export default function SkollBeautyPage() {
 
               {/* Tech 5 */}
               <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/instagram.svg" alt="Instagram" className="w-10 h-10 object-contain" /></div>
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Image
+                    src="/tech-logos/instagram.svg"
+                    alt="Instagram"
+                    width={40}
+                    height={40}
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
                 <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   Instagram API
                 </h3>
@@ -704,7 +761,15 @@ export default function SkollBeautyPage() {
 
               {/* Tech 6 */}
               <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/whatsapp.svg" alt="WhatsApp" className="w-10 h-10 object-contain" /></div>
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Image
+                    src="/tech-logos/whatsapp.svg"
+                    alt="WhatsApp"
+                    width={40}
+                    height={40}
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
                 <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   WhatsApp Business
                 </h3>
@@ -715,7 +780,15 @@ export default function SkollBeautyPage() {
 
               {/* Tech 7 */}
               <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/googleanalytics.svg" alt="Analytics" className="w-10 h-10 object-contain" /></div>
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Image
+                    src="/tech-logos/googleanalytics.svg"
+                    alt="Analytics"
+                    width={40}
+                    height={40}
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
                 <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
                   Analytics
                 </h3>
@@ -726,8 +799,18 @@ export default function SkollBeautyPage() {
 
               {/* Tech 8 */}
               <div className="bg-gray-50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-all duration-300 group">
-                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/tech-logos/vercel.svg" alt="Vercel" className="w-10 h-10 object-contain" /></div>
-                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">Vercel</h3>
+                <div className="w-12 h-12 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Image
+                    src="/tech-logos/vercel.svg"
+                    alt="Vercel"
+                    width={40}
+                    height={40}
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
+                <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-2">
+                  Vercel
+                </h3>
                 <p className="text-gray-600 text-sm">
                   Hızlı ve güvenilir hosting altyapısı
                 </p>

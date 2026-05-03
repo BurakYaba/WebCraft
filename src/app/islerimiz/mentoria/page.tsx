@@ -688,11 +688,12 @@ export default function MentoriaProjectPage() {
                   className="bg-white rounded-2xl p-4 md:p-6 border border-gray-200 hover:border-red-200 transition-colors text-center group"
                 >
                   <div className="w-10 h-10 mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <img
+                    <Image
                       src={tech.logo}
                       alt={tech.name}
+                      width={36}
+                      height={36}
                       className="w-9 h-9 object-contain"
-                      loading="lazy"
                     />
                   </div>
                   <h3 className="font-bold text-gray-900 mb-1 text-sm">
