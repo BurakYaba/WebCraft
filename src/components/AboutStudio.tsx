@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const studioImages = [
   {
-    src: "/bento/web-tasarım.webp",
+    src: "/bento/web-tasarim.webp",
     alt: "WebCraft Ofis - Yaratici Alan",
   },
   {

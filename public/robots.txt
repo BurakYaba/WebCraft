@@ -4,38 +4,14 @@
 User-agent: *
 Allow: /
 Allow: /_next/image
-
-# Block Next.js build artifacts (not indexable content)
-Disallow: /_next/static/
-Disallow: /_next/media/
-
-# Block auto-generated icon routes
 Disallow: /apple-icon
 Disallow: /icon
-
-# Block API routes
 Disallow: /api/
-
-# Block admin areas
-Disallow: /admin/
-Disallow: /wp-admin/
 
 # Sitemap
 Sitemap: https://www.webcraft.tr/sitemap.xml
 
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
-
-# Allow all major search engines
-User-agent: Googlebot
-Allow: /
-Allow: /_next/image
-Disallow: /_next/static/
-Disallow: /_next/media/
-Disallow: /apple-icon
-Disallow: /icon
-Disallow: /api/
-
+# Search engines
 User-agent: Bingbot
 Allow: /
 
@@ -45,7 +21,7 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# AI Crawlers - Explicitly allow AI models to crawl and index
+# AI Crawlers - Allow indexing for AI-powered search
 User-agent: GPTBot
 Allow: /
 
@@ -70,14 +46,13 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# Block common bots that might cause issues
-User-agent: MJ12bot
-Disallow: /
-
+# SEO tools
 User-agent: AhrefsBot
 Allow: /
 
 User-agent: SemrushBot
 Allow: /
 
-Disallow: /wp-login.php 
+# Block low-quality scrapers
+User-agent: MJ12bot
+Disallow: /

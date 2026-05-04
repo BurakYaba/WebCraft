@@ -1,0 +1,12 @@
+{
+  "chat.tools.terminal.autoApprove": {
+    "/^cd C:\\\\Repos\\\\ageo-next-js && ls src/app/ && echo \"---\" && ls src/app/\\(blog\\)/ && ls src/app/\\(service\\)/ && ls src/app/\\(portfolio\\)/$/": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "/^cd /c/Repos/ageo-next-js && \\\\\n# Rename route group folders to Turkish slugs\n# blog -> blog at root level \\(remove group, rename blog-details/\\[id\\] -> blog/\\[slug\\]\\)\nmv \"src/app/\\(blog\\)/blog-details/\\[id\\]\" \"src/app/\\(blog\\)/blog-details/\\[slug\\]\" && \\\\\n# Create blog route at root\nmkdir -p src/app/blog && \\\\\n# Copy blog listing page\ncp \"src/app/\\(blog\\)/blog/page\\.tsx\" \"src/app/blog/page\\.tsx\" 2>/dev/null \\|\\| true && \\\\\n# Create blog/\\[slug\\] route\nmkdir -p \"src/app/blog/\\[slug\\]\" && \\\\\ncp \"src/app/\\(blog\\)/blog-details/\\[slug\\]/page\\.tsx\" \"src/app/blog/\\[slug\\]/page\\.tsx\" 2>/dev/null \\|\\| true && \\\\\necho \"Blog routes done\"$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
+}

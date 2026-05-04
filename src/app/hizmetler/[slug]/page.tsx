@@ -65,7 +65,7 @@ export async function generateMetadata({
         },
       ],
       locale: "tr_TR",
-      type: "website",
+      type: "article",
     },
     twitter: {
       card: "summary_large_image",

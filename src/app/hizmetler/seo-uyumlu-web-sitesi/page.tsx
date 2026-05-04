@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "WebCraft",
     images: [
       {
-        url: "/bento/web-tasarım.webp",
+        url: "/bento/web-tasarim.webp",
         width: 1200,
         height: 630,
         alt: "SEO Uyumlu Web Sitesi",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "SEO Uyumlu Web Sitesi | Google'da Üst Sıralara Çıkın | WebCraft",
     description:
       "SEO uyumlu web sitesi tasarımı ile Google'da üst sıralarda yer alın.",
-    images: ["/bento/web-tasarım.webp"],
+    images: ["/bento/web-tasarim.webp"],
   },
   robots: {
     index: true,
@@ -177,7 +177,7 @@ export default function SeoUyumluWebSitesiPage() {
           subtitle="Google'da Üst Sıralara Çıkın"
           description="Teknik SEO altyapısı, semantik HTML yapısı, schema markup ve Core Web Vitals optimizasyonu ile Google'ın anlayabileceği web siteleri inşa ediyoruz. Başarı için doğru temeli hazırlıyoruz."
           watermark="S"
-          backgroundImage="/bento/web-tasarım.webp"
+          backgroundImage="/bento/web-tasarim.webp"
         />
 
         {/* What Section */}

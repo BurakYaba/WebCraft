@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Web Tasarım Blog | SEO ve Dijital Pazarlama Rehberi",
+    title: "Web Tasarım Blog | SEO ve Dijital Pazarlama Rehberi | WebCraft",
     description:
       "Web tasarım, SEO hizmeti ve dijital pazarlama konularında uzman görüşleri. Pratik ipuçları ve rehberler.",
     type: "website",
@@ -48,7 +48,7 @@ const blogPosts = [
       "Fethiye Web Tasarım Rehberi: Turizm İşletmeleri için Dijital Çözümler",
     excerpt:
       "Fethiye'deki turizm işletmeleri için web tasarım rehberi. Otel, pansiyon ve tur operatörleri için özel dijital çözümler ve yerel SEO stratejileri.",
-    image: "/bento/web-tasarım.webp",
+    image: "/bento/web-tasarim.webp",
     slug: "fethiye-web-tasarim-rehberi",
     date: "8 Ocak 2026",
     readTime: "15 dk",
@@ -72,7 +72,7 @@ const blogPosts = [
     title: "Teknik SEO Kontrol Listesi: 2026 Kapsamlı Rehber",
     excerpt:
       "2026 yılı için kapsamlı teknik SEO kontrol listesi. Site hızı, mobil uyumluluk, yapılandırılmış veri ve Core Web Vitals optimizasyonu stratejileri.",
-    image: "/bento/web-tasarım.webp",
+    image: "/bento/web-tasarim.webp",
     slug: "teknik-seo-kontrol-listesi",
     date: "12 Ocak 2026",
     readTime: "22 dk",
@@ -97,7 +97,7 @@ const blogPosts = [
     title: "Core Web Vitals Rehberi: Google'ın Performans Metrikleri",
     excerpt:
       "Core Web Vitals nedir ve web sitenizi nasıl optimize edersiniz? LCP, FID, CLS metriklerini iyileştirmek için kapsamlı rehber.",
-    image: "/bento/web-tasarım.webp",
+    image: "/bento/web-tasarim.webp",
     slug: "core-web-vitals-rehberi",
     date: "18 Ocak 2026",
     readTime: "16 dk",
@@ -109,7 +109,7 @@ const blogPosts = [
     title: "Web Sitesi Hızı Nasıl Artırılır? Kapsamlı Performans Rehberi",
     excerpt:
       "Web sitesi hızını artırmak için pratik yöntemler. Görsel optimizasyonu, caching stratejileri, CDN kullanımı ve kod optimizasyonu teknikleri.",
-    image: "/bento/web-tasarım.webp",
+    image: "/bento/web-tasarim.webp",
     slug: "web-sitesi-hizi-nasil-artirilir",
     date: "20 Ocak 2026",
     readTime: "18 dk",
@@ -121,7 +121,7 @@ const blogPosts = [
     title: "Profesyonel Web Tasarım Nedir? Kimler İçin Gerekli?",
     excerpt:
       "Profesyonel web tasarım nedir ve kimler için gereklidir? Küçük işletmelerden büyük kurumlara kadar profesyonel web tasarımın önemi, faydaları ve ne zaman gerekli olduğunu öğrenin.",
-    image: "/bento/web-tasarım.webp",
+    image: "/bento/web-tasarim.webp",
     slug: "profesyonel-web-tasarim-nedir-kimler-icin-gerekli",
     date: "22 Ocak 2025",
     readTime: "20 dk",
@@ -133,7 +133,7 @@ const blogPosts = [
     title: "Kurumsal Web Sitesi Yaptırırken Yapılan 7 Kritik Hata",
     excerpt:
       "Kurumsal web sitesi yaptırırken yapılan en yaygın 7 kritik hatayı öğrenin. Profesyonel web tasarım ajansı deneyimiyle bu hatalardan kaçınarak başarılı bir kurumsal web sitesi oluşturun.",
-    image: "/bento/web-tasarım.webp",
+    image: "/bento/web-tasarim.webp",
     slug: "kurumsal-web-sitesi-yaptirirken-yapilan-7-kritik-hata",
     date: "20 Ocak 2025",
     readTime: "18 dk",
@@ -145,7 +145,7 @@ const blogPosts = [
     title: "SEO Uyumlu Web Tasarımı ile Google'da Üst Sıralarda Yer Alın",
     excerpt:
       "SEO uyumlu web tasarımı ile Google'da üst sıralarda yer alın. Profesyonel web tasarım ajansı ile organik trafiğinizi artırın ve dijital pazarlama başarınızı katlayın.",
-    image: "/bento/web-tasarım.webp",
+    image: "/bento/web-tasarim.webp",
     slug: "seo-uyumlu-web-tasarimi",
     date: "15 Aralık 2024",
     readTime: "12 dk",
@@ -193,7 +193,7 @@ const blogPosts = [
     title: "2025 SEO Trendleri: Google'da Üst Sıralarda Yer Alın",
     excerpt:
       "2025'te Google'da üst sıralarda yer almak için bilmeniz gereken SEO trendleri. Web tasarım ajansı olarak deneyimimizle paylaşıyoruz.",
-    image: "/bento/web-tasarım.webp",
+    image: "/bento/web-tasarim.webp",
     slug: "2024-seo-trendleri",
     date: "5 Aralık 2024",
     readTime: "15 dk",
@@ -205,7 +205,7 @@ const blogPosts = [
     title: "Minimalist Tasarım Yaklaşımları ile Modern Web Siteleri",
     excerpt:
       "Minimalist tasarım yaklaşımları ile modern ve etkili web siteleri oluşturun. Profesyonel web tasarım ajansı ile kullanıcı deneyimini optimize edin ve markanızı öne çıkarın.",
-    image: "/bento/web-tasarım.webp",
+    image: "/bento/web-tasarim.webp",
     slug: "minimalist-tasarim-yaklasimlari",
     date: "3 Aralık 2024",
     readTime: "18 dk",
@@ -241,7 +241,7 @@ const blogPosts = [
     title: "Web Sitesi Güvenliği ile Dijital Varlığınızı Koruyun",
     excerpt:
       "Web sitesi güvenliği ile dijital varlığınızı koruyun. Profesyonel web güvenlik ajansı ile kapsamlı güvenlik çözümleri oluşturun ve siber tehditlere karşı korunun.",
-    image: "/bento/web-tasarım.webp",
+    image: "/bento/web-tasarim.webp",
     slug: "web-sitesi-guvenligi",
     date: "25 Kasım 2024",
     readTime: "18 dk",

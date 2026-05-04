@@ -74,7 +74,7 @@ export default function WebTasarimFiyatlari() {
     "@type": "BlogPosting",
     headline: "Web Tasarım Fiyatları ve Uygun Maliyetli Çözümler",
     description: "Web tasarım fiyatları rehberi ve paket seçenekleri.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
+    image: "https://www.webcraft.tr/bento/web-tasarim.webp",
     author: { "@type": "Person", name: "WebCraft Web Tasarım Uzmanı" },
     publisher: {
       "@type": "Organization",
@@ -125,7 +125,7 @@ export default function WebTasarimFiyatlari() {
               </div>
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/bento/web-tasarım.webp"
+                  src="/bento/web-tasarim.webp"
                   alt="Web Tasarım Fiyatları"
                   fill
                   className="object-cover"

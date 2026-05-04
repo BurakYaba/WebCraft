@@ -22,7 +22,7 @@ const services: ServiceBlockWithLink[] = [
     title: "Web Tasarım",
     description:
       "Modern ve kullanıcı dostu web siteleri tasarlıyoruz. Responsive tasarım, UI/UX optimizasyonu ve SEO dostu yapı ile markanızı dijital dünyada güçlü bir şekilde temsil ediyoruz. Her proje, kullanıcı deneyimini ön planda tutarak özenle tasarlanır.",
-    image: "/bento/web-tasarım.webp",
+    image: "/bento/web-tasarim.webp",
     bgText: "WEB",
     link: "/hizmetler/web-tasarim",
   },

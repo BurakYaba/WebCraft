@@ -121,7 +121,7 @@ export default function BentoGrid() {
       description: "Modern ve kullanıcı dostu web siteleri tasarlıyoruz.",
       features: ["Responsive Tasarım", "UI/UX Optimizasyonu", "SEO Dostu Yapı"],
       direction: "left" as const,
-      backgroundImage: "/bento/web-tasarım.webp",
+      backgroundImage: "/bento/web-tasarim.webp",
       link: "/hizmetler/web-tasarim",
     },
     {

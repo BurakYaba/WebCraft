@@ -62,7 +62,7 @@ export const services: Service[] = [
       "Modern ve kullanıcı dostu web siteleri tasarlıyoruz. Responsive tasarım, UI/UX optimizasyonu ve SEO dostu yapı ile markanızı dijital dünyada güçlü bir şekilde temsil ediyoruz.",
     excerpt:
       "Profesyonel web tasarım hizmeti ile modern, responsive ve SEO uyumlu web siteleri oluşturuyoruz. 2015 yılından bu yana 200+ başarılı proje tamamladık.",
-    heroImage: "/bento/web-tasarım.webp",
+    heroImage: "/bento/web-tasarim.webp",
     watermark: "W",
 
     metaTitle:

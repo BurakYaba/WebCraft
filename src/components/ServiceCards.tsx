@@ -31,7 +31,7 @@ const services: ServiceCardData[] = [
     Icon: Globe2,
     color: "#dc2626",
     link: "/hizmetler/web-tasarim",
-    image: "/bento/web-tasarım.webp",
+    image: "/bento/web-tasarim.webp",
   },
   {
     id: "dijital-pazarlama",

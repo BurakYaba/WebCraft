@@ -17,11 +17,11 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "Core Web Vitals Rehberi 2025: LCP, FID, CLS Metrikleri ve Optimizasyon",
+    "Core Web Vitals Rehberi 2026: LCP, INP, CLS Metrikleri ve Optimizasyon",
   description:
-    "Core Web Vitals rehberi: LCP, FID ve CLS metriklerini anlayın ve optimize edin. Google'ın performans kriterlerini karşılayarak SEO sıralamanızı artırın. 2025 güncel stratejiler.",
+    "Core Web Vitals rehberi: LCP, INP ve CLS metriklerini anlayın ve optimize edin. Google'ın performans kriterlerini karşılayarak SEO sıralamanızı artırın. 2026 güncel stratejiler.",
   keywords:
-    "core web vitals, LCP, FID, CLS, largest contentful paint, first input delay, cumulative layout shift, google core web vitals, web performans metrikleri",
+    "core web vitals, LCP, INP, CLS, largest contentful paint, interaction to next paint, cumulative layout shift, google core web vitals, web performans metrikleri",
   metadataBase: new URL("https://www.webcraft.tr"),
   alternates: {
     canonical: "/blog/core-web-vitals-rehberi",
@@ -76,7 +76,7 @@ export default function CoreWebVitalsRehberi() {
       "Core Web Vitals Rehberi 2025: LCP, FID, CLS Metrikleri ve Optimizasyon",
     description:
       "Core Web Vitals rehberi: LCP, FID ve CLS metriklerini anlayın ve optimize edin. Google'ın performans kriterlerini karşılayarak SEO sıralamanızı artırın.",
-    image: "https://www.webcraft.tr/bento/web-tasarım.webp",
+    image: "https://www.webcraft.tr/bento/web-tasarim.webp",
     author: {
       "@type": "Person",
       name: "WebCraft Web Tasarım Uzmanı",
