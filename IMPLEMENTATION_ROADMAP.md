@@ -58,16 +58,16 @@ Based on verification, these are the **confirmed, actionable issues** organized 
 - [ ] Create `/seo-ajansi` landing page (new keyword target)
 - [ ] Create `/seo-uzmani` landing page (new keyword target)
 - [ ] Rename `/kurumsal-web-sitesi` → `/kurumsal-web-tasarim` + 301 redirect
-- [ ] Improve service page H1s (e.g., "Web Tasarım" → "Profesyonel Web Tasarım Hizmeti")
-- [ ] Rewrite meta descriptions to be sales-focused with CTAs
-- [ ] Improve footer anchor texts to be keyword-rich
+- [x] Improve service page H1s (e.g., "Web Tasarım" → "Profesyonel Web Tasarım Hizmeti")
+- [x] Rewrite meta descriptions to be sales-focused with CTAs
+- [x] Improve footer anchor texts to be keyword-rich
 - [ ] Create dedicated pricing page or section
 - [ ] Deepen homepage content (target 2500+ words)
 
 ### SEO — Schema & Structured Data
 
-- [ ] Add standalone Organization schema on homepage
-- [ ] Add Article + Author schema to blog posts
+- [x] Add standalone Organization schema on homepage
+- [x] Add Article + Author schema to blog posts
 - [ ] Audit and ensure Service schema on all service pages
 
 ### SEO — Internal Linking

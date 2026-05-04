@@ -50,7 +50,7 @@ export default function RelatedServices({
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <h3 className="text-xl font-bold text-white mb-2">
-                    {service.title}
+                    {service.shortTitle}
                   </h3>
                 </div>
               </div>
@@ -70,4 +70,3 @@ export default function RelatedServices({
     </section>
   );
 }
-

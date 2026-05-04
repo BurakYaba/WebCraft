@@ -56,7 +56,7 @@ export interface Service {
 export const services: Service[] = [
   {
     slug: "web-tasarim",
-    title: "Web Tasarım",
+    title: "Profesyonel Web Tasarım Hizmeti",
     shortTitle: "Web Tasarım",
     description:
       "Modern ve kullanıcı dostu web siteleri tasarlıyoruz. Responsive tasarım, UI/UX optimizasyonu ve SEO dostu yapı ile markanızı dijital dünyada güçlü bir şekilde temsil ediyoruz.",
@@ -68,7 +68,7 @@ export const services: Service[] = [
     metaTitle:
       "Web Tasarım Hizmeti | Profesyonel Web Sitesi Tasarımı | WebCraft",
     metaDescription:
-      "Profesyonel web tasarım hizmeti. Modern, responsive ve SEO uyumlu web siteleri. UI/UX optimizasyonu ve performans odaklı çözümler. 2015'ten beri 200+ başarılı proje.",
+      "Profesyonel web tasarım hizmeti ile modern, responsive ve SEO uyumlu web sitenizi oluşturalım. UI/UX optimizasyonu, performans odaklı çözümler. 2015'ten beri 200+ başarılı proje. Hemen ücretsiz teklif alın!",
     keywords:
       "web tasarım, profesyonel web tasarım, web sitesi tasarımı, responsive web tasarım, modern web sitesi, UI/UX tasarım, SEO uyumlu web tasarım",
 
@@ -212,7 +212,7 @@ Profesyonel web tasarımımız şunları içerir:
 
   {
     slug: "dijital-pazarlama",
-    title: "Dijital Pazarlama",
+    title: "Dijital Pazarlama Hizmeti",
     shortTitle: "Dijital Pazarlama",
     description:
       "Markanızı dijital dünyada öne çıkarıyoruz. SEO/SEM stratejileri, sosyal medya yönetimi ve içerik pazarlaması ile hedef kitlenize ulaşmanızı sağlıyoruz.",
@@ -224,7 +224,7 @@ Profesyonel web tasarımımız şunları içerir:
     metaTitle:
       "Dijital Pazarlama Hizmeti | SEO ve Sosyal Medya Yönetimi | WebCraft",
     metaDescription:
-      "Profesyonel dijital pazarlama hizmeti. SEO, sosyal medya yönetimi, içerik pazarlaması ve Google Ads yönetimi. Organik trafik artışı ve marka bilinirliği. 2015'ten beri uzman ekibimizle.",
+      "Profesyonel dijital pazarlama hizmeti ile markanızı öne çıkarın. SEO, sosyal medya yönetimi, içerik pazarlaması ve Google Ads. Organik trafik artışı için uzman ekibimizle iletişime geçin!",
     keywords:
       "dijital pazarlama, SEO hizmeti, sosyal medya yönetimi, Google Ads, içerik pazarlaması, arama motoru optimizasyonu, dijital pazarlama ajansı",
 
@@ -379,7 +379,7 @@ Dijital pazarlama hizmetlerimiz şunları içerir:
 
     metaTitle: "SEO Hizmeti | Arama Motoru Optimizasyonu | WebCraft",
     metaDescription:
-      "Profesyonel SEO hizmeti ile Google'da üst sıralarda yer alın. Teknik SEO, anahtar kelime araştırması, içerik optimizasyonu ve backlink stratejisi. Organik trafik artışı garantisi. 2015'ten beri 150+ SEO projesi.",
+      "Profesyonel SEO hizmeti ile Google'da üst sıralarda yer alın. Teknik SEO, anahtar kelime araştırması, içerik optimizasyonu ve backlink stratejisi. 2015'ten beri 150+ başarılı SEO projesi. Ücretsiz SEO analizi için hemen iletişime geçin!",
     keywords:
       "SEO hizmeti, arama motoru optimizasyonu, google seo, teknik seo, seo ajansı, organik trafik, seo danışmanlık, seo stratejisi, yerel seo, backlink",
 
@@ -524,7 +524,7 @@ SEO hizmetlerimiz şunları kapsar:
 
   {
     slug: "mobil-uygulama",
-    title: "Mobil Uygulama",
+    title: "Mobil Uygulama Geliştirme Hizmeti",
     shortTitle: "Mobil Uygulama",
     description:
       "iOS ve Android uygulamaları geliştiriyoruz. Native ve cross-platform çözümler ile kullanıcılarınıza en iyi mobil deneyimi sunuyoruz.",
@@ -536,7 +536,7 @@ SEO hizmetlerimiz şunları kapsar:
     metaTitle:
       "Mobil Uygulama Geliştirme | iOS ve Android Uygulamaları | WebCraft",
     metaDescription:
-      "Profesyonel mobil uygulama geliştirme hizmeti. iOS ve Android native uygulamaları, cross-platform çözümler. App Store optimizasyonu ve performans odaklı geliştirme. 2015'ten beri 50+ proje.",
+      "Profesyonel mobil uygulama geliştirme hizmeti. iOS ve Android native uygulamaları, cross-platform çözümler ve App Store optimizasyonu. 2015'ten beri 50+ başarılı proje. Uygulamanız için ücretsiz teklif alın!",
     keywords:
       "mobil uygulama, iOS uygulama, Android uygulama, mobil app geliştirme, native uygulama, cross-platform uygulama, app store optimizasyonu",
 
@@ -680,7 +680,7 @@ Mobil uygulama geliştirme hizmetlerimiz şunları içerir:
 
   {
     slug: "yazilim-gelistirme",
-    title: "Yazılım Geliştirme",
+    title: "Özel Yazılım Geliştirme Hizmeti",
     shortTitle: "Yazılım Geliştirme",
     description:
       "Özel yazılım çözümleri sunuyoruz. Web uygulamaları, API entegrasyonları ve kurumsal yazılımlar ile iş süreçlerinizi dijitalleştiriyoruz.",
@@ -691,7 +691,7 @@ Mobil uygulama geliştirme hizmetlerimiz şunları içerir:
 
     metaTitle: "Yazılım Geliştirme Hizmeti | Özel Yazılım Çözümleri | WebCraft",
     metaDescription:
-      "Profesyonel yazılım geliştirme hizmeti. Özel web uygulamaları, API entegrasyonları, kurumsal yazılım çözümleri. Ölçeklenebilir ve güvenli yazılımlar. 2015'ten beri 100+ proje.",
+      "Özel yazılım geliştirme hizmeti ile iş süreçlerinizi dijitalleştirin. Web uygulamaları, API entegrasyonları, kurumsal yazılım çözümleri. Ölçeklenebilir ve güvenli yazılımlar. 2015'ten beri 100+ proje. Projeniz için teklif alın!",
     keywords:
       "yazılım geliştirme, özel yazılım, web uygulaması, API entegrasyonu, kurumsal yazılım, yazılım çözümleri, custom software development",
 
@@ -846,7 +846,7 @@ Yazılım geliştirme hizmetlerimiz şunları içerir:
 
     metaTitle: "E-Ticaret Web Tasarımı | Online Mağaza Kurulumu | WebCraft",
     metaDescription:
-      "Profesyonel e-ticaret web sitesi tasarımı. Online mağaza kurulumu, güvenli ödeme sistemleri, kargo entegrasyonu. Satışlarınızı artırın. 2015'ten beri 100+ proje.",
+      "Profesyonel e-ticaret web sitesi tasarımı ile online satışlarınızı artırın. Güvenli ödeme sistemleri, kargo entegrasyonu, stok yönetimi. 2015'ten beri 100+ başarılı proje. Ücretsiz teklif için hemen arayın!",
     keywords:
       "e-ticaret web tasarımı, online mağaza kurulumu, e-ticaret sitesi, online satış platformu, e-ticaret çözümleri, ödeme sistemi entegrasyonu",
 
@@ -1014,7 +1014,7 @@ E-ticaret web tasarım hizmetlerimiz şunları içerir:
 
     metaTitle: "Yapay Zeka Chatbot Geliştirme | AI Chatbot Hizmeti | WebCraft",
     metaDescription:
-      "İşletmeniz için yapay zeka destekli chatbot geliştirme. GPT entegrasyonu, WhatsApp chatbot, 7/24 otomatik müşteri desteği ve satış asistanlığı. Müşteri memnuniyetini artırın, maliyetleri düşürün.",
+      "İşletmeniz için yapay zeka destekli chatbot geliştirme hizmeti. GPT entegrasyonu, WhatsApp chatbot, 7/24 otomatik müşteri desteği. Müşteri memnuniyetini artırın, maliyetleri düşürün. Demo için hemen iletişime geçin!",
     keywords:
       "yapay zeka chatbot, AI chatbot geliştirme, chatbot hizmeti, WhatsApp chatbot, GPT chatbot, müşteri hizmetleri otomasyonu, chatbot fiyatları, akıllı chatbot, yapay zeka asistan, işletme chatbot",
 
@@ -1169,7 +1169,7 @@ AI chatbot çözümlerimiz şunları kapsar:
 
     metaTitle: "Yapay Zeka İş Otomasyonu | AI Otomasyon Hizmeti | WebCraft",
     metaDescription:
-      "Yapay zeka ile iş süreçleri otomasyonu. Akıllı belge işleme, e-posta otomasyonu, veri analizi ve iş akışı optimizasyonu. Tekrarlayan görevleri ortadan kaldırın, verimliliği %60 artırın.",
+      "Yapay zeka ile iş süreçleri otomasyonunu keşfedin. Akıllı belge işleme, e-posta otomasyonu, veri analizi ve iş akışı optimizasyonu. Tekrarlayan görevleri ortadan kaldırın. Ücretsiz danışmanlık için iletişime geçin!",
     keywords:
       "yapay zeka otomasyon, AI otomasyon, iş süreçleri otomasyonu, akıllı belge işleme, RPA, iş akışı otomasyonu, yapay zeka entegrasyonu, otomasyon çözümleri, AI iş otomasyonu, süreç otomasyonu",
 

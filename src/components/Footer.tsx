@@ -30,8 +30,8 @@ const Footer = () => {
   ];
 
   const navigationLinks = [
-    { name: "Çalışmalarımız", href: "/islerimiz" },
-    { name: "Hizmetlerimiz", href: "/hizmetler" },
+    { name: "Web Tasarım Projelerimiz", href: "/islerimiz" },
+    { name: "Web Tasarım Hizmetleri", href: "/hizmetler" },
     { name: "Hakkımızda", href: "/hakkimizda" },
     { name: "Blog", href: "/blog" },
     { name: "SSS", href: "/sss" },

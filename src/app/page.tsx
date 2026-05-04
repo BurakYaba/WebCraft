@@ -85,11 +85,42 @@ export default function HomePage() {
     { name: "Ana Sayfa", url: "/" },
   ]);
 
-  // AggregateRating schema for homepage
-  const aggregateRatingSchema = {
+  // Full Organization schema for homepage (replaces partial aggregateRatingSchema)
+  const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "WebCraft",
+    url: "https://www.webcraft.tr",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.webcraft.tr/webcraftLogo.png",
+      width: 200,
+      height: 200,
+    },
+    description:
+      "Profesyonel web tasarım, SEO hizmeti ve dijital pazarlama ajansı. 2015'ten beri 200+ başarılı proje.",
+    foundingDate: "2015",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
+      addressLocality: "Fethiye",
+      addressRegion: "Muğla",
+      postalCode: "48300",
+      addressCountry: "TR",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+90-507-944-17-15",
+      contactType: "customer service",
+      availableLanguage: "Turkish",
+      areaServed: "TR",
+    },
+    sameAs: [
+      "https://www.instagram.com/webcraft_web/",
+      "https://www.linkedin.com/company/webcraft-real",
+      "https://x.com/webcraft_real",
+      "https://www.facebook.com/profile.php?id=61585946570262",
+    ],
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
@@ -110,7 +141,7 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(aggregateRatingSchema),
+          __html: JSON.stringify(organizationSchema),
         }}
       />
       <main className="min-h-screen bg-[#181716] relative overflow-hidden z-0">
