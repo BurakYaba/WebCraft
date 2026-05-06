@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
+import BlogTOC from "@/components/BlogTOC";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -34,9 +35,23 @@ export const metadata: Metadata = {
     type: "article",
     locale: "tr_TR",
     publishedTime: "2026-01-08T09:00:00Z",
-    authors: ["WebCraft Web Tasarım Uzmanı"],
+    authors: ["Burak Yaba"],
   },
 };
+
+const TOC_ITEMS = [
+  { id: "dijital-donusum", label: "Fethiye & Dijital Dönüşüm" },
+  { id: "temel-ozellikler", label: "Web Sitesi Özellikleri" },
+  { id: "otel-stratejileri", label: "Otel Stratejileri" },
+  { id: "eticaret", label: "E-Ticaret" },
+  { id: "mevsimsel-seo", label: "Mevsimsel SEO" },
+  { id: "gmb", label: "Google My Business" },
+  { id: "sosyal-medya", label: "Sosyal Medya" },
+  { id: "omnichannel", label: "Omnichannel" },
+  { id: "takip", label: "Performans Takibi" },
+  { id: "kvkk", label: "KVKK" },
+  { id: "sonuc", label: "Sonuç" },
+];
 
 export default function FethiyeWebTasarimRehberi() {
   const breadcrumbItems = [
@@ -83,7 +98,8 @@ export default function FethiyeWebTasarimRehberi() {
     image: "https://www.webcraft.tr/bento/web-tasarim.webp",
     author: {
       "@type": "Person",
-      name: "WebCraft Web Tasarım Uzmanı",
+      name: "Burak Yaba",
+      url: "https://www.webcraft.tr/hakkimizda",
     },
     publisher: {
       "@type": "Organization",
@@ -117,7 +133,7 @@ export default function FethiyeWebTasarimRehberi() {
         <Breadcrumb items={breadcrumbItems} />
 
         <main>
-          <article className="pt-32 pb-16">
+          <article className="pt-24 md:pt-32 pb-12">
             <div className="max-w-screen-xl mx-auto px-6 md:px-10">
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="flex-1">
@@ -141,7 +157,7 @@ export default function FethiyeWebTasarimRehberi() {
                     </h1>
 
                     <div className="flex items-center gap-4 text-black/60 text-sm">
-                      <span>WebCraft Web Tasarım Uzmanı</span>
+                      <span>Burak Yaba</span>
                       <span>•</span>
                       <span>8 Ocak 2026</span>
                       <span>•</span>
@@ -158,7 +174,7 @@ export default function FethiyeWebTasarimRehberi() {
       
       <p><a href="/fethiye-web-tasarim-hizmetleri" class="text-[#f84525] hover:underline font-semibold">Fethiye web tasarım hizmetlerimiz</a> ile turizm sektörüne özel, rezervasyon sistemli ve çok dilli web siteleri oluşturuyoruz. 2015 yılından bu yana Fethiye'deki onlarca turizm işletmesine hizmet vererek dijital dönüşümlerine katkı sağladık.</p>
       
-      <h2>Fethiye Turizm Sektörü ve Dijital Dönüşüm</h2>
+      <h2 id="dijital-donusum" style="scroll-margin-top: 96px">Fethiye Turizm Sektörü ve Dijital Dönüşüm</h2>
       
       <p>Fethiye, Ölüdeniz'in eşsiz plajlarından Saklıkent Kanyonu'nun muhteşem doğasına, Kelebekler Vadisi'nden 12 Adalar tekne turlarına kadar birçok turistik öneme sahip. 2025 yılı verilerine göre, Fethiye'yi ziyaret eden turistlerin %85'i önce internetten araştırma yapıyor ve rezervasyonlarını online olarak gerçekleştiriyor.</p>
       
@@ -175,7 +191,7 @@ export default function FethiyeWebTasarimRehberi() {
       
       <p>Bu veriler, Fethiye'deki turizm işletmelerinin güçlü bir dijital varlığa ve profesyonel web sitesine ihtiyaç duyduğunu açıkça gösteriyor.</p>
       
-      <h2>Turizm Web Sitesi Temel Özellikleri</h2>
+      <h2 id="temel-ozellikler" style="scroll-margin-top: 96px">Turizm Web Sitesi Temel Özellikleri</h2>
       
       <p>Fethiye'de başarılı bir turizm web sitesi, sadece görsel olarak çekici olmanın ötesinde, kullanıcı deneyimini önceliklendiren ve rezervasyonu kolaylaştıran özelliklere sahip olmalıdır.</p>
       
@@ -260,7 +276,7 @@ export default function FethiyeWebTasarimRehberi() {
         <li><strong>WhatsApp butonu:</strong> Direkt WhatsApp iletişimi</li>
       </ul>
       
-      <h2>Fethiye Otel Web Tasarım Stratejileri</h2>
+      <h2 id="otel-stratejileri" style="scroll-margin-top: 96px">Fethiye Otel Web Tasarım Stratejileri</h2>
       
       <p>Otel web siteleri, turizm web sitelerinin en karmaşık türlerinden biridir. Başarılı bir otel web sitesi şu özellikleri içermelidir:</p>
       
@@ -297,7 +313,7 @@ export default function FethiyeWebTasarimRehberi() {
         <li><strong>Sürdürülebilirlik:</strong> Çevre dostu uygulamalar</li>
       </ul>
       
-      <h2>E-Ticaret Web Tasarım: Tur ve Aktivite Satışı</h2>
+      <h2 id="eticaret" style="scroll-margin-top: 96px">E-Ticaret Web Tasarım: Tur ve Aktivite Satışı</h2>
       
       <p>Otel ve konaklama dışında, Fethiye'de tur operatörleri, tekne turları, dalış merkezleri gibi aktivite sağlayıcıları da e-ticaret özellikli web sitelerine ihtiyaç duyar.</p>
       
@@ -327,7 +343,7 @@ export default function FethiyeWebTasarimRehberi() {
         <li><strong>Jeep Safari:</strong> Dağ ve köy turları</li>
       </ul>
       
-      <h2>Mevsimsel SEO Stratejileri</h2>
+      <h2 id="mevsimsel-seo" style="scroll-margin-top: 96px">Mevsimsel SEO Stratejileri</h2>
       
       <p>Fethiye turizmi mevsimseldir. Yaz ayları (Haziran-Eylül) yoğun sezonken, kış ayları düşük sezondur. SEO stratejinizi mevsimlere göre optimize etmelisiniz.</p>
       
@@ -373,7 +389,7 @@ export default function FethiyeWebTasarimRehberi() {
         <li><strong>E-posta pazarlama:</strong> Geçmiş müşterilere özel teklifler</li>
       </ul>
       
-      <h2>Google My Business Optimizasyonu (Fethiye)</h2>
+      <h2 id="gmb" style="scroll-margin-top: 96px">Google My Business Optimizasyonu (Fethiye)</h2>
       
       <p>Fethiye'deki turizm işletmeleri için Google My Business (GMB), yerel aramalardan maksimum fayda sağlamanın en etkili yoludur.</p>
       
@@ -398,7 +414,7 @@ export default function FethiyeWebTasarimRehberi() {
         <li><strong>Negatif yorumlara profesyonel yaklaşım:</strong> Özür ve çözüm sunun</li>
       </ul>
       
-      <h2>Sosyal Medya Entegrasyonu</h2>
+      <h2 id="sosyal-medya" style="scroll-margin-top: 96px">Sosyal Medya Entegrasyonu</h2>
       
       <p>Turizm sektöründe sosyal medya, rezervasyonu doğrudan etkileyen en güçlü pazarlama kanallarından biridir.</p>
       
@@ -423,7 +439,7 @@ export default function FethiyeWebTasarimRehberi() {
         <li><strong>Facebook Reviews:</strong> Müşteri yorumları ve değerlendirmeler</li>
       </ul>
       
-      <h2>Çok Kanallı (Omnichannel) Rezervasyon Stratejisi</h2>
+      <h2 id="omnichannel" style="scroll-margin-top: 96px">Çok Kanalı (Omnichannel) Rezervasyon Stratejisi</h2>
       
       <p>Modern turizm işletmeleri sadece web sitesinden değil, birden fazla kanaldan rezervasyon almalıdır.</p>
       
@@ -453,7 +469,7 @@ export default function FethiyeWebTasarimRehberi() {
         <li><strong>Channel Manager:</strong> Booking.com kendi channel manager'ı</li>
       </ul>
       
-      <h2>Performans Takibi ve Analitik</h2>
+      <h2 id="takip" style="scroll-margin-top: 96px">Performans Takibi ve Analitik</h2>
       
       <p>Web sitenizin performansını düzenli olarak takip etmek, sürekli iyileştirme için kritiktir.</p>
       
@@ -480,7 +496,7 @@ export default function FethiyeWebTasarimRehberi() {
         <li><strong>SemRush/Ahrefs:</strong> SEO ve rakip analizi</li>
       </ul>
       
-      <h2>Yasal Gereklilikler ve KVKK</h2>
+      <h2 id="kvkk" style="scroll-margin-top: 96px">Yasal Gereklilikler ve KVKK</h2>
       
       <p>Turizm web sitelerinin Türkiye yasal mevzuatına uygun olması gerekir.</p>
       
@@ -496,7 +512,7 @@ export default function FethiyeWebTasarimRehberi() {
         <li><strong>Turizm İşletme Belgesi:</strong> Belge numarası görünür olmalı</li>
       </ul>
       
-      <h2>Sonuç</h2>
+      <h2 id="sonuc" style="scroll-margin-top: 96px">Sonuç</h2>
       
       <p>Fethiye'de başarılı bir turizm işletmesi için profesyonel web tasarım ve dijital pazarlama artık opsiyonel değil, zorunludur. Çok dilli web sitesi, entegre rezervasyon sistemi, mobil uyumluluk ve mevsimsel SEO stratejileri ile rekabet avantajı elde edebilirsiniz.</p>
       
@@ -507,87 +523,45 @@ export default function FethiyeWebTasarimRehberi() {
                       }}
                     />
                   </div>
+                  {/* Author Bio */}
+                  <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">
+                    <div className="flex items-center gap-4 md:gap-5 mb-4">
+                      <div className="bg-red-600 text-white font-bold text-xl rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0">
+                        BY
+                      </div>
+                      <div>
+                        <p className="font-bold text-gray-900 text-lg md:text-xl leading-tight">
+                          Burak Yaba
+                        </p>
+                        <p className="text-red-600 text-sm font-medium mt-1">
+                          WebCraft — Kurucu &amp; Web Tasarım Uzmanı
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Web tasarım alanında 8 yılı aşkın deneyimle onlarca
+                      işletmenin dijital varlığını WebCraft bünyesinde
+                      kurguladım. Teknik mimari, UX ve performans odaklı tasarım
+                      benim sorumluluk alanım.{" "}
+                      <Link
+                        href="/hakkimizda"
+                        className="text-red-600 hover:underline"
+                      >
+                        Hakkımızda sayfasında
+                      </Link>{" "}
+                      daha fazla bilgi bulabilirsiniz.
+                    </p>
+                  </div>
+                  <div className="text-sm text-gray-500 mt-2 mb-8">
+                    Yayın tarihi: 8 Ocak 2026 • Bu yazı yazar tarafından birinci
+                    elden deneyim ve araştırma temelinde hazırlanmıştır.
+                  </div>
                 </div>
 
-                <aside className="md:w-80">
-                  <div className="sticky top-32">
-                    <div className="bg-gray-50 rounded-lg p-6 mb-6">
-                      <h3 className="font-bold text-lg mb-4 text-black">
-                        İçindekiler
-                      </h3>
-                      <ul className="space-y-2 text-sm text-black/70">
-                        <li>
-                          <a
-                            href="#fethiye-turizm"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Fethiye Turizm Sektörü
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#web-sitesi-ozellikleri"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Web Sitesi Özellikleri
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#otel-web-tasarim"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Otel Web Tasarım
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#rezervasyon-sistemi"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Rezervasyon Sistemi
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#mevsimsel-seo"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Mevsimsel SEO
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#sosyal-medya"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Sosyal Medya
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div className="bg-red-50 rounded-lg p-6">
-                      <h3 className="font-bold text-lg mb-2 text-black">
-                        Fethiye Web Tasarım
-                      </h3>
-                      <p className="text-sm text-black/70 mb-4">
-                        Turizm işletmeniz için profesyonel web tasarım ve
-                        dijital çözümler.
-                      </p>
-                      <Link
-                        href="/iletisim"
-                        className="block text-center bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors text-sm font-medium"
-                      >
-                        Ücretsiz Teklif Alın
-                      </Link>
-                    </div>
-                  </div>
-                </aside>
+                <BlogTOC items={TOC_ITEMS} />
               </div>
             </div>
           </article>
-
           <RelatedBlogPosts
             currentSlug="fethiye-web-tasarim-rehberi"
             posts={[]}

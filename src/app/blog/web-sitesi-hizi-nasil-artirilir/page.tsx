@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
+import BlogTOC from "@/components/BlogTOC";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -33,9 +34,22 @@ export const metadata: Metadata = {
     type: "article",
     locale: "tr_TR",
     publishedTime: "2026-01-20T09:00:00Z",
-    authors: ["WebCraft Web Tasarım Uzmanı"],
+    authors: ["Burak Yaba"],
   },
 };
+
+const TOC_ITEMS = [
+  { id: "neden-onemli", label: "Hız Neden Önemli?" },
+  { id: "core-web-vitals", label: "Core Web Vitals" },
+  { id: "gorsel-optimizasyon", label: "Görsel Optimizasyon" },
+  { id: "kod-optimizasyon", label: "Kod Optimizasyonu" },
+  { id: "sunucu", label: "Sunucu Optimizasyonu" },
+  { id: "nextjs", label: "Next.js & Framework" },
+  { id: "olcum-araclari", label: "Ölçüm Araçları" },
+  { id: "checklist", label: "Hız Kontrol Listesi" },
+  { id: "profesyonel-destek", label: "Profesyonel Destek" },
+  { id: "sonuc", label: "Sonuç" },
+];
 
 export default function WebSitesiHiziNasilArtirilir() {
   const breadcrumbItems = [
@@ -82,7 +96,8 @@ export default function WebSitesiHiziNasilArtirilir() {
     image: "https://www.webcraft.tr/bento/web-tasarim.webp",
     author: {
       "@type": "Person",
-      name: "WebCraft Web Tasarım Uzmanı",
+      name: "Burak Yaba",
+      url: "https://www.webcraft.tr/hakkimizda",
     },
     publisher: {
       "@type": "Organization",
@@ -116,7 +131,7 @@ export default function WebSitesiHiziNasilArtirilir() {
         <Breadcrumb items={breadcrumbItems} />
 
         <main>
-          <article className="pt-32 pb-16">
+          <article className="pt-24 md:pt-32 pb-12">
             <div className="max-w-screen-xl mx-auto px-6 md:px-10">
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="flex-1">
@@ -140,7 +155,7 @@ export default function WebSitesiHiziNasilArtirilir() {
                     </h1>
 
                     <div className="flex items-center gap-4 text-black/60 text-sm">
-                      <span>WebCraft Web Tasarım Uzmanı</span>
+                      <span>Burak Yaba</span>
                       <span>•</span>
                       <span>20 Ocak 2026</span>
                       <span>•</span>
@@ -157,7 +172,7 @@ export default function WebSitesiHiziNasilArtirilir() {
       
       <p>2025 yılında web performansı, işletmelerin dijital başarısını doğrudan etkiliyor. Araştırmalar gösteriyor ki sayfa yükleme süresindeki her 1 saniyelik gecikme, dönüşüm oranlarını %7 oranında düşürüyor. Bu nedenle, <a href="/hizmetler/performans-odakli-web-tasarim" class="text-[#f84525] hover:underline font-semibold">performans odaklı web tasarım</a> artık bir lüks değil, zorunluluk haline geldi.</p>
       
-      <h2>Web Sitesi Hızı Neden Önemli?</h2>
+      <h2 id="neden-onemli" style="scroll-margin-top: 96px">Web Sitesi Hızı Neden Önemli?</h2>
       
       <p>Web sitesi hızı, işletmenizin dijital başarısını şu şekillerde etkiler:</p>
       
@@ -188,7 +203,7 @@ export default function WebSitesiHiziNasilArtirilir() {
         <li><strong>Pazarlama ROI:</strong> İyi performans, pazarlama yatırımlarınızın getirisini artırır</li>
       </ul>
       
-      <h2>Core Web Vitals: 2025'te Performans Metriklerinin Temeli</h2>
+      <h2 id="core-web-vitals" style="scroll-margin-top: 96px">Core Web Vitals: 2025&apos;te Performans Metriklerinin Temeli</h2>
       
       <p>Google'ın Core Web Vitals metrikleri, web performansının üç kritik yönünü ölçer:</p>
       
@@ -241,7 +256,7 @@ export default function WebSitesiHiziNasilArtirilir() {
         <li><strong>Animasyonları optimize edin:</strong> Layout-shifting animasyonlar yerine transform/opacity kullanın</li>
       </ul>
       
-      <h2>Görsel Optimizasyonu: Hız Artışının En Etkili Yolu</h2>
+      <h2 id="gorsel-optimizasyon" style="scroll-margin-top: 96px">Görsel Optimizasyonu: Hız Artışının En Etkili Yolu</h2>
       
       <p>Görseller, çoğu web sitesinde toplam sayfa boyutunun %50-70'ini oluşturur. Görsel optimizasyonu, hız artışının en etkili ve hızlı yoludur.</p>
       
@@ -288,7 +303,7 @@ export default function WebSitesiHiziNasilArtirilir() {
         <li><strong>Next.js Image Component:</strong> Otomatik optimizasyon ve responsive images</li>
       </ul>
       
-      <h2>Kod Optimizasyonu: Minify, Bundle ve Tree Shaking</h2>
+      <h2 id="kod-optimizasyon" style="scroll-margin-top: 96px">Kod Optimizasyonu: Minify, Bundle ve Tree Shaking</h2>
       
       <h3>1. CSS Optimizasyonu</h3>
       
@@ -318,7 +333,7 @@ export default function WebSitesiHiziNasilArtirilir() {
         <li><strong>Preload/prefetch:</strong> Kritik kaynakları önceden yükleyin</li>
       </ul>
       
-      <h2>Sunucu ve Hosting Optimizasyonu</h2>
+      <h2 id="sunucu" style="scroll-margin-top: 96px">Sunucu ve Hosting Optimizasyonu</h2>
       
       <h3>1. Sunucu Yanıt Süresini (TTFB) Optimize Edin</h3>
       
@@ -347,7 +362,7 @@ export default function WebSitesiHiziNasilArtirilir() {
         <li><strong>Stale-while-revalidate:</strong> Hemen yanıt, arka planda güncelleme</li>
       </ul>
       
-      <h2>Next.js ve Modern Framework Optimizasyonları</h2>
+      <h2 id="nextjs" style="scroll-margin-top: 96px">Next.js ve Modern Framework Optimizasyonları</h2>
       
       <p>Next.js gibi modern framework'ler, performans optimizasyonu için built-in özellikler sunar:</p>
       
@@ -377,7 +392,7 @@ export default function WebSitesiHiziNasilArtirilir() {
         <li><strong>Suspense boundaries:</strong> Yükleme durumlarını zarif şekilde yönetin</li>
       </ul>
       
-      <h2>Performans Ölçümü ve İzleme Araçları</h2>
+      <h2 id="olcum-araclari" style="scroll-margin-top: 96px">Performans Ölçümü ve İzleme Araçları</h2>
       
       <h3>1. Google PageSpeed Insights</h3>
       
@@ -414,7 +429,7 @@ export default function WebSitesiHiziNasilArtirilir() {
         <li>Detaylı network analizi</li>
       </ul>
       
-      <h2>Pratik Hız Artışı Kontrol Listesi</h2>
+      <h2 id="checklist" style="scroll-margin-top: 96px">Pratik Hız Artışı Kontrol Listesi</h2>
       
       <p>Web sitenizin hızını hemen artırmak için bu kontrol listesini kullanın:</p>
       
@@ -450,7 +465,7 @@ export default function WebSitesiHiziNasilArtirilir() {
         <li>☐ Kapsamlı performans monitoring</li>
       </ul>
       
-      <h2>Profesyonel Destek: WebCraft Performans Hizmeti</h2>
+      <h2 id="profesyonel-destek" style="scroll-margin-top: 96px">Profesyonel Destek: WebCraft Performans Hizmeti</h2>
       
       <p>Web sitenizin performansını optimize etmek karmaşık ve teknik bilgi gerektiren bir süreçtir. WebCraft olarak, <a href="/hizmetler/performans-odakli-web-tasarim" class="text-[#f84525] hover:underline font-semibold">performans odaklı web tasarım</a> hizmetimizle işletmenizin web performansını maksimize ediyoruz.</p>
       
@@ -475,7 +490,7 @@ export default function WebSitesiHiziNasilArtirilir() {
         <li><strong>Düşük çıkma oranı:</strong> Kullanıcılar sitenizde daha uzun kalır</li>
       </ul>
       
-      <h2>Sonuç ve Öneriler</h2>
+      <h2 id="sonuc" style="scroll-margin-top: 96px">Sonuç ve Öneriler</h2>
       
       <p>Web sitesi hızı, 2025'te dijital başarının temeli. Bu rehberde ele aldığımız stratejileri uygulayarak:</p>
       
@@ -515,11 +530,44 @@ export default function WebSitesiHiziNasilArtirilir() {
                       </Link>
                     </div>
                   </div>
+                  {/* Author Bio */}
+                  <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">
+                    <div className="flex items-center gap-4 md:gap-5 mb-4">
+                      <div className="bg-red-600 text-white font-bold text-xl rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0">
+                        BY
+                      </div>
+                      <div>
+                        <p className="font-bold text-gray-900 text-lg md:text-xl leading-tight">
+                          Burak Yaba
+                        </p>
+                        <p className="text-red-600 text-sm font-medium mt-1">
+                          WebCraft — Kurucu &amp; Web Tasarım Uzmanı
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Web tasarım alanında 8 yılı aşkın deneyimle onlarca
+                      işletmenin dijital varlığını WebCraft bünyesinde
+                      kurguladım. Teknik mimari, UX ve performans odaklı tasarım
+                      benim sorumluluk alanım.{" "}
+                      <Link
+                        href="/hakkimizda"
+                        className="text-red-600 hover:underline"
+                      >
+                        Hakkımızda sayfasında
+                      </Link>{" "}
+                      daha fazla bilgi bulabilirsiniz.
+                    </p>
+                  </div>
+                  <div className="text-sm text-gray-500 mt-2 mb-8">
+                    Yayın tarihi: 20 Ocak 2026 • Bu yazı yazar tarafından
+                    birinci elden deneyim ve araştırma temelinde hazırlanmıştır.
+                  </div>
                 </div>
+                <BlogTOC items={TOC_ITEMS} />
               </div>
             </div>
           </article>
-
           <RelatedBlogPosts
             currentSlug="web-sitesi-hizi-nasil-artirilir"
             posts={[]}

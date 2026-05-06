@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
 import Image from "next/image";
+import BlogTOC from "@/components/BlogTOC";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -30,9 +31,15 @@ export const metadata: Metadata = {
     type: "article",
     locale: "tr_TR",
     publishedTime: "2024-12-08T09:00:00Z",
-    authors: ["WebCraft Web Tasarım Uzmanı"],
+    authors: ["Ahmet Tümkaya"],
   },
 };
+
+const TOC_ITEMS = [
+  { id: "fiyat-faktorleri", label: "Fiyat Faktörleri" },
+  { id: "paketler", label: "Web Tasarım Paketleri" },
+  { id: "sonuc", label: "Sonuç" },
+];
 
 export default function WebTasarimFiyatlari() {
   const breadcrumbItems = [
@@ -75,7 +82,11 @@ export default function WebTasarimFiyatlari() {
     headline: "Web Tasarım Fiyatları ve Uygun Maliyetli Çözümler",
     description: "Web tasarım fiyatları rehberi ve paket seçenekleri.",
     image: "https://www.webcraft.tr/bento/web-tasarim.webp",
-    author: { "@type": "Person", name: "WebCraft Web Tasarım Uzmanı" },
+    author: {
+      "@type": "Person",
+      name: "Ahmet Tümkaya",
+      url: "https://www.webcraft.tr/hakkimizda",
+    },
     publisher: {
       "@type": "Organization",
       name: "WebCraft",
@@ -106,7 +117,7 @@ export default function WebTasarimFiyatlari() {
         <Header />
         <Breadcrumb items={breadcrumbItems} />
         <main>
-          <section className="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-white">
+          <section className="pt-24 md:pt-32 pb-12 bg-gradient-to-br from-gray-50 to-white">
             <div className="max-w-4xl mx-auto px-6 md:px-10">
               <div className="mb-6">
                 <span className="inline-block px-4 py-2 bg-red-100 text-red-600 rounded-full text-sm font-semibold">
@@ -117,11 +128,11 @@ export default function WebTasarimFiyatlari() {
                 Web Tasarım Fiyatları ve Uygun Maliyetli Çözümler
               </h1>
               <div className="flex items-center gap-6 text-gray-600 mb-8">
+                <span className="font-medium text-gray-900">Ahmet Tümkaya</span>
+                <span>•</span>
                 <span>8 Aralık 2024</span>
                 <span>•</span>
                 <span>15 dk okuma</span>
-                <span>•</span>
-                <span>WebCraft Web Tasarım Uzmanı</span>
               </div>
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
@@ -134,119 +145,170 @@ export default function WebTasarimFiyatlari() {
               </div>
             </div>
           </section>
-          <section className="py-16">
-            <div className="max-w-4xl mx-auto px-6 md:px-10">
-              <div className="prose prose-lg max-w-none">
-                <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                  Günümüzde dijital dünyada başarılı olmak, profesyonel bir web
-                  sitesine sahip olmayı gerektirir. Web tasarım fiyatları,
-                  işletmenizin dijital varlığını oluştururken en önemli
-                  faktörlerden biridir. Doğru web tasarım ajansı seçimi ve uygun
-                  maliyetli çözümler ile bütçenize uygun profesyonel web sitesi
-                  oluşturabilirsiniz.
-                </p>
-                <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                  Bu yazıda, web tasarım fiyatlarını etkileyen faktörleri,
-                  farklı paket seçeneklerini ve bütçenize en uygun çözümü nasıl
-                  bulabileceğinizi detaylı olarak ele alacağız.{" "}
-                  <Link
-                    href="/hizmetler/web-tasarim"
-                    className="text-red-600 hover:text-red-700 font-semibold underline"
-                  >
-                    Web tasarım
-                  </Link>{" "}
-                  hizmeti ile bütçenize uygun çözümler sunuyoruz.
-                </p>
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-                  Web Tasarım Fiyatlarını Etkileyen Faktörler
-                </h2>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Web tasarım fiyatları, projenin kapsamına, gereksinimlerine ve
-                  kalitesine göre değişiklik gösterir. Bu fiyatları etkileyen
-                  ana faktörleri anlamak, doğru karar vermenize yardımcı olur.
-                </p>
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  1. Tasarım Karmaşıklığı
-                </h3>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Özel tasarım, sayfa sayısı, özel fonksiyonlar, responsive
-                  tasarım ve animasyonlar fiyatı etkiler.
-                </p>
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  2. Teknik Gereksinimler
-                </h3>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  E-ticaret entegrasyonu, özel yazılım geliştirme, veritabanı,
-                  API entegrasyonları ve güvenlik özellikleri ek maliyetler
-                  getirir.
-                </p>
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  3. İçerik ve SEO
-                </h3>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  CMS entegrasyonu, içerik oluşturma, SEO optimizasyonu, çoklu
-                  dil desteği ve blog sistemi fiyatı etkiler.
-                </p>
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-                  Web Tasarım Paketleri
-                </h2>
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  Başlangıç Paketi
-                </h3>
-                <ul className="space-y-2 mb-6">
-                  <li className="text-gray-700">• 5-8 sayfa tasarımı</li>
-                  <li className="text-gray-700">• Responsive tasarım</li>
-                  <li className="text-gray-700">• Temel SEO</li>
-                  <li className="text-gray-700">• İletişim formu</li>
-                  <li className="text-gray-700">• 1 yıl ücretsiz hosting</li>
-                </ul>
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  Kurumsal Paket
-                </h3>
-                <ul className="space-y-2 mb-6">
-                  <li className="text-gray-700">• 10-15 sayfa tasarımı</li>
-                  <li className="text-gray-700">• Özel tasarım</li>
-                  <li className="text-gray-700">• Gelişmiş SEO</li>
-                  <li className="text-gray-700">• Blog sistemi</li>
-                  <li className="text-gray-700">• Çoklu dil desteği</li>
-                  <li className="text-gray-700">• 2 yıl ücretsiz hosting</li>
-                </ul>
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  E-Ticaret Paketi
-                </h3>
-                <ul className="space-y-2 mb-6">
-                  <li className="text-gray-700">• Sınırsız ürün ekleme</li>
-                  <li className="text-gray-700">• Güvenli ödeme sistemleri</li>
-                  <li className="text-gray-700">• Stok yönetimi</li>
-                  <li className="text-gray-700">• Kargo entegrasyonu</li>
-                  <li className="text-gray-700">• Mobil uygulama desteği</li>
-                </ul>
-                <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8 rounded-r-lg">
-                  <h4 className="text-green-900 font-bold text-xl mb-3">
-                    🚀 Özel Teklif
-                  </h4>
-                  <p className="text-green-800 text-lg leading-relaxed">
-                    İlk müşterilerimize %20 indirim! Hemen ücretsiz teklif alın
-                    ve bütçenize uygun web tasarım paketini keşfedin.
+          <article className="py-12">
+            <div className="max-w-6xl mx-auto px-6 md:px-10">
+              <div className="flex gap-16 items-start">
+                <div className="min-w-0 flex-1">
+                  <p className="text-base md:text-lg text-gray-700 leading-relaxed border-l-4 border-red-500 pl-6 md:pl-10 py-3 mb-10">
+                    Günümüzde dijital dünyada başarılı olmak, profesyonel bir
+                    web sitesine sahip olmayı gerektirir. Web tasarım fiyatları,
+                    işletmenizin dijital varlığını oluştururken en önemli
+                    faktörlerden biridir. Doğru web tasarım ajansı seçimi ve
+                    uygun maliyetli çözümler ile bütçenize uygun profesyonel web
+                    sitesi oluşturabilirsiniz.
                   </p>
-                </div>
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-                  Sonuç
-                </h2>
-                <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                  Web tasarım fiyatları, projenizin kapsamına göre değişir.
-                  Bütçenize uygun{" "}
-                  <Link
-                    href="/hizmetler/web-tasarim"
-                    className="text-red-600 hover:text-red-700 font-semibold underline"
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                    Bu yazıda, web tasarım fiyatlarını etkileyen faktörleri,
+                    farklı paket seçeneklerini ve bütçenize en uygun çözümü
+                    nasıl bulabileceğinizi detaylı olarak ele alacağız.{" "}
+                    <Link
+                      href="/hizmetler/web-tasarim"
+                      className="text-red-600 hover:text-red-700 font-semibold underline"
+                    >
+                      Web tasarım
+                    </Link>{" "}
+                    hizmeti ile bütçenize uygun çözümler sunuyoruz.
+                  </p>
+                  <h2
+                    id="fiyat-faktorleri"
+                    className="text-3xl font-bold text-gray-900 mt-12 mb-6 scroll-mt-24"
                   >
-                    web tasarım
-                  </Link>{" "}
-                  çözümleri için WebCraft ile iletişime geçin!
-                </p>
+                    Web Tasarım Fiyatlarını Etkileyen Faktörler
+                  </h2>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Web tasarım fiyatları, projenin kapsamına, gereksinimlerine
+                    ve kalitesine göre değişiklik gösterir. Bu fiyatları
+                    etkileyen ana faktörleri anlamak, doğru karar vermenize
+                    yardımcı olur.
+                  </p>
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    1. Tasarım Karmaşıklığı
+                  </h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Özel tasarım, sayfa sayısı, özel fonksiyonlar, responsive
+                    tasarım ve animasyonlar fiyatı etkiler.
+                  </p>
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    2. Teknik Gereksinimler
+                  </h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    E-ticaret entegrasyonu, özel yazılım geliştirme, veritabanı,
+                    API entegrasyonları ve güvenlik özellikleri ek maliyetler
+                    getirir.
+                  </p>
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    3. İçerik ve SEO
+                  </h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    CMS entegrasyonu, içerik oluşturma, SEO optimizasyonu, çoklu
+                    dil desteği ve blog sistemi fiyatı etkiler.
+                  </p>
+                  <h2
+                    id="paketler"
+                    className="text-3xl font-bold text-gray-900 mt-12 mb-6 scroll-mt-24"
+                  >
+                    Web Tasarım Paketleri
+                  </h2>
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    Başlangıç Paketi
+                  </h3>
+                  <ul className="space-y-2 mb-6">
+                    <li className="text-gray-700">• 5-8 sayfa tasarımı</li>
+                    <li className="text-gray-700">• Responsive tasarım</li>
+                    <li className="text-gray-700">• Temel SEO</li>
+                    <li className="text-gray-700">• İletişim formu</li>
+                    <li className="text-gray-700">• 1 yıl ücretsiz hosting</li>
+                  </ul>
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    Kurumsal Paket
+                  </h3>
+                  <ul className="space-y-2 mb-6">
+                    <li className="text-gray-700">• 10-15 sayfa tasarımı</li>
+                    <li className="text-gray-700">• Özel tasarım</li>
+                    <li className="text-gray-700">• Gelişmiş SEO</li>
+                    <li className="text-gray-700">• Blog sistemi</li>
+                    <li className="text-gray-700">• Çoklu dil desteği</li>
+                    <li className="text-gray-700">• 2 yıl ücretsiz hosting</li>
+                  </ul>
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    E-Ticaret Paketi
+                  </h3>
+                  <ul className="space-y-2 mb-6">
+                    <li className="text-gray-700">• Sınırsız ürün ekleme</li>
+                    <li className="text-gray-700">
+                      • Güvenli ödeme sistemleri
+                    </li>
+                    <li className="text-gray-700">• Stok yönetimi</li>
+                    <li className="text-gray-700">• Kargo entegrasyonu</li>
+                    <li className="text-gray-700">• Mobil uygulama desteği</li>
+                  </ul>
+                  <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8 rounded-r-lg">
+                    <h4 className="text-green-900 font-bold text-xl mb-3">
+                      🚀 Özel Teklif
+                    </h4>
+                    <p className="text-green-800 text-lg leading-relaxed">
+                      İlk müşterilerimize %20 indirim! Hemen ücretsiz teklif
+                      alın ve bütçenize uygun web tasarım paketini keşfedin.
+                    </p>
+                  </div>
+                  <h2
+                    id="sonuc"
+                    className="text-3xl font-bold text-gray-900 mt-12 mb-6 scroll-mt-24"
+                  >
+                    Sonuç
+                  </h2>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                    Web tasarım fiyatları, projenizin kapsamına göre değişir.
+                    Bütçenize uygun{" "}
+                    <Link
+                      href="/hizmetler/web-tasarim"
+                      className="text-red-600 hover:text-red-700 font-semibold underline"
+                    >
+                      web tasarım
+                    </Link>{" "}
+                    çözümleri için WebCraft ile iletişime geçin!
+                  </p>
+                  {/* Author Bio */}
+                  <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">
+                    <div className="flex items-center gap-4 md:gap-5 mb-4">
+                      <div className="bg-red-600 text-white font-bold text-xl rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0">
+                        BY
+                      </div>
+                      <div>
+                        <p className="font-bold text-gray-900 text-lg md:text-xl leading-tight">
+                          Burak Yaba
+                        </p>
+                        <p className="text-red-600 text-sm font-medium mt-1">
+                          WebCraft — Kurucu &amp; Web Tasarım Uzmanı
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Web tasarım alanında 8 yılı aşkın deneyimle onlarca
+                      işletmenin dijital varlığını WebCraft bünyesinde
+                      kurguladım. Teknik mimari, UX ve performans odaklı tasarım
+                      benim sorumluluk alanım.{" "}
+                      <Link
+                        href="/hakkimizda"
+                        className="text-red-600 hover:underline"
+                      >
+                        Hakkımızda sayfasında
+                      </Link>{" "}
+                      daha fazla bilgi bulabilirsiniz.
+                    </p>
+                  </div>
+                  <div className="text-sm text-gray-500 mt-2 mb-8">
+                    Yayın tarihi: 8 Aralık 2024 • Bu yazı yazar tarafından
+                    birinci elden deneyim ve araştırma temelinde hazırlanmıştır.
+                  </div>
+                </div>
+                {/* end content column */}
+                <BlogTOC items={TOC_ITEMS} />
               </div>
+              {/* end flex */}
             </div>
-          </section>
+            {/* end max-w-6xl */}
+          </article>
           <RelatedBlogPosts
             currentSlug="web-tasarim-fiyatlari"
             posts={[]}

@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
+import BlogTOC from "@/components/BlogTOC";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -32,10 +33,25 @@ export const metadata: Metadata = {
     type: "article",
     locale: "tr_TR",
     publishedTime: "2026-01-12T09:00:00Z",
-    authors: ["WebCraft SEO Uzmanı"],
+    authors: ["Kubilay Özışık"],
   },
 };
-
+const TOC_ITEMS = [
+  { id: "nedir", label: "Teknik SEO Nedir?" },
+  { id: "url", label: "1. URL Yapısı" },
+  { id: "sitemap", label: "2. XML Sitemap" },
+  { id: "robots", label: "3. Robots.txt" },
+  { id: "canonical", label: "4. Canonical Tags" },
+  { id: "schema", label: "5. Schema Markup" },
+  { id: "hiz", label: "6. Site Hızı" },
+  { id: "mobil", label: "7. Mobil Optimizasyon" },
+  { id: "https", label: "8. HTTPS" },
+  { id: "hreflang", label: "9. Hreflang" },
+  { id: "crawl", label: "10. Crawl Bütçesi" },
+  { id: "araclar", label: "Teknik SEO Araçları" },
+  { id: "uygulama", label: "Uygulama Planı" },
+  { id: "sonuc", label: "Sonuç" },
+];
 export default function TeknikSEOKontrolListesi() {
   const breadcrumbItems = [
     { name: "Ana Sayfa", url: "/" },
@@ -80,7 +96,8 @@ export default function TeknikSEOKontrolListesi() {
     image: "https://www.webcraft.tr/bento/dijital-pazarlama.webp",
     author: {
       "@type": "Person",
-      name: "WebCraft SEO Uzmanı",
+      name: "Kubilay Özışık",
+      url: "https://www.webcraft.tr/hakkimizda",
     },
     publisher: {
       "@type": "Organization",
@@ -114,7 +131,7 @@ export default function TeknikSEOKontrolListesi() {
         <Breadcrumb items={breadcrumbItems} />
 
         <main>
-          <article className="pt-32 pb-16">
+          <article className="pt-24 md:pt-32 pb-12">
             <div className="max-w-screen-xl mx-auto px-6 md:px-10">
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="flex-1">
@@ -137,7 +154,7 @@ export default function TeknikSEOKontrolListesi() {
                     </h1>
 
                     <div className="flex items-center gap-4 text-black/60 text-sm">
-                      <span>WebCraft SEO Uzmanı</span>
+                      <span>Kubilay Özışık</span>
                       <span>•</span>
                       <span>12 Ocak 2026</span>
                       <span>•</span>
@@ -154,7 +171,7 @@ export default function TeknikSEOKontrolListesi() {
       
       <p><a href="/hizmetler/seo-uyumlu-web-sitesi" class="text-[#f84525] hover:underline font-semibold">SEO uyumlu web sitesi</a> oluşturmak, sadece anahtar kelimeleri doğru kullanmaktan ibaret değildir. Site yapısından mobil uyumluluğa, sayfa hızından schema markup'a kadar birçok teknik faktörü doğru şekilde yapılandırmanız gerekir.</p>
       
-      <h2>Teknik SEO Nedir ve Neden Önemlidir?</h2>
+      <h2 id="nedir" style="scroll-margin-top: 96px">Teknik SEO Nedir ve Neden Önemlidir?</h2>
       
       <p>Teknik SEO, web sitenizin arama motorları tarafından crawl (tarama), index (indeksleme) ve rank (sıralama) edilmesini optimize etmek için yapılan çalışmaların tümüdür. On-page SEO (sayfa içi) ve off-page SEO'nun (sayfa dışı) aksine, teknik SEO tamamen web sitenizin altyapısına odaklanır.</p>
       
@@ -169,7 +186,7 @@ export default function TeknikSEOKontrolListesi() {
         <li><strong>Rekabet avantajı:</strong> Rakiplerinizin teknik eksikliklerinden yararlanın</li>
       </ul>
       
-      <h2>1. Site Yapısı ve URL Optimizasyonu</h2>
+      <h2 id="url" style="scroll-margin-top: 96px">1. Site Yapısı ve URL Optimizasyonu</h2>
       
       <p>Web sitenizin yapısı, hem kullanıcılar hem de arama motorları için kritik öneme sahiptir. İyi planlanmış bir site yapısı, crawl verimliliğini artırır ve kullanıcı deneyimini iyileştirir.</p>
       
@@ -212,7 +229,7 @@ export default function TeknikSEOKontrolListesi() {
         <li><strong>Gereksiz parametrelerden kaçının:</strong> Temiz URL yapısı tercih edin</li>
       </ul>
       
-      <h2>2. XML Sitemap Optimizasyonu</h2>
+      <h2 id="sitemap" style="scroll-margin-top: 96px">2. XML Sitemap Optimizasyonu</h2>
       
       <p>XML sitemap, web sitenizin haritasını Google'a sunan bir dosyadır. Doğru yapılandırılmış bir sitemap, crawl verimliliğini artırır ve yeni içeriklerin hızla indexlenmesini sağlar.</p>
       
@@ -259,7 +276,7 @@ export default function TeknikSEOKontrolListesi() {
         <li>Durum kontrolü yapın ve hataları düzeltin</li>
       </ol>
       
-      <h2>3. Robots.txt Optimizasyonu</h2>
+      <h2 id="robots" style="scroll-margin-top: 96px">3. Robots.txt Optimizasyonu</h2>
       
       <p>Robots.txt dosyası, arama motoru botlarına hangi sayfaların taranacağını, hangilerinin taranmayacağını söyleyen bir direktif dosyasıdır. Doğru yapılandırma, crawl bütçenizi optimize eder.</p>
       
@@ -301,7 +318,7 @@ Crawl-delay: 1</code></pre>
         <li><strong>❌ Noindex yerine robots.txt kullanımı:</strong> Sensitive bilgiler için robots meta tag kullanın</li>
       </ul>
       
-      <h2>4. Canonical Tags (Kanonik Etiketler)</h2>
+      <h2 id="canonical" style="scroll-margin-top: 96px">4. Canonical Tags (Kanonik Etiketler)</h2>
       
       <p>Canonical tag'ler, duplicate content sorununu çözmek için kullanılan HTML etiketleridir. Aynı veya benzer içeriğe sahip birden fazla URL varsa, hangisinin orijinal olduğunu Google'a bildirirsiniz.</p>
       
@@ -332,7 +349,7 @@ Crawl-delay: 1</code></pre>
         <li><strong>Cross-domain canonical:</strong> Syndicated content için çapraz alan canonical'ları</li>
       </ul>
       
-      <h2>5. Schema Markup (Yapılandırılmış Veri)</h2>
+      <h2 id="schema" style="scroll-margin-top: 96px">5. Schema Markup (Yapılandırılmış Veri)</h2>
       
       <p>Schema markup, web sitenizin içeriğini arama motorlarına daha iyi anlatmak için kullanılan yapılandırılmış veri formatıdır. Rich snippets elde etmek ve SERP görünürlüğünü artırmak için kritiktir.</p>
       
@@ -383,7 +400,7 @@ Crawl-delay: 1</code></pre>
         <li><strong>JSON-LD Generator:</strong> Schema kodları otomatik oluşturma</li>
       </ul>
       
-      <h2>6. Site Hızı Optimizasyonu</h2>
+      <h2 id="hiz" style="scroll-margin-top: 96px">6. Site Hızı Optimizasyonu</h2>
       
       <p>Site hızı, hem kullanıcı deneyimi hem de SEO için kritik bir ranking faktörüdür. Google'ın Core Web Vitals metrikleri, site hızını ölçmenin standart yolu haline geldi.</p>
       
@@ -411,7 +428,7 @@ Crawl-delay: 1</code></pre>
         <li><strong>Hosting kalitesi:</strong> Performanslı sunucu kullanın</li>
       </ul>
       
-      <h2>7. Mobil Optimizasyon</h2>
+      <h2 id="mobil" style="scroll-margin-top: 96px">7. Mobil Optimizasyon</h2>
       
       <p>Google'ın mobile-first indexing yaklaşımı ile birlikte, mobil optimizasyon artık opsiyonel değil, zorunludur. Web sitenizin mobil versiyonu, desktop versiyonundan daha önemlidir.</p>
       
@@ -438,7 +455,7 @@ Crawl-delay: 1</code></pre>
         <li>Sonuçları inceleyin ve önerileri uygulayın</li>
       </ol>
       
-      <h2>8. HTTPS ve Güvenlik</h2>
+      <h2 id="https" style="scroll-margin-top: 96px">8. HTTPS ve Güvenlik</h2>
       
       <p>HTTPS, web sitenizin güvenli bir şekilde sunulmasını sağlar ve Google tarafından ranking faktörü olarak kullanılır. SSL sertifikası olmayan siteler, tarayıcılarda "Güvenli Değil" uyarısı alır.</p>
       
@@ -454,7 +471,7 @@ Crawl-delay: 1</code></pre>
         <li><strong>Google Search Console'u güncelleyin:</strong> HTTPS property ekleyin</li>
       </ul>
       
-      <h2>9. Hreflang Tags (Çok Dilli Siteler İçin)</h2>
+      <h2 id="hreflang" style="scroll-margin-top: 96px">9. Hreflang Tags (Çok Dilli Siteler İçin)</h2>
       
       <p>Eğer web siteniz birden fazla dilde veya birden fazla ülke için hizmet veriyorsa, hreflang tag'leri kullanmalısınız. Bu, Google'a hangi dilin hangi kullanıcılar için olduğunu bildirir.</p>
       
@@ -465,7 +482,7 @@ Crawl-delay: 1</code></pre>
 &lt;link rel="alternate" hreflang="de" href="https://www.webcraft.tr/de/" /&gt;
 &lt;link rel="alternate" hreflang="x-default" href="https://www.webcraft.tr/" /&gt;</code></pre>
       
-      <h2>10. Crawl Bütçesi Optimizasyonu</h2>
+      <h2 id="crawl" style="scroll-margin-top: 96px">10. Crawl Bütçesi Optimizasyonu</h2>
       
       <p>Crawl bütçesi, Google'ın belirli bir sürede web sitenizden kaç sayfa taradığını ifade eder. Özellikle büyük siteler için crawl bütçesi optimizasyonu kritiktir.</p>
       
@@ -480,7 +497,7 @@ Crawl-delay: 1</code></pre>
         <li><strong>Internal linking optimize edin:</strong> Önemli sayfaları öne çıkarın</li>
       </ul>
       
-      <h2>Teknik SEO Araçları</h2>
+      <h2 id="araclar" style="scroll-margin-top: 96px">Teknik SEO Araçları</h2>
       
       <p>Teknik SEO çalışmalarınızı kolaylaştıracak profesyonel araçlar:</p>
       
@@ -504,7 +521,7 @@ Crawl-delay: 1</code></pre>
         <li><strong>DeepCrawl:</strong> Enterprise seviye teknik SEO</li>
       </ul>
       
-      <h2>Teknik SEO Uygulama Planı</h2>
+      <h2 id="uygulama" style="scroll-margin-top: 96px">Teknik SEO Uygulama Planı</h2>
       
       <p>Teknik SEO çalışmalarını adım adım uygulamak için şu planı izleyin:</p>
       
@@ -544,7 +561,7 @@ Crawl-delay: 1</code></pre>
         <li>Crawl bütçesi optimizasyonu</li>
       </ul>
       
-      <h2>Sonuç</h2>
+      <h2 id="sonuc" style="scroll-margin-top: 96px">Sonuç</h2>
       
       <p>Teknik SEO, web sitenizin Google'da başarılı olması için vazgeçilmez bir temeldir. Bu kontrol listesindeki tüm maddeleri uyguladığınızda, web siteniz arama motorları tarafından daha iyi anlaşılacak, daha hızlı indexlenecek ve daha üst sıralarda yer alacaktır.</p>
       
@@ -555,103 +572,45 @@ Crawl-delay: 1</code></pre>
                       }}
                     />
                   </div>
+                  {/* Author Bio */}
+                  <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">
+                    <div className="flex items-center gap-4 md:gap-5 mb-4">
+                      <div className="bg-red-600 text-white font-bold text-xl rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0">
+                        KÖ
+                      </div>
+                      <div>
+                        <p className="font-bold text-gray-900 text-lg md:text-xl leading-tight">
+                          Kubilay Özışık
+                        </p>
+                        <p className="text-red-600 text-sm font-medium mt-1">
+                          WebCraft — SEO &amp; Dijital Büyüme Uzmanı
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      6 yılı aşkın süre boyunca Türkiye genelinde işletmelerin
+                      organik arama görünürlüğünü büyüttüm. Teknik SEO, içerik
+                      stratejisi ve anahtar kelime araştırması alanlarında
+                      uzmanlaştım.{" "}
+                      <Link
+                        href="/hakkimizda"
+                        className="text-red-600 hover:underline"
+                      >
+                        Hakkımızda sayfasında
+                      </Link>{" "}
+                      daha fazla bilgi bulabilirsiniz.
+                    </p>
+                  </div>
+                  <div className="text-sm text-gray-500 mt-2 mb-8">
+                    Yayın tarihi: 12 Ocak 2026 • Bu yazı yazar tarafından
+                    birinci elden deneyim ve araştırma temelinde hazırlanmıştır.
+                  </div>
                 </div>
 
-                <aside className="md:w-80">
-                  <div className="sticky top-32">
-                    <div className="bg-gray-50 rounded-lg p-6 mb-6">
-                      <h3 className="font-bold text-lg mb-4 text-black">
-                        İçindekiler
-                      </h3>
-                      <ul className="space-y-2 text-sm text-black/70">
-                        <li>
-                          <a
-                            href="#teknik-seo-nedir"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Teknik SEO Nedir?
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#site-yapisi"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Site Yapısı ve URL
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#xml-sitemap"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            XML Sitemap
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#robots-txt"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Robots.txt
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#canonical-tags"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Canonical Tags
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#schema-markup"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Schema Markup
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#site-hizi"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Site Hızı
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#mobil-optimizasyon"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Mobil Optimizasyon
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div className="bg-red-50 rounded-lg p-6">
-                      <h3 className="font-bold text-lg mb-2 text-black">
-                        SEO Hizmetimiz
-                      </h3>
-                      <p className="text-sm text-black/70 mb-4">
-                        Profesyonel SEO hizmetimiz ile web sitenizi
-                        Google&apos;da üst sıralara taşıyın.
-                      </p>
-                      <Link
-                        href="/iletisim"
-                        className="block text-center bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors text-sm font-medium"
-                      >
-                        Ücretsiz Teklif Alın
-                      </Link>
-                    </div>
-                  </div>
-                </aside>
+                <BlogTOC items={TOC_ITEMS} />
               </div>
             </div>
           </article>
-
           <RelatedBlogPosts
             currentSlug="teknik-seo-kontrol-listesi"
             posts={[]}

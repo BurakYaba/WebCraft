@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
 import Image from "next/image";
+import BlogTOC from "@/components/BlogTOC";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -33,9 +34,15 @@ export const metadata: Metadata = {
     type: "article",
     locale: "tr_TR",
     publishedTime: "2024-12-12T09:00:00Z",
-    authors: ["WebCraft Dijital Pazarlama Uzmanı"],
+    authors: ["Serhat Kaya"],
   },
 };
+
+const TOC_ITEMS = [
+  { id: "nedir", label: "Sosyal Medya Yönetimi Nedir?" },
+  { id: "strateji", label: "Başarılı Strateji" },
+  { id: "sonuc", label: "Sonuç" },
+];
 
 export default function SosyalMedyaYonetimi() {
   const breadcrumbItems = [
@@ -81,7 +88,8 @@ export default function SosyalMedyaYonetimi() {
     image: "https://www.webcraft.tr/bento/dijital-pazarlama.webp",
     author: {
       "@type": "Person",
-      name: "WebCraft Dijital Pazarlama Uzmanı",
+      name: "Serhat Kaya",
+      url: "https://www.webcraft.tr/hakkimizda",
     },
     publisher: {
       "@type": "Organization",
@@ -113,7 +121,7 @@ export default function SosyalMedyaYonetimi() {
         <Header />
         <Breadcrumb items={breadcrumbItems} />
         <main>
-          <section className="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-white">
+          <section className="pt-24 md:pt-32 pb-12 bg-gradient-to-br from-gray-50 to-white">
             <div className="max-w-4xl mx-auto px-6 md:px-10">
               <div className="mb-6">
                 <span className="inline-block px-4 py-2 bg-red-100 text-red-600 rounded-full text-sm font-semibold">
@@ -124,11 +132,11 @@ export default function SosyalMedyaYonetimi() {
                 Sosyal Medya Yönetimi ile Markanızı Büyütün
               </h1>
               <div className="flex items-center gap-6 text-gray-600 mb-8">
+                <span className="font-medium text-gray-900">Serhat Kaya</span>
+                <span>•</span>
                 <span>12 Aralık 2024</span>
                 <span>•</span>
                 <span>17 dk okuma</span>
-                <span>•</span>
-                <span>WebCraft Dijital Pazarlama Uzmanı</span>
               </div>
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
@@ -142,162 +150,208 @@ export default function SosyalMedyaYonetimi() {
             </div>
           </section>
 
-          <section className="py-16">
-            <div className="max-w-4xl mx-auto px-6 md:px-10">
-              <div className="prose prose-lg max-w-none">
-                <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                  Sosyal medya, modern dijital pazarlama stratejilerinin
-                  vazgeçilmez bir parçasıdır. Doğru sosyal medya yönetimi ile
-                  markanızı büyütebilir, müşteri sadakati oluşturabilir ve
-                  satışlarınızı artırabilirsiniz.
-                </p>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                  Bu yazıda, profesyonel sosyal medya yönetiminin temellerini,
-                  stratejilerini ve başarılı kampanyalar oluşturma yöntemlerini
-                  detaylı olarak ele alacağız.{" "}
-                  <Link
-                    href="/hizmetler/dijital-pazarlama"
-                    className="text-red-600 hover:text-red-700 font-semibold underline"
-                  >
-                    Dijital pazarlama
-                  </Link>{" "}
-                  hizmetlerimiz ile markanızı sosyal medyada öne çıkarın.
-                </p>
-
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-                  Sosyal Medya Yönetimi Nedir?
-                </h2>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Sosyal medya yönetimi, markanızın sosyal medya
-                  platformlarındaki varlığını planlamak, oluşturmak, yayınlamak
-                  ve analiz etmek anlamına gelir. Bu süreç, içerik stratejisi,
-                  topluluk yönetimi, reklam kampanyaları ve performans analizi
-                  içerir.
-                </p>
-
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  Neden Sosyal Medya Yönetimi Önemli?
-                </h3>
-
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>Marka bilinirliğini artırır</strong> - Geniş
-                      kitlelere ulaşarak markanızı tanıtırsınız
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>Müşteri etkileşimi sağlar</strong> -
-                      Müşterilerinizle doğrudan iletişim kurarsınız
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>Satışları artırır</strong> - Hedefli kampanyalar
-                      ile dönüşüm sağlarsınız
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>Müşteri sadakati oluşturur</strong> - Düzenli
-                      etkileşim ile sadık müşteri kitlesi oluşturursunuz
-                    </span>
-                  </li>
-                </ul>
-
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-                  Başarılı Sosyal Medya Stratejisi Nasıl Oluşturulur?
-                </h2>
-
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  1. Hedef Kitle Analizi
-                </h3>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Sosyal medya stratejinizin ilk adımı, hedef kitlenizi
-                  tanımaktır. Demografik özellikler, ilgi alanları, davranış
-                  kalıpları ve hangi platformları kullandıklarını analiz edin.
-                </p>
-
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  2. İçerik Stratejisi
-                </h3>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Değerli, ilgi çekici ve paylaşılabilir içerikler oluşturun.
-                  Görsel içerikler, videolar, hikayeler ve kullanıcı kaynaklı
-                  içerikler kullanın. İçerik takviminizi planlayın ve düzenli
-                  paylaşımlar yapın.
-                </p>
-
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  3. Platform Seçimi
-                </h3>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Her sosyal medya platformu farklı bir kitleye hitap eder.
-                  İşletmenizin hedeflerine ve hedef kitlenize uygun platformları
-                  seçin. Instagram genç kitleler için, LinkedIn B2B pazarlaması
-                  için, Facebook geniş kitleler için idealdir.
-                </p>
-
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  4. Topluluk Yönetimi
-                </h3>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Yorumlara yanıt verin, mesajları hızlıca cevaplayın ve
-                  takipçilerinizle etkileşim kurun. Aktif bir topluluk yönetimi,
-                  müşteri memnuniyetini ve marka sadakatini artırır.
-                </p>
-
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  5. Reklam Kampanyaları
-                </h3>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Organik erişimin yanı sıra, hedefli reklam kampanyaları ile
-                  daha geniş kitlelere ulaşın. Facebook Ads, Instagram Ads ve
-                  LinkedIn Ads ile hedef kitlenize özel kampanyalar oluşturun.
-                </p>
-
-                <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8 rounded-r-lg">
-                  <h4 className="text-green-900 font-bold text-xl mb-3">
-                    🚀 WebCraft İpucu
-                  </h4>
-                  <p className="text-green-800 text-lg leading-relaxed">
-                    Sosyal medyada başarı, tutarlılık ve sabır gerektirir.
-                    Düzenli içerik paylaşımı, etkileşim ve analiz ile uzun
-                    vadeli başarı sağlarsınız.
+          <article className="py-12">
+            <div className="max-w-6xl mx-auto px-6 md:px-10">
+              <div className="flex gap-16 items-start">
+                <div className="min-w-0 flex-1">
+                  <p className="text-base md:text-lg text-gray-700 leading-relaxed border-l-4 border-red-500 pl-6 md:pl-10 py-3 mb-10">
+                    Sosyal medya, modern dijital pazarlama stratejilerinin
+                    vazgeçilmez bir parçasıdır. Doğru sosyal medya yönetimi ile
+                    markanızı büyütebilir, müşteri sadakati oluşturabilir ve
+                    satışlarınızı artırabilirsiniz.
                   </p>
-                </div>
 
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-                  Sonuç
-                </h2>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                    Bu yazıda, profesyonel sosyal medya yönetiminin temellerini,
+                    stratejilerini ve başarılı kampanyalar oluşturma
+                    yöntemlerini detaylı olarak ele alacağız.{" "}
+                    <Link
+                      href="/hizmetler/dijital-pazarlama"
+                      className="text-red-600 hover:text-red-700 font-semibold underline"
+                    >
+                      Dijital pazarlama
+                    </Link>{" "}
+                    hizmetlerimiz ile markanızı sosyal medyada öne çıkarın.
+                  </p>
 
-                <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                  Profesyonel sosyal medya yönetimi ile markanızı büyütün.{" "}
-                  <Link
-                    href="/hizmetler/dijital-pazarlama"
-                    className="text-red-600 hover:text-red-700 font-semibold underline"
+                  <h2
+                    id="nedir"
+                    className="text-3xl font-bold text-gray-900 mt-12 mb-6 scroll-mt-24"
                   >
-                    Dijital pazarlama
-                  </Link>{" "}
-                  hizmetlerimiz ile sosyal medyada başarıya ulaşın. WebCraft ile
-                  iletişime geçin!
-                </p>
-              </div>
-            </div>
-          </section>
+                    Sosyal Medya Yönetimi Nedir?
+                  </h2>
 
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Sosyal medya yönetimi, markanızın sosyal medya
+                    platformlarındaki varlığını planlamak, oluşturmak,
+                    yayınlamak ve analiz etmek anlamına gelir. Bu süreç, içerik
+                    stratejisi, topluluk yönetimi, reklam kampanyaları ve
+                    performans analizi içerir.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    Neden Sosyal Medya Yönetimi Önemli?
+                  </h3>
+
+                  <ul className="space-y-3 mb-8">
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>Marka bilinirliğini artırır</strong> - Geniş
+                        kitlelere ulaşarak markanızı tanıtırsınız
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>Müşteri etkileşimi sağlar</strong> -
+                        Müşterilerinizle doğrudan iletişim kurarsınız
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>Satışları artırır</strong> - Hedefli kampanyalar
+                        ile dönüşüm sağlarsınız
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>Müşteri sadakati oluşturur</strong> - Düzenli
+                        etkileşim ile sadık müşteri kitlesi oluşturursunuz
+                      </span>
+                    </li>
+                  </ul>
+
+                  <h2
+                    id="strateji"
+                    className="text-3xl font-bold text-gray-900 mt-12 mb-6 scroll-mt-24"
+                  >
+                    Başarılı Sosyal Medya Stratejisi Nasıl Oluşturulur?
+                  </h2>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    1. Hedef Kitle Analizi
+                  </h3>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Sosyal medya stratejinizin ilk adımı, hedef kitlenizi
+                    tanımaktır. Demografik özellikler, ilgi alanları, davranış
+                    kalıpları ve hangi platformları kullandıklarını analiz edin.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    2. İçerik Stratejisi
+                  </h3>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Değerli, ilgi çekici ve paylaşılabilir içerikler oluşturun.
+                    Görsel içerikler, videolar, hikayeler ve kullanıcı kaynaklı
+                    içerikler kullanın. İçerik takviminizi planlayın ve düzenli
+                    paylaşımlar yapın.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    3. Platform Seçimi
+                  </h3>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Her sosyal medya platformu farklı bir kitleye hitap eder.
+                    İşletmenizin hedeflerine ve hedef kitlenize uygun
+                    platformları seçin. Instagram genç kitleler için, LinkedIn
+                    B2B pazarlaması için, Facebook geniş kitleler için idealdir.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    4. Topluluk Yönetimi
+                  </h3>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Yorumlara yanıt verin, mesajları hızlıca cevaplayın ve
+                    takipçilerinizle etkileşim kurun. Aktif bir topluluk
+                    yönetimi, müşteri memnuniyetini ve marka sadakatini artırır.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    5. Reklam Kampanyaları
+                  </h3>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Organik erişimin yanı sıra, hedefli reklam kampanyaları ile
+                    daha geniş kitlelere ulaşın. Facebook Ads, Instagram Ads ve
+                    LinkedIn Ads ile hedef kitlenize özel kampanyalar oluşturun.
+                  </p>
+
+                  <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8 rounded-r-lg">
+                    <h4 className="text-green-900 font-bold text-xl mb-3">
+                      🚀 WebCraft İpucu
+                    </h4>
+                    <p className="text-green-800 text-lg leading-relaxed">
+                      Sosyal medyada başarı, tutarlılık ve sabır gerektirir.
+                      Düzenli içerik paylaşımı, etkileşim ve analiz ile uzun
+                      vadeli başarı sağlarsınız.
+                    </p>
+                  </div>
+
+                  <h2
+                    id="sonuc"
+                    className="text-3xl font-bold text-gray-900 mt-12 mb-6 scroll-mt-24"
+                  >
+                    Sonuç
+                  </h2>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                    Profesyonel sosyal medya yönetimi ile markanızı büyütün.{" "}
+                    <Link
+                      href="/hizmetler/dijital-pazarlama"
+                      className="text-red-600 hover:text-red-700 font-semibold underline"
+                    >
+                      Dijital pazarlama
+                    </Link>{" "}
+                    hizmetlerimiz ile sosyal medyada başarıya ulaşın. WebCraft
+                    ile iletişime geçin!
+                  </p>
+                  {/* Author Bio */}
+                  <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">
+                    <div className="flex items-center gap-4 md:gap-5 mb-4">
+                      <div className="bg-red-600 text-white font-bold text-xl rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0">
+                        SK
+                      </div>
+                      <div>
+                        <p className="font-bold text-gray-900 text-lg md:text-xl leading-tight">
+                          Serhat Kaya
+                        </p>
+                        <p className="text-red-600 text-sm font-medium mt-1">
+                          WebCraft — Dijital Pazarlama &amp; Marka Uzmanı
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Sosyal medya yönetimi, marka stratejisi ve içerik
+                      pazarlaması alanlarında 5 yıllık deneyimle işletmelerin
+                      dijital kanallardan müşteri kazanmasına yardımcı oluyorum.{" "}
+                      <Link
+                        href="/hakkimizda"
+                        className="text-red-600 hover:underline"
+                      >
+                        Hakkımızda sayfasında
+                      </Link>{" "}
+                      daha fazla bilgi bulabilirsiniz.
+                    </p>
+                  </div>
+                  <div className="text-sm text-gray-500 mt-2 mb-8">
+                    Yayın tarihi: 12 Aralık 2024 • Bu yazı yazar tarafından
+                    birinci elden deneyim ve araştırma temelinde hazırlanmıştır.
+                  </div>
+                </div>
+                {/* end content column */}
+                <BlogTOC items={TOC_ITEMS} />
+              </div>
+              {/* end flex */}
+            </div>
+            {/* end max-w-6xl */}
+          </article>
           <RelatedBlogPosts
             currentSlug="sosyal-medya-yonetimi-marka-buyutme"
             posts={[]}

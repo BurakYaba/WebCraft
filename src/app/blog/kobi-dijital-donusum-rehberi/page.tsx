@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
+import BlogTOC from "@/components/BlogTOC";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -32,9 +33,23 @@ export const metadata: Metadata = {
     type: "article",
     locale: "tr_TR",
     publishedTime: "2026-01-15T09:00:00Z",
-    authors: ["WebCraft Web Tasarım Uzmanı"],
+    authors: ["Kubilay Özışık"],
   },
 };
+
+const TOC_ITEMS = [
+  { id: "nedir", label: "Dijital Dönüşüm Nedir?" },
+  { id: "web-sitesi", label: "1. Web Sitesi" },
+  { id: "seo", label: "2. SEO" },
+  { id: "sosyal-medya", label: "3. Sosyal Medya" },
+  { id: "eticaret", label: "4. E-Ticaret" },
+  { id: "dijital-pazarlama", label: "5. Dijital Pazarlama" },
+  { id: "analitik", label: "6. Analitik" },
+  { id: "butce", label: "Bütçe Planı" },
+  { id: "paket", label: "WebCraft Paketi" },
+  { id: "oneriler", label: "Son Öneriler" },
+  { id: "sonuc", label: "Sonuç" },
+];
 
 export default function KobiDijitalDonusumRehberi() {
   const breadcrumbItems = [
@@ -81,7 +96,8 @@ export default function KobiDijitalDonusumRehberi() {
     image: "https://www.webcraft.tr/bento/web-tasarim.webp",
     author: {
       "@type": "Person",
-      name: "WebCraft Web Tasarım Uzmanı",
+      name: "Kubilay Özışık",
+      url: "https://www.webcraft.tr/hakkimizda",
     },
     publisher: {
       "@type": "Organization",
@@ -115,7 +131,7 @@ export default function KobiDijitalDonusumRehberi() {
         <Breadcrumb items={breadcrumbItems} />
 
         <main>
-          <article className="pt-32 pb-16">
+          <article className="pt-24 md:pt-32 pb-12">
             <div className="max-w-screen-xl mx-auto px-6 md:px-10">
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="flex-1">
@@ -139,7 +155,7 @@ export default function KobiDijitalDonusumRehberi() {
                     </h1>
 
                     <div className="flex items-center gap-4 text-black/60 text-sm">
-                      <span>WebCraft Web Tasarım Uzmanı</span>
+                      <span>Kubilay Özışık</span>
                       <span>•</span>
                       <span>15 Ocak 2026</span>
                       <span>•</span>
@@ -156,7 +172,7 @@ export default function KobiDijitalDonusumRehberi() {
       
       <p>Bu kapsamlı rehberde, KOBİ'ler için dijital dönüşüm sürecini adım adım ele alacağız. Web sitesi oluşturmadan e-ticarete, sosyal medya yönetiminden dijital pazarlamaya kadar tüm dijitalleşme stratejilerini detaylı olarak inceleyeceğiz. <a href="/hizmetler/kobi-web-tasarim" class="text-[#f84525] hover:underline font-semibold">KOBİ web tasarım</a> hizmetimizle, küçük işletmelerin dijital dönüşüm sürecinde yanlarındayız.</p>
       
-      <h2>Dijital Dönüşüm Nedir ve KOBİ'ler İçin Neden Önemli?</h2>
+      <h2 id="nedir" style="scroll-margin-top: 96px">Dijital Dönüşüm Nedir ve KOBİ'ler İçin Neden Önemli?</h2>
       
       <p>Dijital dönüşüm, işletmenizin süreçlerini, müşteri deneyimini ve iş modelini dijital teknolojilerle entegre etme ve optimize etme sürecidir. KOBİ'ler için dijital dönüşüm sadece bir web sitesi sahibi olmaktan çok daha fazlasını ifade eder.</p>
       
@@ -181,7 +197,7 @@ export default function KobiDijitalDonusumRehberi() {
         <li>Dijital pazarlama kullanan KOBİ'ler, %2.8 kat daha fazla gelir artışı elde ediyor</li>
       </ul>
       
-      <h2>Adım 1: Dijital Altyapı Oluşturma - Profesyonel Web Sitesi</h2>
+      <h2 id="web-sitesi" style="scroll-margin-top: 96px">Adım 1: Dijital Altyapı Oluşturma - Profesyonel Web Sitesi</h2>
       
       <p>Dijital dönüşümün ilk ve en önemli adımı, profesyonel bir web sitesine sahip olmaktır. Web siteniz, işletmenizin dijital vitrini ve müşterilerinizle ilk temas noktasıdır.</p>
       
@@ -228,7 +244,7 @@ export default function KobiDijitalDonusumRehberi() {
       
       <p><a href="/hizmetler/kobi-web-tasarim" class="text-[#f84525] hover:underline font-semibold">WebCraft KOBİ web tasarım</a> hizmetimiz, küçük işletmeler için uygun fiyatlı, profesyonel web sitesi çözümleri sunuyor.</p>
       
-      <h2>Adım 2: Online Görünürlük - SEO ve Yerel Arama Optimizasyonu</h2>
+      <h2 id="seo" style="scroll-margin-top: 96px">Adım 2: Online Görünürlük - SEO ve Yerel Arama Optimizasyonu</h2>
       
       <p>Web sitenizi oluşturduktan sonra, müşterilerinizin sizi bulabilmesi için SEO (Arama Motoru Optimizasyonu) çalışmaları yapmalısınız.</p>
       
@@ -278,7 +294,7 @@ export default function KobiDijitalDonusumRehberi() {
       
       <p><strong>ROI beklentisi:</strong> SEO yatırımının getirisi genellikle 3-6 ayda görülmeye başlar, uzun vadede %300-500 ROI sağlayabilir.</p>
       
-      <h2>Adım 3: Sosyal Medya Varlığı Oluşturma</h2>
+      <h2 id="sosyal-medya" style="scroll-margin-top: 96px">Adım 3: Sosyal Medya Varlığı Oluşturma</h2>
       
       <p>Sosyal medya, KOBİ'ler için maliyet-etkin bir pazarlama kanalıdır ve müşterilerinizle doğrudan etkileşim kurmanızı sağlar.</p>
       
@@ -339,7 +355,7 @@ export default function KobiDijitalDonusumRehberi() {
         <li><strong>Kapsamlı strateji:</strong> 15.000-35.000 TL/ay (içerik üretimi, reklam yönetimi)</li>
       </ul>
       
-      <h2>Adım 4: E-Ticaret ve Online Satış Kanalları</h2>
+      <h2 id="eticaret" style="scroll-margin-top: 96px">Adım 4: E-Ticaret ve Online Satış Kanalları</h2>
       
       <p>Ürün satan KOBİ'ler için e-ticaret, gelir akışını önemli ölçüde artırabilir. <a href="/e-ticaret-web-tasarim" class="text-[#f84525] hover:underline font-semibold">E-ticaret web tasarım hizmetimizle</a> İyzico ve PayTR entegrasyonlu, kargo sistemi kurulu, SEO uyumlu online mağazalar kuruyoruz.</p>
       
@@ -384,7 +400,7 @@ export default function KobiDijitalDonusumRehberi() {
         <li><strong>Müşteri hizmetleri:</strong> Canlı destek, hızlı yanıt</li>
       </ul>
       
-      <h2>Adım 5: Dijital Pazarlama ve Reklam Stratejileri</h2>
+      <h2 id="dijital-pazarlama" style="scroll-margin-top: 96px">Adım 5: Dijital Pazarlama ve Reklam Stratejileri</h2>
       
       <h3>1. Google Ads (Arama Reklamları)</h3>
       
@@ -422,7 +438,7 @@ export default function KobiDijitalDonusumRehberi() {
         <li><strong>Maliyet:</strong> 3.000-10.000 TL/ay (dış kaynak ile)</li>
       </ul>
       
-      <h2>Adım 6: Veri Analitiği ve Performans Takibi</h2>
+      <h2 id="analitik" style="scroll-margin-top: 96px">Adım 6: Veri Analitiği ve Performans Takibi</h2>
       
       <h3>Temel Analitik Araçları</h3>
       
@@ -443,7 +459,7 @@ export default function KobiDijitalDonusumRehberi() {
         <li><strong>ROI metrikleri:</strong> Pazarlama harcaması vs. gelir</li>
       </ul>
       
-      <h2>KOBİ Dijital Dönüşüm Bütçe Planı Örneği</h2>
+      <h2 id="butce" style="scroll-margin-top: 96px">KOBİ Dijital Dönüşüm Bütçe Planı Örneği</h2>
       
       <h3>Yıllık Bütçe (Küçük KOBİ için - İlk Yıl)</h3>
       
@@ -470,7 +486,7 @@ export default function KobiDijitalDonusumRehberi() {
         <li><strong>Paket hizmetler:</strong> Toplu hizmet paketleri ile %20-30 tasarruf</li>
       </ul>
       
-      <h2>WebCraft KOBİ Dijital Dönüşüm Paketi</h2>
+      <h2 id="paket" style="scroll-margin-top: 96px">WebCraft KOBİ Dijital Dönüşüm Paketi</h2>
       
       <p>WebCraft olarak, KOBİ'lere özel dijital dönüşüm paketleri sunuyoruz. <a href="/hizmetler/kobi-web-tasarim" class="text-[#f84525] hover:underline font-semibold">KOBİ web tasarım</a> ve <a href="/hizmetler/dijital-pazarlama" class="text-[#f84525] hover:underline font-semibold">dijital pazarlama</a> hizmetlerimizle işletmenizin dijitalleşme sürecini baştan sona yönetiyoruz.</p>
       
@@ -497,7 +513,7 @@ export default function KobiDijitalDonusumRehberi() {
         <li><strong>Sonuç odaklı:</strong> ROI'ye odaklanmış stratejiler</li>
       </ul>
       
-      <h2>Başarılı Dijital Dönüşüm İçin Son Öneriler</h2>
+      <h2 id="oneriler" style="scroll-margin-top: 96px">Başarılı Dijital Dönüşüm İçin Son Öneriler</h2>
       
       <ul>
         <li><strong>Sabırlı olun:</strong> Dijital dönüşüm 3-6 ay sürer, sonuçlar kademeli gelir</li>
@@ -510,7 +526,7 @@ export default function KobiDijitalDonusumRehberi() {
         <li><strong>Ekibinizi eğitin:</strong> Çalışanlarınıza dijital araçları öğretin</li>
       </ul>
       
-      <h2>Sonuç: Dijital Dönüşümle Geleceğe Hazırlık</h2>
+      <h2 id="sonuc" style="scroll-margin-top: 96px">Sonuç: Dijital Dönüşümle Geleceğe Hazırlık</h2>
       
       <p>Dijital dönüşüm, artık KOBİ'ler için opsiyonel değil, zorunlu bir süreç. Bu rehberde ele aldığımız stratejileri adım adım uygulayarak:</p>
       
@@ -551,11 +567,44 @@ export default function KobiDijitalDonusumRehberi() {
                       </Link>
                     </div>
                   </div>
+                  {/* Author Bio */}
+                  <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">
+                    <div className="flex items-center gap-4 md:gap-5 mb-4">
+                      <div className="bg-red-600 text-white font-bold text-xl rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0">
+                        KÖ
+                      </div>
+                      <div>
+                        <p className="font-bold text-gray-900 text-lg md:text-xl leading-tight">
+                          Kubilay Özışık
+                        </p>
+                        <p className="text-red-600 text-sm font-medium mt-1">
+                          WebCraft — SEO &amp; Dijital Büyüme Uzmanı
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      6 yılı aşkın süre boyunca Türkiye genelinde işletmelerin
+                      organik arama görünürlüğünü büyüttüm. Teknik SEO, içerik
+                      stratejisi ve anahtar kelime araştırması alanlarında
+                      uzmanlaştım.{" "}
+                      <Link
+                        href="/hakkimizda"
+                        className="text-red-600 hover:underline"
+                      >
+                        Hakkımızda sayfasında
+                      </Link>{" "}
+                      daha fazla bilgi bulabilirsiniz.
+                    </p>
+                  </div>
+                  <div className="text-sm text-gray-500 mt-2 mb-8">
+                    Yayın tarihi: 15 Ocak 2026 • Bu yazı yazar tarafından
+                    birinci elden deneyim ve araştırma temelinde hazırlanmıştır.
+                  </div>
                 </div>
+                <BlogTOC items={TOC_ITEMS} />
               </div>
             </div>
           </article>
-
           <RelatedBlogPosts
             currentSlug="kobi-dijital-donusum-rehberi"
             posts={[]}

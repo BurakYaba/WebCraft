@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
+import BlogTOC from "@/components/BlogTOC";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -33,9 +34,20 @@ export const metadata: Metadata = {
     type: "article",
     locale: "tr_TR",
     publishedTime: "2026-01-18T09:00:00Z",
-    authors: ["WebCraft Web Tasarım Uzmanı"],
+    authors: ["Burak Yaba"],
   },
 };
+
+const TOC_ITEMS = [
+  { id: "nedir", label: "Core Web Vitals Nedir?" },
+  { id: "lcp", label: "LCP" },
+  { id: "fid", label: "FID" },
+  { id: "cls", label: "CLS" },
+  { id: "olcum-araclari", label: "Ölçüm Araçları" },
+  { id: "optimizasyon-checklist", label: "Optimizasyon Checklist" },
+  { id: "profesyonel", label: "Profesyonel Optimizasyon" },
+  { id: "sonuc", label: "Sonuç" },
+];
 
 export default function CoreWebVitalsRehberi() {
   const breadcrumbItems = [
@@ -79,7 +91,8 @@ export default function CoreWebVitalsRehberi() {
     image: "https://www.webcraft.tr/bento/web-tasarim.webp",
     author: {
       "@type": "Person",
-      name: "WebCraft Web Tasarım Uzmanı",
+      name: "Burak Yaba",
+      url: "https://www.webcraft.tr/hakkimizda",
     },
     publisher: {
       "@type": "Organization",
@@ -113,7 +126,7 @@ export default function CoreWebVitalsRehberi() {
         <Breadcrumb items={breadcrumbItems} />
 
         <main>
-          <article className="pt-32 pb-16">
+          <article className="pt-24 md:pt-32 pb-12">
             <div className="max-w-screen-xl mx-auto px-6 md:px-10">
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="flex-1">
@@ -137,7 +150,7 @@ export default function CoreWebVitalsRehberi() {
                     </h1>
 
                     <div className="flex items-center gap-4 text-black/60 text-sm">
-                      <span>WebCraft Web Tasarım Uzmanı</span>
+                      <span>Burak Yaba</span>
                       <span>•</span>
                       <span>18 Ocak 2026</span>
                       <span>•</span>
@@ -154,7 +167,7 @@ export default function CoreWebVitalsRehberi() {
       
       <p>Bu kapsamlı rehberde, Core Web Vitals metriklerini detaylı olarak inceleyeceğiz. Her bir metriğin ne anlama geldiğini, nasıl ölçüldüğünü ve en önemlisi nasıl optimize edileceğini adım adım öğreneceksiniz. <a href="/hizmetler/performans-odakli-web-tasarim" class="text-[#f84525] hover:underline font-semibold">Performans odaklı web tasarım</a> yaklaşımımızla, bu metriklerde mükemmel sonuçlar almanıza yardımcı oluyoruz.</p>
       
-      <h2>Core Web Vitals Nedir ve Neden Önemli?</h2>
+      <h2 id="nedir" style="scroll-margin-top: 96px">Core Web Vitals Nedir ve Neden Önemli?</h2>
       
       <p>Core Web Vitals, Google'ın kullanıcı deneyimini ölçmek için belirlediği üç temel performans metriğidir. Bu metrikler, gerçek kullanıcı deneyimini yansıtacak şekilde tasarlanmıştır ve web sitenizin kalitesini değerlendirmede kritik rol oynar.</p>
       
@@ -172,7 +185,7 @@ export default function CoreWebVitalsRehberi() {
       
       <p>2021'de başlayan ve 2022'de tamamlanan Google'ın Page Experience güncellemesi ile Core Web Vitals, mobil arama sıralamaları için resmi bir faktör haline geldi. 2025'te artık hem mobil hem de masaüstü aramalarda bu metrikler kritik öneme sahip.</p>
       
-      <h2>LCP (Largest Contentful Paint): En Büyük İçerikli Boyama</h2>
+      <h2 id="lcp" style="scroll-margin-top: 96px">LCP (Largest Contentful Paint): En Büyük İçerikli Boyama</h2>
       
       <h3>LCP Nedir?</h3>
       
@@ -237,7 +250,7 @@ export default function CoreWebVitalsRehberi() {
         <li><strong>Hydration'ı optimize edin:</strong> Partial/progressive hydration teknikleri</li>
       </ul>
       
-      <h2>FID (First Input Delay): İlk Girdi Gecikmesi</h2>
+      <h2 id="fid" style="scroll-margin-top: 96px">FID (First Input Delay): İlk Girdi Gecikmesi</h2>
       
       <h3>FID Nedir?</h3>
       
@@ -301,7 +314,7 @@ export default function CoreWebVitalsRehberi() {
         <li><strong>Virtual scrolling:</strong> Uzun listeler için virtualization</li>
       </ul>
       
-      <h2>CLS (Cumulative Layout Shift): Kümülatif Düzen Kayması</h2>
+      <h2 id="cls" style="scroll-margin-top: 96px">CLS (Cumulative Layout Shift): Kümülatif Düzen Kayması</h2>
       
       <h3>CLS Nedir?</h3>
       
@@ -406,7 +419,7 @@ export default function CoreWebVitalsRehberi() {
         <li>✅ filter</li>
       </ul>
       
-      <h2>Core Web Vitals Ölçüm Araçları</h2>
+      <h2 id="olcum-araclari" style="scroll-margin-top: 96px">Core Web Vitals Ölçüm Araçları</h2>
       
       <h3>1. Google PageSpeed Insights</h3>
       
@@ -456,7 +469,7 @@ getLCP(console.log);</code></pre>
         <li>Geçmiş trend analizi</li>
       </ul>
       
-      <h2>Core Web Vitals Optimizasyon Checklist</h2>
+      <h2 id="optimizasyon-checklist" style="scroll-margin-top: 96px">Core Web Vitals Optimizasyon Checklist</h2>
       
       <h3>LCP İyileştirme Checklist</h3>
       
@@ -503,7 +516,7 @@ getLCP(console.log);</code></pre>
         <li>☐ Dinamik içerik için placeholder ekleyin</li>
       </ul>
       
-      <h2>WebCraft Profesyonel Core Web Vitals Optimizasyonu</h2>
+      <h2 id="profesyonel" style="scroll-margin-top: 96px">WebCraft Profesyonel Core Web Vitals Optimizasyonu</h2>
       
       <p>Core Web Vitals optimizasyonu teknik bilgi ve deneyim gerektirir. WebCraft olarak, <a href="/hizmetler/performans-odakli-web-tasarim" class="text-[#f84525] hover:underline font-semibold">performans odaklı web tasarım</a> hizmetimizle işletmenizin Core Web Vitals metriklerini optimize ediyoruz.</p>
       
@@ -529,7 +542,7 @@ getLCP(console.log);</code></pre>
         <li>✅ Dönüşüm oranı iyileştirmesi</li>
       </ul>
       
-      <h2>Sonuç: Core Web Vitals'da Başarı</h2>
+      <h2 id="sonuc" style="scroll-margin-top: 96px">Sonuç: Core Web Vitals'da Başarı</h2>
       
       <p>Core Web Vitals, 2025'te web performansının ve SEO başarısının temel kriterleridir. LCP, FID ve CLS metriklerini optimize ederek:</p>
       
@@ -569,11 +582,44 @@ getLCP(console.log);</code></pre>
                       </Link>
                     </div>
                   </div>
+                  {/* Author Bio */}
+                  <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">
+                    <div className="flex items-center gap-4 md:gap-5 mb-4">
+                      <div className="bg-red-600 text-white font-bold text-xl rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0">
+                        BY
+                      </div>
+                      <div>
+                        <p className="font-bold text-gray-900 text-lg md:text-xl leading-tight">
+                          Burak Yaba
+                        </p>
+                        <p className="text-red-600 text-sm font-medium mt-1">
+                          WebCraft — Kurucu &amp; Web Tasarım Uzmanı
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Web tasarım alanında 8 yılı aşkın deneyimle onlarca
+                      işletmenin dijital varlığını WebCraft bünyesinde
+                      kurguladım. Teknik mimari, UX ve performans odaklı tasarım
+                      benim sorumluluk alanım.{" "}
+                      <Link
+                        href="/hakkimizda"
+                        className="text-red-600 hover:underline"
+                      >
+                        Hakkımızda sayfasında
+                      </Link>{" "}
+                      daha fazla bilgi bulabilirsiniz.
+                    </p>
+                  </div>
+                  <div className="text-sm text-gray-500 mt-2 mb-8">
+                    Yayın tarihi: 18 Ocak 2026 • Bu yazı yazar tarafından
+                    birinci elden deneyim ve araştırma temelinde hazırlanmıştır.
+                  </div>
                 </div>
+                <BlogTOC items={TOC_ITEMS} />
               </div>
             </div>
           </article>
-
           <RelatedBlogPosts
             currentSlug="core-web-vitals-rehberi"
             posts={[]}

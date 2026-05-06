@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
+import BlogTOC from "@/components/BlogTOC";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -32,9 +33,24 @@ export const metadata: Metadata = {
     type: "article",
     locale: "tr_TR",
     publishedTime: "2026-01-10T09:00:00Z",
-    authors: ["WebCraft SEO Uzmanı"],
+    authors: ["Kubilay Özışık"],
   },
 };
+
+const TOC_ITEMS = [
+  { id: "yerel-seo-nedir", label: "Yerel SEO Nedir?" },
+  { id: "gmb", label: "1. Google My Business" },
+  { id: "nap", label: "2. NAP Tutarlılığı" },
+  { id: "yorumlar", label: "3. Müşteri Yorumları" },
+  { id: "anahtar-kelime", label: "4. Anahtar Kelimeler" },
+  { id: "backlink", label: "5. Yerel Backlink" },
+  { id: "icerik", label: "6. Yerel İçerik" },
+  { id: "haritalar", label: "7. Google Haritalar" },
+  { id: "mobil", label: "8. Mobil & Near Me" },
+  { id: "schema", label: "9. Schema Markup" },
+  { id: "takip", label: "10. Performans Takibi" },
+  { id: "sonuc", label: "Sonuç" },
+];
 
 export default function YerelSEOStratejileri() {
   const breadcrumbItems = [
@@ -81,7 +97,8 @@ export default function YerelSEOStratejileri() {
     image: "https://www.webcraft.tr/bento/dijital-pazarlama.webp",
     author: {
       "@type": "Person",
-      name: "WebCraft SEO Uzmanı",
+      name: "Kubilay Özışık",
+      url: "https://www.webcraft.tr/hakkimizda",
     },
     publisher: {
       "@type": "Organization",
@@ -115,7 +132,7 @@ export default function YerelSEOStratejileri() {
         <Breadcrumb items={breadcrumbItems} />
 
         <main>
-          <article className="pt-32 pb-16">
+          <article className="pt-24 md:pt-32 pb-12">
             <div className="max-w-screen-xl mx-auto px-6 md:px-10">
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="flex-1">
@@ -139,7 +156,7 @@ export default function YerelSEOStratejileri() {
                     </h1>
 
                     <div className="flex items-center gap-4 text-black/60 text-sm">
-                      <span>WebCraft SEO Uzmanı</span>
+                      <span>Kubilay Özışık</span>
                       <span>•</span>
                       <span>10 Ocak 2026</span>
                       <span>•</span>
@@ -156,7 +173,7 @@ export default function YerelSEOStratejileri() {
       
       <p>Bu kapsamlı rehberde, Google My Business optimizasyonundan NAP tutarlılığına, müşteri yorumlarından yerel anahtar kelimelere kadar tüm yerel SEO stratejilerini detaylı olarak ele alacağız. <a href="/fethiye-web-tasarim-hizmetleri" class="text-[#f84525] hover:underline font-semibold">Fethiye web tasarım hizmetlerimiz</a> ve <a href="/mugla-web-tasarim-seo-hizmetleri" class="text-[#f84525] hover:underline font-semibold">Muğla web tasarım ve SEO hizmetlerimiz</a> ile yerel işletmelere özel çözümler sunuyoruz.</p>
       
-      <h2>Yerel SEO Nedir ve Neden Önemlidir?</h2>
+      <h2 id="yerel-seo-nedir" style="scroll-margin-top: 96px">Yerel SEO Nedir ve Neden Önemlidir?</h2>
       
       <p>Yerel SEO, işletmenizin belirli bir coğrafi konumda arama sonuçlarında görünür olmasını sağlayan optimizasyon çalışmalarıdır. "Fethiye'de restoran", "Muğla web tasarım" veya "yakınımdaki kuaför" gibi aramalar yerel SEO kapsamındadır.</p>
       
@@ -172,7 +189,7 @@ export default function YerelSEOStratejileri() {
         <li><strong>Uygun maliyetli pazarlama:</strong> Ulusal SEO'ya göre daha düşük rekabet</li>
       </ul>
       
-      <h2>1. Google My Business (Google İşletmem) Optimizasyonu</h2>
+      <h2 id="gmb" style="scroll-margin-top: 96px">1. Google My Business (Google İşletmem) Optimizasyonu</h2>
       
       <p>Google My Business (GMB), yerel SEO'nun temel taşıdır. GMB kaydınız, Google Haritalar ve yerel arama sonuçlarında görünmenizi sağlar.</p>
       
@@ -249,7 +266,7 @@ export default function YerelSEOStratejileri() {
         <li>Gönderileri 7 gün sonra güncelleyin (Google gönderileri 7 gün sonra kaldırır)</li>
       </ul>
       
-      <h2>2. NAP Tutarlılığı (Name, Address, Phone)</h2>
+      <h2 id="nap" style="scroll-margin-top: 96px">2. NAP Tutarlılığı (Name, Address, Phone)</h2>
       
       <p>NAP tutarlılığı, işletmenizin ismi, adresi ve telefon numarasının internetteki tüm kaynaklarda aynı formatta yer almasıdır. Google, NAP tutarlılığını yerel sıralama faktörü olarak kullanır.</p>
       
@@ -289,7 +306,7 @@ E-posta: info@webcraft.tr</code></pre>
         <li><strong>Gazeteler ve yerel medya:</strong> Yerel basın kayıtları</li>
       </ul>
       
-      <h2>3. Müşteri Yorumları ve Değerlendirmeler</h2>
+      <h2 id="yorumlar" style="scroll-margin-top: 96px">3. Müşteri Yorumları ve Değlendirmeler</h2>
       
       <p>Müşteri yorumları, yerel SEO'nun en kritik ranking faktörlerinden biridir. Araştırmalar gösteriyor ki tüketicilerin %87'si yerel işletmeler için online yorumları okuyor.</p>
       
@@ -342,7 +359,7 @@ E-posta: info@webcraft.tr</code></pre>
         <li><strong>Web sitenizde yorum bölümü:</strong> Kendi sitenizde testimonials</li>
       </ul>
       
-      <h2>4. Yerel Anahtar Kelime Araştırması</h2>
+      <h2 id="anahtar-kelime" style="scroll-margin-top: 96px">4. Yerel Anahtar Kelime Araştırması</h2>
       
       <p>Yerel anahtar kelimeler, coğrafi konum bilgisi içeren arama terimleridir. Doğru yerel anahtar kelimeleri hedeflemek, yerel SEO başarısının temelidir.</p>
       
@@ -406,7 +423,7 @@ E-posta: info@webcraft.tr</code></pre>
         <li><strong>URL:</strong> /fethiye-web-tasarim-hizmetleri</li>
       </ul>
       
-      <h2>5. Yerel Backlink Stratejisi</h2>
+      <h2 id="backlink" style="scroll-margin-top: 96px">5. Yerel Backlink Stratejisi</h2>
       
       <p>Yerel backlink'ler, aynı coğrafi bölgedeki web sitelerinden aldığınız bağlantılardır. Yerel backlink'ler, yerel sıralamada güçlü bir faktördür.</p>
       
@@ -434,7 +451,7 @@ E-posta: info@webcraft.tr</code></pre>
         <li><strong>Broken link building:</strong> Yerel sitelerdeki kırık linkleri düzeltin</li>
       </ul>
       
-      <h2>6. Yerel İçerik Stratejisi</h2>
+      <h2 id="icerik" style="scroll-margin-top: 96px">6. Yerel İçerik Stratejisi</h2>
       
       <p>Yerel içerik, hedef coğrafi bölgeye özel oluşturulmuş içeriklerdir. Yerel içerik, hem kullanıcılar hem de Google için değerlidir.</p>
       
@@ -452,7 +469,7 @@ E-posta: info@webcraft.tr</code></pre>
       
       <p>Örneğin, <a href="/fethiye-web-tasarim-hizmetleri" class="text-[#f84525] hover:underline font-semibold">Fethiye web tasarım hizmetleri sayfamızda</a> Fethiye'ye özel içerik ve hizmetler sunuyoruz.</p>
       
-      <h2>7. Google Haritalar Optimizasyonu</h2>
+      <h2 id="haritalar" style="scroll-margin-top: 96px">7. Google Haritalar Optimizasyonu</h2>
       
       <p>Google Haritalar, yerel aramalarda görünmenin en etkili yoludur. Map pack (harita paketi) üç işletmeyi gösterir ve bu alana girmek organik trafiği katlanarak artırır.</p>
       
@@ -468,7 +485,7 @@ E-posta: info@webcraft.tr</code></pre>
         <li><strong>Fotoğraf ekleyin:</strong> Düzenli fotoğraf güncellemeleri</li>
       </ul>
       
-      <h2>8. Mobil Optimizasyon ve "Near Me" Aramaları</h2>
+      <h2 id="mobil" style="scroll-margin-top: 96px">8. Mobil Optimizasyon ve "Near Me" Aramaları</h2>
       
       <p>"Near me" aramalarının %80'i mobil cihazlardan yapılıyor. Mobil optimizasyon, yerel SEO için kritiktir.</p>
       
@@ -484,7 +501,7 @@ E-posta: info@webcraft.tr</code></pre>
         <li><strong>Mobil friendly forms:</strong> Kolay doldurulabilir formlar</li>
       </ul>
       
-      <h2>9. Yerel Schema Markup</h2>
+      <h2 id="schema" style="scroll-margin-top: 96px">9. Yerel Schema Markup</h2>
       
       <p>Yerel işletmeler için özel schema markup türleri:</p>
       
@@ -515,7 +532,7 @@ E-posta: info@webcraft.tr</code></pre>
 }
 &lt;/script&gt;</code></pre>
       
-      <h2>10. Yerel SEO Performans Takibi</h2>
+      <h2 id="takip" style="scroll-margin-top: 96px">10. Yerel SEO Performans Takibi</h2>
       
       <p>Yerel SEO çalışmalarınızın sonuçlarını düzenli olarak takip edin:</p>
       
@@ -543,7 +560,7 @@ E-posta: info@webcraft.tr</code></pre>
         <li><strong>Yext:</strong> Çoklu platform yönetimi</li>
       </ul>
       
-      <h2>Sonuç</h2>
+      <h2 id="sonuc" style="scroll-margin-top: 96px">Sonuç</h2>
       
       <p>Yerel SEO, özellikle küçük ve orta ölçekli işletmeler için en etkili dijital pazarlama stratejilerinden biridir. Google My Business optimizasyonundan NAP tutarlılığına, müşteri yorumlarından yerel içerik stratejisine kadar bu rehberdeki tüm adımları uygulayarak, Google Haritalar'da ve yerel aramalarda üst sıralarda yer alabilirsiniz.</p>
       
@@ -554,95 +571,45 @@ E-posta: info@webcraft.tr</code></pre>
                       }}
                     />
                   </div>
+                  {/* Author Bio */}
+                  <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">
+                    <div className="flex items-center gap-4 md:gap-5 mb-4">
+                      <div className="bg-red-600 text-white font-bold text-xl rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0">
+                        KÖ
+                      </div>
+                      <div>
+                        <p className="font-bold text-gray-900 text-lg md:text-xl leading-tight">
+                          Kubilay Özışık
+                        </p>
+                        <p className="text-red-600 text-sm font-medium mt-1">
+                          WebCraft — SEO &amp; Dijital Büyüme Uzmanı
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      6 yılı aşkın süre boyunca Türkiye genelinde işletmelerin
+                      organik arama görünürlüğünü büyüttüm. Teknik SEO, içerik
+                      stratejisi ve anahtar kelime araştırması alanlarında
+                      uzmanlaştım.{" "}
+                      <Link
+                        href="/hakkimizda"
+                        className="text-red-600 hover:underline"
+                      >
+                        Hakkımızda sayfasında
+                      </Link>{" "}
+                      daha fazla bilgi bulabilirsiniz.
+                    </p>
+                  </div>
+                  <div className="text-sm text-gray-500 mt-2 mb-8">
+                    Yayın tarihi: 10 Ocak 2026 • Bu yazı yazar tarafından
+                    birinci elden deneyim ve araştırma temelinde hazırlanmıştır.
+                  </div>
                 </div>
 
-                <aside className="md:w-80">
-                  <div className="sticky top-32">
-                    <div className="bg-gray-50 rounded-lg p-6 mb-6">
-                      <h3 className="font-bold text-lg mb-4 text-black">
-                        İçindekiler
-                      </h3>
-                      <ul className="space-y-2 text-sm text-black/70">
-                        <li>
-                          <a
-                            href="#yerel-seo-nedir"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Yerel SEO Nedir?
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#google-my-business"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Google My Business
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#nap-tutarliligi"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            NAP Tutarlılığı
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#musteri-yorumlari"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Müşteri Yorumları
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#yerel-anahtar-kelimeler"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Yerel Anahtar Kelimeler
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#yerel-backlink"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Yerel Backlink
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#google-haritalar"
-                            className="hover:text-red-600 transition-colors"
-                          >
-                            Google Haritalar
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div className="bg-red-50 rounded-lg p-6">
-                      <h3 className="font-bold text-lg mb-2 text-black">
-                        Yerel SEO Hizmetimiz
-                      </h3>
-                      <p className="text-sm text-black/70 mb-4">
-                        Yerel SEO hizmetimiz ile Google Haritalar&apos;da üst
-                        sıralara çıkın.
-                      </p>
-                      <Link
-                        href="/iletisim"
-                        className="block text-center bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors text-sm font-medium"
-                      >
-                        Ücretsiz Teklif Alın
-                      </Link>
-                    </div>
-                  </div>
-                </aside>
+                <BlogTOC items={TOC_ITEMS} />
               </div>
             </div>
           </article>
-
           <RelatedBlogPosts
             currentSlug="yerel-seo-stratejileri"
             posts={[]}

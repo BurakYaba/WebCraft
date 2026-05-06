@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedBlogPosts from "@/components/RelatedBlogPosts";
 import Link from "next/link";
 import Image from "next/image";
+import BlogTOC from "@/components/BlogTOC";
 
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -33,9 +34,15 @@ export const metadata: Metadata = {
     type: "article",
     locale: "tr_TR",
     publishedTime: "2025-01-22T09:00:00Z",
-    authors: ["WebCraft Web Tasarım Uzmanı"],
+    authors: ["Burak Yaba"],
   },
 };
+
+const TOC_ITEMS = [
+  { id: "nedir", label: "Profesyonel Web Tasarım Nedir?" },
+  { id: "kimler-icin", label: "Kimler İçin Gerekli?" },
+  { id: "sonuc", label: "Sonuç" },
+];
 
 export default function ProfesyonelWebTasarimNedir() {
   const breadcrumbItems = [
@@ -81,7 +88,8 @@ export default function ProfesyonelWebTasarimNedir() {
     image: "https://www.webcraft.tr/bento/web-tasarim.webp",
     author: {
       "@type": "Person",
-      name: "WebCraft Web Tasarım Uzmanı",
+      name: "Burak Yaba",
+      url: "https://www.webcraft.tr/hakkimizda",
     },
     publisher: {
       "@type": "Organization",
@@ -115,7 +123,7 @@ export default function ProfesyonelWebTasarimNedir() {
         <Breadcrumb items={breadcrumbItems} />
         <main>
           {/* Hero Section */}
-          <section className="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-white">
+          <section className="pt-24 md:pt-32 pb-12 bg-gradient-to-br from-gray-50 to-white">
             <div className="max-w-4xl mx-auto px-6 md:px-10">
               <div className="mb-6">
                 <span className="inline-block px-4 py-2 bg-red-100 text-red-600 rounded-full text-sm font-semibold">
@@ -126,11 +134,11 @@ export default function ProfesyonelWebTasarimNedir() {
                 Profesyonel Web Tasarım Nedir? Kimler İçin Gerekli?
               </h1>
               <div className="flex items-center gap-6 text-gray-600 mb-8">
+                <span className="font-medium text-gray-900">Burak Yaba</span>
+                <span>•</span>
                 <span>22 Ocak 2025</span>
                 <span>•</span>
                 <span>20 dk okuma</span>
-                <span>•</span>
-                <span>WebCraft Web Tasarım Uzmanı</span>
               </div>
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
@@ -145,210 +153,258 @@ export default function ProfesyonelWebTasarimNedir() {
           </section>
 
           {/* Content Section */}
-          <section className="py-16">
-            <div className="max-w-4xl mx-auto px-6 md:px-10">
-              <div className="prose prose-lg max-w-none">
-                <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                  Günümüz dijital dünyasında, bir web sitesine sahip olmak artık
-                  bir lüks değil, bir zorunluluktur. Ancak sadece bir web
-                  sitesine sahip olmak yeterli değildir. Profesyonel web
-                  tasarım, işletmenizin dijital başarısının temelini oluşturur
-                  ve markanızın online dünyadaki ilk izlenimini belirler.
-                </p>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                  Bu yazıda, profesyonel web tasarımın ne olduğunu, kimler için
-                  gerekli olduğunu ve neden önemli olduğunu detaylı olarak ele
-                  alacağız. 8+ yıllık web tasarım deneyimimiz ve 200+ başarılı
-                  projemizle, profesyonel{" "}
-                  <Link
-                    href="/hizmetler/web-tasarim"
-                    className="text-red-600 hover:text-red-700 font-semibold underline"
-                  >
-                    web tasarım
-                  </Link>{" "}
-                  hizmetlerinin işletmenize nasıl değer katacağını
-                  açıklayacağız.
-                </p>
-
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-                  Profesyonel Web Tasarım Nedir?
-                </h2>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Profesyonel web tasarım, sadece görsel olarak çekici bir web
-                  sitesi oluşturmak değildir. Kapsamlı bir süreçtir ve şu
-                  unsurları içerir:
-                </p>
-
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  1. Stratejik Planlama ve Analiz
-                </h3>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Profesyonel web tasarım, detaylı bir planlama süreci ile
-                  başlar:
-                </p>
-
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>Hedef kitle analizi:</strong> Web sitenizin kime
-                      hitap edeceğini belirlemek
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>Rakip analizi:</strong> Sektörünüzdeki
-                      rakiplerinizin web sitelerini incelemek
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>İş hedefleri belirleme:</strong> Web sitenizin
-                      hangi amaçlara hizmet edeceğini netleştirmek
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>İçerik stratejisi:</strong> Hangi bilgilerin nasıl
-                      sunulacağını planlamak
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>Teknik gereksinimler:</strong> Web sitenizin hangi
-                      özelliklere ihtiyaç duyduğunu belirlemek
-                    </span>
-                  </li>
-                </ul>
-
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  2. Kullanıcı Deneyimi (UX) Odaklı Tasarım
-                </h3>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Profesyonel web tasarım, kullanıcı deneyimini önceliklendirir:
-                </p>
-
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>Sezgisel navigasyon:</strong> Kullanıcıların
-                      kolayca istedikleri bilgiyi bulabilmesi
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>Hızlı yükleme süreleri:</strong> Kullanıcıların
-                      beklemek zorunda kalmaması
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>Mobil uyumluluk:</strong> Tüm cihazlarda mükemmel
-                      görünüm ve işlevsellik
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>Erişilebilirlik:</strong> Tüm kullanıcılar için
-                      erişilebilir tasarım (WCAG standartları)
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">
-                      <strong>Dönüşüm odaklı tasarım:</strong> Kullanıcıları
-                      istenen aksiyonlara yönlendiren tasarım
-                    </span>
-                  </li>
-                </ul>
-
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-                  Kimler İçin Profesyonel Web Tasarım Gerekli?
-                </h2>
-
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  1. Küçük ve Orta Ölçekli İşletmeler (KOBİ&apos;ler)
-                </h3>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Küçük ve orta ölçekli işletmeler için profesyonel web tasarım
-                  kritik öneme sahiptir. Dijital varlık oluşturma, rekabet
-                  avantajı, müşteri güveni ve maliyet etkin pazarlama için
-                  profesyonel web sitesi gereklidir.
-                </p>
-
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  2. Kurumsal İşletmeler
-                </h3>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Kurumsal işletmeler için profesyonel web tasarım, marka
-                  itibarı ve kurumsal kimlik için gereklidir. Profesyonel
-                  görünüm ile marka değerini artırma ve kurumsal sistemlerle
-                  entegrasyon önemlidir.
-                </p>
-
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  3. E-Ticaret İşletmeleri
-                </h3>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Online satış yapan işletmeler için profesyonel web tasarım,
-                  satış başarısı için kritiktir. Güvenli ödeme sistemleri,
-                  kullanıcı dostu alışveriş deneyimi ve mobil optimizasyon
-                  gereklidir.
-                </p>
-
-                <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8 rounded-r-lg">
-                  <h4 className="text-blue-900 font-bold text-xl mb-3">
-                    💡 Uzman İpucu
-                  </h4>
-                  <p className="text-blue-800 text-lg leading-relaxed">
-                    Profesyonel web tasarım, sadece bir maliyet değil,
-                    işletmenizin dijital başarısı için yapılan bir yatırımdır.
-                    Doğru yatırım, uzun vadede önemli getiriler sağlar ve
-                    işletmenizin büyümesine katkıda bulunur.
+          <article className="py-12">
+            <div className="max-w-6xl mx-auto px-6 md:px-10">
+              <div className="flex gap-16 items-start">
+                <div className="min-w-0 flex-1">
+                  <p className="text-base md:text-lg text-gray-700 leading-relaxed border-l-4 border-red-500 pl-6 md:pl-10 py-3 mb-10">
+                    Günümüz dijital dünyasında, bir web sitesine sahip olmak
+                    artık bir lüks değil, bir zorunluluktur. Ancak sadece bir
+                    web sitesine sahip olmak yeterli değildir. Profesyonel web
+                    tasarım, işletmenizin dijital başarısının temelini oluşturur
+                    ve markanızın online dünyadaki ilk izlenimini belirler.
                   </p>
-                </div>
 
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-                  Sonuç
-                </h2>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                    Bu yazıda, profesyonel web tasarımın ne olduğunu, kimler
+                    için gerekli olduğunu ve neden önemli olduğunu detaylı
+                    olarak ele alacağız. 8+ yıllık web tasarım deneyimimiz ve
+                    200+ başarılı projemizle, profesyonel{" "}
+                    <Link
+                      href="/hizmetler/web-tasarim"
+                      className="text-red-600 hover:text-red-700 font-semibold underline"
+                    >
+                      web tasarım
+                    </Link>{" "}
+                    hizmetlerinin işletmenize nasıl değer katacağını
+                    açıklayacağız.
+                  </p>
 
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Profesyonel web tasarım, modern işletmeler için vazgeçilmez
-                  bir gerekliliktir. Küçük işletmelerden büyük kurumlara kadar,
-                  tüm işletmeler profesyonel web tasarımın faydalarından
-                  yararlanabilir.
-                </p>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                  Profesyonel{" "}
-                  <Link
-                    href="/hizmetler/web-tasarim"
-                    className="text-red-600 hover:text-red-700 font-semibold underline"
+                  <h2
+                    id="nedir"
+                    className="text-3xl font-bold text-gray-900 mt-12 mb-6 scroll-mt-24"
                   >
-                    web tasarım
-                  </Link>{" "}
-                  hizmeti ile markanızı dijital dünyada öne çıkarın. WebCraft
-                  ile iletişime geçin!
-                </p>
-              </div>
-            </div>
-          </section>
+                    Profesyonel Web Tasarım Nedir?
+                  </h2>
 
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Profesyonel web tasarım, sadece görsel olarak çekici bir web
+                    sitesi oluşturmak değildir. Kapsamlı bir süreçtir ve şu
+                    unsurları içerir:
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    1. Stratejik Planlama ve Analiz
+                  </h3>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Profesyonel web tasarım, detaylı bir planlama süreci ile
+                    başlar:
+                  </p>
+
+                  <ul className="space-y-3 mb-8">
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>Hedef kitle analizi:</strong> Web sitenizin kime
+                        hitap edeceğini belirlemek
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>Rakip analizi:</strong> Sektörünüzdeki
+                        rakiplerinizin web sitelerini incelemek
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>İş hedefleri belirleme:</strong> Web sitenizin
+                        hangi amaçlara hizmet edeceğini netleştirmek
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>İçerik stratejisi:</strong> Hangi bilgilerin
+                        nasıl sunulacağını planlamak
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>Teknik gereksinimler:</strong> Web sitenizin
+                        hangi özelliklere ihtiyaç duyduğunu belirlemek
+                      </span>
+                    </li>
+                  </ul>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    2. Kullanıcı Deneyimi (UX) Odaklı Tasarım
+                  </h3>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Profesyonel web tasarım, kullanıcı deneyimini
+                    önceliklendirir:
+                  </p>
+
+                  <ul className="space-y-3 mb-8">
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>Sezgisel navigasyon:</strong> Kullanıcıların
+                        kolayca istedikleri bilgiyi bulabilmesi
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>Hızlı yükleme süreleri:</strong> Kullanıcıların
+                        beklemek zorunda kalmaması
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>Mobil uyumluluk:</strong> Tüm cihazlarda
+                        mükemmel görünüm ve işlevsellik
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>Erişilebilirlik:</strong> Tüm kullanıcılar için
+                        erişilebilir tasarım (WCAG standartları)
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span className="text-gray-700">
+                        <strong>Dönüşüm odaklı tasarım:</strong> Kullanıcıları
+                        istenen aksiyonlara yönlendiren tasarım
+                      </span>
+                    </li>
+                  </ul>
+
+                  <h2
+                    id="kimler-icin"
+                    className="text-3xl font-bold text-gray-900 mt-12 mb-6 scroll-mt-24"
+                  >
+                    Kimler İçin Profesyonel Web Tasarım Gerekli?
+                  </h2>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    1. Küçük ve Orta Ölçekli İşletmeler (KOBİ&apos;ler)
+                  </h3>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Küçük ve orta ölçekli işletmeler için profesyonel web
+                    tasarım kritik öneme sahiptir. Dijital varlık oluşturma,
+                    rekabet avantajı, müşteri güveni ve maliyet etkin pazarlama
+                    için profesyonel web sitesi gereklidir.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    2. Kurumsal İşletmeler
+                  </h3>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Kurumsal işletmeler için profesyonel web tasarım, marka
+                    itibarı ve kurumsal kimlik için gereklidir. Profesyonel
+                    görünüm ile marka değerini artırma ve kurumsal sistemlerle
+                    entegrasyon önemlidir.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    3. E-Ticaret İşletmeleri
+                  </h3>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Online satış yapan işletmeler için profesyonel web tasarım,
+                    satış başarısı için kritiktir. Güvenli ödeme sistemleri,
+                    kullanıcı dostu alışveriş deneyimi ve mobil optimizasyon
+                    gereklidir.
+                  </p>
+
+                  <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8 rounded-r-lg">
+                    <h4 className="text-blue-900 font-bold text-xl mb-3">
+                      💡 Uzman İpucu
+                    </h4>
+                    <p className="text-blue-800 text-lg leading-relaxed">
+                      Profesyonel web tasarım, sadece bir maliyet değil,
+                      işletmenizin dijital başarısı için yapılan bir yatırımdır.
+                      Doğru yatırım, uzun vadede önemli getiriler sağlar ve
+                      işletmenizin büyümesine katkıda bulunur.
+                    </p>
+                  </div>
+
+                  <h2
+                    id="sonuc"
+                    className="text-3xl font-bold text-gray-900 mt-12 mb-6 scroll-mt-24"
+                  >
+                    Sonuç
+                  </h2>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Profesyonel web tasarım, modern işletmeler için vazgeçilmez
+                    bir gerekliliktir. Küçük işletmelerden büyük kurumlara
+                    kadar, tüm işletmeler profesyonel web tasarımın
+                    faydalarından yararlanabilir.
+                  </p>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                    Profesyonel{" "}
+                    <Link
+                      href="/hizmetler/web-tasarim"
+                      className="text-red-600 hover:text-red-700 font-semibold underline"
+                    >
+                      web tasarım
+                    </Link>{" "}
+                    hizmeti ile markanızı dijital dünyada öne çıkarın. WebCraft
+                    ile iletişime geçin!
+                  </p>
+                  {/* Author Bio */}
+                  <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">
+                    <div className="flex items-center gap-4 md:gap-5 mb-4">
+                      <div className="bg-red-600 text-white font-bold text-xl rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0">
+                        BY
+                      </div>
+                      <div>
+                        <p className="font-bold text-gray-900 text-lg md:text-xl leading-tight">
+                          Burak Yaba
+                        </p>
+                        <p className="text-red-600 text-sm font-medium mt-1">
+                          WebCraft — Kurucu &amp; Web Tasarım Uzmanı
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Web tasarım alanında 8 yılı aşkın deneyimle onlarca
+                      işletmenin dijital varlığını WebCraft bünyesinde
+                      kurguladım. Teknik mimari, UX ve performans odaklı tasarım
+                      benim sorumluluk alanım.{" "}
+                      <Link
+                        href="/hakkimizda"
+                        className="text-red-600 hover:underline"
+                      >
+                        Hakkımızda sayfasında
+                      </Link>{" "}
+                      daha fazla bilgi bulabilirsiniz.
+                    </p>
+                  </div>
+                  <div className="text-sm text-gray-500 mt-2 mb-8">
+                    Yayın tarihi: 22 Ocak 2025 • Bu yazı yazar tarafından
+                    birinci elden deneyim ve araştırma temelinde hazırlanmıştır.
+                  </div>
+                </div>
+                {/* end content column */}
+                <BlogTOC items={TOC_ITEMS} />
+              </div>
+              {/* end flex */}
+            </div>
+            {/* end max-w-6xl */}
+          </article>
           {/* Related Blog Posts */}
           <RelatedBlogPosts
             currentSlug="profesyonel-web-tasarim-nedir-kimler-icin-gerekli"
