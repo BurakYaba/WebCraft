@@ -56,7 +56,7 @@ export default function KobiDijitalDonusumRehberi() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "KOBİ Dijital Dönüşüm Rehberi 2025",
+      name: "KOBİ Dijital Dönüşüm",
       url: "/blog/kobi-dijital-donusum-rehberi",
     },
   ];

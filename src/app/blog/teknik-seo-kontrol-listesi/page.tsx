@@ -57,7 +57,7 @@ export default function TeknikSEOKontrolListesi() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Teknik SEO Kontrol Listesi: 2026 Kapsamlı Rehber",
+      name: "Teknik SEO Kontrol Listesi",
       url: "/blog/teknik-seo-kontrol-listesi",
     },
   ];

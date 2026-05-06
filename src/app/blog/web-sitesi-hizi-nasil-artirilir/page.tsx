@@ -56,7 +56,7 @@ export default function WebSitesiHiziNasilArtirilir() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Web Sitesi Hızı Nasıl Artırılır? 2025 Performans Optimizasyon Rehberi",
+      name: "Web Sitesi Hız Optimizasyonu",
       url: "/blog/web-sitesi-hizi-nasil-artirilir",
     },
   ];

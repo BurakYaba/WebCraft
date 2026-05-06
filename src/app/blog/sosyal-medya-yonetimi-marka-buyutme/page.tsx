@@ -49,7 +49,7 @@ export default function SosyalMedyaYonetimi() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Sosyal Medya Yönetimi ile Markanızı Büyütün",
+      name: "Sosyal Medya Yönetimi",
       url: "/blog/sosyal-medya-yonetimi-marka-buyutme",
     },
   ];

@@ -50,7 +50,7 @@ export default function SeoUyumluWebTasarimi() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "SEO Uyumlu Web Tasarımı ile Google'da Üst Sıralarda Yer Alın",
+      name: "SEO Uyumlu Web Tasarımı",
       url: "/blog/seo-uyumlu-web-tasarimi",
     },
   ];

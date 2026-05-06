@@ -46,7 +46,7 @@ export default function WebTasarimFiyatlari() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Web Tasarım Fiyatları ve Uygun Maliyetli Çözümler",
+      name: "Web Tasarım Fiyatları",
       url: "/blog/web-tasarim-fiyatlari",
     },
   ];

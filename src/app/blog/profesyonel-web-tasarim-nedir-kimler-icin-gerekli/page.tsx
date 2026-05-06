@@ -49,7 +49,7 @@ export default function ProfesyonelWebTasarimNedir() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Profesyonel Web Tasarım Nedir? Kimler İçin Gerekli?",
+      name: "Profesyonel Web Tasarım",
       url: "/blog/profesyonel-web-tasarim-nedir-kimler-icin-gerekli",
     },
   ];

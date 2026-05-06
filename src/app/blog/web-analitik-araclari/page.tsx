@@ -53,7 +53,7 @@ export default function WebAnalitikAraclari() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Web Analitik Araçları: Google Analytics ve Veri Analizi",
+      name: "Web Analitik Araçları",
       url: "/blog/web-analitik-araclari",
     },
   ];

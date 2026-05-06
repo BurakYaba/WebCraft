@@ -48,7 +48,7 @@ export default function ProfesyonelSeoHizmeti() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Profesyonel SEO Hizmeti ile Organik Trafiğinizi Artırın",
+      name: "Profesyonel SEO Hizmeti",
       url: "/blog/profesyonel-seo-hizmeti",
     },
   ];

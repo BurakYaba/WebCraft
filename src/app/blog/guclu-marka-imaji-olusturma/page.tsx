@@ -55,7 +55,7 @@ export default function GuluMarkaImaji() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Güçlü Marka İmajı Oluşturma Stratejileri",
+      name: "Güçlü Marka İmajı",
       url: "/blog/guclu-marka-imaji-olusturma",
     },
   ];

@@ -54,7 +54,7 @@ export default function KurumsalWebSitesiHatalari() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Kurumsal Web Sitesi Yaptırırken Yapılan 7 Kritik Hata",
+      name: "7 Kritik Hata",
       url: "/blog/kurumsal-web-sitesi-yaptirirken-yapilan-7-kritik-hata",
     },
   ];

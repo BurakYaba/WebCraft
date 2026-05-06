@@ -57,7 +57,7 @@ export default function YerelSEOStratejileri() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Yerel SEO Stratejileri: Google Haritalar'da Üst Sıralarda Yer Alın",
+      name: "Yerel SEO Stratejileri",
       url: "/blog/yerel-seo-stratejileri",
     },
   ];

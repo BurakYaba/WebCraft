@@ -44,7 +44,7 @@ export default function OnlineMagazaKurulumu() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Online Mağaza Kurulumu ve E-Ticaret Web Sitesi",
+      name: "Online Mağaza Kurulumu",
       url: "/blog/online-magaza-kurulumu",
     },
   ];

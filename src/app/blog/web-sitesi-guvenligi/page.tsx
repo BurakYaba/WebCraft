@@ -55,7 +55,7 @@ export default function WebSitesiGuvenligi() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Web Sitesi Güvenliği: SSL, HTTPS ve Güvenlik Önlemleri",
+      name: "Web Sitesi Güvenliği",
       url: "/blog/web-sitesi-guvenligi",
     },
   ];

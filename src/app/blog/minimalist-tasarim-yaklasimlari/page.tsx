@@ -54,7 +54,7 @@ export default function MinimalistTasarim() {
     { name: "Ana Sayfa", url: "/" },
     { name: "Blog", url: "/blog" },
     {
-      name: "Minimalist Tasarım Yaklaşımları ve Modern Web Tasarımı",
+      name: "Minimalist Tasarım",
       url: "/blog/minimalist-tasarim-yaklasimlari",
     },
   ];
