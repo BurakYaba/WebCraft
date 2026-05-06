@@ -42,6 +42,18 @@ export const metadata: Metadata = {
 // Optimized blog posts data - moved outside component to prevent re-creation
 const blogPosts = [
   {
+    id: 19,
+    category: "SEO & Yapay Zeka",
+    title: "SEO, GEO ve AEO Nedir? Arama Optimizasyonunun Üç Boyutu",
+    excerpt:
+      "SEO, GEO (Generative Engine Optimization) ve AEO (Answer Engine Optimization) arasındaki farkları ve ChatGPT, Google AI Overview gibi yapay zeka sistemlerinde nasıl görünür olacağınızı öğrenin.",
+    image: "/bento/dijital-pazarlama.webp",
+    slug: "seo-geo-aeo-nedir",
+    date: "6 Mayıs 2026",
+    readTime: "25 dk",
+    isEven: false,
+  },
+  {
     id: 18,
     category: "Yerel SEO",
     title:

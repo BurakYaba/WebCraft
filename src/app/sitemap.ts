@@ -5,6 +5,10 @@ import { MetadataRoute } from "next";
 const blogPosts = [
   // NEW KEYWORD-OPTIMIZED POSTS (2026)
   {
+    slug: "seo-geo-aeo-nedir",
+    date: "2026-05-06",
+  },
+  {
     slug: "web-sitesi-hizi-nasil-artirilir",
     date: "2026-01-20",
   },
