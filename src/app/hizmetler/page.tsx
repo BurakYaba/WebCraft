@@ -339,7 +339,7 @@ export default function Services() {
                     </p>
                   </Link>
                   <Link
-                    href="/kurumsal-web-sitesi"
+                    href="/kurumsal-web-tasarim"
                     className="group block bg-gray-800/50 border border-gray-700/50 p-6 rounded-lg hover:bg-gray-800/80 hover:border-red-800/50 transition-all"
                   >
                     <div className="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">

@@ -172,7 +172,7 @@ export default function GuluMarkaImaji() {
                   <p className="text-lg text-gray-700 leading-relaxed mb-8">
                     Güçlü bir marka imajını{" "}
                     <Link
-                      href="/kurumsal-web-sitesi"
+                      href="/kurumsal-web-tasarim"
                       className="text-red-600 hover:text-red-700 font-semibold underline"
                     >
                       kurumsal web sitenizle
@@ -756,7 +756,7 @@ export default function GuluMarkaImaji() {
                     ise sadakate dönüşür. Web varlığınızı bu kimlikle
                     taçlandırmak için{" "}
                     <Link
-                      href="/kurumsal-web-sitesi"
+                      href="/kurumsal-web-tasarim"
                       className="text-red-600 hover:text-red-700 font-semibold underline"
                     >
                       kurumsal web sitesi

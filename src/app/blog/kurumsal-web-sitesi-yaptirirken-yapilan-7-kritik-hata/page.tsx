@@ -177,7 +177,7 @@ export default function KurumsalWebSitesiHatalari() {
                     olduğunu, nasıl önlenebileceğini ve doğru yaklaşımın ne
                     olduğunu açıklayacağız. Bu bilgiler,{" "}
                     <Link
-                      href="/kurumsal-web-sitesi"
+                      href="/kurumsal-web-tasarim"
                       className="text-red-600 hover:text-red-700 font-semibold underline"
                     >
                       kurumsal web sitesi
@@ -335,7 +335,7 @@ export default function KurumsalWebSitesiHatalari() {
                     kaçınarak, başarılı ve etkili bir dijital varlık
                     oluşturabilirsiniz. Profesyonel{" "}
                     <Link
-                      href="/kurumsal-web-sitesi"
+                      href="/kurumsal-web-tasarim"
                       className="text-red-600 hover:text-red-700 font-semibold underline"
                     >
                       kurumsal web sitesi

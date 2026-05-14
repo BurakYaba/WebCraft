@@ -10,26 +10,26 @@ const Footer = lazy(() => import("@/components/Footer"));
 
 const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
   <div
-    className={`${height} bg-gray-100 animate-pulse flex items-center justify-center`}
+    className={`${height} bg-gray-800 animate-pulse flex items-center justify-center`}
   >
     <div className="w-8 h-8 border-4 border-red-500/20 border-t-red-500 rounded-full animate-spin" />
   </div>
 );
 
 export const metadata: Metadata = {
-  title: "Web Tasarım Ajansı Nasıl Seçilir? 7 Kriter | WebCraft",
+  title: "Web Ajansı Seçim Rehberi: 7 Değerlendirme Kriteri | WebCraft",
   description:
-    "Web tasarım ajansı seçerken mutlaka sormanız gereken 7 kriter. Portföy, teknik altyapı, SEO bilgisi, şeffaf fiyatlandırma ve daha fazlası. Bilinçli karar verin.",
+    "Doğru web ajansını seçmek için sormanız gereken 7 somut kriter. Portföy analizi, teknik altyapı, SEO entegrasyonu, şeffaf fiyatlandırma ve daha fazlası. Bilinçli karar verin.",
   keywords:
-    "web tasarım ajansı nasıl seçilir, ajans seçme kriterleri, web tasarım ajansı değerlendirme, iyi web ajansı nasıl bulunur, web tasarım şirketi seçimi",
+    "web ajansı nasıl seçilir, ajans seçme kriterleri, web ajansı değerlendirme, iyi web ajansı nasıl bulunur, web tasarım şirketi seçimi, ajans seçim rehberi",
   metadataBase: new URL("https://www.webcraft.tr"),
   alternates: {
     canonical: "/en-iyi-web-tasarim-ajansi",
   },
   openGraph: {
-    title: "Web Tasarım Ajansı Nasıl Seçilir? 7 Kriter | WebCraft",
+    title: "Web Ajansı Seçim Rehberi: 7 Değerlendirme Kriteri | WebCraft",
     description:
-      "Ajans seçerken mutlaka sormanız gereken 7 kriter. Portföy, teknik altyapı, SEO bilgisi ve şeffaf fiyatlandırma rehberi.",
+      "Doğru ajansı seçmek için sormanız gereken 7 kriter. Portföy analizi, teknik altyapı, SEO entegrasyonu ve şeffaf fiyatlandırma rehberi.",
     type: "article",
     locale: "tr_TR",
   },
@@ -213,7 +213,7 @@ export default function WebTasarimAjansiSecimPage() {
               Ajans Seçme Rehberi
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight mb-8">
-              Web Tasarım Ajansı
+              Doğru Web Ajansı
               <br />
               <span className="text-red-500">Nasıl Seçilir?</span>
             </h1>

@@ -49,7 +49,7 @@ const Footer = () => {
     { name: "E-ticaret Web Tasarım", href: "/hizmetler/e-ticaret" },
     { name: "AI Chatbot", href: "/hizmetler/yapay-zeka-chatbot" },
     { name: "AI Otomasyon", href: "/hizmetler/yapay-zeka-otomasyon" },
-    { name: "Kurumsal Web Sitesi", href: "/kurumsal-web-sitesi" },
+    { name: "Kurumsal Web Tasarımı", href: "/kurumsal-web-tasarim" },
     { name: "En İyi Web Tasarım Ajansı", href: "/en-iyi-web-tasarim-ajansi" },
   ];
 

@@ -50,6 +50,11 @@ const nextConfig: NextConfig = {
         destination: "/hizmetler",
         permanent: true,
       },
+      {
+        source: "/kurumsal-web-sitesi",
+        destination: "/kurumsal-web-tasarim",
+        permanent: true, // 301 redirect
+      },
     ];
   },
 
