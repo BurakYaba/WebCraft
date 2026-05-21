@@ -566,6 +566,8 @@ E-posta: info@webcraft.tr</code></pre>
       
       <p><a href="/mugla-web-tasarim-seo-hizmetleri" class="text-[#f84525] hover:underline font-semibold">Muğla web tasarım ve SEO hizmetlerimiz</a> ile yerel işletmelerin dijital varlıklarını güçlendiriyoruz. Ayrıca, <a href="/hizmetler/dijital-pazarlama" class="text-[#f84525] hover:underline font-semibold">dijital pazarlama hizmetlerimizde</a> yerel SEO stratejilerini profesyonel olarak uyguluyoruz.</p>
       
+      <p>Profesyonel bir <a href="/seo-ajansi" class="text-[#f84525] hover:underline font-semibold">SEO ajansı</a> ile çalışmak, yerel SEO stratejilerinizi sistemli ve ölçülebilir biçimde yürütmenizi sağlar. WebCraft olarak Türkiye genelindeki işletmelere kapsamlı SEO çözümleri sunuyoruz.</p>
+      
       <p>Yerel SEO sürekli güncellenen bir alan olduğu için düzenli olarak GMB profilinizi güncellemeli, müşteri yorumlarına yanıt vermeli ve yerel içerik üretmeye devam etmelisiniz. Başarılar dileriz!</p>
       `,
                       }}

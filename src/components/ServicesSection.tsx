@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
+import Link from "next/link";
 import ServiceCards from "./ServiceCards";
 
 export default function ServicesSection() {
@@ -41,10 +42,16 @@ export default function ServicesSection() {
           </h2>
           <p className="text-lg md:text-xl text-[#6f6f6f] max-w-3xl mx-auto font-body">
             Profesyonel <strong>web tasarım</strong>,{" "}
-            <strong>SEO hizmeti</strong>, <strong>sosyal medya yönetimi</strong>{" "}
-            ve <strong>dijital pazarlama</strong> çözümleri ile markanızı
-            dijital dünyada öne çıkarıyoruz. Kurumsal web sitesi tasarımı ve
-            e-ticaret çözümleri sunuyoruz.
+            <Link
+              href="/seo-ajansi"
+              className="font-semibold hover:underline text-[#6f6f6f]"
+            >
+              <strong>SEO ajansı</strong>
+            </Link>{" "}
+            hizmetleri, <strong>sosyal medya yönetimi</strong> ve{" "}
+            <strong>dijital pazarlama</strong> çözümleri ile markanızı dijital
+            dünyada öne çıkarıyoruz. Kurumsal web sitesi tasarımı ve e-ticaret
+            çözümleri sunuyoruz.
           </p>
         </div>
 

@@ -567,6 +567,8 @@ Crawl-delay: 1</code></pre>
       
       <p><a href="/hizmetler/seo-uyumlu-web-sitesi" class="text-[#f84525] hover:underline font-semibold">Profesyonel SEO uyumlu web sitesi</a> hizmetimiz ile teknik SEO çalışmalarınızı uzman ekibimize bırakabilirsiniz. Ayrıca, <a href="/hizmetler/web-tasarim" class="text-[#f84525] hover:underline font-semibold">web tasarım hizmetlerimizde</a> tüm teknik SEO best practice'lerini uygulayarak, Google'da üst sıralarda yer alan web siteleri oluşturuyoruz.</p>
       
+      <p>Teknik SEO çalışmalarınızı bütüncül bir stratejiyle yönetmek için profesyonel bir <a href="/seo-ajansi" class="text-[#f84525] hover:underline font-semibold">SEO ajansı</a> ile çalışabilirsiniz. WebCraft olarak denetimden raporlamaya kadar tüm süreci sizin adınıza yürütüyoruz.</p>
+      
       <p>Teknik SEO, sürekli güncellenen bir alan olduğu için düzenli olarak sitenizi denetlemeli ve Google'ın yeni algoritmalarına uyum sağlamalısınız. Başarılar dileriz!</p>
       `,
                       }}

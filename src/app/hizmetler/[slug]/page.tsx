@@ -362,6 +362,34 @@ export default async function ServicePage({ params }: ServicePageProps) {
         {/* Related Services */}
         <RelatedServices currentSlug={service.slug} />
 
+        {/* SEO Ajansı contextual link — only for seo-hizmeti */}
+        {service.slug === "seo-hizmeti" && (
+          <section className="py-8 bg-white border-t border-gray-100">
+            <div className="max-w-4xl mx-auto px-6 md:px-10">
+              <div className="bg-gray-50 rounded-lg p-6 text-center">
+                <p className="text-gray-700 mb-3 text-lg">
+                  WebCraft bir{" "}
+                  <Link
+                    href="/seo-ajansi"
+                    className="text-red-600 hover:underline font-semibold"
+                  >
+                    SEO ajansı
+                  </Link>{" "}
+                  olarak Türkiye genelinde organik trafik büyümesi sağlıyoruz.
+                  Kapsamlı SEO hizmetlerimizi keşfedin.
+                </p>
+                <Link
+                  href="/seo-ajansi"
+                  className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 font-semibold text-sm"
+                >
+                  SEO Ajansı sayfamızı ziyaret edin{" "}
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* CTA Section */}
         <section className="py-20 bg-red-600">
           <div className="max-w-4xl mx-auto px-6 md:px-10 text-center">

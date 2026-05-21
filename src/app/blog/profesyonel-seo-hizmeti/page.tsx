@@ -311,7 +311,15 @@ export default function ProfesyonelSeoHizmeti() {
                     >
                       SEO hizmeti
                     </Link>{" "}
-                    için WebCraft ile iletişime geçin!
+                    için WebCraft ile iletişime geçin! Kapsamlı yönetim için
+                    profesyonel{" "}
+                    <Link
+                      href="/seo-ajansi"
+                      className="text-red-600 hover:text-red-700 font-semibold underline"
+                    >
+                      SEO ajansı
+                    </Link>{" "}
+                    hizmetimizden yararlanın.
                   </p>
                   {/* Author Bio */}
                   <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">
