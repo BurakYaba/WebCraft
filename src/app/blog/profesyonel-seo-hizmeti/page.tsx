@@ -319,7 +319,14 @@ export default function ProfesyonelSeoHizmeti() {
                     >
                       SEO ajansı
                     </Link>{" "}
-                    hizmetimizden yararlanın.
+                    hizmetimizden ya da deneyimli{" "}
+                    <Link
+                      href="/seo-uzmani"
+                      className="text-red-600 hover:text-red-700 font-semibold underline"
+                    >
+                      SEO uzmanı
+                    </Link>{" "}
+                    ekibimizden yararlanın.
                   </p>
                   {/* Author Bio */}
                   <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">

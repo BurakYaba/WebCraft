@@ -762,7 +762,7 @@ export default function SeoAjansiPage() {
                   dezavantajları vardır, ancak büyüyen işletmeler için ajans
                   yaklaşımı genellikle daha etkilidir.
                 </p>
-                <p className="text-gray-300 text-lg mb-8 leading-relaxed">
+                <p className="text-gray-300 text-lg mb-6 leading-relaxed">
                   WebCraft gibi bir{" "}
                   <strong className="text-white">SEO ajansı</strong> ile
                   çalıştığınızda; birden fazla uzmanın birikiminden,
@@ -770,6 +770,17 @@ export default function SeoAjansiPage() {
                   yararlanırsınız. Freelancer ise genellikle daha uygun
                   maliyetlidir ancak tek kişilik kapasitesi kısıtlayıcı
                   olabilir.
+                </p>
+                <p className="text-gray-300 text-lg mb-8 leading-relaxed">
+                  Ekibimizin her bir üyesi alanında uzmanlaşmış birer{" "}
+                  <Link
+                    href="/seo-uzmani"
+                    className="text-red-500 hover:underline font-semibold"
+                  >
+                    SEO uzmanı
+                  </Link>
+                  dır. Bireysel uzmanlık ile ajans kapasitesini bir arada
+                  sunuyoruz.
                 </p>
                 <Link
                   href="/iletisim"

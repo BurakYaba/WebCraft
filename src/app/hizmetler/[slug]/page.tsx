@@ -362,12 +362,12 @@ export default async function ServicePage({ params }: ServicePageProps) {
         {/* Related Services */}
         <RelatedServices currentSlug={service.slug} />
 
-        {/* SEO Ajansı contextual link — only for seo-hizmeti */}
+        {/* SEO Ajansı & SEO Uzmanı contextual links — only for seo-hizmeti */}
         {service.slug === "seo-hizmeti" && (
           <section className="py-8 bg-white border-t border-gray-100">
             <div className="max-w-4xl mx-auto px-6 md:px-10">
-              <div className="bg-gray-50 rounded-lg p-6 text-center">
-                <p className="text-gray-700 mb-3 text-lg">
+              <div className="bg-gray-50 rounded-lg p-6">
+                <p className="text-gray-700 mb-4 text-lg text-center">
                   WebCraft bir{" "}
                   <Link
                     href="/seo-ajansi"
@@ -376,15 +376,21 @@ export default async function ServicePage({ params }: ServicePageProps) {
                     SEO ajansı
                   </Link>{" "}
                   olarak Türkiye genelinde organik trafik büyümesi sağlıyoruz.
-                  Kapsamlı SEO hizmetlerimizi keşfedin.
                 </p>
-                <Link
-                  href="/seo-ajansi"
-                  className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 font-semibold text-sm"
-                >
-                  SEO Ajansı sayfamızı ziyaret edin{" "}
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link
+                    href="/seo-ajansi"
+                    className="inline-flex items-center justify-center gap-2 text-red-600 hover:text-red-700 font-semibold text-sm border border-red-200 rounded-full px-5 py-2 hover:bg-red-50 transition-colors"
+                  >
+                    SEO Ajansımız <ArrowRight className="w-4 h-4" />
+                  </Link>
+                  <Link
+                    href="/seo-uzmani"
+                    className="inline-flex items-center justify-center gap-2 text-red-600 hover:text-red-700 font-semibold text-sm border border-red-200 rounded-full px-5 py-2 hover:bg-red-50 transition-colors"
+                  >
+                    SEO Uzmanlarımız <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
               </div>
             </div>
           </section>

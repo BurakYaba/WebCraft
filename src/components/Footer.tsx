@@ -62,6 +62,7 @@ const Footer = () => {
     { name: "KOBİ Web Tasarım", href: "/hizmetler/kobi-web-tasarim" },
     { name: "SEO Uyumlu Web Sitesi", href: "/hizmetler/seo-uyumlu-web-sitesi" },
     { name: "SEO Ajansı", href: "/seo-ajansi" },
+    { name: "SEO Uzmanı", href: "/seo-uzmani" },
     { name: "Fethiye Web Tasarım", href: "/fethiye-web-tasarim-hizmetleri" },
     { name: "Muğla Web Tasarım", href: "/mugla-web-tasarim-seo-hizmetleri" },
   ];
