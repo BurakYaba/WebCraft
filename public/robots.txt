@@ -4,8 +4,6 @@
 User-agent: *
 Allow: /
 Allow: /_next/image
-Disallow: /apple-icon
-Disallow: /icon
 Disallow: /api/
 
 # Sitemap
