@@ -32,7 +32,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "SEO, GEO ve AEO Nedir? Arama Optimizasyonunun Üç Boyutu | WebCraft",
+  title: "SEO, GEO ve AEO Nedir? Arama Optimizasyonunun Üç Boyutu",
   description:
     "SEO, GEO (Generative Engine Optimization) ve AEO (Answer Engine Optimization) arasındaki farkları ve bu üç stratejiyi bir arada nasıl uygulayacağınızı öğrenin. 2026 için kapsamlı rehber.",
   keywords:

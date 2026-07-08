@@ -16,7 +16,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Sıkça Sorulan Sorular | WebCraft SSS",
+  title: "Sıkça Sorulan Sorular (SSS)",
   description:
     "Web tasarım, SEO hizmeti ve dijital pazarlama hakkında sıkça sorulan sorular. Web tasarım fiyatları, SEO hizmeti, e-ticaret web tasarımı ve daha fazlası hakkında merak ettiğiniz her şey.",
   keywords:

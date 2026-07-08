@@ -30,7 +30,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Muğla Web Tasarım ve SEO Hizmetleri | Dijital Ajans | WebCraft",
+  title: "Muğla Web Tasarım ve SEO Hizmetleri | Dijital Ajans",
   description:
     "Muğla'da profesyonel web tasarım ve SEO hizmetleri. Fethiye, Bodrum, Marmaris, Datça'da işletmelere özel dijital çözümler. Yerel SEO ve dijital pazarlama.",
   keywords:

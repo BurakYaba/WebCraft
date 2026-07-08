@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 
 const Footer = lazy(() => import("@/components/Footer"));
+const SocialProofStrip = lazy(() => import("@/components/SocialProofStrip"));
 
 const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
   <div
@@ -34,7 +35,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "Yapay Zeka Chatbot Geliştirme | WhatsApp, Web, GPT Entegrasyonu | WebCraft",
+    "Yapay Zeka Chatbot Geliştirme | WhatsApp, Web, GPT Entegrasyonu",
   description:
     "İşletmenize özel yapay zeka chatbot çözümleri. WhatsApp Business, web widget, Telegram, Instagram DM entegrasyonu. GPT tabanlı, Türkçe, 7/24 otomatik müşteri desteği. Sektöre özel bilgi tabanı, insan devir protokolü. Ücretsiz keşif görüşmesi.",
   keywords:
@@ -944,6 +945,27 @@ export default function YapayZekaChatbotPage() {
               </h2>
               <ChatbotFAQAccordion faqs={faqs} />
             </div>
+          </div>
+        </section>
+
+        {/* Social proof — testimonials, project marquee, outcome stats */}
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <SocialProofStrip />
+        </Suspense>
+
+        {/* İlgili yazı */}
+        <section className="py-10 bg-white border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-6 md:px-10 text-center">
+            <p className="text-gray-700 text-lg">
+              Chatbot mu, iş otomasyonu mu, hangisiyle başlamalısınız?{" "}
+              <Link
+                href="/blog/yapay-zeka-chatbot-ve-otomasyon-rehberi"
+                className="text-red-600 hover:underline font-semibold"
+              >
+                Kapsamlı rehberimizi
+              </Link>{" "}
+              okuyun.
+            </p>
           </div>
         </section>
 

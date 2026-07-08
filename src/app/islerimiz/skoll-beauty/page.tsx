@@ -8,7 +8,7 @@ import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 export const metadata: Metadata = {
   title:
-    "Skoll Salon Web Sitesi | Güzellik Salonu Dijital Çözümleri | WebCraft",
+    "Skoll Salon Web Sitesi | Güzellik Salonu Dijital Çözümleri",
   description:
     "Skoll Salon için modern tasarım, online randevu sistemi ve yerel SEO ile Muğla'nın öne çıkan güzellik salonu web sitesi. Profesyonel kuaför web tasarım hizmeti.",
   keywords:

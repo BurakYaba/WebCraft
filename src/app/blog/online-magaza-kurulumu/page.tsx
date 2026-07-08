@@ -17,7 +17,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Online Mağaza Kurulumu ve E-Ticaret Web Sitesi | WebCraft",
+  title: "Online Mağaza Kurulumu ve E-Ticaret Web Sitesi",
   description:
     "Online mağaza kurulumu rehberi. E-ticaret web sitesi nasıl yapılır? Ürün yönetimi, ödeme sistemleri ve satış stratejileri.",
   keywords:

@@ -17,7 +17,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Freelancer vs Ajans | Web Tasarım Hangisi Daha İyi? | WebCraft",
+  title: "Freelancer vs Ajans | Web Tasarım Hangisi Daha İyi?",
   description:
     "Freelance web tasarımcı mı yoksa profesyonel ajans mı? Avantajlar, dezavantajlar, maliyet karşılaştırması. İşiniz için en doğru kararı verin.",
   keywords:
@@ -378,6 +378,17 @@ export default function FreelancerVsAjansPage() {
             <p className="text-xl mb-8 opacity-90">
               Kurumsal güvence, profesyonel ekip, zamanında teslim. Ücretsiz
               danışmanlık alın.
+            </p>
+            <p className="text-base mb-8 opacity-80">
+              Ajansla çalışmaya karar verdiyseniz sırada doğru ajansı seçmek
+              var —{" "}
+              <Link
+                href="/en-iyi-web-tasarim-ajansi"
+                className="underline font-semibold hover:opacity-80"
+              >
+                7 değerlendirme kriterini
+              </Link>{" "}
+              inceleyin.
             </p>
             <Link
               href="/iletisim"

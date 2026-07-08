@@ -17,7 +17,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "Web Tasarım Karşılaştırmaları | Ajans vs Freelancer, Platform Analizi | WebCraft",
+    "Web Tasarım Karşılaştırmaları | Ajans vs Freelancer, Platform Analizi",
   description:
     "Web tasarım kararınızı kolaylaştıran detaylı karşılaştırmalar. Freelancer vs ajans, DIY yapıcılar vs profesyonel tasarım, WordPress vs Shopify vs özel kodlama. Uzman analizleri.",
   keywords:

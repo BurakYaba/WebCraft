@@ -27,7 +27,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "Kaynak Merkezi | Web Tasarım ve Dijital Pazarlama Rehberleri | WebCraft",
+    "Kaynak Merkezi | Web Tasarım ve Dijital Pazarlama Rehberleri",
   description:
     "Web tasarım, SEO ve dijital pazarlama hakkında kapsamlı rehberler. Profesyonel içeriklerle işletmenizi dijital dünyada büyütün. WebCraft uzman ekibinden.",
   keywords:

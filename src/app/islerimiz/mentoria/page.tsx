@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Mentoria - Özel Ders Platformu | WebCraft Projesi",
+  title: "Mentoria - Özel Ders Platformu Projesi",
   description:
     "Mentoria için geliştirdiğimiz akıllı eşleştirme sistemiyle öğrenci ve öğretmenleri buluşturan güvenilir özel ders platformu. Next.js, React, TypeScript ile modern web tasarım projesi.",
   keywords:

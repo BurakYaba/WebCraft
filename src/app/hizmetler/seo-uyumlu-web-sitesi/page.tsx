@@ -31,7 +31,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "SEO Uyumlu Web Sitesi | Google'da Üst Sıralara Çıkın | WebCraft",
+  title: "SEO Uyumlu Web Sitesi | Google'da Üst Sıralara Çıkın",
   description:
     "SEO uyumlu web sitesi tasarımı ile Google'da üst sıralarda yer alın. Teknik SEO altyapısı, semantik HTML yapısı, schema markup ve Core Web Vitals optimizasyonu ile doğru temelden başlayın.",
   keywords:

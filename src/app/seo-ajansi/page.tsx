@@ -35,7 +35,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "SEO Ajansı | Organik Trafiğinizi Artırıyoruz | WebCraft",
+  title: "SEO Ajansı | Organik Trafiğinizi Artırıyoruz",
   description:
     "Profesyonel SEO ajansı olarak Google'da üst sıralarda yer almanızı sağlıyoruz. Teknik SEO, içerik optimizasyonu ve link building ile organik trafiğinizi katlayın. Ücretsiz analiz alın!",
   keywords:

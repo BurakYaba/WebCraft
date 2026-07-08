@@ -14,6 +14,7 @@ import Link from "next/link";
 
 // Lazy load Footer
 const Footer = lazy(() => import("@/components/Footer"));
+const SocialProofStrip = lazy(() => import("@/components/SocialProofStrip"));
 
 // Loading component
 const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
@@ -35,7 +36,7 @@ export async function generateMetadata({
 
   if (!service) {
     return {
-      title: "Hizmet Bulunamadı | WebCraft",
+      title: "Hizmet Bulunamadı",
       description: "Aradığınız hizmet bulunamadı.",
     };
   }
@@ -395,6 +396,72 @@ export default async function ServicePage({ params }: ServicePageProps) {
             </div>
           </section>
         )}
+
+        {/* Kurumsal Web Tasarım contextual link — web-tasarim & yazilim-gelistirme */}
+        {(service.slug === "web-tasarim" ||
+          service.slug === "yazilim-gelistirme") && (
+          <section className="py-8 bg-white border-t border-gray-100">
+            <div className="max-w-4xl mx-auto px-6 md:px-10">
+              <div className="bg-gray-50 rounded-lg p-6">
+                <p className="text-gray-700 mb-4 text-lg text-center">
+                  Çok departmanlı bir yapınız mı var? KVKK uyumlu, ERP
+                  entegrasyonlu{" "}
+                  <Link
+                    href="/kurumsal-web-tasarim"
+                    className="text-red-600 hover:underline font-semibold"
+                  >
+                    kurumsal web tasarım
+                  </Link>{" "}
+                  çözümlerimizi inceleyin.
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Local service contextual links — Fethiye / Muğla */}
+        <section className="py-8 bg-white border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-6 md:px-10">
+            <div className="bg-gray-50 rounded-lg p-6">
+              <p className="text-gray-700 mb-4 text-lg text-center">
+                Fethiye ve Muğla&apos;da yerelde hizmet veren bir ekibiz —{" "}
+                <Link
+                  href="/fethiye-web-tasarim-hizmetleri"
+                  className="text-red-600 hover:underline font-semibold"
+                >
+                  Fethiye {service.title.toLowerCase()}
+                </Link>{" "}
+                ve{" "}
+                <Link
+                  href="/mugla-web-tasarim-seo-hizmetleri"
+                  className="text-red-600 hover:underline font-semibold"
+                >
+                  Muğla web tasarım ve SEO
+                </Link>{" "}
+                hizmetlerimizi de inceleyebilirsiniz.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/fethiye-web-tasarim-hizmetleri"
+                  className="inline-flex items-center justify-center gap-2 text-red-600 hover:text-red-700 font-semibold text-sm border border-red-200 rounded-full px-5 py-2 hover:bg-red-50 transition-colors"
+                >
+                  Fethiye Hizmetlerimiz <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link
+                  href="/mugla-web-tasarim-seo-hizmetleri"
+                  className="inline-flex items-center justify-center gap-2 text-red-600 hover:text-red-700 font-semibold text-sm border border-red-200 rounded-full px-5 py-2 hover:bg-red-50 transition-colors"
+                >
+                  Muğla Hizmetlerimiz <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Social proof — testimonials, project marquee, outcome stats */}
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <SocialProofStrip />
+        </Suspense>
 
         {/* CTA Section */}
         <section className="py-20 bg-red-600">

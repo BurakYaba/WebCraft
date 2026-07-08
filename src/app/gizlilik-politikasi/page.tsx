@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 export const metadata: Metadata = {
-  title: "Gizlilik Politikası | WebCraft",
+  title: "Gizlilik Politikası",
   description:
     "WebCraft gizlilik politikası. Kişisel verilerinizin nasıl korunduğu, toplandığı ve kullanıldığı hakkında detaylı bilgi. KVKK uyumlu veri koruma.",
   keywords:

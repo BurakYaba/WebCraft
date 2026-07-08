@@ -34,7 +34,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Fethiye Web Tasarım Hizmetleri | Profesyonel Web Sitesi | WebCraft",
+  title: "Fethiye Web Tasarım Hizmetleri | Profesyonel Web Sitesi",
   description:
     "Fethiye'de profesyonel web tasarım hizmeti. Oteller, restoranlar ve turizm işletmeleri için özel web siteleri. SEO uyumlu, mobil uyumlu ve modern tasarımlar.",
   keywords:

@@ -6,7 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Kullanım Şartları | WebCraft",
+  title: "Kullanım Şartları",
   description:
     "WebCraft kullanım şartları. Web tasarım, SEO ve dijital pazarlama hizmetlerimizin kullanım koşulları, haklar ve yükümlülükler hakkında detaylı bilgi.",
   keywords:

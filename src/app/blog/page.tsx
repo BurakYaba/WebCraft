@@ -42,6 +42,19 @@ export const metadata: Metadata = {
 // Optimized blog posts data - moved outside component to prevent re-creation
 const blogPosts = [
   {
+    id: 20,
+    category: "Yapay Zeka & Otomasyon",
+    title:
+      "Yapay Zeka Chatbot ve Otomasyon: İşletmeniz İçin Ne Anlama Geliyor?",
+    excerpt:
+      "Yapay zeka chatbot ve iş otomasyonu işletmenize somut olarak ne katar? Maliyet, süreç, ROI ve hangisiyle önce başlamanız gerektiğine dair 2026 rehberi.",
+    image: "/bento/chatbot.webp",
+    slug: "yapay-zeka-chatbot-ve-otomasyon-rehberi",
+    date: "8 Temmuz 2026",
+    readTime: "20 dk",
+    isEven: false,
+  },
+  {
     id: 19,
     category: "SEO & Yapay Zeka",
     title: "SEO, GEO ve AEO Nedir? Arama Optimizasyonunun Üç Boyutu",

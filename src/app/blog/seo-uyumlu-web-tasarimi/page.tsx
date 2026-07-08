@@ -19,7 +19,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "SEO Uyumlu Web Tasarımı ile Google'da Üst Sıralarda Yer Alın | WebCraft",
+    "SEO Uyumlu Web Tasarımı ile Google'da Üst Sıralarda Yer Alın",
   description:
     "SEO uyumlu web tasarımı ile Google'da üst sıralarda yer alın. Profesyonel web tasarım ajansı ile organik trafiğinızı artırın ve dijital pazarlama başarınızı katlayın.",
   keywords:

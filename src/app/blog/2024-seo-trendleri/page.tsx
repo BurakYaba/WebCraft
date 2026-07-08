@@ -19,7 +19,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "2025-2026 SEO Trendleri: Güncel Arama Motoru Optimizasyonu Rehberi | WebCraft",
+    "2025-2026 SEO Trendleri: Güncel Arama Motoru Optimizasyonu Rehberi",
   description:
     "2025-2026 SEO trendleri rehberi: AI Overview, E-E-A-T, Core Web Vitals, sesli arama ve teknik SEO stratejileri. Google'da üst sıralara çıkın.",
   keywords:

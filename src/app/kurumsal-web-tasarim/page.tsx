@@ -22,6 +22,7 @@ import {
 
 // Lazy load Footer
 const Footer = lazy(() => import("@/components/Footer"));
+const SocialProofStrip = lazy(() => import("@/components/SocialProofStrip"));
 
 // Loading component for better UX
 const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
@@ -34,7 +35,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "Kurumsal Web Sitesi Tasarımı | KVKK Uyumlu, ERP Entegrasyonlu | WebCraft",
+    "Kurumsal Web Sitesi Tasarımı | KVKK Uyumlu, ERP Entegrasyonlu",
   description:
     "Çok departmanlı yapı, yatırımcı ilişkileri sayfası, KVKK uyumlu gizlilik altyapısı, ERP/CRM entegrasyonu ve intranet çözümleri içeren kurumsal web sitesi tasarımı. Büyük ölçekli şirketler için.",
   keywords:
@@ -998,6 +999,35 @@ export default function KurumsalWebTasarimPage() {
             </div>
           </div>
         </section>
+
+        {/* İlgili sayfalar — yerel hizmet ve ajans seçim rehberi */}
+        <section className="py-10 bg-gray-50 border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-6 md:px-10 text-center">
+            <p className="text-gray-700 text-lg">
+              Fethiye ve Muğla&apos;da yerelde hizmet veriyoruz —{" "}
+              <a
+                href="/fethiye-web-tasarim-hizmetleri"
+                className="text-red-600 hover:underline font-semibold"
+              >
+                Fethiye kurumsal web tasarım
+              </a>{" "}
+              hizmetimizi inceleyin. Doğru ajansı nasıl seçeceğinizden emin
+              değil misiniz?{" "}
+              <a
+                href="/en-iyi-web-tasarim-ajansi"
+                className="text-red-600 hover:underline font-semibold"
+              >
+                7 değerlendirme kriterine
+              </a>{" "}
+              göz atın.
+            </p>
+          </div>
+        </section>
+
+        {/* Social proof — testimonials, project marquee, outcome stats */}
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <SocialProofStrip />
+        </Suspense>
 
         {/* ── CTA ── */}
         <section className="py-20 bg-red-600">

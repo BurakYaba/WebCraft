@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Atlantis Kreş - Modern Anaokulu Web Sitesi | WebCraft Projesi",
+  title: "Atlantis Kreş - Modern Anaokulu Web Sitesi Projesi",
   description:
     "Atlantis Kreş için geliştirdiğimiz Montessori, Reggio Emilia ve High Scope eğitim modelleriyle modern kreş web sitesi. Veli portalı, online kayıt ve galeri sistemi.",
   keywords:

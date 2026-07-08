@@ -18,7 +18,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "Minimalist Web Tasarımı: Prensipler, Uygulamalar ve Sık Hatalar | WebCraft",
+    "Minimalist Web Tasarımı: Prensipler, Uygulamalar ve Sık Hatalar",
   description:
     "Minimalist web tasarımı rehberi: beyaz alan kullanımı, grid sistemleri, tipografi hiyerarşisi ve dönüşüm optimize. Az çoktur felsefesini tasarımda uygulayın.",
   keywords:

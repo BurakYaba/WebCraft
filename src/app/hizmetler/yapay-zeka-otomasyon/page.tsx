@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 
 const Footer = lazy(() => import("@/components/Footer"));
+const SocialProofStrip = lazy(() => import("@/components/SocialProofStrip"));
 
 const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
   <div
@@ -34,7 +35,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Yapay Zeka İş Otomasyonu | AI Otomasyon Hizmeti | WebCraft",
+  title: "Yapay Zeka İş Otomasyonu | AI Otomasyon Hizmeti",
   description:
     "Yapay zeka ile iş süreçleri otomasyonu. Akıllı belge işleme, e-posta otomasyonu, veri analizi ve iş akışı optimizasyonu. Fatura okuma, sipariş işleme, lead yönetimi otomasyonu. Tekrarlayan görevleri ortadan kaldırın — ücretsiz keşif görüşmesi.",
   keywords:
@@ -940,6 +941,27 @@ export default function YapayZekaOtomasyonPage() {
               </h2>
               <ChatbotFAQAccordion faqs={faqs} />
             </div>
+          </div>
+        </section>
+
+        {/* Social proof — testimonials, project marquee, outcome stats */}
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <SocialProofStrip />
+        </Suspense>
+
+        {/* İlgili yazı */}
+        <section className="py-10 bg-white border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-6 md:px-10 text-center">
+            <p className="text-gray-700 text-lg">
+              Chatbot mu, iş otomasyonu mu, hangisiyle başlamalısınız?{" "}
+              <Link
+                href="/blog/yapay-zeka-chatbot-ve-otomasyon-rehberi"
+                className="text-red-600 hover:underline font-semibold"
+              >
+                Kapsamlı rehberimizi
+              </Link>{" "}
+              okuyun.
+            </p>
           </div>
         </section>
 

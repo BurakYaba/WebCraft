@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import GoogleReviewsBadge from "./GoogleReviewsBadge";
 
 interface ServiceHeroProps {
   title: string;
@@ -99,6 +100,9 @@ export default function ServiceHero({
               >
                 Hemen Ara
               </a>
+            </div>
+            <div className="mt-6">
+              <GoogleReviewsBadge />
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Kurumsal Web Sitesi Yaptırırken Yapılan 7 Kritik Hata | WebCraft",
+  title: "Kurumsal Web Sitesi Yaptırırken Yapılan 7 Kritik Hata",
   description:
     "Kurumsal web sitesi yaptırırken yapılan en yaygın 7 kritik hatayı öğrenin. Profesyonel web tasarım ajansı deneyimiyle bu hatalardan kaçınarak başarılı bir kurumsal web sitesi oluşturun.",
   keywords:
@@ -183,6 +183,19 @@ export default function KurumsalWebSitesiHatalari() {
                       kurumsal web sitesi
                     </Link>{" "}
                     projenizde maliyetli hatalardan kaçınmanıza yardımcı olacak.
+                  </p>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                    Bu hataların çoğu aslında proje başlamadan önce, yanlış
+                    ajans ya da yanlış ekiple çalışma kararından kaynaklanır.{" "}
+                    <Link
+                      href="/en-iyi-web-tasarim-ajansi"
+                      className="text-red-600 hover:text-red-700 font-semibold underline"
+                    >
+                      En iyi web tasarım ajansı nasıl seçilir
+                    </Link>{" "}
+                    rehberimizde bu kararı doğru vermeniz için 7 somut kriteri
+                    ele aldık.
                   </p>
 
                   <h2

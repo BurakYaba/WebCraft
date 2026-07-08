@@ -18,7 +18,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Sosyal Medya Yönetimi ile Markanızı Büyütün | WebCraft",
+  title: "Sosyal Medya Yönetimi ile Markanızı Büyütün",
   description:
     "Sosyal medya yönetimi ile markanızı büyütün. Instagram, Facebook, LinkedIn stratejileri. Profesyonel sosyal medya ajansı ile marka bilinirliğinizi artırın.",
   keywords:

@@ -5,6 +5,10 @@ import { MetadataRoute } from "next";
 const blogPosts = [
   // NEW KEYWORD-OPTIMIZED POSTS (2026)
   {
+    slug: "yapay-zeka-chatbot-ve-otomasyon-rehberi",
+    date: "2026-07-08",
+  },
+  {
     slug: "seo-geo-aeo-nedir",
     date: "2026-05-06",
   },
@@ -84,6 +88,10 @@ const blogPosts = [
   },
 ];
 
+// Bumped only when static (non-blog) pages actually change content —
+// not on every build, so Google doesn't see a false "updated daily" signal.
+const SITE_LAST_UPDATED = new Date("2026-07-08");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.webcraft.tr";
 
@@ -98,156 +106,156 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${baseUrl}/hakkimizda`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/hizmetler`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     // Individual service pages
     {
       url: `${baseUrl}/hizmetler/web-tasarim`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/hizmetler/dijital-pazarlama`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/hizmetler/mobil-uygulama`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/hizmetler/yazilim-gelistirme`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     // Main SEO service page
     {
       url: `${baseUrl}/hizmetler/seo-hizmeti`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     // SEO landing pages
     {
       url: `${baseUrl}/seo-ajansi`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly" as const,
       priority: 0.85,
     },
     {
       url: `${baseUrl}/seo-uzmani`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly" as const,
       priority: 0.85,
     },
     // Niche service pages
     {
       url: `${baseUrl}/hizmetler/performans-odakli-web-tasarim`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/hizmetler/kobi-web-tasarim`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/hizmetler/seo-uyumlu-web-sitesi`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/hizmetler/yapay-zeka-chatbot`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.85,
     },
     {
       url: `${baseUrl}/hizmetler/yapay-zeka-otomasyon`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.85,
     },
     {
       url: `${baseUrl}/e-ticaret-web-tasarim`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.85,
     },
     {
       url: `${baseUrl}/islerimiz`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     // Individual project pages
     {
       url: `${baseUrl}/islerimiz/fluenta-ai`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/islerimiz/mentoria`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/islerimiz/atlantis`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/islerimiz/skoll-beauty`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/islerimiz/home-and-car`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/islerimiz/yatrehberi`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/iletisim`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
@@ -255,103 +263,97 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Resource Center & Knowledge Base
     {
       url: `${baseUrl}/kaynak-merkezi`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/sozluk`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     // Comparison Pages
     {
       url: `${baseUrl}/karsilastirma`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/karsilastirma/webcraft-vs-diy`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/karsilastirma/freelancer-vs-ajans`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/karsilastirma/platformlar`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/hizmetler/yapay-zeka-otomasyon`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
     // Industry-specific landing pages
     {
       url: `${baseUrl}/hizmetler/e-ticaret`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/kurumsal-web-tasarim`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     // Competitor-focused landing page
     {
       url: `${baseUrl}/en-iyi-web-tasarim-ajansi`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     // Local SEO pages
     {
       url: `${baseUrl}/fethiye-web-tasarim-hizmetleri`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/mugla-web-tasarim-seo-hizmetleri`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     // Legal pages
     {
       url: `${baseUrl}/gizlilik-politikasi`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.5,
     },
     {
       url: `${baseUrl}/kullanim-sartlari`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.5,
     },
     {
       url: `${baseUrl}/cerez-politikasi`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.5,
     },
     // FAQ page
     {
       url: `${baseUrl}/sss`,
-      lastModified: new Date(),
+      lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
     },

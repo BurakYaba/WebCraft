@@ -17,7 +17,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Teknik SEO Kontrol Listesi: 2026 Kapsamlı Rehber | WebCraft",
+  title: "Teknik SEO Kontrol Listesi: 2026 Kapsamlı Rehber",
   description:
     "Teknik SEO kontrol listesi ile web sitenizi Google için optimize edin. XML sitemap, robots.txt, canonical tags, schema markup ve site hızı optimizasyonu rehberi.",
   keywords:

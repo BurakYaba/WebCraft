@@ -18,7 +18,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "Güçlü Marka İmajı Oluşturma: Logo, Renk, Kimlik ve Strateji Rehberi | WebCraft",
+    "Güçlü Marka İmajı Oluşturma: Logo, Renk, Kimlik ve Strateji Rehberi",
   description:
     "Marka imajı nasıl oluşturulur? Renk psikolojisi, tipografi seçimi, marka sesi ve kurumsal kimlik oluşturma adımları. Kayıpları azalt, müşteri bağlılığı kazan.",
   keywords:

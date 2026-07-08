@@ -31,7 +31,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "KOBİ Web Tasarım | Profesyonel Web Siteleri | WebCraft",
+  title: "KOBİ Web Tasarım | Profesyonel Web Siteleri",
   description:
     "Küçük ve orta ölçekli işletmeler için profesyonel web tasarım hizmeti. SEO uyumlu ve mobil uyumlu, modern web siteleri.",
   keywords:

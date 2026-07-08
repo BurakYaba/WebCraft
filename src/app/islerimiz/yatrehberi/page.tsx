@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Yat Rehberi - Türkiye Yat ve Tekne Rehberi | WebCraft Projesi",
+  title: "Yat Rehberi - Türkiye Yat ve Tekne Rehberi Projesi",
   description:
     "Yat Rehberi için geliştirdiğimiz modern yat ve tekne rehberi platformu. Türkiye'nin mavi yolculuk rotaları, marina rehberi ve yat kiralama listeleri için kapsamlı dijital platform.",
   keywords:

@@ -18,7 +18,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "Web Tasarım ve Dijital Pazarlama Sözlüğü | Teknik Terimler | WebCraft",
+    "Web Tasarım ve Dijital Pazarlama Sözlüğü | Teknik Terimler",
   description:
     "Web tasarım, SEO ve dijital pazarlama terimleri sözlüğü. Teknik terimler, açıklamalar ve kullanım örnekleri. A'dan Z'ye kapsamlı rehber.",
   keywords:

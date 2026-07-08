@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Fluenta - AI Destekli İngilizce Öğrenme Platformu | WebCraft Projesi",
+  title: "Fluenta - AI Destekli İngilizce Öğrenme Platformu Projesi",
   description:
     "Fluenta için geliştirdiğimiz AI destekli 3D avatarlarla interaktif İngilizce öğrenme platformu. Next.js, React, TypeScript kullanarak modern web tasarım projesi.",
   keywords:

@@ -23,7 +23,7 @@ const SectionSkeleton = ({ height = "h-96" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Web Tasarım ve Dijital Pazarlama Hizmetleri | WebCraft",
+  title: "Web Tasarım ve Dijital Pazarlama Hizmetleri",
   description:
     "Profesyonel web tasarım, SEO ve dijital pazarlama hizmetleri. Ücretsiz teklif alın.",
   keywords:

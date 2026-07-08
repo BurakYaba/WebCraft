@@ -12,7 +12,7 @@ const ProjectsStats = lazy(() => import("../../components/ProjectsStats"));
 const Footer = lazy(() => import("../../components/Footer"));
 
 export const metadata: Metadata = {
-  title: "Web Tasarım Projeleri | Gerçek Müşteri Projeleri | WebCraft",
+  title: "Web Tasarım Projeleri | Gerçek Müşteri Projeleri",
   description:
     "Türkiye'nin bir ucundan diğerine, eğitimden emlağa — projelerimiz ve müşteri sonuçları. Kreşten Yapay Zeka platformuna her projenin hikayesi.",
   keywords:

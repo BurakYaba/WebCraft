@@ -6,7 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Çerez Politikası | WebCraft",
+  title: "Çerez Politikası",
   description:
     "WebCraft çerez politikası. Web sitemizde kullanılan çerezler, amaçları ve nasıl kontrol edileceği hakkında detaylı bilgi. GDPR uyumlu çerez yönetimi.",
   keywords:

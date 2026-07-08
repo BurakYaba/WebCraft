@@ -17,19 +17,19 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Web Ajansı Seçim Rehberi: 7 Değerlendirme Kriteri | WebCraft",
+  title: "En İyi Web Tasarım Ajansı Nasıl Seçilir? 7 Kriter",
   description:
-    "Doğru web ajansını seçmek için sormanız gereken 7 somut kriter. Portföy analizi, teknik altyapı, SEO entegrasyonu, şeffaf fiyatlandırma ve daha fazlası. Bilinçli karar verin.",
+    "En iyi web tasarım ajansını seçmek için sormanız gereken 7 somut kriter. Portföy analizi, teknik altyapı, SEO entegrasyonu, şeffaf fiyatlandırma ve daha fazlası. Bilinçli karar verin.",
   keywords:
-    "web ajansı nasıl seçilir, ajans seçme kriterleri, web ajansı değerlendirme, iyi web ajansı nasıl bulunur, web tasarım şirketi seçimi, ajans seçim rehberi",
+    "en iyi web tasarım ajansı, web ajansı nasıl seçilir, ajans seçme kriterleri, web ajansı değerlendirme, iyi web ajansı nasıl bulunur, web tasarım şirketi seçimi, ajans seçim rehberi",
   metadataBase: new URL("https://www.webcraft.tr"),
   alternates: {
     canonical: "/en-iyi-web-tasarim-ajansi",
   },
   openGraph: {
-    title: "Web Ajansı Seçim Rehberi: 7 Değerlendirme Kriteri | WebCraft",
+    title: "En İyi Web Tasarım Ajansı Nasıl Seçilir? 7 Kriter | WebCraft",
     description:
-      "Doğru ajansı seçmek için sormanız gereken 7 kriter. Portföy analizi, teknik altyapı, SEO entegrasyonu ve şeffaf fiyatlandırma rehberi.",
+      "En iyi web tasarım ajansını seçmek için sormanız gereken 7 kriter. Portföy analizi, teknik altyapı, SEO entegrasyonu ve şeffaf fiyatlandırma rehberi.",
     type: "article",
     locale: "tr_TR",
   },
@@ -161,6 +161,11 @@ const comparisons = [
     desc: "WordPress, Shopify, Next.js — hangi platform hangi iş için doğru?",
     href: "/karsilastirma/platformlar",
   },
+  {
+    title: "Fethiye ve Muğla'da Yerel Ajans",
+    desc: "Bölgede fiziksel olarak yerleşik bir ekiple çalışmanın avantajları.",
+    href: "/fethiye-web-tasarim-hizmetleri",
+  },
 ];
 
 export default function WebTasarimAjansiSecimPage() {
@@ -213,7 +218,7 @@ export default function WebTasarimAjansiSecimPage() {
               Ajans Seçme Rehberi
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight mb-8">
-              Doğru Web Ajansı
+              En İyi Web Tasarım Ajansı
               <br />
               <span className="text-red-500">Nasıl Seçilir?</span>
             </h1>

@@ -18,7 +18,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Profesyonel Web Tasarım Nedir? Kimler İçin Gerekli? | WebCraft",
+  title: "Profesyonel Web Tasarım Nedir? Kimler İçin Gerekli?",
   description:
     "Profesyonel web tasarım nedir ve kimler için gereklidir? Küçük işletmelerden büyük kurumlara kadar profesyonel web tasarımın önemi, faydaları ve ne zaman gerekli olduğunu öğrenin.",
   keywords:
@@ -363,6 +363,18 @@ export default function ProfesyonelWebTasarimNedir() {
                     </Link>{" "}
                     hizmeti ile markanızı dijital dünyada öne çıkarın. WebCraft
                     ile iletişime geçin!
+                  </p>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                    Doğru partneri seçmek de en az doğru kararı vermek kadar
+                    önemli.{" "}
+                    <Link
+                      href="/en-iyi-web-tasarim-ajansi"
+                      className="text-red-600 hover:text-red-700 font-semibold underline"
+                    >
+                      En iyi web tasarım ajansı nasıl seçilir
+                    </Link>{" "}
+                    rehberimizle bilinçli bir karar verin.
                   </p>
                   {/* Author Bio */}
                   <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">

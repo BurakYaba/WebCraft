@@ -20,6 +20,7 @@ import {
 
 const Footer = lazy(() => import("@/components/Footer"));
 const RelatedServices = lazy(() => import("@/components/RelatedServices"));
+const SocialProofStrip = lazy(() => import("@/components/SocialProofStrip"));
 
 const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
   <div
@@ -30,7 +31,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "E-Ticaret Web Tasarım | Online Mağaza Kurulumu | WebCraft",
+  title: "E-Ticaret Web Tasarım | Online Mağaza Kurulumu",
   description:
     "Profesyonel e-ticaret web tasarımı ve online mağaza kurulumu. İyzico, PayTR ödeme entegrasyonu, kargo sistemi, SEO uyumlu. Satışlarınızı artıran, dönüşüm odaklı e-ticaret siteleri. Ücretsiz teklif alın.",
   keywords:
@@ -589,6 +590,35 @@ export default function ETicaretWebTasarimPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Social proof — testimonials, project marquee, outcome stats */}
+        <Suspense fallback={<SectionSkeleton height="h-96" />}>
+          <SocialProofStrip />
+        </Suspense>
+
+        {/* İlgili sayfalar — yerel hizmet ve ajans seçim rehberi */}
+        <section className="py-10 bg-gray-50 border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-6 md:px-10 text-center">
+            <p className="text-gray-700 text-lg">
+              Fethiye ve Muğla&apos;da yerelde hizmet veriyoruz —{" "}
+              <Link
+                href="/mugla-web-tasarim-seo-hizmetleri"
+                className="text-red-600 hover:underline font-semibold"
+              >
+                Muğla e-ticaret web tasarım
+              </Link>{" "}
+              hizmetimizi inceleyin. Doğru ajansı nasıl seçeceğinizden emin
+              değil misiniz?{" "}
+              <Link
+                href="/en-iyi-web-tasarim-ajansi"
+                className="text-red-600 hover:underline font-semibold"
+              >
+                7 değerlendirme kriterine
+              </Link>{" "}
+              göz atın.
+            </p>
           </div>
         </section>
 

@@ -18,7 +18,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "Web Analitik Araçları Rehberi: GA4, Search Console ve Veri Analizi | WebCraft",
+    "Web Analitik Araçları Rehberi: GA4, Search Console ve Veri Analizi",
   description:
     "Google Analytics 4 kurulumu, Search Console entegrasyonu, Hotjar heatmap ve SEMrush kullanımı. Web sitesi performansınızı ölçün ve iyileştirin.",
   keywords:

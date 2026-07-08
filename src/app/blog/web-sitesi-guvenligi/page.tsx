@@ -18,7 +18,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 
 export const metadata: Metadata = {
   title:
-    "Web Sitesi Güvenliği Rehberi: SSL, HTTPS, Güvenlik Duvarı ve Daha Fazlası | WebCraft",
+    "Web Sitesi Güvenliği Rehberi: SSL, HTTPS, Güvenlik Duvarı ve Daha Fazlası",
   description:
     "Web sitesi güvenliği kapsamlı rehberi. SSL kurulumu, WAF, güvenlik başlıkları, yedekleme ve KVKK uyumu. Sitenizi siber saldırılara karşı koruyun.",
   keywords:

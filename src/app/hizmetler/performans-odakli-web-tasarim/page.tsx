@@ -31,7 +31,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Performans Odaklı Web Tasarım | Hızlı Web Siteleri | WebCraft",
+  title: "Performans Odaklı Web Tasarım | Hızlı Web Siteleri",
   description:
     "Performans odaklı web tasarım hizmeti. Core Web Vitals optimizasyonu, Next.js teknolojisi ve hızlı yükleme süreleri. Google'da üst sıralarda yer alın.",
   keywords:

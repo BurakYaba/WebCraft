@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Montserrat } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import GTMTracker from "@/components/GTMTracker";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import "./globals.css";
@@ -364,19 +365,10 @@ export default function RootLayout({
           </a>
         </div>
 
-        {/* Privacy-friendly analytics by Plausible */}
-        <Script
-          src="https://plausible.io/js/pa-q191e8vCHRe438HLugJ4V.js"
-          strategy="afterInteractive"
-        />
-        <Script id="plausible-init" strategy="afterInteractive">
-          {`
-            window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-            plausible.init()
-          `}
-        </Script>
-
         {/* GA4 (G-TYXDJVMSP3) and Google Ads (AW-17976612124) are fired via GTM — no standalone gtag.js needed */}
+
+        {/* Vercel Analytics */}
+        <Analytics />
       </body>
     </html>
   );

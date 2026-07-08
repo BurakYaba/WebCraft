@@ -18,7 +18,7 @@ const SectionSkeleton = ({ height = "h-64" }: { height?: string }) => (
 );
 
 export const metadata: Metadata = {
-  title: "Web Tasarım Fiyatları ve Uygun Maliyetli Çözümler | WebCraft",
+  title: "Web Tasarım Fiyatları ve Uygun Maliyetli Çözümler",
   description:
     "Web tasarım fiyatları hakkında detaylı bilgi. Uygun maliyetli web tasarım paketleri ve bütçenize uygun çözümler. Ücretsiz teklif alın!",
   keywords:
@@ -267,6 +267,18 @@ export default function WebTasarimFiyatlari() {
                       web tasarım
                     </Link>{" "}
                     çözümleri için WebCraft ile iletişime geçin!
+                  </p>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                    Fiyat tek başına yeterli bir kriter değil.{" "}
+                    <Link
+                      href="/en-iyi-web-tasarim-ajansi"
+                      className="text-red-600 hover:text-red-700 font-semibold underline"
+                    >
+                      En iyi web tasarım ajansı nasıl seçilir
+                    </Link>{" "}
+                    rehberimizde fiyat dışında nelere dikkat etmeniz gerektiğini
+                    anlattık.
                   </p>
                   {/* Author Bio */}
                   <div className="border border-gray-200 rounded-2xl p-6 md:p-8 mb-4">

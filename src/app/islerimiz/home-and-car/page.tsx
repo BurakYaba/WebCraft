@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Home and Car - Edremit Emlak Platformu | WebCraft Projesi",
+  title: "Home and Car - Edremit Emlak Platformu Projesi",
   description:
     "Home and Car için geliştirdiğimiz modern emlak platformu. Next.js 16, TypeScript, PostgreSQL kullanarak kapsamlı CMS ve SEO uyumlu web tasarım projesi.",
   keywords:
