@@ -397,6 +397,70 @@ export default async function ServicePage({ params }: ServicePageProps) {
           </section>
         )}
 
+        {/* SEO sonuç kanıtı — sadece seo-hizmeti sayfasında, kendi Google Search Console verimiz */}
+        {service.slug === "seo-hizmeti" && (
+          <section className="py-20 bg-[#181716]">
+            <div className="max-w-5xl mx-auto px-6 md:px-10">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                  SEO Sonuçlarımız — Kendi Sitemizden Kanıt
+                </h2>
+                <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+                  Başkasının vaka çalışmasına değil, kendi web sitemizde
+                  uyguladığımız yerel SEO çalışmasının Google Search
+                  Console&apos;dan doğrulanmış sonuçlarına bakın.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="p-6 bg-[#1a1918] rounded-lg border border-gray-800 text-center">
+                  <div className="text-4xl font-bold text-red-600 mb-2">
+                    #5
+                  </div>
+                  <p className="text-white font-semibold mb-1">
+                    &quot;muğla seo&quot;
+                  </p>
+                  <p className="text-gray-400 text-sm">
+                    Google ortalama sıralaması
+                  </p>
+                </div>
+                <div className="p-6 bg-[#1a1918] rounded-lg border border-gray-800 text-center">
+                  <div className="text-4xl font-bold text-red-600 mb-2">
+                    #6
+                  </div>
+                  <p className="text-white font-semibold mb-1">
+                    &quot;muğla seo uzmanı&quot;
+                  </p>
+                  <p className="text-gray-400 text-sm">
+                    Google ortalama sıralaması
+                  </p>
+                </div>
+                <div className="p-6 bg-[#1a1918] rounded-lg border border-gray-800 text-center">
+                  <div className="text-4xl font-bold text-red-600 mb-2">
+                    #10
+                  </div>
+                  <p className="text-white font-semibold mb-1">
+                    &quot;web tasarım ajansı nasıl seçilir&quot;
+                  </p>
+                  <p className="text-gray-400 text-sm">
+                    Google ortalama sıralaması
+                  </p>
+                </div>
+              </div>
+              <p className="text-center text-gray-500 text-sm mt-8">
+                Kaynak: Google Search Console, webcraft.tr — son 11 aylık veri.
+                Sıralamalar zaman içinde değişebilir; sitemizin kendisi canlı
+                bir SEO vaka çalışmasıdır.{" "}
+                <Link
+                  href="/blog/yerel-seo-sonuclarimiz-veri-analizi"
+                  className="text-red-600 hover:underline font-semibold"
+                >
+                  Detaylı veri analizini okuyun →
+                </Link>
+              </p>
+            </div>
+          </section>
+        )}
+
         {/* Kurumsal Web Tasarım contextual link — web-tasarim & yazilim-gelistirme */}
         {(service.slug === "web-tasarim" ||
           service.slug === "yazilim-gelistirme") && (

@@ -98,6 +98,12 @@ export default function WebSitesiHiziNasilArtirilir() {
       "@type": "Person",
       name: "Burak Yaba",
       url: "https://www.webcraft.tr/hakkimizda",
+      jobTitle: "Kurucu & Web Tasarım Uzmanı",
+      worksFor: {
+        "@type": "Organization",
+        name: "WebCraft",
+        url: "https://www.webcraft.tr",
+      },
     },
     publisher: {
       "@type": "Organization",

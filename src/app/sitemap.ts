@@ -5,6 +5,10 @@ import { MetadataRoute } from "next";
 const blogPosts = [
   // NEW KEYWORD-OPTIMIZED POSTS (2026)
   {
+    slug: "yerel-seo-sonuclarimiz-veri-analizi",
+    date: "2026-07-30",
+  },
+  {
     slug: "yapay-zeka-chatbot-ve-otomasyon-rehberi",
     date: "2026-07-08",
   },
@@ -90,7 +94,7 @@ const blogPosts = [
 
 // Bumped only when static (non-blog) pages actually change content —
 // not on every build, so Google doesn't see a false "updated daily" signal.
-const SITE_LAST_UPDATED = new Date("2026-07-08");
+const SITE_LAST_UPDATED = new Date("2026-07-30");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.webcraft.tr";
@@ -310,6 +314,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: SITE_LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/fiyatlandirma`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.85,
     },
     // Competitor-focused landing page
     {

@@ -157,13 +157,13 @@ export default function HomePage() {
 
         <div className="cv-auto">
           <Suspense fallback={<SectionSkeleton height="h-96" />}>
-            <HomeInfoSection />
+            <SocialProofStrip />
           </Suspense>
         </div>
 
         <div className="cv-auto">
           <Suspense fallback={<SectionSkeleton height="h-96" />}>
-            <SocialProofStrip />
+            <HomeInfoSection />
           </Suspense>
         </div>
 

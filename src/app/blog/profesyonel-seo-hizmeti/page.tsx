@@ -89,6 +89,11 @@ export default function ProfesyonelSeoHizmeti() {
       "@type": "Person",
       name: "Kubilay Özışık",
       url: "https://www.webcraft.tr/hakkimizda",
+      worksFor: {
+        "@type": "Organization",
+        name: "WebCraft",
+        url: "https://www.webcraft.tr",
+      },
     },
     publisher: {
       "@type": "Organization",

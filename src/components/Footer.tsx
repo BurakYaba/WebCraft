@@ -65,6 +65,7 @@ const Footer = () => {
     { name: "SEO Uzmanı", href: "/seo-uzmani" },
     { name: "Fethiye Web Tasarım", href: "/fethiye-web-tasarim-hizmetleri" },
     { name: "Muğla Web Tasarım", href: "/mugla-web-tasarim-seo-hizmetleri" },
+    { name: "Fiyatlandırma", href: "/fiyatlandirma" },
   ];
 
   return (

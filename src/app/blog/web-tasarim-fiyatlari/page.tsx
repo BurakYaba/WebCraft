@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "tr_TR",
     publishedTime: "2024-12-08T09:00:00Z",
-    authors: ["Ahmet Tümkaya"],
+    authors: ["Burak Yaba"],
   },
 };
 
@@ -84,8 +84,14 @@ export default function WebTasarimFiyatlari() {
     image: "https://www.webcraft.tr/bento/web-tasarim.webp",
     author: {
       "@type": "Person",
-      name: "Ahmet Tümkaya",
+      name: "Burak Yaba",
       url: "https://www.webcraft.tr/hakkimizda",
+      jobTitle: "Kurucu & Web Tasarım Uzmanı",
+      worksFor: {
+        "@type": "Organization",
+        name: "WebCraft",
+        url: "https://www.webcraft.tr",
+      },
     },
     publisher: {
       "@type": "Organization",
@@ -128,7 +134,7 @@ export default function WebTasarimFiyatlari() {
                 Web Tasarım Fiyatları ve Uygun Maliyetli Çözümler
               </h1>
               <div className="flex items-center gap-6 text-gray-600 mb-8">
-                <span className="font-medium text-gray-900">Ahmet Tümkaya</span>
+                <span className="font-medium text-gray-900">Burak Yaba</span>
                 <span>•</span>
                 <span>8 Aralık 2024</span>
                 <span>•</span>
@@ -158,9 +164,18 @@ export default function WebTasarimFiyatlari() {
                     sitesi oluşturabilirsiniz.
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                    Bu yazıda, web tasarım fiyatlarını etkileyen faktörleri,
-                    farklı paket seçeneklerini ve bütçenize en uygun çözümü
-                    nasıl bulabileceğinizi detaylı olarak ele alacağız.{" "}
+                    Güncel paket fiyat aralıklarımızın tamamını görmek
+                    isterseniz doğrudan{" "}
+                    <Link
+                      href="/fiyatlandirma"
+                      className="text-red-600 hover:text-red-700 font-semibold underline"
+                    >
+                      fiyatlandırma sayfamıza
+                    </Link>{" "}
+                    göz atabilirsiniz. Bu yazıda, web tasarım fiyatlarını
+                    etkileyen faktörleri, farklı paket seçeneklerini ve
+                    bütçenize en uygun çözümü nasıl bulabileceğinizi detaylı
+                    olarak ele alacağız.{" "}
                     <Link
                       href="/hizmetler/web-tasarim"
                       className="text-red-600 hover:text-red-700 font-semibold underline"

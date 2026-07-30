@@ -375,11 +375,11 @@ Dijital pazarlama hizmetlerimiz şunları içerir:
     heroImage: "/bento/SEO.webp",
     watermark: "S",
 
-    metaTitle: "SEO Hizmeti | Arama Motoru Optimizasyonu",
+    metaTitle: "SEO Hizmeti | SEO Hizmetleri Fiyatları ve Süreç",
     metaDescription:
-      "Profesyonel SEO hizmeti ile Google'da üst sıralarda yer alın. Teknik SEO, anahtar kelime araştırması, içerik optimizasyonu ve backlink stratejisi. 2015'ten beri 150+ başarılı SEO projesi. Ücretsiz SEO analizi için hemen iletişime geçin!",
+      "Profesyonel SEO hizmeti ile Google'da üst sıralarda yer alın. Teknik SEO, anahtar kelime araştırması, içerik optimizasyonu, backlink ve GEO/AEO (AI arama) stratejisi. Kendi sitemizde uyguladığımız yerel SEO çalışmasıyla 'muğla seo' aramasında ilk 5'teyiz. Ücretsiz SEO analizi için hemen iletişime geçin!",
     keywords:
-      "SEO hizmeti, arama motoru optimizasyonu, google seo, teknik seo, seo ajansı, organik trafik, seo danışmanlık, seo stratejisi, yerel seo, backlink",
+      "SEO hizmeti, SEO hizmetleri, arama motoru optimizasyonu, google seo, teknik seo, seo ajansı, seo uzmanı, organik trafik, seo danışmanlık, seo stratejisi, yerel seo, backlink, seo hizmetleri fiyatları, geo aeo optimizasyonu",
 
     whatSection: {
       title: "SEO Hizmeti Nedir?",
@@ -395,7 +395,10 @@ SEO hizmetlerimiz şunları kapsar:
 - Backlink profili analizi ve otorite link inşası
 - Yerel SEO ve Google İşletme Profili optimizasyonu
 - Core Web Vitals ve site hızı optimizasyonu
-- Google Search Console ve Analytics raporlama`,
+- Google Search Console ve Analytics raporlama
+- GEO/AEO (Generative Engine Optimization): ChatGPT, Perplexity ve Google AI Overview gibi yapay zekâ destekli arama deneyimlerinde de görünür olma
+
+SEO ajansı mı, SEO uzmanı mı ihtiyacınız var? Sürekli, çok kanallı bir SEO yönetimi arıyorsanız SEO ajansı hizmetimiz; tek bir projede veya danışmanlık bazında birebir uzman desteği arıyorsanız SEO uzmanlarımız sizin için daha uygun olabilir. Her iki hizmet de burada anlattığımız aynı metodoloji ve ekip tarafından yürütülür.`,
     },
 
     whySection: {
@@ -410,6 +413,7 @@ SEO hizmetlerimiz şunları kapsar:
         "Yerel ve ulusal hedef kitlelere eş zamanlı ulaşım",
         "Rakip analizine dayalı stratejik avantaj",
         "Ölçülebilir ROI ve şeffaf raporlama",
+        "ChatGPT ve Perplexity gibi AI arama motorlarında da (GEO/AEO) marka görünürlüğü",
       ],
     },
 
@@ -437,12 +441,17 @@ SEO hizmetlerimiz şunları kapsar:
       {
         title: "Backlink ve Otorite İnşası",
         description:
-          "Güvenilir ve sektörle alakalı kaynaklardan doğal backlink kazanımı ile domain otoritesini ve sıralama gücünü artırma.",
+          "Güvenilir ve sektörle alakalı kaynaklardan doğal backlink kazanımı, dizin/liste sitesi kayıtları ve dijital PR ile domain otoritesini ve sıralama gücünü artırma.",
       },
       {
         title: "Yerel SEO",
         description:
           "Google İşletme Profili optimizasyonu, NAP tutarlılığı ve yerel atıf çalışmaları ile bölgesel aramalarda üst sıralara çıkma.",
+      },
+      {
+        title: "GEO/AEO Optimizasyonu",
+        description:
+          "llms.txt, AI crawler izinleri, yapılandırılmış veri (schema) ve alıntılanabilir içerik ile ChatGPT, Perplexity ve Google AI Overview'da görünürlük.",
       },
     ],
 
@@ -503,6 +512,16 @@ SEO hizmetlerimiz şunları kapsar:
         question: "SEO ile Google Ads arasındaki fark nedir?",
         answer:
           "Google Ads (ücretli reklam), bütçe olduğu sürece anlık görünürlük sağlar; bütçe kesildiğinde trafik de durur. SEO ise zaman içinde organik otorite inşa eder ve uzun vadede çok daha düşük maliyetle sürekli trafik getirir. En etkili dijital strateji genellikle her ikisini birlikte kullanmaktır.",
+      },
+      {
+        question: "SEO ajansı ile SEO uzmanı arasındaki fark nedir?",
+        answer:
+          "SEO ajansı, teknik SEO'dan içerik üretimine, backlink çalışmasından raporlamaya kadar uçtan uca ve sürekli bir hizmet sunar — büyümesini sürdürmek isteyen işletmeler için uygundur. SEO uzmanı ise daha odaklı, proje bazlı veya danışmanlık ağırlıklı bir çalışma şeklidir. WebCraft bünyesinde her iki modeli de sunuyoruz; ihtiyacınıza göre birlikte karar veriyoruz.",
+      },
+      {
+        question: "SEO hizmetinize GEO/AEO (yapay zekâ arama optimizasyonu) dahil mi?",
+        answer:
+          "Evet. Klasik Google SEO'nun yanı sıra, sitenizin ChatGPT, Perplexity ve Google AI Overview gibi yapay zekâ destekli arama deneyimlerinde de doğru şekilde temsil edilmesini sağlıyoruz: yapılandırılmış veri (schema), llms.txt, AI crawler izinleri ve alıntılanabilir içerik yapısı bu çalışmanın parçasıdır.",
       },
     ],
 
@@ -845,11 +864,13 @@ Yazılım geliştirme hizmetlerimiz şunları içerir:
     metaDescription:
       "Profesyonel e-ticaret web sitesi tasarımı ile online satışlarınızı artırın. Güvenli ödeme sistemleri, kargo entegrasyonu, stok yönetimi. 2015'ten beri 100+ başarılı proje. Ücretsiz teklif için hemen arayın!",
     keywords:
-      "e-ticaret web tasarımı, online mağaza kurulumu, e-ticaret sitesi, online satış platformu, e-ticaret çözümleri, ödeme sistemi entegrasyonu",
+      "e-ticaret web tasarımı, online mağaza kurulumu, online mağaza kur, online mağaza kurma, e-ticaret sitesi, online satış platformu, e-ticaret çözümleri, ödeme sistemi entegrasyonu",
 
     whatSection: {
       title: "E-Ticaret Web Tasarımı Nedir?",
       content: `E-ticaret web tasarımı, ürünlerinizi online satışa sunabileceğiniz, güvenli ödeme sistemleri ile entegre, stok ve sipariş yönetimi yapabileceğiniz profesyonel web siteleridir. Modern ve kullanıcı dostu tasarım ile müşteri deneyimini optimize eder, satışları artırır.
+
+Online mağaza kurmak isteyenlerin en çok sorduğu soru "nereden başlamalıyım?" oluyor. Kısaca özetlersek: (1) ürün ve hedef kitle netleştirme, (2) doğru altyapı ve tasarım seçimi, (3) ödeme ve kargo entegrasyonu, (4) test ve yayına alma, (5) SEO ve pazarlama ile trafik oluşturma. Aşağıdaki süreç bölümünde bu adımları detaylı olarak anlatıyoruz; WebCraft olarak online mağaza kurma sürecinin tamamını sizin adınıza yönetiyoruz.
 
 WebCraft olarak, 2015 yılından bu yana e-ticaret ve online mağaza kurulumu alanında uzmanlaşmış bir ekibiz. İyzico, PayTR gibi güvenli ödeme sistemleri, MNG, Yurtiçi, Aras Kargo entegrasyonları ve kolay yönetilebilir admin paneli ile satışlarınızı artırıyoruz.
 
@@ -981,6 +1002,16 @@ E-ticaret web tasarım hizmetlerimiz şunları içerir:
         question: "Mevcut e-ticaret sitemi taşıyabilir misiniz?",
         answer:
           "Evet, mevcut e-ticaret sitenizi (Ticimax, İdeasoft, WooCommerce, Shopify) yeni platformumuza ürünler, müşteriler ve siparişlerle birlikte taşıyabiliriz.",
+      },
+      {
+        question: "Sıfırdan online mağaza nasıl kurulur?",
+        answer:
+          "Online mağaza kurma süreci sırasıyla şu adımlardan oluşur: ürün/kategori planlaması, marka kimliğine uygun tasarım, güvenli ödeme ve kargo entegrasyonu, stok/sipariş yönetimi kurulumu, test süreci ve son olarak SEO ile yayına alma. WebCraft olarak bu sürecin tamamını 4-8 hafta içinde, tek elden yönetiyoruz — teknik bilgiye ihtiyacınız yok.",
+      },
+      {
+        question: "Online mağaza kurmanın maliyeti ne kadar tutar?",
+        answer:
+          "Maliyet; ürün sayısı, özel tasarım ihtiyacı ve entegrasyon kapsamına (ödeme, kargo, muhasebe) göre değişir. Güncel paket fiyat aralıklarımızı fiyatlandırma sayfamızda şeffaf şekilde paylaşıyoruz; projenize özel net teklif için ücretsiz analiz talep edebilirsiniz.",
       },
     ],
 

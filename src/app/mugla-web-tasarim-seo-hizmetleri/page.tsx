@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Header from "@/components/Header";
 import Breadcrumb from "@/components/Breadcrumb";
 import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
+import Link from "next/link";
 import {
   MapPin,
   Phone,
@@ -368,6 +369,8 @@ export default function MuglaWebTasarimPage() {
                 </h3>
                 <p className="text-gray-600 mb-4">
                   Turizm merkezi Fethiye&apos;de özel web tasarım çözümleri.
+                  Otel, tekne turu ve emlak işletmeleri için rezervasyon
+                  sistemli, çok dilli web siteleri.
                 </p>
                 <a
                   href="/fethiye-web-tasarim-hizmetleri"
@@ -381,20 +384,144 @@ export default function MuglaWebTasarimPage() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   Bodrum Web Tasarım
                 </h3>
-                <p className="text-gray-600">
-                  Lüks turizm merkezi Bodrum&apos;da profesyonel çözümler.
+                <p className="text-gray-600 mb-4">
+                  Lüks turizm merkezi Bodrum&apos;da butik otel, restoran ve
+                  yaşam tarzı markaları için görsel ağırlıklı, hızlı açılan ve
+                  çok dilli (Türkçe/İngilizce/Almanca) web siteleri
+                  tasarlıyoruz. Bodrum web tasarım projelerinde marka
+                  estetiğine özel önem veriyoruz.
                 </p>
+                <Link
+                  href="/hizmetler/web-tasarim"
+                  className="text-red-600 hover:text-red-700 font-semibold"
+                >
+                  Detaylı Bilgi →
+                </Link>
               </div>
 
               <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   Marmaris Web Tasarım
                 </h3>
-                <p className="text-gray-600">
-                  Marmaris&apos;te yat turizmi ve su sporları sektörüne özel.
+                <p className="text-gray-600 mb-4">
+                  Marmaris&apos;te yat turizmi, tekne kiralama ve su sporları
+                  sektörüne özel rezervasyon sistemli web siteleri ve yerel
+                  SEO çalışması sunuyoruz — bölgesel aramalarda görünür
+                  olmanız için Marmaris SEO çalışmalarımızı da yürütüyoruz.
+                </p>
+                <Link
+                  href="/hizmetler/seo-hizmeti"
+                  className="text-red-600 hover:text-red-700 font-semibold"
+                >
+                  Detaylı Bilgi →
+                </Link>
+              </div>
+
+              <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Datça Web Tasarım
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Sakin turizmin merkezi Datça&apos;da butik pansiyon,
+                  restoran ve el yapımı ürün markaları için sade, hızlı ve
+                  mobil öncelikli web siteleri tasarlıyoruz.
+                </p>
+                <Link
+                  href="/hizmetler/web-tasarim"
+                  className="text-red-600 hover:text-red-700 font-semibold"
+                >
+                  Detaylı Bilgi →
+                </Link>
+              </div>
+
+              <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  E-Ticaret ve Online Mağaza
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Muğla genelinde el yapımı ürün, tekstil ve yerel üretici
+                  markaları için online mağaza kurulumu ve e-ticaret SEO
+                  hizmeti sunuyoruz.
+                </p>
+                <Link
+                  href="/hizmetler/e-ticaret"
+                  className="text-red-600 hover:text-red-700 font-semibold"
+                >
+                  Detaylı Bilgi →
+                </Link>
+              </div>
+
+              <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  SEO ve Dijital Pazarlama
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Muğla&apos;nın tüm ilçelerinde Google İşletme Profili
+                  optimizasyonu, yerel SEO ve dijital pazarlama danışmanlığı.
+                </p>
+                <Link
+                  href="/hizmetler/seo-hizmeti"
+                  className="text-red-600 hover:text-red-700 font-semibold"
+                >
+                  Detaylı Bilgi →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Yerel SEO Sonuçlarımız */}
+        <section className="py-20 bg-white">
+          <div className="relative z-20 w-full max-w-5xl mx-auto px-6 sm:px-16 md:px-20 lg:px-24">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Muğla&apos;da Yerel SEO Sonuçlarımız
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Kendi web sitemizde uyguladığımız yerel SEO çalışmasının
+                Google Search Console&apos;dan doğrulanmış sonuçları
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="p-6 bg-gray-50 rounded-lg border border-gray-200 text-center">
+                <div className="text-4xl font-bold text-red-600 mb-2">#5</div>
+                <p className="text-gray-900 font-semibold">
+                  &quot;muğla seo&quot;
+                </p>
+              </div>
+              <div className="p-6 bg-gray-50 rounded-lg border border-gray-200 text-center">
+                <div className="text-4xl font-bold text-red-600 mb-2">#6</div>
+                <p className="text-gray-900 font-semibold">
+                  &quot;muğla seo uzmanı&quot;
+                </p>
+              </div>
+              <div className="p-6 bg-gray-50 rounded-lg border border-gray-200 text-center">
+                <div className="text-4xl font-bold text-red-600 mb-2">
+                  #18
+                </div>
+                <p className="text-gray-900 font-semibold">
+                  &quot;marmaris web tasarım&quot;
+                </p>
+              </div>
+              <div className="p-6 bg-gray-50 rounded-lg border border-gray-200 text-center">
+                <div className="text-4xl font-bold text-red-600 mb-2">
+                  #15
+                </div>
+                <p className="text-gray-900 font-semibold">
+                  &quot;fethiye web tasarım&quot;
                 </p>
               </div>
             </div>
+            <p className="text-center text-gray-500 text-sm mt-8">
+              Kaynak: Google Search Console, webcraft.tr — son 11 aylık veri.
+              Sıralamalar zaman içinde değişebilir.{" "}
+              <Link
+                href="/blog/yerel-seo-sonuclarimiz-veri-analizi"
+                className="text-red-600 hover:underline font-semibold"
+              >
+                Detaylı veri analizini okuyun →
+              </Link>
+            </p>
           </div>
         </section>
 

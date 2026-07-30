@@ -94,6 +94,11 @@ export default function MinimalistTasarim() {
       "@type": "Person",
       name: "Serhat Kaya",
       url: "https://www.webcraft.tr/hakkimizda",
+      worksFor: {
+        "@type": "Organization",
+        name: "WebCraft",
+        url: "https://www.webcraft.tr",
+      },
     },
     publisher: {
       "@type": "Organization",

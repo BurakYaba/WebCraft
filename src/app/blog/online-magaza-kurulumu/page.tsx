@@ -83,6 +83,11 @@ export default function OnlineMagazaKurulumu() {
       "@type": "Person",
       name: "Ahmet Tümkaya",
       url: "https://www.webcraft.tr/hakkimizda",
+      worksFor: {
+        "@type": "Organization",
+        name: "WebCraft",
+        url: "https://www.webcraft.tr",
+      },
     },
     publisher: {
       "@type": "Organization",
