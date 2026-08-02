@@ -103,7 +103,7 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
 
       // EmailJS configuration
       const serviceId =
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_cdguarc";
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_zof11ot";
       const templateId =
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "your_template_id";
       const publicKey =
