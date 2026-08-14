@@ -22,7 +22,7 @@ const blogPosts = [
   },
   {
     slug: "core-web-vitals-rehberi",
-    date: "2026-01-18",
+    date: "2026-08-14",
   },
   {
     slug: "kobi-dijital-donusum-rehberi",
@@ -94,7 +94,7 @@ const blogPosts = [
 
 // Bumped only when static (non-blog) pages actually change content —
 // not on every build, so Google doesn't see a false "updated daily" signal.
-const SITE_LAST_UPDATED = new Date("2026-07-30");
+const SITE_LAST_UPDATED = new Date("2026-08-14");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.webcraft.tr";
