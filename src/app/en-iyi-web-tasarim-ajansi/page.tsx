@@ -242,6 +242,123 @@ export default function WebTasarimAjansiSecimPage() {
           </div>
         </section>
 
+        {/* Agency Type Comparison */}
+        <section className="bg-white py-20 border-b border-gray-100">
+          <div className="max-w-5xl mx-auto px-6 sm:px-16 md:px-20 lg:px-24">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Ajans Tipleri: Hangisi Size Uygun?
+            </h2>
+            <p className="text-lg text-gray-600 mb-10 max-w-2xl">
+              &ldquo;En iyi&rdquo; ajans, işletmenizin büyüklüğüne, bütçenize
+              ve ihtiyacınıza göre değişir. Dört yaygın seçeneği karşılaştırdık.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse min-w-[640px]">
+                <thead>
+                  <tr className="border-b-2 border-gray-900">
+                    <th className="text-left py-3 pr-4 font-semibold text-gray-900">
+                      Kriter
+                    </th>
+                    <th className="text-left py-3 px-4 font-semibold text-gray-900">
+                      Büyük Ulusal Ajans
+                    </th>
+                    <th className="text-left py-3 px-4 font-semibold text-red-600">
+                      Yerel/Bölgesel Butik Ajans
+                    </th>
+                    <th className="text-left py-3 px-4 font-semibold text-gray-900">
+                      Freelancer
+                    </th>
+                    <th className="text-left py-3 pl-4 font-semibold text-gray-900">
+                      DIY Platform (Wix, Squarespace)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="text-gray-700">
+                  <tr className="border-b border-gray-100">
+                    <td className="py-3 pr-4 font-medium">Fiyat aralığı</td>
+                    <td className="py-3 px-4">Yüksek — kurumsal bütçeler</td>
+                    <td className="py-3 px-4 bg-red-50">Orta — şeffaf paketler</td>
+                    <td className="py-3 px-4">Düşük-orta, değişken</td>
+                    <td className="py-3 pl-4">Çok düşük, aylık abonelik</td>
+                  </tr>
+                  <tr className="border-b border-gray-100">
+                    <td className="py-3 pr-4 font-medium">Teslim süresi</td>
+                    <td className="py-3 px-4">4-12 hafta, çok kademeli süreç</td>
+                    <td className="py-3 px-4 bg-red-50">2-6 hafta</td>
+                    <td className="py-3 px-4">Değişken, tek kişiye bağlı</td>
+                    <td className="py-3 pl-4">Günler — şablon üzerinden</td>
+                  </tr>
+                  <tr className="border-b border-gray-100">
+                    <td className="py-3 pr-4 font-medium">
+                      Özelleştirme &amp; kod kalitesi
+                    </td>
+                    <td className="py-3 px-4">Yüksek, ama katmanlı onay süreci</td>
+                    <td className="py-3 px-4 bg-red-50">
+                      Yüksek, doğrudan geliştiriciyle temas
+                    </td>
+                    <td className="py-3 px-4">Kişiye bağlı, tutarsız olabilir</td>
+                    <td className="py-3 pl-4">Şablonla sınırlı</td>
+                  </tr>
+                  <tr className="border-b border-gray-100">
+                    <td className="py-3 pr-4 font-medium">
+                      Teknik SEO derinliği
+                    </td>
+                    <td className="py-3 px-4">Genelde ayrı bir hizmet/ekip</td>
+                    <td className="py-3 px-4 bg-red-50">
+                      Tasarım sürecine entegre olabilir
+                    </td>
+                    <td className="py-3 px-4">Uzmanlığa bağlı, doğrulanmalı</td>
+                    <td className="py-3 pl-4">Platform kısıtlarıyla sınırlı</td>
+                  </tr>
+                  <tr className="border-b border-gray-100">
+                    <td className="py-3 pr-4 font-medium">İletişim hızı</td>
+                    <td className="py-3 px-4">Hesap yöneticisi üzerinden</td>
+                    <td className="py-3 px-4 bg-red-50">
+                      Doğrudan, genelde tek sorumlu kişi
+                    </td>
+                    <td className="py-3 px-4">Doğrudan ama tek kişiye bağımlı</td>
+                    <td className="py-3 pl-4">Self-servis, destek sınırlı</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-4 font-medium">Kimler için uygun</td>
+                    <td className="py-3 px-4">
+                      Büyük bütçeli kurumsal markalar
+                    </td>
+                    <td className="py-3 px-4 bg-red-50">
+                      KOBİ&apos;ler, yerel işletmeler, hızlı+kaliteli isteyenler
+                    </td>
+                    <td className="py-3 px-4">Küçük, tek seferlik projeler</td>
+                    <td className="py-3 pl-4">
+                      Bütçesiz, teknik gerek duymayan tek sayfa siteler
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-gray-500 mt-6">
+              WebCraft, Fethiye/Muğla merkezli bir <strong>yerel/bölgesel
+              butik ajans</strong> olarak konumlanıyor — freelancer&apos;ın
+              esnekliğiyle kurumsal ajansın teknik disiplinini birleştirmeyi
+              hedefliyoruz. Freelancer ve DIY platformlarla daha detaylı
+              karşılaştırma için{" "}
+              <Link
+                href="/karsilastirma/freelancer-vs-ajans"
+                className="text-red-600 hover:underline font-medium"
+              >
+                freelancer vs ajans
+              </Link>{" "}
+              ve{" "}
+              <Link
+                href="/karsilastirma/webcraft-vs-diy"
+                className="text-red-600 hover:underline font-medium"
+              >
+                WebCraft vs DIY araçlar
+              </Link>{" "}
+              sayfalarına bakabilirsiniz.
+            </p>
+          </div>
+        </section>
+
         {/* Criteria */}
         <section className="bg-white py-20">
           <div className="max-w-4xl mx-auto px-6 sm:px-16 md:px-20 lg:px-24 space-y-20">

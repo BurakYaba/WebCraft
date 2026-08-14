@@ -303,24 +303,6 @@ export default function Header() {
                     Fethiye - Muğla, Türkiye
                   </div>
                 </div>
-
-                {/* UK Office */}
-                <div>
-                  <p className="text-[13px] text-[#6f6f6f] font-semibold mb-0.5">
-                    UK Ofisi
-                  </p>
-                  <a
-                    href="tel:+447990965247"
-                    className="text-[14px] text-red-500 underline underline-offset-4 mb-1 font-medium block"
-                  >
-                    +44 7990 965 247
-                  </a>
-                  <div className="text-[#6f6f6f] text-[12px] max-w-xs leading-tight">
-                    Station Rd, Cuffley
-                    <br />
-                    Potters Bar, EN6 4HY
-                  </div>
-                </div>
                 <div className="flex gap-4 mt-4 text-[1.4rem] opacity-70 hover:opacity-100 transition-opacity duration-500">
                   {/* Instagram */}
                   <a
@@ -394,24 +376,6 @@ export default function Header() {
                     Babataşı Mah. 778 Sokak No: 32/A
                     <br />
                     Fethiye - Muğla, Türkiye
-                  </div>
-                </div>
-
-                {/* UK Office */}
-                <div className="text-right">
-                  <p className="text-[14px] text-[#6f6f6f] font-semibold mb-1">
-                    UK Ofisi
-                  </p>
-                  <a
-                    href="tel:+447990965247"
-                    className="text-[16px] text-red-500 underline underline-offset-4 mb-2 font-medium block"
-                  >
-                    +44 7990 965 247
-                  </a>
-                  <div className="text-[#6f6f6f] text-[14px] max-w-xs">
-                    Station Rd, Cuffley
-                    <br />
-                    Potters Bar, EN6 4HY
                   </div>
                 </div>
                 <div className="flex gap-6 mt-8 text-[1.7rem] opacity-70 hover:opacity-100 transition-opacity duration-500">

@@ -117,7 +117,7 @@ export default function KaynakMerkeziPage() {
                 <p className="text-gray-700 leading-relaxed mb-6">
                   WebCraft olarak 2015 yılından bu yana 200+ başarılı projeyle
                   Türkiye&apos;nin önde gelen web tasarım ajansıyız. Modern
-                  teknolojiler (Next.js 15, React 19, TypeScript) kullanarak
+                  teknolojiler (Next.js 15, React 18, TypeScript) kullanarak
                   yüksek performanslı web siteleri geliştiriyoruz.
                 </p>
 
@@ -279,7 +279,7 @@ export default function KaynakMerkeziPage() {
                   <p className="text-gray-700 mb-4">
                     2015 yılından bu yana 200+ başarılı projeyle
                     Türkiye&apos;nin güvenilir web tasarım ajansı. Next.js 15,
-                    React 19 gibi modern teknolojilerle performanslı, SEO uyumlu
+                    React 18 gibi modern teknolojilerle performanslı, SEO uyumlu
                     web siteleri geliştiriyoruz.
                   </p>
                   <Link
@@ -331,7 +331,7 @@ export default function KaynakMerkeziPage() {
                     },
                     {
                       item: "Sayfa Hızı Optimizasyonu",
-                      desc: "Core Web Vitals metrikleri (LCP < 2.5s, FID < 100ms, CLS < 0.1) karşılanmalı.",
+                      desc: "Core Web Vitals metrikleri (LCP < 2.5s, INP < 200ms, CLS < 0.1) karşılanmalı.",
                     },
                     {
                       item: "XML Sitemap",

@@ -9,9 +9,9 @@ import { generateBreadcrumb } from "@/utils/breadcrumbSchema";
 export const metadata: Metadata = {
   title: "Home and Car - Edremit Emlak Platformu Projesi",
   description:
-    "Home and Car için geliştirdiğimiz modern emlak platformu. Next.js 16, TypeScript, PostgreSQL kullanarak kapsamlı CMS ve SEO uyumlu web tasarım projesi.",
+    "Home and Car için geliştirdiğimiz modern emlak platformu. Next.js 15, TypeScript, PostgreSQL kullanarak kapsamlı CMS ve SEO uyumlu web tasarım projesi.",
   keywords:
-    "home and car, emlak web sitesi, gayrimenkul platformu, edremit emlak, profesyonel web tasarım, Next.js 16, TypeScript, PostgreSQL, Prisma ORM, responsive web tasarım, modern web sitesi, kurumsal web tasarım, SEO uyumlu web sitesi, CMS sistemi, web yazılım geliştirme",
+    "home and car, emlak web sitesi, gayrimenkul platformu, edremit emlak, profesyonel web tasarım, Next.js 15, TypeScript, PostgreSQL, Prisma ORM, responsive web tasarım, modern web sitesi, kurumsal web tasarım, SEO uyumlu web sitesi, CMS sistemi, web yazılım geliştirme",
   metadataBase: new URL("https://www.webcraft.tr"),
   alternates: {
     canonical: "/islerimiz/home-and-car",
@@ -54,7 +54,7 @@ export default function HomeAndCarProjectPage() {
     "@type": "WebPage",
     name: "Home and Car - Edremit Emlak Platformu",
     description:
-      "Home and Car için geliştirdiğimiz modern emlak platformu. Next.js 16, TypeScript, PostgreSQL kullanarak kapsamlı CMS ve SEO uyumlu web tasarım projesi.",
+      "Home and Car için geliştirdiğimiz modern emlak platformu. Next.js 15, TypeScript, PostgreSQL kullanarak kapsamlı CMS ve SEO uyumlu web tasarım projesi.",
     url: "https://www.webcraft.tr/islerimiz/home-and-car",
     inLanguage: "tr",
   };
@@ -218,7 +218,7 @@ export default function HomeAndCarProjectPage() {
                 </p>
                 <p className="text-sm md:text-lg text-gray-700 leading-relaxed">
                   <strong className="text-gray-900">
-                    Next.js 16, TypeScript ve PostgreSQL
+                    Next.js 15, TypeScript ve PostgreSQL
                   </strong>{" "}
                   ile güçlü altyapı,{" "}
                   <Link
@@ -652,7 +652,7 @@ export default function HomeAndCarProjectPage() {
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex items-center gap-2">
                     <span className="text-blue-500">▸</span>
-                    Next.js 16 + React 19
+                    Next.js 15 + React 18
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="text-blue-500">▸</span>

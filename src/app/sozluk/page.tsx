@@ -129,7 +129,7 @@ const terms: Record<string, Term[]> = {
       english: "CLS - Cumulative Layout Shift",
       definition:
         "Google Core Web Vitals metriklerinden biri. Sayfa yüklenirken görsel öğelerin beklenmedik şekilde kaymasını ölçer. İdeal değer: 0.1'in altı. Kullanıcı deneyimi için önemlidir.",
-      related: ["Core Web Vitals", "LCP", "FID", "Performans"],
+      related: ["Core Web Vitals", "LCP", "INP", "Performans"],
     },
     {
       turkish: "CMS (İçerik Yönetim Sistemi)",
@@ -149,8 +149,8 @@ const terms: Record<string, Term[]> = {
       turkish: "Core Web Vitals",
       english: "Core Web Vitals",
       definition:
-        "Google'ın kullanıcı deneyimini ölçen üç temel metriği: LCP (yükleme hızı), FID (etkileşim hızı), CLS (görsel kararlılık). SEO sıralaması için önemlidir.",
-      related: ["LCP", "FID", "CLS", "SEO", "Performans"],
+        "Google'ın kullanıcı deneyimini ölçen üç temel metriği: LCP (yükleme hızı), INP (etkileşim hızı), CLS (görsel kararlılık). SEO sıralaması için önemlidir.",
+      related: ["LCP", "INP", "CLS", "SEO", "Performans"],
     },
     {
       turkish: "CTR (Tıklama Oranı)",
@@ -197,8 +197,8 @@ const terms: Record<string, Term[]> = {
       turkish: "FID (First Input Delay)",
       english: "FID - First Input Delay",
       definition:
-        "Google Core Web Vitals metriklerinden biri. Kullanıcının sayfada ilk etkileşimi (tıklama, tuşa basma) ile tarayıcının yanıt vermesi arasındaki süre. İdeal değer: 100ms altı.",
-      related: ["Core Web Vitals", "LCP", "CLS", "Performans"],
+        "Google'ın eski Core Web Vitals metriklerinden biriydi. Kullanıcının sayfada ilk etkileşimi (tıklama, tuşa basma) ile tarayıcının yanıt vermesi arasındaki süreyi ölçüyordu. Mart 2024'te INP (Interaction to Next Paint) ile değiştirildi, artık aktif bir metrik değil.",
+      related: ["Core Web Vitals", "INP", "LCP", "CLS", "Performans"],
     },
     {
       turkish: "Frontend (Ön Uç)",
@@ -241,6 +241,13 @@ const terms: Record<string, Term[]> = {
     },
   ],
   I: [
+    {
+      turkish: "INP (Interaction to Next Paint)",
+      english: "INP - Interaction to Next Paint",
+      definition:
+        "Google'ın güncel Core Web Vitals metriklerinden biri. Mart 2024'te FID'nin yerini aldı. Sayfa ömrü boyunca yapılan tüm kullanıcı etkileşimlerinin (ilk etkileşimle sınırlı değil) gecikmesini ölçer. İdeal değer: 200ms altı.",
+      related: ["Core Web Vitals", "LCP", "CLS", "Performans"],
+    },
     {
       turkish: "ISR (Incremental Static Regeneration)",
       english: "ISR",
@@ -308,7 +315,7 @@ const terms: Record<string, Term[]> = {
       english: "LCP",
       definition:
         "Google Core Web Vitals metriklerinden biri. Sayfanın en büyük içerik elemanının yüklenme süresi. İdeal değer: 2.5 saniye altı. Sayfa hızı ve kullanıcı deneyimi için kritik.",
-      related: ["Core Web Vitals", "FID", "CLS", "Performans"],
+      related: ["Core Web Vitals", "INP", "CLS", "Performans"],
     },
     {
       turkish: "Local SEO (Yerel SEO)",

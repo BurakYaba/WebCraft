@@ -171,11 +171,6 @@ C: Evet, aylık bakım paketleri sunuyoruz. Güvenlik güncellemeleri, içerik d
 - **Telefon**: +90 507 944 17 15
 - **Telefon 2**: +90 531 833 59 86
 - **Adres**: Babataşı Mahallesi, 778 Sokak No: 32/A, Fethiye, Muğla 48300, Türkiye
-
-### UK Ofisi
-- **Telefon**: +44 7990 965 247
-- **Adres**: Station Rd, Cuffley, Potters Bar, Birleşik Krallık EN6 4HY
-
 - **Çalışma Saatleri**: Pazartesi-Cuma 09:00-18:00
 
 ## Önemli Sayfalar
@@ -214,7 +209,7 @@ C: Evet, aylık bakım paketleri sunuyoruz. Güvenlik güncellemeleri, içerik d
 
 1. **10 Yıllık Deneyim**: 2015'ten bu yana sektörde
 2. **200+ Başarılı Proje**: Kanıtlanmış başarı geçmişi
-3. **Modern Teknolojiler**: Next.js 15, React 19, TypeScript
+3. **Modern Teknolojiler**: Next.js 15, React 18, TypeScript
 4. **SEO Odaklı**: Tüm projeler arama motoru optimizasyonlu
 5. **7/24 Destek**: Sürekli teknik destek ve bakım
 6. **Uygun Fiyat**: Şeffaf fiyatlandırma, gizli maliyet yok

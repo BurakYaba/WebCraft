@@ -32,12 +32,12 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/fethiye-web-tasarim",
-        destination: "/",
+        destination: "/fethiye-web-tasarim-hizmetleri",
         permanent: true, // 301 redirect
       },
       {
         source: "/fethiye-web-tasarim-hizmeti",
-        destination: "/",
+        destination: "/fethiye-web-tasarim-hizmetleri",
         permanent: true,
       },
       {
@@ -98,6 +98,16 @@ const nextConfig: NextConfig = {
           {
             key: "Referrer-Policy",
             value: "origin-when-cross-origin",
+          },
+          // Site uses no camera/mic/device-motion/payment APIs — safe to disable outright.
+          // (Content-Security-Policy is intentionally NOT set here: GTM loads tags whose
+          // domains aren't visible in this codebase, and a guessed script-src/connect-src
+          // risks silently breaking Google Ads conversion tracking or the contact form.
+          // Needs a live test/monitor pass against the actual GTM container before adding.)
+          {
+            key: "Permissions-Policy",
+            value:
+              "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), midi=()",
           },
           // HTML pages must not be cached immutably — users must always get fresh content
           {

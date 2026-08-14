@@ -28,12 +28,13 @@ export const metadata: Metadata = {
     canonical: "/blog/core-web-vitals-rehberi",
   },
   openGraph: {
-    title: "Core Web Vitals Rehberi: LCP, FID, CLS Optimizasyon Stratejileri",
+    title: "Core Web Vitals Rehberi: LCP, INP, CLS Optimizasyon Stratejileri",
     description:
-      "Google'ın Core Web Vitals metriklerini (LCP, FID, CLS) anlayın ve web sitenizin performansını optimize edin. Detaylı rehber ve pratik öneriler.",
+      "Google'ın Core Web Vitals metriklerini (LCP, INP, CLS) anlayın ve web sitenizin performansını optimize edin. Detaylı rehber ve pratik öneriler.",
     type: "article",
     locale: "tr_TR",
     publishedTime: "2026-01-18T09:00:00Z",
+    modifiedTime: "2026-08-14T09:00:00Z",
     authors: ["Burak Yaba"],
   },
 };
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
 const TOC_ITEMS = [
   { id: "nedir", label: "Core Web Vitals Nedir?" },
   { id: "lcp", label: "LCP" },
-  { id: "fid", label: "FID" },
+  { id: "inp", label: "INP" },
   { id: "cls", label: "CLS" },
   { id: "olcum-araclari", label: "Ölçüm Araçları" },
   { id: "optimizasyon-checklist", label: "Optimizasyon Checklist" },
@@ -85,9 +86,9 @@ export default function CoreWebVitalsRehberi() {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline:
-      "Core Web Vitals Rehberi 2025: LCP, FID, CLS Metrikleri ve Optimizasyon",
+      "Core Web Vitals Rehberi 2026: LCP, INP, CLS Metrikleri ve Optimizasyon",
     description:
-      "Core Web Vitals rehberi: LCP, FID ve CLS metriklerini anlayın ve optimize edin. Google'ın performans kriterlerini karşılayarak SEO sıralamanızı artırın.",
+      "Core Web Vitals rehberi: LCP, INP ve CLS metriklerini anlayın ve optimize edin. Google'ın performans kriterlerini karşılayarak SEO sıralamanızı artırın.",
     image: "https://www.webcraft.tr/bento/web-tasarim.webp",
     author: {
       "@type": "Person",
@@ -109,7 +110,7 @@ export default function CoreWebVitalsRehberi() {
       },
     },
     datePublished: "2026-01-18T09:00:00Z",
-    dateModified: "2026-01-18T09:00:00Z",
+    dateModified: "2026-08-14T09:00:00Z",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.webcraft.tr/blog/core-web-vitals-rehberi",
@@ -151,7 +152,7 @@ export default function CoreWebVitalsRehberi() {
                     </div>
 
                     <h1 className="text-4xl md:text-5xl font-bold text-black mb-4 leading-tight">
-                      Core Web Vitals Rehberi 2025: LCP, FID, CLS Metrikleri ve
+                      Core Web Vitals Rehberi 2026: LCP, INP, CLS Metrikleri ve
                       Optimizasyon
                     </h1>
 
@@ -169,7 +170,7 @@ export default function CoreWebVitalsRehberi() {
                       className="blog-content"
                       dangerouslySetInnerHTML={{
                         __html: `
-      <p>Google'ın 2021 yılında başlattığı Core Web Vitals güncellemesi, web performansını ve kullanıcı deneyimini ölçmek için üç kritik metrik belirledi: LCP (Largest Contentful Paint), FID (First Input Delay) ve CLS (Cumulative Layout Shift). Bu metrikler, artık Google'ın sıralama algoritmasında resmi bir faktör olarak kullanılıyor ve web sitenizin başarısı için hayati önem taşıyor.</p>
+      <p>Google'ın 2021 yılında başlattığı Core Web Vitals güncellemesi, web performansını ve kullanıcı deneyimini ölçmek için üç kritik metrik belirledi: LCP (Largest Contentful Paint), INP (Interaction to Next Paint) ve CLS (Cumulative Layout Shift). Bu metrikler, artık Google'ın sıralama algoritmasında resmi bir faktör olarak kullanılıyor ve web sitenizin başarısı için hayati önem taşıyor. <strong>Not:</strong> INP, Mart 2024'te üçüncü metrik olarak Core Web Vitals'a resmen girdi ve önceki metrik FID'nin (First Input Delay) yerini aldı; FID Eylül 2024'te tüm Chrome araçlarından (PageSpeed Insights, CrUX, Lighthouse) tamamen kaldırıldı.</p>
       
       <p>Bu kapsamlı rehberde, Core Web Vitals metriklerini detaylı olarak inceleyeceğiz. Her bir metriğin ne anlama geldiğini, nasıl ölçüldüğünü ve en önemlisi nasıl optimize edileceğini adım adım öğreneceksiniz. <a href="/hizmetler/performans-odakli-web-tasarim" class="text-[#f84525] hover:underline font-semibold">Performans odaklı web tasarım</a> yaklaşımımızla, bu metriklerde mükemmel sonuçlar almanıza yardımcı oluyoruz.</p>
       
@@ -189,7 +190,7 @@ export default function CoreWebVitalsRehberi() {
       
       <h3>Core Web Vitals ve Page Experience Güncellemesi</h3>
       
-      <p>2021'de başlayan ve 2022'de tamamlanan Google'ın Page Experience güncellemesi ile Core Web Vitals, mobil arama sıralamaları için resmi bir faktör haline geldi. 2025'te artık hem mobil hem de masaüstü aramalarda bu metrikler kritik öneme sahip.</p>
+      <p>2021'de başlayan ve 2022'de tamamlanan Google'ın Page Experience güncellemesi ile Core Web Vitals, mobil arama sıralamaları için resmi bir faktör haline geldi. 2026'da artık hem mobil hem de masaüstü aramalarda bu metrikler kritik öneme sahip.</p>
       
       <h2 id="lcp" style="scroll-margin-top: 96px">LCP (Largest Contentful Paint): En Büyük İçerikli Boyama</h2>
       
@@ -256,35 +257,35 @@ export default function CoreWebVitalsRehberi() {
         <li><strong>Hydration'ı optimize edin:</strong> Partial/progressive hydration teknikleri</li>
       </ul>
       
-      <h2 id="fid" style="scroll-margin-top: 96px">FID (First Input Delay): İlk Girdi Gecikmesi</h2>
-      
-      <h3>FID Nedir?</h3>
-      
-      <p>FID, kullanıcının sayfayla ilk etkileşiminde (tıklama, dokunma, tuş basımı) tarayıcının yanıt vermeye başlamasına kadar geçen süreyi ölçer. Bu metrik, sayfanın interaktivitesini ve responsiveness'ini değerlendirir.</p>
-      
-      <p><strong>Not:</strong> 2024'te Google, FID'yi INP (Interaction to Next Paint) metriki ile değiştirmeyi planladı. Her iki metriki de izlemeniz önerilir.</p>
-      
-      <h3>FID Hedef Değerleri</h3>
-      
+      <h2 id="inp" style="scroll-margin-top: 96px">INP (Interaction to Next Paint): Sonraki Boyamaya Etkileşim</h2>
+
+      <h3>INP Nedir?</h3>
+
+      <p>INP, kullanıcının sayfa ömrü boyunca yaptığı <strong>tüm</strong> etkileşimlerin (tıklama, dokunma, tuş basımı) gecikmesini ölçer — eski FID metriğinin aksine sadece ilk etkileşimle sınırlı değildir. Bir etkileşimin başlangıcından, tarayıcının bu etkileşimin görsel sonucunu ekrana yansıttığı bir sonraki frame'e kadar geçen süreyi kapsar. Google, sayfadaki tüm etkileşimler arasından temsili en kötü değeri (yaklaşık 98. persentil) raporlar.</p>
+
+      <h3>INP Hedef Değerleri</h3>
+
       <ul>
-        <li><strong>İyi (Good):</strong> 100 milisaniye veya daha az - Yeşil ✅</li>
-        <li><strong>İyileştirmeli (Needs Improvement):</strong> 100-300ms arası - Sarı ⚠️</li>
-        <li><strong>Kötü (Poor):</strong> 300ms'den fazla - Kırmızı ❌</li>
+        <li><strong>İyi (Good):</strong> 200 milisaniye veya daha az - Yeşil ✅</li>
+        <li><strong>İyileştirmeli (Needs Improvement):</strong> 200-500ms arası - Sarı ⚠️</li>
+        <li><strong>Kötü (Poor):</strong> 500ms'den fazla - Kırmızı ❌</li>
       </ul>
-      
-      <h3>FID'yi Etkileyen Faktörler</h3>
-      
+
+      <h3>INP'yi Etkileyen Faktörler</h3>
+
       <ul>
         <li><strong>Ağır JavaScript yükü:</strong> Main thread'i bloke eden JavaScript</li>
         <li><strong>Long tasks:</strong> 50ms'den uzun süren JavaScript görevleri</li>
         <li><strong>Third-party code:</strong> Üçüncü parti script'ler (analytics, ads, vb.)</li>
-        <li><strong>Large DOM boyutu:</strong> Çok fazla DOM elementi</li>
+        <li><strong>Large DOM boyutu:</strong> Çok fazla DOM elementi — her etkileşim sonrası style/layout hesaplama maliyetini artırır</li>
+        <li><strong>Presentation delay:</strong> Etkileşim sonrası DOM güncellemesinin tarayıcı tarafından boyanmasına kadar geçen süre</li>
+        <li><strong>Sayfa ömrü boyunca tüm etkileşimler:</strong> Yalnızca ilk tıklama değil, sonraki menü/form/filtre etkileşimleri de ölçüme dahildir</li>
       </ul>
-      
-      <h3>FID Optimizasyon Stratejileri</h3>
-      
+
+      <h3>INP Optimizasyon Stratejileri</h3>
+
       <h4>1. JavaScript Yükünü Azaltın</h4>
-      
+
       <ul>
         <li><strong>Code splitting:</strong> Büyük bundle'ları parçalara ayırın</li>
         <li><strong>Tree shaking:</strong> Kullanılmayan kodu bundle'dan çıkarın</li>
@@ -292,34 +293,43 @@ export default function CoreWebVitalsRehberi() {
         <li><strong>Dynamic imports:</strong> ES modules ile dinamik import kullanın</li>
         <li><strong>Minification:</strong> JavaScript'i minify edin (Terser)</li>
       </ul>
-      
+
       <h4>2. Long Tasks'ı Bölün</h4>
-      
+
       <ul>
         <li><strong>Task breakdown:</strong> Uzun görevleri küçük parçalara ayırın</li>
         <li><strong>requestIdleCallback kullanın:</strong> Kritik olmayan işleri arka plana atın</li>
         <li><strong>Web Workers:</strong> Ağır hesaplamaları ayrı thread'de çalıştırın</li>
         <li><strong>Performance.measure():</strong> Long tasks'ları izleyin ve optimize edin</li>
       </ul>
-      
+
       <h4>3. Third-Party Script'leri Optimize Edin</h4>
-      
+
       <ul>
         <li><strong>Gereksizleri kaldırın:</strong> Kullanmadığınız üçüncü parti kodları kaldırın</li>
         <li><strong>Async/defer kullanın:</strong> Script'leri asenkron yükleyin</li>
         <li><strong>Facade pattern:</strong> Third-party embed'leri lazy load edin</li>
         <li><strong>Self-host:</strong> Mümkünse third-party script'leri kendi sunucunuzda host edin</li>
       </ul>
-      
+
       <h4>4. Main Thread İşini Azaltın</h4>
-      
+
       <ul>
         <li><strong>Server components kullanın:</strong> React 18+ server components</li>
         <li><strong>Islands architecture:</strong> Astro gibi framework'lerle partial hydration</li>
         <li><strong>CSS-in-JS'den kaçının:</strong> Runtime CSS oluşturma yerine static CSS</li>
         <li><strong>Virtual scrolling:</strong> Uzun listeler için virtualization</li>
       </ul>
-      
+
+      <h4>5. Presentation Delay'i Azaltın</h4>
+
+      <ul>
+        <li><strong>DOM güncellemelerini küçük tutun:</strong> Etkileşim başına gereğinden fazla DOM değişikliği yapmayın</li>
+        <li><strong>Layout thrashing'den kaçının:</strong> Okuma ve yazma işlemlerini ayrı batch'lerde yapın</li>
+        <li><strong>CSS containment:</strong> <code>content-visibility</code> ve <code>contain</code> ile yeniden hesaplama alanını sınırlayın</li>
+        <li><strong>Gereksiz re-render'ları önleyin:</strong> React'te memoization (useMemo/useCallback/memo) kullanın</li>
+      </ul>
+
       <h2 id="cls" style="scroll-margin-top: 96px">CLS (Cumulative Layout Shift): Kümülatif Düzen Kayması</h2>
       
       <h3>CLS Nedir?</h3>
@@ -460,11 +470,11 @@ export default function CoreWebVitalsRehberi() {
       
       <p>Google'ın resmi kütüphanesi ile kendi analytics'inize entegre edin:</p>
       
-      <pre><code>import {getCLS, getFID, getLCP} from 'web-vitals';
+      <pre><code>import {onCLS, onINP, onLCP} from 'web-vitals';
 
-getCLS(console.log);
-getFID(console.log);
-getLCP(console.log);</code></pre>
+onCLS(console.log);
+onINP(console.log);
+onLCP(console.log);</code></pre>
       
       <h3>5. Search Console Core Web Vitals Raporu</h3>
       
@@ -492,8 +502,8 @@ getLCP(console.log);</code></pre>
         <li>☐ HTTP/2 veya HTTP/3 kullanın</li>
       </ul>
       
-      <h3>FID İyileştirme Checklist</h3>
-      
+      <h3>INP İyileştirme Checklist</h3>
+
       <ul>
         <li>☐ JavaScript bundle boyutunu azaltın</li>
         <li>☐ Code splitting uygulayın</li>
@@ -505,6 +515,8 @@ getLCP(console.log);</code></pre>
         <li>☐ requestIdleCallback kullanın</li>
         <li>☐ CSS-in-JS'den kaçının</li>
         <li>☐ Virtual scrolling uygulayın (uzun listeler için)</li>
+        <li>☐ Etkileşim sonrası DOM güncellemelerini küçük tutun</li>
+        <li>☐ Layout thrashing'i önleyin (batch read/write)</li>
       </ul>
       
       <h3>CLS İyileştirme Checklist</h3>
@@ -541,7 +553,7 @@ getLCP(console.log);</code></pre>
       
       <ul>
         <li>✅ LCP 2.5 saniye altı</li>
-        <li>✅ FID 100ms altı</li>
+        <li>✅ INP 200ms altı</li>
         <li>✅ CLS 0.1 altı</li>
         <li>✅ PageSpeed 90+ puan</li>
         <li>✅ SEO sıralaması artışı</li>
@@ -550,7 +562,7 @@ getLCP(console.log);</code></pre>
       
       <h2 id="sonuc" style="scroll-margin-top: 96px">Sonuç: Core Web Vitals'da Başarı</h2>
       
-      <p>Core Web Vitals, 2025'te web performansının ve SEO başarısının temel kriterleridir. LCP, FID ve CLS metriklerini optimize ederek:</p>
+      <p>Core Web Vitals, 2026'da web performansının ve SEO başarısının temel kriterleridir. LCP, INP ve CLS metriklerini optimize ederek:</p>
       
       <ul>
         <li>Google'da daha üst sıralarda yer alırsınız</li>
@@ -564,7 +576,7 @@ getLCP(console.log);</code></pre>
       
       <div class="bg-green-50 border-l-4 border-green-400 p-4 my-8">
         <h4 class="text-green-800 font-semibold mb-2">🚀 Ücretsiz Core Web Vitals Auditi</h4>
-        <p class="text-green-700">Web sitenizin Core Web Vitals performansını ücretsiz analiz ediyoruz! LCP, FID ve CLS metriklerinizi ölçüyor ve optimizasyon önerileri sunuyoruz. <a href="/iletisim" class="font-semibold underline">Hemen başvurun</a> ve web performansınızı artırın!</p>
+        <p class="text-green-700">Web sitenizin Core Web Vitals performansını ücretsiz analiz ediyoruz! LCP, INP ve CLS metriklerinizi ölçüyor ve optimizasyon önerileri sunuyoruz. <a href="/iletisim" class="font-semibold underline">Hemen başvurun</a> ve web performansınızı artırın!</p>
       </div>
       
       <div class="bg-blue-50 border-l-4 border-blue-400 p-4 my-8">

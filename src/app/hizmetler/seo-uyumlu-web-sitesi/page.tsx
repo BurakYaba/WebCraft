@@ -221,6 +221,169 @@ export default function SeoUyumluWebSitesiPage() {
           </div>
         </section>
 
+        {/* Checklist Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-6 md:px-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              SEO Uyumlu Bir Web Sitesinde Olması Gereken 10 Özellik
+            </h2>
+            <p className="text-lg text-gray-600 mb-10">
+              Bir sitenin &ldquo;SEO uyumlu&rdquo; sayılması için karşılaması
+              gereken somut, ölçülebilir kriterler var. Bir ajans veya
+              geliştiriciyle çalışırken bu 10 maddeyi kontrol listesi olarak
+              kullanabilirsiniz.
+            </p>
+            <ol className="space-y-6">
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-sm">
+                  1
+                </span>
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    HTTPS ve geçerli SSL sertifikası
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Google 2014&apos;ten beri HTTPS&apos;i sıralama faktörü
+                    olarak kullanıyor; tarayıcılar HTTP siteleri
+                    &ldquo;güvenli değil&rdquo; olarak işaretliyor.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-sm">
+                  2
+                </span>
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    Tek, doğru yapılandırılmış H1 başlığı
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Her sayfada bir H1, mantıksal H2/H3 hiyerarşisi ile devam
+                    etmeli — başlıklar atlanmamalı veya tekrar
+                    kullanılmamalı.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-sm">
+                  3
+                </span>
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    Benzersiz title ve meta description her sayfada
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Title 50-60 karakter, meta description 120-160 karakter
+                    aralığında; her sayfa kendine özgü olmalı, şablon tekrarı
+                    olmamalı.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-sm">
+                  4
+                </span>
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    Self-referencing canonical URL
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Her sayfa kendi URL&apos;ini canonical olarak işaret
+                    etmeli; duplicate content riskini önler.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-sm">
+                  5
+                </span>
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    Core Web Vitals hedeflerini karşılama
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    LCP 2.5 saniye altı, INP 200ms altı, CLS 0.1 altı — bu üç
+                    metrik doğrudan Google sıralama faktörü.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-sm">
+                  6
+                </span>
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    Mobil-öncelikli (mobile-first) tasarım
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Google, Temmuz 2024&apos;ten beri tüm siteleri yalnızca
+                    mobil Googlebot ile tarıyor ve indeksliyor — masaüstü
+                    sürüm artık ikincil.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-sm">
+                  7
+                </span>
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    Geçerli XML sitemap ve robots.txt
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Sitemap tüm önemli URL&apos;leri içermeli ve
+                    robots.txt&apos;te referans verilmeli; robots.txt kritik
+                    kaynakları (CSS/JS) engellememeli.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-sm">
+                  8
+                </span>
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    Yapılandırılmış veri (schema markup)
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    JSON-LD formatında Organization, BreadcrumbList ve sayfa
+                    tipine uygun schema, Google&apos;ın içeriği doğru
+                    yorumlamasını sağlar.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-sm">
+                  9
+                </span>
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    Açıklayıcı alt metinler ve optimize görseller
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Her görselde içeriği tanımlayan alt metin; WebP/AVIF
+                    format ve doğru boyutlandırma ile hızlı yükleme.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-sm">
+                  10
+                </span>
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    Temiz, hiyerarşik URL yapısı
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Kısa, açıklayıcı, tire ile ayrılmış URL&apos;ler;
+                    gereksiz parametre ve derin klasör yapısından kaçınma.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
         {/* Why Section */}
         <section className="py-20 bg-[#181716]">
           <div className="max-w-4xl mx-auto px-6 md:px-10">

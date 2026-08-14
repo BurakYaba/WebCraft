@@ -261,33 +261,6 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-
-            {/* UK Office */}
-            <div>
-              <h4 className="text-white/80 text-xs uppercase tracking-wider font-semibold mb-3">
-                UK Ofisi
-              </h4>
-              <div className="space-y-2 mb-3">
-                <a
-                  href="tel:+447990965247"
-                  className="group block text-[#f84525] text-sm font-medium hover:text-white transition-colors duration-300 relative"
-                >
-                  +44 7990 965 247
-                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
-                </a>
-              </div>
-              <div className="text-white/50 text-xs leading-relaxed">
-                <p>
-                  Station Rd, Cuffley
-                  <br />
-                  Potters Bar
-                  <br />
-                  Birleşik Krallık
-                  <br />
-                  EN6 4HY
-                </p>
-              </div>
-            </div>
           </div>
         </div>
 

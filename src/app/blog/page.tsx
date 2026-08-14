@@ -121,7 +121,7 @@ const blogPosts = [
     category: "Web Performans",
     title: "Core Web Vitals Rehberi: Google'ın Performans Metrikleri",
     excerpt:
-      "Core Web Vitals nedir ve web sitenizi nasıl optimize edersiniz? LCP, FID, CLS metriklerini iyileştirmek için kapsamlı rehber.",
+      "Core Web Vitals nedir ve web sitenizi nasıl optimize edersiniz? LCP, INP, CLS metriklerini iyileştirmek için kapsamlı rehber.",
     image: "/bento/web-tasarim.webp",
     slug: "core-web-vitals-rehberi",
     date: "18 Ocak 2026",

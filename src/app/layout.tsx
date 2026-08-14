@@ -1,20 +1,34 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import GTMTracker from "@/components/GTMTracker";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import "./globals.css";
 
-// Optimized font loading with better performance
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["400", "700"],
+// Self-hosted (not next/font/google): Google's CDN periodically reissues font
+// file hashes, and next/font/google's bundled metadata can go stale against
+// them — that broke `next build` with "Failed to fetch font file" even though
+// network access was fine. Self-hosting removes the build-time dependency
+// entirely. Files are the current Montserrat v31 latin 400/700 static woff2s.
+const montserrat = localFont({
+  src: [
+    {
+      path: "../fonts/Montserrat-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/Montserrat-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   display: "swap",
   preload: true,
   fallback: ["system-ui", "arial"],
   variable: "--font-montserrat",
-  adjustFontFallback: true,
+  adjustFontFallback: "Arial",
 });
 
 export const viewport: Viewport = {
@@ -140,6 +154,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
+              "@id": "https://www.webcraft.tr/#organization",
               "@type": ["LocalBusiness", "ProfessionalService"],
               name: "WebCraft",
               alternateName: "WebCraft Web Tasarım Ajansı",
@@ -163,6 +178,12 @@ export default function RootLayout({
                 latitude: "36.6213",
                 longitude: "29.1164",
               },
+              areaServed: [
+                { "@type": "City", name: "Fethiye" },
+                { "@type": "City", name: "Muğla" },
+                { "@type": "City", name: "Marmaris" },
+                { "@type": "City", name: "Bodrum" },
+              ],
               telephone: "+90-507-944-17-15",
               email: "info@webcraft.tr",
               openingHours: "Mo-Fr 09:00-18:00",
@@ -260,6 +281,7 @@ export default function RootLayout({
                 "Profesyonel web tasarım, SEO optimizasyonu ve dijital pazarlama hizmetleri.",
               provider: {
                 "@type": "Organization",
+                "@id": "https://www.webcraft.tr/#organization",
                 name: "WebCraft",
                 url: "https://www.webcraft.tr",
               },

@@ -54,39 +54,21 @@ export default function ContactPage() {
       "@type": "Organization",
       name: "WebCraft",
       description: "Web tasarım ve dijital pazarlama ajansı",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
-          addressLocality: "Fethiye",
-          addressRegion: "Muğla",
-          postalCode: "48300",
-          addressCountry: "TR",
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "Station Rd, Cuffley",
-          addressLocality: "Potters Bar",
-          postalCode: "EN6 4HY",
-          addressCountry: "GB",
-        },
-      ],
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "+90-507-944-17-15",
-          contactType: "customer service",
-          availableLanguage: "Turkish",
-          areaServed: "TR",
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+44-7990-965247",
-          contactType: "customer service",
-          availableLanguage: ["Turkish", "English"],
-          areaServed: "GB",
-        },
-      ],
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Babataşı Mahallesi, 778 Sokak No: 32/A",
+        addressLocality: "Fethiye",
+        addressRegion: "Muğla",
+        postalCode: "48300",
+        addressCountry: "TR",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+90-507-944-17-15",
+        contactType: "customer service",
+        availableLanguage: "Turkish",
+        areaServed: "TR",
+      },
       email: "info@webcraft.tr",
       url: "https://www.webcraft.tr",
     },
@@ -264,19 +246,6 @@ export default function ContactPage() {
                     </a>
                   </p>
                 </div>
-                <div>
-                  <p className="text-sm font-semibold text-gray-700 mb-2">
-                    UK Ofisi
-                  </p>
-                  <p className="text-gray-600">
-                    <a
-                      href="tel:+447990965247"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      +44 7990 965 247
-                    </a>
-                  </p>
-                </div>
               </div>
 
               {/* Address */}
@@ -297,18 +266,6 @@ export default function ContactPage() {
                     No: 32/A
                     <br />
                     Fethiye - Muğla, Türkiye
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-gray-700 mb-2">
-                    UK Ofisi
-                  </p>
-                  <p className="text-gray-600">
-                    Station Rd, Cuffley
-                    <br />
-                    Potters Bar
-                    <br />
-                    Birleşik Krallık, EN6 4HY
                   </p>
                 </div>
               </div>

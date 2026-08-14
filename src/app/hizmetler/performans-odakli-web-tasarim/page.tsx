@@ -90,7 +90,7 @@ export default function PerformansOdakliWebTasarimPage() {
     {
       question: "Core Web Vitals nedir ve neden önemlidir?",
       answer:
-        "Core Web Vitals, Google'ın web sitesi performansını ölçmek için kullandığı metriklerdir: LCP (Largest Contentful Paint), FID (First Input Delay), CLS (Cumulative Layout Shift). Bu metriklerin optimize edilmesi, Google sıralamanızı yükseltir ve kullanıcı memnuniyetini artırır.",
+        "Core Web Vitals, Google'ın web sitesi performansını ölçmek için kullandığı metriklerdir: LCP (Largest Contentful Paint), INP (Interaction to Next Paint), CLS (Cumulative Layout Shift). Bu metriklerin optimize edilmesi, Google sıralamanızı yükseltir ve kullanıcı memnuniyetini artırır.",
     },
     {
       question: "Next.js neden performans için en iyi seçenektir?",
@@ -313,7 +313,7 @@ export default function PerformansOdakliWebTasarimPage() {
                   Core Web Vitals Optimizasyonu
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  LCP, FID, CLS metriklerinde %90+ skorlar ile Google&apos;da
+                  LCP, INP, CLS metriklerinde %90+ skorlar ile Google&apos;da
                   üst sıralarda yer alma garantisi
                 </p>
               </div>

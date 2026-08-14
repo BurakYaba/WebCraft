@@ -103,7 +103,7 @@ export default function ProjectsPage() {
         position: 2,
         name: "Home and Car — Edremit Emlak Platformu",
         description:
-          "Balıkesir Edremit için kapsamlı mülk yönetim sistemi ve CMS. Next.js 16, TypeScript, PostgreSQL, 50+ mülk özelliği, yerel SEO optimizasyonu.",
+          "Balıkesir Edremit için kapsamlı mülk yönetim sistemi ve CMS. Next.js 15, TypeScript, PostgreSQL, 50+ mülk özelliği, yerel SEO optimizasyonu.",
         creator: { "@type": "Organization", name: "WebCraft" },
         about: { "@type": "Thing", name: "Home and Car" },
         genre: "Real Estate Platform",
@@ -252,7 +252,7 @@ export default function ProjectsPage() {
                   kuruldu.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-5">
-                  {["Next.js 16", "PostgreSQL", "CMS", "Yerel SEO"].map((t) => (
+                  {["Next.js 15", "PostgreSQL", "CMS", "Yerel SEO"].map((t) => (
                     <span
                       key={t}
                       className="text-xs text-white/40 bg-white/5 px-2 py-0.5 rounded"

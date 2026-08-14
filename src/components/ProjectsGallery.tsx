@@ -86,7 +86,7 @@ const projects: Project[] = [
       "Manuel ilan yönetiminden çıkış: 50+ mülk özelliği, yönetici paneli, bölgede dijital varlık",
     category: "Web Tasarım",
     image: "/projects/homeandcar.webp",
-    tags: ["Next.js 16", "TypeScript", "PostgreSQL", "CMS"],
+    tags: ["Next.js 15", "TypeScript", "PostgreSQL", "CMS"],
     year: "2026",
     client: "Home and Car",
     url: "/islerimiz/home-and-car",

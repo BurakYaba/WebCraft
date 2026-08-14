@@ -1,0 +1,143 @@
+{
+  "generatedAt": "2026-08-14",
+  "period": {
+    "start": "2026-05-13",
+    "end": "2026-08-12",
+    "days": 92
+  },
+  "totals": {
+    "clicks": 78,
+    "impressions": 11333,
+    "ctr": 0.69,
+    "avgPosition": 23.37,
+    "first7AvgPos": 19.66,
+    "last7AvgPos": 25.29
+  },
+  "monthlyAvgPosition": {
+    "2026-05": 21.75,
+    "2026-06": 22.25,
+    "2026-07": 24.63,
+    "2026-08": 25.46
+  },
+  "brandDomainQuery": {
+    "query": "www.webcraft.tr",
+    "clicks": 0,
+    "impressions": 99,
+    "ctr": 0,
+    "position": 34.63
+  },
+  "brandNameQuery": {
+    "query": "webcraft",
+    "clicks": 38,
+    "impressions": 112,
+    "ctr": 33.93,
+    "position": 3.54
+  },
+  "topZeroClickOpportunities": [
+    {
+      "query": "web tasarım ajansı",
+      "clicks": 0,
+      "impressions": 1350,
+      "ctr": 0,
+      "position": 33.83
+    },
+    {
+      "query": "en iyi web tasarım firmaları",
+      "clicks": 0,
+      "impressions": 628,
+      "ctr": 0,
+      "position": 19.7
+    },
+    {
+      "query": "seo uyumlu web sitesi",
+      "clicks": 0,
+      "impressions": 478,
+      "ctr": 0,
+      "position": 14.02
+    },
+    {
+      "query": "profesyonel web tasarım",
+      "clicks": 0,
+      "impressions": 250,
+      "ctr": 0,
+      "position": 15.26
+    },
+    {
+      "query": "web tasarım ajansları",
+      "clicks": 0,
+      "impressions": 242,
+      "ctr": 0,
+      "position": 39.84
+    },
+    {
+      "query": "en iyi web tasarım ajansları",
+      "clicks": 0,
+      "impressions": 215,
+      "ctr": 0,
+      "position": 24.44
+    },
+    {
+      "query": "en iyi web tasarım ajansı",
+      "clicks": 0,
+      "impressions": 197,
+      "ctr": 0,
+      "position": 19.58
+    },
+    {
+      "query": "online mağaza kurma",
+      "clicks": 0,
+      "impressions": 189,
+      "ctr": 0,
+      "position": 22.08
+    },
+    {
+      "query": "web ajansları",
+      "clicks": 0,
+      "impressions": 177,
+      "ctr": 0,
+      "position": 23.23
+    },
+    {
+      "query": "yapay zekâ chatbot geliştirme",
+      "clicks": 0,
+      "impressions": 159,
+      "ctr": 0,
+      "position": 5.11
+    },
+    {
+      "query": "seo uyumlu site",
+      "clicks": 0,
+      "impressions": 146,
+      "ctr": 0,
+      "position": 11.79
+    },
+    {
+      "query": "seo hizmetleri",
+      "clicks": 0,
+      "impressions": 145,
+      "ctr": 0,
+      "position": 50.26
+    },
+    {
+      "query": "web tasarım ajans",
+      "clicks": 0,
+      "impressions": 143,
+      "ctr": 0,
+      "position": 28.94
+    },
+    {
+      "query": "seo uyumlu web site",
+      "clicks": 0,
+      "impressions": 132,
+      "ctr": 0,
+      "position": 13.01
+    },
+    {
+      "query": "en iyi web tasarım firması",
+      "clicks": 0,
+      "impressions": 125,
+      "ctr": 0,
+      "position": 39.26
+    }
+  ]
+}

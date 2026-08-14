@@ -413,9 +413,8 @@ Crawl-delay: 1</code></pre>
       
       <ul>
         <li><strong>LCP (Largest Contentful Paint):</strong> En büyük içeriğin 2.5 saniye içinde yüklenmesi</li>
-        <li><strong>FID (First Input Delay):</strong> Kullanıcı etkileşimine 100ms içinde yanıt</li>
+        <li><strong>INP (Interaction to Next Paint):</strong> Kullanıcı etkileşimine 200ms içinde yanıt — Mart 2024'te eski FID metriğinin yerini aldı</li>
         <li><strong>CLS (Cumulative Layout Shift):</strong> Görsel stabilite skoru 0.1'in altında</li>
-        <li><strong>INP (Interaction to Next Paint):</strong> 2024'te FID'nin yerini alacak yeni metrik</li>
       </ul>
       
       <p>Detaylı site hızı optimizasyonu için <a href="/hizmetler/performans-odakli-web-tasarim" class="text-[#f84525] hover:underline font-semibold">performans odaklı web tasarım hizmetlerimize</a> göz atabilirsiniz.</p>

@@ -24,7 +24,7 @@ export async function GET() {
 
       technologies: [
         "Next.js 15",
-        "React 19",
+        "React 18",
         "Three.js",
         "AI/ML",
         "TypeScript",

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description:
     "Web sitesi hızını artırma rehberi. Core Web Vitals, görsel optimizasyonu, kod minify, CDN kullanımı ve sunucu performansı ile sayfa hızını optimize edin. 2025 stratejileri.",
   keywords:
-    "web sitesi hızı, sayfa yükleme hızı, performans optimizasyonu, core web vitals, LCP, FID, CLS, görsel optimizasyonu, kod minify, CDN",
+    "web sitesi hızı, sayfa yükleme hızı, performans optimizasyonu, core web vitals, LCP, INP, CLS, görsel optimizasyonu, kod minify, CDN",
   metadataBase: new URL("https://www.webcraft.tr"),
   alternates: {
     canonical: "/blog/web-sitesi-hizi-nasil-artirilir",
@@ -195,7 +195,7 @@ export default function WebSitesiHiziNasilArtirilir() {
       
       <ul>
         <li><strong>Sıralama faktörü:</strong> Google, sayfa hızını resmi sıralama faktörü olarak kullanır</li>
-        <li><strong>Core Web Vitals:</strong> LCP, FID ve CLS metrikleri sıralama üzerinde doğrudan etkilidir</li>
+        <li><strong>Core Web Vitals:</strong> LCP, INP ve CLS metrikleri sıralama üzerinde doğrudan etkilidir</li>
         <li><strong>Mobil öncelik:</strong> Google'ın mobile-first indexing yaklaşımı, mobil performansı kritik hale getirir</li>
         <li><strong>Crawl bütçesi:</strong> Hızlı siteler, Google botları tarafından daha etkili indexlenir</li>
       </ul>
@@ -230,14 +230,14 @@ export default function WebSitesiHiziNasilArtirilir() {
         <li><strong>Preload kullanın:</strong> Kritik kaynakları önceden yükleyin</li>
       </ul>
       
-      <h3>2. First Input Delay (FID) - İlk Girdi Gecikmesi</h3>
-      
-      <p>FID, kullanıcının sayfayla ilk etkileşiminden tarayıcının yanıt vermeye başlamasına kadar geçen süreyi ölçer.</p>
-      
-      <p><strong>Hedef:</strong> 100 milisaniye veya daha az</p>
-      
-      <p><strong>FID'yi İyileştirme Stratejileri:</strong></p>
-      
+      <h3>2. Interaction to Next Paint (INP) - Sonraki Boyamaya Etkileşim</h3>
+
+      <p>INP, kullanıcının sayfa ömrü boyunca yaptığı tüm etkileşimlerin (sadece ilki değil), etkileşim anından tarayıcının bir sonraki frame'i boyamasına kadar geçen süreyi ölçer. Mart 2024'te eski FID metriğinin yerini aldı.</p>
+
+      <p><strong>Hedef:</strong> 200 milisaniye veya daha az</p>
+
+      <p><strong>INP'yi İyileştirme Stratejileri:</strong></p>
+
       <ul>
         <li><strong>JavaScript yürütme süresini azaltın:</strong> Kod parçalama (code splitting) uygulayın</li>
         <li><strong>Web Worker kullanın:</strong> Ağır hesaplamaları arka plan thread'inde çalıştırın</li>
