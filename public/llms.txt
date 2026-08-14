@@ -16,7 +16,7 @@ WebCraft, 2015 yılından bu yana Türkiye'de profesyonel web tasarım ve dijita
 
 ## Teknolojilerimiz
 
-- **Frontend**: Next.js 15, React 19, TypeScript, Tailwind CSS
+- **Frontend**: Next.js 15, React 18, TypeScript, Tailwind CSS
 - **Backend**: Node.js, Python, API Development
 - **Mobile**: React Native, Flutter, iOS (Swift), Android (Kotlin)
 - **Database**: PostgreSQL, MongoDB, MySQL

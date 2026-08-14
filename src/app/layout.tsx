@@ -263,16 +263,10 @@ export default function RootLayout({
                 name: "WebCraft",
                 url: "https://www.webcraft.tr",
               },
-              areaServed: [
-                {
-                  "@type": "Country",
-                  name: "Turkey",
-                },
-                {
-                  "@type": "Country",
-                  name: "United Kingdom",
-                },
-              ],
+              areaServed: {
+                "@type": "Country",
+                name: "Turkey",
+              },
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
                 name: "Web Tasarım Hizmetleri",

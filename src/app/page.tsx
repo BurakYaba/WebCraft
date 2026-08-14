@@ -124,13 +124,6 @@ export default function HomePage() {
       "https://x.com/webcraft_real",
       "https://www.facebook.com/profile.php?id=61585946570262",
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: 50,
-      bestRating: "5",
-      worstRating: "1",
-    },
   };
 
   return (

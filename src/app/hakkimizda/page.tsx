@@ -46,97 +46,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  // Review schema for testimonials (moved here to fix hydration)
-  const reviewSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "WebCraft",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: 50,
-      bestRating: "5",
-      worstRating: "1",
-    },
-    review: [
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Ahmet Yilmaz",
-          jobTitle: "CEO",
-        },
-        datePublished: "2024-12-01",
-        reviewBody:
-          "WebCraft ile calismanin keyfini yasadık. Profesyonel yaklasımlari ve yaratici cozumleri sayesinde markamizin dijital gorunurlugu ciddi sekilde artti.",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-          worstRating: "1",
-        },
-        itemReviewed: {
-          "@type": "Service",
-          name: "Web Tasarım Hizmeti",
-          provider: {
-            "@type": "Organization",
-            name: "WebCraft",
-          },
-        },
-      },
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Zeynep Kaya",
-          jobTitle: "Pazarlama Direktoru",
-        },
-        datePublished: "2024-11-28",
-        reviewBody:
-          "Surdurulebilir cozumler konusunda uzmanlik arayan bir sirket olarak, WebCraft'in hem teknik hem de yaratici yaklasimindan cok memnun kaldik.",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-          worstRating: "1",
-        },
-        itemReviewed: {
-          "@type": "Service",
-          name: "Web Tasarım Hizmeti",
-          provider: {
-            "@type": "Organization",
-            name: "WebCraft",
-          },
-        },
-      },
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Mehmet Demir",
-          jobTitle: "Kurucu",
-        },
-        datePublished: "2024-11-25",
-        reviewBody:
-          "E-ticaret projemizde WebCraft'in deneyimi ve yenilikciliği sayesinde hedefledigimiz sonuclara ulastik. Kesinlikle tavsiye ederim.",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-          worstRating: "1",
-        },
-        itemReviewed: {
-          "@type": "Service",
-          name: "Web Tasarım Hizmeti",
-          provider: {
-            "@type": "Organization",
-            name: "WebCraft",
-          },
-        },
-      },
-    ],
-  };
-
   // About Page Schema for SEO
   const aboutSchema = {
     "@context": "https://schema.org",
@@ -218,10 +127,6 @@ export default function AboutPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />

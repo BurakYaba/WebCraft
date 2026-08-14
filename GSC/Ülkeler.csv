@@ -1,116 +1,100 @@
 Ülke,Tıklamalar,Gösterimler,TO,Pozisyon
-Türkiye,168,14243,1.18%,21.27
-Avusturya,3,14,21.43%,17.07
-Azerbaycan,1,55,1.82%,6.51
-İran,1,4,25%,7.25
-Amerika Birleşik Devletleri,0,1590,0%,14.35
-İngiltere,0,423,0%,26.53
-Kanada,0,127,0%,23.76
-Almanya,0,106,0%,20.52
-İtalya,0,96,0%,22.16
-Ukrayna,0,96,0%,25.56
-Fransa,0,84,0%,23.43
-İspanya,0,77,0%,23.84
-Hindistan,0,65,0%,20.58
-Brezilya,0,61,0%,21.93
-Hollanda,0,52,0%,13.17
-Vietnam,0,34,0%,21.85
-Endonezya,0,30,0%,17.47
-Japonya,0,29,0%,20.62
-Meksika,0,27,0%,13.96
-Rusya,0,26,0%,29.62
-Yunanistan,0,21,0%,21.76
-Portekiz,0,21,0%,23.24
-Arjantin,0,21,0%,23.86
-Polonya,0,20,0%,26.2
-Colombia,0,19,0%,17
-Singapur,0,18,0%,11
-Güney Kore,0,18,0%,22.56
-Norveç,0,16,0%,10.56
-Birleşik Arap Emirlikleri,0,15,0%,22.73
-Romanya,0,14,0%,17.14
-Filipinler,0,13,0%,22.31
-İsviçre,0,13,0%,24
-Çin,0,12,0%,11.08
-Avustralya,0,10,0%,20
-Malezya,0,9,0%,11.56
-İrlanda,0,9,0%,14.44
-Şili,0,9,0%,23.33
-İsveç,0,9,0%,29.33
-Belarus,0,9,0%,44.44
-Letonya,0,8,0%,18.12
-Belçika,0,8,0%,18.75
-Macaristan,0,8,0%,20.38
-Bangladeş,0,8,0%,33.38
-Peru,0,7,0%,12.14
-Hong Kong,0,7,0%,14.14
-Bulgaristan,0,7,0%,19.71
-Sırpça,0,7,0%,22.29
-Suudi Arabistan,0,7,0%,23.71
-Finlandiya,0,6,0%,8.67
-Güney Kıbrıs Rum Yönetimi,0,6,0%,10.83
-Kazakistan,0,6,0%,14
-Tayland,0,6,0%,17.5
-Mısır,0,6,0%,19.67
-Irak,0,5,0%,7
-Bolivya,0,4,0%,7.75
-İsrail,0,4,0%,13
-Tayvan,0,4,0%,14
-Arnavutluk,0,4,0%,17
-Bosna Hersek,0,4,0%,21.5
-Estonya,0,4,0%,23
-Moldova,0,4,0%,29.5
-Ekvador,0,3,0%,4
+Türkiye,78,9384,0.83%,23.9
+Amerika Birleşik Devletleri,0,702,0%,21.21
+İngiltere,0,331,0%,27.18
+Almanya,0,87,0%,19.71
+Kanada,0,86,0%,25.64
+Ukrayna,0,80,0%,27.86
+İtalya,0,50,0%,23.32
+İspanya,0,44,0%,22.84
+Hollanda,0,43,0%,12.65
+Hindistan,0,42,0%,21.1
+Fransa,0,37,0%,21.46
+Brezilya,0,32,0%,23.62
+Meksika,0,21,0%,18.05
+Endonezya,0,18,0%,17
+Birleşik Arap Emirlikleri,0,16,0%,23.56
+Norveç,0,15,0%,8.53
+Vietnam,0,14,0%,18.64
+Yunanistan,0,14,0%,21.79
+Japonya,0,14,0%,24
+Colombia,0,13,0%,19.46
+Singapur,0,12,0%,9.25
+Güney Kore,0,12,0%,17.75
+Rusya,0,12,0%,27.25
+Belarus,0,12,0%,39.42
+Azerbaycan,0,11,0%,6.36
+Arjantin,0,11,0%,21.27
+Romanya,0,10,0%,18
+Şili,0,10,0%,24.2
+Letonya,0,9,0%,20.11
+Portekiz,0,9,0%,27.33
+İsviçre,0,8,0%,27.5
+Peru,0,7,0%,8.71
+Polonya,0,7,0%,33.43
+İrlanda,0,6,0%,18.67
+Filipinler,0,6,0%,19.33
+Avustralya,0,6,0%,27.83
+Güney Kıbrıs Rum Yönetimi,0,5,0%,12
+Çin,0,5,0%,19.4
+Bulgaristan,0,5,0%,20
+Tayland,0,5,0%,23.2
+Suudi Arabistan,0,5,0%,26.8
+Estonya,0,5,0%,27.4
+Sırpça,0,5,0%,31.6
+Ürdün,0,5,0%,37
+Macaristan,0,4,0%,16
+Belçika,0,4,0%,16.75
+Avusturya,0,4,0%,18.75
+Güney Afrika,0,4,0%,19.75
+Tayvan,0,4,0%,20.5
+Bosna Hersek,0,4,0%,23
+Moldova,0,4,0%,29
+Lüksemburg,0,4,0%,35.5
 Yeni Zelanda,0,3,0%,8.33
-Guatemala,0,3,0%,9
-Cezayir,0,3,0%,14.33
-Güney Afrika,0,3,0%,19
-Lüksemburg,0,3,0%,34.33
-Ürdün,0,3,0%,40
-Jamaika,0,2,0%,4
-Kenya,0,2,0%,5.5
-Tanzanya,0,2,0%,5.5
-Kosta Rika,0,2,0%,6.5
-Malta,0,2,0%,6.5
-Panama,0,2,0%,7
-Honduras,0,2,0%,9
-Georgia,0,2,0%,10.5
-Umman,0,2,0%,12
-Paraguay,0,2,0%,12.5
-Bahreyn,0,2,0%,14
+Arnavutluk,0,3,0%,15.67
+Malezya,0,3,0%,16.33
+Mısır,0,3,0%,17.33
+Cezayir,0,3,0%,29.33
+İsveç,0,3,0%,31.67
+Bolivya,0,2,0%,9
+İran,0,2,0%,11
 Barbados,0,2,0%,17.5
-Özbekistan,0,2,0%,20.5
+Guatemala,0,2,0%,17.5
 Kosova,0,2,0%,21.5
 Fas,0,2,0%,23.5
-Kamboçya,0,2,0%,29.5
-Slovenya,0,2,0%,31
+Hong Kong,0,2,0%,25
+Çekya,0,2,0%,26
+Bangladeş,0,2,0%,29
+Ermenistan,0,2,0%,36
 Suriye,0,2,0%,41
-Hırvatça,0,2,0%,45
-Pakistan,0,2,0%,136
-Makedonya,0,1,0%,1
 Aruba,0,1,0%,3
 Madagaskar,0,1,0%,4
-Filistin,0,1,0%,4
 Nikaragua,0,1,0%,5
 Nepal,0,1,0%,5
-Katar,0,1,0%,5
-Trinidad ve Tobago,0,1,0%,5
-Cibuti,0,1,0%,6
 Moritanya,0,1,0%,6
-Litvanya,0,1,0%,7
+Kosta Rika,0,1,0%,7
+Kenya,0,1,0%,8
+El Salvador,0,1,0%,9
+Tanzanya,0,1,0%,9
 Bilinmeyen Bölge,0,1,0%,9
-Fildişi Sahili,0,1,0%,10
 Küba,0,1,0%,10
 Mozambik,0,1,0%,10
-Porto Riko,0,1,0%,13
-Makau,0,1,0%,15
+Irak,0,1,0%,11
+Malta,0,1,0%,11
+Bahreyn,0,1,0%,12
+Honduras,0,1,0%,13
+Paraguay,0,1,0%,14
 Nijerya,0,1,0%,15
 Uruguay,0,1,0%,16
-Çekya,0,1,0%,20
+İsrail,0,1,0%,20
+Litvanya,0,1,0%,23
 Dominik Cumhuriyeti,0,1,0%,26
-Etiyopya,0,1,0%,29
-Ermenistan,0,1,0%,39
+Finlandiya,0,1,0%,27
+Réunion,0,1,0%,29
+Jamaika,0,1,0%,31
 Gana,0,1,0%,41
-Burkina Faso,0,1,0%,43
-Togo,0,1,0%,45
+Slovenya,0,1,0%,43
+Kazakistan,0,1,0%,44
 Kırgızistan,0,1,0%,50
+Kamboçya,0,1,0%,50
