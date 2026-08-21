@@ -381,7 +381,7 @@ export default function RootLayout({
           </a>
         </div>
 
-        {/* GA4 (G-TYXDJVMSP3) and Google Ads (AW-17976612124) are fired via GTM — no standalone gtag.js needed */}
+        {/* GA4 (G-MDQX844E51) and Google Ads (AW-17976612124) are fired via GTM — no standalone gtag.js needed */}
 
         {/* Vercel Analytics */}
         <Analytics />
