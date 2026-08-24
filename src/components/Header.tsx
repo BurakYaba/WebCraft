@@ -256,7 +256,7 @@ export default function Header() {
               {/* Left: Menu Items */}
               <div className="flex-1 flex flex-col items-start justify-center gap-2 md:gap-5">
                 {MENU_LINKS.map((item) => (
-                  <a
+                  <Link
                     key={item.href}
                     href={item.href}
                     className="block font-extrabold text-[1.6rem] md:text-[2.8rem] leading-tight text-[#111] transition-all duration-300 group font-display"
@@ -268,7 +268,7 @@ export default function Header() {
                     <span className="inline-block transition-all duration-300 group-hover:text-red-500 group-hover:translate-x-7 group-focus:text-red-500 group-focus:translate-x-7">
                       {item.label}
                     </span>
-                  </a>
+                  </Link>
                 ))}
               </div>
               {/* Right: Contact Info & Socials (hidden on desktop, shown on mobile for stacking) */}
